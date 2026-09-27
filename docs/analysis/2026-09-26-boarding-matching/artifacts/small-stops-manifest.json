@@ -1,0 +1,12 @@
+{
+  "date": "2025-05-15",
+  "timezone": "Europe/Moscow",
+  "sharp_rise": "exploratory ratio>=4 and >=3 events over 2/3/5/10s against previous40s with .5 pseudocount; sensitivity not trained; not stop truth",
+  "thresholds": "frozen Jan-Apr2025 synchrony and scan2/3/5/10 plus adaptive90; exclude inside adaptive95 support; n10>=2",
+  "matching": "fixed strong anchor identities; optional weak candidates <=60s from both neighbor projections; after last anchor one-sided only; no promotion",
+  "null": "candidate times circularly shifted inside fixed bracketing intervals by .25/.5/.75; conditional coincidence diagnostic, not accuracy",
+  "source_sha256": "9139726fd0f5cfd069da87c32ecb98a7778fbefa9efdec1eb94b66d1010cf269",
+  "parent_sha256": "028eb3f8f14f2c30cbc2e17f13f539b4165fc0d8d33c4f5807402d86b3824638",
+  "script_sha256": "f7f66a210254d7e028ea61a670d2f0d541c98046dd8093862f4ac336e71ad82c",
+  "result_sha256": "47b481b0357731f6133208897d7d95ff87ee0b371f00e97e8467c5d55268a81e"
+}

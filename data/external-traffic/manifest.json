@@ -1,0 +1,940 @@
+{
+  "schema": "official-traffic-news.v1",
+  "source": "https://t.me/s/DtOperativno",
+  "publisher": "Moscow Department of Transport / CODD official public channel",
+  "retrieved_at": "2026-09-27T08:17:03.039662+00:00",
+  "pages": [
+    {
+      "url": "https://t.me/s/DtOperativno?before=19880",
+      "sha256": "98f068750509fb9bc8ee6283a585ceeaecdbc20ee08536889e65c82056df0ba4",
+      "bytes": 119014
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=19900",
+      "sha256": "b8e3e772cafafa57fa5e153a5527bb79e19ebf7f618034c63058bc65ae950c31",
+      "bytes": 114736
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=19920",
+      "sha256": "25347c99db87ba603b8fe8304ae21cf2d1444460e67702885f0bb5f89c94ce34",
+      "bytes": 116122
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=19940",
+      "sha256": "d9ea7b8547ff4461f14dfff10075c74754b7bf80e4e726853ed4abfe579b8232",
+      "bytes": 120626
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=19960",
+      "sha256": "4c2168fb10113e340ed98d252a208db607d8d0eb5620aaa1122a08680e12af3e",
+      "bytes": 107332
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=19980",
+      "sha256": "fd677be22a9069ac83a70c750b113ffb6502037683a7e9119a6024957c1e8347",
+      "bytes": 124447
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20000",
+      "sha256": "27e21069cb0efc4d8a5e85edb885faf589bffcf35da035d4e032ce4523de4b4c",
+      "bytes": 125834
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20020",
+      "sha256": "64e8505e1ab1768c1efd9e4dbc51b38db22b1f3d7c3c774c678390f7e6e80453",
+      "bytes": 108934
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20040",
+      "sha256": "f98dd5d05d851c65b4f79537896da61f630a6c19bf207ae3b6a3bde219733426",
+      "bytes": 108570
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20060",
+      "sha256": "45a1a24cca16569748c7d492af9ed4745ef6474cddc5abec92fb4718be560124",
+      "bytes": 110020
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20080",
+      "sha256": "cb5b1b8447eb94ab9b42ce6b194881a26e758197ee51e911579a5d977db4c48e",
+      "bytes": 108552
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20100",
+      "sha256": "d873dc3ca0bda9e359631b79caf270782e3a541f25722eba255f3b7cdff29a18",
+      "bytes": 114181
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20120",
+      "sha256": "46d12b7de025331828b4c6fd5971fb81b921b1cc6fdc8f067c22440402729c31",
+      "bytes": 106053
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20140",
+      "sha256": "714d042444e096b0d31d97e1ad1335aba6efdda7719fa34457aa5f483a8fda13",
+      "bytes": 109816
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20160",
+      "sha256": "49caa6432dde59033442954b917eb9a5b88fbf6daa9309ae7cd2dff7b9cc0f2c",
+      "bytes": 105143
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20180",
+      "sha256": "ba6372602a85cb23e415e654b9d706a3fb06cc4b139d11960526f07e4f215ef8",
+      "bytes": 115989
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20200",
+      "sha256": "9cb8d91a4c862e0da7b21e264ca5cd1fca2ae1cdc58ffdfae0616511c7eee785",
+      "bytes": 107558
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20220",
+      "sha256": "0885ea20eb0cd663032b00862ba96908c2c43d605bd44f9e0379e9ace7540dc8",
+      "bytes": 122379
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20240",
+      "sha256": "07f98200c3fdf47f1e2a3aefdc18e2cbe5e473628a67ddcba243ba512744a33e",
+      "bytes": 112222
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20260",
+      "sha256": "939c988e7d9bf219baa0afe57433beb0b87a1d6f26128485d41dbaf331fc590c",
+      "bytes": 112133
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20280",
+      "sha256": "1bc35479a0e2c7cd3f844260df502edc58d754aa016de4a7ae6b48b927a338ab",
+      "bytes": 105866
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20300",
+      "sha256": "a589b400723ce6aa5ac9a3d88e263d25e1da069dc5ff187d5d3461c781c8672d",
+      "bytes": 103867
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20320",
+      "sha256": "4f3a52bdbc63b58402a3b2fab6afa0f84b99e541a40f1eea464c9e06aac25fa9",
+      "bytes": 128966
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20340",
+      "sha256": "9517bb617fc08735eccfe2d8181e3de881fbd077ed0fe7a48c41a91c039ae7b2",
+      "bytes": 108246
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20360",
+      "sha256": "01926cbdcadeb1636948c293799e360642d556bc9faba95e2876c713c015271f",
+      "bytes": 123664
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20380",
+      "sha256": "f3ac7140fe32f3b343988253899479dd6abe5f950ae396048442b12ec09515c1",
+      "bytes": 128691
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20400",
+      "sha256": "2a5d29d6c8b276f0c0e0350be8b429512ffc7cd6402333191d58c83c04d9543b",
+      "bytes": 103641
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20420",
+      "sha256": "e10d97acf3a257f8248245c2270da1e79da401a366f3b86ff66b4f4cf6cdd745",
+      "bytes": 105430
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20440",
+      "sha256": "0b2401ccb6c8b6ed682104e3cf410f3fc06c4295019645dae196a354d11f53e6",
+      "bytes": 106777
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20460",
+      "sha256": "c2dbf94a85018ff3e6b363d4f69337d0c78cb8843141749565f6c16fe7281c98",
+      "bytes": 124598
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20480",
+      "sha256": "cc48840f6aa48c4130a2395614a8ccbf33b2eadd9cdc4d069bc24284ae18a2b7",
+      "bytes": 99018
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20500",
+      "sha256": "46246d7cd7e17915e0f6daa06d332da9ef12058b272161cc0a292b324abc29bc",
+      "bytes": 118823
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20520",
+      "sha256": "12f8b4e6f3f38182c49e99261d71216205b6a1fac9d0d1d39bc559d8c50d0970",
+      "bytes": 103973
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20540",
+      "sha256": "e26ecf1e3df6b1b820739229ff8f77cb520308a6c0c0116a47c97cdeba23d28c",
+      "bytes": 115692
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20560",
+      "sha256": "b693b6eb38078afd7c3adf261c9d5db4314b3e7b1b928a74dbf8790ec36cfdee",
+      "bytes": 107053
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20580",
+      "sha256": "4fefb098ef95f53a63df7502ebfb8b398f63e90d56022a544b049983536a3899",
+      "bytes": 125618
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20600",
+      "sha256": "ce175e9c5abf4f231238fe0a32cb2f0b59cf6059bd0ff6ce4701e3ee51461ba1",
+      "bytes": 123737
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20620",
+      "sha256": "9cae358e9817a433409975c2151bd9ecfa9da7ad7da86c82171e86b4e4fd13af",
+      "bytes": 116788
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20640",
+      "sha256": "908dc1248c683c8a5d7121c0fc0b4d1194cfdc65db6c199ce2d5a233b95067b9",
+      "bytes": 119072
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20660",
+      "sha256": "47829e462a357368950e4222a16a072bf6a320b583137b894f2fed859d67af50",
+      "bytes": 119984
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20680",
+      "sha256": "b0906faf7d63a6900f8a31857f81bf94d86846c36b61f57fee08d77df698a1da",
+      "bytes": 118851
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20700",
+      "sha256": "fdd1bb7aede5117a6b951a8f36a2ed7b6fa403e66a9c73760821a5b6330ab95b",
+      "bytes": 113344
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20720",
+      "sha256": "42807875b6ce3c42600110a666819282014bb536829b8a2b22204d094437dd8a",
+      "bytes": 117206
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20740",
+      "sha256": "91b98738c99251c1aca7767ecb637ac5085dd7cb3a7960861068f51d38424faa",
+      "bytes": 115487
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20760",
+      "sha256": "c5fa5a605ca7672f39ef35a085aff5988d6689019717fd6f2068b93f5b45df36",
+      "bytes": 110495
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20780",
+      "sha256": "40ce604491fda86c913688db9bc46b43c74ebc707ad85c3476f925fc2cbc88bb",
+      "bytes": 105316
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20800",
+      "sha256": "d8cc80da26af95d3715a25217bb29df17d3ad55f0f5d00ac42c2e6bed6cd997a",
+      "bytes": 127135
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20820",
+      "sha256": "e7c273dfac5ddef696a80655a0364de6370333bb8ab1193f44aa37e49815a2dc",
+      "bytes": 91654
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20840",
+      "sha256": "a7b6b4f6a884429912a6426b26f1070f691ea30b6b3da1ca1708ed66b94d7b97",
+      "bytes": 117986
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20860",
+      "sha256": "4633321c28c860ef0105765ea3d94b689d52283341aaf914a97ba66096224558",
+      "bytes": 114455
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20880",
+      "sha256": "5532fa21e6da80cb25f63c125b141aacc9a7764956211b1fbe5c85414be1e8ba",
+      "bytes": 119086
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20900",
+      "sha256": "3ebd8d3405d5c149c66caf4f6eb1af8a23ccef96c92a4a15c80dc01c341b0526",
+      "bytes": 128042
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20920",
+      "sha256": "ef5bee936cf495dfedab9f79791356e6f22f0183ad517ea8154ba11ffd6e5c09",
+      "bytes": 128177
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20940",
+      "sha256": "dc144a12811d63a6001c0b7f2a211630ed1e1cfcf993fc81d2a4f1935b585b9c",
+      "bytes": 112277
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20960",
+      "sha256": "dd3a91fdb4b5b1a0ccdbb950b0c381256fbcf03f87802c1c4dba53a8cad3b1c7",
+      "bytes": 105718
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=20980",
+      "sha256": "9b34fa8b58f05627190b9d76a4633acd251f9882b609a61928254f56166f0a31",
+      "bytes": 135527
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21000",
+      "sha256": "c16b22f5dd2b89c826f6a7c376781c5403e7dd413f217d57c8f17f02b1b94fe6",
+      "bytes": 108183
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21020",
+      "sha256": "b09f13e1332be939544c7a4f86c970cf6b95b987e49be0bb3fc9c38f47774803",
+      "bytes": 121771
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21040",
+      "sha256": "c7ef450e9060ab022b23401d8321307b5b367b99afceaa3e58cb2eb0c45a59c3",
+      "bytes": 115508
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21060",
+      "sha256": "c8b357419d4f5620a135bef247b7a9173f43a63f23a7e729f5ace866cc19bb06",
+      "bytes": 119694
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21080",
+      "sha256": "6ff194672a4b70c63d2791251cac181392a20dce6d8d47b07701389aa7c8949d",
+      "bytes": 128321
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21100",
+      "sha256": "74b2c15817b3bb905d8e18f5cf845d95c0e16fd102ddd016322acad8b580183d",
+      "bytes": 108980
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21120",
+      "sha256": "2d65cf82b26c888ef8600cc2fb7825046f9c4de317c6ab32e469aebfa2026819",
+      "bytes": 120415
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21140",
+      "sha256": "cd928fb896aac4c1123c3b0a2ec09391687f286e91f80bc5c9e1a7fb3d0e434e",
+      "bytes": 110987
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21160",
+      "sha256": "43b330687fcd8d41ffb1acef6eed0ea6b35ff6ee660321286f36c059e1fe7213",
+      "bytes": 120863
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21180",
+      "sha256": "89dd47937f987267a2b5254448e1acfd8d9f25f66c1fc767cad7f95e39b45fd3",
+      "bytes": 108859
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21200",
+      "sha256": "393c36b9f7e884daf42adec1e853b235b2ffa4386ef589c16e3b60778d0fede3",
+      "bytes": 123318
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21220",
+      "sha256": "54a9cebecdab10c4508f1595d6e092a15e20d07ae9e87fa2d10b29e1a6572ae4",
+      "bytes": 126955
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21240",
+      "sha256": "34b5268a4fa27e63b804e349e036201b40273d309737b2fd8158e51499eef8c9",
+      "bytes": 123163
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21260",
+      "sha256": "644297663fb89fcb5c3dfc469c871fa409d7df0d5a19d1947b5c4bc03a11a50b",
+      "bytes": 111273
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21280",
+      "sha256": "f78f488b4ec5e8023074cfd344c2144deb6e60d057b0be1411a2bbfa1bd8bbee",
+      "bytes": 113003
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21300",
+      "sha256": "afb55d99757012208faa13172e7c5122824011426387b2631937c2216a2ade35",
+      "bytes": 111046
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21320",
+      "sha256": "c4fd0ffb8edac7c46f040752e8db6554f5cdff86674ef76fa6fee155612dde5b",
+      "bytes": 120471
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21340",
+      "sha256": "0449e329f2e7f71e3a4c62197b7ad920c8c33017396c57648beb4f8c30491c90",
+      "bytes": 116710
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21360",
+      "sha256": "c6f09339d9bc0118e726b7d073203a6218df0d2d02931ad1a19c920904b9c625",
+      "bytes": 119919
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21380",
+      "sha256": "4a29ed39e10b5bac9d2d42b333d80972f663afdb411c86b3a7fcec5ea2860613",
+      "bytes": 116877
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21400",
+      "sha256": "bfd7d6ee776c9dae7b4a95e4df173f67ba24b701de6453a2fa0957b6e9d12403",
+      "bytes": 119537
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21420",
+      "sha256": "b3f6cad0fa68045e7923a4c629eaa806de5cdb69a7d7143c7f9189cad32fd679",
+      "bytes": 113921
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21440",
+      "sha256": "9175da6291d9d4c28d014ff270fa83791e568ea3d6fc35e08710870032dd1fe9",
+      "bytes": 107847
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21460",
+      "sha256": "eda1a7c2252f5074c606fe96b4186383775fb20686c1fff5453be7be3199a4d4",
+      "bytes": 114569
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21480",
+      "sha256": "4af36723b9dc9873a288cab6c8977a9a34277110868857d5aac3fa97ee52b4f9",
+      "bytes": 120553
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21500",
+      "sha256": "239c928511a3ee30357b1b561cbd7d63605a702765000c8d20879dea472ed4fc",
+      "bytes": 115742
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21520",
+      "sha256": "c20e8c1d78b2aa67ef993b7bb3bba2d1ff3318be9a944a7925385a95352d9fa3",
+      "bytes": 110961
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21540",
+      "sha256": "b9e0645e8ff0274b0819bfc89485d8f933086d0def15d45b3e847a44cf91566d",
+      "bytes": 121487
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21560",
+      "sha256": "bac77a37399c8c7b9e2442bc186b3f109c46a6fbe375594a67434b394006d620",
+      "bytes": 114524
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21580",
+      "sha256": "85b52f96f7fd035f0bd5911eaa279228ea2db0d434f8b5715339a5e7addefc59",
+      "bytes": 114810
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21600",
+      "sha256": "1658e300453bbb46ed0546d8715ae23f9c15f6035df3b1116f1dcfd3ac7c83d9",
+      "bytes": 119991
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21620",
+      "sha256": "b268f1fcfaa3af4e2d108813fa449551b3d8692c49b61ad18779988053d97b59",
+      "bytes": 122427
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21640",
+      "sha256": "7dfbbc69f7cd91848f11b67047b4b8920b4ff1eb0b020e8f6a1012f7977363ec",
+      "bytes": 108982
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21660",
+      "sha256": "74a60f6e715882217e58096a34070be32ef45d7a93b718642a72919d98041f6b",
+      "bytes": 121299
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21680",
+      "sha256": "91f156f6ab6eb44c09c4395303fc322630c542cd1cd93572477b22fa2dc619c0",
+      "bytes": 118648
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21700",
+      "sha256": "11c91a70b8b5930728dadb9b2927297b432e9fa88dd74b62bfc104bd2bec2bba",
+      "bytes": 120856
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21720",
+      "sha256": "19bd7953f6d503b2e314d321429490a3369bd6c1194a1e7482b73918e1072863",
+      "bytes": 117777
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21740",
+      "sha256": "c0dc9285b05553b6a77409935754a3a4e01d456f6981b7eb000363a926141a2a",
+      "bytes": 117048
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21760",
+      "sha256": "01986167bdaa3fd7019acfe38c76980ebca38adb2cbbb27e6be0eeec87521acb",
+      "bytes": 105458
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21780",
+      "sha256": "d32cffadec3727a567be92115b5ddeb24a398b09a609f3bac0448c455897cd16",
+      "bytes": 116700
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21800",
+      "sha256": "886d6e40473be3bbef0cc66680dc5093de6afddb3454f6cf162b2b33c2d8a2fe",
+      "bytes": 109302
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21820",
+      "sha256": "7ae5d58f0562f324489afe11bf2273406d7ff01a4ef006a906c292e4506ec173",
+      "bytes": 110765
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21840",
+      "sha256": "11fa1e31c3f363eefe454ed28618e95b4d20010e5cb223fcf4c233791ed69569",
+      "bytes": 123682
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21860",
+      "sha256": "90a216e0b7b71fa5c03c27673198cae770241d923eff77dead3abe3e6177b5c8",
+      "bytes": 123458
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21880",
+      "sha256": "0df29c74c9c7e014fa55af8f86d0221dee87aa77080e82cdf8621899788c21ce",
+      "bytes": 114336
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21900",
+      "sha256": "faa2a8aa08f91bae623a3fe5d1d9a7835401f1e8a9153145eb192fd1360d1737",
+      "bytes": 114575
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21920",
+      "sha256": "03d32e4e1ee9745863f73a7fcf65f01b8b82310b4e957e6990f1128055ffd55f",
+      "bytes": 116603
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21940",
+      "sha256": "fc40b5c9d689f7dada73935b53ca8e754bd3bd527df91915fef0277a13a32b3a",
+      "bytes": 128619
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21960",
+      "sha256": "f0a8890cdb03a8be18f290a51f9ef9823701eab7660521066dc975d1f322ff66",
+      "bytes": 113823
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=21980",
+      "sha256": "609c690ba4359d20a7ce832145d4ab82599e6d4ad369eaa376bc674f2c95db95",
+      "bytes": 117811
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22000",
+      "sha256": "7fcd5db23ddc14605cafdd0ce1f09032993d4c18607dc66b18ecd98cb81f3432",
+      "bytes": 108225
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22020",
+      "sha256": "43f84168d76e5047af9aecee9003805fb7d6fab13f1c048431846b2e0e7ae197",
+      "bytes": 115381
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22040",
+      "sha256": "5ee7e352d49e4d00e92eaf045a93f67c89ed8232b9630f3b94c16f62a0023cd2",
+      "bytes": 120093
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22060",
+      "sha256": "111b131dd701d3d72ae8b206c36b4f71d06c610abc4298ebc0e7e9649ec81e50",
+      "bytes": 122107
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22080",
+      "sha256": "50a4b228e4c2cdaa9128f38c6e301cd636bf29a10541a8666b9a6eb5f47e89dd",
+      "bytes": 108824
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22100",
+      "sha256": "fc230c99feade94cd05e8a689814e89db6702e6afeedad5bf8f6d335d4aedb78",
+      "bytes": 117153
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22120",
+      "sha256": "1676c1cbb419e5e48e0a7304954659d747e362020c1c0449f2406abdb4668d10",
+      "bytes": 104712
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22140",
+      "sha256": "87bbdcdb7ee6263505db3221bbf1dff19a3494e473f91f5bf0f4fa63b68a2579",
+      "bytes": 120781
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22160",
+      "sha256": "db82f9a8d2bf9fba37b1c08c891164d3297f9f5a73460eda312012327d02e0fe",
+      "bytes": 121891
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22180",
+      "sha256": "4f52df91199f00ead691ee8bcf224678286cfd0fedd5af28da8a4e4348974826",
+      "bytes": 116589
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22200",
+      "sha256": "3871a8a030ff2a7a3d31b5bfcb0261112416d0269b7dd2f05ba08fb1a9d09430",
+      "bytes": 111084
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22220",
+      "sha256": "87076fb914733ce070e24cf89b383d9e112749ed60bb6ac2a28225eedea3aa77",
+      "bytes": 115324
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22240",
+      "sha256": "0677be7ed8c073b98a0959e3998a9b53c137450127a41dc113f557af4748c3c3",
+      "bytes": 117816
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22260",
+      "sha256": "59433a66bb188a4a607dcc2a91e16c7a4e667dd8a655cffae2f44ce9c5ae2fca",
+      "bytes": 121426
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22280",
+      "sha256": "d3affdbbdcae2f571f10732084a68d4033954c0009152298caa385596f597635",
+      "bytes": 111661
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22300",
+      "sha256": "b4af13aaeac7781e0c6cd01fca09d24975be6092cf1362f1213072142408e300",
+      "bytes": 110724
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22320",
+      "sha256": "c9518aca8376eab2bf76f9d5aa2e0c81fd68e7b61e0ad6f91bbe49fbaacbd33e",
+      "bytes": 123646
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22340",
+      "sha256": "64a7dadda4518d0c7921614aae8301f3f72f376fd7e6843106cfeb458f58adfd",
+      "bytes": 118523
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22360",
+      "sha256": "1aaef3f331d158c37e0744768283cf4c1e48c7dcd97e1f3a2a8bf0c64c50545e",
+      "bytes": 121388
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22380",
+      "sha256": "aa8fd4dbbbfbfeee2a7bc56ba90a15c1fd9c6eb1f5a9c763ebab3916d75a599a",
+      "bytes": 121034
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22400",
+      "sha256": "fe43cc4d8bb0f20d4d4564d2b9993ee7ec13b9e8fe56fab9b3fc1543f61433ab",
+      "bytes": 119797
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22420",
+      "sha256": "b01524582989a7b8bb6389ec0a82c9e5fa49eb1af392d855e477bb27d2e3b3a9",
+      "bytes": 108466
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22440",
+      "sha256": "6268ab9295c06ea69d0f477054c00f191b708899c5370485922f155cb5d55e5d",
+      "bytes": 121119
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22460",
+      "sha256": "a9473bda9f84d2587f291f202ea00b025f41a39e6aadda6188d6c47f78f23b11",
+      "bytes": 107817
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22480",
+      "sha256": "6ea76e504e42767a47652b65c363f1e5687a2dcfe85225fc1ad0c72345839317",
+      "bytes": 125254
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22500",
+      "sha256": "4f8facaaf61159415a81b104a2103df71f36e265eb0567aa436d1846bb3f9380",
+      "bytes": 110282
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22520",
+      "sha256": "1791a333539ab56fc2e7831ebee830cd9b950d8172ebbb8f734a5821ec2f487e",
+      "bytes": 106830
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22540",
+      "sha256": "e40225b6259918c23b463f106be3aea99ed5eb782dae1ae7db4eeff7ec71820c",
+      "bytes": 82613
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22560",
+      "sha256": "d747fba0c0d80e565e7bc751bd6480ff351a09e7e8288f894f516ec9c941d888",
+      "bytes": 123353
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22580",
+      "sha256": "8289f48079f23a4fa13e3786c737f069e8fda7790749aae9b8d19753e2863e58",
+      "bytes": 107230
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22600",
+      "sha256": "57861256ee8947509936f391a9fa4a2b762729791afa38e822dde462700f4bd6",
+      "bytes": 109408
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22620",
+      "sha256": "7c72e687df8438219fc00faf9ccae9567be56d560e14a35c5f7a633a13c21025",
+      "bytes": 124259
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22640",
+      "sha256": "a5cbf05bb45a1156727080ed3db607c4c47930deaae53b003a9e1c9d065e9eac",
+      "bytes": 112685
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22660",
+      "sha256": "26e6497739eb5cfd565c0574e701de7067ebc518af92e44b6e6283626dbcbfc3",
+      "bytes": 110141
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22680",
+      "sha256": "71064e74d3c42295428f823b47fd72c35490233fa51ef4fa7274b42fef1ed8c7",
+      "bytes": 112682
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22700",
+      "sha256": "39487308324a117fe3edb33371ef524935eb70adc739d819b363928dbbf3d779",
+      "bytes": 119785
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22720",
+      "sha256": "863f467cd1b0412019ea71cebffc53f4817469492a7450ef3e797b0141e14d04",
+      "bytes": 111659
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22740",
+      "sha256": "40e99215694b0764b4664b5481142c895c624ee2f960e9632faa8edfd30c9429",
+      "bytes": 110750
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22760",
+      "sha256": "c3c0899ed94d436144b4e59e3223d7fb55858b90ee09f0469ef8d7cce688c6d9",
+      "bytes": 108690
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22780",
+      "sha256": "f5971aaa71b92cd4b52e6817e6305aebd1f5619b2fab3870e197e2754effe01b",
+      "bytes": 113726
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22800",
+      "sha256": "9017971e81ae3fba6abb64d2427f9dc15735baf849b6751e505e3fa18e8184f2",
+      "bytes": 108690
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22820",
+      "sha256": "650374fc7b2a3089fa9241b01248167bfe46b3b9a902d0c5b0cee8e3c4266c37",
+      "bytes": 122194
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22840",
+      "sha256": "3451c5a4de9825ee2365a6f7e6f8fe9f596060c88ef8c252ae421571b3d9a6c6",
+      "bytes": 118171
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22860",
+      "sha256": "35bbbca6a097fd5d3668977d2a833a3d1e6a69c1fffe8d85f9ac0e19d78b71c9",
+      "bytes": 118245
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22880",
+      "sha256": "420120966805fe28dd54205fe28cb60bf64d3653e3eab73c75433ef323322e4f",
+      "bytes": 119604
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22900",
+      "sha256": "faa525288143133507b6f61c085bb29c8fd6cf6615f3ae032cd3b333cce2c52f",
+      "bytes": 108484
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22920",
+      "sha256": "22d744dab3e43ce8139778292e6ea93170f86f05c75a0e950fcd8621a55ab190",
+      "bytes": 98486
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22940",
+      "sha256": "2dfcde2d6cfb1d2cc94df2d6adccf9cb0702447f7b298acd8391b7e7248169d5",
+      "bytes": 124435
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22960",
+      "sha256": "33706d0127ce1bb0352a9eedc04eef889d4d57c3869ec6b424a3f56f118fa173",
+      "bytes": 113134
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=22980",
+      "sha256": "4b308c21e5d4c3e4320b42ecd87ad9fc8e68bd5fff2eefbe3df73288be8b021f",
+      "bytes": 104387
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23000",
+      "sha256": "1e6986fd245d725dabbaa9a1a243be754b443e15d99ce1fcbea31f9741a721c4",
+      "bytes": 116756
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23020",
+      "sha256": "19efab55c36b54c78b3b76cf151478be59bb2eb45f0541138a1b551e86f27d4a",
+      "bytes": 114176
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23040",
+      "sha256": "c05ca5b2d6b8930603d66d0548d9a227e151a86fe71f03229a57d6be1400bd44",
+      "bytes": 111940
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23060",
+      "sha256": "acc43aa5ca4f581e663565efa4ce6afa6e9d70ae9502d65e9a69e87e396e4198",
+      "bytes": 119394
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23080",
+      "sha256": "0d4502f45d343e8bad151bd424e3e50c6704313d0c3611f6e2b8a3c4db177a8e",
+      "bytes": 90213
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23100",
+      "sha256": "484701427a750dc26ab50d65f2a7af09e3adb39e1d1c788bc3847102d1412bf4",
+      "bytes": 116836
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23120",
+      "sha256": "1325aa8cde332459d591009b5be951d1ea3355ec1c215a3b0c65e3021be4590c",
+      "bytes": 115968
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23140",
+      "sha256": "f1334eaf2e5f312d6e3e8fc7b97c9c1d473e3b39603cd40e613699c2565a1d44",
+      "bytes": 111390
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23160",
+      "sha256": "0d04a764b1c0e60f25188829249314bad03ab3e924fecf96aa2b942b82f066b4",
+      "bytes": 120275
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23180",
+      "sha256": "4aae3321543efde0f3a8fabae39eeeef4f635fe8be43a917bcd5abd5025d685e",
+      "bytes": 110166
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23200",
+      "sha256": "322b786ac5efdf13d41e1001e817721ed3ee6b0695257be860c3cbe9f64d89b1",
+      "bytes": 119088
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23220",
+      "sha256": "17ba3e3cb648436d00230d8359dee32dcba27365dc93eedc40929e420554ff4e",
+      "bytes": 117190
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23240",
+      "sha256": "32cb3562be92ba7cfc20f225847b3f82902e9659d0bc5c26b754df7dc1ee363e",
+      "bytes": 113715
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23260",
+      "sha256": "eec648a21978cd11558a0499910888758abfbec7ac1e21ce4aeca92eb24135be",
+      "bytes": 109569
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23280",
+      "sha256": "146c2729c7770dae96257f4aceabd9e3da9a5a8937ca0d1777c4deee862031b5",
+      "bytes": 122746
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23300",
+      "sha256": "1f879e93fac91de8a5a2137c756fc41a564d71774ee029fe5a3512e6417cf2b4",
+      "bytes": 112615
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23320",
+      "sha256": "110eb8e71a0c076ca1f8a7470c9e005b669055b0d0953573fbc3f666ec3fdaf5",
+      "bytes": 115584
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23340",
+      "sha256": "1aef3d857dd4b2fc76a1aec48e302fd93812012cff4d1ed54172c0f5f96cfd03",
+      "bytes": 119823
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23360",
+      "sha256": "0c602e98aef30443076442cf0861720bf0b697069f45ba463617fdbede96ca84",
+      "bytes": 123217
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23380",
+      "sha256": "47f2fdd4efa31e61600c18dca3725fd40e1c52d48464406f332790b17b0a3f8c",
+      "bytes": 121921
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23400",
+      "sha256": "4b641625232665328335919ac8e31d63641a740745b8082f09b001adf34185db",
+      "bytes": 104454
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23420",
+      "sha256": "e353a50d39fbaf2f36fe209abf8f7340a0df37c7201b9e6f7bf9bcdfd86c150c",
+      "bytes": 115238
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23440",
+      "sha256": "afef2e38716fdf91a14d5328928b0d3943e4cc0c4cdd9b2fd91ac3ddba2aa544",
+      "bytes": 123899
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23460",
+      "sha256": "5d5e53908d1ca329bd5ae399fa44a0245388476e6feb54416b01023b30fc9939",
+      "bytes": 112730
+    },
+    {
+      "url": "https://t.me/s/DtOperativno?before=23480",
+      "sha256": "09253719e06e07450f63785d41f87433156dcd8a9701d84908545b976a6a0add",
+      "bytes": 105635
+    }
+  ],
+  "files": {
+    "observations.jsonl": {
+      "sha256": "371d80c420eb25fd7132487b6d23736f407ee84a93edfc042f1be3b2096ef524",
+      "rows": 3290
+    }
+  },
+  "traffic_observations": 163,
+  "traffic_days": 106,
+  "edited_traffic_observations": 6,
+  "timezone": "Europe/Moscow",
+  "period": [
+    "2025-01-01",
+    "2025-10-31"
+  ],
+  "actual_period": [
+    "2025-01-01",
+    "2025-10-31"
+  ],
+  "data_rights": "Public factual numbers, timestamps and classification flags only; no article text or raw Telegram HTML redistributed. No separate open-data licence located.",
+  "limitations": [
+    "Selective publication, not continuous hourly sensor coverage.",
+    "Citywide measurements, no route-specific speeds.",
+    "News flags count mentions, not unique incidents or active closures.",
+    "Edited posts excluded from features; original unedited vintage unproven.",
+    "Observation timestamp approximated by publication timestamp.",
+    "Missing publication never implies zero congestion or no incident."
+  ]
+}

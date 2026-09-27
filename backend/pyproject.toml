@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tramflow-backend"
+version = "0.1.0"
+description = "Passenger-flow forecasting API for Moscow tram dispatchers"
+requires-python = ">=3.13"
+dependencies = [
+  "alembic==1.20.0",
+  "asyncpg==0.31.0",
+  "fastapi==0.141.1",
+  # The Overpass client runs in the production image, which builds --no-dev.
+  "httpx>=0.28.1,<0.29",
+  "pydantic-settings==2.15.0",
+  # [asyncio] rather than plain: it is what pulls greenlet, which async SQLAlchemy needs
+  # at the first await. The unconditional dependency is gated on platform_machine being
+  # one of aarch64, ppc64le, x86_64, amd64, AMD64, win32 or WIN32 -- macOS on Apple
+  # Silicon reports arm64 and matches none of them.
+  "sqlalchemy[asyncio]==2.0.54",
+  "uvicorn[standard]==0.53.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "mypy>=1.18,<2",
+  "pytest>=9.0,<10",
+  "pytest-asyncio>=1.2,<2",
+  "ruff>=0.14,<0.15",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+# A warning fails the run. The two exceptions below are third-party and nothing in
+# this repository can act on them; anything else is ours to fix, and an allowlist of
+# two is the only shape that keeps that true. A blanket ignore would hide the next
+# deprecation an upgrade introduces, which is the one worth seeing.
+filterwarnings = [
+    "error",
+    # starlette 1.6 asks for httpx2 while httpx is pinned <0.29. Raised at import of
+    # fastapi.testclient, so every test that builds a TestClient sees it.
+    "ignore:Using `httpx` with `starlette.testclient` is deprecated",
+    # Raised inside starlette's own testclient module.
+    "ignore:The anyio.abc.BlockingPortal alias is deprecated:DeprecationWarning",
+]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "ASYNC"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = ["asyncpg.*"]
+ignore_missing_imports = true

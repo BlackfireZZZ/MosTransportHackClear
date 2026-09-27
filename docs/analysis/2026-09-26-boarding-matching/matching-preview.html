@@ -1,0 +1,1938 @@
+<!doctype html>
+<html lang="en" data-visualize-standalone>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Tram Anchor Matching</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+</head>
+<body>
+<iframe id="codex-visualization" sandbox="allow-scripts" referrerpolicy="no-referrer" title="Tram Anchor Matching" data-srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot; data-visualize-standalone&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;Tram Anchor Matching&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(
+    --background,
+    var(--color-background-primary, light-dark(rgb(255 255 255), rgb(24 24 24)))
+  ) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --color-background-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --card: color-mix(in oklab, var(--foreground) 5%, var(--background));
+  --card-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --popover: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255), rgb(45 45 45))
+  );
+  --popover-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --primary: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --primary-foreground: var(
+    --color-text-inverse,
+    light-dark(rgb(255 255 255), rgb(13 13 13))
+  );
+  --secondary: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%))
+  );
+  --secondary-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: var(
+    --color-text-secondary,
+    light-dark(rgb(26 28 31 / 49.4%), rgb(255 255 255 / 49.8%))
+  );
+  --accent: var(
+    --color-background-info,
+    light-dark(rgb(229 242 255), rgb(13 39 63))
+  );
+  --accent-foreground: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --destructive: var(
+    --color-text-warning,
+    light-dark(rgb(226 85 7), rgb(255 133 73))
+  );
+  --border: var(
+    --color-border-secondary,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+  --input: var(
+    --color-border-primary,
+    light-dark(
+      rgb(26 28 31 / 11.8%),
+      color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+    )
+  );
+  --ring: var(
+    --color-ring-primary,
+    light-dark(rgb(51 156 255), rgb(131 195 255 / 76%))
+  );
+  --font-size-base: var(--font-text-md-size, 14px);
+  --blue: light-dark(rgb(51 156 255), rgb(51 156 255));
+  --orange: light-dark(rgb(226 85 7), rgb(251 106 34));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+  --red: light-dark(rgb(224 46 42), rgb(255 103 100));
+  --purple: light-dark(rgb(146 79 247), rgb(173 123 249));
+  --yellow: light-dark(rgb(255 195 0), rgb(255 210 64));
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, &quot;Segoe UI&quot;, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --icon-size: 16px;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --corner-shape: round;
+  --radius: var(--border-radius-lg, 10px);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  /* Preserve MCP aliases for older inline renderers without creating :root cycles. */
+  --color-background-primary: var(
+    --background,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --color-text-primary: var(
+    --foreground,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --color-border-secondary: var(
+    --border,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+
+  margin: 0;
+  padding: var(--visualize-paint-gutter, 0px);
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans) !important;
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+.cursor-interaction {
+  cursor: var(--cursor-interaction, pointer);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: var(--cursor-interaction, pointer);
+  font-weight: var(--font-weight-medium, 500);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: var(--corner-shape);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+#widget &gt; :not(.card, .progress) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  margin-block: 6px;
+  border: 0;
+  background: var(--border);
+}
+
+.nav {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 4px;
+}
+
+.progress {
+  display: flex;
+  height: 8px;
+  margin-block: calc((var(--line-height-normal, 1.5em) - 8px) / 2);
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+}
+
+.progress-bar:only-child {
+  border-radius: var(--radius-full);
+}
+
+.progress-bar {
+  height: 100%;
+  flex-shrink: 0;
+  border: 0;
+  background: var(--viz-series-1);
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.nav-link,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn,
+.nav-link {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: var(--cursor-interaction, pointer);
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover,
+.nav-link:not(:disabled):not([aria-disabled=&quot;true&quot;]):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.nav-pills .nav-link {
+  min-width: 0;
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.nav-justified .nav-link {
+  flex: 1 1 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.nav-pills .nav-link.active {
+  color: var(--foreground);
+  background: var(--muted);
+}
+
+.btn:disabled,
+.nav-link:disabled,
+.nav-link[aria-disabled=&quot;true&quot;] {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: var(--corner-shape);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+  [aria-pressed=&quot;true&quot;],
+  [aria-selected=&quot;true&quot;],
+  .is-selected
+) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+@media (pointer: coarse) {
+  .btn,
+  .nav-link,
+  .form-control,
+  .form-select {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Keep small-screen WebKit from zooming when a text field receives focus. */
+  .form-control,
+  .form-select {
+    font-size: max(16px, var(--font-size-normal));
+  }
+
+  .form-control[type=&quot;file&quot;]::file-selector-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .form-control-color[type=&quot;color&quot;] {
+    width: 44px;
+    height: 44px;
+  }
+
+  .form-control:is(
+    [type=&quot;date&quot;],
+    [type=&quot;datetime-local&quot;],
+    [type=&quot;month&quot;],
+    [type=&quot;time&quot;],
+    [type=&quot;week&quot;]
+  ) {
+    min-width: 0;
+    max-width: 100%;
+    padding-block: 8px;
+  }
+
+  .form-check {
+    min-height: 44px;
+    padding-inline: 15px;
+  }
+
+  .form-check-input {
+    position: relative;
+  }
+
+  .form-check-input::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 44px;
+    height: 44px;
+    content: &quot;&quot;;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-check-label {
+    display: inline-flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+  }
+
+  .form-range {
+    height: 44px;
+    touch-action: pan-y;
+  }
+
+  .form-range::-webkit-slider-runnable-track {
+    height: 44px;
+  }
+
+  .form-range::-moz-range-track {
+    height: 44px;
+  }
+
+  .form-range::-webkit-slider-thumb {
+    margin-top: 12px;
+  }
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+/* Model-authored chart rules can otherwise stretch icons after these styles load. */
+svg.lucide {
+  display: block;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  flex: none;
+  margin: 0 !important;
+  stroke-width: 1.6;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type=&quot;application/json&quot; id=&quot;codex-visualization-widget-state&quot;&gt;__CODEX_VISUALIZATION_WIDGET_STATE__&lt;/script&gt;
+&lt;script&gt;(() =&gt; {
+  const root = document.documentElement;
+  const mediaQuery = globalThis.matchMedia(&quot;(prefers-color-scheme: dark)&quot;);
+  const apply = Reflect.apply;
+  const isArray = Array.isArray;
+  const hasOwn = Object.hasOwn;
+  const parentWindow = globalThis.parent;
+  const stringify = JSON.stringify;
+  const parse = JSON.parse;
+  const encode = TextEncoder.prototype.encode.bind(new TextEncoder());
+  const initialStateElement = document.getElementById(
+    &quot;codex-visualization-widget-state&quot;,
+  );
+  const initialGlobals = parse(initialStateElement?.textContent ?? &quot;{}&quot;);
+  initialStateElement?.remove();
+  /** @type {Record&lt;string, unknown&gt; | null} */
+  let state = initialGlobals.widgetState ?? null;
+  const statePersistence = initialGlobals.statePersistence ?? &quot;none&quot;;
+  let nextStateRequestId = 0;
+  /** @type {Map&lt;number, { resolve: () =&gt; void; reject: (error: Error) =&gt; void; timeout: ReturnType&lt;typeof globalThis.setTimeout&gt;; serializedState: string }&gt;} */
+  const pendingStateWrites = new Map();
+  const persistenceError = () =&gt;
+    Object.assign(
+      new Error(&quot;The host could not persist the widget state update&quot;),
+      {
+        code: -32000,
+        data: { code: &quot;widget_state_persistence_failed&quot;, retryable: false },
+      },
+    );
+  /**
+   * @param {object} prototype
+   * @param {string} property
+   */
+  const getPrototypeGetter = (prototype, property) =&gt; {
+    // oxlint-disable-next-line typescript/unbound-method -- invoked through captured Reflect.apply
+    const getter = Object.getOwnPropertyDescriptor(prototype, property)?.get;
+    if (getter == null) {
+      throw new Error(`Missing ${property} getter`);
+    }
+    return getter;
+  };
+  const getMessageData = getPrototypeGetter(MessageEvent.prototype, &quot;data&quot;);
+  const getMessagePorts = getPrototypeGetter(MessageEvent.prototype, &quot;ports&quot;);
+  const getMessageSource = getPrototypeGetter(MessageEvent.prototype, &quot;source&quot;);
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const addHostMessageListener = MessagePort.prototype.addEventListener;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const postHostMessage = MessagePort.prototype.postMessage;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const startHostPort = MessagePort.prototype.start;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const stopMessagePropagation = Event.prototype.stopImmediatePropagation;
+  /** @type {MessagePort | null} */
+  let hostPort = null;
+  const postToHost = (type, payload) =&gt; {
+    if (hostPort != null) {
+      apply(postHostMessage, hostPort, [{ type, ...payload }]);
+    }
+  };
+  const openExternal = ({ href }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;open-external&quot;, { href });
+    }
+  };
+  const sendFollowUpMessage = ({ context, prompt, title }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;follow-up&quot;, { context, prompt, title });
+    }
+    return Promise.resolve();
+  };
+  /**
+   * @param {Record&lt;string, unknown&gt; | ((previous: Record&lt;string, unknown&gt; | null) =&gt; Record&lt;string, unknown&gt;)} next
+   * @returns {Promise&lt;void&gt;}
+   */
+  const setWidgetState = async (next) =&gt; {
+    const nextState = typeof next === &quot;function&quot; ? next(state) : next;
+    if (
+      nextState == null ||
+      typeof nextState !== &quot;object&quot; ||
+      isArray(nextState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const inputState = stringify(
+      nextState,
+      (_key, /** @type {unknown} */ value) =&gt; {
+        if (
+          typeof value === &quot;undefined&quot; ||
+          typeof value === &quot;function&quot; ||
+          typeof value === &quot;symbol&quot; ||
+          (typeof value === &quot;number&quot; &amp;&amp; !Number.isFinite(value))
+        ) {
+          throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+        }
+        return value;
+      },
+    );
+    const parsedState = parse(inputState);
+    if (
+      parsedState == null ||
+      typeof parsedState !== &quot;object&quot; ||
+      isArray(parsedState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const storedState = {
+      modelContent: null,
+      privateContent: null,
+      ...parsedState,
+    };
+    const serializedState = stringify(storedState);
+    if (encode(serializedState).length &gt; 16 * 1024) {
+      throw new TypeError(
+        &quot;Widget state must be a JSON object of at most 16 KiB&quot;,
+      );
+    }
+    if (
+      hasOwn(storedState, &quot;imageIds&quot;) &amp;&amp;
+      (!isArray(storedState.imageIds) ||
+        storedState.imageIds.some(
+          (/** @type {unknown} */ id) =&gt; typeof id !== &quot;string&quot;,
+        ))
+    ) {
+      throw new TypeError(&quot;Widget state imageIds must be an array of strings&quot;);
+    }
+    if (storedState.imageIds?.length &gt; 0) {
+      throw Object.assign(
+        new TypeError(&quot;Visualization state does not support image attachments&quot;),
+        { code: -32602, data: { code: &quot;images_unsupported&quot; } },
+      );
+    }
+    state = storedState;
+    globalThis.openai.widgetState = state;
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: { widgetState: state } },
+      }),
+    );
+    if (statePersistence === &quot;none&quot;) {
+      throw persistenceError();
+    }
+    const id = ++nextStateRequestId;
+    return new Promise((resolve, reject) =&gt; {
+      const timeout = globalThis.setTimeout(() =&gt; {
+        pendingStateWrites.delete(id);
+        reject(persistenceError());
+      }, 30_000);
+      pendingStateWrites.set(id, { resolve, reject, timeout, serializedState });
+      postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+    });
+  };
+  const syncTheme = () =&gt; {
+    const theme = mediaQuery.matches ? &quot;dark&quot; : &quot;light&quot;;
+    root.dataset.theme = theme;
+    globalThis.openai = {
+      ...globalThis.openai,
+      openExternal,
+      sendFollowUpMessage,
+      setWidgetState,
+      theme,
+      visualizationStyleVariables: {},
+      visualizationTheme: theme,
+      widgetState: state,
+      statePersistence,
+      stateModelContext: &quot;none&quot;,
+    };
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: globalThis.openai },
+      }),
+    );
+  };
+  const sendHeight = () =&gt; {
+    postToHost(&quot;height&quot;, {
+      height: Math.ceil(
+        Math.max(
+          document.body.scrollHeight,
+          document.body.getBoundingClientRect().height,
+        ),
+      ),
+    });
+  };
+
+  globalThis.addEventListener(
+    &quot;message&quot;,
+    (event) =&gt; {
+      const data = apply(getMessageData, event, []);
+      const ports = apply(getMessagePorts, event, []);
+      const source = apply(getMessageSource, event, []);
+      if (
+        hostPort != null ||
+        source !== parentWindow ||
+        typeof data !== &quot;object&quot; ||
+        data?.type !== &quot;codex-visualization-initialize&quot; ||
+        !isArray(ports) ||
+        ports.length !== 1
+      ) {
+        return;
+      }
+      apply(stopMessagePropagation, event, []);
+      const nextHostPort = ports[0];
+      try {
+        apply(addHostMessageListener, nextHostPort, [
+          &quot;message&quot;,
+          (event) =&gt; {
+            const data = apply(getMessageData, event, []);
+            if (typeof data === &quot;object&quot; &amp;&amp; data?.type === &quot;measure&quot;) {
+              sendHeight();
+            } else if (
+              typeof data === &quot;object&quot; &amp;&amp;
+              data?.type === &quot;widget-state-result&quot;
+            ) {
+              /** @type {unknown} */
+              const id = data.id;
+              if (typeof id !== &quot;number&quot;) {
+                return;
+              }
+              const pending = pendingStateWrites.get(id);
+              if (pending != null) {
+                pendingStateWrites.delete(id);
+                globalThis.clearTimeout(pending.timeout);
+                if (data.ok === true) {
+                  pending.resolve();
+                } else {
+                  pending.reject(persistenceError());
+                }
+              }
+            }
+          },
+        ]);
+        apply(startHostPort, nextHostPort, []);
+      } catch {
+        return;
+      }
+      hostPort = nextHostPort;
+      for (const [id, { serializedState }] of pendingStateWrites) {
+        postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+      }
+      sendHeight();
+    },
+    { capture: true },
+  );
+  document.currentScript?.remove();
+  mediaQuery.addEventListener(&quot;change&quot;, syncTheme);
+  globalThis.addEventListener(&quot;click&quot;, (event) =&gt; {
+    if (event.defaultPrevented) {
+      return;
+    }
+    let element = null;
+    if (event.target instanceof globalThis.Element) {
+      element = event.target;
+    } else if (event.target instanceof globalThis.Node) {
+      element = event.target.parentElement;
+    }
+    const link = element?.closest(&quot;a[href]&quot;);
+    const href = link?.getAttribute(&quot;href&quot;);
+    if (href == null) {
+      return;
+    }
+    if (href.startsWith(&quot;#&quot;)) {
+      let id;
+      try {
+        id = decodeURIComponent(href.slice(1));
+      } catch {
+        return;
+      }
+      const target = id.length === 0 ? root : document.getElementById(id);
+      if (
+        target == null ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      event.preventDefault();
+      postToHost(&quot;scroll-to&quot;, {
+        top: target.getBoundingClientRect().top + globalThis.scrollY,
+      });
+      return;
+    }
+    event.preventDefault();
+    openExternal({ href });
+  });
+  new ResizeObserver(sendHeight).observe(document.body);
+  syncTheme();
+})();
+&lt;/script&gt;
+&lt;div id=&quot;anchor-match&quot;&gt;
+&lt;style&gt;
+#anchor-match{position:relative}#anchor-match .plot{display:block;width:100%}#anchor-match .plot text{fill:var(--foreground);font-size:12px}#anchor-match .legend{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}#anchor-match .legend button{font:inherit;background:transparent!important;color:var(--foreground)!important;border:0;padding:0;display:flex;gap:5px;align-items:center}#anchor-match .legend button[aria-pressed=false]{opacity:.4}#anchor-match .sw{width:22px;border-top:2px solid;display:inline-block}#anchor-match .summary{margin:8px 0}#anchor-match details{margin:14px 0}#anchor-match .tooltip{position:absolute;display:none;pointer-events:none;background:var(--popover);color:var(--popover-foreground);padding:8px;z-index:5;max-width:250px}#anchor-match .meta{overflow-wrap:anywhere}
+&lt;/style&gt;
+&lt;h2&gt;Сильные задают время — слабые проверяют остановки&lt;/h2&gt;
+&lt;div class=&quot;text-small&quot;&gt;Реальные оплаты · 15 мая 2025 · предполагаемые рейсы&lt;/div&gt;
+&lt;div class=&quot;viz-controls&quot;&gt;&lt;label class=&quot;form-label&quot;&gt;Маршрут&lt;select class=&quot;form-select&quot; id=&quot;am-route&quot;&gt;&lt;option&gt;17&lt;/option&gt;&lt;option&gt;12&lt;/option&gt;&lt;option&gt;11&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;&lt;label class=&quot;form-label&quot;&gt;Допуск слабого совпадения&lt;select class=&quot;form-select&quot; id=&quot;am-tolerance&quot;&gt;&lt;option value=&quot;15&quot;&gt;±15 секунд&lt;/option&gt;&lt;option value=&quot;30&quot;&gt;±30 секунд&lt;/option&gt;&lt;option value=&quot;45&quot;&gt;±45 секунд&lt;/option&gt;&lt;option value=&quot;60&quot; selected&gt;±60 секунд&lt;/option&gt;&lt;option value=&quot;90&quot;&gt;±90 секунд&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;&lt;label class=&quot;form-label&quot;&gt;Участок&lt;select class=&quot;form-select&quot; id=&quot;am-section&quot;&gt;&lt;option value=&quot;all&quot;&gt;Весь путь и продолжение записей&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;meta text-small&quot; id=&quot;am-meta&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;legend&quot;&gt;&lt;button type=&quot;button&quot; data-key=&quot;strong&quot; aria-pressed=&quot;true&quot;&gt;&lt;span class=&quot;sw&quot; style=&quot;border-color:var(--red)&quot;&gt;&lt;/span&gt;Сильные: сдвигают часы&lt;/button&gt;&lt;button type=&quot;button&quot; data-key=&quot;schedule&quot; aria-pressed=&quot;true&quot;&gt;&lt;span class=&quot;sw&quot; style=&quot;border-color:var(--blue);border-top-style:dashed&quot;&gt;&lt;/span&gt;Расписание от сильных&lt;/button&gt;&lt;button type=&quot;button&quot; data-key=&quot;weak&quot; aria-pressed=&quot;true&quot;&gt;&lt;span class=&quot;sw&quot; style=&quot;border-color:var(--orange);border-top-style:dotted&quot;&gt;&lt;/span&gt;Слабые: без сдвига&lt;/button&gt;&lt;/div&gt;
+&lt;div id=&quot;am-bars&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;summary tabular-nums&quot; id=&quot;am-summary&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+&lt;h3&gt;Пары «ожидаемая остановка ↔ слабый всплеск»&lt;/h3&gt;
+&lt;div id=&quot;am-pairs&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text-small&quot;&gt;Квадрат — ожидаемое время · круг — слабый кандидат · соединение — выбранная пара · × — кандидат без пары&lt;/div&gt;
+&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;&lt;table class=&quot;table table-sm tabular-nums&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Остановка&lt;/th&gt;&lt;th&gt;От какого сильного&lt;/th&gt;&lt;th&gt;Ожидалось&lt;/th&gt;&lt;th&gt;Слабый всплеск&lt;/th&gt;&lt;th&gt;Δ, с&lt;/th&gt;&lt;th&gt;Оплаты / валидаторы за 10 с&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody id=&quot;am-table&quot;&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;details&gt;&lt;summary&gt;Сильные ориентиры и коррекции расписания&lt;/summary&gt;&lt;div class=&quot;table-responsive&quot;&gt;&lt;table class=&quot;table table-sm tabular-nums&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Ориентир&lt;/th&gt;&lt;th&gt;Гипотеза остановки&lt;/th&gt;&lt;th&gt;Факт&lt;/th&gt;&lt;th&gt;Сдвиг относительно расписания, с&lt;/th&gt;&lt;th&gt;Коррекция относительно предыдущего ориентира, с&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody id=&quot;am-anchors&quot;&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/details&gt;
+&lt;div class=&quot;text-small&quot;&gt;Максимум пар внутри допуска; при равенстве — минимальная сумма |Δ|. Порядок, уникальность пар и непересечение посадочных всплесков сохраняются. Слабые отметки не меняют часы. Оплата на конечной не требуется.&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script id=&quot;am-data&quot; type=&quot;application/json&quot;&gt;{&quot;17&quot;:{&quot;stops&quot;:[{&quot;stop&quot;:0,&quot;name&quot;:&quot;Останкино&quot;,&quot;expected&quot;:28303.0,&quot;scheduled&quot;:28380,&quot;anchor&quot;:{&quot;stop&quot;:0,&quot;time&quot;:28303.0,&quot;shift&quot;:-77.0,&quot;ordinal&quot;:1},&quot;left_time&quot;:-1,&quot;right_time&quot;:28422.0,&quot;source_anchor&quot;:null},{&quot;stop&quot;:1,&quot;name&quot;:&quot;Останкино&quot;,&quot;expected&quot;:28363.0,&quot;scheduled&quot;:28440,&quot;anchor&quot;:null,&quot;left_time&quot;:28303.0,&quot;right_time&quot;:28422.0,&quot;source_anchor&quot;:1},{&quot;stop&quot;:2,&quot;name&quot;:&quot;Аргуновская улица&quot;,&quot;expected&quot;:28423.0,&quot;scheduled&quot;:28500,&quot;anchor&quot;:{&quot;stop&quot;:2,&quot;time&quot;:28422.0,&quot;shift&quot;:-78.0,&quot;ordinal&quot;:2},&quot;left_time&quot;:28303.0,&quot;right_time&quot;:28491.0,&quot;source_anchor&quot;:1},{&quot;stop&quot;:3,&quot;name&quot;:&quot;Улица Цандера&quot;,&quot;expected&quot;:28482.0,&quot;scheduled&quot;:28560,&quot;anchor&quot;:{&quot;stop&quot;:3,&quot;time&quot;:28491.0,&quot;shift&quot;:-69.0,&quot;ordinal&quot;:3},&quot;left_time&quot;:28422.0,&quot;right_time&quot;:28595.0,&quot;source_anchor&quot;:2},{&quot;stop&quot;:4,&quot;name&quot;:&quot;ВДНХ (южная)&quot;,&quot;expected&quot;:28551.0,&quot;scheduled&quot;:28620,&quot;anchor&quot;:null,&quot;left_time&quot;:28491.0,&quot;right_time&quot;:28595.0,&quot;source_anchor&quot;:3},{&quot;stop&quot;:5,&quot;name&quot;:&quot;Метро «ВДНХ»&quot;,&quot;expected&quot;:28611.0,&quot;scheduled&quot;:28680,&quot;anchor&quot;:{&quot;stop&quot;:5,&quot;time&quot;:28595.0,&quot;shift&quot;:-85.0,&quot;ordinal&quot;:4},&quot;left_time&quot;:28491.0,&quot;right_time&quot;:28820.0,&quot;source_anchor&quot;:3},{&quot;stop&quot;:6,&quot;name&quot;:&quot;ВДНХ (северная)&quot;,&quot;expected&quot;:28715.0,&quot;scheduled&quot;:28800,&quot;anchor&quot;:null,&quot;left_time&quot;:28595.0,&quot;right_time&quot;:28820.0,&quot;source_anchor&quot;:4},{&quot;stop&quot;:7,&quot;name&quot;:&quot;Улица Сергея Эйзенштейна&quot;,&quot;expected&quot;:28835.0,&quot;scheduled&quot;:28920,&quot;anchor&quot;:{&quot;stop&quot;:7,&quot;time&quot;:28820.0,&quot;shift&quot;:-100.0,&quot;ordinal&quot;:5},&quot;left_time&quot;:28595.0,&quot;right_time&quot;:29121.0,&quot;source_anchor&quot;:4},{&quot;stop&quot;:8,&quot;name&quot;:&quot;Сельскохозяйственная улица&quot;,&quot;expected&quot;:28880.0,&quot;scheduled&quot;:28980,&quot;anchor&quot;:null,&quot;left_time&quot;:28820.0,&quot;right_time&quot;:29121.0,&quot;source_anchor&quot;:5},{&quot;stop&quot;:9,&quot;name&quot;:&quot;Улица Докукина&quot;,&quot;expected&quot;:29000.0,&quot;scheduled&quot;:29100,&quot;anchor&quot;:null,&quot;left_time&quot;:28820.0,&quot;right_time&quot;:29121.0,&quot;source_anchor&quot;:5},{&quot;stop&quot;:10,&quot;name&quot;:&quot;МЦК Ростокино&quot;,&quot;expected&quot;:29120.0,&quot;scheduled&quot;:29220,&quot;anchor&quot;:{&quot;stop&quot;:10,&quot;time&quot;:29121.0,&quot;shift&quot;:-99.0,&quot;ordinal&quot;:6},&quot;left_time&quot;:28820.0,&quot;right_time&quot;:29232.0,&quot;source_anchor&quot;:5},{&quot;stop&quot;:11,&quot;name&quot;:&quot;Северянинский путепровод&quot;,&quot;expected&quot;:29241.0,&quot;scheduled&quot;:29340,&quot;anchor&quot;:{&quot;stop&quot;:11,&quot;time&quot;:29232.0,&quot;shift&quot;:-108.0,&quot;ordinal&quot;:7},&quot;left_time&quot;:29121.0,&quot;right_time&quot;:29668.0,&quot;source_anchor&quot;:6},{&quot;stop&quot;:12,&quot;name&quot;:&quot;Социальный фонд России&quot;,&quot;expected&quot;:29352.0,&quot;scheduled&quot;:29460,&quot;anchor&quot;:null,&quot;left_time&quot;:29232.0,&quot;right_time&quot;:29668.0,&quot;source_anchor&quot;:7},{&quot;stop&quot;:13,&quot;name&quot;:&quot;Берингов проезд&quot;,&quot;expected&quot;:29412.0,&quot;scheduled&quot;:29520,&quot;anchor&quot;:null,&quot;left_time&quot;:29232.0,&quot;right_time&quot;:29668.0,&quot;source_anchor&quot;:7},{&quot;stop&quot;:14,&quot;name&quot;:&quot;Верхоянская улица&quot;,&quot;expected&quot;:29472.0,&quot;scheduled&quot;:29580,&quot;anchor&quot;:null,&quot;left_time&quot;:29232.0,&quot;right_time&quot;:29668.0,&quot;source_anchor&quot;:7},{&quot;stop&quot;:15,&quot;name&quot;:&quot;Радужная улица&quot;,&quot;expected&quot;:29592.0,&quot;scheduled&quot;:29700,&quot;anchor&quot;:null,&quot;left_time&quot;:29232.0,&quot;right_time&quot;:29668.0,&quot;source_anchor&quot;:7},{&quot;stop&quot;:16,&quot;name&quot;:&quot;Печорская улица&quot;,&quot;expected&quot;:29712.0,&quot;scheduled&quot;:29820,&quot;anchor&quot;:{&quot;stop&quot;:16,&quot;time&quot;:29668.0,&quot;shift&quot;:-152.0,&quot;ordinal&quot;:8},&quot;left_time&quot;:29232.0,&quot;right_time&quot;:29804.0,&quot;source_anchor&quot;:7},{&quot;stop&quot;:17,&quot;name&quot;:&quot;Метро «Бабушкинская»&quot;,&quot;expected&quot;:29788.0,&quot;scheduled&quot;:29940,&quot;anchor&quot;:{&quot;stop&quot;:17,&quot;time&quot;:29804.0,&quot;shift&quot;:-136.0,&quot;ordinal&quot;:9},&quot;left_time&quot;:29668.0,&quot;right_time&quot;:29890.0,&quot;source_anchor&quot;:8},{&quot;stop&quot;:18,&quot;name&quot;:&quot;Улица Менжинского, 38&quot;,&quot;expected&quot;:29864.0,&quot;scheduled&quot;:30000,&quot;anchor&quot;:{&quot;stop&quot;:18,&quot;time&quot;:29890.0,&quot;shift&quot;:-110.0,&quot;ordinal&quot;:10},&quot;left_time&quot;:29804.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:9},{&quot;stop&quot;:19,&quot;name&quot;:&quot;Сухонская улица&quot;,&quot;expected&quot;:29950.0,&quot;scheduled&quot;:30060,&quot;anchor&quot;:null,&quot;left_time&quot;:29890.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:10},{&quot;stop&quot;:20,&quot;name&quot;:&quot;Проезд Шокальского&quot;,&quot;expected&quot;:30070.0,&quot;scheduled&quot;:30180,&quot;anchor&quot;:null,&quot;left_time&quot;:29890.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:10},{&quot;stop&quot;:21,&quot;name&quot;:&quot;МФЦ «Южное Медведково»&quot;,&quot;expected&quot;:30190.0,&quot;scheduled&quot;:30300,&quot;anchor&quot;:null,&quot;left_time&quot;:29890.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:10},{&quot;stop&quot;:22,&quot;name&quot;:&quot;Культурно-досуговый центр&quot;,&quot;expected&quot;:30310.0,&quot;scheduled&quot;:30420,&quot;anchor&quot;:null,&quot;left_time&quot;:29890.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:10},{&quot;stop&quot;:23,&quot;name&quot;:&quot;Улица Молодцова&quot;,&quot;expected&quot;:30370.0,&quot;scheduled&quot;:30480,&quot;anchor&quot;:null,&quot;left_time&quot;:29890.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:10},{&quot;stop&quot;:24,&quot;name&quot;:&quot;Поликлиника&quot;,&quot;expected&quot;:30430.0,&quot;scheduled&quot;:30540,&quot;anchor&quot;:null,&quot;left_time&quot;:29890.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:10},{&quot;stop&quot;:25,&quot;name&quot;:&quot;Улица Тихомирова&quot;,&quot;expected&quot;:30550.0,&quot;scheduled&quot;:30660,&quot;anchor&quot;:null,&quot;left_time&quot;:29890.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:10},{&quot;stop&quot;:26,&quot;name&quot;:&quot;Медведково&quot;,&quot;expected&quot;:30550.0,&quot;scheduled&quot;:30660,&quot;anchor&quot;:null,&quot;left_time&quot;:29890.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:10}],&quot;anchors&quot;:[{&quot;stop&quot;:0,&quot;time&quot;:28303.0,&quot;shift&quot;:-77.0,&quot;ordinal&quot;:1},{&quot;stop&quot;:2,&quot;time&quot;:28422.0,&quot;shift&quot;:-78.0,&quot;ordinal&quot;:2},{&quot;stop&quot;:3,&quot;time&quot;:28491.0,&quot;shift&quot;:-69.0,&quot;ordinal&quot;:3},{&quot;stop&quot;:5,&quot;time&quot;:28595.0,&quot;shift&quot;:-85.0,&quot;ordinal&quot;:4},{&quot;stop&quot;:7,&quot;time&quot;:28820.0,&quot;shift&quot;:-100.0,&quot;ordinal&quot;:5},{&quot;stop&quot;:10,&quot;time&quot;:29121.0,&quot;shift&quot;:-99.0,&quot;ordinal&quot;:6},{&quot;stop&quot;:11,&quot;time&quot;:29232.0,&quot;shift&quot;:-108.0,&quot;ordinal&quot;:7},{&quot;stop&quot;:16,&quot;time&quot;:29668.0,&quot;shift&quot;:-152.0,&quot;ordinal&quot;:8},{&quot;stop&quot;:17,&quot;time&quot;:29804.0,&quot;shift&quot;:-136.0,&quot;ordinal&quot;:9},{&quot;stop&quot;:18,&quot;time&quot;:29890.0,&quot;shift&quot;:-110.0,&quot;ordinal&quot;:10}],&quot;candidates&quot;:[{&quot;time&quot;:28655.0,&quot;support_end&quot;:28665.0,&quot;n10&quot;:7,&quot;devices10&quot;:3,&quot;methods&quot;:[&quot;rise&quot;],&quot;gap_before&quot;:12.0,&quot;wave&quot;:0},{&quot;time&quot;:28659.0,&quot;support_end&quot;:28669.0,&quot;n10&quot;:9,&quot;devices10&quot;:5,&quot;methods&quot;:[&quot;10s&quot;,&quot;5s&quot;,&quot;adaptive90&quot;],&quot;gap_before&quot;:4.0,&quot;wave&quot;:0},{&quot;time&quot;:28938.0,&quot;support_end&quot;:28948.0,&quot;n10&quot;:3,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;rise&quot;],&quot;gap_before&quot;:56.0,&quot;wave&quot;:1},{&quot;time&quot;:29304.0,&quot;support_end&quot;:29314.0,&quot;n10&quot;:4,&quot;devices10&quot;:4,&quot;methods&quot;:[&quot;5s&quot;,&quot;rise&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:35.0,&quot;wave&quot;:2},{&quot;time&quot;:29305.0,&quot;support_end&quot;:29308.0,&quot;n10&quot;:3,&quot;devices10&quot;:3,&quot;methods&quot;:[&quot;3s&quot;],&quot;gap_before&quot;:1.0,&quot;wave&quot;:2},{&quot;time&quot;:29375.0,&quot;support_end&quot;:29385.0,&quot;n10&quot;:6,&quot;devices10&quot;:4,&quot;methods&quot;:[&quot;10s&quot;,&quot;5s&quot;,&quot;rise&quot;],&quot;gap_before&quot;:68.0,&quot;wave&quot;:3},{&quot;time&quot;:29435.0,&quot;support_end&quot;:29445.0,&quot;n10&quot;:7,&quot;devices10&quot;:4,&quot;methods&quot;:[&quot;10s&quot;,&quot;2s&quot;,&quot;3s&quot;,&quot;5s&quot;,&quot;adaptive90&quot;,&quot;rise&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:17.0,&quot;wave&quot;:4},{&quot;time&quot;:29895.0,&quot;support_end&quot;:29905.0,&quot;n10&quot;:3,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;2s&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:3.0,&quot;wave&quot;:5},{&quot;time&quot;:30184.0,&quot;support_end&quot;:30194.0,&quot;n10&quot;:2,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;2s&quot;,&quot;3s&quot;,&quot;5s&quot;,&quot;adaptive90&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:106.0,&quot;wave&quot;:6},{&quot;time&quot;:30195.0,&quot;support_end&quot;:30205.0,&quot;n10&quot;:2,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;2s&quot;,&quot;3s&quot;,&quot;5s&quot;,&quot;adaptive90&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:10.0,&quot;wave&quot;:7},{&quot;time&quot;:31095.0,&quot;support_end&quot;:31105.0,&quot;n10&quot;:2,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;2s&quot;,&quot;3s&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:161.0,&quot;wave&quot;:8}],&quot;matches&quot;:{&quot;15&quot;:{&quot;pairs&quot;:[{&quot;stop&quot;:21,&quot;candidate&quot;:9,&quot;error&quot;:5.0}],&quot;count&quot;:1,&quot;mae&quot;:5.0},&quot;30&quot;:{&quot;pairs&quot;:[{&quot;stop&quot;:12,&quot;candidate&quot;:5,&quot;error&quot;:23.0},{&quot;stop&quot;:13,&quot;candidate&quot;:6,&quot;error&quot;:23.0},{&quot;stop&quot;:21,&quot;candidate&quot;:9,&quot;error&quot;:5.0}],&quot;count&quot;:3,&quot;mae&quot;:17.0},&quot;45&quot;:{&quot;pairs&quot;:[{&quot;stop&quot;:12,&quot;candidate&quot;:5,&quot;error&quot;:23.0},{&quot;stop&quot;:13,&quot;candidate&quot;:6,&quot;error&quot;:23.0},{&quot;stop&quot;:21,&quot;candidate&quot;:9,&quot;error&quot;:5.0}],&quot;count&quot;:3,&quot;mae&quot;:17.0},&quot;60&quot;:{&quot;pairs&quot;:[{&quot;stop&quot;:6,&quot;candidate&quot;:1,&quot;error&quot;:-56.0},{&quot;stop&quot;:8,&quot;candidate&quot;:2,&quot;error&quot;:58.0},{&quot;stop&quot;:12,&quot;candidate&quot;:4,&quot;error&quot;:-47.0},{&quot;stop&quot;:13,&quot;candidate&quot;:5,&quot;error&quot;:-37.0},{&quot;stop&quot;:14,&quot;candidate&quot;:6,&quot;error&quot;:-37.0},{&quot;stop&quot;:19,&quot;candidate&quot;:7,&quot;error&quot;:-55.0},{&quot;stop&quot;:21,&quot;candidate&quot;:9,&quot;error&quot;:5.0}],&quot;count&quot;:7,&quot;mae&quot;:42.142857142857146},&quot;90&quot;:{&quot;pairs&quot;:[{&quot;stop&quot;:6,&quot;candidate&quot;:1,&quot;error&quot;:-56.0},{&quot;stop&quot;:8,&quot;candidate&quot;:2,&quot;error&quot;:58.0},{&quot;stop&quot;:12,&quot;candidate&quot;:4,&quot;error&quot;:-47.0},{&quot;stop&quot;:13,&quot;candidate&quot;:5,&quot;error&quot;:-37.0},{&quot;stop&quot;:14,&quot;candidate&quot;:6,&quot;error&quot;:-37.0},{&quot;stop&quot;:19,&quot;candidate&quot;:7,&quot;error&quot;:-55.0},{&quot;stop&quot;:21,&quot;candidate&quot;:9,&quot;error&quot;:5.0}],&quot;count&quot;:7,&quot;mae&quot;:42.142857142857146}},&quot;counts&quot;:[0,0,0,0,0,0,0,15,0,2,2,43,14,14,17,1,0,25,1,14,3,0,0,0,9,1,2,0,3,1,0,2,1,0,8,24,2,0,16,4,4,0,0,6,1,9,2,0,1,0,1,1,2,7,0,0,0,16,3,0,7,1,0,2,0,0,2,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,7,3,2,2,0,0,0,0,2,0,0,0],&quot;start&quot;:28080.0,&quot;tail&quot;:[30862.0,30924.0],&quot;terminal&quot;:30550.0,&quot;fixed_terminal&quot;:30583.0,&quot;date&quot;:&quot;2025-05-15&quot;,&quot;trip&quot;:&quot;375_3161086_4_811&quot;},&quot;12&quot;:{&quot;stops&quot;:[{&quot;stop&quot;:0,&quot;name&quot;:&quot;Восточное Измайлово&quot;,&quot;expected&quot;:29400.0,&quot;scheduled&quot;:29400,&quot;anchor&quot;:{&quot;stop&quot;:0,&quot;time&quot;:29400.0,&quot;shift&quot;:0.0,&quot;ordinal&quot;:1},&quot;left_time&quot;:-1,&quot;right_time&quot;:29526.0,&quot;source_anchor&quot;:null},{&quot;stop&quot;:1,&quot;name&quot;:&quot;Восточное Измайлово&quot;,&quot;expected&quot;:29460.0,&quot;scheduled&quot;:29460,&quot;anchor&quot;:null,&quot;left_time&quot;:29400.0,&quot;right_time&quot;:29526.0,&quot;source_anchor&quot;:1},{&quot;stop&quot;:2,&quot;name&quot;:&quot;15-я Парковая улица&quot;,&quot;expected&quot;:29520.0,&quot;scheduled&quot;:29520,&quot;anchor&quot;:{&quot;stop&quot;:2,&quot;time&quot;:29526.0,&quot;shift&quot;:6.0,&quot;ordinal&quot;:2},&quot;left_time&quot;:29400.0,&quot;right_time&quot;:29756.0,&quot;source_anchor&quot;:1},{&quot;stop&quot;:3,&quot;name&quot;:&quot;13-я Парковая ул.&quot;,&quot;expected&quot;:29586.0,&quot;scheduled&quot;:29580,&quot;anchor&quot;:null,&quot;left_time&quot;:29526.0,&quot;right_time&quot;:29756.0,&quot;source_anchor&quot;:2},{&quot;stop&quot;:4,&quot;name&quot;:&quot;Районный центр «Первомайский»&quot;,&quot;expected&quot;:29646.0,&quot;scheduled&quot;:29640,&quot;anchor&quot;:null,&quot;left_time&quot;:29526.0,&quot;right_time&quot;:29756.0,&quot;source_anchor&quot;:2},{&quot;stop&quot;:5,&quot;name&quot;:&quot;Метро «Первомайская»&quot;,&quot;expected&quot;:29706.0,&quot;scheduled&quot;:29700,&quot;anchor&quot;:{&quot;stop&quot;:5,&quot;time&quot;:29756.0,&quot;shift&quot;:56.0,&quot;ordinal&quot;:3},&quot;left_time&quot;:29526.0,&quot;right_time&quot;:29944.0,&quot;source_anchor&quot;:2},{&quot;stop&quot;:6,&quot;name&quot;:&quot;7-я Парковая улица&quot;,&quot;expected&quot;:29876.0,&quot;scheduled&quot;:29820,&quot;anchor&quot;:null,&quot;left_time&quot;:29756.0,&quot;right_time&quot;:29944.0,&quot;source_anchor&quot;:3},{&quot;stop&quot;:7,&quot;name&quot;:&quot;5-я Парковая улица&quot;,&quot;expected&quot;:29936.0,&quot;scheduled&quot;:29880,&quot;anchor&quot;:{&quot;stop&quot;:7,&quot;time&quot;:29944.0,&quot;shift&quot;:64.0,&quot;ordinal&quot;:4},&quot;left_time&quot;:29756.0,&quot;right_time&quot;:30014.0,&quot;source_anchor&quot;:3},{&quot;stop&quot;:8,&quot;name&quot;:&quot;3-я Парковая ул.&quot;,&quot;expected&quot;:30004.0,&quot;scheduled&quot;:29940,&quot;anchor&quot;:{&quot;stop&quot;:8,&quot;time&quot;:30014.0,&quot;shift&quot;:74.0,&quot;ordinal&quot;:5},&quot;left_time&quot;:29944.0,&quot;right_time&quot;:30168.0,&quot;source_anchor&quot;:4},{&quot;stop&quot;:9,&quot;name&quot;:&quot;Измайловская площадь&quot;,&quot;expected&quot;:30134.0,&quot;scheduled&quot;:30060,&quot;anchor&quot;:{&quot;stop&quot;:9,&quot;time&quot;:30168.0,&quot;shift&quot;:108.0,&quot;ordinal&quot;:6},&quot;left_time&quot;:30014.0,&quot;right_time&quot;:30240.0,&quot;source_anchor&quot;:5},{&quot;stop&quot;:10,&quot;name&quot;:&quot;Галерея «Измайлово»&quot;,&quot;expected&quot;:30288.0,&quot;scheduled&quot;:30180,&quot;anchor&quot;:{&quot;stop&quot;:10,&quot;time&quot;:30240.0,&quot;shift&quot;:60.0,&quot;ordinal&quot;:7},&quot;left_time&quot;:30168.0,&quot;right_time&quot;:30819.0,&quot;source_anchor&quot;:6},{&quot;stop&quot;:11,&quot;name&quot;:&quot;Главная аллея&quot;,&quot;expected&quot;:30360.0,&quot;scheduled&quot;:30300,&quot;anchor&quot;:null,&quot;left_time&quot;:30240.0,&quot;right_time&quot;:30819.0,&quot;source_anchor&quot;:7},{&quot;stop&quot;:12,&quot;name&quot;:&quot;Метро «Партизанская»&quot;,&quot;expected&quot;:30480.0,&quot;scheduled&quot;:30420,&quot;anchor&quot;:null,&quot;left_time&quot;:30240.0,&quot;right_time&quot;:30819.0,&quot;source_anchor&quot;:7},{&quot;stop&quot;:13,&quot;name&quot;:&quot;Мост Окружной железной дороги&quot;,&quot;expected&quot;:30600.0,&quot;scheduled&quot;:30540,&quot;anchor&quot;:null,&quot;left_time&quot;:30240.0,&quot;right_time&quot;:30819.0,&quot;source_anchor&quot;:7},{&quot;stop&quot;:14,&quot;name&quot;:&quot;Фортунатовская улица&quot;,&quot;expected&quot;:30720.0,&quot;scheduled&quot;:30660,&quot;anchor&quot;:null,&quot;left_time&quot;:30240.0,&quot;right_time&quot;:30819.0,&quot;source_anchor&quot;:7},{&quot;stop&quot;:15,&quot;name&quot;:&quot;Ул. Ибрагимова&quot;,&quot;expected&quot;:30840.0,&quot;scheduled&quot;:30780,&quot;anchor&quot;:{&quot;stop&quot;:15,&quot;time&quot;:30819.0,&quot;shift&quot;:39.0,&quot;ordinal&quot;:8},&quot;left_time&quot;:30240.0,&quot;right_time&quot;:30844.0,&quot;source_anchor&quot;:7},{&quot;stop&quot;:16,&quot;name&quot;:&quot;Метро «Семёновская»&quot;,&quot;expected&quot;:30939.0,&quot;scheduled&quot;:30900,&quot;anchor&quot;:{&quot;stop&quot;:16,&quot;time&quot;:30844.0,&quot;shift&quot;:-56.0,&quot;ordinal&quot;:9},&quot;left_time&quot;:30819.0,&quot;right_time&quot;:30968.0,&quot;source_anchor&quot;:8},{&quot;stop&quot;:17,&quot;name&quot;:&quot;Семёновская площадь&quot;,&quot;expected&quot;:30964.0,&quot;scheduled&quot;:31020,&quot;anchor&quot;:{&quot;stop&quot;:17,&quot;time&quot;:30968.0,&quot;shift&quot;:-52.0,&quot;ordinal&quot;:10},&quot;left_time&quot;:30844.0,&quot;right_time&quot;:31203.0,&quot;source_anchor&quot;:9},{&quot;stop&quot;:18,&quot;name&quot;:&quot;Кирпичная ул.&quot;,&quot;expected&quot;:31148.0,&quot;scheduled&quot;:31200,&quot;anchor&quot;:{&quot;stop&quot;:18,&quot;time&quot;:31203.0,&quot;shift&quot;:3.0,&quot;ordinal&quot;:11},&quot;left_time&quot;:30968.0,&quot;right_time&quot;:31721.0,&quot;source_anchor&quot;:10},{&quot;stop&quot;:19,&quot;name&quot;:&quot;Стадион «Крылья Советов»&quot;,&quot;expected&quot;:31323.0,&quot;scheduled&quot;:31320,&quot;anchor&quot;:null,&quot;left_time&quot;:31203.0,&quot;right_time&quot;:31721.0,&quot;source_anchor&quot;:11},{&quot;stop&quot;:20,&quot;name&quot;:&quot;9-я ул. Соколиной Горы&quot;,&quot;expected&quot;:31383.0,&quot;scheduled&quot;:31380,&quot;anchor&quot;:null,&quot;left_time&quot;:31203.0,&quot;right_time&quot;:31721.0,&quot;source_anchor&quot;:11},{&quot;stop&quot;:21,&quot;name&quot;:&quot;8-я ул. Соколиной Горы&quot;,&quot;expected&quot;:31443.0,&quot;scheduled&quot;:31440,&quot;anchor&quot;:null,&quot;left_time&quot;:31203.0,&quot;right_time&quot;:31721.0,&quot;source_anchor&quot;:11},{&quot;stop&quot;:22,&quot;name&quot;:&quot;Просп. Буденного, 24&quot;,&quot;expected&quot;:31503.0,&quot;scheduled&quot;:31500,&quot;anchor&quot;:null,&quot;left_time&quot;:31203.0,&quot;right_time&quot;:31721.0,&quot;source_anchor&quot;:11},{&quot;stop&quot;:23,&quot;name&quot;:&quot;5-я ул. Соколиной Горы&quot;,&quot;expected&quot;:31563.0,&quot;scheduled&quot;:31560,&quot;anchor&quot;:null,&quot;left_time&quot;:31203.0,&quot;right_time&quot;:31721.0,&quot;source_anchor&quot;:11},{&quot;stop&quot;:24,&quot;name&quot;:&quot;3-я ул. Соколиной Горы&quot;,&quot;expected&quot;:31683.0,&quot;scheduled&quot;:31680,&quot;anchor&quot;:{&quot;stop&quot;:24,&quot;time&quot;:31721.0,&quot;shift&quot;:41.0,&quot;ordinal&quot;:12},&quot;left_time&quot;:31203.0,&quot;right_time&quot;:31857.0,&quot;source_anchor&quot;:11},{&quot;stop&quot;:25,&quot;name&quot;:&quot;Гаражная улица&quot;,&quot;expected&quot;:31781.0,&quot;scheduled&quot;:31740,&quot;anchor&quot;:null,&quot;left_time&quot;:31721.0,&quot;right_time&quot;:31857.0,&quot;source_anchor&quot;:12},{&quot;stop&quot;:26,&quot;name&quot;:&quot;Ул. Буракова&quot;,&quot;expected&quot;:31901.0,&quot;scheduled&quot;:31860,&quot;anchor&quot;:{&quot;stop&quot;:26,&quot;time&quot;:31857.0,&quot;shift&quot;:-3.0,&quot;ordinal&quot;:13},&quot;left_time&quot;:31721.0,&quot;right_time&quot;:32278.0,&quot;source_anchor&quot;:12},{&quot;stop&quot;:27,&quot;name&quot;:&quot;Д/к «Компрессор»&quot;,&quot;expected&quot;:32037.0,&quot;scheduled&quot;:32040,&quot;anchor&quot;:null,&quot;left_time&quot;:31857.0,&quot;right_time&quot;:32278.0,&quot;source_anchor&quot;:13},{&quot;stop&quot;:28,&quot;name&quot;:&quot;Метро «Авиамоторная»&quot;,&quot;expected&quot;:32097.0,&quot;scheduled&quot;:32100,&quot;anchor&quot;:null,&quot;left_time&quot;:31857.0,&quot;right_time&quot;:32278.0,&quot;source_anchor&quot;:13},{&quot;stop&quot;:29,&quot;name&quot;:&quot;Метро «Авиамоторная»&quot;,&quot;expected&quot;:32217.0,&quot;scheduled&quot;:32220,&quot;anchor&quot;:null,&quot;left_time&quot;:31857.0,&quot;right_time&quot;:32278.0,&quot;source_anchor&quot;:13},{&quot;stop&quot;:30,&quot;name&quot;:&quot;Горбатый путепровод&quot;,&quot;expected&quot;:32277.0,&quot;scheduled&quot;:32280,&quot;anchor&quot;:{&quot;stop&quot;:30,&quot;time&quot;:32278.0,&quot;shift&quot;:-2.0,&quot;ordinal&quot;:14},&quot;left_time&quot;:31857.0,&quot;right_time&quot;:32369.0,&quot;source_anchor&quot;:13},{&quot;stop&quot;:31,&quot;name&quot;:&quot;Душинская улица&quot;,&quot;expected&quot;:32338.0,&quot;scheduled&quot;:32340,&quot;anchor&quot;:{&quot;stop&quot;:31,&quot;time&quot;:32369.0,&quot;shift&quot;:29.0,&quot;ordinal&quot;:15},&quot;left_time&quot;:32278.0,&quot;right_time&quot;:32837.0,&quot;source_anchor&quot;:14},{&quot;stop&quot;:32,&quot;name&quot;:&quot;Старообрядческая улица&quot;,&quot;expected&quot;:32429.0,&quot;scheduled&quot;:32400,&quot;anchor&quot;:null,&quot;left_time&quot;:32369.0,&quot;right_time&quot;:32837.0,&quot;source_anchor&quot;:15},{&quot;stop&quot;:33,&quot;name&quot;:&quot;МЦД Москва-Товарная&quot;,&quot;expected&quot;:32489.0,&quot;scheduled&quot;:32460,&quot;anchor&quot;:null,&quot;left_time&quot;:32369.0,&quot;right_time&quot;:32837.0,&quot;source_anchor&quot;:15},{&quot;stop&quot;:34,&quot;name&quot;:&quot;Метро «Площадь Ильича»&quot;,&quot;expected&quot;:32609.0,&quot;scheduled&quot;:32580,&quot;anchor&quot;:null,&quot;left_time&quot;:32369.0,&quot;right_time&quot;:32837.0,&quot;source_anchor&quot;:15},{&quot;stop&quot;:35,&quot;name&quot;:&quot;Библиотечная улица&quot;,&quot;expected&quot;:32729.0,&quot;scheduled&quot;:32700,&quot;anchor&quot;:null,&quot;left_time&quot;:32369.0,&quot;right_time&quot;:32837.0,&quot;source_anchor&quot;:15},{&quot;stop&quot;:36,&quot;name&quot;:&quot;Новорогожская улица&quot;,&quot;expected&quot;:32789.0,&quot;scheduled&quot;:32760,&quot;anchor&quot;:null,&quot;left_time&quot;:32369.0,&quot;right_time&quot;:32837.0,&quot;source_anchor&quot;:15},{&quot;stop&quot;:37,&quot;name&quot;:&quot;Абельмановская Застава&quot;,&quot;expected&quot;:32849.0,&quot;scheduled&quot;:32820,&quot;anchor&quot;:{&quot;stop&quot;:37,&quot;time&quot;:32837.0,&quot;shift&quot;:17.0,&quot;ordinal&quot;:16},&quot;left_time&quot;:32369.0,&quot;right_time&quot;:33454.0,&quot;source_anchor&quot;:15},{&quot;stop&quot;:38,&quot;name&quot;:&quot;К/т «Победа» - Детский театр&quot;,&quot;expected&quot;:33017.0,&quot;scheduled&quot;:33000,&quot;anchor&quot;:null,&quot;left_time&quot;:32837.0,&quot;right_time&quot;:33454.0,&quot;source_anchor&quot;:16},{&quot;stop&quot;:39,&quot;name&quot;:&quot;Метро «Пролетарская»&quot;,&quot;expected&quot;:33197.0,&quot;scheduled&quot;:33180,&quot;anchor&quot;:null,&quot;left_time&quot;:32837.0,&quot;right_time&quot;:33454.0,&quot;source_anchor&quot;:16},{&quot;stop&quot;:40,&quot;name&quot;:&quot;Динамовская улица&quot;,&quot;expected&quot;:33257.0,&quot;scheduled&quot;:33240,&quot;anchor&quot;:null,&quot;left_time&quot;:32837.0,&quot;right_time&quot;:33454.0,&quot;source_anchor&quot;:16},{&quot;stop&quot;:41,&quot;name&quot;:&quot;Арбатецкая улица&quot;,&quot;expected&quot;:33377.0,&quot;scheduled&quot;:33360,&quot;anchor&quot;:null,&quot;left_time&quot;:32837.0,&quot;right_time&quot;:33454.0,&quot;source_anchor&quot;:16},{&quot;stop&quot;:42,&quot;name&quot;:&quot;Шарикоподшипниковская ул.&quot;,&quot;expected&quot;:33437.0,&quot;scheduled&quot;:33420,&quot;anchor&quot;:{&quot;stop&quot;:42,&quot;time&quot;:33454.0,&quot;shift&quot;:34.0,&quot;ordinal&quot;:17},&quot;left_time&quot;:32837.0,&quot;right_time&quot;:33663.0,&quot;source_anchor&quot;:16},{&quot;stop&quot;:43,&quot;name&quot;:&quot;ЦНИИТМАШ&quot;,&quot;expected&quot;:33514.0,&quot;scheduled&quot;:33480,&quot;anchor&quot;:null,&quot;left_time&quot;:33454.0,&quot;right_time&quot;:33663.0,&quot;source_anchor&quot;:17},{&quot;stop&quot;:44,&quot;name&quot;:&quot;Новоостаповская улица&quot;,&quot;expected&quot;:33574.0,&quot;scheduled&quot;:33540,&quot;anchor&quot;:null,&quot;left_time&quot;:33454.0,&quot;right_time&quot;:33663.0,&quot;source_anchor&quot;:17},{&quot;stop&quot;:45,&quot;name&quot;:&quot;Метро «Дубровка»&quot;,&quot;expected&quot;:33694.0,&quot;scheduled&quot;:33660,&quot;anchor&quot;:{&quot;stop&quot;:45,&quot;time&quot;:33663.0,&quot;shift&quot;:3.0,&quot;ordinal&quot;:18},&quot;left_time&quot;:33454.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:17},{&quot;stop&quot;:46,&quot;name&quot;:&quot;МЦК Дубровка&quot;,&quot;expected&quot;:33783.0,&quot;scheduled&quot;:33780,&quot;anchor&quot;:null,&quot;left_time&quot;:33663.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:18},{&quot;stop&quot;:47,&quot;name&quot;:&quot;МЦК Дубровка&quot;,&quot;expected&quot;:33843.0,&quot;scheduled&quot;:33840,&quot;anchor&quot;:null,&quot;left_time&quot;:33663.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:18}],&quot;anchors&quot;:[{&quot;stop&quot;:0,&quot;time&quot;:29400.0,&quot;shift&quot;:0.0,&quot;ordinal&quot;:1},{&quot;stop&quot;:2,&quot;time&quot;:29526.0,&quot;shift&quot;:6.0,&quot;ordinal&quot;:2},{&quot;stop&quot;:5,&quot;time&quot;:29756.0,&quot;shift&quot;:56.0,&quot;ordinal&quot;:3},{&quot;stop&quot;:7,&quot;time&quot;:29944.0,&quot;shift&quot;:64.0,&quot;ordinal&quot;:4},{&quot;stop&quot;:8,&quot;time&quot;:30014.0,&quot;shift&quot;:74.0,&quot;ordinal&quot;:5},{&quot;stop&quot;:9,&quot;time&quot;:30168.0,&quot;shift&quot;:108.0,&quot;ordinal&quot;:6},{&quot;stop&quot;:10,&quot;time&quot;:30240.0,&quot;shift&quot;:60.0,&quot;ordinal&quot;:7},{&quot;stop&quot;:15,&quot;time&quot;:30819.0,&quot;shift&quot;:39.0,&quot;ordinal&quot;:8},{&quot;stop&quot;:16,&quot;time&quot;:30844.0,&quot;shift&quot;:-56.0,&quot;ordinal&quot;:9},{&quot;stop&quot;:17,&quot;time&quot;:30968.0,&quot;shift&quot;:-52.0,&quot;ordinal&quot;:10},{&quot;stop&quot;:18,&quot;time&quot;:31203.0,&quot;shift&quot;:3.0,&quot;ordinal&quot;:11},{&quot;stop&quot;:24,&quot;time&quot;:31721.0,&quot;shift&quot;:41.0,&quot;ordinal&quot;:12},{&quot;stop&quot;:26,&quot;time&quot;:31857.0,&quot;shift&quot;:-3.0,&quot;ordinal&quot;:13},{&quot;stop&quot;:30,&quot;time&quot;:32278.0,&quot;shift&quot;:-2.0,&quot;ordinal&quot;:14},{&quot;stop&quot;:31,&quot;time&quot;:32369.0,&quot;shift&quot;:29.0,&quot;ordinal&quot;:15},{&quot;stop&quot;:37,&quot;time&quot;:32837.0,&quot;shift&quot;:17.0,&quot;ordinal&quot;:16},{&quot;stop&quot;:42,&quot;time&quot;:33454.0,&quot;shift&quot;:34.0,&quot;ordinal&quot;:17},{&quot;stop&quot;:45,&quot;time&quot;:33663.0,&quot;shift&quot;:3.0,&quot;ordinal&quot;:18}],&quot;candidates&quot;:[{&quot;time&quot;:29622.0,&quot;support_end&quot;:29632.0,&quot;n10&quot;:3,&quot;devices10&quot;:3,&quot;methods&quot;:[&quot;rise&quot;],&quot;gap_before&quot;:25.0,&quot;wave&quot;:0},{&quot;time&quot;:29845.0,&quot;support_end&quot;:29855.0,&quot;n10&quot;:4,&quot;devices10&quot;:4,&quot;methods&quot;:[&quot;rise&quot;],&quot;gap_before&quot;:58.0,&quot;wave&quot;:1},{&quot;time&quot;:29859.0,&quot;support_end&quot;:29869.0,&quot;n10&quot;:5,&quot;devices10&quot;:3,&quot;methods&quot;:[&quot;10s&quot;],&quot;gap_before&quot;:5.0,&quot;wave&quot;:2},{&quot;time&quot;:29863.0,&quot;support_end&quot;:29873.0,&quot;n10&quot;:3,&quot;devices10&quot;:3,&quot;methods&quot;:[&quot;3s&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:3.0,&quot;wave&quot;:2},{&quot;time&quot;:30514.0,&quot;support_end&quot;:30524.0,&quot;n10&quot;:3,&quot;devices10&quot;:3,&quot;methods&quot;:[&quot;2s&quot;,&quot;3s&quot;,&quot;5s&quot;,&quot;adaptive90&quot;,&quot;rise&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:230.0,&quot;wave&quot;:3},{&quot;time&quot;:30865.0,&quot;support_end&quot;:30875.0,&quot;n10&quot;:2,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;2s&quot;,&quot;3s&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:17.0,&quot;wave&quot;:4},{&quot;time&quot;:31079.0,&quot;support_end&quot;:31089.0,&quot;n10&quot;:4,&quot;devices10&quot;:4,&quot;methods&quot;:[&quot;rise&quot;],&quot;gap_before&quot;:71.0,&quot;wave&quot;:5},{&quot;time&quot;:31226.0,&quot;support_end&quot;:31236.0,&quot;n10&quot;:2,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;2s&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:4.0,&quot;wave&quot;:6},{&quot;time&quot;:31465.0,&quot;support_end&quot;:31485.0,&quot;n10&quot;:6,&quot;devices10&quot;:4,&quot;methods&quot;:[&quot;10s&quot;,&quot;5s&quot;,&quot;adaptive90&quot;,&quot;rise&quot;],&quot;gap_before&quot;:238.0,&quot;wave&quot;:7},{&quot;time&quot;:31616.0,&quot;support_end&quot;:31626.0,&quot;n10&quot;:3,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;rise&quot;],&quot;gap_before&quot;:62.0,&quot;wave&quot;:8},{&quot;time&quot;:31664.0,&quot;support_end&quot;:31674.0,&quot;n10&quot;:7,&quot;devices10&quot;:6,&quot;methods&quot;:[&quot;10s&quot;,&quot;rise&quot;],&quot;gap_before&quot;:44.0,&quot;wave&quot;:9},{&quot;time&quot;:31667.0,&quot;support_end&quot;:31672.0,&quot;n10&quot;:6,&quot;devices10&quot;:5,&quot;methods&quot;:[&quot;5s&quot;],&quot;gap_before&quot;:2.0,&quot;wave&quot;:9},{&quot;time&quot;:31670.0,&quot;support_end&quot;:31680.0,&quot;n10&quot;:5,&quot;devices10&quot;:5,&quot;methods&quot;:[&quot;2s&quot;,&quot;3s&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:3.0,&quot;wave&quot;:9},{&quot;time&quot;:31808.0,&quot;support_end&quot;:31818.0,&quot;n10&quot;:4,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;10s&quot;],&quot;gap_before&quot;:13.0,&quot;wave&quot;:10},{&quot;time&quot;:32567.0,&quot;support_end&quot;:32577.0,&quot;n10&quot;:3,&quot;devices10&quot;:3,&quot;methods&quot;:[&quot;2s&quot;,&quot;3s&quot;,&quot;5s&quot;,&quot;adaptive90&quot;,&quot;rise&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:183.0,&quot;wave&quot;:11},{&quot;time&quot;:33916.0,&quot;support_end&quot;:33926.0,&quot;n10&quot;:2,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;2s&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:232.0,&quot;wave&quot;:12},{&quot;time&quot;:34117.0,&quot;support_end&quot;:34127.0,&quot;n10&quot;:2,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;10s&quot;,&quot;2s&quot;,&quot;3s&quot;,&quot;5s&quot;,&quot;adaptive90&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:62.0,&quot;wave&quot;:13},{&quot;time&quot;:34140.0,&quot;support_end&quot;:34150.0,&quot;n10&quot;:2,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;2s&quot;,&quot;3s&quot;,&quot;5s&quot;,&quot;adaptive90&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:23.0,&quot;wave&quot;:14}],&quot;matches&quot;:{&quot;15&quot;:{&quot;pairs&quot;:[{&quot;stop&quot;:6,&quot;candidate&quot;:3,&quot;error&quot;:-13.0}],&quot;count&quot;:1,&quot;mae&quot;:13.0},&quot;30&quot;:{&quot;pairs&quot;:[{&quot;stop&quot;:4,&quot;candidate&quot;:0,&quot;error&quot;:-24.0},{&quot;stop&quot;:6,&quot;candidate&quot;:3,&quot;error&quot;:-13.0},{&quot;stop&quot;:21,&quot;candidate&quot;:8,&quot;error&quot;:22.0},{&quot;stop&quot;:25,&quot;candidate&quot;:13,&quot;error&quot;:27.0}],&quot;count&quot;:4,&quot;mae&quot;:21.5},&quot;45&quot;:{&quot;pairs&quot;:[{&quot;stop&quot;:4,&quot;candidate&quot;:0,&quot;error&quot;:-24.0},{&quot;stop&quot;:6,&quot;candidate&quot;:3,&quot;error&quot;:-13.0},{&quot;stop&quot;:12,&quot;candidate&quot;:4,&quot;error&quot;:34.0},{&quot;stop&quot;:21,&quot;candidate&quot;:8,&quot;error&quot;:22.0},{&quot;stop&quot;:25,&quot;candidate&quot;:13,&quot;error&quot;:27.0},{&quot;stop&quot;:34,&quot;candidate&quot;:14,&quot;error&quot;:-42.0}],&quot;count&quot;:6,&quot;mae&quot;:27.0},&quot;60&quot;:{&quot;pairs&quot;:[{&quot;stop&quot;:4,&quot;candidate&quot;:0,&quot;error&quot;:-24.0},{&quot;stop&quot;:6,&quot;candidate&quot;:3,&quot;error&quot;:-13.0},{&quot;stop&quot;:12,&quot;candidate&quot;:4,&quot;error&quot;:34.0},{&quot;stop&quot;:21,&quot;candidate&quot;:8,&quot;error&quot;:22.0},{&quot;stop&quot;:23,&quot;candidate&quot;:9,&quot;error&quot;:53.0},{&quot;stop&quot;:25,&quot;candidate&quot;:13,&quot;error&quot;:27.0},{&quot;stop&quot;:34,&quot;candidate&quot;:14,&quot;error&quot;:-42.0}],&quot;count&quot;:7,&quot;mae&quot;:30.714285714285715},&quot;90&quot;:{&quot;pairs&quot;:[{&quot;stop&quot;:4,&quot;candidate&quot;:0,&quot;error&quot;:-24.0},{&quot;stop&quot;:6,&quot;candidate&quot;:3,&quot;error&quot;:-13.0},{&quot;stop&quot;:12,&quot;candidate&quot;:4,&quot;error&quot;:34.0},{&quot;stop&quot;:21,&quot;candidate&quot;:8,&quot;error&quot;:22.0},{&quot;stop&quot;:23,&quot;candidate&quot;:9,&quot;error&quot;:53.0},{&quot;stop&quot;:25,&quot;candidate&quot;:13,&quot;error&quot;:27.0},{&quot;stop&quot;:34,&quot;candidate&quot;:14,&quot;error&quot;:-42.0},{&quot;stop&quot;:47,&quot;candidate&quot;:15,&quot;error&quot;:73.0}],&quot;count&quot;:8,&quot;mae&quot;:36.0}},&quot;counts&quot;:[0,0,0,14,22,25,7,0,24,5,1,3,0,0,0,7,16,0,3,6,2,2,11,0,12,2,0,0,0,10,4,0,16,2,0,0,0,0,0,0,0,3,0,0,0,1,0,0,0,0,0,21,7,0,0,0,15,2,0,1,3,1,0,0,27,0,0,0,0,0,0,0,4,7,0,2,0,2,1,8,0,12,1,13,4,4,5,0,0,0,1,0,0,0,1,0,0,0,0,1,5,0,1,6,0,0,0,0,0,3,0,0,2,1,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,16,0,0,0,0,0,0,0,2,0,0,4,0,2,0,2,2,0,0,0,0,0,0,0,0,0],&quot;start&quot;:29280.0,&quot;tail&quot;:[33996.0,34055.0],&quot;terminal&quot;:33843.0,&quot;fixed_terminal&quot;:33840.0,&quot;date&quot;:&quot;2025-05-15&quot;,&quot;trip&quot;:&quot;291_3161209_2_206&quot;},&quot;11&quot;:{&quot;stops&quot;:[{&quot;stop&quot;:0,&quot;name&quot;:&quot;Восточное Измайлово&quot;,&quot;expected&quot;:47507.0,&quot;scheduled&quot;:47760,&quot;anchor&quot;:{&quot;stop&quot;:0,&quot;time&quot;:47507.0,&quot;shift&quot;:-253.0,&quot;ordinal&quot;:1},&quot;left_time&quot;:-1,&quot;right_time&quot;:47637.0,&quot;source_anchor&quot;:null},{&quot;stop&quot;:1,&quot;name&quot;:&quot;Восточное Измайлово&quot;,&quot;expected&quot;:47567.0,&quot;scheduled&quot;:47820,&quot;anchor&quot;:null,&quot;left_time&quot;:47507.0,&quot;right_time&quot;:47637.0,&quot;source_anchor&quot;:1},{&quot;stop&quot;:2,&quot;name&quot;:&quot;15-я Парковая улица&quot;,&quot;expected&quot;:47627.0,&quot;scheduled&quot;:47880,&quot;anchor&quot;:{&quot;stop&quot;:2,&quot;time&quot;:47637.0,&quot;shift&quot;:-243.0,&quot;ordinal&quot;:2},&quot;left_time&quot;:47507.0,&quot;right_time&quot;:47821.0,&quot;source_anchor&quot;:1},{&quot;stop&quot;:3,&quot;name&quot;:&quot;13-я Парковая ул.&quot;,&quot;expected&quot;:47697.0,&quot;scheduled&quot;:47940,&quot;anchor&quot;:null,&quot;left_time&quot;:47637.0,&quot;right_time&quot;:47821.0,&quot;source_anchor&quot;:2},{&quot;stop&quot;:4,&quot;name&quot;:&quot;Районный центр «Первомайский»&quot;,&quot;expected&quot;:47757.0,&quot;scheduled&quot;:48000,&quot;anchor&quot;:null,&quot;left_time&quot;:47637.0,&quot;right_time&quot;:47821.0,&quot;source_anchor&quot;:2},{&quot;stop&quot;:5,&quot;name&quot;:&quot;Метро «Первомайская»&quot;,&quot;expected&quot;:47817.0,&quot;scheduled&quot;:48060,&quot;anchor&quot;:{&quot;stop&quot;:5,&quot;time&quot;:47821.0,&quot;shift&quot;:-239.0,&quot;ordinal&quot;:3},&quot;left_time&quot;:47637.0,&quot;right_time&quot;:48000.0,&quot;source_anchor&quot;:2},{&quot;stop&quot;:6,&quot;name&quot;:&quot;7-я Парковая улица&quot;,&quot;expected&quot;:47941.0,&quot;scheduled&quot;:48180,&quot;anchor&quot;:null,&quot;left_time&quot;:47821.0,&quot;right_time&quot;:48000.0,&quot;source_anchor&quot;:3},{&quot;stop&quot;:7,&quot;name&quot;:&quot;5-я Парковая улица&quot;,&quot;expected&quot;:48001.0,&quot;scheduled&quot;:48240,&quot;anchor&quot;:{&quot;stop&quot;:7,&quot;time&quot;:48000.0,&quot;shift&quot;:-240.0,&quot;ordinal&quot;:4},&quot;left_time&quot;:47821.0,&quot;right_time&quot;:48066.0,&quot;source_anchor&quot;:3},{&quot;stop&quot;:8,&quot;name&quot;:&quot;3-я Парковая ул.&quot;,&quot;expected&quot;:48060.0,&quot;scheduled&quot;:48300,&quot;anchor&quot;:{&quot;stop&quot;:8,&quot;time&quot;:48066.0,&quot;shift&quot;:-234.0,&quot;ordinal&quot;:5},&quot;left_time&quot;:48000.0,&quot;right_time&quot;:48301.0,&quot;source_anchor&quot;:4},{&quot;stop&quot;:9,&quot;name&quot;:&quot;Измайловская площадь&quot;,&quot;expected&quot;:48186.0,&quot;scheduled&quot;:48420,&quot;anchor&quot;:null,&quot;left_time&quot;:48066.0,&quot;right_time&quot;:48301.0,&quot;source_anchor&quot;:5},{&quot;stop&quot;:10,&quot;name&quot;:&quot;Галерея «Измайлово»&quot;,&quot;expected&quot;:48306.0,&quot;scheduled&quot;:48540,&quot;anchor&quot;:{&quot;stop&quot;:10,&quot;time&quot;:48301.0,&quot;shift&quot;:-239.0,&quot;ordinal&quot;:6},&quot;left_time&quot;:48066.0,&quot;right_time&quot;:48827.0,&quot;source_anchor&quot;:5},{&quot;stop&quot;:11,&quot;name&quot;:&quot;Главная аллея&quot;,&quot;expected&quot;:48421.0,&quot;scheduled&quot;:48660,&quot;anchor&quot;:null,&quot;left_time&quot;:48301.0,&quot;right_time&quot;:48827.0,&quot;source_anchor&quot;:6},{&quot;stop&quot;:12,&quot;name&quot;:&quot;Метро «Партизанская»&quot;,&quot;expected&quot;:48541.0,&quot;scheduled&quot;:48780,&quot;anchor&quot;:null,&quot;left_time&quot;:48301.0,&quot;right_time&quot;:48827.0,&quot;source_anchor&quot;:6},{&quot;stop&quot;:13,&quot;name&quot;:&quot;Мост Окружной железной дороги&quot;,&quot;expected&quot;:48661.0,&quot;scheduled&quot;:48900,&quot;anchor&quot;:null,&quot;left_time&quot;:48301.0,&quot;right_time&quot;:48827.0,&quot;source_anchor&quot;:6},{&quot;stop&quot;:14,&quot;name&quot;:&quot;Фортунатовская улица&quot;,&quot;expected&quot;:48781.0,&quot;scheduled&quot;:49020,&quot;anchor&quot;:{&quot;stop&quot;:14,&quot;time&quot;:48827.0,&quot;shift&quot;:-193.0,&quot;ordinal&quot;:7},&quot;left_time&quot;:48301.0,&quot;right_time&quot;:48907.0,&quot;source_anchor&quot;:6},{&quot;stop&quot;:15,&quot;name&quot;:&quot;Ул. Ибрагимова&quot;,&quot;expected&quot;:48947.0,&quot;scheduled&quot;:49140,&quot;anchor&quot;:{&quot;stop&quot;:15,&quot;time&quot;:48907.0,&quot;shift&quot;:-233.0,&quot;ordinal&quot;:8},&quot;left_time&quot;:48827.0,&quot;right_time&quot;:49153.0,&quot;source_anchor&quot;:7},{&quot;stop&quot;:16,&quot;name&quot;:&quot;Метро «Семёновская»&quot;,&quot;expected&quot;:49027.0,&quot;scheduled&quot;:49260,&quot;anchor&quot;:null,&quot;left_time&quot;:48907.0,&quot;right_time&quot;:49153.0,&quot;source_anchor&quot;:8},{&quot;stop&quot;:17,&quot;name&quot;:&quot;Метро «Семёновская»&quot;,&quot;expected&quot;:49147.0,&quot;scheduled&quot;:49380,&quot;anchor&quot;:{&quot;stop&quot;:17,&quot;time&quot;:49153.0,&quot;shift&quot;:-227.0,&quot;ordinal&quot;:9},&quot;left_time&quot;:48907.0,&quot;right_time&quot;:49319.0,&quot;source_anchor&quot;:8},{&quot;stop&quot;:18,&quot;name&quot;:&quot;Ул. Измайловский Вал&quot;,&quot;expected&quot;:49273.0,&quot;scheduled&quot;:49500,&quot;anchor&quot;:null,&quot;left_time&quot;:49153.0,&quot;right_time&quot;:49319.0,&quot;source_anchor&quot;:9},{&quot;stop&quot;:19,&quot;name&quot;:&quot;Преображенское кладб.&quot;,&quot;expected&quot;:49333.0,&quot;scheduled&quot;:49560,&quot;anchor&quot;:{&quot;stop&quot;:19,&quot;time&quot;:49319.0,&quot;shift&quot;:-241.0,&quot;ordinal&quot;:10},&quot;left_time&quot;:49153.0,&quot;right_time&quot;:49632.0,&quot;source_anchor&quot;:9},{&quot;stop&quot;:20,&quot;name&quot;:&quot;Преображенский рынок&quot;,&quot;expected&quot;:49379.0,&quot;scheduled&quot;:49620,&quot;anchor&quot;:null,&quot;left_time&quot;:49319.0,&quot;right_time&quot;:49632.0,&quot;source_anchor&quot;:10},{&quot;stop&quot;:21,&quot;name&quot;:&quot;Метро «Преображенская площадь»&quot;,&quot;expected&quot;:49499.0,&quot;scheduled&quot;:49740,&quot;anchor&quot;:null,&quot;left_time&quot;:49319.0,&quot;right_time&quot;:49632.0,&quot;source_anchor&quot;:10},{&quot;stop&quot;:22,&quot;name&quot;:&quot;Улица Хромова&quot;,&quot;expected&quot;:49619.0,&quot;scheduled&quot;:49860,&quot;anchor&quot;:{&quot;stop&quot;:22,&quot;time&quot;:49632.0,&quot;shift&quot;:-228.0,&quot;ordinal&quot;:11},&quot;left_time&quot;:49319.0,&quot;right_time&quot;:50019.0,&quot;source_anchor&quot;:10},{&quot;stop&quot;:23,&quot;name&quot;:&quot;Мосгорсуд&quot;,&quot;expected&quot;:49752.0,&quot;scheduled&quot;:49980,&quot;anchor&quot;:null,&quot;left_time&quot;:49632.0,&quot;right_time&quot;:50019.0,&quot;source_anchor&quot;:11},{&quot;stop&quot;:24,&quot;name&quot;:&quot;Телерадиокомпания «МИР»&quot;,&quot;expected&quot;:49812.0,&quot;scheduled&quot;:50040,&quot;anchor&quot;:null,&quot;left_time&quot;:49632.0,&quot;right_time&quot;:50019.0,&quot;source_anchor&quot;:11},{&quot;stop&quot;:25,&quot;name&quot;:&quot;1-я Прогонная улица&quot;,&quot;expected&quot;:49872.0,&quot;scheduled&quot;:50100,&quot;anchor&quot;:null,&quot;left_time&quot;:49632.0,&quot;right_time&quot;:50019.0,&quot;source_anchor&quot;:11},{&quot;stop&quot;:26,&quot;name&quot;:&quot;Инновационный университет&quot;,&quot;expected&quot;:49932.0,&quot;scheduled&quot;:50160,&quot;anchor&quot;:null,&quot;left_time&quot;:49632.0,&quot;right_time&quot;:50019.0,&quot;source_anchor&quot;:11},{&quot;stop&quot;:27,&quot;name&quot;:&quot;Богородский храм&quot;,&quot;expected&quot;:50052.0,&quot;scheduled&quot;:50280,&quot;anchor&quot;:{&quot;stop&quot;:27,&quot;time&quot;:50019.0,&quot;shift&quot;:-261.0,&quot;ordinal&quot;:12},&quot;left_time&quot;:49632.0,&quot;right_time&quot;:50235.0,&quot;source_anchor&quot;:11},{&quot;stop&quot;:28,&quot;name&quot;:&quot;Богатырский мост&quot;,&quot;expected&quot;:50079.0,&quot;scheduled&quot;:50340,&quot;anchor&quot;:null,&quot;left_time&quot;:50019.0,&quot;right_time&quot;:50235.0,&quot;source_anchor&quot;:12},{&quot;stop&quot;:29,&quot;name&quot;:&quot;Ростокинский проезд&quot;,&quot;expected&quot;:50199.0,&quot;scheduled&quot;:50460,&quot;anchor&quot;:{&quot;stop&quot;:29,&quot;time&quot;:50235.0,&quot;shift&quot;:-225.0,&quot;ordinal&quot;:13},&quot;left_time&quot;:50019.0,&quot;right_time&quot;:50614.0,&quot;source_anchor&quot;:12},{&quot;stop&quot;:30,&quot;name&quot;:&quot;Институт иностранных языков&quot;,&quot;expected&quot;:50355.0,&quot;scheduled&quot;:50580,&quot;anchor&quot;:null,&quot;left_time&quot;:50235.0,&quot;right_time&quot;:50614.0,&quot;source_anchor&quot;:13},{&quot;stop&quot;:31,&quot;name&quot;:&quot;Станция Юных натуралистов&quot;,&quot;expected&quot;:50415.0,&quot;scheduled&quot;:50640,&quot;anchor&quot;:null,&quot;left_time&quot;:50235.0,&quot;right_time&quot;:50614.0,&quot;source_anchor&quot;:13},{&quot;stop&quot;:32,&quot;name&quot;:&quot;Площадь Академика Люльки&quot;,&quot;expected&quot;:50535.0,&quot;scheduled&quot;:50760,&quot;anchor&quot;:null,&quot;left_time&quot;:50235.0,&quot;right_time&quot;:50614.0,&quot;source_anchor&quot;:13},{&quot;stop&quot;:33,&quot;name&quot;:&quot;Улица Бориса Галушкина, 17&quot;,&quot;expected&quot;:50595.0,&quot;scheduled&quot;:50820,&quot;anchor&quot;:{&quot;stop&quot;:33,&quot;time&quot;:50614.0,&quot;shift&quot;:-206.0,&quot;ordinal&quot;:14},&quot;left_time&quot;:50235.0,&quot;right_time&quot;:50820.0,&quot;source_anchor&quot;:13},{&quot;stop&quot;:34,&quot;name&quot;:&quot;Ярославская улица&quot;,&quot;expected&quot;:50674.0,&quot;scheduled&quot;:50880,&quot;anchor&quot;:null,&quot;left_time&quot;:50614.0,&quot;right_time&quot;:50820.0,&quot;source_anchor&quot;:14},{&quot;stop&quot;:35,&quot;name&quot;:&quot;Проспект Мира&quot;,&quot;expected&quot;:50734.0,&quot;scheduled&quot;:50940,&quot;anchor&quot;:null,&quot;left_time&quot;:50614.0,&quot;right_time&quot;:50820.0,&quot;source_anchor&quot;:14},{&quot;stop&quot;:36,&quot;name&quot;:&quot;ВДНХ (северная)&quot;,&quot;expected&quot;:50854.0,&quot;scheduled&quot;:51060,&quot;anchor&quot;:{&quot;stop&quot;:36,&quot;time&quot;:50820.0,&quot;shift&quot;:-240.0,&quot;ordinal&quot;:15},&quot;left_time&quot;:50614.0,&quot;right_time&quot;:50938.0,&quot;source_anchor&quot;:14},{&quot;stop&quot;:37,&quot;name&quot;:&quot;Метро «ВДНХ»&quot;,&quot;expected&quot;:50940.0,&quot;scheduled&quot;:51180,&quot;anchor&quot;:{&quot;stop&quot;:37,&quot;time&quot;:50938.0,&quot;shift&quot;:-242.0,&quot;ordinal&quot;:16},&quot;left_time&quot;:50820.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:15},{&quot;stop&quot;:38,&quot;name&quot;:&quot;ВДНХ (южная)&quot;,&quot;expected&quot;:50998.0,&quot;scheduled&quot;:51240,&quot;anchor&quot;:null,&quot;left_time&quot;:50938.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:16},{&quot;stop&quot;:39,&quot;name&quot;:&quot;Улица Цандера&quot;,&quot;expected&quot;:51058.0,&quot;scheduled&quot;:51300,&quot;anchor&quot;:null,&quot;left_time&quot;:50938.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:16},{&quot;stop&quot;:40,&quot;name&quot;:&quot;Аргуновская улица&quot;,&quot;expected&quot;:51118.0,&quot;scheduled&quot;:51360,&quot;anchor&quot;:null,&quot;left_time&quot;:50938.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:16},{&quot;stop&quot;:41,&quot;name&quot;:&quot;Останкино&quot;,&quot;expected&quot;:51238.0,&quot;scheduled&quot;:51480,&quot;anchor&quot;:null,&quot;left_time&quot;:50938.0,&quot;right_time&quot;:null,&quot;source_anchor&quot;:16}],&quot;anchors&quot;:[{&quot;stop&quot;:0,&quot;time&quot;:47507.0,&quot;shift&quot;:-253.0,&quot;ordinal&quot;:1},{&quot;stop&quot;:2,&quot;time&quot;:47637.0,&quot;shift&quot;:-243.0,&quot;ordinal&quot;:2},{&quot;stop&quot;:5,&quot;time&quot;:47821.0,&quot;shift&quot;:-239.0,&quot;ordinal&quot;:3},{&quot;stop&quot;:7,&quot;time&quot;:48000.0,&quot;shift&quot;:-240.0,&quot;ordinal&quot;:4},{&quot;stop&quot;:8,&quot;time&quot;:48066.0,&quot;shift&quot;:-234.0,&quot;ordinal&quot;:5},{&quot;stop&quot;:10,&quot;time&quot;:48301.0,&quot;shift&quot;:-239.0,&quot;ordinal&quot;:6},{&quot;stop&quot;:14,&quot;time&quot;:48827.0,&quot;shift&quot;:-193.0,&quot;ordinal&quot;:7},{&quot;stop&quot;:15,&quot;time&quot;:48907.0,&quot;shift&quot;:-233.0,&quot;ordinal&quot;:8},{&quot;stop&quot;:17,&quot;time&quot;:49153.0,&quot;shift&quot;:-227.0,&quot;ordinal&quot;:9},{&quot;stop&quot;:19,&quot;time&quot;:49319.0,&quot;shift&quot;:-241.0,&quot;ordinal&quot;:10},{&quot;stop&quot;:22,&quot;time&quot;:49632.0,&quot;shift&quot;:-228.0,&quot;ordinal&quot;:11},{&quot;stop&quot;:27,&quot;time&quot;:50019.0,&quot;shift&quot;:-261.0,&quot;ordinal&quot;:12},{&quot;stop&quot;:29,&quot;time&quot;:50235.0,&quot;shift&quot;:-225.0,&quot;ordinal&quot;:13},{&quot;stop&quot;:33,&quot;time&quot;:50614.0,&quot;shift&quot;:-206.0,&quot;ordinal&quot;:14},{&quot;stop&quot;:36,&quot;time&quot;:50820.0,&quot;shift&quot;:-240.0,&quot;ordinal&quot;:15},{&quot;stop&quot;:37,&quot;time&quot;:50938.0,&quot;shift&quot;:-242.0,&quot;ordinal&quot;:16}],&quot;candidates&quot;:[{&quot;time&quot;:47734.0,&quot;support_end&quot;:47744.0,&quot;n10&quot;:7,&quot;devices10&quot;:4,&quot;methods&quot;:[&quot;rise&quot;],&quot;gap_before&quot;:61.0,&quot;wave&quot;:0},{&quot;time&quot;:47739.0,&quot;support_end&quot;:47749.0,&quot;n10&quot;:8,&quot;devices10&quot;:4,&quot;methods&quot;:[&quot;10s&quot;],&quot;gap_before&quot;:2.0,&quot;wave&quot;:0},{&quot;time&quot;:47894.0,&quot;support_end&quot;:47904.0,&quot;n10&quot;:5,&quot;devices10&quot;:3,&quot;methods&quot;:[&quot;rise&quot;],&quot;gap_before&quot;:52.0,&quot;wave&quot;:1},{&quot;time&quot;:48230.0,&quot;support_end&quot;:48240.0,&quot;n10&quot;:4,&quot;devices10&quot;:4,&quot;methods&quot;:[&quot;5s&quot;,&quot;rise&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:126.0,&quot;wave&quot;:2},{&quot;time&quot;:48431.0,&quot;support_end&quot;:48441.0,&quot;n10&quot;:3,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;10s&quot;,&quot;rise&quot;],&quot;gap_before&quot;:101.0,&quot;wave&quot;:3},{&quot;time&quot;:48436.0,&quot;support_end&quot;:48446.0,&quot;n10&quot;:2,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;2s&quot;,&quot;3s&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:5.0,&quot;wave&quot;:3},{&quot;time&quot;:48508.0,&quot;support_end&quot;:48518.0,&quot;n10&quot;:3,&quot;devices10&quot;:3,&quot;methods&quot;:[&quot;2s&quot;,&quot;rise&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:19.0,&quot;wave&quot;:4},{&quot;time&quot;:48761.0,&quot;support_end&quot;:48781.0,&quot;n10&quot;:4,&quot;devices10&quot;:4,&quot;methods&quot;:[&quot;10s&quot;,&quot;adaptive90&quot;,&quot;rise&quot;],&quot;gap_before&quot;:245.0,&quot;wave&quot;:5},{&quot;time&quot;:49426.0,&quot;support_end&quot;:49436.0,&quot;n10&quot;:5,&quot;devices10&quot;:4,&quot;methods&quot;:[&quot;10s&quot;,&quot;rise&quot;],&quot;gap_before&quot;:12.0,&quot;wave&quot;:6},{&quot;time&quot;:49528.0,&quot;support_end&quot;:49538.0,&quot;n10&quot;:3,&quot;devices10&quot;:3,&quot;methods&quot;:[&quot;5s&quot;,&quot;rise&quot;],&quot;gap_before&quot;:57.0,&quot;wave&quot;:7},{&quot;time&quot;:49531.0,&quot;support_end&quot;:49541.0,&quot;n10&quot;:2,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;synchrony&quot;],&quot;gap_before&quot;:3.0,&quot;wave&quot;:7},{&quot;time&quot;:50997.0,&quot;support_end&quot;:51007.0,&quot;n10&quot;:2,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;2s&quot;,&quot;3s&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:51.0,&quot;wave&quot;:8},{&quot;time&quot;:51238.0,&quot;support_end&quot;:51248.0,&quot;n10&quot;:2,&quot;devices10&quot;:2,&quot;methods&quot;:[&quot;3s&quot;,&quot;5s&quot;,&quot;adaptive90&quot;,&quot;synchrony&quot;],&quot;gap_before&quot;:9.0,&quot;wave&quot;:9}],&quot;matches&quot;:{&quot;15&quot;:{&quot;pairs&quot;:[{&quot;stop&quot;:11,&quot;candidate&quot;:4,&quot;error&quot;:10.0},{&quot;stop&quot;:38,&quot;candidate&quot;:11,&quot;error&quot;:-1.0},{&quot;stop&quot;:41,&quot;candidate&quot;:12,&quot;error&quot;:0.0}],&quot;count&quot;:3,&quot;mae&quot;:3.6666666666666665},&quot;30&quot;:{&quot;pairs&quot;:[{&quot;stop&quot;:4,&quot;candidate&quot;:1,&quot;error&quot;:-18.0},{&quot;stop&quot;:11,&quot;candidate&quot;:4,&quot;error&quot;:10.0},{&quot;stop&quot;:21,&quot;candidate&quot;:9,&quot;error&quot;:29.0},{&quot;stop&quot;:38,&quot;candidate&quot;:11,&quot;error&quot;:-1.0},{&quot;stop&quot;:41,&quot;candidate&quot;:12,&quot;error&quot;:0.0}],&quot;count&quot;:5,&quot;mae&quot;:11.6},&quot;45&quot;:{&quot;pairs&quot;:[{&quot;stop&quot;:4,&quot;candidate&quot;:1,&quot;error&quot;:-18.0},{&quot;stop&quot;:9,&quot;candidate&quot;:3,&quot;error&quot;:44.0},{&quot;stop&quot;:11,&quot;candidate&quot;:4,&quot;error&quot;:10.0},{&quot;stop&quot;:12,&quot;candidate&quot;:6,&quot;error&quot;:-33.0},{&quot;stop&quot;:21,&quot;candidate&quot;:9,&quot;error&quot;:29.0},{&quot;stop&quot;:38,&quot;candidate&quot;:11,&quot;error&quot;:-1.0},{&quot;stop&quot;:41,&quot;candidate&quot;:12,&quot;error&quot;:0.0}],&quot;count&quot;:7,&quot;mae&quot;:19.285714285714285},&quot;60&quot;:{&quot;pairs&quot;:[{&quot;stop&quot;:4,&quot;candidate&quot;:1,&quot;error&quot;:-18.0},{&quot;stop&quot;:6,&quot;candidate&quot;:2,&quot;error&quot;:-47.0},{&quot;stop&quot;:9,&quot;candidate&quot;:3,&quot;error&quot;:44.0},{&quot;stop&quot;:11,&quot;candidate&quot;:4,&quot;error&quot;:10.0},{&quot;stop&quot;:12,&quot;candidate&quot;:6,&quot;error&quot;:-33.0},{&quot;stop&quot;:20,&quot;candidate&quot;:8,&quot;error&quot;:47.0},{&quot;stop&quot;:21,&quot;candidate&quot;:9,&quot;error&quot;:29.0},{&quot;stop&quot;:38,&quot;candidate&quot;:11,&quot;error&quot;:-1.0},{&quot;stop&quot;:41,&quot;candidate&quot;:12,&quot;error&quot;:0.0}],&quot;count&quot;:9,&quot;mae&quot;:25.444444444444443},&quot;90&quot;:{&quot;pairs&quot;:[{&quot;stop&quot;:4,&quot;candidate&quot;:1,&quot;error&quot;:-18.0},{&quot;stop&quot;:6,&quot;candidate&quot;:2,&quot;error&quot;:-47.0},{&quot;stop&quot;:9,&quot;candidate&quot;:3,&quot;error&quot;:44.0},{&quot;stop&quot;:11,&quot;candidate&quot;:4,&quot;error&quot;:10.0},{&quot;stop&quot;:12,&quot;candidate&quot;:6,&quot;error&quot;:-33.0},{&quot;stop&quot;:20,&quot;candidate&quot;:8,&quot;error&quot;:47.0},{&quot;stop&quot;:21,&quot;candidate&quot;:9,&quot;error&quot;:29.0},{&quot;stop&quot;:38,&quot;candidate&quot;:11,&quot;error&quot;:-1.0},{&quot;stop&quot;:41,&quot;candidate&quot;:12,&quot;error&quot;:0.0}],&quot;count&quot;:9,&quot;mae&quot;:25.444444444444443}},&quot;counts&quot;:[0,0,0,0,0,0,0,5,15,18,9,4,20,1,0,13,1,1,17,0,5,1,0,0,14,0,11,1,0,0,0,4,2,1,7,1,0,0,3,0,3,1,0,0,0,0,0,0,0,8,4,1,5,25,7,0,0,5,2,0,0,0,12,12,0,0,0,3,5,0,0,8,4,1,1,3,0,1,9,4,0,1,1,0,0,0,0,0,0,1,0,4,0,1,1,0,0,0,5,2,0,0,0,0,0,0,1,1,0,0,0,4,1,1,0,0,0,0,5,5,1,2,4,2,0,0,0,1,0,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],&quot;start&quot;:47280.0,&quot;tail&quot;:[],&quot;terminal&quot;:51238.0,&quot;fixed_terminal&quot;:51227.0,&quot;date&quot;:&quot;2025-05-15&quot;,&quot;trip&quot;:&quot;210_3159499_6_213&quot;}}&lt;/script&gt;
+&lt;script&gt;
+(()=&gt;{const root=document.getElementById(&#x27;anchor-match&#x27;),q=s=&gt;root.querySelector(s),D=JSON.parse(document.getElementById(&#x27;am-data&#x27;).textContent),route=q(&#x27;#am-route&#x27;),tol=q(&#x27;#am-tolerance&#x27;),section=q(&#x27;#am-section&#x27;),vis={strong:true,schedule:true,weak:true};
+const clk=t=&gt;[Math.floor(t/3600),Math.floor(t%3600/60),Math.round(t%60)].map(x=&gt;String(x).padStart(2,&#x27;0&#x27;)).join(&#x27;:&#x27;),sg=n=&gt;(n&gt;0?&#x27;+&#x27;:&#x27;&#x27;)+Math.round(n),esc=s=&gt;String(s).replaceAll(&#x27;&amp;&#x27;,&#x27;&amp;amp;&#x27;).replaceAll(&#x27;&lt;&#x27;,&#x27;&amp;lt;&#x27;);
+function sections(){section.innerHTML=&#x27;&#x27;;section.add(new Option(&#x27;Весь путь и продолжение записей&#x27;,&#x27;all&#x27;));const d=D[route.value];d.anchors.forEach((a,i)=&gt;section.add(new Option(`Ориентир ${i+1} · ${clk(a.time).slice(0,5)} → ${i+1&lt;d.anchors.length?clk(d.anchors[i+1].time).slice(0,5):&#x27;конечная&#x27;}`,String(i))));}
+function restore(state){const s=state?.modelContent;if(!s)return;if(D[s.route])route.value=s.route;if([&#x27;15&#x27;,&#x27;30&#x27;,&#x27;45&#x27;,&#x27;60&#x27;,&#x27;90&#x27;].includes(s.tolerance))tol.value=s.tolerance;sections();if([...section.options].some(o=&gt;o.value===s.section))section.value=s.section;}
+sections();restore(window.openai?.widgetState);
+function render(){const d=D[route.value],m=d.matches[tol.value],pairByStop=new Map(m.pairs.map(p=&gt;[p.stop,p])),matched=new Set(m.pairs.map(p=&gt;p.candidate)),aliases=new Set();d.candidates.forEach((c,i)=&gt;{if(!matched.has(i)&amp;&amp;m.pairs.some(p=&gt;{const a=d.candidates[p.candidate];return c.wave===a.wave}))aliases.add(i)});
+let start=d.start,end=d.start+d.counts.length*30;if(section.value!==&#x27;all&#x27;){const k=Number(section.value);start=d.anchors[k].time-35;end=(d.anchors[k+1]?.time??Math.max(d.terminal,d.anchors[k].time+60))+35;}
+const inside=t=&gt;t&gt;=start&amp;&amp;t&lt;=end,shownPairs=m.pairs.filter(p=&gt;inside(d.stops[p.stop].expected)||inside(d.candidates[p.candidate].time)),weak=d.candidates.map((c,i)=&gt;({...c,id:i})).filter(c=&gt;inside(c.time)&amp;&amp;!aliases.has(c.id)),stops=d.stops.filter(s=&gt;inside(s.expected)),anchors=d.anchors.filter(a=&gt;inside(a.time));
+q(&#x27;#am-meta&#x27;).textContent=`${d.stops[0].name} → ${d.stops.at(-1).name} · расчётная конечная ${clk(d.terminal)} · сдвиг меняют только красные ориентиры`;
+q(&#x27;#am-summary&#x27;).textContent=`За весь рейс: ${d.anchors.length} сильных ориентиров + ${m.count} слабых пар · среднее |Δ| слабых ${m.mae?.toFixed(1)??&#x27;—&#x27;} с · ${d.stops.length-d.anchors.length-m.count} позиций без сопоставленного начала`;
+const bins=d.counts.map((n,i)=&gt;({x:d.start+i*30,n})).filter(b=&gt;b.x+30&gt;=start&amp;&amp;b.x&lt;=end);
+function chart(id,height,lanes){const host=q(id),w=host.clientWidth,L=72,R=w-16,T=38,B=height-52,range=d3.extent([start,end,...shownPairs.flatMap(p=&gt;[d.stops[p.stop].expected,d.candidates[p.candidate].time])]),x=d3.scaleLinear().domain([range[0]-10,range[1]+10]).range([L+4,R-4]);host.innerHTML=&#x27;&#x27;;const svg=d3.select(host).append(&#x27;svg&#x27;).attr(&#x27;class&#x27;,&#x27;plot&#x27;).attr(&#x27;viewBox&#x27;,`0 0 ${w} ${height}`).attr(&#x27;role&#x27;,&#x27;img&#x27;).attr(&#x27;aria-label&#x27;,lanes?&#x27;Сопоставления слабых всплесков с ожидаемыми остановками&#x27;:&#x27;Оплаты, сильные ориентиры и слабые кандидаты&#x27;);
+svg.append(&#x27;rect&#x27;).attr(&#x27;data-chart-frame&#x27;,&#x27;&#x27;).attr(&#x27;x&#x27;,L).attr(&#x27;y&#x27;,T).attr(&#x27;width&#x27;,R-L).attr(&#x27;height&#x27;,B-T).attr(&#x27;fill&#x27;,&#x27;none&#x27;).attr(&#x27;stroke&#x27;,&#x27;var(--border)&#x27;);svg.append(&#x27;text&#x27;).attr(&#x27;class&#x27;,&#x27;axis-title&#x27;).attr(&#x27;data-axis&#x27;,&#x27;y&#x27;).attr(&#x27;x&#x27;,L).attr(&#x27;y&#x27;,18).text(lanes?&#x27;Метки расписания и оплат&#x27;:&#x27;Оплаты / 30 с&#x27;);svg.append(&#x27;text&#x27;).attr(&#x27;class&#x27;,&#x27;axis-title&#x27;).attr(&#x27;data-axis&#x27;,&#x27;x&#x27;).attr(&#x27;x&#x27;,(L+R)/2).attr(&#x27;y&#x27;,height-8).attr(&#x27;text-anchor&#x27;,&#x27;middle&#x27;).text(&#x27;Время · Москва&#x27;);const minutes=(end-start)/60,step=minutes&lt;10?60:minutes&lt;25?300:900;let ticks=d3.range(Math.ceil(range[0]/step)*step,range[1]+1,step);if(w&lt;450)ticks=ticks.filter((_,i)=&gt;i%Math.max(1,Math.ceil(ticks.length/4))===0);svg.append(&#x27;g&#x27;).attr(&#x27;transform&#x27;,`translate(0,${B})`).call(d3.axisBottom(x).tickValues(ticks).tickFormat(v=&gt;clk(v).slice(0,5))).call(g=&gt;g.select(&#x27;.domain&#x27;).remove());
+const y=d3.scaleLinear().domain([0,d3.max(bins,b=&gt;b.n)*1.2||1]).nice().range([B-3,T+12]);
+if(!lanes){svg.append(&#x27;g&#x27;).attr(&#x27;transform&#x27;,`translate(${L},0)`).call(d3.axisLeft(y).ticks(4).tickSize(0)).call(g=&gt;g.select(&#x27;.domain&#x27;).remove());svg.selectAll(&#x27;.bar&#x27;).data(bins).join(&#x27;rect&#x27;).attr(&#x27;class&#x27;,&#x27;bar&#x27;).attr(&#x27;x&#x27;,b=&gt;x(Math.max(start,b.x))).attr(&#x27;y&#x27;,b=&gt;y(b.n)).attr(&#x27;width&#x27;,b=&gt;Math.max(.4,x(Math.min(end,b.x+30))-x(Math.max(start,b.x))-.5)).attr(&#x27;height&#x27;,b=&gt;y(0)-y(b.n)).attr(&#x27;fill&#x27;,&#x27;var(--foreground)&#x27;).attr(&#x27;opacity&#x27;,.25);
+if(vis.schedule)svg.append(&#x27;g&#x27;).selectAll(&#x27;line&#x27;).data(stops).join(&#x27;line&#x27;).attr(&#x27;x1&#x27;,s=&gt;x(s.expected)).attr(&#x27;x2&#x27;,s=&gt;x(s.expected)).attr(&#x27;y1&#x27;,T+3).attr(&#x27;y2&#x27;,B-3).attr(&#x27;stroke&#x27;,&#x27;var(--blue)&#x27;).attr(&#x27;stroke-dasharray&#x27;,&#x27;4 5&#x27;).attr(&#x27;opacity&#x27;,.65);
+if(vis.weak){svg.append(&#x27;g&#x27;).selectAll(&#x27;line&#x27;).data(weak).join(&#x27;line&#x27;).attr(&#x27;x1&#x27;,c=&gt;x(c.time)).attr(&#x27;x2&#x27;,c=&gt;x(c.time)).attr(&#x27;y1&#x27;,T+28).attr(&#x27;y2&#x27;,B-3).attr(&#x27;stroke&#x27;,&#x27;var(--orange)&#x27;).attr(&#x27;stroke-dasharray&#x27;,&#x27;1 4&#x27;).attr(&#x27;stroke-width&#x27;,1.6);svg.append(&#x27;g&#x27;).selectAll(&#x27;circle&#x27;).data(weak).join(&#x27;circle&#x27;).attr(&#x27;cx&#x27;,c=&gt;x(c.time)).attr(&#x27;cy&#x27;,B-9).attr(&#x27;r&#x27;,3).attr(&#x27;fill&#x27;,&#x27;var(--orange)&#x27;);}
+if(vis.strong){svg.append(&#x27;g&#x27;).selectAll(&#x27;line&#x27;).data(anchors).join(&#x27;line&#x27;).attr(&#x27;x1&#x27;,a=&gt;x(a.time)).attr(&#x27;x2&#x27;,a=&gt;x(a.time)).attr(&#x27;y1&#x27;,T+2).attr(&#x27;y2&#x27;,B-3).attr(&#x27;stroke&#x27;,&#x27;var(--red)&#x27;).attr(&#x27;stroke-width&#x27;,2.3);let last=-100;anchors.forEach(a=&gt;{if(x(a.time)-last&lt;32)return;last=x(a.time);svg.append(&#x27;text&#x27;).attr(&#x27;x&#x27;,x(a.time)+3).attr(&#x27;y&#x27;,T+16).text(&#x27;Я&#x27;+a.ordinal);});}
+if(inside(d.terminal)){svg.append(&#x27;line&#x27;).attr(&#x27;x1&#x27;,x(d.terminal)).attr(&#x27;x2&#x27;,x(d.terminal)).attr(&#x27;y1&#x27;,T+3).attr(&#x27;y2&#x27;,B-3).attr(&#x27;stroke&#x27;,&#x27;var(--foreground)&#x27;).attr(&#x27;stroke-width&#x27;,2);}
+}else{const ys=T+29,yc=B-26;svg.append(&#x27;text&#x27;).attr(&#x27;x&#x27;,L-8).attr(&#x27;y&#x27;,ys+4).attr(&#x27;text-anchor&#x27;,&#x27;end&#x27;).text(&#x27;План&#x27;);svg.append(&#x27;text&#x27;).attr(&#x27;x&#x27;,L-8).attr(&#x27;y&#x27;,yc+4).attr(&#x27;text-anchor&#x27;,&#x27;end&#x27;).text(&#x27;Слабые&#x27;);
+if(vis.weak&amp;&amp;vis.schedule)svg.append(&#x27;g&#x27;).selectAll(&#x27;line&#x27;).data(shownPairs).join(&#x27;line&#x27;).attr(&#x27;x1&#x27;,p=&gt;x(d.stops[p.stop].expected)).attr(&#x27;y1&#x27;,ys).attr(&#x27;x2&#x27;,p=&gt;x(d.candidates[p.candidate].time)).attr(&#x27;y2&#x27;,yc).attr(&#x27;stroke&#x27;,&#x27;var(--green)&#x27;).attr(&#x27;stroke-width&#x27;,1.8);
+if(vis.schedule)svg.append(&#x27;g&#x27;).selectAll(&#x27;rect&#x27;).data(stops.filter(s=&gt;!s.anchor)).join(&#x27;rect&#x27;).attr(&#x27;x&#x27;,s=&gt;x(s.expected)-3).attr(&#x27;y&#x27;,ys-3).attr(&#x27;width&#x27;,6).attr(&#x27;height&#x27;,6).attr(&#x27;fill&#x27;,&#x27;var(--blue)&#x27;);
+if(vis.weak){svg.append(&#x27;g&#x27;).selectAll(&#x27;circle&#x27;).data(weak.filter(c=&gt;matched.has(c.id))).join(&#x27;circle&#x27;).attr(&#x27;cx&#x27;,c=&gt;x(c.time)).attr(&#x27;cy&#x27;,yc).attr(&#x27;r&#x27;,4).attr(&#x27;fill&#x27;,&#x27;var(--orange)&#x27;);svg.append(&#x27;g&#x27;).selectAll(&#x27;text&#x27;).data(weak.filter(c=&gt;!matched.has(c.id))).join(&#x27;text&#x27;).attr(&#x27;x&#x27;,c=&gt;x(c.time)).attr(&#x27;y&#x27;,yc+4).attr(&#x27;text-anchor&#x27;,&#x27;middle&#x27;).text(&#x27;×&#x27;);}
+let rightEdge=-100;shownPairs.forEach(p=&gt;{const xx=(x(d.stops[p.stop].expected)+x(d.candidates[p.candidate].time))/2;if(xx-rightEdge&lt;60)return;rightEdge=xx;svg.append(&#x27;text&#x27;).attr(&#x27;x&#x27;,xx).attr(&#x27;y&#x27;,(ys+yc)/2-4).attr(&#x27;text-anchor&#x27;,&#x27;middle&#x27;).text(`#${p.stop+1} ${sg(p.error)}с`);});}
+const tip=q(&#x27;.tooltip&#x27;),guide=svg.append(&#x27;line&#x27;).attr(&#x27;data-chart-hover-guide&#x27;,&#x27;&#x27;).attr(&#x27;y1&#x27;,T).attr(&#x27;y2&#x27;,B).attr(&#x27;stroke&#x27;,&#x27;var(--muted-foreground)&#x27;).style(&#x27;display&#x27;,&#x27;none&#x27;);svg.append(&#x27;rect&#x27;).attr(&#x27;x&#x27;,L).attr(&#x27;y&#x27;,T).attr(&#x27;width&#x27;,R-L).attr(&#x27;height&#x27;,B-T).attr(&#x27;fill&#x27;,&#x27;transparent&#x27;).attr(&#x27;data-chart-hit&#x27;,&#x27;&#x27;).attr(&#x27;data-chart-hover-overlay&#x27;,&#x27;cross-series&#x27;).on(&#x27;pointermove click&#x27;,function(e){const px=d3.pointer(e,this)[0],t=x.invert(px);guide.attr(&#x27;x1&#x27;,px).attr(&#x27;x2&#x27;,px).style(&#x27;display&#x27;,null);let label=clk(t);if(lanes&amp;&amp;shownPairs.length){const p=shownPairs.reduce((a,b)=&gt;Math.abs(d.candidates[a.candidate].time-t)&lt;Math.abs(d.candidates[b.candidate].time-t)?a:b);label+=` · #${p.stop+1} ${d.stops[p.stop].name}: ${sg(p.error)} с`;}else{const b=bins[d3.bisector(b=&gt;b.x).center(bins,t)];label+=` · ${b.n} оплат / 30 с`;}tip.textContent=label;tip.style.display=&#x27;block&#x27;;tip.style.left=Math.max(0,Math.min(w-250,px))+&#x27;px&#x27;;tip.style.top=(host.offsetTop+50)+&#x27;px&#x27;;}).on(&#x27;pointerleave&#x27;,()=&gt;{guide.style(&#x27;display&#x27;,&#x27;none&#x27;);tip.style.display=&#x27;none&#x27;});
+let last=-100;for(const e of host.querySelectorAll(&#x27;.tick text&#x27;)){const b=e.getBoundingClientRect();if(b.y&gt;host.getBoundingClientRect().y+B-5){if(b.left&lt;last+4)e.style.display=&#x27;none&#x27;;else last=b.right;}}
+}
+chart(&#x27;#am-bars&#x27;,340,false);chart(&#x27;#am-pairs&#x27;,205,true);
+q(&#x27;#am-table&#x27;).innerHTML=d.stops.filter(s=&gt;!s.anchor&amp;&amp;inside(s.expected)).map(s=&gt;{const p=pairByStop.get(s.stop),c=p?d.candidates[p.candidate]:null;return `&lt;tr&gt;&lt;td&gt;#${s.stop+1} ${esc(s.name)}&lt;/td&gt;&lt;td&gt;${s.source_anchor?&#x27;Я&#x27;+s.source_anchor:&#x27;Старт&#x27;}&lt;/td&gt;&lt;td&gt;${clk(s.expected)}&lt;/td&gt;&lt;td&gt;${c?clk(c.time):&#x27;Без пары&#x27;}&lt;/td&gt;&lt;td&gt;${p?sg(p.error):&#x27;—&#x27;}&lt;/td&gt;&lt;td&gt;${c?c.n10+&#x27; / &#x27;+c.devices10:&#x27;—&#x27;}&lt;/td&gt;&lt;/tr&gt;`}).join(&#x27;&#x27;);
+q(&#x27;#am-anchors&#x27;).innerHTML=d.anchors.map((a,i)=&gt;`&lt;tr&gt;&lt;td&gt;Я${a.ordinal}&lt;/td&gt;&lt;td&gt;#${a.stop+1} ${esc(d.stops[a.stop].name)}&lt;/td&gt;&lt;td&gt;${clk(a.time)}&lt;/td&gt;&lt;td&gt;${sg(a.shift)}&lt;/td&gt;&lt;td&gt;${i?sg(a.shift-d.anchors[i-1].shift):&#x27;Начальный&#x27;}&lt;/td&gt;&lt;/tr&gt;`).join(&#x27;&#x27;);}
+function change(){render();window.openai?.setWidgetState?.({modelContent:{route:route.value,tolerance:tol.value,section:section.value},privateContent:null}).catch(()=&gt;{});}
+route.addEventListener(&#x27;change&#x27;,()=&gt;{sections();change()});tol.addEventListener(&#x27;change&#x27;,change);section.addEventListener(&#x27;change&#x27;,change);root.querySelectorAll(&#x27;[data-key]&#x27;).forEach(b=&gt;b.addEventListener(&#x27;click&#x27;,()=&gt;{vis[b.dataset.key]=!vis[b.dataset.key];b.setAttribute(&#x27;aria-pressed&#x27;,vis[b.dataset.key]);render()}));window.addEventListener(&#x27;openai:set_globals&#x27;,e=&gt;{restore(e.detail?.globals?.widgetState);render()});new ResizeObserver(render).observe(q(&#x27;#am-bars&#x27;));render();})();
+&lt;/script&gt;
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+  let lastPointerWasTouch = false;
+  let pinnedByTouch = false;
+
+  const getTrigger = (target) =&gt;
+    target?.nodeType === Node.ELEMENT_NODE
+      ? target.closest(&quot;[data-tooltip]&quot;)
+      : null;
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    pinnedByTouch = false;
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handlePointer = (event) =&gt; {
+    lastPointerWasTouch =
+      event.type === &quot;pointerdown&quot; &amp;&amp; event.pointerType === &quot;touch&quot;;
+  };
+  const handleTouchClick = (event) =&gt; {
+    const isTouch = event.pointerType === &quot;touch&quot; || lastPointerWasTouch;
+    lastPointerWasTouch = false;
+    if (!isTouch || event.detail === 0) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (
+      trigger == null ||
+      !trigger.isConnected ||
+      getContent(trigger).length === 0 ||
+      (pinnedByTouch &amp;&amp; activeTrigger === trigger)
+    ) {
+      if (pinnedByTouch) {
+        closeTooltip();
+      }
+      return;
+    }
+    openTooltip(trigger);
+    pinnedByTouch = activeTrigger === trigger;
+    window.setTimeout(() =&gt; {
+      if (activeTrigger === trigger &amp;&amp; !trigger.isConnected) {
+        closeTooltip(false);
+      }
+    }, 0);
+  };
+  const handleLeave = (event) =&gt; {
+    if (pinnedByTouch) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    lastPointerWasTouch = false;
+    const trigger = getTrigger(event.target);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    lastPointerWasTouch = false;
+    document.removeEventListener(&quot;pointerover&quot;, handlePointerOpen);
+    document.removeEventListener(&quot;pointerdown&quot;, handlePointer);
+    document.removeEventListener(&quot;pointercancel&quot;, handlePointer);
+    document.removeEventListener(&quot;click&quot;, handleTouchClick);
+    document.removeEventListener(&quot;pointerout&quot;, handleLeave);
+    document.removeEventListener(&quot;focusin&quot;, handleFocusIn);
+    document.removeEventListener(&quot;focusout&quot;, handleLeave);
+    document.removeEventListener(&quot;keydown&quot;, handleKeyDown);
+    document.removeEventListener(&quot;contextmenu&quot;, handleContextMenu);
+    tooltip = null;
+  };
+
+  document.addEventListener(&quot;pointerover&quot;, handlePointerOpen);
+  document.addEventListener(&quot;pointerdown&quot;, handlePointer);
+  document.addEventListener(&quot;pointercancel&quot;, handlePointer);
+  document.addEventListener(&quot;click&quot;, handleTouchClick);
+  document.addEventListener(&quot;pointerout&quot;, handleLeave);
+  document.addEventListener(&quot;focusin&quot;, handleFocusIn);
+  document.addEventListener(&quot;focusout&quot;, handleLeave);
+  document.addEventListener(&quot;keydown&quot;, handleKeyDown);
+  document.addEventListener(&quot;contextmenu&quot;, handleContextMenu);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-tabs&quot;&gt;
+(() =&gt; {
+  const selector = &#x27;.nav[role=&quot;tablist&quot;] [role=&quot;tab&quot;]&#x27;;
+  const disabled = &#x27;:disabled,[aria-disabled=&quot;true&quot;]&#x27;;
+  const selectTab = (selected) =&gt; {
+    const panelId = selected.getAttribute(&quot;aria-controls&quot;);
+    for (const tab of selected.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;)) {
+      const active = tab === selected;
+      tab.classList.toggle(&quot;active&quot;, active);
+      tab.setAttribute(&quot;aria-selected&quot;, String(active));
+      const id = tab.getAttribute(&quot;aria-controls&quot;);
+      const panel = id &amp;&amp; document.getElementById(id);
+      if (panel != null) {
+        panel.hidden = id !== panelId;
+        if (!panel.hidden &amp;&amp; selected.id) {
+          panel.setAttribute(&quot;aria-labelledby&quot;, selected.id);
+        }
+      }
+    }
+  };
+  const interact = (event) =&gt; {
+    const tab = event.target?.closest?.(selector);
+    if (event.defaultPrevented || tab == null || tab.matches(disabled)) {
+      return;
+    }
+    if (event.type === &quot;click&quot;) {
+      selectTab(tab);
+      return;
+    }
+    const tabs = Array.from(
+      tab.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;),
+    ).filter((candidate) =&gt; !candidate.matches(disabled));
+    const current = tabs.indexOf(tab);
+    let next;
+    if (event.key === &quot;ArrowRight&quot; || event.key === &quot;ArrowDown&quot;) {
+      next = (current + 1) % tabs.length;
+    } else if (event.key === &quot;ArrowLeft&quot; || event.key === &quot;ArrowUp&quot;) {
+      next = (current + tabs.length - 1) % tabs.length;
+    } else if (event.key === &quot;Home&quot;) {
+      next = 0;
+    } else if (event.key === &quot;End&quot;) {
+      next = tabs.length - 1;
+    } else {
+      return;
+    }
+    event.preventDefault();
+    tabs[next].focus();
+    selectTab(tabs[next]);
+  };
+
+  for (const list of document.querySelectorAll(&#x27;.nav[role=&quot;tablist&quot;]&#x27;)) {
+    const selected =
+      list.querySelector(&#x27;[role=&quot;tab&quot;][aria-selected=&quot;true&quot;]&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;].active&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;]&#x27;);
+    if (selected != null) {
+      selectTab(selected);
+    }
+  }
+  document.addEventListener(&quot;click&quot;, interact);
+  document.addEventListener(&quot;keydown&quot;, interact);
+  window.addEventListener(&quot;pagehide&quot;, () =&gt; {
+    document.removeEventListener(&quot;click&quot;, interact);
+    document.removeEventListener(&quot;keydown&quot;, interact);
+  }, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+<script>(() => {
+  const frame = document.getElementById("codex-visualization");
+  if (!(frame instanceof HTMLIFrameElement)) {
+    return;
+  }
+  let viewportHeight = globalThis.innerHeight;
+  const storageKey = `codex:visualization-widget-state-v2:${JSON.stringify([
+    globalThis.location.pathname,
+    globalThis.location.search,
+  ])}`;
+  const parseState = (serializedState) => {
+    if (
+      typeof serializedState !== "string" ||
+      new TextEncoder().encode(serializedState).length > 16 * 1024
+    ) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    /** @type {unknown} */
+    const state = JSON.parse(serializedState);
+    if (
+      state == null ||
+      typeof state !== "object" ||
+      Array.isArray(state) ||
+      ("imageIds" in state &&
+        (!Array.isArray(state.imageIds) || state.imageIds.length > 0))
+    ) {
+      throw new TypeError("Widget state must be a JSON object");
+    }
+    const storedState = { modelContent: null, privateContent: null, ...state };
+    const canonicalState = JSON.stringify(
+      storedState,
+      (_key, /** @type {unknown} */ value) => {
+        if (typeof value === "number" && !Number.isFinite(value)) {
+          throw new TypeError("Widget state must contain finite numbers");
+        }
+        return value;
+      },
+    );
+    if (new TextEncoder().encode(canonicalState).length > 16 * 1024) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    return storedState;
+  };
+  let storage = null;
+  let state = null;
+  try {
+    const localStorage = globalThis.localStorage;
+    const probeKey = `${storageKey}:probe`;
+    localStorage.setItem(probeKey, "1");
+    localStorage.removeItem(probeKey);
+    storage = localStorage;
+    const savedState = storage.getItem(storageKey);
+    if (savedState != null) {
+      try {
+        state = parseState(savedState);
+      } catch {
+        // Invalid saved state does not disable future writes.
+      }
+    }
+  } catch {
+    storage = null;
+  }
+  const initialGlobals = {
+    widgetState: state,
+    statePersistence: storage == null ? "none" : "local",
+  };
+
+  const channel = new MessageChannel();
+  channel.port1.addEventListener("message", (event) => {
+    const data = event.data;
+    if (typeof data !== "object" || data == null) {
+      return;
+    }
+    if (data.type === "widget-state-write") {
+      if (!Number.isSafeInteger(data.id) || data.id <= 0) {
+        return;
+      }
+      let ok = false;
+      try {
+        if (storage != null) {
+          const state = parseState(data.state);
+          storage.setItem(storageKey, JSON.stringify(state));
+          ok = true;
+        }
+      } catch {
+        // Storage denial, quota limits, and invalid state return a failed receipt.
+      }
+      channel.port1.postMessage({
+        type: "widget-state-result",
+        id: data.id,
+        ok,
+      });
+      return;
+    }
+    if (data.type === "height") {
+      const height = data.height;
+      if (
+        typeof height === "number" &&
+        Number.isFinite(height) &&
+        height >= 0 &&
+        height <= 10_000
+      ) {
+        frame.style.height = Math.ceil(height) + "px";
+      }
+      return;
+    }
+    if (data.type === "scroll-to") {
+      const top = data.top;
+      if (
+        typeof top === "number" &&
+        Number.isFinite(top) &&
+        top >= 0 &&
+        globalThis.navigator.userActivation?.isActive === true
+      ) {
+        globalThis.scrollTo({
+          top: Math.ceil(
+            globalThis.scrollY + frame.getBoundingClientRect().top + top,
+          ),
+        });
+      }
+      return;
+    }
+    if (data.type === "open-external") {
+      const rawHref = data.href;
+      if (typeof rawHref !== "string") {
+        return;
+      }
+      let href;
+      try {
+        const url = new URL(rawHref, document.baseURI);
+        if (url.protocol !== "https:") {
+          return;
+        }
+        href = url.href;
+      } catch {
+        return;
+      }
+      if (globalThis.navigator.userActivation?.isActive === true) {
+        const anchor = document.createElement("a");
+        anchor.href = href;
+        anchor.rel = "noopener noreferrer";
+        anchor.target = "_blank";
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+      }
+      return;
+    }
+    if (data.type === "follow-up") {
+      const prompt = data.prompt;
+      if (
+        typeof prompt !== "string" ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      const title = data.title;
+      globalThis.prompt(typeof title === "string" ? title : prompt, prompt);
+    }
+  });
+  channel.port1.start();
+  const srcdoc = frame.dataset.srcdoc;
+  if (srcdoc == null) {
+    return;
+  }
+  globalThis.addEventListener("resize", () => {
+    const height = Number.parseFloat(frame.style.height);
+    if (!Number.isFinite(height) || height <= viewportHeight) {
+      frame.style.removeProperty("height");
+    }
+    viewportHeight = globalThis.innerHeight;
+    channel.port1.postMessage({ type: "measure" });
+  });
+  frame.addEventListener(
+    "load",
+    () => {
+      frame.contentWindow?.postMessage(
+        { type: "codex-visualization-initialize" },
+        "*",
+        [channel.port2],
+      );
+    },
+    { once: true },
+  );
+  // Match the trusted bootstrap element, not the same text in an authored title.
+  frame.srcdoc = srcdoc.replace(
+    '<script type="application/json" id="codex-visualization-widget-state">__CODEX_VISUALIZATION_WIDGET_STATE__<\/script>',
+    () =>
+      '<script type="application/json" id="codex-visualization-widget-state">' +
+      JSON.stringify(initialGlobals).replaceAll("<", "\\u003c") +
+      "<\/script>",
+  );
+  delete frame.dataset.srcdoc;
+})();
+</script>
+</body>
+</html>

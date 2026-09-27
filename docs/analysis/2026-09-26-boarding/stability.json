@@ -1,0 +1,263 @@
+{
+  "calibrated": false,
+  "cases": [
+    {
+      "config": {},
+      "metrics": {
+        "adjacency_agreement": 1.0,
+        "adjacency_jaccard": 1.0,
+        "adjacency_retention": 1.0,
+        "adjacent_pairs_evaluated": 9946,
+        "baseline_same_burst_edges": 3962,
+        "dropped_events": 0,
+        "dropped_successful": 0,
+        "geographic_accuracy": "unverified",
+        "perturbed_same_burst_edges": 3962,
+        "preserved_same_burst_edges": 3962,
+        "retained_bursts": 6038,
+        "retained_events": 10000,
+        "retained_fraction": 1.0,
+        "retained_successful": 9534,
+        "same_burst_edge_union": 3962,
+        "sample_events": 10000,
+        "sample_successful": 9534
+      },
+      "perturbation": "identity"
+    },
+    {
+      "config": {
+        "uniform_max_seconds": 5,
+        "uniform_min_seconds": -5
+      },
+      "metrics": {
+        "adjacency_agreement": 0.9918560225216168,
+        "adjacency_jaccard": 0.9797195793690536,
+        "adjacency_retention": 0.9876325088339223,
+        "adjacent_pairs_evaluated": 9946,
+        "baseline_same_burst_edges": 3962,
+        "dropped_events": 0,
+        "dropped_successful": 0,
+        "geographic_accuracy": "unverified",
+        "perturbed_same_burst_edges": 3945,
+        "preserved_same_burst_edges": 3913,
+        "retained_bursts": 6055,
+        "retained_events": 10000,
+        "retained_fraction": 1.0,
+        "retained_successful": 9534,
+        "same_burst_edge_union": 3994,
+        "sample_events": 10000,
+        "sample_successful": 9534
+      },
+      "perturbation": "jitter_5s"
+    },
+    {
+      "config": {
+        "uniform_max_seconds": 15,
+        "uniform_min_seconds": -15
+      },
+      "metrics": {
+        "adjacency_agreement": 0.970138749245928,
+        "adjacency_jaccard": 0.9271523178807947,
+        "adjacency_retention": 0.9540636042402827,
+        "adjacent_pairs_evaluated": 9946,
+        "baseline_same_burst_edges": 3962,
+        "dropped_events": 0,
+        "dropped_successful": 0,
+        "geographic_accuracy": "unverified",
+        "perturbed_same_burst_edges": 3895,
+        "preserved_same_burst_edges": 3780,
+        "retained_bursts": 6103,
+        "retained_events": 10000,
+        "retained_fraction": 1.0,
+        "retained_successful": 9534,
+        "same_burst_edge_union": 4077,
+        "sample_events": 10000,
+        "sample_successful": 9534
+      },
+      "perturbation": "jitter_15s"
+    },
+    {
+      "config": {
+        "uniform_max_seconds": 30,
+        "uniform_min_seconds": -30
+      },
+      "metrics": {
+        "adjacency_agreement": 0.8949326362356727,
+        "adjacency_jaccard": 0.7530134719924367,
+        "adjacency_retention": 0.8041393235739526,
+        "adjacent_pairs_evaluated": 9946,
+        "baseline_same_burst_edges": 3962,
+        "dropped_events": 0,
+        "dropped_successful": 0,
+        "geographic_accuracy": "unverified",
+        "perturbed_same_burst_edges": 3455,
+        "preserved_same_burst_edges": 3186,
+        "retained_bursts": 6438,
+        "retained_events": 10000,
+        "retained_fraction": 1.0,
+        "retained_successful": 9534,
+        "same_burst_edge_union": 4231,
+        "sample_events": 10000,
+        "sample_successful": 9534
+      },
+      "perturbation": "jitter_30s"
+    },
+    {
+      "config": {
+        "independent_drop_probability": 0.3
+      },
+      "metrics": {
+        "adjacency_agreement": 0.9953310696095077,
+        "adjacency_jaccard": 0.9856895056374675,
+        "adjacency_retention": 0.9869735128093791,
+        "adjacent_pairs_evaluated": 7068,
+        "baseline_same_burst_edges": 2303,
+        "dropped_events": 2878,
+        "dropped_successful": 2751,
+        "geographic_accuracy": "unverified",
+        "perturbed_same_burst_edges": 2276,
+        "preserved_same_burst_edges": 2273,
+        "retained_bursts": 4846,
+        "retained_events": 7122,
+        "retained_fraction": 0.7122,
+        "retained_successful": 6783,
+        "same_burst_edge_union": 2306,
+        "sample_events": 10000,
+        "sample_successful": 9534
+      },
+      "perturbation": "thin_30_percent"
+    },
+    {
+      "config": {
+        "applied": true
+      },
+      "metrics": {
+        "adjacency_agreement": 1.0,
+        "adjacency_jaccard": 1.0,
+        "adjacency_retention": 1.0,
+        "adjacent_pairs_evaluated": 9945,
+        "baseline_same_burst_edges": 3962,
+        "dropped_events": 1,
+        "dropped_successful": 1,
+        "geographic_accuracy": "unverified",
+        "perturbed_same_burst_edges": 3962,
+        "preserved_same_burst_edges": 3962,
+        "retained_bursts": 6037,
+        "retained_events": 9999,
+        "retained_fraction": 0.9999,
+        "retained_successful": 9533,
+        "same_burst_edge_union": 3962,
+        "sample_events": 10000,
+        "sample_successful": 9534
+      },
+      "perturbation": "drop_one_whole_burst"
+    },
+    {
+      "config": {
+        "applied": true,
+        "device_selection": "first seeded hash rank"
+      },
+      "metrics": {
+        "adjacency_agreement": 1.0,
+        "adjacency_jaccard": 1.0,
+        "adjacency_retention": 1.0,
+        "adjacent_pairs_evaluated": 9732,
+        "baseline_same_burst_edges": 3889,
+        "dropped_events": 215,
+        "dropped_successful": 201,
+        "geographic_accuracy": "unverified",
+        "perturbed_same_burst_edges": 3889,
+        "preserved_same_burst_edges": 3889,
+        "retained_bursts": 5896,
+        "retained_events": 9785,
+        "retained_fraction": 0.9785,
+        "retained_successful": 9333,
+        "same_burst_edge_union": 3889,
+        "sample_events": 10000,
+        "sample_successful": 9534
+      },
+      "perturbation": "drop_one_device"
+    },
+    {
+      "config": {
+        "applied": true,
+        "expected_invariance": "D0 compares within-group gaps; cannot validate clock accuracy",
+        "offset_seconds": 30
+      },
+      "metrics": {
+        "adjacency_agreement": 1.0,
+        "adjacency_jaccard": 1.0,
+        "adjacency_retention": 1.0,
+        "adjacent_pairs_evaluated": 9946,
+        "baseline_same_burst_edges": 3962,
+        "dropped_events": 0,
+        "dropped_successful": 0,
+        "geographic_accuracy": "unverified",
+        "perturbed_same_burst_edges": 3962,
+        "preserved_same_burst_edges": 3962,
+        "retained_bursts": 6038,
+        "retained_events": 10000,
+        "retained_fraction": 1.0,
+        "retained_successful": 9534,
+        "same_burst_edge_union": 3962,
+        "sample_events": 10000,
+        "sample_successful": 9534
+      },
+      "perturbation": "shift_one_device_clock"
+    },
+    {
+      "config": {
+        "expected_invariance": "constant shift preserves intervals",
+        "offset_seconds": 3600
+      },
+      "metrics": {
+        "adjacency_agreement": 1.0,
+        "adjacency_jaccard": 1.0,
+        "adjacency_retention": 1.0,
+        "adjacent_pairs_evaluated": 9946,
+        "baseline_same_burst_edges": 3962,
+        "dropped_events": 0,
+        "dropped_successful": 0,
+        "geographic_accuracy": "unverified",
+        "perturbed_same_burst_edges": 3962,
+        "preserved_same_burst_edges": 3962,
+        "retained_bursts": 6038,
+        "retained_events": 10000,
+        "retained_fraction": 1.0,
+        "retained_successful": 9534,
+        "same_burst_edge_union": 3962,
+        "sample_events": 10000,
+        "sample_successful": 9534
+      },
+      "perturbation": "global_start_shift"
+    }
+  ],
+  "comparison": "same-burst decisions on adjacent retained events in baseline group order",
+  "detector": {
+    "gap_seconds": 30,
+    "max_span_seconds": 90,
+    "method": "D0"
+  },
+  "fit_performed": false,
+  "geographic_accuracy": "unverified",
+  "schema_version": "boarding-stability.v1",
+  "seed": 20260926,
+  "selection": {
+    "empty_reason": null,
+    "max_sample_events": 10000,
+    "method": "whole declared device/vehicle/route/exit groups in seeded SHA256 order",
+    "omitted_events": 439635,
+    "omitted_groups": 2166,
+    "original_events": 449635,
+    "original_groups": 2220,
+    "original_successful": 427494,
+    "oversized_groups": 0,
+    "partial_groups": false,
+    "sample_events": 10000,
+    "sample_successful": 9534,
+    "sampling_truncated": true,
+    "selected_event_keys_sha256": "7d55ba950e43cfbf0550a7fc25305c6af304c514d10df58df1543637fe852d58",
+    "selected_groups": 54
+  },
+  "undefined_metric": "null when no relevant adjacent pairs or same-burst edges exist"
+}

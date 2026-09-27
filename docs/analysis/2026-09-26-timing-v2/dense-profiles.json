@@ -1,0 +1,30 @@
+{
+  "cutoff_date": "2025-07-01",
+  "edge_count": 0,
+  "edges": {},
+  "fit_dates": [],
+  "fit_vehicles": [],
+  "fitted_through": null,
+  "input_rows": 934322,
+  "limitation": "Inferred endpoints; agreement is timing consistency, not stop accuracy.",
+  "rejected_rows": {
+    "ineligible_anchor": 567059,
+    "outside_fit_dates": 367263
+  },
+  "target": "interval_between_first_validations_at_inferred_adjacent_visits",
+  "thresholds": {
+    "local_residual_floor_seconds": 90.0,
+    "local_residual_fraction": 0.75,
+    "minimum_agreement": 0.75,
+    "minimum_dates": 2,
+    "minimum_endpoint_events": 3,
+    "minimum_posterior": 0.5,
+    "minimum_support": 5,
+    "minimum_vehicles": 2,
+    "outlier_floor_seconds": 30.0,
+    "outlier_scaled_mad_multiplier": 3.0
+  },
+  "timezone": "Europe/Moscow",
+  "unsupported_edges": [],
+  "version": "dense-first-validation-v1"
+}

@@ -1,0 +1,45 @@
+{
+  "audit_manifest_sha256": "8d9e6eaf582be4e3a1f823a0893636468b1ca76ff619402ec93dd7be3fa13a84",
+  "dates": [
+    "2025-05-13",
+    "2025-05-17",
+    "2025-06-10",
+    "2025-06-14",
+    "2025-07-08",
+    "2025-07-12",
+    "2025-08-12",
+    "2025-08-16",
+    "2025-09-09",
+    "2025-09-13",
+    "2025-10-14",
+    "2025-10-18"
+  ],
+  "direction_truth_available": false,
+  "feed_sha256": "b5d96ad3c8d92c4b42ca59b8712f6d4881e189cbe1c3b3b5fdd92ce9d3b1921c",
+  "files": {
+    "rows.json": "44989a270f544b20370dde82f3341ac8d66baa4c1296d194297b3dd2a7442d8e",
+    "summary.json": "16f687c177ce7dc24f1d9c3bff7cddfff199fe52b80d473a3c26ff84c53bc003"
+  },
+  "hours": [
+    7,
+    8,
+    17,
+    18
+  ],
+  "module_sha256": "4304c2ce2670b69733dcdc826fbded67f0b99046733cb324d9188f0cb1adf0c1",
+  "partitions_manifest_sha256": "9139726fd0f5cfd069da87c32ecb98a7778fbefa9efdec1eb94b66d1010cf269",
+  "prefix": 4,
+  "retrospective_only": true,
+  "routes": [
+    "11",
+    "12",
+    "17"
+  ],
+  "schema_version": "direction-evidence.v1",
+  "script_sha256": "a0d22e014facfa2673078fdaa237e276761fec35c49f82a2d5eb7f12bb4999ce",
+  "service_policy_sha256": "ff7abccac4d621c3d0d396d5db43d6dfa157af14f35678ce16bf1d90653ee202",
+  "source_archive_sha256": "7e34e56b93f7379cb5abe9aca8e87967cb986111b9939caead5a3fea6c296e5a",
+  "suffix": 4,
+  "threshold": 3.6527760293461156,
+  "timezone": "Europe/Moscow"
+}

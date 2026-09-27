@@ -1,0 +1,1160 @@
+{
+  "archive_sha256": "7e34e56b93f7379cb5abe9aca8e87967cb986111b9939caead5a3fea6c296e5a",
+  "configs": [
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "baseline",
+      "seasonal": false,
+      "statistic": "baseline",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "mean_w7",
+      "seasonal": false,
+      "statistic": "mean",
+      "window": 7
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "median_w7",
+      "seasonal": false,
+      "statistic": "median",
+      "window": 7
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "trim10_w7",
+      "seasonal": false,
+      "statistic": "trim10",
+      "window": 7
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q40_w7",
+      "seasonal": false,
+      "statistic": "q40",
+      "window": 7
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q60_w7",
+      "seasonal": false,
+      "statistic": "q60",
+      "window": 7
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "mean_w14",
+      "seasonal": false,
+      "statistic": "mean",
+      "window": 14
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "median_w14",
+      "seasonal": false,
+      "statistic": "median",
+      "window": 14
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "trim10_w14",
+      "seasonal": false,
+      "statistic": "trim10",
+      "window": 14
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q40_w14",
+      "seasonal": false,
+      "statistic": "q40",
+      "window": 14
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q60_w14",
+      "seasonal": false,
+      "statistic": "q60",
+      "window": 14
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "mean_w28",
+      "seasonal": false,
+      "statistic": "mean",
+      "window": 28
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "median_w28",
+      "seasonal": false,
+      "statistic": "median",
+      "window": 28
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "trim10_w28",
+      "seasonal": false,
+      "statistic": "trim10",
+      "window": 28
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q40_w28",
+      "seasonal": false,
+      "statistic": "q40",
+      "window": 28
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q60_w28",
+      "seasonal": false,
+      "statistic": "q60",
+      "window": 28
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "mean_w56",
+      "seasonal": false,
+      "statistic": "mean",
+      "window": 56
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "median_w56",
+      "seasonal": false,
+      "statistic": "median",
+      "window": 56
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "trim10_w56",
+      "seasonal": false,
+      "statistic": "trim10",
+      "window": 56
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q40_w56",
+      "seasonal": false,
+      "statistic": "q40",
+      "window": 56
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q60_w56",
+      "seasonal": false,
+      "statistic": "q60",
+      "window": 56
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "mean_w84",
+      "seasonal": false,
+      "statistic": "mean",
+      "window": 84
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "median_w84",
+      "seasonal": false,
+      "statistic": "median",
+      "window": 84
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "trim10_w84",
+      "seasonal": false,
+      "statistic": "trim10",
+      "window": 84
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q40_w84",
+      "seasonal": false,
+      "statistic": "q40",
+      "window": 84
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q60_w84",
+      "seasonal": false,
+      "statistic": "q60",
+      "window": 84
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "mean_w112",
+      "seasonal": false,
+      "statistic": "mean",
+      "window": 112
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "median_w112",
+      "seasonal": false,
+      "statistic": "median",
+      "window": 112
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "trim10_w112",
+      "seasonal": false,
+      "statistic": "trim10",
+      "window": 112
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q40_w112",
+      "seasonal": false,
+      "statistic": "q40",
+      "window": 112
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q60_w112",
+      "seasonal": false,
+      "statistic": "q60",
+      "window": 112
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "mean_w0",
+      "seasonal": false,
+      "statistic": "mean",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "median_w0",
+      "seasonal": false,
+      "statistic": "median",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "trim10_w0",
+      "seasonal": false,
+      "statistic": "trim10",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q40_w0",
+      "seasonal": false,
+      "statistic": "q40",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q60_w0",
+      "seasonal": false,
+      "statistic": "q60",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 7,
+      "name": "exp_h7_s0_d0.0",
+      "seasonal": false,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 7,
+      "name": "exp_h7_s0_d0.5",
+      "seasonal": false,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 7,
+      "name": "exp_h7_s0_d1.0",
+      "seasonal": false,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 14,
+      "name": "exp_h14_s0_d0.0",
+      "seasonal": false,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 14,
+      "name": "exp_h14_s0_d0.5",
+      "seasonal": false,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 14,
+      "name": "exp_h14_s0_d1.0",
+      "seasonal": false,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "exp_h28_s0_d0.0",
+      "seasonal": false,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "exp_h28_s0_d0.5",
+      "seasonal": false,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 28,
+      "name": "exp_h28_s0_d1.0",
+      "seasonal": false,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 56,
+      "name": "exp_h56_s0_d0.0",
+      "seasonal": false,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 56,
+      "name": "exp_h56_s0_d0.5",
+      "seasonal": false,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 56,
+      "name": "exp_h56_s0_d1.0",
+      "seasonal": false,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 112,
+      "name": "exp_h112_s0_d0.0",
+      "seasonal": false,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 112,
+      "name": "exp_h112_s0_d0.5",
+      "seasonal": false,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 112,
+      "name": "exp_h112_s0_d1.0",
+      "seasonal": false,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "mean_s0_d0.0",
+      "seasonal": false,
+      "statistic": "mean",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "mean_s0_d0.5",
+      "seasonal": false,
+      "statistic": "mean",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 28,
+      "name": "mean_s0_d1.0",
+      "seasonal": false,
+      "statistic": "mean",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "median_s0_d0.0",
+      "seasonal": false,
+      "statistic": "median",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "median_s0_d0.5",
+      "seasonal": false,
+      "statistic": "median",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 28,
+      "name": "median_s0_d1.0",
+      "seasonal": false,
+      "statistic": "median",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "trim10_s0_d0.0",
+      "seasonal": false,
+      "statistic": "trim10",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "trim10_s0_d0.5",
+      "seasonal": false,
+      "statistic": "trim10",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 28,
+      "name": "trim10_s0_d1.0",
+      "seasonal": false,
+      "statistic": "trim10",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q40_s0_d0.0",
+      "seasonal": false,
+      "statistic": "q40",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "q40_s0_d0.5",
+      "seasonal": false,
+      "statistic": "q40",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 28,
+      "name": "q40_s0_d1.0",
+      "seasonal": false,
+      "statistic": "q40",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q60_s0_d0.0",
+      "seasonal": false,
+      "statistic": "q60",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "q60_s0_d0.5",
+      "seasonal": false,
+      "statistic": "q60",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 28,
+      "name": "q60_s0_d1.0",
+      "seasonal": false,
+      "statistic": "q60",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 7,
+      "name": "exp_h7_s1_d0.0",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 7,
+      "name": "exp_h7_s1_d0.5",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 7,
+      "name": "exp_h7_s1_d1.0",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 14,
+      "name": "exp_h14_s1_d0.0",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 14,
+      "name": "exp_h14_s1_d0.5",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 14,
+      "name": "exp_h14_s1_d1.0",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "exp_h28_s1_d0.0",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "exp_h28_s1_d0.5",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 28,
+      "name": "exp_h28_s1_d1.0",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 56,
+      "name": "exp_h56_s1_d0.0",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 56,
+      "name": "exp_h56_s1_d0.5",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 56,
+      "name": "exp_h56_s1_d1.0",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 112,
+      "name": "exp_h112_s1_d0.0",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 112,
+      "name": "exp_h112_s1_d0.5",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 112,
+      "name": "exp_h112_s1_d1.0",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "mean_s1_d0.0",
+      "seasonal": true,
+      "statistic": "mean",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "mean_s1_d0.5",
+      "seasonal": true,
+      "statistic": "mean",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 28,
+      "name": "mean_s1_d1.0",
+      "seasonal": true,
+      "statistic": "mean",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "median_s1_d0.0",
+      "seasonal": true,
+      "statistic": "median",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "median_s1_d0.5",
+      "seasonal": true,
+      "statistic": "median",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 28,
+      "name": "median_s1_d1.0",
+      "seasonal": true,
+      "statistic": "median",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "trim10_s1_d0.0",
+      "seasonal": true,
+      "statistic": "trim10",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "trim10_s1_d0.5",
+      "seasonal": true,
+      "statistic": "trim10",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 28,
+      "name": "trim10_s1_d1.0",
+      "seasonal": true,
+      "statistic": "trim10",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q40_s1_d0.0",
+      "seasonal": true,
+      "statistic": "q40",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "q40_s1_d0.5",
+      "seasonal": true,
+      "statistic": "q40",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 28,
+      "name": "q40_s1_d1.0",
+      "seasonal": true,
+      "statistic": "q40",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "q60_s1_d0.0",
+      "seasonal": true,
+      "statistic": "q60",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "q60_s1_d0.5",
+      "seasonal": true,
+      "statistic": "q60",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.0,
+      "daytype_weight": 1.0,
+      "half_life": 28,
+      "name": "q60_s1_d1.0",
+      "seasonal": true,
+      "statistic": "q60",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.25,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "level_w28_c0.25",
+      "seasonal": true,
+      "statistic": "mean",
+      "window": 28
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.25,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "level_w56_c0.25",
+      "seasonal": true,
+      "statistic": "mean",
+      "window": 56
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.25,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "level_w84_c0.25",
+      "seasonal": true,
+      "statistic": "mean",
+      "window": 84
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.5,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "level_w28_c0.5",
+      "seasonal": true,
+      "statistic": "mean",
+      "window": 28
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.5,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "level_w56_c0.5",
+      "seasonal": true,
+      "statistic": "mean",
+      "window": 56
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 0.5,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "level_w84_c0.5",
+      "seasonal": true,
+      "statistic": "mean",
+      "window": 84
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 1.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "level_w28_c1.0",
+      "seasonal": true,
+      "statistic": "mean",
+      "window": 28
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 1.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "level_w56_c1.0",
+      "seasonal": true,
+      "statistic": "mean",
+      "window": 56
+    },
+    {
+      "baseline_weight": 0.0,
+      "correction": 1.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "level_w84_c1.0",
+      "seasonal": true,
+      "statistic": "mean",
+      "window": 84
+    },
+    {
+      "baseline_weight": 0.25,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 14,
+      "name": "blend_h14_b0.25",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.25,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "blend_h28_b0.25",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.25,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 56,
+      "name": "blend_h56_b0.25",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.5,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 14,
+      "name": "blend_h14_b0.5",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.5,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "blend_h28_b0.5",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.5,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 56,
+      "name": "blend_h56_b0.5",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.75,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 14,
+      "name": "blend_h14_b0.75",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.75,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 28,
+      "name": "blend_h28_b0.75",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.75,
+      "correction": 0.0,
+      "daytype_weight": 0.5,
+      "half_life": 56,
+      "name": "blend_h56_b0.75",
+      "seasonal": true,
+      "statistic": "exp",
+      "window": 0
+    }
+  ],
+  "horizon_days": 61,
+  "missing_policy": "zeros after checksum-bound raw reconciliation; not proof of operation",
+  "origins": [
+    "2025-04-01",
+    "2025-05-01",
+    "2025-06-01",
+    "2025-07-01",
+    "2025-08-01",
+    "2025-09-01"
+  ],
+  "selection": "descending minimum origin score, descending mean score, ascending name",
+  "target": "successful validations per route-date-hour",
+  "test_status": "all origins model-selection; September previously reused",
+  "timezone": "Europe/Moscow (repository assumption)",
+  "version": "statistical-sweep.v1"
+}

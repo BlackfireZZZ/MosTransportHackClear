@@ -1,0 +1,8 @@
+[tool.uv.workspace]
+members = ["backend", "ml"]
+
+[tool.uv]
+# A floor, enforced by uv itself on every invocation -- CI, container and laptop
+# alike -- so no script has to compare version strings. CI still pins an exact uv
+# for reproducibility; this is the minimum anything else may run.
+required-version = ">=0.12.13"

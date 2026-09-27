@@ -1,0 +1,32 @@
+{
+  "name": "TramFlow",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.13-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "24"
+    },
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+  },
+  "postCreateCommand": "make bootstrap",
+  "forwardPorts": [5173, 8000, 8080],
+  "portsAttributes": {
+    "5173": {
+      "label": "Vite dev server"
+    },
+    "8000": {
+      "label": "FastAPI"
+    },
+    "8080": {
+      "label": "Caddy"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "charliermarsh.ruff",
+        "ms-python.mypy-type-checker",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}

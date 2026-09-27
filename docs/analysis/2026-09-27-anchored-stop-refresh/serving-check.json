@@ -1,0 +1,10 @@
+{
+  "rows_exact": 854976,
+  "total": 12296438.684453217,
+  "unknown": 2751616.9130391157,
+  "unknown_share": 0.22377348301000952,
+  "route_rows_unchanged": true,
+  "catalog_identity_geometry_unchanged": true,
+  "scored_csv_sha256": "edc07cca26ff21dd5228f744dea79940eb81a65c3ce5368aa743e2fc2fd0f11f",
+  "asset_sha256": "cf377dff8e5b72918b1215c3331f1e47f7ddcef29b0b1e9363445492c3d665a4"
+}

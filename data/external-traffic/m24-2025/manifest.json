@@ -1,0 +1,18 @@
+{
+  "schema": "m24-traffic-curated.v1",
+  "timezone": "Europe/Moscow",
+  "method": "Hand-verified numerical facts from five public article bodies; not an exhaustive archive.",
+  "observations": 5,
+  "actual_period": [
+    "2025-02-24",
+    "2025-09-25"
+  ],
+  "model_status": "not_integrated",
+  "sha256": "85ce369e73c47f3a219496b84641cd9194f5bfad2ee33ffa4fa654ebb2522039",
+  "limitations": [
+    "Selective reports; repeated Yandex/CODD facts may overlap with other publishers.",
+    "No original-vintage proof; publication timestamps are not measurement timestamps.",
+    "Do not pool CODD and Yandex scales.",
+    "Numerical facts and URLs only; no open-data licence established."
+  ]
+}

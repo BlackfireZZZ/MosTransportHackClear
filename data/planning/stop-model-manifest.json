@@ -1,0 +1,20 @@
+{
+  "schema": "independent-stop-forecast.v1",
+  "sha256": "cf377dff8e5b72918b1215c3331f1e47f7ddcef29b0b1e9363445492c3d665a4",
+  "rows": 854976,
+  "identities": 584,
+  "model_version": "direct-stop-calendar-history.anchored-v3:calendar_weekday_blend",
+  "generated_at": "2026-09-27T12:37:19.800491+00:00",
+  "stop_predictions_sha256": "1e79f596a6723de6b80dcdbe3915fa66561e0466d6299da8a179c760e7154bed",
+  "stop_run_sha256": "c81733f6cd1324de25a534deb681ebd85ab4a92c91dd074f807303a903f77119",
+  "stop_dataset_audit_sha256": "3ea36a1be4767f06918490524d2cafdf993889c9c839cdac01c0f3212580df4b",
+  "catalog_sha256": "34a46e4a3aca9b61e96c59f76fc15bf47d740abeed029f3e8ec865dfbbd377d4",
+  "stop_producer_sha256": "9167d32bc7fc5946934325768c1c3d443aebbeef1e3eef3cbb486c2962fac3c5",
+  "generator_sha256": "4e07ac777deaf37f039c69cc8d829ef96f157172cade4678acf9d3881f8e25e3",
+  "data_cutoff": "2025-10-31T23:59:59+03:00",
+  "target": "inferred_validation_count",
+  "spatial_status": "independent_stop_predictions; not route-normalized; no observed stop truth",
+  "spatial_time_status": "pre-origin counts; retrospective GTFS and transferred calendars",
+  "mapping_method": "duty-calendar-clock.first-stop-local-anchors-transfer.v3",
+  "source_manifest_sha256": "d39405084cdbe937a6416500ebac79ba6a7d746b5e352cc30b0738f87a108eb1"
+}

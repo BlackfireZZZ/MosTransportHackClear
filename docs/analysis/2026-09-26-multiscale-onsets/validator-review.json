@@ -1,0 +1,35 @@
+{
+  "date": "2025-01-15",
+  "source": "hash-verified boarding-date-shards, independent read-only audit",
+  "successful_events": 238424,
+  "eligible_events": 230627,
+  "eligible_sessions": 208,
+  "six_device_sessions": 147,
+  "identity_conflict_events": 5080,
+  "missing_vehicle_events": 2717,
+  "same_device_pairs": 229560,
+  "same_device_gap_counts": {
+    "0": 12,
+    "1": 915,
+    "2": 9002,
+    "3": 14992
+  },
+  "multi_device_seconds": 25668,
+  "device_shift_control_mean": 6231.5,
+  "device_shift_control_min": 6060,
+  "device_shift_control_max": 6319,
+  "seeds": [
+    20260926,
+    20260927,
+    20260928,
+    20260929,
+    20260930,
+    20260931,
+    20260932,
+    20260933,
+    20260934,
+    20260935
+  ],
+  "control": "independent integer circular shift0..299s per vehicle-session/device/fixed300s bin",
+  "ground_truth_stop_accuracy": "unverified"
+}

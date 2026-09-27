@@ -1,0 +1,50 @@
+services:
+  overpass:
+    image: wiktorn/overpass-api:latest
+    container_name: overpass
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - /mnt/HC_Volume_106906767/overpass/db:/db
+    environment:
+      # --- data source: Central Federal District (includes Moscow + Moscow oblast) ---
+      # Geofabrik only publishes .pbf, but init_osm3s.sh pipes the planet file through
+      # bunzip2, so the .pbf was converted once with `osmium cat` and is kept as
+      # planet_src.osm.bz2. Pointing at it with file:// makes re-imports skip the
+      # ~25 min conversion. To refresh from upstream, see docs/deployment.md.
+      OVERPASS_MODE: "init"
+      OVERPASS_PLANET_URL: "file:///db/planet_src.osm.bz2"
+      OVERPASS_DIFF_URL: "https://download.geofabrik.de/russia/central-fed-district-updates/"
+
+      OVERPASS_META: "yes"              # keep version/timestamp/user metadata, skip full attic history
+      OVERPASS_COMPRESSION: "lz4"       # cheaper on a 2 vCPU box than gzip
+      OVERPASS_USE_AREAS: "true"        # enables area[...] / {{geocodeArea:...}} queries
+      OVERPASS_STOP_AFTER_INIT: "false" # keep serving after the import finishes
+      OVERPASS_UPDATE_SLEEP: "3600"     # Geofabrik publishes daily diffs; hourly poll is plenty
+
+      # --- resource guards tuned for 2 vCPU / 3.8 GB RAM ---
+      # flush-size is the import buffer in GiB. The image default of 16 assumes a big
+      # box: on this host it drove update_database to 3.3 GB RSS and burned 4 GB of
+      # swap within two minutes of starting. 1 keeps the importer inside real RAM.
+      OVERPASS_FLUSH_SIZE: "1"
+      OVERPASS_SPACE: "2147483648"      # 2 GiB dispatcher space
+      OVERPASS_MAX_SIZE: "536870912"    # 512 MiB max result per query
+      OVERPASS_MAX_TIMEOUT: "300"   # largest [timeout:] a single query may request
+      # OVERPASS_TIME is the dispatcher-wide pool of time units shared by all queries,
+      # not a per-query limit. At the image default of 180 a single [timeout:170]
+      # query claimed nearly the whole pool and got load-shed. 3600 leaves room for
+      # rate-limit (4) concurrent queries at the 300s per-query cap.
+      OVERPASS_TIME: "3600"
+      OVERPASS_FASTCGI_PROCESSES: "2"
+      OVERPASS_RATE_LIMIT: "4"
+      # The dispatcher parses this as (yes|no) -- anything else, including "true",
+      # leaves duplicate blocking on and makes identical concurrent queries fail with
+      # Dispatcher_Client::request_read_and_idx::duplicate_query (this also kept the
+      # container healthcheck, which repeats one fixed query, permanently red).
+      OVERPASS_ALLOW_DUPLICATE_QUERIES: "yes"
+    logging:
+      driver: json-file
+      options:
+        max-size: "20m"
+        max-file: "5"

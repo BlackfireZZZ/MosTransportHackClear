@@ -1,0 +1,85 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: .python-version
+      - run: pip install uv==0.12.13
+      - run: make sync-backend
+      - run: make backend-check architecture-check reference-contract-check
+      - run: make backend-sql-test
+
+  ml:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: .python-version
+      - run: pip install uv==0.12.13
+      - run: make sync-ml
+      - run: make ml-check ml-eval
+
+  frontend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: .python-version
+      - run: pip install uv==0.12.13
+      - run: make sync-backend
+      - run: make frontend-install
+      - run: make frontend-check contract-check
+      - run: make e2e-install
+      - run: make e2e
+      - name: Upload Playwright diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-diagnostics
+          path: |
+            frontend/playwright-report
+            frontend/test-results
+          if-no-files-found: ignore
+          retention-days: 3
+
+  compose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: make compose-check
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: .python-version
+      - run: pip install uv==0.12.13
+      - run: make sync-backend
+      - run: make migration-verify
+      - run: make stack-verify
+      - if: failure()
+        run: docker compose ls && docker ps --all

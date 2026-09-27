@@ -1,0 +1,28 @@
+{
+  "baseline_absolute_residual_seconds": {
+    "p10": null,
+    "p50": null,
+    "p90": null,
+    "p95": null
+  },
+  "baseline_mae_seconds": null,
+  "coverage_of_independent_rows": 0.0,
+  "cutoff_date": "2025-07-01",
+  "evaluated_rows": 0,
+  "future_rows": 367263,
+  "independent_rows": 365001,
+  "interpretation": "Future-date and unseen-vehicle timing consistency on fixed inferred adjacent assignments; not independent stop-label accuracy.",
+  "profile_absolute_residual_seconds": {
+    "p10": null,
+    "p50": null,
+    "p90": null,
+    "p95": null
+  },
+  "profile_mae_seconds": null,
+  "rejected_rows": {
+    "before_holdout": 567059,
+    "ineligible_transition": 152093,
+    "missing_vehicle": 2262,
+    "no_profile": 212908
+  }
+}

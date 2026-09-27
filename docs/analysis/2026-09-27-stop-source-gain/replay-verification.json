@@ -1,0 +1,42 @@
+{
+  "schema": "stop-source-gain-replay.v1",
+  "all_36_prediction_hashes_identical": true,
+  "all_36_metrics_daily_errors_and_slices_identical": true,
+  "selection_and_rejection_identical": true,
+  "identical_function_ast": {
+    "enabled_sources": true,
+    "history_profile": true,
+    "feature_frame": true,
+    "event_tensor": true
+  },
+  "initial_commit": "b5391c9",
+  "initial_plan_sha256": "5ecddbb29bfa9708b54eb0e414118236c9c9bbcc2a9b418577bcc12f55112e29",
+  "replay_plan_sha256": "c6c2219b5cf6774e06eabb6e8b049ebfbe99aa73b6d887f0d29a3a8ef3170e76",
+  "initial_results_sha256": "aed67884c6e6a2d423e2ec753b1e6d987ab20027b0ec78ff7ae8f402c6e9dae3",
+  "replay_results_sha256": "3abe34f66fea81b966603d0304c9ce1b9fcae0aaddefcc746a55da2d098d5972",
+  "initial_producer_sha256": {
+    "builder": "9de04caae06e7efb89b864c83d93d86c8a8eca328e36bffe5262f8543725e51a",
+    "stop_sources": "c0014ebb57dda49120c203d8abfcc3ef9d334794690d69323656ef1db3ca8eb3",
+    "stop_models": "9167d32bc7fc5946934325768c1c3d443aebbeef1e3eef3cbb486c2962fac3c5",
+    "stop_refinement": "b0c4616ecd4f2e42694540c8be801237ee0a4d6dd6e814b74c2557dcbeee3a17",
+    "source_manifest": "d39405084cdbe937a6416500ebac79ba6a7d746b5e352cc30b0738f87a108eb1",
+    "catalog": "34a46e4a3aca9b61e96c59f76fc15bf47d740abeed029f3e8ec865dfbbd377d4",
+    "route_manifest": "cd517b447f167024e7dae805867dd82ec7b2c6aab1db43373b7d7ef1babbe51f",
+    "weather": "4798ebc674918768a5ed823032d8e9683134e11973153c0fe4c7acc19ff94b83",
+    "posts": "371d80c420eb25fd7132487b6d23736f407ee84a93edfc042f1be3b2096ef524",
+    "events": "125bdab909db260738c98a865a7f1d1ef36b045f60bc00a64b7b17429d7fef86"
+  },
+  "replay_producer_sha256": {
+    "builder": "5df8ced7cba4a623f88654b5932beeb7f21cda19dbc63fea358ef1de55e51d3e",
+    "stop_source_gain_features": "84435de3fe58dca41803d4a35f51de7b2f596be565c02cb0a7e0e6f33d13dcf0",
+    "stop_models": "9167d32bc7fc5946934325768c1c3d443aebbeef1e3eef3cbb486c2962fac3c5",
+    "stop_refinement": "b0c4616ecd4f2e42694540c8be801237ee0a4d6dd6e814b74c2557dcbeee3a17",
+    "source_manifest": "d39405084cdbe937a6416500ebac79ba6a7d746b5e352cc30b0738f87a108eb1",
+    "catalog": "34a46e4a3aca9b61e96c59f76fc15bf47d740abeed029f3e8ec865dfbbd377d4",
+    "route_manifest": "cd517b447f167024e7dae805867dd82ec7b2c6aab1db43373b7d7ef1babbe51f",
+    "weather": "4798ebc674918768a5ed823032d8e9683134e11973153c0fe4c7acc19ff94b83",
+    "posts": "371d80c420eb25fd7132487b6d23736f407ee84a93edfc042f1be3b2096ef524",
+    "events": "125bdab909db260738c98a865a7f1d1ef36b045f60bc00a64b7b17429d7fef86"
+  },
+  "reason": "Remote intentionally removed online source mode. Exact feature functions relocated to offline scripts; parameters and acceptance unchanged. Replay refit all nine models independently. No serving code restored."
+}

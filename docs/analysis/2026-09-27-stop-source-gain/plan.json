@@ -1,0 +1,73 @@
+{
+  "version": "stop-source-gain.v1",
+  "objective": "matched external-source gain on anchored-v3 inferred stop labels",
+  "config": {
+    "iterations": 200,
+    "depth": 5,
+    "learning_rate": 0.05,
+    "loss_function": "MAE",
+    "l2_leaf_reg": 10,
+    "random_seed": 20260927,
+    "thread_count": 4,
+    "verbose": false,
+    "allow_writing_files": false,
+    "allow_const_label": true
+  },
+  "masks": [
+    0,
+    1,
+    15
+  ],
+  "caps": [
+    0.0,
+    0.025,
+    0.1,
+    0.25
+  ],
+  "origins": [
+    120,
+    181,
+    243
+  ],
+  "horizon_days": 61,
+  "sample_per_inner_origin": 12000,
+  "inner_origins": "range(59, outer, 30); width=min(61, outer-inner)",
+  "anchor_off": "0.5 all-history ordinary weekday mean + 0.5 ordinary Mon-Fri/Sat/Sun mean; no holiday/month",
+  "anchor_on": "calendar_stop_profile(blend=True), same as strong live baseline",
+  "acceptance": "All-on known-stop pseudoWAPE >=1% relatively lower in BOTH May/July and nonworse September versus BOTH matched mask0 and strong calendar baseline; route score delta >=-0.002 in every comparison",
+  "selection": "Only May/July: passing cap with lowest mean known-stop pseudoWAPE, smaller cap breaks ties; no replacement on diagnostic failure; no additional tuning",
+  "diagnostic_blind": false,
+  "labels": "inferred stop counts, not observed stop truth; route aggregates reconciled to observed labels",
+  "timezone": "Europe/Moscow",
+  "leakage_policy": "all dynamic features and anchors strictly before their inner or outer origin; events/geometry retrospective; no future weather forecast",
+  "research": [
+    "https://catboost.ai/docs/en/concepts/python-reference_catboostregressor_fit",
+    "https://otexts.com/fpp3/tscv.html"
+  ],
+  "versions": {
+    "catboost": "1.2.10",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  },
+  "source_paths": {
+    "source": "/Users/cute/MosTransport2026Hack-worktrees/stop-schedule-warp-20260927/ml/artifacts/full-anchored-transfer-v3",
+    "route_export": "/Users/cute/MosTransport2026Hack-worktrees/full-features-20260927/ml/artifacts/full-features-v2/routes",
+    "weather": "data/weather/2025/route-weather.csv.gz",
+    "posts": "data/external-traffic/observations.jsonl",
+    "events": "docs/analysis/2026-09-27-stop-source-variants/event_starts.csv",
+    "report": "docs/analysis/2026-09-27-stop-source-gain",
+    "output": "ml/artifacts/stop-source-gain"
+  },
+  "source_sha256": {
+    "builder": "9de04caae06e7efb89b864c83d93d86c8a8eca328e36bffe5262f8543725e51a",
+    "stop_sources": "c0014ebb57dda49120c203d8abfcc3ef9d334794690d69323656ef1db3ca8eb3",
+    "stop_models": "9167d32bc7fc5946934325768c1c3d443aebbeef1e3eef3cbb486c2962fac3c5",
+    "stop_refinement": "b0c4616ecd4f2e42694540c8be801237ee0a4d6dd6e814b74c2557dcbeee3a17",
+    "source_manifest": "d39405084cdbe937a6416500ebac79ba6a7d746b5e352cc30b0738f87a108eb1",
+    "catalog": "34a46e4a3aca9b61e96c59f76fc15bf47d740abeed029f3e8ec865dfbbd377d4",
+    "route_manifest": "cd517b447f167024e7dae805867dd82ec7b2c6aab1db43373b7d7ef1babbe51f",
+    "weather": "4798ebc674918768a5ed823032d8e9683134e11973153c0fe4c7acc19ff94b83",
+    "posts": "371d80c420eb25fd7132487b6d23736f407ee84a93edfc042f1be3b2096ef524",
+    "events": "125bdab909db260738c98a865a7f1d1ef36b045f60bc00a64b7b17429d7fef86"
+  }
+}

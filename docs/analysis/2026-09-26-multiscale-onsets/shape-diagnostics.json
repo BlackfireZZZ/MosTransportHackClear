@@ -1,0 +1,48 @@
+{
+  "sizes": {
+    "adaptive_scan": {
+      "at_most6_in10s": 615,
+      "first10_events": 16974,
+      "five_or_six_in10s": 351,
+      "onsets": 1894,
+      "tail_events": 23505
+    },
+    "algorithm_ml": {
+      "at_most6_in10s": 329,
+      "first10_events": 13639,
+      "five_or_six_in10s": 244,
+      "onsets": 1374,
+      "tail_events": 17839
+    },
+    "consensus3_5s": {
+      "at_most6_in10s": 549,
+      "first10_events": 19395,
+      "five_or_six_in10s": 375,
+      "onsets": 1952,
+      "tail_events": 23859
+    },
+    "decay_onset": {
+      "at_most6_in10s": 1101,
+      "first10_events": 19206,
+      "five_or_six_in10s": 560,
+      "onsets": 2390,
+      "tail_events": 21177
+    },
+    "feature_gmm": {
+      "at_most6_in10s": 938,
+      "first10_events": 17998,
+      "five_or_six_in10s": 492,
+      "onsets": 2203,
+      "tail_events": 19308
+    }
+  },
+  "widths": {
+    "10": 429,
+    "2": 50,
+    "20": 749,
+    "3": 46,
+    "40": 328,
+    "5": 119,
+    "80": 173
+  }
+}

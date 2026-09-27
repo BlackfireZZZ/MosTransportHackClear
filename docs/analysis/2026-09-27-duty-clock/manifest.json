@@ -1,0 +1,87 @@
+{
+  "code": {
+    "ml/pyproject.toml": "5cf3dbaba20b76f6a38a140fd33b14d66f3ac03d9ab694197201c8d84ca9ef0f",
+    "ml/src/tramflow_ml/boarding/__init__.py": "3a93f7cff409d5d3d9ce6f61232494ad9ffae21315f2661a597c780fda50dd44",
+    "ml/src/tramflow_ml/boarding/__main__.py": "093cb3c4664e1871baf54291862c6013bb456100ae847e1fcd70114d86b55d63",
+    "ml/src/tramflow_ml/boarding/absolute_clock.py": "b90675c0786e793aefaf628e28d1a0547c163b89c946b7345ae1bd9e9db31212",
+    "ml/src/tramflow_ml/boarding/alignment.py": "07d4f4240154c8ed38b4e2b4b2cee2cf0e691ecc5352d07857fc57f3f978bb2c",
+    "ml/src/tramflow_ml/boarding/audit.py": "b8295d04983fbf755658e1892fa2e4be14b7df334f7ffcbaea15dc4a72d3d76e",
+    "ml/src/tramflow_ml/boarding/burst_detection.py": "ebb1cea0ad558f5bb38e628f0dd4ed8336dcb9a80ecb55ab3c759c546cba99e6",
+    "ml/src/tramflow_ml/boarding/bursts.py": "7fe6b3f3925e097377d65526c9ce6511c7397aa9d522a7f57598439b29df8a00",
+    "ml/src/tramflow_ml/boarding/catalog.py": "4984f77866e28af0c7d50a85be1d11bbb6359b194f80b4f09e2ddc79e1bf034a",
+    "ml/src/tramflow_ml/boarding/clock_gtfs.py": "972837131106fa31b4f98dd90a06fd7cc6c2094655c01a71cbbc38f4cba9c5ac",
+    "ml/src/tramflow_ml/boarding/composition.py": "ca79088fec4316197de2d8f6083e61299616023c7e4a14553ab02f7fb7665f19",
+    "ml/src/tramflow_ml/boarding/dataset.py": "03e9f22bf164d7463643bcd8be8c686c2264be7e07f84c969fd024aeb54a0ce9",
+    "ml/src/tramflow_ml/boarding/dense_audit.py": "273e01091dfc17960dadc5492fdcb35b4438257391cc264250c8301108b5a1b4",
+    "ml/src/tramflow_ml/boarding/dense_experiment.py": "e6455b2d9ee1a2bef217f1d984b926182c35f95f9432c22ca00a7b1e19dc3b74",
+    "ml/src/tramflow_ml/boarding/dense_profiles.py": "315b702e5c73c9c3ae64c41662b904abc3d1cc388d2af8a31c9065e1e3cb65d1",
+    "ml/src/tramflow_ml/boarding/direction_ambiguity.py": "7f97d5d2e33bdcdb1ad2a6a119ca9c6b28642cb4e4f9f1f6ad9b4c3a12259b5b",
+    "ml/src/tramflow_ml/boarding/direction_comparison.py": "5ebe658b15d57a88a7ddc5d00f68fc2bfe612d28c491b7e767b02140b42b7049",
+    "ml/src/tramflow_ml/boarding/direction_probe.py": "4304c2ce2670b69733dcdc826fbded67f0b99046733cb324d9188f0cb1adf0c1",
+    "ml/src/tramflow_ml/boarding/direction_selective.py": "96d397f3269640e11f8b40f56914bfd8c3fdd9bcf1fc94727c8a0092dd2488c6",
+    "ml/src/tramflow_ml/boarding/duty_clock.py": "90d01d7cc7fbbc988a052a16f931a61bef2733b8d9146843bdb3bb9685f3e6e7",
+    "ml/src/tramflow_ml/boarding/historical.py": "af8d4585d2a8081d707f6137293fbdd2778a05de446f2f895a6127728a7ce1b3",
+    "ml/src/tramflow_ml/boarding/multiscale.py": "3213767583a978332092b1bfa5dec4e9912a254f291b0be6872e68f36bc1021e",
+    "ml/src/tramflow_ml/boarding/multiscale_experiment.py": "b27e9fa5494fde8a1a6dc10f243939e17a999816480c84dde26c32dbc87b40a7",
+    "ml/src/tramflow_ml/boarding/partitions.py": "e79cf09591cc379f9518e08106bb6c0fa0645ad1fb68c286a1c5e8b4a5106b0c",
+    "ml/src/tramflow_ml/boarding/pilot.py": "f35612226fa71d7fb05a6822a389089c3ad61febcb57d07b1d34bfe7ef376dff",
+    "ml/src/tramflow_ml/boarding/real.py": "c738245c88dbcc398e59fb8e3213e9dd5e118be923fc34a4bb021c22bf2c0ebc",
+    "ml/src/tramflow_ml/boarding/real_export.py": "fa0ef73105c01bced27874b9538b49c8a9fcd20f0d01da6812ef000113252a0b",
+    "ml/src/tramflow_ml/boarding/real_stability.py": "ae490c9a1597805c0d1a7743085658e9ba73213c2beb7a637f458aadaeed802b",
+    "ml/src/tramflow_ml/boarding/records.py": "b395913f225a66bead2d9bacc13526dfb24bd2f04dab75149f201de6f55c2858",
+    "ml/src/tramflow_ml/boarding/schedule_intervals.py": "168f2f8fffafd7bc1ff50a7397de3c3290d8ccbea866ec8bc2d11faf6f3e8a83",
+    "ml/src/tramflow_ml/boarding/sequence.py": "18197bc08e70f5c260789960a5ccf301db6117c263e775134b923132b206feff",
+    "ml/src/tramflow_ml/boarding/service_policy.py": "57e12beeac1fcee5370e8e7f8681db0b797396fc51d10aa44d4f3d2054414891",
+    "ml/src/tramflow_ml/boarding/simulation.py": "312b7217c9852f6c287197ad47fa384ae855eb6a02ac1681530727278135a22e",
+    "ml/src/tramflow_ml/boarding/stability.py": "7572693b19301d78dcb02201738a60cd5df5cd36359aa32c1842f84d45562d34",
+    "ml/src/tramflow_ml/boarding/timetables.py": "0787bc8a103a113e58ad5511a2878e049231279ea06d00ad975563b13fe4b664",
+    "ml/src/tramflow_ml/boarding/timing_experiment.py": "f5222e1ce1561d8cbd9591a8ffa8ec6fe7ff43fc1fb8e8d5e2534bf5f9830cef",
+    "ml/src/tramflow_ml/boarding/timing_sensitivity.py": "a65153eb0bd12af6457a814ac798ee2fe443e48823b8ce6aee55f369c7ff2e3f",
+    "ml/src/tramflow_ml/boarding/timing_v2.py": "c5aaace6468ae03cc6336f9b0bc8b60b282ebc84cf0861d34618375b6c6bf424",
+    "ml/src/tramflow_ml/boarding/wave_merge.py": "1d22860a6e46cc13083d34a49114f584aeeec6771f4160936187b4b07ca29bc8",
+    "scripts/audit_direction_pairs.py": "13a445f725ce3838406a235c295749662ddf85daf3461f435ea891bf0133bfd0",
+    "scripts/audit_duty_clock.py": "dc253d310218c61fd3e815090d1d9885503044740db1c5ce0b3c4cee9294af3c",
+    "uv.lock": "1c003cd3db25c1cface4eebfcb4c837b790cf554b8d01701a91d08a529fff38c"
+  },
+  "config": {
+    "early_hours": [
+      6,
+      10
+    ],
+    "guard": {
+      "maximum_near_shift_span": 120,
+      "maximum_shift_disagreement": 60,
+      "midpoint_hour": 8,
+      "minimum_early_validation_gain": 5,
+      "minimum_events_per_half": 10
+    },
+    "late_hours": [
+      14,
+      22
+    ],
+    "minimum_early_onsets": 20,
+    "minimum_early_span": 7200,
+    "near_optimal_mae_delta": 5,
+    "onset_silence": 60,
+    "residual_cap": 300,
+    "shift_bound": 1800,
+    "shift_step": 30,
+    "shuffles": 19,
+    "trip_split_hour": 12
+  },
+  "direction_truth_available": false,
+  "files": {
+    "rows.json": "29baee088d444edf4586bfce31f373ed82ce74dc6f96904ecf1dfc1c781d7db3",
+    "summary.json": "63aa6e676820da32d42b47f96070fe0939b5a9e9c273c13b72af298602bc421b"
+  },
+  "historical_operation_confirmed": false,
+  "schema": "duty-clock.v1",
+  "source_manifest_sha256": "5b78503876e7a259b44f2353948f6a8f2bffa84b431b81bd4c87db5de0e8b31a",
+  "sources": {
+    "feed_sha256": "b5d96ad3c8d92c4b42ca59b8712f6d4881e189cbe1c3b3b5fdd92ce9d3b1921c",
+    "partitions_manifest_sha256": "9139726fd0f5cfd069da87c32ecb98a7778fbefa9efdec1eb94b66d1010cf269",
+    "service_policy_sha256": "ff7abccac4d621c3d0d396d5db43d6dfa157af14f35678ce16bf1d90653ee202",
+    "source_archive_sha256": "7e34e56b93f7379cb5abe9aca8e87967cb986111b9939caead5a3fea6c296e5a"
+  },
+  "timezone": "Europe/Moscow"
+}

@@ -1,0 +1,682 @@
+{
+  "schema_version": "route-experiments.v1",
+  "source_hash": "6981c9a17b365015af544f36ea053bfdcba8bf54cd1f36c2c193cb6d33933baf",
+  "feature_version": "route-calendar-profiles.v1",
+  "coverage_policy": "zero-successful-rows-in-extract.v1",
+  "availability_policy": "retrospective-perfect-delivery-assumption",
+  "timezone": "Europe/Moscow",
+  "environment": {
+    "python": "3.13.11",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10"
+  },
+  "seed": 42,
+  "threads": 4,
+  "origins": [
+    "2025-09-01"
+  ],
+  "horizon_days": 61,
+  "calendar_source": "https://government.ru/docs/52895/",
+  "calendar_issued": "2024-10-04",
+  "configs": [
+    {
+      "name": "week1",
+      "engine": "baseline",
+      "features": "week1",
+      "iterations": 500,
+      "depth": 6,
+      "loss": "MAE",
+      "decay_days": null,
+      "native_categories": false,
+      "one_hot_max_size": 24,
+      "calibrated": false,
+      "normalized": false,
+      "blend_type4": 0.0
+    },
+    {
+      "name": "week4",
+      "engine": "baseline",
+      "features": "week4",
+      "iterations": 500,
+      "depth": 6,
+      "loss": "MAE",
+      "decay_days": null,
+      "native_categories": false,
+      "one_hot_max_size": 24,
+      "calibrated": false,
+      "normalized": false,
+      "blend_type4": 0.0
+    },
+    {
+      "name": "type4",
+      "engine": "baseline",
+      "features": "type4",
+      "iterations": 500,
+      "depth": 6,
+      "loss": "MAE",
+      "decay_days": null,
+      "native_categories": false,
+      "one_hot_max_size": 24,
+      "calibrated": false,
+      "normalized": false,
+      "blend_type4": 0.0
+    },
+    {
+      "name": "cat_native",
+      "engine": "cat",
+      "features": "calendar",
+      "iterations": 800,
+      "depth": 8,
+      "loss": "MAE",
+      "decay_days": null,
+      "native_categories": true,
+      "one_hot_max_size": 24,
+      "calibrated": false,
+      "normalized": false,
+      "blend_type4": 0.0
+    }
+  ],
+  "results": [
+    {
+      "origin": "2025-09-01",
+      "candidate": "week1",
+      "metrics": {
+        "overall": {
+          "actual": 12754481.0,
+          "absolute_error": 2255159.0,
+          "rows": 14640,
+          "mae": 154.04091530054646,
+          "wape": 0.17681307455787498,
+          "score": 0.823186925442125
+        },
+        "routes": {
+          "1": {
+            "actual": 1136093.0,
+            "absolute_error": 187184.0,
+            "rows": 1464,
+            "mae": 127.85792349726776,
+            "wape": 0.16476115951775075,
+            "score": 0.8352388404822493
+          },
+          "5": {
+            "actual": 0.0,
+            "absolute_error": 0.0,
+            "rows": 1464,
+            "mae": 0.0,
+            "wape": null,
+            "score": null
+          },
+          "7": {
+            "actual": 1350573.0,
+            "absolute_error": 295809.0,
+            "rows": 1464,
+            "mae": 202.05532786885246,
+            "wape": 0.2190248139123172,
+            "score": 0.7809751860876828
+          },
+          "11": {
+            "actual": 1907061.0,
+            "absolute_error": 311949.0,
+            "rows": 1464,
+            "mae": 213.07991803278688,
+            "wape": 0.16357578493818498,
+            "score": 0.8364242150618151
+          },
+          "12": {
+            "actual": 1983604.0,
+            "absolute_error": 238491.0,
+            "rows": 1464,
+            "mae": 162.90368852459017,
+            "wape": 0.12023115500876183,
+            "score": 0.8797688449912382
+          },
+          "17": {
+            "actual": 3063025.0,
+            "absolute_error": 321950.0,
+            "rows": 1464,
+            "mae": 219.91120218579235,
+            "wape": 0.105108512010186,
+            "score": 0.894891487989814
+          },
+          "25": {
+            "actual": 464537.0,
+            "absolute_error": 116069.0,
+            "rows": 1464,
+            "mae": 79.28210382513662,
+            "wape": 0.24985953756105542,
+            "score": 0.7501404624389446
+          },
+          "26": {
+            "actual": 1089964.0,
+            "absolute_error": 231566.0,
+            "rows": 1464,
+            "mae": 158.17349726775956,
+            "wape": 0.21245288835227585,
+            "score": 0.7875471116477242
+          },
+          "28": {
+            "actual": 602164.0,
+            "absolute_error": 134793.0,
+            "rows": 1464,
+            "mae": 92.07172131147541,
+            "wape": 0.22384765612025959,
+            "score": 0.7761523438797404
+          },
+          "50": {
+            "actual": 1157460.0,
+            "absolute_error": 417348.0,
+            "rows": 1464,
+            "mae": 285.07377049180326,
+            "wape": 0.3605722875952517,
+            "score": 0.6394277124047483
+          }
+        },
+        "lead": {
+          "day1": {
+            "actual": 229838.0,
+            "absolute_error": 33418.0,
+            "rows": 240,
+            "mae": 139.24166666666667,
+            "wape": 0.14539806298349273,
+            "score": 0.8546019370165072
+          },
+          "days1_31": {
+            "actual": 6402358.0,
+            "absolute_error": 1076358.0,
+            "rows": 7440,
+            "mae": 144.67177419354837,
+            "wape": 0.16811899615735326,
+            "score": 0.8318810038426467
+          },
+          "days32_61": {
+            "actual": 6352123.0,
+            "absolute_error": 1178801.0,
+            "rows": 7200,
+            "mae": 163.7223611111111,
+            "wape": 0.1855759090307288,
+            "score": 0.8144240909692713
+          }
+        },
+        "peak_hours": {
+          "actual": 6616314.0,
+          "absolute_error": 1178848.0,
+          "rows": 4270,
+          "mae": 276.0768149882904,
+          "wape": 0.1781729222645721,
+          "score": 0.821827077735428
+        }
+      },
+      "seconds": 0.004,
+      "october_confirmation": {
+        "actual": 6606787.0,
+        "absolute_error": 1229634.0,
+        "rows": 7440,
+        "mae": 165.2733870967742,
+        "wape": 0.18611679171736578,
+        "score": 0.8138832082826342
+      }
+    },
+    {
+      "origin": "2025-09-01",
+      "candidate": "week4",
+      "metrics": {
+        "overall": {
+          "actual": 12754481.0,
+          "absolute_error": 2674925.0,
+          "rows": 14640,
+          "mae": 182.713456284153,
+          "wape": 0.20972433139380584,
+          "score": 0.7902756686061941
+        },
+        "routes": {
+          "1": {
+            "actual": 1136093.0,
+            "absolute_error": 224038.0,
+            "rows": 1464,
+            "mae": 153.03142076502732,
+            "wape": 0.19720040524851398,
+            "score": 0.802799594751486
+          },
+          "5": {
+            "actual": 0.0,
+            "absolute_error": 0.0,
+            "rows": 1464,
+            "mae": 0.0,
+            "wape": null,
+            "score": null
+          },
+          "7": {
+            "actual": 1350573.0,
+            "absolute_error": 419340.0,
+            "rows": 1464,
+            "mae": 286.4344262295082,
+            "wape": 0.3104904362814894,
+            "score": 0.6895095637185106
+          },
+          "11": {
+            "actual": 1907061.0,
+            "absolute_error": 329854.0,
+            "rows": 1464,
+            "mae": 225.3101092896175,
+            "wape": 0.17296457743092644,
+            "score": 0.8270354225690736
+          },
+          "12": {
+            "actual": 1983604.0,
+            "absolute_error": 297169.0,
+            "rows": 1464,
+            "mae": 202.98428961748633,
+            "wape": 0.1498126642212861,
+            "score": 0.8501873357787139
+          },
+          "17": {
+            "actual": 3063025.0,
+            "absolute_error": 391428.0,
+            "rows": 1464,
+            "mae": 267.3688524590164,
+            "wape": 0.1277913174068119,
+            "score": 0.8722086825931881
+          },
+          "25": {
+            "actual": 464537.0,
+            "absolute_error": 133135.0,
+            "rows": 1464,
+            "mae": 90.93920765027322,
+            "wape": 0.28659719247336596,
+            "score": 0.7134028075266341
+          },
+          "26": {
+            "actual": 1089964.0,
+            "absolute_error": 290316.0,
+            "rows": 1464,
+            "mae": 198.30327868852459,
+            "wape": 0.2663537511330649,
+            "score": 0.7336462488669351
+          },
+          "28": {
+            "actual": 602164.0,
+            "absolute_error": 157926.0,
+            "rows": 1464,
+            "mae": 107.87295081967213,
+            "wape": 0.26226410080974616,
+            "score": 0.7377358991902538
+          },
+          "50": {
+            "actual": 1157460.0,
+            "absolute_error": 431719.0,
+            "rows": 1464,
+            "mae": 294.89002732240436,
+            "wape": 0.37298826741312874,
+            "score": 0.6270117325868713
+          }
+        },
+        "lead": {
+          "day1": {
+            "actual": 229838.0,
+            "absolute_error": 46588.0,
+            "rows": 240,
+            "mae": 194.11666666666667,
+            "wape": 0.202699292545184,
+            "score": 0.797300707454816
+          },
+          "days1_31": {
+            "actual": 6402358.0,
+            "absolute_error": 1262631.0,
+            "rows": 7440,
+            "mae": 169.7084677419355,
+            "wape": 0.1972134329258064,
+            "score": 0.8027865670741936
+          },
+          "days32_61": {
+            "actual": 6352123.0,
+            "absolute_error": 1412294.0,
+            "rows": 7200,
+            "mae": 196.15194444444444,
+            "wape": 0.22233417079612597,
+            "score": 0.7776658292038741
+          }
+        },
+        "peak_hours": {
+          "actual": 6616314.0,
+          "absolute_error": 1400542.0,
+          "rows": 4270,
+          "mae": 327.9957845433255,
+          "wape": 0.21168009861684314,
+          "score": 0.7883199013831569
+        }
+      },
+      "seconds": 0.001,
+      "october_confirmation": {
+        "actual": 6606787.0,
+        "absolute_error": 1471767.0,
+        "rows": 7440,
+        "mae": 197.81814516129032,
+        "wape": 0.2227659223764895,
+        "score": 0.7772340776235105
+      }
+    },
+    {
+      "origin": "2025-09-01",
+      "candidate": "type4",
+      "metrics": {
+        "overall": {
+          "actual": 12754481.0,
+          "absolute_error": 2676844.0,
+          "rows": 14640,
+          "mae": 182.84453551912569,
+          "wape": 0.20987478831949336,
+          "score": 0.7901252116805066
+        },
+        "routes": {
+          "1": {
+            "actual": 1136093.0,
+            "absolute_error": 224054.0,
+            "rows": 1464,
+            "mae": 153.04234972677597,
+            "wape": 0.1972144886026056,
+            "score": 0.8027855113973944
+          },
+          "5": {
+            "actual": 0.0,
+            "absolute_error": 0.0,
+            "rows": 1464,
+            "mae": 0.0,
+            "wape": null,
+            "score": null
+          },
+          "7": {
+            "actual": 1350573.0,
+            "absolute_error": 419292.0,
+            "rows": 1464,
+            "mae": 286.4016393442623,
+            "wape": 0.31045489581088914,
+            "score": 0.6895451041891109
+          },
+          "11": {
+            "actual": 1907061.0,
+            "absolute_error": 331550.0,
+            "rows": 1464,
+            "mae": 226.46857923497268,
+            "wape": 0.1738539039915346,
+            "score": 0.8261460960084654
+          },
+          "12": {
+            "actual": 1983604.0,
+            "absolute_error": 297443.0,
+            "rows": 1464,
+            "mae": 203.17144808743168,
+            "wape": 0.14995079663077912,
+            "score": 0.8500492033692209
+          },
+          "17": {
+            "actual": 3063025.0,
+            "absolute_error": 390850.0,
+            "rows": 1464,
+            "mae": 266.974043715847,
+            "wape": 0.12760261506190776,
+            "score": 0.8723973849380923
+          },
+          "25": {
+            "actual": 464537.0,
+            "absolute_error": 132280.0,
+            "rows": 1464,
+            "mae": 90.35519125683061,
+            "wape": 0.28475665016995416,
+            "score": 0.7152433498300459
+          },
+          "26": {
+            "actual": 1089964.0,
+            "absolute_error": 290690.0,
+            "rows": 1464,
+            "mae": 198.5587431693989,
+            "wape": 0.2666968817318737,
+            "score": 0.7333031182681262
+          },
+          "28": {
+            "actual": 602164.0,
+            "absolute_error": 157635.0,
+            "rows": 1464,
+            "mae": 107.67418032786885,
+            "wape": 0.2617808437568503,
+            "score": 0.7382191562431497
+          },
+          "50": {
+            "actual": 1157460.0,
+            "absolute_error": 433050.0,
+            "rows": 1464,
+            "mae": 295.79918032786884,
+            "wape": 0.37413819916023017,
+            "score": 0.6258618008397698
+          }
+        },
+        "lead": {
+          "day1": {
+            "actual": 229838.0,
+            "absolute_error": 38449.0,
+            "rows": 240,
+            "mae": 160.20416666666668,
+            "wape": 0.16728739372949641,
+            "score": 0.8327126062705036
+          },
+          "days1_31": {
+            "actual": 6402358.0,
+            "absolute_error": 1258503.0,
+            "rows": 7440,
+            "mae": 169.15362903225807,
+            "wape": 0.19656867048046986,
+            "score": 0.8034313295195301
+          },
+          "days32_61": {
+            "actual": 6352123.0,
+            "absolute_error": 1418341.0,
+            "rows": 7200,
+            "mae": 196.99180555555554,
+            "wape": 0.22328613598949518,
+            "score": 0.7767138640105048
+          }
+        },
+        "peak_hours": {
+          "actual": 6616314.0,
+          "absolute_error": 1409120.0,
+          "rows": 4270,
+          "mae": 330.0046838407494,
+          "wape": 0.21297659089335844,
+          "score": 0.7870234091066416
+        }
+      },
+      "seconds": 0.001,
+      "october_confirmation": {
+        "actual": 6606787.0,
+        "absolute_error": 1482182.0,
+        "rows": 7440,
+        "mae": 199.21801075268817,
+        "wape": 0.2243423316053628,
+        "score": 0.7756576683946372
+      }
+    },
+    {
+      "origin": "2025-09-01",
+      "candidate": "cat_native",
+      "metrics": {
+        "overall": {
+          "actual": 12754481.0,
+          "absolute_error": 1689159.0,
+          "rows": 14640,
+          "mae": 115.3797131147541,
+          "wape": 0.13243651388088626,
+          "score": 0.8675634861191137
+        },
+        "routes": {
+          "1": {
+            "actual": 1136093.0,
+            "absolute_error": 100210.0,
+            "rows": 1464,
+            "mae": 68.44945355191257,
+            "wape": 0.08820580709501775,
+            "score": 0.9117941929049822
+          },
+          "5": {
+            "actual": 0.0,
+            "absolute_error": 0.0,
+            "rows": 1464,
+            "mae": 0.0,
+            "wape": null,
+            "score": null
+          },
+          "7": {
+            "actual": 1350573.0,
+            "absolute_error": 224659.0,
+            "rows": 1464,
+            "mae": 153.4556010928962,
+            "wape": 0.1663434705121456,
+            "score": 0.8336565294878544
+          },
+          "11": {
+            "actual": 1907061.0,
+            "absolute_error": 231394.0,
+            "rows": 1464,
+            "mae": 158.05601092896174,
+            "wape": 0.12133539514467549,
+            "score": 0.8786646048553245
+          },
+          "12": {
+            "actual": 1983604.0,
+            "absolute_error": 216568.0,
+            "rows": 1464,
+            "mae": 147.92896174863387,
+            "wape": 0.10917904985067584,
+            "score": 0.8908209501493242
+          },
+          "17": {
+            "actual": 3063025.0,
+            "absolute_error": 345038.0,
+            "rows": 1464,
+            "mae": 235.68169398907105,
+            "wape": 0.11264615861770635,
+            "score": 0.8873538413822937
+          },
+          "25": {
+            "actual": 464537.0,
+            "absolute_error": 75125.0,
+            "rows": 1464,
+            "mae": 51.314890710382514,
+            "wape": 0.1617201643787255,
+            "score": 0.8382798356212745
+          },
+          "26": {
+            "actual": 1089964.0,
+            "absolute_error": 97359.0,
+            "rows": 1464,
+            "mae": 66.50204918032787,
+            "wape": 0.08932313360808247,
+            "score": 0.9106768663919176
+          },
+          "28": {
+            "actual": 602164.0,
+            "absolute_error": 89408.0,
+            "rows": 1464,
+            "mae": 61.07103825136612,
+            "wape": 0.14847782331723583,
+            "score": 0.8515221766827642
+          },
+          "50": {
+            "actual": 1157460.0,
+            "absolute_error": 309398.0,
+            "rows": 1464,
+            "mae": 211.33743169398906,
+            "wape": 0.2673077255369516,
+            "score": 0.7326922744630484
+          }
+        },
+        "lead": {
+          "day1": {
+            "actual": 229838.0,
+            "absolute_error": 23625.0,
+            "rows": 240,
+            "mae": 98.4375,
+            "wape": 0.10278979107023208,
+            "score": 0.8972102089297679
+          },
+          "days1_31": {
+            "actual": 6402358.0,
+            "absolute_error": 838695.0,
+            "rows": 7440,
+            "mae": 112.72782258064517,
+            "wape": 0.1309978292372904,
+            "score": 0.8690021707627096
+          },
+          "days32_61": {
+            "actual": 6352123.0,
+            "absolute_error": 850464.0,
+            "rows": 7200,
+            "mae": 118.12,
+            "wape": 0.13388657618877972,
+            "score": 0.8661134238112203
+          }
+        },
+        "peak_hours": {
+          "actual": 6616314.0,
+          "absolute_error": 798744.0,
+          "rows": 4270,
+          "mae": 187.05948477751755,
+          "wape": 0.12072341185741789,
+          "score": 0.8792765881425821
+        }
+      },
+      "seconds": 2.672,
+      "october_confirmation": {
+        "actual": 6606787.0,
+        "absolute_error": 885201.0,
+        "rows": 7440,
+        "mae": 118.97862903225807,
+        "wape": 0.13398358385097023,
+        "score": 0.8660164161490298
+      }
+    }
+  ],
+  "ranking": [
+    {
+      "candidate": "cat_native",
+      "pooled_score": 0.8675634861191137,
+      "gains_vs_week1": [
+        0.0443765606769887
+      ],
+      "passes_declared_gate": true
+    },
+    {
+      "candidate": "week1",
+      "pooled_score": 0.823186925442125,
+      "gains_vs_week1": [
+        0.0
+      ],
+      "passes_declared_gate": false
+    },
+    {
+      "candidate": "week4",
+      "pooled_score": 0.7902756686061941,
+      "gains_vs_week1": [
+        -0.03291125683593088
+      ],
+      "passes_declared_gate": false
+    },
+    {
+      "candidate": "type4",
+      "pooled_score": 0.7901252116805066,
+      "gains_vs_week1": [
+        -0.03306171376161837
+      ],
+      "passes_declared_gate": false
+    }
+  ],
+  "selected": "cat_native",
+  "quality_gate": true,
+  "limits": [
+    "folds may overlap",
+    "confirmation was previously inspected in EDA",
+    "August development overlaps September; only October is post-selection confirmation",
+    "route5 zero prior has no positive support",
+    "no live availability data",
+    "selection is experimental, not production promotion"
+  ]
+}

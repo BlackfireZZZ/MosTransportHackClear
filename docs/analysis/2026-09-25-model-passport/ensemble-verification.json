@@ -1,0 +1,229 @@
+{
+  "status": "passed",
+  "run_id": "route-ensemble-2f6d53e6c543",
+  "model_version": "cat-mae-rmse-50-50-2f6d53e6c543",
+  "forecast_sha256": "f7ae69678873d31779d6ba238d4ab04c271c84916c01b719af242239e626edd2",
+  "checked_routes": 10,
+  "serving_views": 30,
+  "submission_rows": 14640,
+  "template_keys_exact": true,
+  "rounded_predictions_exact": true,
+  "scope": "offline trained-artifact/domain/HTTP serialization; no DB publication or UI run",
+  "route_identity": "explicit synthetic verification mapping; production catalog not resolved",
+  "totals_tolerance": {
+    "relative": 1e-12,
+    "absolute": 1e-09
+  },
+  "views": [
+    {
+      "route": 1,
+      "horizon": "day",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 24,
+      "total": 21773.0
+    },
+    {
+      "route": 1,
+      "horizon": "month",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 30,
+      "total": 513869.0
+    },
+    {
+      "route": 1,
+      "horizon": "month",
+      "start": "2025-12-01T00:00:00+03:00",
+      "buckets": 31,
+      "total": 559338.0
+    },
+    {
+      "route": 5,
+      "horizon": "day",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 24,
+      "total": 0.0
+    },
+    {
+      "route": 5,
+      "horizon": "month",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 30,
+      "total": 0.0
+    },
+    {
+      "route": 5,
+      "horizon": "month",
+      "start": "2025-12-01T00:00:00+03:00",
+      "buckets": 31,
+      "total": 0.0
+    },
+    {
+      "route": 7,
+      "horizon": "day",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 24,
+      "total": 27546.0
+    },
+    {
+      "route": 7,
+      "horizon": "month",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 30,
+      "total": 667517.0
+    },
+    {
+      "route": 7,
+      "horizon": "month",
+      "start": "2025-12-01T00:00:00+03:00",
+      "buckets": 31,
+      "total": 720231.0
+    },
+    {
+      "route": 11,
+      "horizon": "day",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 24,
+      "total": 35031.0
+    },
+    {
+      "route": 11,
+      "horizon": "month",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 30,
+      "total": 874033.0
+    },
+    {
+      "route": 11,
+      "horizon": "month",
+      "start": "2025-12-01T00:00:00+03:00",
+      "buckets": 31,
+      "total": 937343.0
+    },
+    {
+      "route": 12,
+      "horizon": "day",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 24,
+      "total": 37132.0
+    },
+    {
+      "route": 12,
+      "horizon": "month",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 30,
+      "total": 912727.0
+    },
+    {
+      "route": 12,
+      "horizon": "month",
+      "start": "2025-12-01T00:00:00+03:00",
+      "buckets": 31,
+      "total": 985724.0
+    },
+    {
+      "route": 17,
+      "horizon": "day",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 24,
+      "total": 54049.0
+    },
+    {
+      "route": 17,
+      "horizon": "month",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 30,
+      "total": 1378857.0
+    },
+    {
+      "route": 17,
+      "horizon": "month",
+      "start": "2025-12-01T00:00:00+03:00",
+      "buckets": 31,
+      "total": 1469903.0
+    },
+    {
+      "route": 25,
+      "horizon": "day",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 24,
+      "total": 8233.0
+    },
+    {
+      "route": 25,
+      "horizon": "month",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 30,
+      "total": 206196.0
+    },
+    {
+      "route": 25,
+      "horizon": "month",
+      "start": "2025-12-01T00:00:00+03:00",
+      "buckets": 31,
+      "total": 219704.0
+    },
+    {
+      "route": 26,
+      "horizon": "day",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 24,
+      "total": 20649.0
+    },
+    {
+      "route": 26,
+      "horizon": "month",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 30,
+      "total": 498507.0
+    },
+    {
+      "route": 26,
+      "horizon": "month",
+      "start": "2025-12-01T00:00:00+03:00",
+      "buckets": 31,
+      "total": 538345.0
+    },
+    {
+      "route": 28,
+      "horizon": "day",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 24,
+      "total": 11859.0
+    },
+    {
+      "route": 28,
+      "horizon": "month",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 30,
+      "total": 287819.0
+    },
+    {
+      "route": 28,
+      "horizon": "month",
+      "start": "2025-12-01T00:00:00+03:00",
+      "buckets": 31,
+      "total": 309987.0
+    },
+    {
+      "route": 50,
+      "horizon": "day",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 24,
+      "total": 25044.0
+    },
+    {
+      "route": 50,
+      "horizon": "month",
+      "start": "2025-11-01T00:00:00+03:00",
+      "buckets": 30,
+      "total": 578965.0
+    },
+    {
+      "route": 50,
+      "horizon": "month",
+      "start": "2025-12-01T00:00:00+03:00",
+      "buckets": 31,
+      "total": 636068.0
+    }
+  ]
+}

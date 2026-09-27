@@ -1,0 +1,18 @@
+{
+  "version": "external-residual.v1",
+  "timezone": "Europe/Moscow",
+  "input_sha256": {
+    "plan": "a165e1aaa75f30dd3dd54a6614f9ae38d5f94838d9186f523128cd602bcc2b61",
+    "weather": "4798ebc674918768a5ed823032d8e9683134e11973153c0fe4c7acc19ff94b83",
+    "posts": "371d80c420eb25fd7132487b6d23736f407ee84a93edfc042f1be3b2096ef524",
+    "labels": "39888b7f5c9ddd2001aa86c628d3f93678e1b84a0d5e8444c99302bdd2750882",
+    "script": "14e07fd6d8448b163dcd9a9af66fe2d0c635b83f6f1594f96fc9a62c01faac25"
+  },
+  "catboost_version": "1.2.10",
+  "supporting_source_sha256": {
+    "ml/src/tramflow_ml/competition.py": "eff2aace794274e7891d75a6d3db1d2e8ba36318dde5ccc021045f204db6499d",
+    "ml/src/tramflow_ml/competition_profile.py": "910c34b85aee4cf89b6dc37a6e80c84c9c09e94d69fba6b367fd51016a187ad4",
+    "ml/src/tramflow_ml/competition_hybrid.py": "8bb14034cc67042bc13aa1755d7c77be7e1448c74e49433e1dfa605c15786d0c",
+    "ml/src/tramflow_ml/external_factors.py": "22ee62d5ec65ecf67085f2a868e6fb49bbe3f1d9584013b861b1f090913f5727"
+  }
+}

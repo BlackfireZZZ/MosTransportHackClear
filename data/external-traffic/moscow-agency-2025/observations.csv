@@ -1,0 +1,15 @@
+published_at,date,hour,congestion_score,score_provider,mean_speed_kmh,speed_provider,source_url,timestamp_kind,original_vintage_verified
+2025-03-06T18:47:00+03:00,2025-03-06,18,8,yandex,,,https://www.mskagency.ru/materials/3458753,publication_proxy,False
+2025-04-01T19:01:00+03:00,2025-04-01,19,8,yandex,,,https://www.mskagency.ru/materials/3464949,publication_proxy,False
+2025-04-16T18:28:00+03:00,2025-04-16,18,9,yandex,,,https://www.mskagency.ru/materials/3468721,publication_proxy,False
+2025-04-21T18:37:00+03:00,2025-04-21,18,8,yandex,28.0,codd,https://www.mskagency.ru/materials/3470007,publication_proxy,False
+2025-04-29T19:02:00+03:00,2025-04-29,19,8,yandex,,,https://www.mskagency.ru/materials/3472273,publication_proxy,False
+2025-04-29T19:34:00+03:00,2025-04-29,19,9,yandex,,,https://www.mskagency.ru/materials/3472279,publication_proxy,False
+2025-04-30T17:36:00+03:00,2025-04-30,17,8,yandex,,,https://www.mskagency.ru/materials/3472583,publication_proxy,False
+2025-09-23T18:59:00+03:00,2025-09-23,18,8,yandex,,,https://www.mskagency.ru/materials/3510907,publication_proxy,False
+2025-09-25T18:30:00+03:00,2025-09-25,18,8,yandex,,,https://www.mskagency.ru/materials/3511495,publication_proxy,False
+2025-09-25T19:16:00+03:00,2025-09-25,19,9,yandex,,,https://www.mskagency.ru/materials/3511503,publication_proxy,False
+2025-10-14T18:44:00+03:00,2025-10-14,18,8,yandex,,,https://www.mskagency.ru/materials/3516147,publication_proxy,False
+2025-10-15T19:05:00+03:00,2025-10-15,19,8,yandex,,,https://www.mskagency.ru/materials/3516453,publication_proxy,False
+2025-10-29T15:13:00+03:00,2025-10-29,15,8,yandex,,,https://www.mskagency.ru/materials/3519789,publication_proxy,False
+2025-10-30T18:59:00+03:00,2025-10-30,18,8,yandex,,,https://www.mskagency.ru/materials/3520219,publication_proxy,False

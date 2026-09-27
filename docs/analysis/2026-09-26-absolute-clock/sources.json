@@ -1,0 +1,286 @@
+{
+  "researched_on": "2026-09-26",
+  "sources": [
+    {
+      "url": "https://archive.org/wayback/available?url=https://transport.mos.ru/transport/schedule/route/25&timestamp=20250515",
+      "outcome": "HTTP200 archived_snapshots empty",
+      "route": "17"
+    },
+    {
+      "url": "https://archive.org/wayback/available?url=https://transport.mos.ru/transport/schedule/route/17&timestamp=20250515",
+      "outcome": "HTTP200 archived_snapshots empty",
+      "route": "12"
+    },
+    {
+      "url": "https://archive.org/wayback/available?url=https://transport.mos.ru/transport/schedule/route/15&timestamp=20250515",
+      "outcome": "HTTP200 archived_snapshots empty",
+      "route": "11"
+    },
+    {
+      "url": "https://web.archive.org/cdx/search/cdx?url=transport.mos.ru/transport/schedule/route/25*&from=2024&to=2025&output=json&filter=statuscode:200&collapse=urlkey&limit=30",
+      "outcome": "HTTP200 empty list",
+      "route": "17"
+    },
+    {
+      "url": "https://web.archive.org/web/20250218192936id_/https://mybuses.ru/moscow/tram/17/",
+      "outcome": "HTTP200 actual2025 archived table, cross-stop row times mostly nonmonotone; quarantine as coherent trip source",
+      "route": "17",
+      "capture_timestamp": "20250218192936",
+      "parsed_path": "/Users/cute/MosTransport2026Hack-worktrees/boarding-absolute-clock/ml/artifacts/clock-sources/archived-route17-parsed.json",
+      "table_counts": [
+        {
+          "table": "table1",
+          "stops": 28,
+          "rows": 467,
+          "bad_width": 0,
+          "negative_rows": 458
+        },
+        {
+          "table": "table2",
+          "stops": 27,
+          "rows": 467,
+          "bad_width": 0,
+          "negative_rows": 467
+        }
+      ],
+      "service_validity": "unknown",
+      "body_path": "/Users/cute/MosTransport2026Hack-worktrees/boarding-absolute-clock/ml/artifacts/clock-sources/archived-tram-0.txt",
+      "body_sha256": "7ef5966ce9da5a37b87bf4db21a03c7e6687ccbd74b4adf703dc9fd5eeb8f597",
+      "body_bytes": 526505
+    },
+    {
+      "url": "https://web.archive.org/web/20250323174715id_/https://mybuses.ru/moscow/tram/11/",
+      "outcome": "HTTP200 actual2025 archived table, cross-stop row times mostly nonmonotone; quarantine as coherent trip source",
+      "route": "11",
+      "capture_timestamp": "20250323174715",
+      "parsed_path": "/Users/cute/MosTransport2026Hack-worktrees/boarding-absolute-clock/ml/artifacts/clock-sources/archived-route11-parsed.json",
+      "table_counts": [
+        {
+          "table": "table1",
+          "stops": 43,
+          "rows": 199,
+          "bad_width": 0,
+          "negative_rows": 199
+        },
+        {
+          "table": "table2",
+          "stops": 41,
+          "rows": 199,
+          "bad_width": 0,
+          "negative_rows": 194
+        }
+      ],
+      "service_validity": "unknown",
+      "body_path": "/Users/cute/MosTransport2026Hack-worktrees/boarding-absolute-clock/ml/artifacts/clock-sources/archived-route11-20250323.html",
+      "body_sha256": "d00da51ea194b6962d96a3ceaee4b60414e8df2fdb81734ede02b8d3a65fc424",
+      "body_bytes": 352303
+    },
+    {
+      "url": "https://archive.org/wayback/available?url=https://mybuses.ru/moscow/tram/12/&timestamp=20250515",
+      "outcome": "HTTP200 archived_snapshots empty",
+      "route": "12",
+      "body_path": "/Users/cute/MosTransport2026Hack-worktrees/boarding-absolute-clock/ml/artifacts/clock-sources/archive-route12-available.json",
+      "body_sha256": "5f963376635542b00da3b7e4367bff5253137800a7b2a1e25a88009a11576ea8",
+      "body_bytes": 96
+    },
+    {
+      "url": "https://greens3.transitpdf.com/files/sourcedata/moscow-official.zip",
+      "outcome": "HTTP404",
+      "body_path": "/Users/cute/MosTransport2026Hack-worktrees/boarding-absolute-clock/ml/artifacts/clock-sources/moscow-official-research.zip",
+      "body_sha256": "62c1c0b235e26952857139537b65f8272026cd1c385c1bf6dba20481ee8a6619",
+      "body_bytes": 27150
+    },
+    {
+      "url": "https://files.mobilitydatabase.org/mdb-3226/mdb-3226-202606301640/mdb-3226-202606301640.zip",
+      "outcome": "HTTP200 parsed1798 coherent trips across11/12/17; provisional historic schedule based on2025 embedded dates, captured2026",
+      "archive_capture": "2026-06-30",
+      "embedded_zip_dates": {
+        "agency.txt": [
+          2025,
+          5,
+          27,
+          13,
+          26,
+          28
+        ],
+        "calendar.txt": [
+          2025,
+          5,
+          27,
+          13,
+          24,
+          58
+        ],
+        "routes.txt": [
+          2025,
+          5,
+          27,
+          13,
+          26,
+          28
+        ],
+        "stops.txt": [
+          2025,
+          5,
+          27,
+          13,
+          26,
+          28
+        ],
+        "stop_times.txt": [
+          2025,
+          5,
+          27,
+          13,
+          26,
+          18
+        ],
+        "trips.txt": [
+          2025,
+          5,
+          27,
+          13,
+          26,
+          28
+        ]
+      },
+      "parsed_path": "/Users/cute/MosTransport2026Hack-worktrees/boarding-absolute-clock/ml/artifacts/clock-sources/gtfs-routes-11-12-17-parsed.json",
+      "trip_counts": {
+        "11": 406,
+        "17": 987,
+        "12": 405
+      },
+      "calendar_by_route": {
+        "11": {
+          "3159499": {
+            "global_id": "2757357637",
+            "service_id": "3159499",
+            "monday": "1",
+            "tuesday": "1",
+            "wednesday": "1",
+            "thursday": "1",
+            "friday": "1",
+            "saturday": "0",
+            "sunday": "0",
+            "start_date": "20250403",
+            "end_date": "20301231",
+            "": ""
+          },
+          "3162601": {
+            "global_id": "2764039636",
+            "service_id": "3162601",
+            "monday": "0",
+            "tuesday": "0",
+            "wednesday": "0",
+            "thursday": "0",
+            "friday": "0",
+            "saturday": "1",
+            "sunday": "1",
+            "start_date": "20250501",
+            "end_date": "20301231",
+            "": ""
+          }
+        },
+        "12": {
+          "3161209": {
+            "global_id": "2764039058",
+            "service_id": "3161209",
+            "monday": "1",
+            "tuesday": "1",
+            "wednesday": "1",
+            "thursday": "1",
+            "friday": "1",
+            "saturday": "0",
+            "sunday": "0",
+            "start_date": "20250505",
+            "end_date": "20301231",
+            "": ""
+          },
+          "3161215": {
+            "global_id": "2764039062",
+            "service_id": "3161215",
+            "monday": "0",
+            "tuesday": "0",
+            "wednesday": "0",
+            "thursday": "0",
+            "friday": "0",
+            "saturday": "1",
+            "sunday": "1",
+            "start_date": "20250501",
+            "end_date": "20301231",
+            "": ""
+          }
+        },
+        "17": {
+          "3161086": {
+            "global_id": "2764038990",
+            "service_id": "3161086",
+            "monday": "1",
+            "tuesday": "1",
+            "wednesday": "1",
+            "thursday": "1",
+            "friday": "1",
+            "saturday": "0",
+            "sunday": "0",
+            "start_date": "20250429",
+            "end_date": "20301231",
+            "": ""
+          },
+          "3162599": {
+            "global_id": "2764039628",
+            "service_id": "3162599",
+            "monday": "0",
+            "tuesday": "0",
+            "wednesday": "0",
+            "thursday": "0",
+            "friday": "0",
+            "saturday": "1",
+            "sunday": "1",
+            "start_date": "20250501",
+            "end_date": "20301231",
+            "": ""
+          }
+        }
+      },
+      "anomalies": {
+        "negative_edges": 0,
+        "zero_edges": 987
+      },
+      "calendar_dates_available": false,
+      "license": "unknown individual feed license; MobilityDatabase metadataCC0 does not relicense feed",
+      "body_path": "/Users/cute/MosTransport2026Hack-worktrees/boarding-absolute-clock/ml/artifacts/clock-sources/moscow-gtfs-20260630.zip",
+      "body_sha256": "dec3ec0ccc2efb7f1327ee6f26a0636a4a271494490e6debedcb2c1ccc579e76",
+      "body_bytes": 68376874
+    },
+    {
+      "url": "https://transport.mos.ru/transport/schedule/route/25?mgt_schedule%5Bdate%5D=15.05.2025&mgt_schedule%5Bdirection%5D=0",
+      "outcome": "curl30sec timeout HTTP000; no historical body",
+      "route": "17"
+    },
+    {
+      "url": "https://transport.mos.ru/mostrans/all_news/124110",
+      "outcome": "Search tool indexed official article22Apr2025: route17 suspendedweekendsfrom26Apr; weekdaysnormal. Directopen timeout.",
+      "publication_date": "2025-04-22"
+    },
+    {
+      "url": "https://www.mosmetro.ru/news/details/6793",
+      "outcome": "Search tool indexed official article30Apr2025: route17restoredweekendsfrom1May; bus017withdrawn. Directopen timeout.",
+      "publication_date": "2025-04-30"
+    },
+    {
+      "url": "https://mobilitydatabase.org/terms-and-conditions",
+      "outcome": "Read via web; metadataCC0, individual feed owners license content separately",
+      "license_context": "No feed-specific license found inziporlisting"
+    },
+    {
+      "url": "https://busmaps.com/en/russia/open-data-portal-moscow/moscow-official",
+      "outcome": "Read via web: currentcorrectedbuild2026-09-18 serviceperiod2022-10-29..2028-01-01; nothistoriccapture, notused"
+    }
+  ],
+  "parser_path": "/tmp/extract_historical_clock_sources.py",
+  "reproduction": [
+    "curl --max-time 60 -L -sS URL -o BODY_PATH",
+    "python3 /tmp/extract_historical_clock_sources.py gtfs /tmp/moscow-gtfs-20260630.zip /tmp/gtfs-routes-11-12-17-parsed.json",
+    "python3 /tmp/extract_historical_clock_sources.py archive /tmp/archived-tram-0.txt /tmp/archived-route17-parsed.json --route 17 --capture 2025-02-18 --url https://web.archive.org/web/20250218192936id_/https://mybuses.ru/moscow/tram/17/"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "source": "/Users/cute/MosTransport2026Hack-worktrees/duty-mapping-full-20260927/ml/artifacts/full-duty-mapping-v1/coverage-by-day-route.csv",
+  "source_sha256": "a6345b7492d7e0db85f5a6722d012573058b95a212c6ab42fb892cb197996c63",
+  "date_range": [
+    "2025-01-01",
+    "2025-10-31"
+  ],
+  "timezone": "Europe/Moscow",
+  "definition": "100 * assigned event count / all event count by route and calendar month",
+  "total_events": 59667191
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2025-11-01",
+    "raw_and_api": 3.6923076923076925,
+    "manual_factor": 1.2,
+    "exact": true
+  },
+  {
+    "date": "2025-11-08",
+    "raw_and_api": 2.6214285714285714,
+    "manual_factor": 1.2,
+    "exact": true
+  },
+  {
+    "date": "2025-12-31",
+    "raw_and_api": 1.7317073170731707,
+    "manual_factor": 1.2,
+    "exact": true
+  },
+  {
+    "horizon": "day",
+    "buckets": 24,
+    "conserved": true,
+    "elapsed_ms": 26.9
+  },
+  {
+    "horizon": "month",
+    "buckets": 30,
+    "conserved": true,
+    "elapsed_ms": 33.09
+  },
+  {
+    "horizon": "year",
+    "buckets": 12,
+    "conserved": true,
+    "elapsed_ms": 115.71
+  }
+]

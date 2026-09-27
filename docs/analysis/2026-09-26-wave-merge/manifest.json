@@ -1,0 +1,18 @@
+{
+  "date_range": [
+    "2025-05-15",
+    "2025-10-18"
+  ],
+  "files": {
+    "rows.json": "85aa45dc4859d8eeebe0011dc9c27a5694cc73d2fba3c61751e6f2b666755834",
+    "summary.json": "be0b1e58785e86eaa8275a863f38ccf13c8ab140feea04d56caf7657beaedace",
+    "visual-data.json": "67b2888082a04b1ff63fc42c0b402f4e86bc29f1344b3ebf3febdefe9b224013"
+  },
+  "module_sha256": "94baa731ab4be19788b8161ad31b0dd77d28848f4d426758adfa2f2e2af0df39",
+  "quiet_score_is_calibrated_probability": false,
+  "schema_version": "boarding-wave-merge.v1",
+  "script_sha256": "7f0e917ff0312ac6260e5720a6677d2194141f3eff44167c3700609bff7d2c22",
+  "source_manifest_sha256": "2797cfdbb5c64bccfbec46693bb90e5fa6af9c3e94099bf591834fe9fc699f0b",
+  "stop_accuracy_verified": false,
+  "timezone": "Europe/Moscow"
+}

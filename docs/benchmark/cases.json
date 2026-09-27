@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "requests": 200,
+  "warmup": 5,
+  "concurrency": 4,
+  "cases": [
+    {"id": "get_day", "method": "GET", "path": "/api/v1/forecasts?route_id=1001&horizon=day", "expect": "published", "horizon": "day"},
+    {"id": "get_month", "method": "GET", "path": "/api/v1/forecasts?route_id=1001&horizon=month", "expect": "published", "horizon": "month"},
+    {"id": "get_day_interval", "method": "GET", "path": "/api/v1/forecasts?route_id=1001&horizon=day&start=2025-12-05T07%3A00%3A00%2B03%3A00&end=2025-12-05T10%3A00%3A00%2B03%3A00", "expect": "published", "horizon": "day"},
+    {"id": "post_approved_day", "method": "POST", "path": "/api/v1/planning/forecast", "payload": {"route": "1", "start_date": "2025-11-01", "horizon": "day", "forecast_mode": "approved"}, "expect": "planning", "horizon": "day", "mode": "approved"},
+    {"id": "post_approved_month", "method": "POST", "path": "/api/v1/planning/forecast", "payload": {"route": "1", "start_date": "2025-11-01", "horizon": "month", "forecast_mode": "approved"}, "expect": "planning", "horizon": "month", "mode": "approved"},
+    {"id": "post_approved_year", "method": "POST", "path": "/api/v1/planning/forecast", "payload": {"route": "1", "start_date": "2025-11-01", "horizon": "year", "forecast_mode": "approved"}, "expect": "planning", "horizon": "year", "mode": "approved"},
+    {"id": "post_stop_day", "method": "POST", "path": "/api/v1/planning/forecast", "payload": {"route": "1", "start_date": "2025-11-01", "horizon": "day", "forecast_mode": "stop_model"}, "expect": "planning", "horizon": "day", "mode": "stop_model"},
+    {"id": "post_stop_month", "method": "POST", "path": "/api/v1/planning/forecast", "payload": {"route": "1", "start_date": "2025-11-01", "horizon": "month", "forecast_mode": "stop_model"}, "expect": "planning", "horizon": "month", "mode": "stop_model"},
+    {"id": "post_stop_year", "method": "POST", "path": "/api/v1/planning/forecast", "payload": {"route": "1", "start_date": "2025-11-01", "horizon": "year", "forecast_mode": "stop_model"}, "expect": "planning", "horizon": "year", "mode": "stop_model"},
+    {"id": "post_stop_filter", "method": "POST", "path": "/api/v1/planning/forecast", "payload": {"route": "1", "start_date": "2025-11-01", "horizon": "day", "forecast_mode": "stop_model", "stop_id": "gtfs:2594", "direction": "0"}, "expect": "planning", "horizon": "day", "mode": "stop_model"},
+    {"id": "post_invalid_date", "method": "POST", "path": "/api/v1/planning/forecast", "payload": {"route": "1", "start_date": "2026-01-01", "horizon": "day", "forecast_mode": "approved"}, "expect": "error", "status": 422}
+  ]
+}

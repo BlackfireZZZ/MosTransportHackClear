@@ -1,0 +1,19 @@
+{
+  "schema": "external-forecast-variants-manifest.v1",
+  "file": "model-variants.json.gz",
+  "sha256": "a58994ebaaafec6b8e7116e243d0702b828900efedd4c3c78fe0aaabb59484ca",
+  "cutoff": "2025-10-31",
+  "grid_rows": 14640,
+  "source_version": "external-factors.v1",
+  "status": "experimental_not_promoted",
+  "source_sha256": {
+    "observations.jsonl": "371d80c420eb25fd7132487b6d23736f407ee84a93edfc042f1be3b2096ef524",
+    "traffic_manifest.json": "99c02b589abdea47510d24611bcf217b309a2c4f2721a9580a1eb5b66897d937",
+    "route_labels_manifest.json": "cd517b447f167024e7dae805867dd82ec7b2c6aab1db43373b7d7ef1babbe51f",
+    "route_labels.csv.gz": "39888b7f5c9ddd2001aa86c628d3f93678e1b84a0d5e8444c99302bdd2750882",
+    "route_weather.csv.gz": "4798ebc674918768a5ed823032d8e9683134e11973153c0fe4c7acc19ff94b83",
+    "external_factors.py": "22ee62d5ec65ecf67085f2a868e6fb49bbe3f1d9584013b861b1f090913f5727",
+    "frozen_plan.json": "959f592f8a967592bc9de8093e50358946d94d4023f3867269e82805533f5512",
+    "scores.json": "d3cd2120c5151405f9da977edf492e2fd98ac55d570a7d47386005f326682aa0"
+  }
+}

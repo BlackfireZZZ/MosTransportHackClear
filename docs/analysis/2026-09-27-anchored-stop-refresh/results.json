@@ -1,0 +1,1400 @@
+{
+  "acceptance_passed": true,
+  "stop_rows": 854976,
+  "identities": 584,
+  "final_unknown_share": 0.22377348301000943,
+  "baseline_unknown_share": 0.7221122950732535,
+  "final_total": 12296438.68445322,
+  "final_route_max_abs_difference": 1.8189894035458565e-12,
+  "all_finite_nonnegative": true,
+  "future_count_poison_invariant": true,
+  "stop_ground_truth": false,
+  "timezone": "Europe/Moscow",
+  "run": {
+    "code_sha256": "9167d32bc7fc5946934325768c1c3d443aebbeef1e3eef3cbb486c2962fac3c5",
+    "refresh_script_sha256": "42001cdd3ee2067d1fea8a9a4ed8dade1209ea077295ab633b59557e022607a8",
+    "config_sha256": "18a45e49b0a62c365983e4f82c8016f00ccef016a897b059bea390e2cb069bf6",
+    "experiment_plan_sha256": "911748b40d615a74e49d8b5e63a36fe4cea636312bbe4ba1f3dde91464158dee",
+    "source_manifest_sha256": "d39405084cdbe937a6416500ebac79ba6a7d746b5e352cc30b0738f87a108eb1",
+    "baseline_source_manifest_sha256": "0748c3c1a3f40b3f950c58b8cf33a62710dd0a20b246c5b59aa2c008ddc96e97",
+    "submission_sha256": "5f2c4e61d122c81dd6132ad559a1b0aee0807c5de9d969da2f8d3774a2cc23e5",
+    "stop_predictions_sha256": "1e79f596a6723de6b80dcdbe3915fa66561e0466d6299da8a179c760e7154bed",
+    "selected": "calendar_weekday_blend",
+    "selection": "fixed incumbent; no model search",
+    "diagnostic_blind": false,
+    "timezone": "Europe/Moscow",
+    "seed": 20260927,
+    "feature_version": "direct-stop-calendar-history.anchored-v3",
+    "horizon_days": 61,
+    "mapping_method": "duty-calendar-clock.first-stop-local-anchors-transfer.v3",
+    "mapping_temporal_caveat": "retrospective GTFS geometry and nearest same-duty/day-type calendar transfer; not historically available observations",
+    "generated_at": "2026-09-27T12:37:19.800491+00:00",
+    "data_cutoff": "2025-10-31T23:59:59+03:00",
+    "uncertainty": "unavailable; point forecasts only",
+    "stop_ground_truth": false,
+    "aggregate_constraint": "none; raw independent stop sums",
+    "leakage": "count history strictly before each origin; future poison invariant; geometry retrospective"
+  },
+  "new_dataset": {
+    "source_version": "boarding-real-training.v1",
+    "source_rows": 2816184,
+    "mass": 59667191.0,
+    "row_eligible_mass": 59667191.0,
+    "block_eligible_mass": 59667191.0,
+    "blocked_route_hours": 0,
+    "zero_policy": "inferred zeros only after complete route-hour mass reconciliation",
+    "target_kind": "uncalibrated inferred pseudo-count; never observed stop labels",
+    "geometry": "retrospective declared catalog; ambiguous sequence omitted",
+    "identity_universe": "declared catalog plus ten unknown buckets; not target-row support",
+    "route_manifest_sha256": "cd517b447f167024e7dae805867dd82ec7b2c6aab1db43373b7d7ef1babbe51f",
+    "source_manifest_sha256": "d39405084cdbe937a6416500ebac79ba6a7d746b5e352cc30b0738f87a108eb1",
+    "archive_sha256": "7e34e56b93f7379cb5abe9aca8e87967cb986111b9939caead5a3fea6c296e5a",
+    "catalog_sha256": "34a46e4a3aca9b61e96c59f76fc15bf47d740abeed029f3e8ec865dfbbd377d4",
+    "source_file_hashes": {
+      "soft_development.csv.gz": "37628dc3eee10cc068110e9160b526aefac61a679491429720c4e62a0a63399c",
+      "soft_diagnostic.csv.gz": "17757f96e552fc79bf6d747597e7c346b97734f966e79472eb92a4ec4330a8a3",
+      "soft_train.csv.gz": "17b7576c25ec6903cc9d60cf6fe76437dda12ee7f7d9908f9b3e33c693845210"
+    },
+    "source_dates": [
+      "2025-01-01",
+      "2025-10-31"
+    ],
+    "timezone": "Europe/Moscow",
+    "feature_version": "direct-stop-calendar-history.anchored-v3",
+    "mapping_policy": {
+      "adaptive95": 3.6527760293461156,
+      "allocation_rule": "previous stop; exact arrival belongs to arriving stop",
+      "calendar_transfer": "nearest same route/duty/2025 day-type; past wins ties",
+      "calibration_period": "2025-01 through 2025-04",
+      "clock_rule": "strong onset shifts matched stop and all later stops",
+      "first_validation_is_first_stop": true,
+      "source_calendar_relaxed": true,
+      "strong_detector": "adaptive_supports+coalesce.adaptive95",
+      "threshold_source": "boarding-multiscale/multiscale-v3/thresholds.json",
+      "threshold_source_sha256": "def1c72288982e829e08e58ca59d2ad37fba7980f3827a238b26d3f6da7b777b",
+      "trip_padding_seconds": 900
+    },
+    "spatial_status": "retrospective inference; not observed stop ground truth"
+  },
+  "old_dataset": {
+    "source_version": "boarding-real-training.v1",
+    "source_rows": 1796352,
+    "mass": 59667191.0,
+    "row_eligible_mass": 59667191.0,
+    "block_eligible_mass": 59667191.0,
+    "blocked_route_hours": 0,
+    "zero_policy": "inferred zeros only after complete route-hour mass reconciliation",
+    "target_kind": "uncalibrated inferred pseudo-count; never observed stop labels",
+    "geometry": "retrospective declared catalog; ambiguous sequence omitted",
+    "identity_universe": "declared catalog plus ten unknown buckets; not target-row support",
+    "route_manifest_sha256": "cd517b447f167024e7dae805867dd82ec7b2c6aab1db43373b7d7ef1babbe51f",
+    "source_manifest_sha256": "0748c3c1a3f40b3f950c58b8cf33a62710dd0a20b246c5b59aa2c008ddc96e97",
+    "archive_sha256": "7e34e56b93f7379cb5abe9aca8e87967cb986111b9939caead5a3fea6c296e5a",
+    "catalog_sha256": "5325d1b3e3df5c66b9dd5bbfe5b448abc4560ef5a90a1a2ea88159e0bb851fe8",
+    "source_file_hashes": {
+      "soft_development.csv.gz": "740585de560ac972b34df631fb81e08c9c772b65351c2bb74ebcd828ec929d64",
+      "soft_diagnostic.csv.gz": "6c2f5a13ffcfd8b5450a9deb8f677ea0151485f946df712c915cc72aeb1d034a",
+      "soft_train.csv.gz": "c9a1310420bc4888fe35fea6a60d094a3026ad4c38c2928289d30768d0847dcf"
+    },
+    "source_dates": [
+      "2025-01-01",
+      "2025-10-31"
+    ],
+    "timezone": "Europe/Moscow",
+    "feature_version": "direct-stop-calendar-history.anchored-v3",
+    "mapping_policy": null,
+    "spatial_status": "retrospective inference; not observed stop ground truth"
+  },
+  "windows": [
+    {
+      "origin": "2025-05-01",
+      "days": 61,
+      "old_mapping_against_new_targets": {
+        "route_score": 0.8636500048286989,
+        "pseudo_wape_all": 1.687459252294841,
+        "pseudo_wape_eligible": 1.687459252294841,
+        "pseudo_wape_known": 0.9205664170590272,
+        "known_mass": 10390252.0,
+        "unallocated_mass": 1165656.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.8658907257003814,
+          "5": null,
+          "7": 0.8440332356956628,
+          "11": 0.8758163884577179,
+          "12": 0.8647460295534694,
+          "17": 0.9005903439704624,
+          "25": 0.8189305694267222,
+          "26": 0.8217055467659583,
+          "28": 0.8149177825483394,
+          "50": 0.846553959199909
+        },
+        "slices": {
+          "month": {
+            "5": {
+              "actual": 6000921.0,
+              "absolute_error": 636233.0,
+              "score": 0.8939774411294533
+            },
+            "6": {
+              "actual": 5554987.0,
+              "absolute_error": 939415.0,
+              "score": 0.8308879930772115
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 1151360.0,
+              "absolute_error": 144387.0,
+              "score": 0.8745943927181767
+            },
+            "2": {
+              "actual": 1188960.0,
+              "absolute_error": 139945.0,
+              "score": 0.8822962925582021
+            },
+            "3": {
+              "actual": 1514354.0,
+              "absolute_error": 136073.0,
+              "score": 0.9101445236714797
+            },
+            "4": {
+              "actual": 1518756.0,
+              "absolute_error": 148083.0,
+              "score": 0.9024971753198012
+            },
+            "5": {
+              "actual": 1469458.0,
+              "absolute_error": 145838.0,
+              "score": 0.9007538834046295
+            },
+            "6": {
+              "actual": 1404592.0,
+              "absolute_error": 173206.0,
+              "score": 0.8766858988232882
+            },
+            "7": {
+              "actual": 1112230.0,
+              "absolute_error": 372918.0,
+              "score": 0.6647114355843665
+            },
+            "8": {
+              "actual": 1327345.0,
+              "absolute_error": 176025.0,
+              "score": 0.8673856457816167
+            },
+            "9": {
+              "actual": 868853.0,
+              "absolute_error": 139173.0,
+              "score": 0.8398198544517887
+            }
+          }
+        }
+      },
+      "anchored_mapping_against_new_targets": {
+        "route_score": 0.8636497452212323,
+        "pseudo_wape_all": 0.6777165309523671,
+        "pseudo_wape_eligible": 0.6777165309523671,
+        "pseudo_wape_known": 0.5299721897263288,
+        "known_mass": 10390252.0,
+        "unallocated_mass": 1165656.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.8658927808102065,
+          "5": null,
+          "7": 0.8440332356956628,
+          "11": 0.8758175455323325,
+          "12": 0.8647460295534694,
+          "17": 0.9005892550428238,
+          "25": 0.8189202997712435,
+          "26": 0.8217055467659583,
+          "28": 0.8149177825483394,
+          "50": 0.846553959199909
+        },
+        "slices": {
+          "month": {
+            "5": {
+              "actual": 6000921.0,
+              "absolute_error": 636236.0,
+              "score": 0.8939769412061915
+            },
+            "6": {
+              "actual": 5554987.0,
+              "absolute_error": 939415.0,
+              "score": 0.8308879930772115
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 1151360.0,
+              "absolute_error": 144388.0,
+              "score": 0.8745935241801001
+            },
+            "2": {
+              "actual": 1188960.0,
+              "absolute_error": 139944.0,
+              "score": 0.8822971336293904
+            },
+            "3": {
+              "actual": 1514354.0,
+              "absolute_error": 136074.0,
+              "score": 0.9101438633238992
+            },
+            "4": {
+              "actual": 1518756.0,
+              "absolute_error": 148084.0,
+              "score": 0.9024965168861885
+            },
+            "5": {
+              "actual": 1469458.0,
+              "absolute_error": 145840.0,
+              "score": 0.9007525223585839
+            },
+            "6": {
+              "actual": 1404592.0,
+              "absolute_error": 173207.0,
+              "score": 0.8766851868727716
+            },
+            "7": {
+              "actual": 1112230.0,
+              "absolute_error": 372917.0,
+              "score": 0.6647123346789783
+            },
+            "8": {
+              "actual": 1327345.0,
+              "absolute_error": 176024.0,
+              "score": 0.867386399165251
+            },
+            "9": {
+              "actual": 868853.0,
+              "absolute_error": 139173.0,
+              "score": 0.8398198544517887
+            }
+          }
+        }
+      },
+      "route_prediction_max_abs_difference": 2.7284841053187847e-12,
+      "route_score_abs_difference": 2.5960746663500345e-07,
+      "half_tie_changed_cells": 17,
+      "quantization_score_bound": 1.4711089773300375e-06,
+      "actual_mass": 11555908.0,
+      "route_absolute_error_delta": 3.0000000005471694,
+      "future_count_poison_invariant": true
+    },
+    {
+      "origin": "2025-07-01",
+      "days": 61,
+      "old_mapping_against_new_targets": {
+        "route_score": 0.8211907552887274,
+        "pseudo_wape_all": 0.8664258512089321,
+        "pseudo_wape_eligible": 0.8664258512089321,
+        "pseudo_wape_known": 0.6086588236115117,
+        "known_mass": 9140857.0,
+        "unallocated_mass": 1443400.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.8702888430759681,
+          "5": null,
+          "7": 0.42951010688324387,
+          "11": 0.8686327860180763,
+          "12": 0.8749484230530066,
+          "17": 0.8997814904945542,
+          "25": 0.7569104762820436,
+          "26": 0.8379920079289426,
+          "28": 0.7942238030382858,
+          "50": 0.767641456527271
+        },
+        "slices": {
+          "month": {
+            "7": {
+              "actual": 5407676.0,
+              "absolute_error": 1047754.0,
+              "score": 0.8062468979280564
+            },
+            "8": {
+              "actual": 5176581.0,
+              "absolute_error": 844809.0,
+              "score": 0.8368017423082919
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 1300961.0,
+              "absolute_error": 132710.0,
+              "score": 0.8979907929599734
+            },
+            "2": {
+              "actual": 1188478.0,
+              "absolute_error": 235939.0,
+              "score": 0.8014780248351252
+            },
+            "3": {
+              "actual": 1154589.0,
+              "absolute_error": 288214.0,
+              "score": 0.750375241752693
+            },
+            "4": {
+              "actual": 1188715.0,
+              "absolute_error": 262056.0,
+              "score": 0.7795468215678274
+            },
+            "5": {
+              "actual": 1163967.0,
+              "absolute_error": 277050.0,
+              "score": 0.761977788030073
+            },
+            "6": {
+              "actual": 1178648.0,
+              "absolute_error": 250433.0,
+              "score": 0.7875251983628699
+            },
+            "7": {
+              "actual": 1199982.0,
+              "absolute_error": 177437.0,
+              "score": 0.8521336153375634
+            },
+            "8": {
+              "actual": 1222207.0,
+              "absolute_error": 162646.0,
+              "score": 0.8669243426031761
+            },
+            "9": {
+              "actual": 986710.0,
+              "absolute_error": 106078.0,
+              "score": 0.8924932350944046
+            }
+          }
+        }
+      },
+      "anchored_mapping_against_new_targets": {
+        "route_score": 0.8211894325695228,
+        "pseudo_wape_all": 0.574040031244986,
+        "pseudo_wape_eligible": 0.574040031244986,
+        "pseudo_wape_known": 0.571394641102822,
+        "known_mass": 9140857.0,
+        "unallocated_mass": 1443400.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.8702888430759681,
+          "5": null,
+          "7": 0.42951010688324387,
+          "11": 0.8686340020490121,
+          "12": 0.8749449361608155,
+          "17": 0.8997822433266143,
+          "25": 0.7569104762820436,
+          "26": 0.8379920079289426,
+          "28": 0.7942041278537215,
+          "50": 0.76763898599455
+        },
+        "slices": {
+          "month": {
+            "7": {
+              "actual": 5407676.0,
+              "absolute_error": 1047766.0,
+              "score": 0.806244678860198
+            },
+            "8": {
+              "actual": 5176581.0,
+              "absolute_error": 844811.0,
+              "score": 0.8368013559528963
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 1300961.0,
+              "absolute_error": 132711.0,
+              "score": 0.8979900242974233
+            },
+            "2": {
+              "actual": 1188478.0,
+              "absolute_error": 235944.0,
+              "score": 0.8014738177736567
+            },
+            "3": {
+              "actual": 1154589.0,
+              "absolute_error": 288217.0,
+              "score": 0.750372643425496
+            },
+            "4": {
+              "actual": 1188715.0,
+              "absolute_error": 262059.0,
+              "score": 0.779544297834216
+            },
+            "5": {
+              "actual": 1163967.0,
+              "absolute_error": 277051.0,
+              "score": 0.761976928899187
+            },
+            "6": {
+              "actual": 1178648.0,
+              "absolute_error": 250432.0,
+              "score": 0.7875260467925963
+            },
+            "7": {
+              "actual": 1199982.0,
+              "absolute_error": 177436.0,
+              "score": 0.8521344486833969
+            },
+            "8": {
+              "actual": 1222207.0,
+              "absolute_error": 162647.0,
+              "score": 0.8669235244111677
+            },
+            "9": {
+              "actual": 986710.0,
+              "absolute_error": 106080.0,
+              "score": 0.8924912081563985
+            }
+          }
+        }
+      },
+      "route_prediction_max_abs_difference": 2.7284841053187847e-12,
+      "route_score_abs_difference": 1.3227192046105785e-06,
+      "half_tie_changed_cells": 58,
+      "quantization_score_bound": 5.479836704645399e-06,
+      "actual_mass": 10584257.0,
+      "route_absolute_error_delta": 14.000000000433948,
+      "future_count_poison_invariant": true
+    },
+    {
+      "origin": "2025-09-01",
+      "days": 61,
+      "old_mapping_against_new_targets": {
+        "route_score": 0.8859333437401333,
+        "pseudo_wape_all": 1.343987642094638,
+        "pseudo_wape_eligible": 1.343987642094638,
+        "pseudo_wape_known": 0.8201388949685648,
+        "known_mass": 10627911.0,
+        "unallocated_mass": 2126570.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.9129032570396965,
+          "5": null,
+          "7": 0.8330997287817837,
+          "11": 0.902195577383209,
+          "12": 0.9132311691244825,
+          "17": 0.9169977391630822,
+          "25": 0.8369214938745461,
+          "26": 0.9190358580650371,
+          "28": 0.8623381670109804,
+          "50": 0.766100772380903
+        },
+        "slices": {
+          "month": {
+            "9": {
+              "actual": 6147694.0,
+              "absolute_error": 698943.0,
+              "score": 0.8863081018671392
+            },
+            "10": {
+              "actual": 6606787.0,
+              "absolute_error": 755918.0,
+              "score": 0.8855846268390368
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 1417791.0,
+              "absolute_error": 159646.0,
+              "score": 0.8873980720712714
+            },
+            "2": {
+              "actual": 1429681.0,
+              "absolute_error": 155800.0,
+              "score": 0.89102464116121
+            },
+            "3": {
+              "actual": 1422189.0,
+              "absolute_error": 164938.0,
+              "score": 0.8840252596525497
+            },
+            "4": {
+              "actual": 1398278.0,
+              "absolute_error": 183083.0,
+              "score": 0.8690653789875833
+            },
+            "5": {
+              "actual": 1470410.0,
+              "absolute_error": 172529.0,
+              "score": 0.8826660591263661
+            },
+            "6": {
+              "actual": 1464431.0,
+              "absolute_error": 173174.0,
+              "score": 0.881746562316695
+            },
+            "7": {
+              "actual": 1483036.0,
+              "absolute_error": 178013.0,
+              "score": 0.8799671754428079
+            },
+            "8": {
+              "actual": 1471383.0,
+              "absolute_error": 163470.0,
+              "score": 0.8889004426447771
+            },
+            "9": {
+              "actual": 1197282.0,
+              "absolute_error": 104208.0,
+              "score": 0.912962860879893
+            }
+          }
+        }
+      },
+      "anchored_mapping_against_new_targets": {
+        "route_score": 0.8859337357592206,
+        "pseudo_wape_all": 0.5847283333135062,
+        "pseudo_wape_eligible": 0.5847283333135062,
+        "pseudo_wape_known": 0.5265374008538937,
+        "known_mass": 10627911.0,
+        "unallocated_mass": 2126570.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.9129076580878502,
+          "5": null,
+          "7": 0.8330997287817837,
+          "11": 0.902195577383209,
+          "12": 0.9132311691244825,
+          "17": 0.9169977391630822,
+          "25": 0.8369214938745461,
+          "26": 0.9190358580650371,
+          "28": 0.8623381670109804,
+          "50": 0.766100772380903
+        },
+        "slices": {
+          "month": {
+            "9": {
+              "actual": 6147694.0,
+              "absolute_error": 698938.0,
+              "score": 0.8863089151802286
+            },
+            "10": {
+              "actual": 6606787.0,
+              "absolute_error": 755918.0,
+              "score": 0.8855846268390368
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 1417791.0,
+              "absolute_error": 159645.0,
+              "score": 0.8873987773938472
+            },
+            "2": {
+              "actual": 1429681.0,
+              "absolute_error": 155799.0,
+              "score": 0.891025340617942
+            },
+            "3": {
+              "actual": 1422189.0,
+              "absolute_error": 164937.0,
+              "score": 0.8840259627939746
+            },
+            "4": {
+              "actual": 1398278.0,
+              "absolute_error": 183082.0,
+              "score": 0.869066094152951
+            },
+            "5": {
+              "actual": 1470410.0,
+              "absolute_error": 172528.0,
+              "score": 0.8826667392087921
+            },
+            "6": {
+              "actual": 1464431.0,
+              "absolute_error": 173175.0,
+              "score": 0.8817458794576187
+            },
+            "7": {
+              "actual": 1483036.0,
+              "absolute_error": 178014.0,
+              "score": 0.8799665011503429
+            },
+            "8": {
+              "actual": 1471383.0,
+              "absolute_error": 163469.0,
+              "score": 0.8889011222774763
+            },
+            "9": {
+              "actual": 1197282.0,
+              "absolute_error": 104207.0,
+              "score": 0.9129636961050112
+            }
+          }
+        }
+      },
+      "route_prediction_max_abs_difference": 1.8189894035458565e-12,
+      "route_score_abs_difference": 3.920190873030194e-07,
+      "half_tie_changed_cells": 9,
+      "quantization_score_bound": 7.056343570545912e-07,
+      "actual_mass": 12754481.0,
+      "route_absolute_error_delta": -5.000000000643702,
+      "future_count_poison_invariant": true
+    },
+    {
+      "origin": "2025-05-01",
+      "days": 1,
+      "old_mapping_against_new_targets": {
+        "route_score": 0.6646145265777168,
+        "pseudo_wape_all": 1.776106654082114,
+        "pseudo_wape_eligible": 1.776106654082114,
+        "pseudo_wape_known": 0.9521311304257041,
+        "known_mass": 76626.0,
+        "unallocated_mass": 16610.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.7311079545454545,
+          "5": null,
+          "7": 0.6923213493120284,
+          "11": 0.7027233879711716,
+          "12": 0.6788419913419914,
+          "17": 0.5972027358821466,
+          "25": 0.5436085219707057,
+          "26": 0.6845262440354465,
+          "28": 0.639595161688472,
+          "50": 0.7015130674002751
+        },
+        "slices": {
+          "month": {
+            "5": {
+              "actual": 93236.0,
+              "absolute_error": 31270.0,
+              "score": 0.6646145265777168
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 93236.0,
+              "absolute_error": 31270.0,
+              "score": 0.6646145265777168
+            }
+          }
+        }
+      },
+      "anchored_mapping_against_new_targets": {
+        "route_score": 0.6646145265777168,
+        "pseudo_wape_all": 0.6647153460036895,
+        "pseudo_wape_eligible": 0.6647153460036895,
+        "pseudo_wape_known": 0.6858157805444627,
+        "known_mass": 76626.0,
+        "unallocated_mass": 16610.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.7311079545454545,
+          "5": null,
+          "7": 0.6923213493120284,
+          "11": 0.7027233879711716,
+          "12": 0.6788419913419914,
+          "17": 0.5972027358821466,
+          "25": 0.5436085219707057,
+          "26": 0.6845262440354465,
+          "28": 0.639595161688472,
+          "50": 0.7015130674002751
+        },
+        "slices": {
+          "month": {
+            "5": {
+              "actual": 93236.0,
+              "absolute_error": 31270.0,
+              "score": 0.6646145265777168
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 93236.0,
+              "absolute_error": 31270.0,
+              "score": 0.6646145265777168
+            }
+          }
+        }
+      },
+      "route_prediction_max_abs_difference": 9.094947017729282e-13,
+      "route_score_abs_difference": 0.0,
+      "half_tie_changed_cells": 0,
+      "quantization_score_bound": 0.0,
+      "actual_mass": 93236.0,
+      "route_absolute_error_delta": 0.0,
+      "future_count_poison_invariant": true
+    },
+    {
+      "origin": "2025-05-08",
+      "days": 1,
+      "old_mapping_against_new_targets": {
+        "route_score": 0.8548907174471839,
+        "pseudo_wape_all": 1.3507256713505666,
+        "pseudo_wape_eligible": 1.3507256713505666,
+        "pseudo_wape_known": 0.923095670624873,
+        "known_mass": 106241.0,
+        "unallocated_mass": 25253.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.8270004020908726,
+          "5": null,
+          "7": 0.8833779241270494,
+          "11": 0.8420602083036096,
+          "12": 0.8430169256656439,
+          "17": 0.8530855144404332,
+          "25": 0.7749384819231497,
+          "26": 0.8907695335563866,
+          "28": 0.8784123563218391,
+          "50": 0.8940325887558002
+        },
+        "slices": {
+          "month": {
+            "5": {
+              "actual": 131494.0,
+              "absolute_error": 19081.0,
+              "score": 0.8548907174471839
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 131494.0,
+              "absolute_error": 19081.0,
+              "score": 0.8548907174471839
+            }
+          }
+        }
+      },
+      "anchored_mapping_against_new_targets": {
+        "route_score": 0.8548983223569137,
+        "pseudo_wape_all": 0.500944910033918,
+        "pseudo_wape_eligible": 0.500944910033918,
+        "pseudo_wape_known": 0.5321008703930552,
+        "known_mass": 106241.0,
+        "unallocated_mass": 25253.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.8270004020908726,
+          "5": null,
+          "7": 0.8834465253481512,
+          "11": 0.842107766205355,
+          "12": 0.8430169256656439,
+          "17": 0.8530855144404332,
+          "25": 0.7749384819231497,
+          "26": 0.8907695335563866,
+          "28": 0.8782327586206896,
+          "50": 0.8940325887558002
+        },
+        "slices": {
+          "month": {
+            "5": {
+              "actual": 131494.0,
+              "absolute_error": 19080.0,
+              "score": 0.8548983223569137
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 131494.0,
+              "absolute_error": 19080.0,
+              "score": 0.8548983223569137
+            }
+          }
+        }
+      },
+      "route_prediction_max_abs_difference": 9.094947017729282e-13,
+      "route_score_abs_difference": 7.60490972973038e-06,
+      "half_tie_changed_cells": 5,
+      "quantization_score_bound": 3.8024548648607544e-05,
+      "actual_mass": 131494.0,
+      "route_absolute_error_delta": -1.0000000000011666,
+      "future_count_poison_invariant": true
+    },
+    {
+      "origin": "2025-05-15",
+      "days": 1,
+      "old_mapping_against_new_targets": {
+        "route_score": 0.8970881059874218,
+        "pseudo_wape_all": 1.5265363914901902,
+        "pseudo_wape_eligible": 1.5265363914901902,
+        "pseudo_wape_known": 0.8991081884836986,
+        "known_mass": 226800.0,
+        "unallocated_mass": 26815.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.8422539825545682,
+          "5": null,
+          "7": 0.9108445945945945,
+          "11": 0.9092279441993039,
+          "12": 0.8858520900321544,
+          "17": 0.946745996768033,
+          "25": 0.8638048547172068,
+          "26": 0.9469527109661638,
+          "28": 0.7890346499358334,
+          "50": 0.861007249141549
+        },
+        "slices": {
+          "month": {
+            "5": {
+              "actual": 253615.0,
+              "absolute_error": 26100.0,
+              "score": 0.8970881059874218
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 253615.0,
+              "absolute_error": 26100.0,
+              "score": 0.8970881059874218
+            }
+          }
+        }
+      },
+      "anchored_mapping_against_new_targets": {
+        "route_score": 0.8970881059874218,
+        "pseudo_wape_all": 0.6346352646484588,
+        "pseudo_wape_eligible": 0.6346352646484588,
+        "pseudo_wape_known": 0.5104373228506236,
+        "known_mass": 226800.0,
+        "unallocated_mass": 26815.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.8422539825545682,
+          "5": null,
+          "7": 0.9108445945945945,
+          "11": 0.9092279441993039,
+          "12": 0.8858520900321544,
+          "17": 0.946745996768033,
+          "25": 0.8638048547172068,
+          "26": 0.9469527109661638,
+          "28": 0.7890346499358334,
+          "50": 0.861007249141549
+        },
+        "slices": {
+          "month": {
+            "5": {
+              "actual": 253615.0,
+              "absolute_error": 26100.0,
+              "score": 0.8970881059874218
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 253615.0,
+              "absolute_error": 26100.0,
+              "score": 0.8970881059874218
+            }
+          }
+        }
+      },
+      "route_prediction_max_abs_difference": 1.3642420526593924e-12,
+      "route_score_abs_difference": 0.0,
+      "half_tie_changed_cells": 0,
+      "quantization_score_bound": 0.0,
+      "actual_mass": 253615.0,
+      "route_absolute_error_delta": 0.0,
+      "future_count_poison_invariant": true
+    },
+    {
+      "origin": "2025-07-01",
+      "days": 1,
+      "old_mapping_against_new_targets": {
+        "route_score": 0.8938308965969217,
+        "pseudo_wape_all": 0.8390234759597266,
+        "pseudo_wape_eligible": 0.8390234759597266,
+        "pseudo_wape_known": 0.521270257569266,
+        "known_mass": 190283.0,
+        "unallocated_mass": 17235.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.8283359635279677,
+          "5": null,
+          "7": 0.9181532870829203,
+          "11": 0.8759741780111717,
+          "12": 0.9274736254371272,
+          "17": 0.9125548472555676,
+          "25": 0.6991686872185661,
+          "26": 0.886574512402954,
+          "28": 0.8974905083804056,
+          "50": 0.9038309728349199
+        },
+        "slices": {
+          "month": {
+            "7": {
+              "actual": 207518.0,
+              "absolute_error": 22032.0,
+              "score": 0.8938308965969217
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 207518.0,
+              "absolute_error": 22032.0,
+              "score": 0.8938308965969217
+            }
+          }
+        }
+      },
+      "anchored_mapping_against_new_targets": {
+        "route_score": 0.8938308965969217,
+        "pseudo_wape_all": 0.41692439108642954,
+        "pseudo_wape_eligible": 0.41692439108642954,
+        "pseudo_wape_known": 0.4154031515938726,
+        "known_mass": 190283.0,
+        "unallocated_mass": 17235.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.8283359635279677,
+          "5": null,
+          "7": 0.9181532870829203,
+          "11": 0.8759741780111717,
+          "12": 0.9274736254371272,
+          "17": 0.9125548472555676,
+          "25": 0.6991686872185661,
+          "26": 0.886574512402954,
+          "28": 0.8974905083804056,
+          "50": 0.9038309728349199
+        },
+        "slices": {
+          "month": {
+            "7": {
+              "actual": 207518.0,
+              "absolute_error": 22032.0,
+              "score": 0.8938308965969217
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 207518.0,
+              "absolute_error": 22032.0,
+              "score": 0.8938308965969217
+            }
+          }
+        }
+      },
+      "route_prediction_max_abs_difference": 2.7284841053187847e-12,
+      "route_score_abs_difference": 0.0,
+      "half_tie_changed_cells": 0,
+      "quantization_score_bound": 0.0,
+      "actual_mass": 207518.0,
+      "route_absolute_error_delta": 0.0,
+      "future_count_poison_invariant": true
+    },
+    {
+      "origin": "2025-07-08",
+      "days": 1,
+      "old_mapping_against_new_targets": {
+        "route_score": 0.8853472603276632,
+        "pseudo_wape_all": 0.8217734421951348,
+        "pseudo_wape_eligible": 0.8217734421951348,
+        "pseudo_wape_known": 0.5139986668535228,
+        "known_mass": 185526.0,
+        "unallocated_mass": 18586.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.8996929946971811,
+          "5": null,
+          "7": 0.8467673282853174,
+          "11": 0.8820593129098562,
+          "12": 0.8929859719438877,
+          "17": 0.925534676598039,
+          "25": 0.7544228411280435,
+          "26": 0.8249672029275703,
+          "28": 0.8863952121406433,
+          "50": 0.8880279693848625
+        },
+        "slices": {
+          "month": {
+            "7": {
+              "actual": 204112.0,
+              "absolute_error": 23402.0,
+              "score": 0.8853472603276632
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 204112.0,
+              "absolute_error": 23402.0,
+              "score": 0.8853472603276632
+            }
+          }
+        }
+      },
+      "anchored_mapping_against_new_targets": {
+        "route_score": 0.8853472603276632,
+        "pseudo_wape_all": 0.4249335536372188,
+        "pseudo_wape_eligible": 0.4249335536372188,
+        "pseudo_wape_known": 0.43311885306282316,
+        "known_mass": 185526.0,
+        "unallocated_mass": 18586.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.8996929946971811,
+          "5": null,
+          "7": 0.8467673282853174,
+          "11": 0.8820593129098562,
+          "12": 0.8929859719438877,
+          "17": 0.925534676598039,
+          "25": 0.7544228411280435,
+          "26": 0.8249672029275703,
+          "28": 0.8863952121406433,
+          "50": 0.8880279693848625
+        },
+        "slices": {
+          "month": {
+            "7": {
+              "actual": 204112.0,
+              "absolute_error": 23402.0,
+              "score": 0.8853472603276632
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 204112.0,
+              "absolute_error": 23402.0,
+              "score": 0.8853472603276632
+            }
+          }
+        }
+      },
+      "route_prediction_max_abs_difference": 1.8189894035458565e-12,
+      "route_score_abs_difference": 0.0,
+      "half_tie_changed_cells": 0,
+      "quantization_score_bound": 0.0,
+      "actual_mass": 204112.0,
+      "route_absolute_error_delta": 0.0,
+      "future_count_poison_invariant": true
+    },
+    {
+      "origin": "2025-07-15",
+      "days": 1,
+      "old_mapping_against_new_targets": {
+        "route_score": 0.7301808221001093,
+        "pseudo_wape_all": 0.9224142870536419,
+        "pseudo_wape_eligible": 0.9224142870536419,
+        "pseudo_wape_known": 0.6215900511045899,
+        "known_mass": 155768.0,
+        "unallocated_mass": 24575.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.7640456685802748,
+          "5": null,
+          "7": 0.0,
+          "11": 0.8212762933484935,
+          "12": 0.8668335339965781,
+          "17": 0.8221725851301454,
+          "25": 0.6016896764887698,
+          "26": 0.6990283775447255,
+          "28": 0.8127943034340186,
+          "50": 0.7433877551020408
+        },
+        "slices": {
+          "month": {
+            "7": {
+              "actual": 180343.0,
+              "absolute_error": 48660.0,
+              "score": 0.7301808221001093
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 180343.0,
+              "absolute_error": 48660.0,
+              "score": 0.7301808221001093
+            }
+          }
+        }
+      },
+      "anchored_mapping_against_new_targets": {
+        "route_score": 0.7301863670893797,
+        "pseudo_wape_all": 0.6157407841162954,
+        "pseudo_wape_eligible": 0.6157407841162954,
+        "pseudo_wape_known": 0.6239851729096676,
+        "known_mass": 155768.0,
+        "unallocated_mass": 24575.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.7640456685802748,
+          "5": null,
+          "7": 0.0,
+          "11": 0.8212762933484935,
+          "12": 0.8668335339965781,
+          "17": 0.8221725851301454,
+          "25": 0.6016896764887698,
+          "26": 0.6990283775447255,
+          "28": 0.8127943034340186,
+          "50": 0.7434285714285714
+        },
+        "slices": {
+          "month": {
+            "7": {
+              "actual": 180343.0,
+              "absolute_error": 48659.0,
+              "score": 0.7301863670893797
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 180343.0,
+              "absolute_error": 48659.0,
+              "score": 0.7301863670893797
+            }
+          }
+        }
+      },
+      "route_prediction_max_abs_difference": 2.7284841053187847e-12,
+      "route_score_abs_difference": 5.544989270411804e-06,
+      "half_tie_changed_cells": 1,
+      "quantization_score_bound": 5.544989270445762e-06,
+      "actual_mass": 180343.0,
+      "route_absolute_error_delta": -0.999999999993876,
+      "future_count_poison_invariant": true
+    },
+    {
+      "origin": "2025-09-01",
+      "days": 1,
+      "old_mapping_against_new_targets": {
+        "route_score": 0.9069039932474178,
+        "pseudo_wape_all": 1.3537956533477915,
+        "pseudo_wape_eligible": 1.3537956533477915,
+        "pseudo_wape_known": 0.8004088064680639,
+        "known_mass": 191643.0,
+        "unallocated_mass": 38195.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.9341543832428238,
+          "5": null,
+          "7": 0.8835918877730452,
+          "11": 0.916164200012181,
+          "12": 0.9276435796805041,
+          "17": 0.9289631895369687,
+          "25": 0.7878263604907203,
+          "26": 0.9094414395115943,
+          "28": 0.8601490132903745,
+          "50": 0.8585303682868946
+        },
+        "slices": {
+          "month": {
+            "9": {
+              "actual": 229838.0,
+              "absolute_error": 21397.0,
+              "score": 0.9069039932474178
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 229838.0,
+              "absolute_error": 21397.0,
+              "score": 0.9069039932474178
+            }
+          }
+        }
+      },
+      "anchored_mapping_against_new_targets": {
+        "route_score": 0.906908344138045,
+        "pseudo_wape_all": 0.5822228424954506,
+        "pseudo_wape_eligible": 0.5822228424954506,
+        "pseudo_wape_known": 0.4868812106382187,
+        "known_mass": 191643.0,
+        "unallocated_mass": 38195.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.9342028704422033,
+          "5": null,
+          "7": 0.8835918877730452,
+          "11": 0.916164200012181,
+          "12": 0.9276435796805041,
+          "17": 0.9289631895369687,
+          "25": 0.7878263604907203,
+          "26": 0.9094414395115943,
+          "28": 0.8601490132903745,
+          "50": 0.8585303682868946
+        },
+        "slices": {
+          "month": {
+            "9": {
+              "actual": 229838.0,
+              "absolute_error": 21396.0,
+              "score": 0.906908344138045
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 229838.0,
+              "absolute_error": 21396.0,
+              "score": 0.906908344138045
+            }
+          }
+        }
+      },
+      "route_prediction_max_abs_difference": 1.8189894035458565e-12,
+      "route_score_abs_difference": 4.350890627224935e-06,
+      "half_tie_changed_cells": 1,
+      "quantization_score_bound": 4.350890627311411e-06,
+      "actual_mass": 229838.0,
+      "route_absolute_error_delta": -0.9999999999801246,
+      "future_count_poison_invariant": true
+    },
+    {
+      "origin": "2025-09-08",
+      "days": 1,
+      "old_mapping_against_new_targets": {
+        "route_score": 0.9079904097646033,
+        "pseudo_wape_all": 1.3518163811962747,
+        "pseudo_wape_eligible": 1.3518163811962747,
+        "pseudo_wape_known": 0.7872918803336021,
+        "known_mass": 194511.0,
+        "unallocated_mass": 34889.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.9197223128174067,
+          "5": null,
+          "7": 0.9116083808350023,
+          "11": 0.8624150515982885,
+          "12": 0.9137289307172861,
+          "17": 0.923046244042515,
+          "25": 0.8903107861060329,
+          "26": 0.9438123402335723,
+          "28": 0.9112960339943342,
+          "50": 0.8874532613211467
+        },
+        "slices": {
+          "month": {
+            "9": {
+              "actual": 229400.0,
+              "absolute_error": 21107.0,
+              "score": 0.9079904097646033
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 229400.0,
+              "absolute_error": 21107.0,
+              "score": 0.9079904097646033
+            }
+          }
+        }
+      },
+      "anchored_mapping_against_new_targets": {
+        "route_score": 0.9079904097646033,
+        "pseudo_wape_all": 0.5677678444324232,
+        "pseudo_wape_eligible": 0.5677678444324232,
+        "pseudo_wape_known": 0.4912231257470274,
+        "known_mass": 194511.0,
+        "unallocated_mass": 34889.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.9197223128174067,
+          "5": null,
+          "7": 0.9116083808350023,
+          "11": 0.8624150515982885,
+          "12": 0.9137289307172861,
+          "17": 0.923046244042515,
+          "25": 0.8903107861060329,
+          "26": 0.9438123402335723,
+          "28": 0.9112960339943342,
+          "50": 0.8874532613211467
+        },
+        "slices": {
+          "month": {
+            "9": {
+              "actual": 229400.0,
+              "absolute_error": 21107.0,
+              "score": 0.9079904097646033
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 229400.0,
+              "absolute_error": 21107.0,
+              "score": 0.9079904097646033
+            }
+          }
+        }
+      },
+      "route_prediction_max_abs_difference": 1.3642420526593924e-12,
+      "route_score_abs_difference": 0.0,
+      "half_tie_changed_cells": 0,
+      "quantization_score_bound": 0.0,
+      "actual_mass": 229400.0,
+      "route_absolute_error_delta": 0.0,
+      "future_count_poison_invariant": true
+    },
+    {
+      "origin": "2025-09-15",
+      "days": 1,
+      "old_mapping_against_new_targets": {
+        "route_score": 0.9117887459451175,
+        "pseudo_wape_all": 1.2893885410136638,
+        "pseudo_wape_eligible": 1.2893885410136638,
+        "pseudo_wape_known": 0.7727678515032301,
+        "known_mass": 197197.0,
+        "unallocated_mass": 37705.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.9310170967594078,
+          "5": null,
+          "7": 0.8229482957704315,
+          "11": 0.9222802130939182,
+          "12": 0.9150840077997703,
+          "17": 0.9502430930699182,
+          "25": 0.7780812158632153,
+          "26": 0.9205167738848423,
+          "28": 0.9389361317170255,
+          "50": 0.9044459454090349
+        },
+        "slices": {
+          "month": {
+            "9": {
+              "actual": 234902.0,
+              "absolute_error": 20721.0,
+              "score": 0.9117887459451175
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 234902.0,
+              "absolute_error": 20721.0,
+              "score": 0.9117887459451175
+            }
+          }
+        }
+      },
+      "anchored_mapping_against_new_targets": {
+        "route_score": 0.9117887459451175,
+        "pseudo_wape_all": 0.5428777766178737,
+        "pseudo_wape_eligible": 0.5428777766178737,
+        "pseudo_wape_known": 0.48850100339837704,
+        "known_mass": 197197.0,
+        "unallocated_mass": 37705.0,
+        "unseen_identity_mass": 0.0,
+        "route_scores": {
+          "1": 0.9310170967594078,
+          "5": null,
+          "7": 0.8229482957704315,
+          "11": 0.9222802130939182,
+          "12": 0.9150840077997703,
+          "17": 0.9502430930699182,
+          "25": 0.7780812158632153,
+          "26": 0.9205167738848423,
+          "28": 0.9389361317170255,
+          "50": 0.9044459454090349
+        },
+        "slices": {
+          "month": {
+            "9": {
+              "actual": 234902.0,
+              "absolute_error": 20721.0,
+              "score": 0.9117887459451175
+            }
+          },
+          "lead_week": {
+            "1": {
+              "actual": 234902.0,
+              "absolute_error": 20721.0,
+              "score": 0.9117887459451175
+            }
+          }
+        }
+      },
+      "route_prediction_max_abs_difference": 9.094947017729282e-13,
+      "route_score_abs_difference": 0.0,
+      "half_tie_changed_cells": 0,
+      "quantization_score_bound": 0.0,
+      "actual_mass": 234902.0,
+      "route_absolute_error_delta": 0.0,
+      "future_count_poison_invariant": true
+    }
+  ]
+}

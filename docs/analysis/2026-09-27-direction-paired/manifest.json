@@ -1,0 +1,30 @@
+{
+  "config": {
+    "clock_weight": 0,
+    "failure_cost": 900,
+    "max_steps": [
+      6,
+      3
+    ],
+    "prefix": 4,
+    "residual_weight": 0,
+    "shuffles": 19,
+    "skip_penalty": 15,
+    "suffix": 4,
+    "terminal_prior": 0
+  },
+  "direction_truth_available": false,
+  "feed_sha256": "b5d96ad3c8d92c4b42ca59b8712f6d4881e189cbe1c3b3b5fdd92ce9d3b1921c",
+  "files": {
+    "rows.json": "bf41abf590824c2d80cfe7e54edde1416d1a235a73644bb75da970c4b0fa2b72",
+    "summary.json": "3466ea13265b2e0e3339859825c7a55c3fbf624844e154ffacd630fd50f30286"
+  },
+  "module_sha256": "5ebe658b15d57a88a7ddc5d00f68fc2bfe612d28c491b7e767b02140b42b7049",
+  "partitions_manifest_sha256": "9139726fd0f5cfd069da87c32ecb98a7778fbefa9efdec1eb94b66d1010cf269",
+  "retrospective_only": true,
+  "schema_version": "direction-paired.v1",
+  "script_sha256": "13a445f725ce3838406a235c295749662ddf85daf3461f435ea891bf0133bfd0",
+  "source_manifest_sha256": "5b78503876e7a259b44f2353948f6a8f2bffa84b431b81bd4c87db5de0e8b31a",
+  "source_rows_sha256": "44989a270f544b20370dde82f3341ac8d66baa4c1296d194297b3dd2a7442d8e",
+  "timezone": "Europe/Moscow"
+}

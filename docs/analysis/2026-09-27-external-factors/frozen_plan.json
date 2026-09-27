@@ -1,0 +1,47 @@
+{
+  "version": "external-factors.v1",
+  "config": {
+    "iterations": 200,
+    "depth": 5,
+    "learning_rate": 0.05,
+    "loss_function": "MAE",
+    "random_seed": 20260927,
+    "thread_count": 4,
+    "verbose": false,
+    "allow_writing_files": false,
+    "l2_leaf_reg": 10
+  },
+  "origins": [
+    "2025-05-01",
+    "2025-07-01",
+    "2025-09-01"
+  ],
+  "horizons": [
+    61,
+    1
+  ],
+  "variants": {
+    "base": [],
+    "calendar": [
+      "calendar"
+    ],
+    "news": [
+      "news"
+    ],
+    "traffic": [
+      "traffic"
+    ],
+    "weather": [
+      "weather"
+    ]
+  },
+  "selection": "none; source ablation only, no promoted model",
+  "acceptance": "report every origin, including losses; never claim four proven gains",
+  "target": "organizer route-date-hour boardings, rounded once, WAPE-score",
+  "one_day": "three sparse first-day diagnostics, no claim of daily-refit validation",
+  "mix_rule": "mean(base plus selected branches), then round once; all=mean of five",
+  "availability": "past-only civil dates; weather is revised historical data, not vintage",
+  "weather": "28-day pre-origin route-hour means, no target-period actual weather",
+  "traffic": "56-day pre-origin weekday-hour means and observation counts; edited excluded",
+  "news": "28-day prior official closure/incident publication frequency, edited excluded"
+}

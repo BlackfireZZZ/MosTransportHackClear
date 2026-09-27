@@ -1,0 +1,6856 @@
+{
+  "accuracy_measured": false,
+  "by_route": {
+    "11": {
+      "duty": {
+        "all_window_capped_loss": 43.85,
+        "decided": 5,
+        "direction_counts": {
+          "0": 3,
+          "1": 2
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 0,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 5,
+        "winner_capped_loss": 43.85,
+        "winner_suffix_feasible": 5
+      },
+      "duty_prior180": {
+        "all_window_capped_loss": 44.75,
+        "decided": 5,
+        "direction_counts": {
+          "0": 3,
+          "1": 2
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 0,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 5,
+        "winner_capped_loss": 44.75,
+        "winner_suffix_feasible": 5
+      },
+      "duty_prior60": {
+        "all_window_capped_loss": 43.85,
+        "decided": 5,
+        "direction_counts": {
+          "0": 3,
+          "1": 2
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 0,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 5,
+        "winner_capped_loss": 43.85,
+        "winner_suffix_feasible": 5
+      },
+      "shift_clock": {
+        "all_window_capped_loss": 65.15,
+        "decided": 5,
+        "direction_counts": {
+          "0": 3,
+          "1": 2
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 0,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 5,
+        "winner_capped_loss": 65.15,
+        "winner_suffix_feasible": 5
+      },
+      "shuffle_gaps": {
+        "all_window_capped_loss": 28.95,
+        "decided": 5,
+        "direction_counts": {
+          "0": 3,
+          "1": 2
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 0,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 5,
+        "winner_capped_loss": 28.95,
+        "winner_suffix_feasible": 5
+      },
+      "unrestricted": {
+        "all_window_capped_loss": 60.05,
+        "decided": 5,
+        "direction_counts": {
+          "0": 3,
+          "1": 2
+        },
+        "paired_opposite_mae": 17.9375,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": 63.4375,
+        "prefix_bilateral": 5,
+        "suffix_bilateral": 4,
+        "unresolved": 0,
+        "windows": 5,
+        "winner_capped_loss": 60.05,
+        "winner_suffix_feasible": 5
+      },
+      "wrong_duty": {
+        "all_window_capped_loss": 727.55,
+        "decided": 4,
+        "direction_counts": {
+          "0": 3,
+          "1": 1
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 0,
+        "suffix_bilateral": 0,
+        "unresolved": 1,
+        "windows": 5,
+        "winner_capped_loss": 684.4375,
+        "winner_suffix_feasible": 1
+      }
+    },
+    "12": {
+      "duty": {
+        "all_window_capped_loss": 184.41666666666666,
+        "decided": 6,
+        "direction_counts": {
+          "0": 4,
+          "1": 2
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 1,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 6,
+        "winner_capped_loss": 184.41666666666666,
+        "winner_suffix_feasible": 5
+      },
+      "duty_prior180": {
+        "all_window_capped_loss": 38.958333333333336,
+        "decided": 6,
+        "direction_counts": {
+          "0": 3,
+          "1": 3
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 1,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 6,
+        "winner_capped_loss": 38.958333333333336,
+        "winner_suffix_feasible": 6
+      },
+      "duty_prior60": {
+        "all_window_capped_loss": 184.41666666666666,
+        "decided": 6,
+        "direction_counts": {
+          "0": 4,
+          "1": 2
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 1,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 6,
+        "winner_capped_loss": 184.41666666666666,
+        "winner_suffix_feasible": 5
+      },
+      "shift_clock": {
+        "all_window_capped_loss": 56.291666666666664,
+        "decided": 6,
+        "direction_counts": {
+          "0": 3,
+          "1": 3
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 0,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 6,
+        "winner_capped_loss": 56.291666666666664,
+        "winner_suffix_feasible": 6
+      },
+      "shuffle_gaps": {
+        "all_window_capped_loss": 174.66666666666666,
+        "decided": 6,
+        "direction_counts": {
+          "0": 4,
+          "1": 2
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 1,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 6,
+        "winner_capped_loss": 174.66666666666666,
+        "winner_suffix_feasible": 5
+      },
+      "unrestricted": {
+        "all_window_capped_loss": 34.791666666666664,
+        "decided": 6,
+        "direction_counts": {
+          "0": 4,
+          "1": 2
+        },
+        "paired_opposite_mae": 69.20833333333333,
+        "paired_positive_advantage": 4,
+        "paired_winner_mae": 34.791666666666664,
+        "prefix_bilateral": 6,
+        "suffix_bilateral": 6,
+        "unresolved": 0,
+        "windows": 6,
+        "winner_capped_loss": 34.791666666666664,
+        "winner_suffix_feasible": 6
+      },
+      "wrong_duty": {
+        "all_window_capped_loss": 330.1666666666667,
+        "decided": 6,
+        "direction_counts": {
+          "0": 3,
+          "1": 3
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 1,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 6,
+        "winner_capped_loss": 330.1666666666667,
+        "winner_suffix_feasible": 4
+      }
+    },
+    "17": {
+      "duty": {
+        "all_window_capped_loss": 280.9107142857143,
+        "decided": 14,
+        "direction_counts": {
+          "0": 3,
+          "1": 11
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 7,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 14,
+        "winner_capped_loss": 280.9107142857143,
+        "winner_suffix_feasible": 10
+      },
+      "duty_prior180": {
+        "all_window_capped_loss": 282.23214285714283,
+        "decided": 14,
+        "direction_counts": {
+          "0": 3,
+          "1": 11
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 7,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 14,
+        "winner_capped_loss": 282.23214285714283,
+        "winner_suffix_feasible": 10
+      },
+      "duty_prior60": {
+        "all_window_capped_loss": 281.05357142857144,
+        "decided": 14,
+        "direction_counts": {
+          "0": 3,
+          "1": 11
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 7,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 14,
+        "winner_capped_loss": 281.05357142857144,
+        "winner_suffix_feasible": 10
+      },
+      "shift_clock": {
+        "all_window_capped_loss": 223.21428571428572,
+        "decided": 14,
+        "direction_counts": {
+          "0": 7,
+          "1": 7
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 6,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 14,
+        "winner_capped_loss": 223.21428571428572,
+        "winner_suffix_feasible": 11
+      },
+      "shuffle_gaps": {
+        "all_window_capped_loss": 283.92857142857144,
+        "decided": 14,
+        "direction_counts": {
+          "0": 3,
+          "1": 11
+        },
+        "paired_opposite_mae": 161.25,
+        "paired_positive_advantage": 1,
+        "paired_winner_mae": 18.25,
+        "prefix_bilateral": 7,
+        "suffix_bilateral": 1,
+        "unresolved": 0,
+        "windows": 14,
+        "winner_capped_loss": 283.92857142857144,
+        "winner_suffix_feasible": 10
+      },
+      "unrestricted": {
+        "all_window_capped_loss": 415.01785714285717,
+        "decided": 11,
+        "direction_counts": {
+          "0": 6,
+          "1": 5
+        },
+        "paired_opposite_mae": 32.583333333333336,
+        "paired_positive_advantage": 3,
+        "paired_winner_mae": 57.5,
+        "prefix_bilateral": 14,
+        "suffix_bilateral": 9,
+        "unresolved": 3,
+        "windows": 14,
+        "winner_capped_loss": 282.75,
+        "winner_suffix_feasible": 8
+      },
+      "wrong_duty": {
+        "all_window_capped_loss": 423.23214285714283,
+        "decided": 14,
+        "direction_counts": {
+          "0": 4,
+          "1": 10
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 7,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 14,
+        "winner_capped_loss": 423.23214285714283,
+        "winner_suffix_feasible": 8
+      }
+    }
+  },
+  "by_split": {
+    "exploratory": {
+      "duty": {
+        "all_window_capped_loss": 180.05357142857142,
+        "decided": 13,
+        "direction_counts": {
+          "0": 4,
+          "1": 9
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 3,
+        "suffix_bilateral": 0,
+        "unresolved": 1,
+        "windows": 14,
+        "winner_capped_loss": 124.67307692307692,
+        "winner_suffix_feasible": 12
+      },
+      "duty_prior180": {
+        "all_window_capped_loss": 118.33928571428571,
+        "decided": 13,
+        "direction_counts": {
+          "0": 3,
+          "1": 10
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 3,
+        "suffix_bilateral": 0,
+        "unresolved": 1,
+        "windows": 14,
+        "winner_capped_loss": 58.21153846153846,
+        "winner_suffix_feasible": 13
+      },
+      "duty_prior60": {
+        "all_window_capped_loss": 178.26785714285714,
+        "decided": 13,
+        "direction_counts": {
+          "0": 4,
+          "1": 9
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 3,
+        "suffix_bilateral": 0,
+        "unresolved": 1,
+        "windows": 14,
+        "winner_capped_loss": 122.75,
+        "winner_suffix_feasible": 12
+      },
+      "shift_clock": {
+        "all_window_capped_loss": 104.75,
+        "decided": 14,
+        "direction_counts": {
+          "0": 6,
+          "1": 8
+        },
+        "paired_opposite_mae": 253.75,
+        "paired_positive_advantage": 1,
+        "paired_winner_mae": 52.75,
+        "prefix_bilateral": 2,
+        "suffix_bilateral": 1,
+        "unresolved": 0,
+        "windows": 14,
+        "winner_capped_loss": 104.75,
+        "winner_suffix_feasible": 13
+      },
+      "shuffle_gaps": {
+        "all_window_capped_loss": 167.625,
+        "decided": 13,
+        "direction_counts": {
+          "0": 3,
+          "1": 10
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 3,
+        "suffix_bilateral": 0,
+        "unresolved": 1,
+        "windows": 14,
+        "winner_capped_loss": 111.28846153846153,
+        "winner_suffix_feasible": 12
+      },
+      "unrestricted": {
+        "all_window_capped_loss": 560.8571428571429,
+        "decided": 9,
+        "direction_counts": {
+          "0": 5,
+          "1": 4
+        },
+        "paired_opposite_mae": 151.5,
+        "paired_positive_advantage": 4,
+        "paired_winner_mae": 117.7,
+        "prefix_bilateral": 14,
+        "suffix_bilateral": 8,
+        "unresolved": 5,
+        "windows": 14,
+        "winner_capped_loss": 372.44444444444446,
+        "winner_suffix_feasible": 6
+      },
+      "wrong_duty": {
+        "all_window_capped_loss": 180.08928571428572,
+        "decided": 12,
+        "direction_counts": {
+          "0": 4,
+          "1": 8
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 7,
+        "suffix_bilateral": 0,
+        "unresolved": 2,
+        "windows": 14,
+        "winner_capped_loss": 60.104166666666664,
+        "winner_suffix_feasible": 12
+      }
+    },
+    "heldout": {
+      "duty": {
+        "all_window_capped_loss": 210.34,
+        "decided": 25,
+        "direction_counts": {
+          "0": 10,
+          "1": 15
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 8,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 25,
+        "winner_capped_loss": 210.34,
+        "winner_suffix_feasible": 20
+      },
+      "duty_prior180": {
+        "all_window_capped_loss": 176.35,
+        "decided": 25,
+        "direction_counts": {
+          "0": 9,
+          "1": 16
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 8,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 25,
+        "winner_capped_loss": 176.35,
+        "winner_suffix_feasible": 21
+      },
+      "duty_prior60": {
+        "all_window_capped_loss": 210.42,
+        "decided": 25,
+        "direction_counts": {
+          "0": 10,
+          "1": 15
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 8,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 25,
+        "winner_capped_loss": 210.42,
+        "winner_suffix_feasible": 20
+      },
+      "shift_clock": {
+        "all_window_capped_loss": 151.54,
+        "decided": 25,
+        "direction_counts": {
+          "0": 13,
+          "1": 12
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 6,
+        "suffix_bilateral": 0,
+        "unresolved": 0,
+        "windows": 25,
+        "winner_capped_loss": 151.54,
+        "winner_suffix_feasible": 22
+      },
+      "shuffle_gaps": {
+        "all_window_capped_loss": 206.71,
+        "decided": 25,
+        "direction_counts": {
+          "0": 10,
+          "1": 15
+        },
+        "paired_opposite_mae": 161.25,
+        "paired_positive_advantage": 1,
+        "paired_winner_mae": 18.25,
+        "prefix_bilateral": 8,
+        "suffix_bilateral": 1,
+        "unresolved": 0,
+        "windows": 25,
+        "winner_capped_loss": 206.71,
+        "winner_suffix_feasible": 20
+      },
+      "unrestricted": {
+        "all_window_capped_loss": 252.77,
+        "decided": 22,
+        "direction_counts": {
+          "0": 13,
+          "1": 9
+        },
+        "paired_opposite_mae": 42.65625,
+        "paired_positive_advantage": 7,
+        "paired_winner_mae": 50.46875,
+        "prefix_bilateral": 25,
+        "suffix_bilateral": 19,
+        "unresolved": 3,
+        "windows": 25,
+        "winner_capped_loss": 164.51136363636363,
+        "winner_suffix_feasible": 19
+      },
+      "wrong_duty": {
+        "all_window_capped_loss": 461.76,
+        "decided": 24,
+        "direction_counts": {
+          "0": 10,
+          "1": 14
+        },
+        "paired_opposite_mae": null,
+        "paired_positive_advantage": 0,
+        "paired_winner_mae": null,
+        "prefix_bilateral": 8,
+        "suffix_bilateral": 0,
+        "unresolved": 1,
+        "windows": 25,
+        "winner_capped_loss": 443.5,
+        "winner_suffix_feasible": 13
+      }
+    }
+  },
+  "direction_endpoints": {
+    "2025-05-13/11": {
+      "0": [
+        [
+          "Останкино",
+          "Восточное Измайлово"
+        ]
+      ],
+      "1": [
+        [
+          "Восточное Измайлово",
+          "Останкино"
+        ]
+      ]
+    },
+    "2025-05-13/12": {
+      "0": [
+        [
+          "Восточное Измайлово",
+          "МЦК Дубровка"
+        ]
+      ],
+      "1": [
+        [
+          "МЦК Дубровка",
+          "Восточное Измайлово"
+        ]
+      ]
+    },
+    "2025-05-13/17": {
+      "0": [
+        [
+          "Медведково",
+          "Останкино"
+        ]
+      ],
+      "1": [
+        [
+          "Останкино",
+          "Медведково"
+        ]
+      ]
+    },
+    "2025-05-17/11": {
+      "0": [
+        [
+          "Останкино",
+          "Восточное Измайлово"
+        ]
+      ],
+      "1": [
+        [
+          "Восточное Измайлово",
+          "Останкино"
+        ]
+      ]
+    },
+    "2025-05-17/12": {
+      "0": [
+        [
+          "Восточное Измайлово",
+          "МЦК Дубровка"
+        ]
+      ],
+      "1": [
+        [
+          "МЦК Дубровка",
+          "Восточное Измайлово"
+        ]
+      ]
+    },
+    "2025-05-17/17": {
+      "0": [
+        [
+          "Медведково",
+          "Останкино"
+        ]
+      ],
+      "1": [
+        [
+          "Останкино",
+          "Медведково"
+        ]
+      ]
+    },
+    "2025-06-10/11": {
+      "0": [
+        [
+          "Останкино",
+          "Восточное Измайлово"
+        ]
+      ],
+      "1": [
+        [
+          "Восточное Измайлово",
+          "Останкино"
+        ]
+      ]
+    },
+    "2025-06-10/12": {
+      "0": [
+        [
+          "Восточное Измайлово",
+          "МЦК Дубровка"
+        ]
+      ],
+      "1": [
+        [
+          "МЦК Дубровка",
+          "Восточное Измайлово"
+        ]
+      ]
+    },
+    "2025-06-10/17": {
+      "0": [
+        [
+          "Медведково",
+          "Останкино"
+        ]
+      ],
+      "1": [
+        [
+          "Останкино",
+          "Медведково"
+        ]
+      ]
+    },
+    "2025-06-14/11": {
+      "0": [
+        [
+          "Останкино",
+          "Восточное Измайлово"
+        ]
+      ],
+      "1": [
+        [
+          "Восточное Измайлово",
+          "Останкино"
+        ]
+      ]
+    },
+    "2025-06-14/12": {
+      "0": [
+        [
+          "Восточное Измайлово",
+          "МЦК Дубровка"
+        ]
+      ],
+      "1": [
+        [
+          "МЦК Дубровка",
+          "Восточное Измайлово"
+        ]
+      ]
+    },
+    "2025-06-14/17": {
+      "0": [
+        [
+          "Медведково",
+          "Останкино"
+        ]
+      ],
+      "1": [
+        [
+          "Останкино",
+          "Медведково"
+        ]
+      ]
+    },
+    "2025-07-08/11": {
+      "0": [
+        [
+          "Останкино",
+          "Восточное Измайлово"
+        ]
+      ],
+      "1": [
+        [
+          "Восточное Измайлово",
+          "Останкино"
+        ]
+      ]
+    },
+    "2025-07-08/12": {
+      "0": [
+        [
+          "Восточное Измайлово",
+          "МЦК Дубровка"
+        ]
+      ],
+      "1": [
+        [
+          "МЦК Дубровка",
+          "Восточное Измайлово"
+        ]
+      ]
+    },
+    "2025-07-08/17": {
+      "0": [
+        [
+          "Медведково",
+          "Останкино"
+        ]
+      ],
+      "1": [
+        [
+          "Останкино",
+          "Медведково"
+        ]
+      ]
+    },
+    "2025-07-12/11": {
+      "0": [
+        [
+          "Останкино",
+          "Восточное Измайлово"
+        ]
+      ],
+      "1": [
+        [
+          "Восточное Измайлово",
+          "Останкино"
+        ]
+      ]
+    },
+    "2025-07-12/12": {
+      "0": [
+        [
+          "Восточное Измайлово",
+          "МЦК Дубровка"
+        ]
+      ],
+      "1": [
+        [
+          "МЦК Дубровка",
+          "Восточное Измайлово"
+        ]
+      ]
+    },
+    "2025-07-12/17": {
+      "0": [
+        [
+          "Медведково",
+          "Останкино"
+        ]
+      ],
+      "1": [
+        [
+          "Останкино",
+          "Медведково"
+        ]
+      ]
+    },
+    "2025-08-12/11": {
+      "0": [
+        [
+          "Останкино",
+          "Восточное Измайлово"
+        ]
+      ],
+      "1": [
+        [
+          "Восточное Измайлово",
+          "Останкино"
+        ]
+      ]
+    },
+    "2025-08-12/12": {
+      "0": [
+        [
+          "Восточное Измайлово",
+          "МЦК Дубровка"
+        ]
+      ],
+      "1": [
+        [
+          "МЦК Дубровка",
+          "Восточное Измайлово"
+        ]
+      ]
+    },
+    "2025-08-12/17": {
+      "0": [
+        [
+          "Медведково",
+          "Останкино"
+        ]
+      ],
+      "1": [
+        [
+          "Останкино",
+          "Медведково"
+        ]
+      ]
+    },
+    "2025-08-16/11": {
+      "0": [
+        [
+          "Останкино",
+          "Восточное Измайлово"
+        ]
+      ],
+      "1": [
+        [
+          "Восточное Измайлово",
+          "Останкино"
+        ]
+      ]
+    },
+    "2025-08-16/12": {
+      "0": [
+        [
+          "Восточное Измайлово",
+          "МЦК Дубровка"
+        ]
+      ],
+      "1": [
+        [
+          "МЦК Дубровка",
+          "Восточное Измайлово"
+        ]
+      ]
+    },
+    "2025-08-16/17": {
+      "0": [
+        [
+          "Медведково",
+          "Останкино"
+        ]
+      ],
+      "1": [
+        [
+          "Останкино",
+          "Медведково"
+        ]
+      ]
+    },
+    "2025-09-09/11": {
+      "0": [
+        [
+          "Останкино",
+          "Восточное Измайлово"
+        ]
+      ],
+      "1": [
+        [
+          "Восточное Измайлово",
+          "Останкино"
+        ]
+      ]
+    },
+    "2025-09-09/12": {
+      "0": [
+        [
+          "Восточное Измайлово",
+          "МЦК Дубровка"
+        ]
+      ],
+      "1": [
+        [
+          "МЦК Дубровка",
+          "Восточное Измайлово"
+        ]
+      ]
+    },
+    "2025-09-09/17": {
+      "0": [
+        [
+          "Медведково",
+          "Останкино"
+        ]
+      ],
+      "1": [
+        [
+          "Останкино",
+          "Медведково"
+        ]
+      ]
+    },
+    "2025-09-13/11": {
+      "0": [
+        [
+          "Останкино",
+          "Восточное Измайлово"
+        ]
+      ],
+      "1": [
+        [
+          "Восточное Измайлово",
+          "Останкино"
+        ]
+      ]
+    },
+    "2025-09-13/12": {
+      "0": [
+        [
+          "Восточное Измайлово",
+          "МЦК Дубровка"
+        ]
+      ],
+      "1": [
+        [
+          "МЦК Дубровка",
+          "Восточное Измайлово"
+        ]
+      ]
+    },
+    "2025-09-13/17": {
+      "0": [
+        [
+          "Медведково",
+          "Останкино"
+        ]
+      ],
+      "1": [
+        [
+          "Останкино",
+          "Медведково"
+        ]
+      ]
+    },
+    "2025-10-14/11": {
+      "0": [
+        [
+          "Останкино",
+          "Восточное Измайлово"
+        ]
+      ],
+      "1": [
+        [
+          "Восточное Измайлово",
+          "Останкино"
+        ]
+      ]
+    },
+    "2025-10-14/12": {
+      "0": [
+        [
+          "Восточное Измайлово",
+          "МЦК Дубровка"
+        ]
+      ],
+      "1": [
+        [
+          "МЦК Дубровка",
+          "Восточное Измайлово"
+        ]
+      ]
+    },
+    "2025-10-14/17": {
+      "0": [
+        [
+          "Медведково",
+          "Останкино"
+        ]
+      ],
+      "1": [
+        [
+          "Останкино",
+          "Медведково"
+        ]
+      ]
+    },
+    "2025-10-18/11": {
+      "0": [
+        [
+          "Останкино",
+          "Восточное Измайлово"
+        ]
+      ],
+      "1": [
+        [
+          "Восточное Измайлово",
+          "Останкино"
+        ]
+      ]
+    },
+    "2025-10-18/12": {
+      "0": [
+        [
+          "Восточное Измайлово",
+          "МЦК Дубровка"
+        ]
+      ],
+      "1": [
+        [
+          "МЦК Дубровка",
+          "Восточное Измайлово"
+        ]
+      ]
+    },
+    "2025-10-18/17": {
+      "0": [
+        [
+          "Медведково",
+          "Останкино"
+        ]
+      ],
+      "1": [
+        [
+          "Останкино",
+          "Медведково"
+        ]
+      ]
+    }
+  },
+  "enrollment": [
+    {
+      "active_reference_duties": 21,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 4342,
+          "stable300": 25196,
+          "stable900": 17459,
+          "unique_trip": 30267
+        },
+        "periods": {
+          "AM": {
+            "0": 2420,
+            "1": 2538,
+            "all_events": 5450,
+            "stable300_0": 2133,
+            "stable300_1": 1822,
+            "stable900_0": 1357,
+            "stable900_1": 1332
+          },
+          "PM": {
+            "0": 2679,
+            "1": 2528,
+            "all_events": 6089,
+            "stable300_0": 2237,
+            "stable300_1": 2117,
+            "stable900_0": 1597,
+            "stable900_1": 1714
+          }
+        }
+      },
+      "date": "2025-05-13",
+      "duty_code_matched_events": 34609,
+      "identity_conflict_events": 0,
+      "route": "11",
+      "successful_events": 34609,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 8988,
+          "stable300": 22305,
+          "stable900": 14170,
+          "unique_trip": 25621
+        },
+        "periods": {
+          "AM": {
+            "0": 2202,
+            "1": 1769,
+            "all_events": 5450,
+            "stable300_0": 1833,
+            "stable300_1": 1602,
+            "stable900_0": 1055,
+            "stable900_1": 850
+          },
+          "PM": {
+            "0": 2729,
+            "1": 2077,
+            "all_events": 6089,
+            "stable300_0": 2421,
+            "stable300_1": 1775,
+            "stable900_0": 1498,
+            "stable900_1": 962
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 22,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 4526,
+          "stable300": 28806,
+          "stable900": 20921,
+          "unique_trip": 34520
+        },
+        "periods": {
+          "AM": {
+            "0": 3041,
+            "1": 2736,
+            "all_events": 6572,
+            "stable300_0": 2334,
+            "stable300_1": 2455,
+            "stable900_0": 1715,
+            "stable900_1": 1794
+          },
+          "PM": {
+            "0": 2935,
+            "1": 2572,
+            "all_events": 6105,
+            "stable300_0": 2374,
+            "stable300_1": 2269,
+            "stable900_0": 1926,
+            "stable900_1": 1728
+          }
+        }
+      },
+      "date": "2025-05-13",
+      "duty_code_matched_events": 39046,
+      "identity_conflict_events": 0,
+      "route": "12",
+      "successful_events": 39046,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 9887,
+          "stable300": 25379,
+          "stable900": 18151,
+          "unique_trip": 29159
+        },
+        "periods": {
+          "AM": {
+            "0": 2241,
+            "1": 2299,
+            "all_events": 6572,
+            "stable300_0": 1969,
+            "stable300_1": 2074,
+            "stable900_0": 1404,
+            "stable900_1": 1615
+          },
+          "PM": {
+            "0": 2913,
+            "1": 2288,
+            "all_events": 6105,
+            "stable300_0": 2538,
+            "stable300_1": 2029,
+            "stable900_0": 1900,
+            "stable900_1": 1433
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 25,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 3786,
+          "stable300": 35366,
+          "stable900": 9123,
+          "unique_trip": 47067,
+          "unknown_duty": 1500
+        },
+        "periods": {
+          "AM": {
+            "0": 5734,
+            "1": 2886,
+            "all_events": 9118,
+            "stable300_0": 3493,
+            "stable300_1": 2298,
+            "stable900_0": 698,
+            "stable900_1": 704
+          },
+          "PM": {
+            "0": 3389,
+            "1": 4934,
+            "all_events": 9441,
+            "stable300_0": 2432,
+            "stable300_1": 3950,
+            "stable900_0": 726,
+            "stable900_1": 1081
+          }
+        }
+      },
+      "date": "2025-05-13",
+      "duty_code_matched_events": 50853,
+      "identity_conflict_events": 0,
+      "route": "17",
+      "successful_events": 52353,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 12072,
+          "stable300": 27490,
+          "stable900": 8956,
+          "unique_trip": 38781,
+          "unknown_duty": 1500
+        },
+        "periods": {
+          "AM": {
+            "0": 2909,
+            "1": 4187,
+            "all_events": 9118,
+            "stable300_0": 1946,
+            "stable300_1": 2963,
+            "stable900_0": 670,
+            "stable900_1": 800
+          },
+          "PM": {
+            "0": 3208,
+            "1": 4032,
+            "all_events": 9441,
+            "stable300_0": 2144,
+            "stable300_1": 3101,
+            "stable900_0": 601,
+            "stable900_1": 1113
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 21,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 2280,
+          "stable300": 19635,
+          "stable900": 12488,
+          "unique_trip": 23373,
+          "unknown_duty": 5
+        },
+        "periods": {
+          "AM": {
+            "0": 556,
+            "1": 738,
+            "all_events": 1663,
+            "stable300_0": 496,
+            "stable300_1": 575,
+            "stable900_0": 321,
+            "stable900_1": 408
+          },
+          "PM": {
+            "0": 1846,
+            "1": 1648,
+            "all_events": 3723,
+            "stable300_0": 1534,
+            "stable300_1": 1325,
+            "stable900_0": 780,
+            "stable900_1": 945
+          }
+        }
+      },
+      "date": "2025-05-17",
+      "duty_code_matched_events": 25653,
+      "identity_conflict_events": 0,
+      "route": "11",
+      "successful_events": 25658,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 9334,
+          "stable300": 13517,
+          "stable900": 7724,
+          "unique_trip": 16319,
+          "unknown_duty": 5
+        },
+        "periods": {
+          "AM": {
+            "0": 387,
+            "1": 395,
+            "all_events": 1663,
+            "stable300_0": 302,
+            "stable300_1": 299,
+            "stable900_0": 195,
+            "stable900_1": 154
+          },
+          "PM": {
+            "0": 1266,
+            "1": 1378,
+            "all_events": 3723,
+            "stable300_0": 1075,
+            "stable300_1": 1158,
+            "stable900_0": 710,
+            "stable900_1": 659
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 23,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 1932,
+          "stable300": 16726,
+          "stable900": 11990,
+          "unique_trip": 20188
+        },
+        "periods": {
+          "AM": {
+            "0": 1005,
+            "1": 675,
+            "all_events": 1931,
+            "stable300_0": 746,
+            "stable300_1": 591,
+            "stable900_0": 571,
+            "stable900_1": 437
+          },
+          "PM": {
+            "0": 1458,
+            "1": 1321,
+            "all_events": 3031,
+            "stable300_0": 1260,
+            "stable300_1": 1107,
+            "stable900_0": 930,
+            "stable900_1": 779
+          }
+        }
+      },
+      "date": "2025-05-17",
+      "duty_code_matched_events": 22120,
+      "identity_conflict_events": 0,
+      "route": "12",
+      "successful_events": 22120,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 7617,
+          "stable300": 12009,
+          "stable900": 8020,
+          "unique_trip": 14503
+        },
+        "periods": {
+          "AM": {
+            "0": 591,
+            "1": 573,
+            "all_events": 1931,
+            "stable300_0": 526,
+            "stable300_1": 434,
+            "stable900_0": 318,
+            "stable900_1": 299
+          },
+          "PM": {
+            "0": 1188,
+            "1": 904,
+            "all_events": 3031,
+            "stable300_0": 1016,
+            "stable300_1": 726,
+            "stable900_0": 703,
+            "stable900_1": 515
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 35,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 5187,
+          "stable300": 28032,
+          "stable900": 3897,
+          "unique_trip": 38778
+        },
+        "periods": {
+          "AM": {
+            "0": 1606,
+            "1": 1164,
+            "all_events": 3058,
+            "stable300_0": 997,
+            "stable300_1": 862,
+            "stable900_0": 71,
+            "stable900_1": 98
+          },
+          "PM": {
+            "0": 2962,
+            "1": 2889,
+            "all_events": 6602,
+            "stable300_0": 2129,
+            "stable300_1": 2215,
+            "stable900_0": 284,
+            "stable900_1": 358
+          }
+        }
+      },
+      "date": "2025-05-17",
+      "duty_code_matched_events": 43965,
+      "identity_conflict_events": 55,
+      "route": "17",
+      "successful_events": 43965,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 21921,
+          "stable300": 14620,
+          "stable900": 2178,
+          "unique_trip": 22044
+        },
+        "periods": {
+          "AM": {
+            "0": 644,
+            "1": 676,
+            "all_events": 3058,
+            "stable300_0": 408,
+            "stable300_1": 383,
+            "stable900_0": 67,
+            "stable900_1": 51
+          },
+          "PM": {
+            "0": 1757,
+            "1": 1709,
+            "all_events": 6602,
+            "stable300_0": 1193,
+            "stable300_1": 1184,
+            "stable900_0": 180,
+            "stable900_1": 212
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 21,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 3146,
+          "stable300": 25280,
+          "stable900": 17310,
+          "unique_trip": 30362
+        },
+        "periods": {
+          "AM": {
+            "0": 2231,
+            "1": 2533,
+            "all_events": 5200,
+            "stable300_0": 2016,
+            "stable300_1": 1859,
+            "stable900_0": 1369,
+            "stable900_1": 1240
+          },
+          "PM": {
+            "0": 2821,
+            "1": 2001,
+            "all_events": 5164,
+            "stable300_0": 2391,
+            "stable300_1": 1680,
+            "stable900_0": 1611,
+            "stable900_1": 1220
+          }
+        }
+      },
+      "date": "2025-06-10",
+      "duty_code_matched_events": 33508,
+      "identity_conflict_events": 0,
+      "route": "11",
+      "successful_events": 33508,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 8899,
+          "stable300": 21084,
+          "stable900": 13119,
+          "unique_trip": 24609
+        },
+        "periods": {
+          "AM": {
+            "0": 1795,
+            "1": 1816,
+            "all_events": 5200,
+            "stable300_0": 1538,
+            "stable300_1": 1606,
+            "stable900_0": 869,
+            "stable900_1": 747
+          },
+          "PM": {
+            "0": 2331,
+            "1": 1887,
+            "all_events": 5164,
+            "stable300_0": 2049,
+            "stable300_1": 1639,
+            "stable900_0": 1434,
+            "stable900_1": 1071
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 22,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 3791,
+          "stable300": 28344,
+          "stable900": 20449,
+          "unique_trip": 33996
+        },
+        "periods": {
+          "AM": {
+            "0": 2536,
+            "1": 2239,
+            "all_events": 5441,
+            "stable300_0": 1881,
+            "stable300_1": 2005,
+            "stable900_0": 1325,
+            "stable900_1": 1394
+          },
+          "PM": {
+            "0": 3184,
+            "1": 3148,
+            "all_events": 6609,
+            "stable300_0": 2574,
+            "stable300_1": 2848,
+            "stable900_0": 2014,
+            "stable900_1": 2090
+          }
+        }
+      },
+      "date": "2025-06-10",
+      "duty_code_matched_events": 37787,
+      "identity_conflict_events": 0,
+      "route": "12",
+      "successful_events": 37787,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 8603,
+          "stable300": 25779,
+          "stable900": 18590,
+          "unique_trip": 29184
+        },
+        "periods": {
+          "AM": {
+            "0": 1695,
+            "1": 2120,
+            "all_events": 5441,
+            "stable300_0": 1531,
+            "stable300_1": 1916,
+            "stable900_0": 1079,
+            "stable900_1": 1430
+          },
+          "PM": {
+            "0": 2854,
+            "1": 2778,
+            "all_events": 6609,
+            "stable300_0": 2512,
+            "stable300_1": 2523,
+            "stable900_0": 1841,
+            "stable900_1": 1809
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 25,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 3596,
+          "stable300": 36192,
+          "stable900": 9026,
+          "unique_trip": 48437
+        },
+        "periods": {
+          "AM": {
+            "0": 5417,
+            "1": 2395,
+            "all_events": 8209,
+            "stable300_0": 3308,
+            "stable300_1": 1909,
+            "stable900_0": 693,
+            "stable900_1": 576
+          },
+          "PM": {
+            "0": 3494,
+            "1": 4797,
+            "all_events": 8937,
+            "stable300_0": 2421,
+            "stable300_1": 3816,
+            "stable900_0": 729,
+            "stable900_1": 960
+          }
+        }
+      },
+      "date": "2025-06-10",
+      "duty_code_matched_events": 52033,
+      "identity_conflict_events": 2853,
+      "route": "17",
+      "successful_events": 52033,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 11959,
+          "stable300": 28322,
+          "stable900": 9714,
+          "unique_trip": 40074
+        },
+        "periods": {
+          "AM": {
+            "0": 2783,
+            "1": 3446,
+            "all_events": 8209,
+            "stable300_0": 1806,
+            "stable300_1": 2418,
+            "stable900_0": 576,
+            "stable900_1": 730
+          },
+          "PM": {
+            "0": 3233,
+            "1": 4115,
+            "all_events": 8937,
+            "stable300_0": 2231,
+            "stable300_1": 3175,
+            "stable900_0": 676,
+            "stable900_1": 1311
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 21,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 1520,
+          "stable300": 12520,
+          "stable900": 8232,
+          "unique_trip": 14515
+        },
+        "periods": {
+          "AM": {
+            "0": 464,
+            "1": 636,
+            "all_events": 1414,
+            "stable300_0": 424,
+            "stable300_1": 511,
+            "stable900_0": 299,
+            "stable900_1": 357
+          },
+          "PM": {
+            "0": 1016,
+            "1": 1142,
+            "all_events": 2300,
+            "stable300_0": 910,
+            "stable300_1": 986,
+            "stable900_0": 542,
+            "stable900_1": 716
+          }
+        }
+      },
+      "date": "2025-06-14",
+      "duty_code_matched_events": 16035,
+      "identity_conflict_events": 0,
+      "route": "11",
+      "successful_events": 16035,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 6021,
+          "stable300": 8119,
+          "stable900": 4370,
+          "unique_trip": 10014
+        },
+        "periods": {
+          "AM": {
+            "0": 321,
+            "1": 331,
+            "all_events": 1414,
+            "stable300_0": 278,
+            "stable300_1": 246,
+            "stable900_0": 168,
+            "stable900_1": 120
+          },
+          "PM": {
+            "0": 712,
+            "1": 853,
+            "all_events": 2300,
+            "stable300_0": 576,
+            "stable300_1": 675,
+            "stable900_0": 320,
+            "stable900_1": 380
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 23,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 2501,
+          "stable300": 6263,
+          "stable900": 4238,
+          "unique_trip": 7411,
+          "unknown_duty": 3086
+        },
+        "periods": {
+          "AM": {
+            "0": 404,
+            "1": 269,
+            "all_events": 1367,
+            "stable300_0": 317,
+            "stable300_1": 216,
+            "stable900_0": 192,
+            "stable900_1": 143
+          },
+          "PM": {
+            "0": 542,
+            "1": 473,
+            "all_events": 1651,
+            "stable300_0": 466,
+            "stable300_1": 391,
+            "stable900_0": 301,
+            "stable900_1": 278
+          }
+        }
+      },
+      "date": "2025-06-14",
+      "duty_code_matched_events": 9912,
+      "identity_conflict_events": 0,
+      "route": "12",
+      "successful_events": 12998,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 2527,
+          "stable300": 6371,
+          "stable900": 4245,
+          "unique_trip": 7385,
+          "unknown_duty": 3086
+        },
+        "periods": {
+          "AM": {
+            "0": 365,
+            "1": 308,
+            "all_events": 1367,
+            "stable300_0": 281,
+            "stable300_1": 241,
+            "stable900_0": 194,
+            "stable900_1": 110
+          },
+          "PM": {
+            "0": 489,
+            "1": 448,
+            "all_events": 1651,
+            "stable300_0": 439,
+            "stable300_1": 397,
+            "stable900_0": 316,
+            "stable900_1": 277
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 35,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 3603,
+          "stable300": 18282,
+          "stable900": 2634,
+          "unique_trip": 25530
+        },
+        "periods": {
+          "AM": {
+            "0": 1197,
+            "1": 880,
+            "all_events": 2318,
+            "stable300_0": 708,
+            "stable300_1": 741,
+            "stable900_0": 64,
+            "stable900_1": 69
+          },
+          "PM": {
+            "0": 1994,
+            "1": 1896,
+            "all_events": 4603,
+            "stable300_0": 1293,
+            "stable300_1": 1517,
+            "stable900_0": 117,
+            "stable900_1": 350
+          }
+        }
+      },
+      "date": "2025-06-14",
+      "duty_code_matched_events": 29133,
+      "identity_conflict_events": 112,
+      "route": "17",
+      "successful_events": 29133,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 13981,
+          "stable300": 10092,
+          "stable900": 1304,
+          "unique_trip": 15152
+        },
+        "periods": {
+          "AM": {
+            "0": 543,
+            "1": 616,
+            "all_events": 2318,
+            "stable300_0": 349,
+            "stable300_1": 358,
+            "stable900_0": 38,
+            "stable900_1": 36
+          },
+          "PM": {
+            "0": 1132,
+            "1": 1280,
+            "all_events": 4603,
+            "stable300_0": 753,
+            "stable300_1": 912,
+            "stable900_0": 84,
+            "stable900_1": 131
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 21,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 3138,
+          "stable300": 23299,
+          "stable900": 15938,
+          "unique_trip": 27513
+        },
+        "periods": {
+          "AM": {
+            "0": 2042,
+            "1": 2461,
+            "all_events": 4739,
+            "stable300_0": 1772,
+            "stable300_1": 1823,
+            "stable900_0": 1237,
+            "stable900_1": 1233
+          },
+          "PM": {
+            "0": 2006,
+            "1": 2466,
+            "all_events": 5009,
+            "stable300_0": 1826,
+            "stable300_1": 2185,
+            "stable900_0": 1209,
+            "stable900_1": 1614
+          }
+        }
+      },
+      "date": "2025-07-08",
+      "duty_code_matched_events": 30651,
+      "identity_conflict_events": 0,
+      "route": "11",
+      "successful_events": 30651,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 7521,
+          "stable300": 19294,
+          "stable900": 12139,
+          "unique_trip": 23130
+        },
+        "periods": {
+          "AM": {
+            "0": 1826,
+            "1": 1616,
+            "all_events": 4739,
+            "stable300_0": 1498,
+            "stable300_1": 1320,
+            "stable900_0": 856,
+            "stable900_1": 693
+          },
+          "PM": {
+            "0": 2128,
+            "1": 2115,
+            "all_events": 5009,
+            "stable300_0": 1779,
+            "stable300_1": 1736,
+            "stable900_0": 1156,
+            "stable900_1": 972
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 22,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 3245,
+          "stable300": 23464,
+          "stable900": 16917,
+          "unique_trip": 27669,
+          "unknown_duty": 1521
+        },
+        "periods": {
+          "AM": {
+            "0": 2219,
+            "1": 1853,
+            "all_events": 4923,
+            "stable300_0": 1665,
+            "stable300_1": 1682,
+            "stable900_0": 1250,
+            "stable900_1": 1292
+          },
+          "PM": {
+            "0": 2262,
+            "1": 2768,
+            "all_events": 5456,
+            "stable300_0": 1841,
+            "stable300_1": 2511,
+            "stable900_0": 1419,
+            "stable900_1": 1761
+          }
+        }
+      },
+      "date": "2025-07-08",
+      "duty_code_matched_events": 30914,
+      "identity_conflict_events": 0,
+      "route": "12",
+      "successful_events": 32435,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 7815,
+          "stable300": 20172,
+          "stable900": 14263,
+          "unique_trip": 23099,
+          "unknown_duty": 1521
+        },
+        "periods": {
+          "AM": {
+            "0": 1398,
+            "1": 1757,
+            "all_events": 4923,
+            "stable300_0": 1178,
+            "stable300_1": 1628,
+            "stable900_0": 820,
+            "stable900_1": 1186
+          },
+          "PM": {
+            "0": 2568,
+            "1": 1876,
+            "all_events": 5456,
+            "stable300_0": 2246,
+            "stable300_1": 1681,
+            "stable900_0": 1643,
+            "stable900_1": 1189
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 25,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 4553,
+          "stable300": 33799,
+          "stable900": 8344,
+          "unique_trip": 45524
+        },
+        "periods": {
+          "AM": {
+            "0": 4879,
+            "1": 2493,
+            "all_events": 7766,
+            "stable300_0": 2902,
+            "stable300_1": 2026,
+            "stable900_0": 567,
+            "stable900_1": 565
+          },
+          "PM": {
+            "0": 3576,
+            "1": 4687,
+            "all_events": 8741,
+            "stable300_0": 2489,
+            "stable300_1": 3727,
+            "stable900_0": 723,
+            "stable900_1": 945
+          }
+        }
+      },
+      "date": "2025-07-08",
+      "duty_code_matched_events": 50077,
+      "identity_conflict_events": 760,
+      "route": "17",
+      "successful_events": 50077,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 12427,
+          "stable300": 26289,
+          "stable900": 8344,
+          "unique_trip": 37650
+        },
+        "periods": {
+          "AM": {
+            "0": 2472,
+            "1": 3409,
+            "all_events": 7766,
+            "stable300_0": 1570,
+            "stable300_1": 2385,
+            "stable900_0": 510,
+            "stable900_1": 587
+          },
+          "PM": {
+            "0": 3371,
+            "1": 3716,
+            "all_events": 8741,
+            "stable300_0": 2167,
+            "stable300_1": 2769,
+            "stable900_0": 609,
+            "stable900_1": 1023
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 21,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 3041,
+          "stable300": 10708,
+          "stable900": 6737,
+          "unique_trip": 12875,
+          "unknown_duty": 1420
+        },
+        "periods": {
+          "AM": {
+            "0": 392,
+            "1": 568,
+            "all_events": 1556,
+            "stable300_0": 337,
+            "stable300_1": 451,
+            "stable900_0": 224,
+            "stable900_1": 307
+          },
+          "PM": {
+            "0": 862,
+            "1": 885,
+            "all_events": 2348,
+            "stable300_0": 719,
+            "stable300_1": 673,
+            "stable900_0": 364,
+            "stable900_1": 443
+          }
+        }
+      },
+      "date": "2025-07-12",
+      "duty_code_matched_events": 15916,
+      "identity_conflict_events": 0,
+      "route": "11",
+      "successful_events": 17336,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 5880,
+          "stable300": 8074,
+          "stable900": 4650,
+          "unique_trip": 10036,
+          "unknown_duty": 1420
+        },
+        "periods": {
+          "AM": {
+            "0": 290,
+            "1": 383,
+            "all_events": 1556,
+            "stable300_0": 239,
+            "stable300_1": 276,
+            "stable900_0": 124,
+            "stable900_1": 153
+          },
+          "PM": {
+            "0": 919,
+            "1": 471,
+            "all_events": 2348,
+            "stable300_0": 811,
+            "stable300_1": 339,
+            "stable900_0": 477,
+            "stable900_1": 216
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 23,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 2235,
+          "stable300": 14378,
+          "stable900": 10525,
+          "unique_trip": 16974
+        },
+        "periods": {
+          "AM": {
+            "0": 844,
+            "1": 766,
+            "all_events": 1904,
+            "stable300_0": 649,
+            "stable300_1": 664,
+            "stable900_0": 497,
+            "stable900_1": 491
+          },
+          "PM": {
+            "0": 1169,
+            "1": 981,
+            "all_events": 2473,
+            "stable300_0": 918,
+            "stable300_1": 864,
+            "stable900_0": 694,
+            "stable900_1": 574
+          }
+        }
+      },
+      "date": "2025-07-12",
+      "duty_code_matched_events": 19209,
+      "identity_conflict_events": 1182,
+      "route": "12",
+      "successful_events": 19209,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 6169,
+          "stable300": 10915,
+          "stable900": 7472,
+          "unique_trip": 13040
+        },
+        "periods": {
+          "AM": {
+            "0": 572,
+            "1": 589,
+            "all_events": 1904,
+            "stable300_0": 469,
+            "stable300_1": 483,
+            "stable900_0": 310,
+            "stable900_1": 344
+          },
+          "PM": {
+            "0": 893,
+            "1": 935,
+            "all_events": 2473,
+            "stable300_0": 813,
+            "stable300_1": 738,
+            "stable900_0": 611,
+            "stable900_1": 518
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 35,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 3563,
+          "stable300": 19132,
+          "stable900": 2715,
+          "unique_trip": 26421,
+          "unknown_duty": 598
+        },
+        "periods": {
+          "AM": {
+            "0": 1522,
+            "1": 926,
+            "all_events": 2787,
+            "stable300_0": 902,
+            "stable300_1": 710,
+            "stable900_0": 48,
+            "stable900_1": 79
+          },
+          "PM": {
+            "0": 2032,
+            "1": 1837,
+            "all_events": 4558,
+            "stable300_0": 1581,
+            "stable300_1": 1349,
+            "stable900_0": 239,
+            "stable900_1": 238
+          }
+        }
+      },
+      "date": "2025-07-12",
+      "duty_code_matched_events": 29984,
+      "identity_conflict_events": 0,
+      "route": "17",
+      "successful_events": 30582,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 13588,
+          "stable300": 11035,
+          "stable900": 1700,
+          "unique_trip": 16396,
+          "unknown_duty": 598
+        },
+        "periods": {
+          "AM": {
+            "0": 503,
+            "1": 660,
+            "all_events": 2787,
+            "stable300_0": 344,
+            "stable300_1": 365,
+            "stable900_0": 54,
+            "stable900_1": 48
+          },
+          "PM": {
+            "0": 1146,
+            "1": 1434,
+            "all_events": 4558,
+            "stable300_0": 770,
+            "stable300_1": 930,
+            "stable900_0": 96,
+            "stable900_1": 183
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 21,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 2191,
+          "stable300": 23593,
+          "stable900": 16380,
+          "unique_trip": 28021,
+          "unknown_duty": 383
+        },
+        "periods": {
+          "AM": {
+            "0": 1965,
+            "1": 2132,
+            "all_events": 4376,
+            "stable300_0": 1716,
+            "stable300_1": 1565,
+            "stable900_0": 1246,
+            "stable900_1": 1011
+          },
+          "PM": {
+            "0": 2767,
+            "1": 2374,
+            "all_events": 5560,
+            "stable300_0": 2315,
+            "stable300_1": 2110,
+            "stable900_0": 1514,
+            "stable900_1": 1648
+          }
+        }
+      },
+      "date": "2025-08-12",
+      "duty_code_matched_events": 30212,
+      "identity_conflict_events": 0,
+      "route": "11",
+      "successful_events": 30595,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 7967,
+          "stable300": 19259,
+          "stable900": 12254,
+          "unique_trip": 22245,
+          "unknown_duty": 383
+        },
+        "periods": {
+          "AM": {
+            "0": 1617,
+            "1": 1472,
+            "all_events": 4376,
+            "stable300_0": 1362,
+            "stable300_1": 1286,
+            "stable900_0": 747,
+            "stable900_1": 686
+          },
+          "PM": {
+            "0": 2186,
+            "1": 2280,
+            "all_events": 5560,
+            "stable300_0": 2020,
+            "stable300_1": 1968,
+            "stable900_0": 1476,
+            "stable900_1": 1163
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 22,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 3115,
+          "stable300": 24981,
+          "stable900": 17832,
+          "unique_trip": 29519,
+          "unknown_duty": 1
+        },
+        "periods": {
+          "AM": {
+            "0": 2465,
+            "1": 2152,
+            "all_events": 5218,
+            "stable300_0": 1899,
+            "stable300_1": 1972,
+            "stable900_0": 1367,
+            "stable900_1": 1389
+          },
+          "PM": {
+            "0": 2306,
+            "1": 2500,
+            "all_events": 5179,
+            "stable300_0": 1940,
+            "stable300_1": 2196,
+            "stable900_0": 1484,
+            "stable900_1": 1624
+          }
+        }
+      },
+      "date": "2025-08-12",
+      "duty_code_matched_events": 32634,
+      "identity_conflict_events": 56,
+      "route": "12",
+      "successful_events": 32635,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 7950,
+          "stable300": 21420,
+          "stable900": 15445,
+          "unique_trip": 24684,
+          "unknown_duty": 1
+        },
+        "periods": {
+          "AM": {
+            "0": 1682,
+            "1": 2015,
+            "all_events": 5218,
+            "stable300_0": 1456,
+            "stable300_1": 1800,
+            "stable900_0": 1052,
+            "stable900_1": 1350
+          },
+          "PM": {
+            "0": 2129,
+            "1": 2125,
+            "all_events": 5179,
+            "stable300_0": 1824,
+            "stable300_1": 1878,
+            "stable900_0": 1328,
+            "stable900_1": 1313
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 25,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 6904,
+          "stable300": 23135,
+          "stable900": 5942,
+          "unique_trip": 32635,
+          "unknown_duty": 7405
+        },
+        "periods": {
+          "AM": {
+            "0": 1640,
+            "1": 3294,
+            "all_events": 7571,
+            "stable300_0": 1012,
+            "stable300_1": 2104,
+            "stable900_0": 226,
+            "stable900_1": 502
+          },
+          "PM": {
+            "0": 3270,
+            "1": 2207,
+            "all_events": 8315,
+            "stable300_0": 2476,
+            "stable300_1": 1473,
+            "stable900_0": 663,
+            "stable900_1": 376
+          }
+        }
+      },
+      "date": "2025-08-12",
+      "duty_code_matched_events": 39539,
+      "identity_conflict_events": 0,
+      "route": "17",
+      "successful_events": 46944,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 7663,
+          "stable300": 23310,
+          "stable900": 6237,
+          "unique_trip": 31876,
+          "unknown_duty": 7405
+        },
+        "periods": {
+          "AM": {
+            "0": 1770,
+            "1": 3761,
+            "all_events": 7571,
+            "stable300_0": 1234,
+            "stable300_1": 2887,
+            "stable900_0": 289,
+            "stable900_1": 829
+          },
+          "PM": {
+            "0": 2982,
+            "1": 2574,
+            "all_events": 8315,
+            "stable300_0": 2122,
+            "stable300_1": 1790,
+            "stable900_0": 428,
+            "stable900_1": 346
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 21,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 3331,
+          "stable300": 12394,
+          "stable900": 7688,
+          "unique_trip": 14879,
+          "unknown_duty": 1522
+        },
+        "periods": {
+          "AM": {
+            "0": 471,
+            "1": 627,
+            "all_events": 1557,
+            "stable300_0": 380,
+            "stable300_1": 422,
+            "stable900_0": 296,
+            "stable900_1": 268
+          },
+          "PM": {
+            "0": 1158,
+            "1": 1070,
+            "all_events": 2800,
+            "stable300_0": 980,
+            "stable300_1": 908,
+            "stable900_0": 564,
+            "stable900_1": 566
+          }
+        }
+      },
+      "date": "2025-08-16",
+      "duty_code_matched_events": 18210,
+      "identity_conflict_events": 0,
+      "route": "11",
+      "successful_events": 19732,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 6833,
+          "stable300": 9328,
+          "stable900": 5365,
+          "unique_trip": 11377,
+          "unknown_duty": 1522
+        },
+        "periods": {
+          "AM": {
+            "0": 312,
+            "1": 441,
+            "all_events": 1557,
+            "stable300_0": 274,
+            "stable300_1": 322,
+            "stable900_0": 146,
+            "stable900_1": 194
+          },
+          "PM": {
+            "0": 1051,
+            "1": 794,
+            "all_events": 2800,
+            "stable300_0": 831,
+            "stable300_1": 635,
+            "stable900_0": 512,
+            "stable900_1": 338
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 23,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 1616,
+          "stable300": 15204,
+          "stable900": 10898,
+          "unique_trip": 17822,
+          "unknown_duty": 93
+        },
+        "periods": {
+          "AM": {
+            "0": 785,
+            "1": 696,
+            "all_events": 1721,
+            "stable300_0": 615,
+            "stable300_1": 624,
+            "stable900_0": 441,
+            "stable900_1": 446
+          },
+          "PM": {
+            "0": 1185,
+            "1": 1268,
+            "all_events": 2660,
+            "stable300_0": 991,
+            "stable300_1": 1106,
+            "stable900_0": 752,
+            "stable900_1": 755
+          }
+        }
+      },
+      "date": "2025-08-16",
+      "duty_code_matched_events": 19438,
+      "identity_conflict_events": 378,
+      "route": "12",
+      "successful_events": 19531,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 6671,
+          "stable300": 10710,
+          "stable900": 7347,
+          "unique_trip": 12767,
+          "unknown_duty": 93
+        },
+        "periods": {
+          "AM": {
+            "0": 483,
+            "1": 550,
+            "all_events": 1721,
+            "stable300_0": 401,
+            "stable300_1": 440,
+            "stable900_0": 260,
+            "stable900_1": 302
+          },
+          "PM": {
+            "0": 913,
+            "1": 875,
+            "all_events": 2660,
+            "stable300_0": 798,
+            "stable300_1": 694,
+            "stable900_0": 473,
+            "stable900_1": 531
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 35,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 3670,
+          "stable300": 23503,
+          "stable900": 3082,
+          "unique_trip": 32529,
+          "unknown_duty": 26
+        },
+        "periods": {
+          "AM": {
+            "0": 1490,
+            "1": 812,
+            "all_events": 2733,
+            "stable300_0": 966,
+            "stable300_1": 597,
+            "stable900_0": 70,
+            "stable900_1": 41
+          },
+          "PM": {
+            "0": 2419,
+            "1": 2691,
+            "all_events": 5528,
+            "stable300_0": 1667,
+            "stable300_1": 2107,
+            "stable900_0": 232,
+            "stable900_1": 405
+          }
+        }
+      },
+      "date": "2025-08-16",
+      "duty_code_matched_events": 36199,
+      "identity_conflict_events": 0,
+      "route": "17",
+      "successful_events": 36225,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 16407,
+          "stable300": 13186,
+          "stable900": 1727,
+          "unique_trip": 19792,
+          "unknown_duty": 26
+        },
+        "periods": {
+          "AM": {
+            "0": 591,
+            "1": 705,
+            "all_events": 2733,
+            "stable300_0": 427,
+            "stable300_1": 410,
+            "stable900_0": 42,
+            "stable900_1": 39
+          },
+          "PM": {
+            "0": 1470,
+            "1": 1533,
+            "all_events": 5528,
+            "stable300_0": 980,
+            "stable300_1": 1066,
+            "stable900_0": 117,
+            "stable900_1": 189
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 21,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 3258,
+          "stable300": 28717,
+          "stable900": 19867,
+          "unique_trip": 34065
+        },
+        "periods": {
+          "AM": {
+            "0": 3067,
+            "1": 2709,
+            "all_events": 6137,
+            "stable300_0": 2628,
+            "stable300_1": 2075,
+            "stable900_0": 1714,
+            "stable900_1": 1392
+          },
+          "PM": {
+            "0": 3177,
+            "1": 2755,
+            "all_events": 6473,
+            "stable300_0": 2646,
+            "stable300_1": 2345,
+            "stable900_0": 1777,
+            "stable900_1": 1711
+          }
+        }
+      },
+      "date": "2025-09-09",
+      "duty_code_matched_events": 37323,
+      "identity_conflict_events": 0,
+      "route": "11",
+      "successful_events": 37323,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 9937,
+          "stable300": 23470,
+          "stable900": 14940,
+          "unique_trip": 27386
+        },
+        "periods": {
+          "AM": {
+            "0": 2251,
+            "1": 1901,
+            "all_events": 6137,
+            "stable300_0": 1844,
+            "stable300_1": 1568,
+            "stable900_0": 1067,
+            "stable900_1": 791
+          },
+          "PM": {
+            "0": 2595,
+            "1": 2501,
+            "all_events": 6473,
+            "stable300_0": 2335,
+            "stable300_1": 2171,
+            "stable900_0": 1576,
+            "stable900_1": 1443
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 22,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 3800,
+          "stable300": 27869,
+          "stable900": 19907,
+          "unique_trip": 32759
+        },
+        "periods": {
+          "AM": {
+            "0": 3092,
+            "1": 2578,
+            "all_events": 6282,
+            "stable300_0": 2443,
+            "stable300_1": 2295,
+            "stable900_0": 1823,
+            "stable900_1": 1611
+          },
+          "PM": {
+            "0": 2645,
+            "1": 2833,
+            "all_events": 5895,
+            "stable300_0": 2271,
+            "stable300_1": 2495,
+            "stable900_0": 1751,
+            "stable900_1": 1719
+          }
+        }
+      },
+      "date": "2025-09-09",
+      "duty_code_matched_events": 36559,
+      "identity_conflict_events": 0,
+      "route": "12",
+      "successful_events": 36559,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 8687,
+          "stable300": 24561,
+          "stable900": 17717,
+          "unique_trip": 27872
+        },
+        "periods": {
+          "AM": {
+            "0": 1892,
+            "1": 2738,
+            "all_events": 6282,
+            "stable300_0": 1632,
+            "stable300_1": 2584,
+            "stable900_0": 1215,
+            "stable900_1": 1901
+          },
+          "PM": {
+            "0": 2835,
+            "1": 2101,
+            "all_events": 5895,
+            "stable300_0": 2549,
+            "stable300_1": 1900,
+            "stable900_0": 1930,
+            "stable900_1": 1309
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 25,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 7328,
+          "stable300": 25437,
+          "stable900": 6924,
+          "unique_trip": 35475,
+          "unknown_duty": 11173
+        },
+        "periods": {
+          "AM": {
+            "0": 2110,
+            "1": 3896,
+            "all_events": 9621,
+            "stable300_0": 1315,
+            "stable300_1": 2618,
+            "stable900_0": 281,
+            "stable900_1": 763
+          },
+          "PM": {
+            "0": 3571,
+            "1": 2605,
+            "all_events": 9244,
+            "stable300_0": 2670,
+            "stable300_1": 1716,
+            "stable900_0": 656,
+            "stable900_1": 449
+          }
+        }
+      },
+      "date": "2025-09-09",
+      "duty_code_matched_events": 42803,
+      "identity_conflict_events": 0,
+      "route": "17",
+      "successful_events": 53976,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 8196,
+          "stable300": 25515,
+          "stable900": 7129,
+          "unique_trip": 34607,
+          "unknown_duty": 11173
+        },
+        "periods": {
+          "AM": {
+            "0": 1945,
+            "1": 4754,
+            "all_events": 9621,
+            "stable300_0": 1296,
+            "stable300_1": 3748,
+            "stable900_0": 320,
+            "stable900_1": 1109
+          },
+          "PM": {
+            "0": 3331,
+            "1": 2827,
+            "all_events": 9244,
+            "stable300_0": 2423,
+            "stable300_1": 2101,
+            "stable900_0": 630,
+            "stable900_1": 506
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 21,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 4316,
+          "stable300": 15642,
+          "stable900": 10146,
+          "unique_trip": 18353,
+          "unknown_duty": 2035
+        },
+        "periods": {
+          "AM": {
+            "0": 514,
+            "1": 602,
+            "all_events": 1833,
+            "stable300_0": 452,
+            "stable300_1": 474,
+            "stable900_0": 280,
+            "stable900_1": 329
+          },
+          "PM": {
+            "0": 1321,
+            "1": 1296,
+            "all_events": 3543,
+            "stable300_0": 1141,
+            "stable300_1": 1038,
+            "stable900_0": 748,
+            "stable900_1": 668
+          }
+        }
+      },
+      "date": "2025-09-13",
+      "duty_code_matched_events": 22669,
+      "identity_conflict_events": 0,
+      "route": "11",
+      "successful_events": 24704,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 8438,
+          "stable300": 11781,
+          "stable900": 7102,
+          "unique_trip": 14231,
+          "unknown_duty": 2035
+        },
+        "periods": {
+          "AM": {
+            "0": 432,
+            "1": 535,
+            "all_events": 1833,
+            "stable300_0": 348,
+            "stable300_1": 419,
+            "stable900_0": 227,
+            "stable900_1": 263
+          },
+          "PM": {
+            "0": 1182,
+            "1": 817,
+            "all_events": 3543,
+            "stable300_0": 1017,
+            "stable300_1": 720,
+            "stable900_0": 602,
+            "stable900_1": 433
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 23,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 2222,
+          "stable300": 16519,
+          "stable900": 11595,
+          "unique_trip": 19636
+        },
+        "periods": {
+          "AM": {
+            "0": 1045,
+            "1": 822,
+            "all_events": 2150,
+            "stable300_0": 800,
+            "stable300_1": 728,
+            "stable900_0": 623,
+            "stable900_1": 520
+          },
+          "PM": {
+            "0": 1404,
+            "1": 1335,
+            "all_events": 3067,
+            "stable300_0": 1197,
+            "stable300_1": 1161,
+            "stable900_0": 865,
+            "stable900_1": 768
+          }
+        }
+      },
+      "date": "2025-09-13",
+      "duty_code_matched_events": 21858,
+      "identity_conflict_events": 0,
+      "route": "12",
+      "successful_events": 21858,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 7181,
+          "stable300": 12082,
+          "stable900": 8490,
+          "unique_trip": 14677
+        },
+        "periods": {
+          "AM": {
+            "0": 736,
+            "1": 688,
+            "all_events": 2150,
+            "stable300_0": 590,
+            "stable300_1": 453,
+            "stable900_0": 382,
+            "stable900_1": 314
+          },
+          "PM": {
+            "0": 1147,
+            "1": 980,
+            "all_events": 3067,
+            "stable300_0": 1002,
+            "stable300_1": 805,
+            "stable900_0": 706,
+            "stable900_1": 591
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 35,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 4262,
+          "stable300": 22908,
+          "stable900": 2936,
+          "unique_trip": 31662,
+          "unknown_duty": 55
+        },
+        "periods": {
+          "AM": {
+            "0": 1752,
+            "1": 1002,
+            "all_events": 3094,
+            "stable300_0": 1021,
+            "stable300_1": 739,
+            "stable900_0": 66,
+            "stable900_1": 50
+          },
+          "PM": {
+            "0": 2132,
+            "1": 2048,
+            "all_events": 4850,
+            "stable300_0": 1452,
+            "stable300_1": 1852,
+            "stable900_0": 165,
+            "stable900_1": 256
+          }
+        }
+      },
+      "date": "2025-09-13",
+      "duty_code_matched_events": 35924,
+      "identity_conflict_events": 845,
+      "route": "17",
+      "successful_events": 35979,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 14890,
+          "stable300": 13539,
+          "stable900": 2085,
+          "unique_trip": 21034,
+          "unknown_duty": 55
+        },
+        "periods": {
+          "AM": {
+            "0": 616,
+            "1": 798,
+            "all_events": 3094,
+            "stable300_0": 424,
+            "stable300_1": 488,
+            "stable900_0": 82,
+            "stable900_1": 54
+          },
+          "PM": {
+            "0": 1390,
+            "1": 1840,
+            "all_events": 4850,
+            "stable300_0": 942,
+            "stable300_1": 1176,
+            "stable900_0": 115,
+            "stable900_1": 199
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 21,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 3624,
+          "stable300": 26870,
+          "stable900": 17601,
+          "unique_trip": 32248
+        },
+        "periods": {
+          "AM": {
+            "0": 2646,
+            "1": 2958,
+            "all_events": 5950,
+            "stable300_0": 2276,
+            "stable300_1": 2191,
+            "stable900_0": 1477,
+            "stable900_1": 1362
+          },
+          "PM": {
+            "0": 2732,
+            "1": 2419,
+            "all_events": 5817,
+            "stable300_0": 2429,
+            "stable300_1": 2037,
+            "stable900_0": 1579,
+            "stable900_1": 1452
+          }
+        }
+      },
+      "date": "2025-10-14",
+      "duty_code_matched_events": 35872,
+      "identity_conflict_events": 0,
+      "route": "11",
+      "successful_events": 35872,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 9538,
+          "stable300": 22383,
+          "stable900": 13975,
+          "unique_trip": 26334
+        },
+        "periods": {
+          "AM": {
+            "0": 2227,
+            "1": 1942,
+            "all_events": 5950,
+            "stable300_0": 1781,
+            "stable300_1": 1662,
+            "stable900_0": 983,
+            "stable900_1": 939
+          },
+          "PM": {
+            "0": 2352,
+            "1": 2348,
+            "all_events": 5817,
+            "stable300_0": 2036,
+            "stable300_1": 2013,
+            "stable900_0": 1313,
+            "stable900_1": 1297
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 22,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 5774,
+          "stable300": 29345,
+          "stable900": 21114,
+          "unique_trip": 33398
+        },
+        "periods": {
+          "AM": {
+            "0": 3423,
+            "1": 2858,
+            "all_events": 7117,
+            "stable300_0": 2774,
+            "stable300_1": 2721,
+            "stable900_0": 1999,
+            "stable900_1": 1967
+          },
+          "PM": {
+            "0": 3024,
+            "1": 2762,
+            "all_events": 6525,
+            "stable300_0": 2741,
+            "stable300_1": 2465,
+            "stable900_0": 1941,
+            "stable900_1": 1728
+          }
+        }
+      },
+      "date": "2025-10-14",
+      "duty_code_matched_events": 39172,
+      "identity_conflict_events": 0,
+      "route": "12",
+      "successful_events": 39172,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 9233,
+          "stable300": 26535,
+          "stable900": 19609,
+          "unique_trip": 29939
+        },
+        "periods": {
+          "AM": {
+            "0": 2208,
+            "1": 2768,
+            "all_events": 7117,
+            "stable300_0": 1975,
+            "stable300_1": 2500,
+            "stable900_0": 1456,
+            "stable900_1": 1941
+          },
+          "PM": {
+            "0": 2741,
+            "1": 2765,
+            "all_events": 6525,
+            "stable300_0": 2463,
+            "stable300_1": 2546,
+            "stable900_0": 1719,
+            "stable900_1": 2034
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 25,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 8030,
+          "stable300": 26750,
+          "stable900": 7671,
+          "unique_trip": 37194,
+          "unknown_duty": 10684
+        },
+        "periods": {
+          "AM": {
+            "0": 2327,
+            "1": 3903,
+            "all_events": 10344,
+            "stable300_0": 1476,
+            "stable300_1": 2553,
+            "stable900_0": 256,
+            "stable900_1": 693
+          },
+          "PM": {
+            "0": 3778,
+            "1": 2482,
+            "all_events": 9390,
+            "stable300_0": 2878,
+            "stable300_1": 1606,
+            "stable900_0": 976,
+            "stable900_1": 500
+          }
+        }
+      },
+      "date": "2025-10-14",
+      "duty_code_matched_events": 45224,
+      "identity_conflict_events": 0,
+      "route": "17",
+      "successful_events": 55908,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 9013,
+          "stable300": 26775,
+          "stable900": 7798,
+          "unique_trip": 36211,
+          "unknown_duty": 10684
+        },
+        "periods": {
+          "AM": {
+            "0": 1937,
+            "1": 4962,
+            "all_events": 10344,
+            "stable300_0": 1337,
+            "stable300_1": 4015,
+            "stable900_0": 335,
+            "stable900_1": 1244
+          },
+          "PM": {
+            "0": 3706,
+            "1": 2640,
+            "all_events": 9390,
+            "stable300_0": 2703,
+            "stable300_1": 1853,
+            "stable900_0": 684,
+            "stable900_1": 504
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 21,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 3961,
+          "stable300": 15407,
+          "stable900": 9747,
+          "unique_trip": 18382,
+          "unknown_duty": 2177
+        },
+        "periods": {
+          "AM": {
+            "0": 588,
+            "1": 686,
+            "all_events": 1862,
+            "stable300_0": 521,
+            "stable300_1": 497,
+            "stable900_0": 406,
+            "stable900_1": 311
+          },
+          "PM": {
+            "0": 1288,
+            "1": 1343,
+            "all_events": 3531,
+            "stable300_0": 1111,
+            "stable300_1": 1083,
+            "stable900_0": 722,
+            "stable900_1": 723
+          }
+        }
+      },
+      "date": "2025-10-18",
+      "duty_code_matched_events": 22343,
+      "identity_conflict_events": 13,
+      "route": "11",
+      "successful_events": 24520,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 7706,
+          "stable300": 12088,
+          "stable900": 7324,
+          "unique_trip": 14637,
+          "unknown_duty": 2177
+        },
+        "periods": {
+          "AM": {
+            "0": 447,
+            "1": 459,
+            "all_events": 1862,
+            "stable300_0": 391,
+            "stable300_1": 370,
+            "stable900_0": 271,
+            "stable900_1": 191
+          },
+          "PM": {
+            "0": 1134,
+            "1": 1051,
+            "all_events": 3531,
+            "stable300_0": 911,
+            "stable300_1": 839,
+            "stable900_0": 589,
+            "stable900_1": 476
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 23,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 2428,
+          "stable300": 16674,
+          "stable900": 12124,
+          "unique_trip": 19798
+        },
+        "periods": {
+          "AM": {
+            "0": 904,
+            "1": 740,
+            "all_events": 1925,
+            "stable300_0": 669,
+            "stable300_1": 631,
+            "stable900_0": 480,
+            "stable900_1": 482
+          },
+          "PM": {
+            "0": 1255,
+            "1": 1427,
+            "all_events": 3122,
+            "stable300_0": 1078,
+            "stable300_1": 1260,
+            "stable900_0": 779,
+            "stable900_1": 901
+          }
+        }
+      },
+      "date": "2025-10-18",
+      "duty_code_matched_events": 22226,
+      "identity_conflict_events": 0,
+      "route": "12",
+      "successful_events": 22226,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 6840,
+          "stable300": 12786,
+          "stable900": 8813,
+          "unique_trip": 15386
+        },
+        "periods": {
+          "AM": {
+            "0": 543,
+            "1": 754,
+            "all_events": 1925,
+            "stable300_0": 478,
+            "stable300_1": 490,
+            "stable900_0": 346,
+            "stable900_1": 368
+          },
+          "PM": {
+            "0": 1019,
+            "1": 1134,
+            "all_events": 3122,
+            "stable300_0": 866,
+            "stable300_1": 979,
+            "stable900_0": 622,
+            "stable900_1": 699
+          }
+        }
+      }
+    },
+    {
+      "active_reference_duties": 35,
+      "clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 4017,
+          "stable300": 29207,
+          "stable900": 3846,
+          "unique_trip": 41089,
+          "unknown_duty": 51
+        },
+        "periods": {
+          "AM": {
+            "0": 1831,
+            "1": 1066,
+            "all_events": 3215,
+            "stable300_0": 1096,
+            "stable300_1": 792,
+            "stable900_0": 49,
+            "stable900_1": 37
+          },
+          "PM": {
+            "0": 2839,
+            "1": 3213,
+            "all_events": 6678,
+            "stable300_0": 2000,
+            "stable300_1": 2503,
+            "stable900_0": 192,
+            "stable900_1": 509
+          }
+        }
+      },
+      "date": "2025-10-18",
+      "duty_code_matched_events": 45106,
+      "identity_conflict_events": 0,
+      "route": "17",
+      "successful_events": 45157,
+      "wrong_duty_clock": {
+        "counts": {
+          "ambiguous_trip": 0,
+          "no_trip": 19559,
+          "stable300": 16673,
+          "stable900": 2403,
+          "unique_trip": 25547,
+          "unknown_duty": 51
+        },
+        "periods": {
+          "AM": {
+            "0": 625,
+            "1": 777,
+            "all_events": 3215,
+            "stable300_0": 384,
+            "stable300_1": 446,
+            "stable900_0": 78,
+            "stable900_1": 38
+          },
+          "PM": {
+            "0": 2108,
+            "1": 2105,
+            "all_events": 6678,
+            "stable300_0": 1460,
+            "stable300_1": 1349,
+            "stable900_0": 262,
+            "stable900_1": 197
+          }
+        }
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "date": "2025-05-13",
+      "hour": 7,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/11/0/7"
+    },
+    {
+      "date": "2025-05-13",
+      "hour": 17,
+      "onsets": 11,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/11/0/17"
+    },
+    {
+      "date": "2025-05-13",
+      "hour": 18,
+      "onsets": 11,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/11/0/18"
+    },
+    {
+      "date": "2025-05-13",
+      "hour": 8,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/11/1/8"
+    },
+    {
+      "date": "2025-05-13",
+      "hour": 17,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/11/1/17"
+    },
+    {
+      "date": "2025-05-13",
+      "hour": 18,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/11/1/18"
+    },
+    {
+      "date": "2025-05-13",
+      "hour": 7,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/12/0/7"
+    },
+    {
+      "date": "2025-05-13",
+      "hour": 8,
+      "onsets": 11,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/12/0/8"
+    },
+    {
+      "date": "2025-05-13",
+      "hour": 17,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/12/0/17"
+    },
+    {
+      "date": "2025-05-13",
+      "hour": 18,
+      "onsets": 12,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/12/0/18"
+    },
+    {
+      "date": "2025-05-13",
+      "hour": 7,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/12/1/7"
+    },
+    {
+      "date": "2025-05-13",
+      "hour": 8,
+      "onsets": 11,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/12/1/8"
+    },
+    {
+      "date": "2025-05-13",
+      "hour": 17,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/12/1/17"
+    },
+    {
+      "date": "2025-05-13",
+      "hour": 18,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/12/1/18"
+    },
+    {
+      "date": "2025-05-13",
+      "hour": 17,
+      "onsets": 10,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/17/0/17"
+    },
+    {
+      "date": "2025-05-13",
+      "hour": 18,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/17/0/18"
+    },
+    {
+      "date": "2025-05-13",
+      "hour": 8,
+      "onsets": 12,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-05-13/17/1/8"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 7,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/11/0/7"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 8,
+      "onsets": 10,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/11/0/8"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 17,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/11/0/17"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 18,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/11/0/18"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 7,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/11/1/7"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 8,
+      "onsets": 4,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/11/1/8"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 17,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/11/1/17"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 18,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/11/1/18"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 7,
+      "onsets": 4,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/12/0/7"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 8,
+      "onsets": 8,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/12/0/8"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 17,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/12/0/17"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 18,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/12/0/18"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 7,
+      "onsets": 5,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/12/1/7"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 8,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/12/1/8"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 17,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/12/1/17"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 18,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/12/1/18"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 7,
+      "onsets": 10,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/17/0/7"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 8,
+      "onsets": 10,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/17/0/8"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 18,
+      "onsets": 10,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/17/0/18"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 7,
+      "onsets": 8,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/17/1/7"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 8,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/17/1/8"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 17,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/17/1/17"
+    },
+    {
+      "date": "2025-05-17",
+      "hour": 18,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-05-17/17/1/18"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 17,
+      "onsets": 12,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/11/0/17"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 18,
+      "onsets": 10,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/11/0/18"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 7,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/11/1/7"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 8,
+      "onsets": 10,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/11/1/8"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 17,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/11/1/17"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 18,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/11/1/18"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 7,
+      "onsets": 10,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/12/0/7"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 8,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/12/0/8"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 17,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/12/0/17"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 18,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/12/0/18"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 7,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/12/1/7"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 8,
+      "onsets": 8,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/12/1/8"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 17,
+      "onsets": 12,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/12/1/17"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 7,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/17/0/7"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 8,
+      "onsets": 11,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/17/0/8"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 17,
+      "onsets": 12,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/17/0/17"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 18,
+      "onsets": 13,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/17/0/18"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 8,
+      "onsets": 13,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/17/1/8"
+    },
+    {
+      "date": "2025-06-10",
+      "hour": 17,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": true,
+      "window_id": "2025-06-10/17/1/17"
+    },
+    {
+      "date": "2025-06-14",
+      "hour": 7,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/11/0/7"
+    },
+    {
+      "date": "2025-06-14",
+      "hour": 8,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/11/0/8"
+    },
+    {
+      "date": "2025-06-14",
+      "hour": 17,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/11/0/17"
+    },
+    {
+      "date": "2025-06-14",
+      "hour": 18,
+      "onsets": 5,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/11/0/18"
+    },
+    {
+      "date": "2025-06-14",
+      "hour": 7,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/11/1/7"
+    },
+    {
+      "date": "2025-06-14",
+      "hour": 8,
+      "onsets": 2,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/11/1/8"
+    },
+    {
+      "date": "2025-06-14",
+      "hour": 17,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/11/1/17"
+    },
+    {
+      "date": "2025-06-14",
+      "hour": 18,
+      "onsets": 5,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/11/1/18"
+    },
+    {
+      "date": "2025-06-14",
+      "details": [
+        "notice_exclusion:124737"
+      ],
+      "hour": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "service_policy",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/12/0/7"
+    },
+    {
+      "date": "2025-06-14",
+      "details": [
+        "notice_exclusion:124737"
+      ],
+      "hour": 8,
+      "period": "AM",
+      "rank": 0,
+      "reason": "service_policy",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/12/0/8"
+    },
+    {
+      "date": "2025-06-14",
+      "details": [
+        "notice_exclusion:124737"
+      ],
+      "hour": 17,
+      "period": "PM",
+      "rank": 0,
+      "reason": "service_policy",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/12/0/17"
+    },
+    {
+      "date": "2025-06-14",
+      "details": [
+        "notice_exclusion:124737"
+      ],
+      "hour": 18,
+      "period": "PM",
+      "rank": 0,
+      "reason": "service_policy",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/12/0/18"
+    },
+    {
+      "date": "2025-06-14",
+      "details": [
+        "notice_exclusion:124737"
+      ],
+      "hour": 7,
+      "period": "AM",
+      "rank": 1,
+      "reason": "service_policy",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/12/1/7"
+    },
+    {
+      "date": "2025-06-14",
+      "details": [
+        "notice_exclusion:124737"
+      ],
+      "hour": 8,
+      "period": "AM",
+      "rank": 1,
+      "reason": "service_policy",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/12/1/8"
+    },
+    {
+      "date": "2025-06-14",
+      "details": [
+        "notice_exclusion:124737"
+      ],
+      "hour": 17,
+      "period": "PM",
+      "rank": 1,
+      "reason": "service_policy",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/12/1/17"
+    },
+    {
+      "date": "2025-06-14",
+      "details": [
+        "notice_exclusion:124737"
+      ],
+      "hour": 18,
+      "period": "PM",
+      "rank": 1,
+      "reason": "service_policy",
+      "route": "12",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/12/1/18"
+    },
+    {
+      "date": "2025-06-14",
+      "hour": 7,
+      "onsets": 5,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/17/0/7"
+    },
+    {
+      "date": "2025-06-14",
+      "hour": 8,
+      "onsets": 5,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/17/0/8"
+    },
+    {
+      "date": "2025-06-14",
+      "hour": 18,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/17/0/18"
+    },
+    {
+      "date": "2025-06-14",
+      "hour": 7,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/17/1/7"
+    },
+    {
+      "date": "2025-06-14",
+      "hour": 8,
+      "onsets": 5,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/17/1/8"
+    },
+    {
+      "date": "2025-06-14",
+      "hour": 17,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/17/1/17"
+    },
+    {
+      "date": "2025-06-14",
+      "hour": 18,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "exploratory",
+      "weekday": false,
+      "window_id": "2025-06-14/17/1/18"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 7,
+      "onsets": 5,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/11/0/7"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 8,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/11/0/8"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 17,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/11/0/17"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 18,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/11/0/18"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 7,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/11/1/7"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 8,
+      "onsets": 12,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/11/1/8"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 17,
+      "onsets": 5,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/11/1/17"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 18,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/11/1/18"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 7,
+      "onsets": 5,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/12/0/7"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 8,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/12/0/8"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 17,
+      "onsets": 10,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/12/0/17"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 18,
+      "onsets": 10,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/12/0/18"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 7,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/12/1/7"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 8,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/12/1/8"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 17,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/12/1/17"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 17,
+      "onsets": 11,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/17/0/17"
+    },
+    {
+      "date": "2025-07-08",
+      "hour": 7,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-07-08/17/1/7"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 7,
+      "onsets": 5,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/11/0/7"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 8,
+      "onsets": 8,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/11/0/8"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 17,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/11/0/17"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 18,
+      "onsets": 5,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/11/0/18"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 7,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/11/1/7"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 8,
+      "onsets": 4,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/11/1/8"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 17,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/11/1/17"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 18,
+      "onsets": 5,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/11/1/18"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 7,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/12/0/7"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 8,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/12/0/8"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 17,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/12/0/17"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 18,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/12/0/18"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 7,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/12/1/7"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 8,
+      "onsets": 4,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/12/1/8"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 17,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/12/1/17"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 18,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/12/1/18"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 7,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/17/0/7"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 8,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/17/0/8"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 17,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/17/0/17"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 18,
+      "onsets": 11,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/17/0/18"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 7,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/17/1/7"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 8,
+      "onsets": 4,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/17/1/8"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 17,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/17/1/17"
+    },
+    {
+      "date": "2025-07-12",
+      "hour": 18,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-07-12/17/1/18"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 7,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/11/0/7"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 17,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/11/0/17"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 18,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/11/0/18"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 8,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/11/1/8"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 17,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/11/1/17"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 18,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/11/1/18"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 7,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/12/0/7"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 17,
+      "onsets": 10,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/12/0/17"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 18,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/12/0/18"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 7,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/12/1/7"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 8,
+      "onsets": 8,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/12/1/8"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 17,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/12/1/17"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 18,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/12/1/18"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "duty_not_in_active_reference",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/17/0/7"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 8,
+      "period": "AM",
+      "rank": 0,
+      "reason": "duty_not_in_active_reference",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/17/0/8"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 17,
+      "period": "PM",
+      "rank": 0,
+      "reason": "duty_not_in_active_reference",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/17/0/17"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 18,
+      "period": "PM",
+      "rank": 0,
+      "reason": "duty_not_in_active_reference",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/17/0/18"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 7,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/17/1/7"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 8,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/17/1/8"
+    },
+    {
+      "date": "2025-08-12",
+      "hour": 17,
+      "onsets": 10,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-08-12/17/1/17"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 7,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/11/0/7"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 8,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/11/0/8"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 17,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/11/0/17"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 18,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/11/0/18"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 7,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/11/1/7"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 8,
+      "onsets": 4,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/11/1/8"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 17,
+      "onsets": 4,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/11/1/17"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 18,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/11/1/18"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 7,
+      "onsets": 5,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/12/0/7"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 8,
+      "onsets": 5,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/12/0/8"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 17,
+      "onsets": 3,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/12/0/17"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 18,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/12/0/18"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 7,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/12/1/7"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 8,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/12/1/8"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 17,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/12/1/17"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 18,
+      "onsets": 3,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/12/1/18"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 7,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/17/0/7"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 8,
+      "onsets": 8,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/17/0/8"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 17,
+      "onsets": 11,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/17/0/17"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 18,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/17/0/18"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 7,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/17/1/7"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 8,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/17/1/8"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 17,
+      "onsets": 10,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/17/1/17"
+    },
+    {
+      "date": "2025-08-16",
+      "hour": 18,
+      "onsets": 11,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-08-16/17/1/18"
+    },
+    {
+      "date": "2025-09-09",
+      "hour": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "fewer_than_20_payments",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-09-09/11/0/7"
+    },
+    {
+      "date": "2025-09-09",
+      "hour": 17,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-09-09/11/0/17"
+    },
+    {
+      "date": "2025-09-09",
+      "hour": 18,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-09-09/11/0/18"
+    },
+    {
+      "date": "2025-09-09",
+      "hour": 7,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-09-09/11/1/7"
+    },
+    {
+      "date": "2025-09-09",
+      "hour": 8,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-09-09/11/1/8"
+    },
+    {
+      "date": "2025-09-09",
+      "hour": 17,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-09-09/11/1/17"
+    },
+    {
+      "date": "2025-09-09",
+      "hour": 7,
+      "onsets": 5,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-09-09/12/0/7"
+    },
+    {
+      "date": "2025-09-09",
+      "hour": 17,
+      "onsets": 10,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-09-09/12/0/17"
+    },
+    {
+      "date": "2025-09-09",
+      "hour": 7,
+      "onsets": 11,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-09-09/12/1/7"
+    },
+    {
+      "date": "2025-09-09",
+      "hour": 8,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-09-09/12/1/8"
+    },
+    {
+      "date": "2025-09-09",
+      "hour": 17,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-09-09/12/1/17"
+    },
+    {
+      "date": "2025-09-09",
+      "hour": 18,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-09-09/12/1/18"
+    },
+    {
+      "date": "2025-09-09",
+      "hour": 17,
+      "onsets": 11,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-09-09/17/0/17"
+    },
+    {
+      "date": "2025-09-09",
+      "hour": 18,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-09-09/17/0/18"
+    },
+    {
+      "date": "2025-09-09",
+      "hour": 7,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-09-09/17/1/7"
+    },
+    {
+      "date": "2025-09-09",
+      "hour": 17,
+      "onsets": 11,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-09-09/17/1/17"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 7,
+      "onsets": 5,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/11/0/7"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 8,
+      "onsets": 8,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/11/0/8"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 17,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/11/0/17"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 18,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/11/0/18"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 7,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/11/1/7"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 8,
+      "onsets": 11,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/11/1/8"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 17,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/11/1/17"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 18,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/11/1/18"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 7,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/12/0/7"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 8,
+      "onsets": 4,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/12/0/8"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 17,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/12/0/17"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 18,
+      "onsets": 4,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/12/0/18"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 7,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/12/1/7"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 8,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/12/1/8"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 17,
+      "onsets": 5,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/12/1/17"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 18,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/12/1/18"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 7,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/17/0/7"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 8,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/17/0/8"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 17,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/17/0/17"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 18,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/17/0/18"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 7,
+      "onsets": 8,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/17/1/7"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 8,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/17/1/8"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 17,
+      "onsets": 6,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/17/1/17"
+    },
+    {
+      "date": "2025-09-13",
+      "hour": 18,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-09-13/17/1/18"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 7,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/11/0/7"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 8,
+      "onsets": 13,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/11/0/8"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 17,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/11/0/17"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 18,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/11/0/18"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 7,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/11/1/7"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 17,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/11/1/17"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 18,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/11/1/18"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 7,
+      "onsets": 8,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/12/0/7"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 17,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/12/0/17"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 18,
+      "onsets": 10,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/12/0/18"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 7,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/12/1/7"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 8,
+      "onsets": 13,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/12/1/8"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 18,
+      "onsets": 10,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/12/1/18"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 7,
+      "onsets": 10,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/17/0/7"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 17,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/17/0/17"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 18,
+      "onsets": 13,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/17/0/18"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 17,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/17/1/17"
+    },
+    {
+      "date": "2025-10-14",
+      "hour": 18,
+      "onsets": 11,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": true,
+      "window_id": "2025-10-14/17/1/18"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "fewer_than_20_payments",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/11/0/7"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 8,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/11/0/8"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 17,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/11/0/17"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 18,
+      "onsets": 10,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/11/0/18"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 7,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/11/1/7"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 8,
+      "onsets": 6,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/11/1/8"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 17,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/11/1/17"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 18,
+      "onsets": 4,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "11",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/11/1/18"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 7,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/12/0/7"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 8,
+      "onsets": 5,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/12/0/8"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 17,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/12/0/17"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 18,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/12/0/18"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 7,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/12/1/7"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 8,
+      "onsets": 3,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/12/1/8"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 17,
+      "onsets": 8,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/12/1/17"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 18,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "12",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/12/1/18"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 7,
+      "onsets": 8,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/17/0/7"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 8,
+      "onsets": 7,
+      "period": "AM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/17/0/8"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 17,
+      "onsets": 10,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/17/0/17"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 18,
+      "onsets": 9,
+      "period": "PM",
+      "rank": 0,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/17/0/18"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 7,
+      "onsets": 9,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/17/1/7"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 8,
+      "onsets": 10,
+      "period": "AM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/17/1/8"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 17,
+      "onsets": 11,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/17/1/17"
+    },
+    {
+      "date": "2025-10-18",
+      "hour": 18,
+      "onsets": 7,
+      "period": "PM",
+      "rank": 1,
+      "reason": "insufficient_compact_onsets",
+      "route": "17",
+      "split": "heldout",
+      "weekday": false,
+      "window_id": "2025-10-18/17/1/18"
+    }
+  ],
+  "feed_structure": {
+    "block_id_nonempty": 0,
+    "duty_suffix": {
+      "adjacent_pairs": 1672,
+      "alternate_direction": 1663,
+      "groups": 126,
+      "nonoverlap": 1672,
+      "ordinal_plus_one": 1664
+    },
+    "route_service_components_match": 1798,
+    "third_component_control": {
+      "adjacent_pairs": 1695,
+      "alternate_direction": 675,
+      "groups": 103,
+      "nonoverlap": 125,
+      "ordinal_plus_one": 0
+    },
+    "trips": 1798
+  },
+  "heldout_stable": {
+    "duty": {
+      "all_window_capped_loss": 275.42857142857144,
+      "decided": 7,
+      "direction_counts": {
+        "0": 2,
+        "1": 5
+      },
+      "paired_opposite_mae": null,
+      "paired_positive_advantage": 0,
+      "paired_winner_mae": null,
+      "prefix_bilateral": 7,
+      "suffix_bilateral": 0,
+      "unresolved": 0,
+      "windows": 7,
+      "winner_capped_loss": 275.42857142857144,
+      "winner_suffix_feasible": 5
+    },
+    "duty_prior180": {
+      "all_window_capped_loss": 275.92857142857144,
+      "decided": 7,
+      "direction_counts": {
+        "0": 2,
+        "1": 5
+      },
+      "paired_opposite_mae": null,
+      "paired_positive_advantage": 0,
+      "paired_winner_mae": null,
+      "prefix_bilateral": 7,
+      "suffix_bilateral": 0,
+      "unresolved": 0,
+      "windows": 7,
+      "winner_capped_loss": 275.92857142857144,
+      "winner_suffix_feasible": 5
+    },
+    "duty_prior60": {
+      "all_window_capped_loss": 275.7142857142857,
+      "decided": 7,
+      "direction_counts": {
+        "0": 2,
+        "1": 5
+      },
+      "paired_opposite_mae": null,
+      "paired_positive_advantage": 0,
+      "paired_winner_mae": null,
+      "prefix_bilateral": 7,
+      "suffix_bilateral": 0,
+      "unresolved": 0,
+      "windows": 7,
+      "winner_capped_loss": 275.7142857142857,
+      "winner_suffix_feasible": 5
+    },
+    "shift_clock": {
+      "all_window_capped_loss": 32.57142857142857,
+      "decided": 7,
+      "direction_counts": {
+        "0": 4,
+        "1": 3
+      },
+      "paired_opposite_mae": null,
+      "paired_positive_advantage": 0,
+      "paired_winner_mae": null,
+      "prefix_bilateral": 2,
+      "suffix_bilateral": 0,
+      "unresolved": 0,
+      "windows": 7,
+      "winner_capped_loss": 32.57142857142857,
+      "winner_suffix_feasible": 7
+    },
+    "shuffle_gaps": {
+      "all_window_capped_loss": 270.75,
+      "decided": 7,
+      "direction_counts": {
+        "0": 2,
+        "1": 5
+      },
+      "paired_opposite_mae": 161.25,
+      "paired_positive_advantage": 1,
+      "paired_winner_mae": 18.25,
+      "prefix_bilateral": 7,
+      "suffix_bilateral": 1,
+      "unresolved": 0,
+      "windows": 7,
+      "winner_capped_loss": 270.75,
+      "winner_suffix_feasible": 5
+    },
+    "unrestricted": {
+      "all_window_capped_loss": 295.0357142857143,
+      "decided": 5,
+      "direction_counts": {
+        "0": 2,
+        "1": 3
+      },
+      "paired_opposite_mae": 30.0625,
+      "paired_positive_advantage": 2,
+      "paired_winner_mae": 59.6875,
+      "prefix_bilateral": 7,
+      "suffix_bilateral": 6,
+      "unresolved": 2,
+      "windows": 7,
+      "winner_capped_loss": 53.05,
+      "winner_suffix_feasible": 5
+    },
+    "wrong_duty": {
+      "all_window_capped_loss": 440.32142857142856,
+      "decided": 7,
+      "direction_counts": {
+        "0": 1,
+        "1": 6
+      },
+      "paired_opposite_mae": null,
+      "paired_positive_advantage": 0,
+      "paired_winner_mae": null,
+      "prefix_bilateral": 3,
+      "suffix_bilateral": 0,
+      "unresolved": 0,
+      "windows": 7,
+      "winner_capped_loss": 440.32142857142856,
+      "winner_suffix_feasible": 4
+    }
+  },
+  "paired_control_losses": {
+    "shift_clock": {
+      "duty": 210.34,
+      "paired_windows": 25,
+      "shift_clock": 151.54
+    },
+    "shuffle_gaps": {
+      "duty": 210.34,
+      "paired_windows": 25,
+      "shuffle_gaps": 206.71
+    },
+    "unrestricted": {
+      "duty": 195.70454545454547,
+      "paired_windows": 22,
+      "unrestricted": 164.51136363636363
+    },
+    "wrong_duty": {
+      "duty": 217.9375,
+      "paired_windows": 24,
+      "wrong_duty": 443.5
+    }
+  },
+  "periods": [
+    {
+      "dates": [],
+      "directions": {},
+      "period": "AM",
+      "prefix_stable_with_feasible_suffix": 0,
+      "route": "11",
+      "segment_payment_weights": {},
+      "split": "exploratory",
+      "stable_windows": 0,
+      "windows": 4
+    },
+    {
+      "dates": [],
+      "directions": {},
+      "period": "PM",
+      "prefix_stable_with_feasible_suffix": 0,
+      "route": "11",
+      "segment_payment_weights": {},
+      "split": "exploratory",
+      "stable_windows": 0,
+      "windows": 0
+    },
+    {
+      "dates": [],
+      "directions": {},
+      "period": "AM",
+      "prefix_stable_with_feasible_suffix": 0,
+      "route": "11",
+      "segment_payment_weights": {},
+      "split": "heldout",
+      "stable_windows": 0,
+      "windows": 4
+    },
+    {
+      "dates": [],
+      "directions": {},
+      "period": "PM",
+      "prefix_stable_with_feasible_suffix": 0,
+      "route": "11",
+      "segment_payment_weights": {},
+      "split": "heldout",
+      "stable_windows": 0,
+      "windows": 1
+    },
+    {
+      "dates": [],
+      "directions": {},
+      "period": "AM",
+      "prefix_stable_with_feasible_suffix": 0,
+      "route": "12",
+      "segment_payment_weights": {},
+      "split": "exploratory",
+      "stable_windows": 0,
+      "windows": 0
+    },
+    {
+      "dates": [],
+      "directions": {},
+      "period": "PM",
+      "prefix_stable_with_feasible_suffix": 0,
+      "route": "12",
+      "segment_payment_weights": {},
+      "split": "exploratory",
+      "stable_windows": 0,
+      "windows": 1
+    },
+    {
+      "dates": [],
+      "directions": {},
+      "period": "AM",
+      "prefix_stable_with_feasible_suffix": 0,
+      "route": "12",
+      "segment_payment_weights": {},
+      "split": "heldout",
+      "stable_windows": 0,
+      "windows": 3
+    },
+    {
+      "dates": [],
+      "directions": {},
+      "period": "PM",
+      "prefix_stable_with_feasible_suffix": 0,
+      "route": "12",
+      "segment_payment_weights": {},
+      "split": "heldout",
+      "stable_windows": 0,
+      "windows": 3
+    },
+    {
+      "dates": [],
+      "directions": {},
+      "period": "AM",
+      "prefix_stable_with_feasible_suffix": 0,
+      "route": "17",
+      "segment_payment_weights": {},
+      "split": "exploratory",
+      "stable_windows": 0,
+      "windows": 4
+    },
+    {
+      "dates": [
+        "2025-05-17",
+        "2025-06-10"
+      ],
+      "directions": {
+        "1": 2
+      },
+      "period": "PM",
+      "prefix_stable_with_feasible_suffix": 2,
+      "route": "17",
+      "segment_payment_weights": {
+        "1": 222
+      },
+      "split": "exploratory",
+      "stable_windows": 2,
+      "windows": 5
+    },
+    {
+      "dates": [
+        "2025-07-08",
+        "2025-09-09"
+      ],
+      "directions": {
+        "0": 1,
+        "1": 2
+      },
+      "period": "AM",
+      "prefix_stable_with_feasible_suffix": 2,
+      "route": "17",
+      "segment_payment_weights": {
+        "0": 134,
+        "1": 328
+      },
+      "split": "heldout",
+      "stable_windows": 3,
+      "windows": 9
+    },
+    {
+      "dates": [
+        "2025-07-08",
+        "2025-08-12",
+        "2025-09-09"
+      ],
+      "directions": {
+        "0": 1,
+        "1": 3
+      },
+      "period": "PM",
+      "prefix_stable_with_feasible_suffix": 3,
+      "route": "17",
+      "segment_payment_weights": {
+        "0": 104,
+        "1": 487
+      },
+      "split": "heldout",
+      "stable_windows": 4,
+      "windows": 5
+    }
+  ],
+  "sample_is_population_representative": false,
+  "windows": 39
+}

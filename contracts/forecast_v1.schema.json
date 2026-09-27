@@ -1,0 +1,277 @@
+{
+  "$defs": {
+    "AggregationUnit": {
+      "enum": [
+        "event_count",
+        "passengers",
+        "vehicles"
+      ],
+      "title": "AggregationUnit",
+      "type": "string"
+    },
+    "BucketGranularity": {
+      "enum": [
+        "hourly",
+        "daily",
+        "monthly"
+      ],
+      "title": "BucketGranularity",
+      "type": "string"
+    },
+    "ForecastHorizon": {
+      "enum": [
+        "day",
+        "month",
+        "year"
+      ],
+      "title": "ForecastHorizon",
+      "type": "string"
+    },
+    "ForecastPoint": {
+      "additionalProperties": false,
+      "properties": {
+        "bucket_end": {
+          "format": "date-time",
+          "title": "Bucket End",
+          "type": "string"
+        },
+        "bucket_start": {
+          "format": "date-time",
+          "title": "Bucket Start",
+          "type": "string"
+        },
+        "direction_id": {
+          "maxLength": 128,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_.:/-]+$",
+          "title": "Direction Id",
+          "type": "string"
+        },
+        "lower_bound": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower Bound"
+        },
+        "predicted": {
+          "minimum": 0,
+          "title": "Predicted",
+          "type": "number"
+        },
+        "route_id": {
+          "maxLength": 128,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_.:/-]+$",
+          "title": "Route Id",
+          "type": "string"
+        },
+        "stop_id": {
+          "maxLength": 128,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_.:/-]+$",
+          "title": "Stop Id",
+          "type": "string"
+        },
+        "upper_bound": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Upper Bound"
+        }
+      },
+      "required": [
+        "route_id",
+        "direction_id",
+        "stop_id",
+        "bucket_start",
+        "bucket_end",
+        "predicted"
+      ],
+      "title": "ForecastPoint",
+      "type": "object"
+    },
+    "ForecastTarget": {
+      "enum": [
+        "synthetic_boardings",
+        "validation_count",
+        "boarding_count",
+        "onboard_load"
+      ],
+      "title": "ForecastTarget",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "bucket_granularity": {
+      "$ref": "#/$defs/BucketGranularity"
+    },
+    "calendar_version": {
+      "const": "moscow-midnight.v1",
+      "default": "moscow-midnight.v1",
+      "title": "Calendar Version",
+      "type": "string"
+    },
+    "data_cutoff": {
+      "format": "date-time",
+      "title": "Data Cutoff",
+      "type": "string"
+    },
+    "dataset_id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9_.:/-]+$",
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "entity_version": {
+      "maxLength": 128,
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9_.:/-]+$",
+      "title": "Entity Version",
+      "type": "string"
+    },
+    "feature_version": {
+      "maxLength": 128,
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9_.:/-]+$",
+      "title": "Feature Version",
+      "type": "string"
+    },
+    "forecast_origin": {
+      "format": "date-time",
+      "title": "Forecast Origin",
+      "type": "string"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "graph_version": {
+      "anyOf": [
+        {
+          "maxLength": 128,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_.:/-]+$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Graph Version"
+    },
+    "horizon": {
+      "$ref": "#/$defs/ForecastHorizon"
+    },
+    "interval_level": {
+      "anyOf": [
+        {
+          "exclusiveMaximum": 1,
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Interval Level"
+    },
+    "interval_method": {
+      "anyOf": [
+        {
+          "maxLength": 128,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_.:/-]+$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Interval Method"
+    },
+    "model_version": {
+      "maxLength": 128,
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9_.:/-]+$",
+      "title": "Model Version",
+      "type": "string"
+    },
+    "points": {
+      "items": {
+        "$ref": "#/$defs/ForecastPoint"
+      },
+      "minItems": 1,
+      "title": "Points",
+      "type": "array"
+    },
+    "run_id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9_.:/-]+$",
+      "title": "Run Id",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "forecast.v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_version": {
+      "maxLength": 128,
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9_.:/-]+$",
+      "title": "Source Version",
+      "type": "string"
+    },
+    "synthetic": {
+      "title": "Synthetic",
+      "type": "boolean"
+    },
+    "target": {
+      "$ref": "#/$defs/ForecastTarget"
+    },
+    "unit": {
+      "$ref": "#/$defs/AggregationUnit"
+    }
+  },
+  "required": [
+    "schema_version",
+    "run_id",
+    "dataset_id",
+    "target",
+    "unit",
+    "synthetic",
+    "horizon",
+    "bucket_granularity",
+    "forecast_origin",
+    "generated_at",
+    "data_cutoff",
+    "source_version",
+    "feature_version",
+    "entity_version",
+    "model_version",
+    "points"
+  ],
+  "title": "ForecastArtifact",
+  "type": "object"
+}

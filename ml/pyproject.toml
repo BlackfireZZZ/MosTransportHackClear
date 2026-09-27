@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tramflow-ml"
+version = "0.1.0"
+description = "Offline training and evaluation workspace for TramFlow"
+requires-python = ">=3.13"
+dependencies = [
+  "numpy>=2.3,<3",
+  "pandas>=2.3,<4",
+  "pydantic>=2.12,<3",
+  "scikit-learn>=1.7,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "mypy>=1.18,<2",
+  "pytest>=9,<10",
+  "ruff>=0.14,<0.15",
+]
+boosting = [
+    "catboost==1.2.10",
+]
+
+[project.scripts]
+tramflow-ml = "tramflow_ml.cli:main"
+tramflow-competition = "tramflow_ml.competition_cli:main"
+tramflow-direction-structure = "tramflow_ml.competition_graph:main"
+tramflow-route-ml = "tramflow_ml.route_models.experiment:main"
+tramflow-kudago = "tramflow_ml.external.kudago.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true

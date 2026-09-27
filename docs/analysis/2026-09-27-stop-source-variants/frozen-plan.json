@@ -1,0 +1,102 @@
+{
+  "version": "independent-stop-sources.v1",
+  "config": {
+    "iterations": 100,
+    "depth": 5,
+    "learning_rate": 0.08,
+    "loss_function": "RMSE",
+    "random_seed": 20260927,
+    "thread_count": 4,
+    "verbose": false,
+    "allow_writing_files": false,
+    "allow_const_label": true
+  },
+  "sample_per_origin": 12000,
+  "source_order": [
+    "calendar",
+    "weather",
+    "traffic",
+    "events"
+  ],
+  "origins": [
+    120,
+    181,
+    243
+  ],
+  "model_registry": "data/planning/stop-source-models; checksum-bound final16 CBM",
+  "horizon_days": 61,
+  "selection": "none: exact-mask demo experiments, no production promotion",
+  "acceptance": "16 independent fits; all slice metrics disclosed, no required gain",
+  "baseline": "all sources off; incumbent calendar_weekday_blend comparison",
+  "timezone": "Europe/Moscow",
+  "events": {
+    "input_hour_rows": 631,
+    "rows_near_stop": 151,
+    "radius_km": 1,
+    "availability": "retrospective_2026_snapshot",
+    "policy": "prior84day_weekday_hour_occurrence_means",
+    "date_min": "2025-01-02",
+    "date_max": "2025-10-31",
+    "nonzero_tensor_cells": 2979,
+    "acquisition": {
+      "source": "KudaGo public-api/v1.4 events list",
+      "status": "partial_retrospective_experiment",
+      "requested_start": "2025-01-01T00:00:00+03:00",
+      "requested_end_exclusive": "2025-11-01T00:00:00+03:00",
+      "timezone": "Europe/Moscow",
+      "normalizer": "repository kudago-timerules.v1",
+      "counts": {
+        "event_cards": 100,
+        "date_records": 10057,
+        "resolved_start_in_window": 631
+      },
+      "unique_occurrences": 631,
+      "requests": [
+        {
+          "url": "https://kudago.com/public-api/v1.4/events/?lang=ru&location=msk&actual_since=2025-01-01T00%3A00%3A00&actual_until=2025-11-01T00%3A00%3A00&page_size=100&fields=id%2Cdates%2Cplace%2Cpublication_date&expand=dates%2Cplace&order_by=id",
+          "fetched_at": "2026-09-27T13:22:26.223029+00:00",
+          "path": "page-001.json",
+          "sha256": "1a62f0120c17007e385ec7218fdd126be9945100fdb7d0cc91cc16a3ab9b4a7c",
+          "bytes": 2361370
+        }
+      ],
+      "limitations": [
+        "Collected in 2026: unavailable at 2025 forecast origins. Retrospective stop-model experiment only.",
+        "Archive is incomplete: deleted cards and unregistered events absent; no whole-city coverage claim.",
+        "List pagination is single-pass, not a stable catalogue snapshot.",
+        "Counts represent sessions with resolved exact start and venue coordinates; no attendance or duration inference."
+      ],
+      "occurrences_sha256": "1a64356c19374bbbbffe0431fd85ca9830e79ac0eab8b7dbdbe828064e34eea5",
+      "stopped_before_pagination_complete": true,
+      "csv_sha256": "125bdab909db260738c98a865a7f1d1ef36b045f60bc00a64b7b17429d7fef86",
+      "csv_rows": 631,
+      "by_month": {
+        "2025-01": 86,
+        "2025-02": 98,
+        "2025-03": 102,
+        "2025-04": 91,
+        "2025-05": 70,
+        "2025-06": 73,
+        "2025-07": 35,
+        "2025-08": 5,
+        "2025-09": 32,
+        "2025-10": 39
+      },
+      "first_start_at": "2025-01-02T12:00:00+03:00",
+      "last_start_at": "2025-10-31T19:00:00+03:00",
+      "csv_semantics": "One resolved session start per event/place/start_at, no duration inference; zero means no observed listed event, not no actual event.",
+      "failure": "Page 2 failed three times: RemoteDisconnected; no catalogue completion claim.",
+      "normalizer_sha256": "cfa18d4b1c5eff826ba4bfb7bc7c128cd515c3111a38c09a670cff9a066a51b4"
+    }
+  },
+  "source_sha256": {
+    "weather": "4798ebc674918768a5ed823032d8e9683134e11973153c0fe4c7acc19ff94b83",
+    "traffic": "371d80c420eb25fd7132487b6d23736f407ee84a93edfc042f1be3b2096ef524",
+    "events": "125bdab909db260738c98a865a7f1d1ef36b045f60bc00a64b7b17429d7fef86",
+    "events_manifest": "5338b770d771e1e91e467faf2b384c9100c47ceb1dd16d67a1df27d0fc83d422",
+    "stop_source": "0748c3c1a3f40b3f950c58b8cf33a62710dd0a20b246c5b59aa2c008ddc96e97",
+    "route_labels": "cd517b447f167024e7dae805867dd82ec7b2c6aab1db43373b7d7ef1babbe51f",
+    "producer": "c0014ebb57dda49120c203d8abfcc3ef9d334794690d69323656ef1db3ca8eb3",
+    "builder": "cf36d0a83b515ba6f09067cb1095ba9c95390a393b17a21b0a5c796f8e9bebe6"
+  }
+}

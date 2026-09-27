@@ -1,0 +1,2020 @@
+<!doctype html>
+<html lang="en" data-visualize-standalone>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Fragment</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+</head>
+<body>
+<iframe id="codex-visualization" sandbox="allow-scripts" referrerpolicy="no-referrer" title="Fragment" data-srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot; data-visualize-standalone&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;Fragment&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(
+    --background,
+    var(--color-background-primary, light-dark(rgb(255 255 255), rgb(24 24 24)))
+  ) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --color-background-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --card: color-mix(in oklab, var(--foreground) 5%, var(--background));
+  --card-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --popover: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255), rgb(45 45 45))
+  );
+  --popover-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --primary: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --primary-foreground: var(
+    --color-text-inverse,
+    light-dark(rgb(255 255 255), rgb(13 13 13))
+  );
+  --secondary: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%))
+  );
+  --secondary-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: var(
+    --color-text-secondary,
+    light-dark(rgb(26 28 31 / 49.4%), rgb(255 255 255 / 49.8%))
+  );
+  --accent: var(
+    --color-background-info,
+    light-dark(rgb(229 242 255), rgb(13 39 63))
+  );
+  --accent-foreground: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --destructive: var(
+    --color-text-warning,
+    light-dark(rgb(226 85 7), rgb(255 133 73))
+  );
+  --border: var(
+    --color-border-secondary,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+  --input: var(
+    --color-border-primary,
+    light-dark(
+      rgb(26 28 31 / 11.8%),
+      color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+    )
+  );
+  --ring: var(
+    --color-ring-primary,
+    light-dark(rgb(51 156 255), rgb(131 195 255 / 76%))
+  );
+  --font-size-base: var(--font-text-md-size, 14px);
+  --blue: light-dark(rgb(51 156 255), rgb(51 156 255));
+  --orange: light-dark(rgb(226 85 7), rgb(251 106 34));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+  --red: light-dark(rgb(224 46 42), rgb(255 103 100));
+  --purple: light-dark(rgb(146 79 247), rgb(173 123 249));
+  --yellow: light-dark(rgb(255 195 0), rgb(255 210 64));
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, &quot;Segoe UI&quot;, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --icon-size: 16px;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --corner-shape: round;
+  --radius: var(--border-radius-lg, 10px);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  /* Preserve MCP aliases for older inline renderers without creating :root cycles. */
+  --color-background-primary: var(
+    --background,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --color-text-primary: var(
+    --foreground,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --color-border-secondary: var(
+    --border,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+
+  margin: 0;
+  padding: var(--visualize-paint-gutter, 0px);
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans) !important;
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+.cursor-interaction {
+  cursor: var(--cursor-interaction, pointer);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: var(--cursor-interaction, pointer);
+  font-weight: var(--font-weight-medium, 500);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: var(--corner-shape);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+#widget &gt; :not(.card, .progress) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  margin-block: 6px;
+  border: 0;
+  background: var(--border);
+}
+
+.nav {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 4px;
+}
+
+.progress {
+  display: flex;
+  height: 8px;
+  margin-block: calc((var(--line-height-normal, 1.5em) - 8px) / 2);
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+}
+
+.progress-bar:only-child {
+  border-radius: var(--radius-full);
+}
+
+.progress-bar {
+  height: 100%;
+  flex-shrink: 0;
+  border: 0;
+  background: var(--viz-series-1);
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.nav-link,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn,
+.nav-link {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: var(--cursor-interaction, pointer);
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover,
+.nav-link:not(:disabled):not([aria-disabled=&quot;true&quot;]):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.nav-pills .nav-link {
+  min-width: 0;
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.nav-justified .nav-link {
+  flex: 1 1 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.nav-pills .nav-link.active {
+  color: var(--foreground);
+  background: var(--muted);
+}
+
+.btn:disabled,
+.nav-link:disabled,
+.nav-link[aria-disabled=&quot;true&quot;] {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: var(--corner-shape);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: var(--corner-shape);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  corner-shape: var(--corner-shape);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+  [aria-pressed=&quot;true&quot;],
+  [aria-selected=&quot;true&quot;],
+  .is-selected
+) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+@media (pointer: coarse) {
+  .btn,
+  .nav-link,
+  .form-control,
+  .form-select {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Keep small-screen WebKit from zooming when a text field receives focus. */
+  .form-control,
+  .form-select {
+    font-size: max(16px, var(--font-size-normal));
+  }
+
+  .form-control[type=&quot;file&quot;]::file-selector-button {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .form-control-color[type=&quot;color&quot;] {
+    width: 44px;
+    height: 44px;
+  }
+
+  .form-control:is(
+    [type=&quot;date&quot;],
+    [type=&quot;datetime-local&quot;],
+    [type=&quot;month&quot;],
+    [type=&quot;time&quot;],
+    [type=&quot;week&quot;]
+  ) {
+    min-width: 0;
+    max-width: 100%;
+    padding-block: 8px;
+  }
+
+  .form-check {
+    min-height: 44px;
+    padding-inline: 15px;
+  }
+
+  .form-check-input {
+    position: relative;
+  }
+
+  .form-check-input::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 44px;
+    height: 44px;
+    content: &quot;&quot;;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-check-label {
+    display: inline-flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+  }
+
+  .form-range {
+    height: 44px;
+    touch-action: pan-y;
+  }
+
+  .form-range::-webkit-slider-runnable-track {
+    height: 44px;
+  }
+
+  .form-range::-moz-range-track {
+    height: 44px;
+  }
+
+  .form-range::-webkit-slider-thumb {
+    margin-top: 12px;
+  }
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+/* Model-authored chart rules can otherwise stretch icons after these styles load. */
+svg.lucide {
+  display: block;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  flex: none;
+  margin: 0 !important;
+  stroke-width: 1.6;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type=&quot;application/json&quot; id=&quot;codex-visualization-widget-state&quot;&gt;__CODEX_VISUALIZATION_WIDGET_STATE__&lt;/script&gt;
+&lt;script&gt;(() =&gt; {
+  const root = document.documentElement;
+  const mediaQuery = globalThis.matchMedia(&quot;(prefers-color-scheme: dark)&quot;);
+  const apply = Reflect.apply;
+  const isArray = Array.isArray;
+  const hasOwn = Object.hasOwn;
+  const parentWindow = globalThis.parent;
+  const stringify = JSON.stringify;
+  const parse = JSON.parse;
+  const encode = TextEncoder.prototype.encode.bind(new TextEncoder());
+  const initialStateElement = document.getElementById(
+    &quot;codex-visualization-widget-state&quot;,
+  );
+  const initialGlobals = parse(initialStateElement?.textContent ?? &quot;{}&quot;);
+  initialStateElement?.remove();
+  /** @type {Record&lt;string, unknown&gt; | null} */
+  let state = initialGlobals.widgetState ?? null;
+  const statePersistence = initialGlobals.statePersistence ?? &quot;none&quot;;
+  let nextStateRequestId = 0;
+  /** @type {Map&lt;number, { resolve: () =&gt; void; reject: (error: Error) =&gt; void; timeout: ReturnType&lt;typeof globalThis.setTimeout&gt;; serializedState: string }&gt;} */
+  const pendingStateWrites = new Map();
+  const persistenceError = () =&gt;
+    Object.assign(
+      new Error(&quot;The host could not persist the widget state update&quot;),
+      {
+        code: -32000,
+        data: { code: &quot;widget_state_persistence_failed&quot;, retryable: false },
+      },
+    );
+  /**
+   * @param {object} prototype
+   * @param {string} property
+   */
+  const getPrototypeGetter = (prototype, property) =&gt; {
+    // oxlint-disable-next-line typescript/unbound-method -- invoked through captured Reflect.apply
+    const getter = Object.getOwnPropertyDescriptor(prototype, property)?.get;
+    if (getter == null) {
+      throw new Error(`Missing ${property} getter`);
+    }
+    return getter;
+  };
+  const getMessageData = getPrototypeGetter(MessageEvent.prototype, &quot;data&quot;);
+  const getMessagePorts = getPrototypeGetter(MessageEvent.prototype, &quot;ports&quot;);
+  const getMessageSource = getPrototypeGetter(MessageEvent.prototype, &quot;source&quot;);
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const addHostMessageListener = MessagePort.prototype.addEventListener;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const postHostMessage = MessagePort.prototype.postMessage;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const startHostPort = MessagePort.prototype.start;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const stopMessagePropagation = Event.prototype.stopImmediatePropagation;
+  /** @type {MessagePort | null} */
+  let hostPort = null;
+  const postToHost = (type, payload) =&gt; {
+    if (hostPort != null) {
+      apply(postHostMessage, hostPort, [{ type, ...payload }]);
+    }
+  };
+  const openExternal = ({ href }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;open-external&quot;, { href });
+    }
+  };
+  const sendFollowUpMessage = ({ context, prompt, title }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;follow-up&quot;, { context, prompt, title });
+    }
+    return Promise.resolve();
+  };
+  /**
+   * @param {Record&lt;string, unknown&gt; | ((previous: Record&lt;string, unknown&gt; | null) =&gt; Record&lt;string, unknown&gt;)} next
+   * @returns {Promise&lt;void&gt;}
+   */
+  const setWidgetState = async (next) =&gt; {
+    const nextState = typeof next === &quot;function&quot; ? next(state) : next;
+    if (
+      nextState == null ||
+      typeof nextState !== &quot;object&quot; ||
+      isArray(nextState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const inputState = stringify(
+      nextState,
+      (_key, /** @type {unknown} */ value) =&gt; {
+        if (
+          typeof value === &quot;undefined&quot; ||
+          typeof value === &quot;function&quot; ||
+          typeof value === &quot;symbol&quot; ||
+          (typeof value === &quot;number&quot; &amp;&amp; !Number.isFinite(value))
+        ) {
+          throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+        }
+        return value;
+      },
+    );
+    const parsedState = parse(inputState);
+    if (
+      parsedState == null ||
+      typeof parsedState !== &quot;object&quot; ||
+      isArray(parsedState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const storedState = {
+      modelContent: null,
+      privateContent: null,
+      ...parsedState,
+    };
+    const serializedState = stringify(storedState);
+    if (encode(serializedState).length &gt; 16 * 1024) {
+      throw new TypeError(
+        &quot;Widget state must be a JSON object of at most 16 KiB&quot;,
+      );
+    }
+    if (
+      hasOwn(storedState, &quot;imageIds&quot;) &amp;&amp;
+      (!isArray(storedState.imageIds) ||
+        storedState.imageIds.some(
+          (/** @type {unknown} */ id) =&gt; typeof id !== &quot;string&quot;,
+        ))
+    ) {
+      throw new TypeError(&quot;Widget state imageIds must be an array of strings&quot;);
+    }
+    if (storedState.imageIds?.length &gt; 0) {
+      throw Object.assign(
+        new TypeError(&quot;Visualization state does not support image attachments&quot;),
+        { code: -32602, data: { code: &quot;images_unsupported&quot; } },
+      );
+    }
+    state = storedState;
+    globalThis.openai.widgetState = state;
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: { widgetState: state } },
+      }),
+    );
+    if (statePersistence === &quot;none&quot;) {
+      throw persistenceError();
+    }
+    const id = ++nextStateRequestId;
+    return new Promise((resolve, reject) =&gt; {
+      const timeout = globalThis.setTimeout(() =&gt; {
+        pendingStateWrites.delete(id);
+        reject(persistenceError());
+      }, 30_000);
+      pendingStateWrites.set(id, { resolve, reject, timeout, serializedState });
+      postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+    });
+  };
+  const syncTheme = () =&gt; {
+    const theme = mediaQuery.matches ? &quot;dark&quot; : &quot;light&quot;;
+    root.dataset.theme = theme;
+    globalThis.openai = {
+      ...globalThis.openai,
+      openExternal,
+      sendFollowUpMessage,
+      setWidgetState,
+      theme,
+      visualizationStyleVariables: {},
+      visualizationTheme: theme,
+      widgetState: state,
+      statePersistence,
+      stateModelContext: &quot;none&quot;,
+    };
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: globalThis.openai },
+      }),
+    );
+  };
+  const sendHeight = () =&gt; {
+    postToHost(&quot;height&quot;, {
+      height: Math.ceil(
+        Math.max(
+          document.body.scrollHeight,
+          document.body.getBoundingClientRect().height,
+        ),
+      ),
+    });
+  };
+
+  globalThis.addEventListener(
+    &quot;message&quot;,
+    (event) =&gt; {
+      const data = apply(getMessageData, event, []);
+      const ports = apply(getMessagePorts, event, []);
+      const source = apply(getMessageSource, event, []);
+      if (
+        hostPort != null ||
+        source !== parentWindow ||
+        typeof data !== &quot;object&quot; ||
+        data?.type !== &quot;codex-visualization-initialize&quot; ||
+        !isArray(ports) ||
+        ports.length !== 1
+      ) {
+        return;
+      }
+      apply(stopMessagePropagation, event, []);
+      const nextHostPort = ports[0];
+      try {
+        apply(addHostMessageListener, nextHostPort, [
+          &quot;message&quot;,
+          (event) =&gt; {
+            const data = apply(getMessageData, event, []);
+            if (typeof data === &quot;object&quot; &amp;&amp; data?.type === &quot;measure&quot;) {
+              sendHeight();
+            } else if (
+              typeof data === &quot;object&quot; &amp;&amp;
+              data?.type === &quot;widget-state-result&quot;
+            ) {
+              /** @type {unknown} */
+              const id = data.id;
+              if (typeof id !== &quot;number&quot;) {
+                return;
+              }
+              const pending = pendingStateWrites.get(id);
+              if (pending != null) {
+                pendingStateWrites.delete(id);
+                globalThis.clearTimeout(pending.timeout);
+                if (data.ok === true) {
+                  pending.resolve();
+                } else {
+                  pending.reject(persistenceError());
+                }
+              }
+            }
+          },
+        ]);
+        apply(startHostPort, nextHostPort, []);
+      } catch {
+        return;
+      }
+      hostPort = nextHostPort;
+      for (const [id, { serializedState }] of pendingStateWrites) {
+        postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+      }
+      sendHeight();
+    },
+    { capture: true },
+  );
+  document.currentScript?.remove();
+  mediaQuery.addEventListener(&quot;change&quot;, syncTheme);
+  globalThis.addEventListener(&quot;click&quot;, (event) =&gt; {
+    if (event.defaultPrevented) {
+      return;
+    }
+    let element = null;
+    if (event.target instanceof globalThis.Element) {
+      element = event.target;
+    } else if (event.target instanceof globalThis.Node) {
+      element = event.target.parentElement;
+    }
+    const link = element?.closest(&quot;a[href]&quot;);
+    const href = link?.getAttribute(&quot;href&quot;);
+    if (href == null) {
+      return;
+    }
+    if (href.startsWith(&quot;#&quot;)) {
+      let id;
+      try {
+        id = decodeURIComponent(href.slice(1));
+      } catch {
+        return;
+      }
+      const target = id.length === 0 ? root : document.getElementById(id);
+      if (
+        target == null ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      event.preventDefault();
+      postToHost(&quot;scroll-to&quot;, {
+        top: target.getBoundingClientRect().top + globalThis.scrollY,
+      });
+      return;
+    }
+    event.preventDefault();
+    openExternal({ href });
+  });
+  new ResizeObserver(sendHeight).observe(document.body);
+  syncTheme();
+})();
+&lt;/script&gt;
+&lt;div id=&quot;tram-map-v3&quot;&gt;
+&lt;style&gt;
+#tram-map-v3{position:relative;color:var(--foreground)}
+#tram-map-v3 .chart{display:block;width:100%;overflow:visible}
+#tram-map-v3 .chart text{fill:var(--foreground);font-size:12px}
+#tram-map-v3 .chart .domain,#tram-map-v3 .chart .tick line{stroke:var(--border)}
+#tram-map-v3 .plot-section{margin-top:18px}
+#tram-map-v3 .legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin:12px 0}
+#tram-map-v3 .legend button{background:transparent;border:0;border-radius:0;padding:4px 0;color:var(--foreground);font:inherit;display:inline-flex;gap:7px;align-items:center}
+#tram-map-v3 .legend button[aria-pressed=&quot;false&quot;]{opacity:.5}
+#tram-map-v3 .swatch{display:inline-block;width:22px;height:3px;background:var(--viz-series-1)}
+#tram-map-v3 .swatch.original{background:var(--viz-series-2)}
+#tram-map-v3 .detail{min-height:44px;margin:10px 0;color:var(--foreground)}
+#tram-map-v3 .tooltip{position:absolute;pointer-events:none;max-width:290px;background:var(--popover);color:var(--popover-foreground);z-index:4}
+#tram-map-v3 details{margin-top:16px}
+#tram-map-v3 summary{padding:8px 0}
+#tram-map-v3 .bar{height:9px;background:var(--muted);position:relative;min-width:80px;margin-top:4px}
+#tram-map-v3 .bar span{display:block;height:100%;background:var(--viz-series-1)}
+#tram-map-v3 .oldbar span{background:var(--viz-series-2)}
+#tram-map-v3 tr.chosen td{background:var(--accent);color:var(--accent-foreground)}
+#tram-map-v3 .selection-label{margin-top:8px}
+&lt;/style&gt;
+&lt;h2&gt;Привязка оплат к остановкам · v3&lt;/h2&gt;
+&lt;div class=&quot;tabular-nums&quot;&gt;59,67 млн оплат · покрытие &lt;strong&gt;35,30% → 80,28%&lt;/strong&gt; · назначенные остановки — оценки&lt;/div&gt;
+&lt;div class=&quot;viz-controls&quot; style=&quot;margin-top:16px&quot;&gt;
+&lt;label class=&quot;form-label&quot;&gt;Дата примера&lt;select class=&quot;form-select&quot; id=&quot;tm-date&quot;&gt;&lt;option value=&quot;2025-01-14&quot;&gt;14 января 2025&lt;/option&gt;&lt;option value=&quot;2025-05-13&quot; selected&gt;13 мая 2025&lt;/option&gt;&lt;option value=&quot;2025-09-09&quot;&gt;9 сентября 2025&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;
+&lt;label class=&quot;form-label&quot;&gt;Маршрут&lt;select class=&quot;form-select&quot; id=&quot;tm-route&quot;&gt;&lt;option&gt;11&lt;/option&gt;&lt;option&gt;12&lt;/option&gt;&lt;option selected&gt;17&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;div id=&quot;tm-caption&quot; class=&quot;text-small selection-label&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;legend&quot; aria-label=&quot;Ряды графика&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;cursor-interaction&quot; id=&quot;tm-planned&quot; aria-pressed=&quot;true&quot;&gt;&lt;span class=&quot;swatch original&quot;&gt;&lt;/span&gt;Исходное расписание&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;cursor-interaction&quot; id=&quot;tm-corrected&quot; aria-pressed=&quot;true&quot;&gt;&lt;span class=&quot;swatch&quot;&gt;&lt;/span&gt;После коррекции&lt;/button&gt;
+&lt;span class=&quot;text-small&quot;&gt;◆ первая оплата · ● сильный якорь&lt;/span&gt;
+&lt;/div&gt;
+&lt;svg id=&quot;tm-clock&quot; class=&quot;chart&quot; role=&quot;img&quot; aria-label=&quot;Исходное и скорректированное время прохождения остановок&quot;&gt;&lt;/svg&gt;
+&lt;div class=&quot;plot-section&quot;&gt;
+&lt;svg id=&quot;tm-count&quot; class=&quot;chart&quot; role=&quot;img&quot; aria-label=&quot;Количество оплат за 30 секунд: назначенные и неизвестные остановки&quot;&gt;&lt;/svg&gt;
+&lt;div class=&quot;text-small&quot;&gt;Заполненные столбцы — привязано · штриховка — неизвестная остановка&lt;/div&gt;
+&lt;/div&gt;
+&lt;label class=&quot;form-label&quot; for=&quot;tm-stop&quot;&gt;Остановка &lt;output id=&quot;tm-stop-label&quot; class=&quot;tabular-nums&quot;&gt;&lt;/output&gt;&lt;/label&gt;
+&lt;input id=&quot;tm-stop&quot; type=&quot;range&quot; class=&quot;form-range&quot; min=&quot;1&quot; max=&quot;30&quot; value=&quot;1&quot;&gt;
+&lt;div id=&quot;tm-detail&quot; class=&quot;detail tabular-nums&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+&lt;details&gt;&lt;summary&gt;Остановки выбранного рейса&lt;/summary&gt;&lt;div class=&quot;table-responsive&quot;&gt;&lt;table class=&quot;table table-sm&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;№ · Остановка&lt;/th&gt;&lt;th&gt;Расписание&lt;/th&gt;&lt;th&gt;После коррекции&lt;/th&gt;&lt;th&gt;Оплат&lt;/th&gt;&lt;th&gt;Основание времени&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody id=&quot;tm-rows&quot;&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;Покрытие по всем месяцам и причины остатка&lt;/summary&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;&lt;table class=&quot;table table-sm&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Месяц&lt;/th&gt;&lt;th&gt;Было&lt;/th&gt;&lt;th&gt;Стало&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody id=&quot;tm-months&quot;&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;&lt;table class=&quot;table table-sm&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Основание назначения&lt;/th&gt;&lt;th class=&quot;text-end&quot;&gt;Валидаций&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody id=&quot;tm-basis&quot;&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;&lt;table class=&quot;table table-sm&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Причина неизвестной остановки&lt;/th&gt;&lt;th class=&quot;text-end&quot;&gt;Валидаций&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody id=&quot;tm-reasons&quot;&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;/details&gt;
+&lt;div class=&quot;text-small&quot; style=&quot;margin-top:12px&quot;&gt;Примеры: первый подходящий рейс 06–10 ч с ≥100 оплатами; без отбора по качеству совпадений. Время — Москва.&lt;/div&gt;
+&lt;div class=&quot;tooltip&quot; id=&quot;tm-tip&quot; role=&quot;tooltip&quot; hidden&gt;&lt;/div&gt;
+&lt;script type=&quot;application/json&quot; id=&quot;tm-data&quot;&gt;{&quot;examples&quot;:[{&quot;date&quot;:&quot;2025-01-14&quot;,&quot;route&quot;:&quot;11&quot;,&quot;trip&quot;:&quot;210_3159499_1_210&quot;,&quot;direction&quot;:&quot;0&quot;,&quot;basis&quot;:&quot;transferred_calendar&quot;,&quot;donor&quot;:&quot;2025-04-03&quot;,&quot;total&quot;:124,&quot;assigned&quot;:101,&quot;anchors&quot;:[[0,22465.0],[5,22763.0],[13,23519.0],[24,24528.0],[41,26287.0]],&quot;bins&quot;:[[22440,1,0],[22470,1,0],[22500,0,0],[22530,0,0],[22560,0,0],[22590,0,0],[22620,0,0],[22650,0,0],[22680,0,0],[22710,0,0],[22740,2,0],[22770,1,0],[22800,0,0],[22830,0,0],[22860,0,0],[22890,0,0],[22920,1,0],[22950,0,0],[22980,0,0],[23010,1,0],[23040,0,0],[23070,0,0],[23100,0,0],[23130,0,0],[23160,0,0],[23190,2,0],[23220,0,0],[23250,0,0],[23280,0,0],[23310,5,0],[23340,0,0],[23370,0,0],[23400,0,0],[23430,1,0],[23460,0,0],[23490,1,0],[23520,6,0],[23550,2,0],[23580,0,0],[23610,0,0],[23640,0,0],[23670,0,0],[23700,0,0],[23730,0,0],[23760,0,0],[23790,0,0],[23820,0,0],[23850,0,0],[23880,0,0],[23910,0,0],[23940,0,0],[23970,0,0],[24000,0,0],[24030,0,0],[24060,0,0],[24090,0,0],[24120,0,0],[24150,0,0],[24180,0,0],[24210,0,0],[24240,0,0],[24270,0,0],[24300,4,0],[24330,0,0],[24360,0,0],[24390,3,0],[24420,0,0],[24450,0,0],[24480,0,0],[24510,6,0],[24540,5,0],[24570,0,0],[24600,0,0],[24630,0,0],[24660,0,0],[24690,0,0],[24720,0,0],[24750,0,0],[24780,0,0],[24810,0,0],[24840,0,0],[24870,0,0],[24900,0,0],[24930,0,0],[24960,0,0],[24990,0,0],[25020,0,0],[25050,0,0],[25080,0,0],[25110,0,0],[25140,0,0],[25170,0,0],[25200,0,0],[25230,0,0],[25260,0,0],[25290,0,0],[25320,0,0],[25350,0,0],[25380,0,0],[25410,0,0],[25440,0,0],[25470,0,0],[25500,0,0],[25530,0,0],[25560,0,0],[25590,0,0],[25620,0,0],[25650,0,0],[25680,6,0],[25710,8,0],[25740,10,0],[25770,2,0],[25800,10,0],[25830,3,0],[25860,4,0],[25890,3,0],[25920,0,0],[25950,0,0],[25980,3,0],[26010,1,0],[26040,1,0],[26070,0,0],[26100,3,0],[26130,0,0],[26160,0,0],[26190,4,0],[26220,0,0],[26250,0,0],[26280,1,2],[26310,0,1],[26340,0,1],[26370,0,0],[26400,0,0],[26430,0,0],[26460,0,0],[26490,0,0],[26520,0,0],[26550,0,0],[26580,0,0],[26610,0,0],[26640,0,0],[26670,0,0],[26700,0,1],[26730,0,0],[26760,0,0],[26790,0,0],[26820,0,0],[26850,0,0],[26880,0,10],[26910,0,2],[26940,0,0],[26970,0,1],[27000,0,0],[27030,0,0],[27060,0,0],[27090,0,0],[27120,0,0],[27150,0,0],[27180,0,0],[27210,0,3],[27240,0,1],[27270,0,0],[27300,0,0],[27330,0,0],[27360,0,0],[27390,0,0],[27420,0,0],[27450,0,0],[27480,0,0],[27510,0,0],[27540,0,1],[27570,0,0]],&quot;stops&quot;:[{&quot;index&quot;:1,&quot;name&quot;:&quot;Останкино&quot;,&quot;planned&quot;:23340,&quot;corrected&quot;:22465.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;first&quot;},{&quot;index&quot;:2,&quot;name&quot;:&quot;Останкино&quot;,&quot;planned&quot;:23400,&quot;corrected&quot;:22525.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:3,&quot;name&quot;:&quot;Аргуновская улица&quot;,&quot;planned&quot;:23460,&quot;corrected&quot;:22585.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:4,&quot;name&quot;:&quot;Улица Цандера&quot;,&quot;planned&quot;:23520,&quot;corrected&quot;:22645.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:5,&quot;name&quot;:&quot;ВДНХ (южная)&quot;,&quot;planned&quot;:23580,&quot;corrected&quot;:22705.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:6,&quot;name&quot;:&quot;Метро «ВДНХ»&quot;,&quot;planned&quot;:23640,&quot;corrected&quot;:22763.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:7,&quot;name&quot;:&quot;ВДНХ (северная)&quot;,&quot;planned&quot;:23760,&quot;corrected&quot;:22883.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:8,&quot;name&quot;:&quot;Ярославская улица&quot;,&quot;planned&quot;:23940,&quot;corrected&quot;:23063.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:9,&quot;name&quot;:&quot;Улица Бориса Галушкина, 17&quot;,&quot;planned&quot;:24000,&quot;corrected&quot;:23123.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:10,&quot;name&quot;:&quot;Площадь Академика Люльки&quot;,&quot;planned&quot;:24060,&quot;corrected&quot;:23183.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:11,&quot;name&quot;:&quot;Станция Юных натуралистов&quot;,&quot;planned&quot;:24180,&quot;corrected&quot;:23303.0,&quot;count&quot;:5,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:12,&quot;name&quot;:&quot;Институт иностранных языков&quot;,&quot;planned&quot;:24240,&quot;corrected&quot;:23363.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:13,&quot;name&quot;:&quot;Ростокинский проезд&quot;,&quot;planned&quot;:24300,&quot;corrected&quot;:23423.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:14,&quot;name&quot;:&quot;Богатырский мост&quot;,&quot;planned&quot;:24420,&quot;corrected&quot;:23519.0,&quot;count&quot;:9,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:15,&quot;name&quot;:&quot;Богородский храм&quot;,&quot;planned&quot;:24480,&quot;corrected&quot;:23579.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:16,&quot;name&quot;:&quot;Инновационный университет&quot;,&quot;planned&quot;:24600,&quot;corrected&quot;:23699.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:17,&quot;name&quot;:&quot;1-я Прогонная ул.&quot;,&quot;planned&quot;:24660,&quot;corrected&quot;:23759.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:18,&quot;name&quot;:&quot;Телерадиокомпания «МИР»&quot;,&quot;planned&quot;:24720,&quot;corrected&quot;:23819.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:19,&quot;name&quot;:&quot;Мосгорсуд&quot;,&quot;planned&quot;:24780,&quot;corrected&quot;:23879.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:20,&quot;name&quot;:&quot;Улица Хромова&quot;,&quot;planned&quot;:24900,&quot;corrected&quot;:23999.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:21,&quot;name&quot;:&quot;Метро «Преображенская площадь»&quot;,&quot;planned&quot;:25020,&quot;corrected&quot;:24119.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:22,&quot;name&quot;:&quot;Преображенский рынок&quot;,&quot;planned&quot;:25140,&quot;corrected&quot;:24239.0,&quot;count&quot;:4,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:23,&quot;name&quot;:&quot;Ул. Преображенский Вал&quot;,&quot;planned&quot;:25260,&quot;corrected&quot;:24359.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:24,&quot;name&quot;:&quot;Ул. Измайловский Вал&quot;,&quot;planned&quot;:25320,&quot;corrected&quot;:24419.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:25,&quot;name&quot;:&quot;Метро «Семёновская»&quot;,&quot;planned&quot;:25440,&quot;corrected&quot;:24528.0,&quot;count&quot;:11,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:26,&quot;name&quot;:&quot;Метро «Семёновская»&quot;,&quot;planned&quot;:25560,&quot;corrected&quot;:24648.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:27,&quot;name&quot;:&quot;Улица Ибрагимова&quot;,&quot;planned&quot;:25680,&quot;corrected&quot;:24768.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:28,&quot;name&quot;:&quot;Фортунатовская ул.&quot;,&quot;planned&quot;:25800,&quot;corrected&quot;:24888.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:29,&quot;name&quot;:&quot;Мост Окружной железной дороги&quot;,&quot;planned&quot;:25980,&quot;corrected&quot;:25068.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:30,&quot;name&quot;:&quot;Метро «Партизанская»&quot;,&quot;planned&quot;:26100,&quot;corrected&quot;:25188.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:31,&quot;name&quot;:&quot;Главная аллея&quot;,&quot;planned&quot;:26220,&quot;corrected&quot;:25308.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:32,&quot;name&quot;:&quot;Галерея «Измайлово»&quot;,&quot;planned&quot;:26400,&quot;corrected&quot;:25488.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:33,&quot;name&quot;:&quot;Измайловская пл.&quot;,&quot;planned&quot;:26460,&quot;corrected&quot;:25548.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:34,&quot;name&quot;:&quot;3-я Парковая улица&quot;,&quot;planned&quot;:26580,&quot;corrected&quot;:25668.0,&quot;count&quot;:13,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:35,&quot;name&quot;:&quot;5-я Парковая ул.&quot;,&quot;planned&quot;:26640,&quot;corrected&quot;:25728.0,&quot;count&quot;:13,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:36,&quot;name&quot;:&quot;7-я Парковая ул.&quot;,&quot;planned&quot;:26700,&quot;corrected&quot;:25788.0,&quot;count&quot;:12,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:37,&quot;name&quot;:&quot;Метро «Первомайская»&quot;,&quot;planned&quot;:26760,&quot;corrected&quot;:25848.0,&quot;count&quot;:8,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:38,&quot;name&quot;:&quot;Районный центр «Первомайский»&quot;,&quot;planned&quot;:26880,&quot;corrected&quot;:25968.0,&quot;count&quot;:4,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:39,&quot;name&quot;:&quot;13-я Парковая улица&quot;,&quot;planned&quot;:26940,&quot;corrected&quot;:26028.0,&quot;count&quot;:4,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:40,&quot;name&quot;:&quot;15-я Парковая ул.&quot;,&quot;planned&quot;:27060,&quot;corrected&quot;:26148.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:41,&quot;name&quot;:&quot;Восточное Измайлово&quot;,&quot;planned&quot;:27120,&quot;corrected&quot;:26208.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:42,&quot;name&quot;:&quot;Восточное Измайлово&quot;,&quot;planned&quot;:27180,&quot;corrected&quot;:26287.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;strong&quot;}]},{&quot;date&quot;:&quot;2025-01-14&quot;,&quot;route&quot;:&quot;12&quot;,&quot;trip&quot;:&quot;291_3161209_1_210&quot;,&quot;direction&quot;:&quot;1&quot;,&quot;basis&quot;:&quot;transferred_calendar&quot;,&quot;donor&quot;:&quot;2025-05-05&quot;,&quot;total&quot;:229,&quot;assigned&quot;:187,&quot;anchors&quot;:[[0,24212.0],[12,25374.0],[30,27068.0],[31,27156.0],[37,27932.0],[44,28517.0]],&quot;bins&quot;:[[24210,1,0],[24240,0,0],[24270,0,0],[24300,0,0],[24330,0,0],[24360,0,0],[24390,0,0],[24420,0,0],[24450,0,0],[24480,0,0],[24510,0,0],[24540,0,0],[24570,0,0],[24600,0,0],[24630,1,0],[24660,0,0],[24690,0,0],[24720,0,0],[24750,0,0],[24780,0,0],[24810,0,0],[24840,0,0],[24870,0,0],[24900,0,0],[24930,0,0],[24960,0,0],[24990,0,0],[25020,0,0],[25050,0,0],[25080,0,0],[25110,0,0],[25140,0,0],[25170,0,0],[25200,0,0],[25230,0,0],[25260,0,0],[25290,0,0],[25320,2,0],[25350,2,0],[25380,0,0],[25410,1,0],[25440,2,0],[25470,0,0],[25500,1,0],[25530,0,0],[25560,0,0],[25590,0,0],[25620,0,0],[25650,0,0],[25680,1,0],[25710,5,0],[25740,0,0],[25770,0,0],[25800,0,0],[25830,0,0],[25860,0,0],[25890,0,0],[25920,2,0],[25950,1,0],[25980,0,0],[26010,0,0],[26040,0,0],[26070,0,0],[26100,0,0],[26130,1,0],[26160,1,0],[26190,3,0],[26220,0,0],[26250,0,0],[26280,0,0],[26310,0,0],[26340,0,0],[26370,0,0],[26400,0,0],[26430,0,0],[26460,1,0],[26490,1,0],[26520,0,0],[26550,0,0],[26580,12,0],[26610,13,0],[26640,0,0],[26670,0,0],[26700,0,0],[26730,0,0],[26760,4,0],[26790,0,0],[26820,0,0],[26850,7,0],[26880,2,0],[26910,0,0],[26940,1,0],[26970,0,0],[27000,0,0],[27030,0,0],[27060,11,0],[27090,3,0],[27120,0,0],[27150,26,0],[27180,5,0],[27210,9,0],[27240,1,0],[27270,0,0],[27300,0,0],[27330,0,0],[27360,0,0],[27390,0,0],[27420,2,0],[27450,0,0],[27480,0,0],[27510,0,0],[27540,1,0],[27570,1,0],[27600,1,0],[27630,0,0],[27660,2,0],[27690,1,0],[27720,0,0],[27750,6,0],[27780,3,0],[27810,4,0],[27840,1,0],[27870,0,0],[27900,0,0],[27930,13,0],[27960,2,0],[27990,1,0],[28020,3,0],[28050,0,0],[28080,0,0],[28110,3,0],[28140,0,0],[28170,0,0],[28200,0,0],[28230,1,0],[28260,0,0],[28290,0,0],[28320,0,0],[28350,0,0],[28380,0,0],[28410,0,0],[28440,0,0],[28470,0,0],[28500,7,0],[28530,13,0],[28560,0,0],[28590,2,0],[28620,0,0],[28650,0,2],[28680,0,1],[28710,0,0],[28740,0,0],[28770,0,0],[28800,0,3],[28830,0,0],[28860,0,0],[28890,0,0],[28920,0,0],[28950,0,0],[28980,0,0],[29010,0,0],[29040,0,0],[29070,0,0],[29100,0,5],[29130,0,0],[29160,0,0],[29190,0,0],[29220,0,0],[29250,0,0],[29280,0,0],[29310,0,0],[29340,0,1],[29370,0,3],[29400,0,3],[29430,0,4],[29460,0,1],[29490,0,0],[29520,0,0],[29550,0,1],[29580,0,1],[29610,0,4],[29640,0,0],[29670,0,3],[29700,0,3],[29730,0,2],[29760,0,0],[29790,0,1],[29820,0,4],[29850,0,0]],&quot;stops&quot;:[{&quot;index&quot;:1,&quot;name&quot;:&quot;МЦК Дубровка&quot;,&quot;planned&quot;:24780,&quot;corrected&quot;:24212.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;first&quot;},{&quot;index&quot;:2,&quot;name&quot;:&quot;МЦК Дубровка&quot;,&quot;planned&quot;:24840,&quot;corrected&quot;:24272.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:3,&quot;name&quot;:&quot;Метро «Дубровка»&quot;,&quot;planned&quot;:24960,&quot;corrected&quot;:24392.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:4,&quot;name&quot;:&quot;Новоостаповская ул.&quot;,&quot;planned&quot;:25020,&quot;corrected&quot;:24452.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:5,&quot;name&quot;:&quot;ЦНИИТМАШ&quot;,&quot;planned&quot;:25080,&quot;corrected&quot;:24512.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:6,&quot;name&quot;:&quot;Шарикоподшипниковская улица&quot;,&quot;planned&quot;:25140,&quot;corrected&quot;:24572.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:7,&quot;name&quot;:&quot;Арбатецкая улица&quot;,&quot;planned&quot;:25260,&quot;corrected&quot;:24692.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:8,&quot;name&quot;:&quot;Динамовская улица&quot;,&quot;planned&quot;:25320,&quot;corrected&quot;:24752.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:9,&quot;name&quot;:&quot;Метро «Пролетарская»&quot;,&quot;planned&quot;:25440,&quot;corrected&quot;:24872.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:10,&quot;name&quot;:&quot;Кинотеатр «Победа» - Детский театр&quot;,&quot;planned&quot;:25620,&quot;corrected&quot;:25052.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:11,&quot;name&quot;:&quot;Абельмановская Застава&quot;,&quot;planned&quot;:25740,&quot;corrected&quot;:25172.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:12,&quot;name&quot;:&quot;Новорогожская улица&quot;,&quot;planned&quot;:25860,&quot;corrected&quot;:25292.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:13,&quot;name&quot;:&quot;Библиотечная улица&quot;,&quot;planned&quot;:25920,&quot;corrected&quot;:25374.0,&quot;count&quot;:5,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:14,&quot;name&quot;:&quot;Метро «Площадь Ильича»&quot;,&quot;planned&quot;:26040,&quot;corrected&quot;:25494.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:15,&quot;name&quot;:&quot;МЦД Москва-Товарная&quot;,&quot;planned&quot;:26160,&quot;corrected&quot;:25614.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:16,&quot;name&quot;:&quot;Старообрядческая улица&quot;,&quot;planned&quot;:26220,&quot;corrected&quot;:25674.0,&quot;count&quot;:6,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:17,&quot;name&quot;:&quot;Душинская улица&quot;,&quot;planned&quot;:26280,&quot;corrected&quot;:25734.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:18,&quot;name&quot;:&quot;Горбатый путепровод&quot;,&quot;planned&quot;:26340,&quot;corrected&quot;:25794.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:19,&quot;name&quot;:&quot;Метро «Авиамоторная»&quot;,&quot;planned&quot;:26400,&quot;corrected&quot;:25854.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:20,&quot;name&quot;:&quot;Метро «Авиамоторная»&quot;,&quot;planned&quot;:26520,&quot;corrected&quot;:25974.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:21,&quot;name&quot;:&quot;Д/к «Компрессор»&quot;,&quot;planned&quot;:26580,&quot;corrected&quot;:26034.0,&quot;count&quot;:5,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:22,&quot;name&quot;:&quot;Улица Буракова&quot;,&quot;planned&quot;:26760,&quot;corrected&quot;:26214.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:23,&quot;name&quot;:&quot;Гаражная улица&quot;,&quot;planned&quot;:26880,&quot;corrected&quot;:26334.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:24,&quot;name&quot;:&quot;3-я улица Соколиной Горы&quot;,&quot;planned&quot;:26940,&quot;corrected&quot;:26394.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:25,&quot;name&quot;:&quot;5-я улица Соколиной Горы&quot;,&quot;planned&quot;:27000,&quot;corrected&quot;:26454.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:26,&quot;name&quot;:&quot;Просп. Буденного, 24&quot;,&quot;planned&quot;:27120,&quot;corrected&quot;:26574.0,&quot;count&quot;:25,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:27,&quot;name&quot;:&quot;8-я улица Соколиной Горы&quot;,&quot;planned&quot;:27180,&quot;corrected&quot;:26634.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:28,&quot;name&quot;:&quot;9-я ул. Соколиной Горы&quot;,&quot;planned&quot;:27240,&quot;corrected&quot;:26694.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:29,&quot;name&quot;:&quot;Стадион «Крылья Советов»&quot;,&quot;planned&quot;:27300,&quot;corrected&quot;:26754.0,&quot;count&quot;:8,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:30,&quot;name&quot;:&quot;Кирпичная ул.&quot;,&quot;planned&quot;:27420,&quot;corrected&quot;:26874.0,&quot;count&quot;:7,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:31,&quot;name&quot;:&quot;Метро «Семёновская»&quot;,&quot;planned&quot;:27660,&quot;corrected&quot;:27068.0,&quot;count&quot;:13,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:32,&quot;name&quot;:&quot;Улица Ибрагимова&quot;,&quot;planned&quot;:27780,&quot;corrected&quot;:27156.0,&quot;count&quot;:41,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:33,&quot;name&quot;:&quot;Фортунатовская ул.&quot;,&quot;planned&quot;:27900,&quot;corrected&quot;:27276.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:34,&quot;name&quot;:&quot;Мост Окружной железной дороги&quot;,&quot;planned&quot;:28080,&quot;corrected&quot;:27456.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:35,&quot;name&quot;:&quot;Метро «Партизанская»&quot;,&quot;planned&quot;:28200,&quot;corrected&quot;:27576.0,&quot;count&quot;:5,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:36,&quot;name&quot;:&quot;Главная аллея&quot;,&quot;planned&quot;:28320,&quot;corrected&quot;:27696.0,&quot;count&quot;:14,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:37,&quot;name&quot;:&quot;Галерея «Измайлово»&quot;,&quot;planned&quot;:28500,&quot;corrected&quot;:27876.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:38,&quot;name&quot;:&quot;Измайловская пл.&quot;,&quot;planned&quot;:28560,&quot;corrected&quot;:27932.0,&quot;count&quot;:19,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:39,&quot;name&quot;:&quot;3-я Парковая улица&quot;,&quot;planned&quot;:28680,&quot;corrected&quot;:28052.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:40,&quot;name&quot;:&quot;5-я Парковая ул.&quot;,&quot;planned&quot;:28740,&quot;corrected&quot;:28112.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:41,&quot;name&quot;:&quot;7-я Парковая ул.&quot;,&quot;planned&quot;:28800,&quot;corrected&quot;:28172.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:42,&quot;name&quot;:&quot;Метро «Первомайская»&quot;,&quot;planned&quot;:28860,&quot;corrected&quot;:28232.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:43,&quot;name&quot;:&quot;Районный центр «Первомайский»&quot;,&quot;planned&quot;:28980,&quot;corrected&quot;:28352.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:44,&quot;name&quot;:&quot;13-я Парковая улица&quot;,&quot;planned&quot;:29040,&quot;corrected&quot;:28412.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:45,&quot;name&quot;:&quot;15-я Парковая ул.&quot;,&quot;planned&quot;:29160,&quot;corrected&quot;:28517.0,&quot;count&quot;:20,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:46,&quot;name&quot;:&quot;Восточное Измайлово&quot;,&quot;planned&quot;:29220,&quot;corrected&quot;:28577.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:47,&quot;name&quot;:&quot;Восточное Измайлово&quot;,&quot;planned&quot;:29280,&quot;corrected&quot;:28637.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;}]},{&quot;date&quot;:&quot;2025-01-14&quot;,&quot;route&quot;:&quot;17&quot;,&quot;trip&quot;:&quot;375_3161086_1_221&quot;,&quot;direction&quot;:&quot;1&quot;,&quot;basis&quot;:&quot;transferred_calendar&quot;,&quot;donor&quot;:&quot;2025-04-29&quot;,&quot;total&quot;:142,&quot;assigned&quot;:74,&quot;anchors&quot;:[[0,23101.0],[4,23340.0],[9,23810.0],[10,23916.0],[24,25257.0]],&quot;bins&quot;:[[23100,1,0],[23130,0,0],[23160,0,0],[23190,0,0],[23220,1,0],[23250,0,0],[23280,0,0],[23310,0,0],[23340,5,0],[23370,0,0],[23400,0,0],[23430,0,0],[23460,0,0],[23490,0,0],[23520,0,0],[23550,0,0],[23580,0,0],[23610,0,0],[23640,0,0],[23670,0,0],[23700,0,0],[23730,2,0],[23760,0,0],[23790,5,0],[23820,0,0],[23850,0,0],[23880,0,0],[23910,7,0],[23940,1,0],[23970,2,0],[24000,0,0],[24030,0,0],[24060,1,0],[24090,0,0],[24120,0,0],[24150,0,0],[24180,0,0],[24210,0,0],[24240,4,0],[24270,1,0],[24300,0,0],[24330,0,0],[24360,2,0],[24390,0,0],[24420,1,0],[24450,0,0],[24480,0,0],[24510,0,0],[24540,0,0],[24570,0,0],[24600,0,0],[24630,0,0],[24660,0,0],[24690,0,0],[24720,0,0],[24750,0,0],[24780,0,0],[24810,0,0],[24840,0,0],[24870,0,0],[24900,0,0],[24930,0,0],[24960,0,0],[24990,0,0],[25020,0,0],[25050,6,0],[25080,2,0],[25110,1,0],[25140,1,0],[25170,0,0],[25200,0,0],[25230,6,0],[25260,15,0],[25290,8,0],[25320,2,0],[25350,0,0],[25380,0,17],[25410,0,6],[25440,0,0],[25470,0,0],[25500,0,0],[25530,0,11],[25560,0,3],[25590,0,2],[25620,0,5],[25650,0,0],[25680,0,1],[25710,0,0],[25740,0,0],[25770,0,3],[25800,0,1],[25830,0,0],[25860,0,1],[25890,0,0],[25920,0,3],[25950,0,3],[25980,0,0],[26010,0,0],[26040,0,0],[26070,0,1],[26100,0,1],[26130,0,0],[26160,0,0],[26190,0,0],[26220,0,0],[26250,0,0],[26280,0,2],[26310,0,1],[26340,0,2],[26370,0,1],[26400,0,0],[26430,0,0],[26460,0,4],[26490,0,0]],&quot;stops&quot;:[{&quot;index&quot;:1,&quot;name&quot;:&quot;Останкино&quot;,&quot;planned&quot;:23940,&quot;corrected&quot;:23101.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;first&quot;},{&quot;index&quot;:2,&quot;name&quot;:&quot;Останкино&quot;,&quot;planned&quot;:24000,&quot;corrected&quot;:23161.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:3,&quot;name&quot;:&quot;Аргуновская улица&quot;,&quot;planned&quot;:24060,&quot;corrected&quot;:23221.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:4,&quot;name&quot;:&quot;Улица Цандера&quot;,&quot;planned&quot;:24120,&quot;corrected&quot;:23281.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:5,&quot;name&quot;:&quot;ВДНХ (южная)&quot;,&quot;planned&quot;:24180,&quot;corrected&quot;:23340.0,&quot;count&quot;:5,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:6,&quot;name&quot;:&quot;Метро «ВДНХ»&quot;,&quot;planned&quot;:24240,&quot;corrected&quot;:23400.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:7,&quot;name&quot;:&quot;ВДНХ (северная)&quot;,&quot;planned&quot;:24360,&quot;corrected&quot;:23520.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:8,&quot;name&quot;:&quot;Улица Сергея Эйзенштейна&quot;,&quot;planned&quot;:24480,&quot;corrected&quot;:23640.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:9,&quot;name&quot;:&quot;Сельскохозяйственная улица&quot;,&quot;planned&quot;:24540,&quot;corrected&quot;:23700.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:10,&quot;name&quot;:&quot;Улица Докукина&quot;,&quot;planned&quot;:24660,&quot;corrected&quot;:23810.0,&quot;count&quot;:5,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:11,&quot;name&quot;:&quot;МЦК Ростокино&quot;,&quot;planned&quot;:24780,&quot;corrected&quot;:23916.0,&quot;count&quot;:10,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:12,&quot;name&quot;:&quot;Северянинский путепровод&quot;,&quot;planned&quot;:24900,&quot;corrected&quot;:24036.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:13,&quot;name&quot;:&quot;Социальный фонд России&quot;,&quot;planned&quot;:25020,&quot;corrected&quot;:24156.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:14,&quot;name&quot;:&quot;Берингов проезд&quot;,&quot;planned&quot;:25080,&quot;corrected&quot;:24216.0,&quot;count&quot;:4,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:15,&quot;name&quot;:&quot;Верхоянская улица&quot;,&quot;planned&quot;:25140,&quot;corrected&quot;:24276.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:16,&quot;name&quot;:&quot;Радужная улица&quot;,&quot;planned&quot;:25260,&quot;corrected&quot;:24396.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:17,&quot;name&quot;:&quot;Печорская улица&quot;,&quot;planned&quot;:25380,&quot;corrected&quot;:24516.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:18,&quot;name&quot;:&quot;Метро «Бабушкинская»&quot;,&quot;planned&quot;:25500,&quot;corrected&quot;:24636.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:19,&quot;name&quot;:&quot;Улица Менжинского, 38&quot;,&quot;planned&quot;:25560,&quot;corrected&quot;:24696.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:20,&quot;name&quot;:&quot;Сухонская улица&quot;,&quot;planned&quot;:25620,&quot;corrected&quot;:24756.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:21,&quot;name&quot;:&quot;Проезд Шокальского&quot;,&quot;planned&quot;:25740,&quot;corrected&quot;:24876.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:22,&quot;name&quot;:&quot;МФЦ «Южное Медведково»&quot;,&quot;planned&quot;:25860,&quot;corrected&quot;:24996.0,&quot;count&quot;:8,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:23,&quot;name&quot;:&quot;Культурно-досуговый центр&quot;,&quot;planned&quot;:25980,&quot;corrected&quot;:25116.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:24,&quot;name&quot;:&quot;Улица Молодцова&quot;,&quot;planned&quot;:26040,&quot;corrected&quot;:25176.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:25,&quot;name&quot;:&quot;Поликлиника&quot;,&quot;planned&quot;:26100,&quot;corrected&quot;:25257.0,&quot;count&quot;:31,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:26,&quot;name&quot;:&quot;Улица Тихомирова&quot;,&quot;planned&quot;:26220,&quot;corrected&quot;:25377.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:27,&quot;name&quot;:&quot;Медведково&quot;,&quot;planned&quot;:26220,&quot;corrected&quot;:25377.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;}]},{&quot;date&quot;:&quot;2025-05-13&quot;,&quot;route&quot;:&quot;11&quot;,&quot;trip&quot;:&quot;210_3159499_1_811&quot;,&quot;direction&quot;:&quot;1&quot;,&quot;basis&quot;:&quot;active_calendar&quot;,&quot;donor&quot;:&quot;2025-05-13&quot;,&quot;total&quot;:263,&quot;assigned&quot;:263,&quot;anchors&quot;:[[0,22282.0],[8,22772.0],[14,23429.0],[15,23515.0],[22,24211.0],[35,25274.0],[36,25422.0]],&quot;bins&quot;:[[22260,12,0],[22290,8,0],[22320,18,0],[22350,3,0],[22380,1,0],[22410,7,0],[22440,1,0],[22470,6,0],[22500,0,0],[22530,4,0],[22560,1,0],[22590,3,0],[22620,1,0],[22650,0,0],[22680,1,0],[22710,0,0],[22740,0,0],[22770,6,0],[22800,0,0],[22830,1,0],[22860,0,0],[22890,2,0],[22920,0,0],[22950,2,0],[22980,0,0],[23010,0,0],[23040,0,0],[23070,0,0],[23100,0,0],[23130,0,0],[23160,0,0],[23190,1,0],[23220,2,0],[23250,0,0],[23280,0,0],[23310,0,0],[23340,0,0],[23370,0,0],[23400,1,0],[23430,49,0],[23460,23,0],[23490,8,0],[23520,9,0],[23550,1,0],[23580,9,0],[23610,4,0],[23640,0,0],[23670,0,0],[23700,10,0],[23730,1,0],[23760,0,0],[23790,7,0],[23820,5,0],[23850,0,0],[23880,0,0],[23910,0,0],[23940,3,0],[23970,0,0],[24000,0,0],[24030,0,0],[24060,1,0],[24090,1,0],[24120,0,0],[24150,0,0],[24180,0,0],[24210,18,0],[24240,0,0],[24270,2,0],[24300,0,0],[24330,0,0],[24360,0,0],[24390,0,0],[24420,3,0],[24450,0,0],[24480,0,0],[24510,0,0],[24540,1,0],[24570,4,0],[24600,0,0],[24630,0,0],[24660,0,0],[24690,0,0],[24720,4,0],[24750,2,0],[24780,0,0],[24810,0,0],[24840,0,0],[24870,0,0],[24900,0,0],[24930,0,0],[24960,0,0],[24990,0,0],[25020,0,0],[25050,0,0],[25080,0,0],[25110,0,0],[25140,0,0],[25170,0,0],[25200,0,0],[25230,0,0],[25260,3,0],[25290,1,0],[25320,5,0],[25350,1,0],[25380,0,0],[25410,6,0],[25440,0,0],[25470,0,0],[25500,0,0],[25530,0,0],[25560,0,0],[25590,0,0],[25620,0,0],[25650,0,0],[25680,0,0],[25710,0,0],[25740,1,0],[25770,0,0],[25800,0,0],[25830,0,0],[25860,0,0]],&quot;stops&quot;:[{&quot;index&quot;:1,&quot;name&quot;:&quot;Восточное Измайлово&quot;,&quot;planned&quot;:22260,&quot;corrected&quot;:22282.0,&quot;count&quot;:36,&quot;anchor&quot;:&quot;first&quot;},{&quot;index&quot;:2,&quot;name&quot;:&quot;Восточное Измайлово&quot;,&quot;planned&quot;:22320,&quot;corrected&quot;:22342.0,&quot;count&quot;:5,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:3,&quot;name&quot;:&quot;15-я Парковая улица&quot;,&quot;planned&quot;:22380,&quot;corrected&quot;:22402.0,&quot;count&quot;:9,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:4,&quot;name&quot;:&quot;13-я Парковая ул.&quot;,&quot;planned&quot;:22440,&quot;corrected&quot;:22462.0,&quot;count&quot;:6,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:5,&quot;name&quot;:&quot;Районный центр «Первомайский»&quot;,&quot;planned&quot;:22500,&quot;corrected&quot;:22522.0,&quot;count&quot;:5,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:6,&quot;name&quot;:&quot;Метро «Первомайская»&quot;,&quot;planned&quot;:22560,&quot;corrected&quot;:22582.0,&quot;count&quot;:4,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:7,&quot;name&quot;:&quot;7-я Парковая улица&quot;,&quot;planned&quot;:22620,&quot;corrected&quot;:22642.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:8,&quot;name&quot;:&quot;5-я Парковая улица&quot;,&quot;planned&quot;:22680,&quot;corrected&quot;:22702.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:9,&quot;name&quot;:&quot;3-я Парковая ул.&quot;,&quot;planned&quot;:22740,&quot;corrected&quot;:22772.0,&quot;count&quot;:6,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:10,&quot;name&quot;:&quot;Измайловская площадь&quot;,&quot;planned&quot;:22800,&quot;corrected&quot;:22832.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:11,&quot;name&quot;:&quot;Галерея «Измайлово»&quot;,&quot;planned&quot;:22920,&quot;corrected&quot;:22952.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:12,&quot;name&quot;:&quot;Главная аллея&quot;,&quot;planned&quot;:23040,&quot;corrected&quot;:23072.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:13,&quot;name&quot;:&quot;Метро «Партизанская»&quot;,&quot;planned&quot;:23160,&quot;corrected&quot;:23192.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:14,&quot;name&quot;:&quot;Мост Окружной железной дороги&quot;,&quot;planned&quot;:23280,&quot;corrected&quot;:23312.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:15,&quot;name&quot;:&quot;Фортунатовская улица&quot;,&quot;planned&quot;:23400,&quot;corrected&quot;:23429.0,&quot;count&quot;:79,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:16,&quot;name&quot;:&quot;Ул. Ибрагимова&quot;,&quot;planned&quot;:23520,&quot;corrected&quot;:23515.0,&quot;count&quot;:25,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:17,&quot;name&quot;:&quot;Метро «Семёновская»&quot;,&quot;planned&quot;:23640,&quot;corrected&quot;:23635.0,&quot;count&quot;:11,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:18,&quot;name&quot;:&quot;Метро «Семёновская»&quot;,&quot;planned&quot;:23760,&quot;corrected&quot;:23755.0,&quot;count&quot;:12,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:19,&quot;name&quot;:&quot;Ул. Измайловский Вал&quot;,&quot;planned&quot;:23880,&quot;corrected&quot;:23875.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:20,&quot;name&quot;:&quot;Преображенское кладб.&quot;,&quot;planned&quot;:23940,&quot;corrected&quot;:23935.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:21,&quot;name&quot;:&quot;Преображенский рынок&quot;,&quot;planned&quot;:24000,&quot;corrected&quot;:23995.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:22,&quot;name&quot;:&quot;Метро «Преображенская площадь»&quot;,&quot;planned&quot;:24120,&quot;corrected&quot;:24115.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:23,&quot;name&quot;:&quot;Улица Хромова&quot;,&quot;planned&quot;:24180,&quot;corrected&quot;:24211.0,&quot;count&quot;:20,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:24,&quot;name&quot;:&quot;Мосгорсуд&quot;,&quot;planned&quot;:24300,&quot;corrected&quot;:24331.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:25,&quot;name&quot;:&quot;Телерадиокомпания «МИР»&quot;,&quot;planned&quot;:24360,&quot;corrected&quot;:24391.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:26,&quot;name&quot;:&quot;1-я Прогонная улица&quot;,&quot;planned&quot;:24420,&quot;corrected&quot;:24451.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:27,&quot;name&quot;:&quot;Инновационный университет&quot;,&quot;planned&quot;:24480,&quot;corrected&quot;:24511.0,&quot;count&quot;:5,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:28,&quot;name&quot;:&quot;Богородский храм&quot;,&quot;planned&quot;:24600,&quot;corrected&quot;:24631.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:29,&quot;name&quot;:&quot;Богатырский мост&quot;,&quot;planned&quot;:24660,&quot;corrected&quot;:24691.0,&quot;count&quot;:6,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:30,&quot;name&quot;:&quot;Ростокинский проезд&quot;,&quot;planned&quot;:24780,&quot;corrected&quot;:24811.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:31,&quot;name&quot;:&quot;Институт иностранных языков&quot;,&quot;planned&quot;:24840,&quot;corrected&quot;:24871.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:32,&quot;name&quot;:&quot;Станция Юных натуралистов&quot;,&quot;planned&quot;:24900,&quot;corrected&quot;:24931.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:33,&quot;name&quot;:&quot;Площадь Академика Люльки&quot;,&quot;planned&quot;:25020,&quot;corrected&quot;:25051.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:34,&quot;name&quot;:&quot;Улица Бориса Галушкина, 17&quot;,&quot;planned&quot;:25080,&quot;corrected&quot;:25111.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:35,&quot;name&quot;:&quot;Ярославская улица&quot;,&quot;planned&quot;:25140,&quot;corrected&quot;:25171.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:36,&quot;name&quot;:&quot;Проспект Мира&quot;,&quot;planned&quot;:25200,&quot;corrected&quot;:25274.0,&quot;count&quot;:10,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:37,&quot;name&quot;:&quot;ВДНХ (северная)&quot;,&quot;planned&quot;:25320,&quot;corrected&quot;:25422.0,&quot;count&quot;:6,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:38,&quot;name&quot;:&quot;Метро «ВДНХ»&quot;,&quot;planned&quot;:25440,&quot;corrected&quot;:25542.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:39,&quot;name&quot;:&quot;ВДНХ (южная)&quot;,&quot;planned&quot;:25500,&quot;corrected&quot;:25602.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:40,&quot;name&quot;:&quot;Улица Цандера&quot;,&quot;planned&quot;:25560,&quot;corrected&quot;:25662.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:41,&quot;name&quot;:&quot;Аргуновская улица&quot;,&quot;planned&quot;:25620,&quot;corrected&quot;:25722.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:42,&quot;name&quot;:&quot;Останкино&quot;,&quot;planned&quot;:25740,&quot;corrected&quot;:25842.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;}]},{&quot;date&quot;:&quot;2025-05-13&quot;,&quot;route&quot;:&quot;12&quot;,&quot;trip&quot;:&quot;291_3161209_1_204&quot;,&quot;direction&quot;:&quot;1&quot;,&quot;basis&quot;:&quot;active_calendar&quot;,&quot;donor&quot;:&quot;2025-05-13&quot;,&quot;total&quot;:188,&quot;assigned&quot;:159,&quot;anchors&quot;:[[0,21995.0],[2,22135.0],[9,22810.0],[11,23053.0],[21,23931.0],[26,24361.0],[27,24428.0],[32,25058.0],[36,25605.0],[38,25798.0],[42,26101.0]],&quot;bins&quot;:[[21990,1,0],[22020,0,0],[22050,0,0],[22080,0,0],[22110,2,0],[22140,1,0],[22170,0,0],[22200,0,0],[22230,0,0],[22260,0,0],[22290,0,0],[22320,0,0],[22350,1,0],[22380,0,0],[22410,0,0],[22440,0,0],[22470,0,0],[22500,0,0],[22530,0,0],[22560,0,0],[22590,0,0],[22620,0,0],[22650,0,0],[22680,0,0],[22710,0,0],[22740,0,0],[22770,1,0],[22800,4,0],[22830,2,0],[22860,0,0],[22890,0,0],[22920,0,0],[22950,0,0],[22980,0,0],[23010,0,0],[23040,5,0],[23070,0,0],[23100,0,0],[23130,0,0],[23160,4,0],[23190,0,0],[23220,0,0],[23250,0,0],[23280,5,0],[23310,5,0],[23340,1,0],[23370,0,0],[23400,0,0],[23430,0,0],[23460,0,0],[23490,0,0],[23520,0,0],[23550,2,0],[23580,1,0],[23610,0,0],[23640,0,0],[23670,0,0],[23700,0,0],[23730,0,0],[23760,2,0],[23790,1,0],[23820,0,0],[23850,0,0],[23880,0,0],[23910,15,0],[23940,21,0],[23970,1,0],[24000,0,0],[24030,0,0],[24060,6,0],[24090,0,0],[24120,0,0],[24150,7,0],[24180,5,0],[24210,0,0],[24240,1,0],[24270,0,0],[24300,0,0],[24330,0,0],[24360,8,0],[24390,0,0],[24420,15,0],[24450,3,0],[24480,8,0],[24510,1,0],[24540,0,0],[24570,0,0],[24600,0,0],[24630,0,0],[24660,0,0],[24690,0,0],[24720,1,0],[24750,2,0],[24780,1,0],[24810,0,0],[24840,0,0],[24870,0,0],[24900,0,0],[24930,2,0],[24960,1,0],[24990,0,0],[25020,0,0],[25050,5,0],[25080,0,0],[25110,0,0],[25140,1,0],[25170,0,0],[25200,0,0],[25230,0,0],[25260,0,0],[25290,0,0],[25320,0,0],[25350,0,0],[25380,0,0],[25410,0,0],[25440,0,0],[25470,0,0],[25500,0,0],[25530,0,0],[25560,0,0],[25590,6,0],[25620,0,0],[25650,0,0],[25680,0,0],[25710,0,0],[25740,0,0],[25770,2,0],[25800,4,0],[25830,0,0],[25860,0,0],[25890,0,0],[25920,0,0],[25950,0,0],[25980,0,0],[26010,0,0],[26040,0,0],[26070,0,0],[26100,4,0],[26130,0,0],[26160,1,0],[26190,0,0],[26220,0,0],[26250,0,0],[26280,0,0],[26310,0,0],[26340,0,0],[26370,0,0],[26400,0,2],[26430,0,0],[26460,0,0],[26490,0,0],[26520,0,1],[26550,0,4],[26580,0,0],[26610,0,1],[26640,0,0],[26670,0,13],[26700,0,3],[26730,0,3],[26760,0,0],[26790,0,0],[26820,0,0],[26850,0,0],[26880,0,1],[26910,0,0],[26940,0,0],[26970,0,0],[27000,0,1],[27030,0,0],[27060,0,0],[27090,0,0],[27120,0,0],[27150,0,0],[27180,0,0],[27210,0,0],[27240,0,0],[27270,0,0],[27300,0,0]],&quot;stops&quot;:[{&quot;index&quot;:1,&quot;name&quot;:&quot;МЦК Дубровка&quot;,&quot;planned&quot;:22800,&quot;corrected&quot;:21995.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;first&quot;},{&quot;index&quot;:2,&quot;name&quot;:&quot;МЦК Дубровка&quot;,&quot;planned&quot;:22860,&quot;corrected&quot;:22055.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:3,&quot;name&quot;:&quot;Метро «Дубровка»&quot;,&quot;planned&quot;:22980,&quot;corrected&quot;:22135.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:4,&quot;name&quot;:&quot;Новоостаповская ул.&quot;,&quot;planned&quot;:23040,&quot;corrected&quot;:22195.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:5,&quot;name&quot;:&quot;ЦНИИТМАШ&quot;,&quot;planned&quot;:23100,&quot;corrected&quot;:22255.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:6,&quot;name&quot;:&quot;Шарикоподшипниковская улица&quot;,&quot;planned&quot;:23160,&quot;corrected&quot;:22315.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:7,&quot;name&quot;:&quot;Арбатецкая улица&quot;,&quot;planned&quot;:23280,&quot;corrected&quot;:22435.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:8,&quot;name&quot;:&quot;Динамовская улица&quot;,&quot;planned&quot;:23340,&quot;corrected&quot;:22495.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:9,&quot;name&quot;:&quot;Метро «Пролетарская»&quot;,&quot;planned&quot;:23460,&quot;corrected&quot;:22615.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:10,&quot;name&quot;:&quot;Кинотеатр «Победа» - Детский театр&quot;,&quot;planned&quot;:23640,&quot;corrected&quot;:22810.0,&quot;count&quot;:6,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:11,&quot;name&quot;:&quot;Абельмановская Застава&quot;,&quot;planned&quot;:23760,&quot;corrected&quot;:22930.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:12,&quot;name&quot;:&quot;Новорогожская улица&quot;,&quot;planned&quot;:23880,&quot;corrected&quot;:23053.0,&quot;count&quot;:5,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:13,&quot;name&quot;:&quot;Библиотечная улица&quot;,&quot;planned&quot;:23940,&quot;corrected&quot;:23113.0,&quot;count&quot;:4,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:14,&quot;name&quot;:&quot;Метро «Площадь Ильича»&quot;,&quot;planned&quot;:24060,&quot;corrected&quot;:23233.0,&quot;count&quot;:10,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:15,&quot;name&quot;:&quot;МЦД Москва-Товарная&quot;,&quot;planned&quot;:24180,&quot;corrected&quot;:23353.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:16,&quot;name&quot;:&quot;Старообрядческая улица&quot;,&quot;planned&quot;:24240,&quot;corrected&quot;:23413.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:17,&quot;name&quot;:&quot;Душинская улица&quot;,&quot;planned&quot;:24300,&quot;corrected&quot;:23473.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:18,&quot;name&quot;:&quot;Горбатый путепровод&quot;,&quot;planned&quot;:24360,&quot;corrected&quot;:23533.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:19,&quot;name&quot;:&quot;Метро «Авиамоторная»&quot;,&quot;planned&quot;:24420,&quot;corrected&quot;:23593.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:20,&quot;name&quot;:&quot;Метро «Авиамоторная»&quot;,&quot;planned&quot;:24540,&quot;corrected&quot;:23713.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:21,&quot;name&quot;:&quot;Д/к «Компрессор»&quot;,&quot;planned&quot;:24600,&quot;corrected&quot;:23773.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:22,&quot;name&quot;:&quot;Улица Буракова&quot;,&quot;planned&quot;:24780,&quot;corrected&quot;:23931.0,&quot;count&quot;:37,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:23,&quot;name&quot;:&quot;Гаражная улица&quot;,&quot;planned&quot;:24900,&quot;corrected&quot;:24051.0,&quot;count&quot;:6,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:24,&quot;name&quot;:&quot;3-я улица Соколиной Горы&quot;,&quot;planned&quot;:24960,&quot;corrected&quot;:24111.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:25,&quot;name&quot;:&quot;5-я улица Соколиной Горы&quot;,&quot;planned&quot;:25020,&quot;corrected&quot;:24171.0,&quot;count&quot;:11,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:26,&quot;name&quot;:&quot;Просп. Буденного, 24&quot;,&quot;planned&quot;:25140,&quot;corrected&quot;:24291.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:27,&quot;name&quot;:&quot;8-я улица Соколиной Горы&quot;,&quot;planned&quot;:25200,&quot;corrected&quot;:24361.0,&quot;count&quot;:9,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:28,&quot;name&quot;:&quot;9-я ул. Соколиной Горы&quot;,&quot;planned&quot;:25260,&quot;corrected&quot;:24428.0,&quot;count&quot;:19,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:29,&quot;name&quot;:&quot;Стадион «Крылья Советов»&quot;,&quot;planned&quot;:25320,&quot;corrected&quot;:24488.0,&quot;count&quot;:7,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:30,&quot;name&quot;:&quot;Кирпичная ул.&quot;,&quot;planned&quot;:25440,&quot;corrected&quot;:24608.0,&quot;count&quot;:4,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:31,&quot;name&quot;:&quot;Метро «Семёновская»&quot;,&quot;planned&quot;:25680,&quot;corrected&quot;:24848.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:32,&quot;name&quot;:&quot;Улица Ибрагимова&quot;,&quot;planned&quot;:25800,&quot;corrected&quot;:24968.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:33,&quot;name&quot;:&quot;Фортунатовская ул.&quot;,&quot;planned&quot;:25920,&quot;corrected&quot;:25058.0,&quot;count&quot;:6,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:34,&quot;name&quot;:&quot;Мост Окружной железной дороги&quot;,&quot;planned&quot;:26100,&quot;corrected&quot;:25238.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:35,&quot;name&quot;:&quot;Метро «Партизанская»&quot;,&quot;planned&quot;:26220,&quot;corrected&quot;:25358.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:36,&quot;name&quot;:&quot;Главная аллея&quot;,&quot;planned&quot;:26340,&quot;corrected&quot;:25478.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:37,&quot;name&quot;:&quot;Галерея «Измайлово»&quot;,&quot;planned&quot;:26520,&quot;corrected&quot;:25605.0,&quot;count&quot;:6,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:38,&quot;name&quot;:&quot;Измайловская пл.&quot;,&quot;planned&quot;:26580,&quot;corrected&quot;:25665.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:39,&quot;name&quot;:&quot;3-я Парковая улица&quot;,&quot;planned&quot;:26700,&quot;corrected&quot;:25798.0,&quot;count&quot;:6,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:40,&quot;name&quot;:&quot;5-я Парковая ул.&quot;,&quot;planned&quot;:26760,&quot;corrected&quot;:25858.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:41,&quot;name&quot;:&quot;7-я Парковая ул.&quot;,&quot;planned&quot;:26820,&quot;corrected&quot;:25918.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:42,&quot;name&quot;:&quot;Метро «Первомайская»&quot;,&quot;planned&quot;:26880,&quot;corrected&quot;:25978.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:43,&quot;name&quot;:&quot;Районный центр «Первомайский»&quot;,&quot;planned&quot;:27000,&quot;corrected&quot;:26101.0,&quot;count&quot;:4,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:44,&quot;name&quot;:&quot;13-я Парковая улица&quot;,&quot;planned&quot;:27060,&quot;corrected&quot;:26161.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:45,&quot;name&quot;:&quot;15-я Парковая ул.&quot;,&quot;planned&quot;:27180,&quot;corrected&quot;:26281.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:46,&quot;name&quot;:&quot;Восточное Измайлово&quot;,&quot;planned&quot;:27240,&quot;corrected&quot;:26341.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:47,&quot;name&quot;:&quot;Восточное Измайлово&quot;,&quot;planned&quot;:27300,&quot;corrected&quot;:26401.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;}]},{&quot;date&quot;:&quot;2025-05-13&quot;,&quot;route&quot;:&quot;17&quot;,&quot;trip&quot;:&quot;375_3161086_2_214&quot;,&quot;direction&quot;:&quot;0&quot;,&quot;basis&quot;:&quot;active_calendar&quot;,&quot;donor&quot;:&quot;2025-05-13&quot;,&quot;total&quot;:122,&quot;assigned&quot;:103,&quot;anchors&quot;:[[0,22878.0],[3,22994.0],[15,24033.0],[20,24540.0],[21,24679.0]],&quot;bins&quot;:[[22860,2,0],[22890,0,0],[22920,0,0],[22950,0,0],[22980,2,0],[23010,0,0],[23040,0,0],[23070,0,0],[23100,0,0],[23130,0,0],[23160,0,0],[23190,0,0],[23220,0,0],[23250,0,0],[23280,0,0],[23310,0,0],[23340,0,0],[23370,0,0],[23400,0,0],[23430,0,0],[23460,0,0],[23490,0,0],[23520,0,0],[23550,0,0],[23580,0,0],[23610,0,0],[23640,0,0],[23670,0,0],[23700,0,0],[23730,0,0],[23760,0,0],[23790,7,0],[23820,3,0],[23850,0,0],[23880,3,0],[23910,3,0],[23940,6,0],[23970,1,0],[24000,0,0],[24030,13,0],[24060,8,0],[24090,0,0],[24120,0,0],[24150,0,0],[24180,0,0],[24210,6,0],[24240,2,0],[24270,0,0],[24300,3,0],[24330,1,0],[24360,1,0],[24390,5,0],[24420,0,0],[24450,1,0],[24480,0,0],[24510,0,0],[24540,10,0],[24570,1,0],[24600,8,0],[24630,0,0],[24660,5,0],[24690,0,0],[24720,2,0],[24750,1,0],[24780,0,0],[24810,0,0],[24840,0,0],[24870,1,0],[24900,0,0],[24930,0,0],[24960,0,0],[24990,0,0],[25020,0,0],[25050,8,0],[25080,0,0],[25110,0,0],[25140,0,0],[25170,0,9],[25200,0,1],[25230,0,1],[25260,0,1],[25290,0,1],[25320,0,1],[25350,0,0],[25380,0,0],[25410,0,0],[25440,0,0],[25470,0,0],[25500,0,2],[25530,0,0],[25560,0,0],[25590,0,2],[25620,0,1],[25650,0,0],[25680,0,0],[25710,0,0],[25740,0,0],[25770,0,0],[25800,0,0],[25830,0,0],[25860,0,0],[25890,0,0],[25920,0,0],[25950,0,0],[25980,0,0],[26010,0,0],[26040,0,0]],&quot;stops&quot;:[{&quot;index&quot;:1,&quot;name&quot;:&quot;Медведково&quot;,&quot;planned&quot;:23760,&quot;corrected&quot;:22878.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;first&quot;},{&quot;index&quot;:2,&quot;name&quot;:&quot;Медведково&quot;,&quot;planned&quot;:23760,&quot;corrected&quot;:22878.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:3,&quot;name&quot;:&quot;Улица Тихомирова&quot;,&quot;planned&quot;:23820,&quot;corrected&quot;:22938.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:4,&quot;name&quot;:&quot;Поликлиника&quot;,&quot;planned&quot;:23880,&quot;corrected&quot;:22994.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:5,&quot;name&quot;:&quot;Улица Молодцова&quot;,&quot;planned&quot;:23940,&quot;corrected&quot;:23054.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:6,&quot;name&quot;:&quot;Культурно-досуговый центр&quot;,&quot;planned&quot;:24000,&quot;corrected&quot;:23114.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:7,&quot;name&quot;:&quot;МФЦ Южное Медведково&quot;,&quot;planned&quot;:24120,&quot;corrected&quot;:23234.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:8,&quot;name&quot;:&quot;Проезд Шокальского&quot;,&quot;planned&quot;:24240,&quot;corrected&quot;:23354.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:9,&quot;name&quot;:&quot;Сухонская улица&quot;,&quot;planned&quot;:24300,&quot;corrected&quot;:23414.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:10,&quot;name&quot;:&quot;Улица Менжинского, 38&quot;,&quot;planned&quot;:24420,&quot;corrected&quot;:23534.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:11,&quot;name&quot;:&quot;Метро «Бабушкинская»&quot;,&quot;planned&quot;:24540,&quot;corrected&quot;:23654.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:12,&quot;name&quot;:&quot;Печорская улица&quot;,&quot;planned&quot;:24600,&quot;corrected&quot;:23714.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:13,&quot;name&quot;:&quot;Радужная улица&quot;,&quot;planned&quot;:24660,&quot;corrected&quot;:23774.0,&quot;count&quot;:9,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:14,&quot;name&quot;:&quot;Верхоянская улица&quot;,&quot;planned&quot;:24720,&quot;corrected&quot;:23834.0,&quot;count&quot;:9,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:15,&quot;name&quot;:&quot;Берингов проезд&quot;,&quot;planned&quot;:24840,&quot;corrected&quot;:23954.0,&quot;count&quot;:5,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:16,&quot;name&quot;:&quot;Социальный фонд России&quot;,&quot;planned&quot;:24960,&quot;corrected&quot;:24033.0,&quot;count&quot;:21,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:17,&quot;name&quot;:&quot;Северянинский путепровод&quot;,&quot;planned&quot;:25080,&quot;corrected&quot;:24153.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:18,&quot;name&quot;:&quot;МЦК Ростокино&quot;,&quot;planned&quot;:25140,&quot;corrected&quot;:24213.0,&quot;count&quot;:11,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:19,&quot;name&quot;:&quot;Улица Докукина&quot;,&quot;planned&quot;:25260,&quot;corrected&quot;:24333.0,&quot;count&quot;:7,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:20,&quot;name&quot;:&quot;Сельскохозяйственная улица&quot;,&quot;planned&quot;:25380,&quot;corrected&quot;:24453.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:21,&quot;name&quot;:&quot;Улица Сергея Эйзенштейна&quot;,&quot;planned&quot;:25500,&quot;corrected&quot;:24540.0,&quot;count&quot;:19,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:22,&quot;name&quot;:&quot;ВДНХ (северная)&quot;,&quot;planned&quot;:25620,&quot;corrected&quot;:24679.0,&quot;count&quot;:8,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:23,&quot;name&quot;:&quot;Метро «ВДНХ»&quot;,&quot;planned&quot;:25740,&quot;corrected&quot;:24799.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:24,&quot;name&quot;:&quot;ВДНХ (южная)&quot;,&quot;planned&quot;:25800,&quot;corrected&quot;:24859.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:25,&quot;name&quot;:&quot;Улица Цандера&quot;,&quot;planned&quot;:25860,&quot;corrected&quot;:24919.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:26,&quot;name&quot;:&quot;Аргуновская улица&quot;,&quot;planned&quot;:25920,&quot;corrected&quot;:24979.0,&quot;count&quot;:8,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:27,&quot;name&quot;:&quot;Останкино&quot;,&quot;planned&quot;:26040,&quot;corrected&quot;:25099.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;}]},{&quot;date&quot;:&quot;2025-09-09&quot;,&quot;route&quot;:&quot;11&quot;,&quot;trip&quot;:&quot;210_3159499_1_811&quot;,&quot;direction&quot;:&quot;1&quot;,&quot;basis&quot;:&quot;active_calendar&quot;,&quot;donor&quot;:&quot;2025-09-09&quot;,&quot;total&quot;:229,&quot;assigned&quot;:227,&quot;anchors&quot;:[[0,22177.0],[1,22229.0],[9,22728.0],[10,22806.0],[14,23320.0],[15,23402.0],[18,23771.0],[23,24192.0],[29,24644.0],[36,25140.0]],&quot;bins&quot;:[[22170,17,0],[22200,5,0],[22230,7,0],[22260,0,0],[22290,6,0],[22320,0,0],[22350,5,0],[22380,0,0],[22410,0,0],[22440,7,0],[22470,0,0],[22500,1,0],[22530,1,0],[22560,0,0],[22590,1,0],[22620,0,0],[22650,3,0],[22680,0,0],[22710,4,0],[22740,1,0],[22770,0,0],[22800,4,0],[22830,0,0],[22860,2,0],[22890,0,0],[22920,0,0],[22950,0,0],[22980,0,0],[23010,0,0],[23040,0,0],[23070,1,0],[23100,0,0],[23130,0,0],[23160,0,0],[23190,0,0],[23220,0,0],[23250,0,0],[23280,0,0],[23310,43,0],[23340,32,0],[23370,22,0],[23400,5,0],[23430,5,0],[23460,0,0],[23490,0,0],[23520,0,0],[23550,0,0],[23580,5,0],[23610,1,0],[23640,0,0],[23670,0,0],[23700,0,0],[23730,1,0],[23760,7,0],[23790,0,0],[23820,0,0],[23850,0,0],[23880,0,0],[23910,0,0],[23940,0,0],[23970,0,0],[24000,0,0],[24030,0,0],[24060,2,0],[24090,0,0],[24120,0,0],[24150,0,0],[24180,13,0],[24210,4,0],[24240,0,0],[24270,5,0],[24300,0,0],[24330,0,0],[24360,0,0],[24390,0,0],[24420,1,0],[24450,0,0],[24480,0,0],[24510,0,0],[24540,2,0],[24570,0,0],[24600,0,0],[24630,3,0],[24660,0,0],[24690,0,0],[24720,3,0],[24750,0,0],[24780,0,0],[24810,0,0],[24840,0,0],[24870,0,0],[24900,0,0],[24930,0,0],[24960,0,0],[24990,0,0],[25020,0,0],[25050,0,0],[25080,0,0],[25110,0,0],[25140,3,0],[25170,3,0],[25200,2,0],[25230,0,0],[25260,0,0],[25290,0,0],[25320,0,0],[25350,0,0],[25380,0,0],[25410,0,0],[25440,0,0],[25470,0,0],[25500,0,0],[25530,0,0],[25560,0,0],[25590,0,1],[25620,0,0],[25650,0,0],[25680,0,0],[25710,0,0],[25740,0,0],[25770,0,0],[25800,0,0],[25830,0,1],[25860,0,0]],&quot;stops&quot;:[{&quot;index&quot;:1,&quot;name&quot;:&quot;Восточное Измайлово&quot;,&quot;planned&quot;:22260,&quot;corrected&quot;:22177.0,&quot;count&quot;:20,&quot;anchor&quot;:&quot;first&quot;},{&quot;index&quot;:2,&quot;name&quot;:&quot;Восточное Измайлово&quot;,&quot;planned&quot;:22320,&quot;corrected&quot;:22229.0,&quot;count&quot;:9,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:3,&quot;name&quot;:&quot;15-я Парковая улица&quot;,&quot;planned&quot;:22380,&quot;corrected&quot;:22289.0,&quot;count&quot;:6,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:4,&quot;name&quot;:&quot;13-я Парковая ул.&quot;,&quot;planned&quot;:22440,&quot;corrected&quot;:22349.0,&quot;count&quot;:5,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:5,&quot;name&quot;:&quot;Районный центр «Первомайский»&quot;,&quot;planned&quot;:22500,&quot;corrected&quot;:22409.0,&quot;count&quot;:7,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:6,&quot;name&quot;:&quot;Метро «Первомайская»&quot;,&quot;planned&quot;:22560,&quot;corrected&quot;:22469.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:7,&quot;name&quot;:&quot;7-я Парковая улица&quot;,&quot;planned&quot;:22620,&quot;corrected&quot;:22529.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:8,&quot;name&quot;:&quot;5-я Парковая улица&quot;,&quot;planned&quot;:22680,&quot;corrected&quot;:22589.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:9,&quot;name&quot;:&quot;3-я Парковая ул.&quot;,&quot;planned&quot;:22740,&quot;corrected&quot;:22649.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:10,&quot;name&quot;:&quot;Измайловская площадь&quot;,&quot;planned&quot;:22800,&quot;corrected&quot;:22728.0,&quot;count&quot;:5,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:11,&quot;name&quot;:&quot;Галерея «Измайлово»&quot;,&quot;planned&quot;:22920,&quot;corrected&quot;:22806.0,&quot;count&quot;:6,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:12,&quot;name&quot;:&quot;Главная аллея&quot;,&quot;planned&quot;:23040,&quot;corrected&quot;:22926.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:13,&quot;name&quot;:&quot;Метро «Партизанская»&quot;,&quot;planned&quot;:23160,&quot;corrected&quot;:23046.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:14,&quot;name&quot;:&quot;Мост Окружной железной дороги&quot;,&quot;planned&quot;:23280,&quot;corrected&quot;:23166.0,&quot;count&quot;:4,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:15,&quot;name&quot;:&quot;Фортунатовская улица&quot;,&quot;planned&quot;:23400,&quot;corrected&quot;:23320.0,&quot;count&quot;:93,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:16,&quot;name&quot;:&quot;Ул. Ибрагимова&quot;,&quot;planned&quot;:23520,&quot;corrected&quot;:23402.0,&quot;count&quot;:10,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:17,&quot;name&quot;:&quot;Метро «Семёновская»&quot;,&quot;planned&quot;:23640,&quot;corrected&quot;:23522.0,&quot;count&quot;:6,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:18,&quot;name&quot;:&quot;Метро «Семёновская»&quot;,&quot;planned&quot;:23760,&quot;corrected&quot;:23642.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:19,&quot;name&quot;:&quot;Ул. Измайловский Вал&quot;,&quot;planned&quot;:23880,&quot;corrected&quot;:23771.0,&quot;count&quot;:7,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:20,&quot;name&quot;:&quot;Преображенское кладб.&quot;,&quot;planned&quot;:23940,&quot;corrected&quot;:23831.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:21,&quot;name&quot;:&quot;Преображенский рынок&quot;,&quot;planned&quot;:24000,&quot;corrected&quot;:23891.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:22,&quot;name&quot;:&quot;Метро «Преображенская площадь»&quot;,&quot;planned&quot;:24120,&quot;corrected&quot;:24011.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:23,&quot;name&quot;:&quot;Улица Хромова&quot;,&quot;planned&quot;:24180,&quot;corrected&quot;:24071.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:24,&quot;name&quot;:&quot;Мосгорсуд&quot;,&quot;planned&quot;:24300,&quot;corrected&quot;:24192.0,&quot;count&quot;:17,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:25,&quot;name&quot;:&quot;Телерадиокомпания «МИР»&quot;,&quot;planned&quot;:24360,&quot;corrected&quot;:24252.0,&quot;count&quot;:5,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:26,&quot;name&quot;:&quot;1-я Прогонная улица&quot;,&quot;planned&quot;:24420,&quot;corrected&quot;:24312.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:27,&quot;name&quot;:&quot;Инновационный университет&quot;,&quot;planned&quot;:24480,&quot;corrected&quot;:24372.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:28,&quot;name&quot;:&quot;Богородский храм&quot;,&quot;planned&quot;:24600,&quot;corrected&quot;:24492.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:29,&quot;name&quot;:&quot;Богатырский мост&quot;,&quot;planned&quot;:24660,&quot;corrected&quot;:24552.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:30,&quot;name&quot;:&quot;Ростокинский проезд&quot;,&quot;planned&quot;:24780,&quot;corrected&quot;:24644.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:31,&quot;name&quot;:&quot;Институт иностранных языков&quot;,&quot;planned&quot;:24840,&quot;corrected&quot;:24704.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:32,&quot;name&quot;:&quot;Станция Юных натуралистов&quot;,&quot;planned&quot;:24900,&quot;corrected&quot;:24764.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:33,&quot;name&quot;:&quot;Площадь Академика Люльки&quot;,&quot;planned&quot;:25020,&quot;corrected&quot;:24884.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:34,&quot;name&quot;:&quot;Улица Бориса Галушкина, 17&quot;,&quot;planned&quot;:25080,&quot;corrected&quot;:24944.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:35,&quot;name&quot;:&quot;Ярославская улица&quot;,&quot;planned&quot;:25140,&quot;corrected&quot;:25004.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:36,&quot;name&quot;:&quot;Проспект Мира&quot;,&quot;planned&quot;:25200,&quot;corrected&quot;:25064.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:37,&quot;name&quot;:&quot;ВДНХ (северная)&quot;,&quot;planned&quot;:25320,&quot;corrected&quot;:25140.0,&quot;count&quot;:8,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:38,&quot;name&quot;:&quot;Метро «ВДНХ»&quot;,&quot;planned&quot;:25440,&quot;corrected&quot;:25260.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:39,&quot;name&quot;:&quot;ВДНХ (южная)&quot;,&quot;planned&quot;:25500,&quot;corrected&quot;:25320.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:40,&quot;name&quot;:&quot;Улица Цандера&quot;,&quot;planned&quot;:25560,&quot;corrected&quot;:25380.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:41,&quot;name&quot;:&quot;Аргуновская улица&quot;,&quot;planned&quot;:25620,&quot;corrected&quot;:25440.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:42,&quot;name&quot;:&quot;Останкино&quot;,&quot;planned&quot;:25740,&quot;corrected&quot;:25560.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;}]},{&quot;date&quot;:&quot;2025-09-09&quot;,&quot;route&quot;:&quot;12&quot;,&quot;trip&quot;:&quot;291_3161209_1_203&quot;,&quot;direction&quot;:&quot;1&quot;,&quot;basis&quot;:&quot;active_calendar&quot;,&quot;donor&quot;:&quot;2025-09-09&quot;,&quot;total&quot;:139,&quot;assigned&quot;:138,&quot;anchors&quot;:[[0,21713.0],[8,22417.0],[13,22985.0],[22,23790.0],[33,24919.0],[44,25970.0]],&quot;bins&quot;:[[21690,1,0],[21720,0,0],[21750,2,0],[21780,1,0],[21810,0,0],[21840,3,0],[21870,0,0],[21900,0,0],[21930,0,0],[21960,0,0],[21990,0,0],[22020,0,0],[22050,1,0],[22080,0,0],[22110,2,0],[22140,1,0],[22170,0,0],[22200,0,0],[22230,0,0],[22260,2,0],[22290,0,0],[22320,0,0],[22350,0,0],[22380,0,0],[22410,4,0],[22440,0,0],[22470,0,0],[22500,0,0],[22530,0,0],[22560,0,0],[22590,0,0],[22620,2,0],[22650,0,0],[22680,3,0],[22710,1,0],[22740,0,0],[22770,0,0],[22800,0,0],[22830,0,0],[22860,1,0],[22890,0,0],[22920,0,0],[22950,0,0],[22980,7,0],[23010,0,0],[23040,0,0],[23070,0,0],[23100,0,0],[23130,1,0],[23160,0,0],[23190,0,0],[23220,0,0],[23250,7,0],[23280,4,0],[23310,0,0],[23340,0,0],[23370,0,0],[23400,0,0],[23430,4,0],[23460,0,0],[23490,5,0],[23520,3,0],[23550,0,0],[23580,0,0],[23610,0,0],[23640,0,0],[23670,0,0],[23700,0,0],[23730,0,0],[23760,0,0],[23790,6,0],[23820,0,0],[23850,3,0],[23880,1,0],[23910,0,0],[23940,3,0],[23970,6,0],[24000,2,0],[24030,3,0],[24060,3,0],[24090,2,0],[24120,0,0],[24150,0,0],[24180,3,0],[24210,0,0],[24240,2,0],[24270,0,0],[24300,0,0],[24330,0,0],[24360,0,0],[24390,0,0],[24420,0,0],[24450,0,0],[24480,0,0],[24510,0,0],[24540,0,0],[24570,0,0],[24600,0,0],[24630,0,0],[24660,1,0],[24690,0,0],[24720,0,0],[24750,0,0],[24780,0,0],[24810,0,0],[24840,0,0],[24870,0,0],[24900,11,0],[24930,6,0],[24960,0,0],[24990,0,0],[25020,0,0],[25050,0,0],[25080,0,0],[25110,0,0],[25140,0,0],[25170,0,0],[25200,0,0],[25230,4,0],[25260,0,0],[25290,0,0],[25320,0,0],[25350,0,0],[25380,0,0],[25410,0,0],[25440,0,0],[25470,0,0],[25500,0,0],[25530,0,0],[25560,2,0],[25590,1,0],[25620,0,0],[25650,0,0],[25680,0,0],[25710,2,0],[25740,0,0],[25770,0,0],[25800,0,0],[25830,1,0],[25860,2,0],[25890,1,0],[25920,0,0],[25950,9,0],[25980,7,0],[26010,2,0],[26040,0,0],[26070,0,0],[26100,0,1],[26130,0,0],[26160,0,0],[26190,0,0],[26220,0,0],[26250,0,0],[26280,0,0]],&quot;stops&quot;:[{&quot;index&quot;:1,&quot;name&quot;:&quot;МЦК Дубровка&quot;,&quot;planned&quot;:21780,&quot;corrected&quot;:21713.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;first&quot;},{&quot;index&quot;:2,&quot;name&quot;:&quot;МЦК Дубровка&quot;,&quot;planned&quot;:21840,&quot;corrected&quot;:21773.0,&quot;count&quot;:5,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:3,&quot;name&quot;:&quot;Метро «Дубровка»&quot;,&quot;planned&quot;:21960,&quot;corrected&quot;:21893.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:4,&quot;name&quot;:&quot;Новоостаповская ул.&quot;,&quot;planned&quot;:22020,&quot;corrected&quot;:21953.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:5,&quot;name&quot;:&quot;ЦНИИТМАШ&quot;,&quot;planned&quot;:22080,&quot;corrected&quot;:22013.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:6,&quot;name&quot;:&quot;Шарикоподшипниковская улица&quot;,&quot;planned&quot;:22140,&quot;corrected&quot;:22073.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:7,&quot;name&quot;:&quot;Арбатецкая улица&quot;,&quot;planned&quot;:22260,&quot;corrected&quot;:22193.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:8,&quot;name&quot;:&quot;Динамовская улица&quot;,&quot;planned&quot;:22320,&quot;corrected&quot;:22253.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:9,&quot;name&quot;:&quot;Метро «Пролетарская»&quot;,&quot;planned&quot;:22440,&quot;corrected&quot;:22417.0,&quot;count&quot;:4,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:10,&quot;name&quot;:&quot;Кинотеатр «Победа» - Детский театр&quot;,&quot;planned&quot;:22620,&quot;corrected&quot;:22597.0,&quot;count&quot;:6,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:11,&quot;name&quot;:&quot;Абельмановская Застава&quot;,&quot;planned&quot;:22740,&quot;corrected&quot;:22717.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:12,&quot;name&quot;:&quot;Новорогожская улица&quot;,&quot;planned&quot;:22860,&quot;corrected&quot;:22837.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:13,&quot;name&quot;:&quot;Библиотечная улица&quot;,&quot;planned&quot;:22920,&quot;corrected&quot;:22897.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:14,&quot;name&quot;:&quot;Метро «Площадь Ильича»&quot;,&quot;planned&quot;:23040,&quot;corrected&quot;:22985.0,&quot;count&quot;:7,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:15,&quot;name&quot;:&quot;МЦД Москва-Товарная&quot;,&quot;planned&quot;:23160,&quot;corrected&quot;:23105.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:16,&quot;name&quot;:&quot;Старообрядческая улица&quot;,&quot;planned&quot;:23220,&quot;corrected&quot;:23165.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:17,&quot;name&quot;:&quot;Душинская улица&quot;,&quot;planned&quot;:23280,&quot;corrected&quot;:23225.0,&quot;count&quot;:9,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:18,&quot;name&quot;:&quot;Горбатый путепровод&quot;,&quot;planned&quot;:23340,&quot;corrected&quot;:23285.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:19,&quot;name&quot;:&quot;Метро «Авиамоторная»&quot;,&quot;planned&quot;:23400,&quot;corrected&quot;:23345.0,&quot;count&quot;:4,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:20,&quot;name&quot;:&quot;Метро «Авиамоторная»&quot;,&quot;planned&quot;:23520,&quot;corrected&quot;:23465.0,&quot;count&quot;:7,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:21,&quot;name&quot;:&quot;Д/к «Компрессор»&quot;,&quot;planned&quot;:23580,&quot;corrected&quot;:23525.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:22,&quot;name&quot;:&quot;Улица Буракова&quot;,&quot;planned&quot;:23760,&quot;corrected&quot;:23705.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:23,&quot;name&quot;:&quot;Гаражная улица&quot;,&quot;planned&quot;:23880,&quot;corrected&quot;:23790.0,&quot;count&quot;:6,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:24,&quot;name&quot;:&quot;3-я улица Соколиной Горы&quot;,&quot;planned&quot;:23940,&quot;corrected&quot;:23850.0,&quot;count&quot;:4,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:25,&quot;name&quot;:&quot;5-я улица Соколиной Горы&quot;,&quot;planned&quot;:24000,&quot;corrected&quot;:23910.0,&quot;count&quot;:11,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:26,&quot;name&quot;:&quot;Просп. Буденного, 24&quot;,&quot;planned&quot;:24120,&quot;corrected&quot;:24030.0,&quot;count&quot;:6,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:27,&quot;name&quot;:&quot;8-я улица Соколиной Горы&quot;,&quot;planned&quot;:24180,&quot;corrected&quot;:24090.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:28,&quot;name&quot;:&quot;9-я ул. Соколиной Горы&quot;,&quot;planned&quot;:24240,&quot;corrected&quot;:24150.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:29,&quot;name&quot;:&quot;Стадион «Крылья Советов»&quot;,&quot;planned&quot;:24300,&quot;corrected&quot;:24210.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:30,&quot;name&quot;:&quot;Кирпичная ул.&quot;,&quot;planned&quot;:24420,&quot;corrected&quot;:24330.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:31,&quot;name&quot;:&quot;Метро «Семёновская»&quot;,&quot;planned&quot;:24660,&quot;corrected&quot;:24570.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:32,&quot;name&quot;:&quot;Улица Ибрагимова&quot;,&quot;planned&quot;:24780,&quot;corrected&quot;:24690.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:33,&quot;name&quot;:&quot;Фортунатовская ул.&quot;,&quot;planned&quot;:24900,&quot;corrected&quot;:24810.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:34,&quot;name&quot;:&quot;Мост Окружной железной дороги&quot;,&quot;planned&quot;:25080,&quot;corrected&quot;:24919.0,&quot;count&quot;:17,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:35,&quot;name&quot;:&quot;Метро «Партизанская»&quot;,&quot;planned&quot;:25200,&quot;corrected&quot;:25039.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:36,&quot;name&quot;:&quot;Главная аллея&quot;,&quot;planned&quot;:25320,&quot;corrected&quot;:25159.0,&quot;count&quot;:4,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:37,&quot;name&quot;:&quot;Галерея «Измайлово»&quot;,&quot;planned&quot;:25500,&quot;corrected&quot;:25339.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:38,&quot;name&quot;:&quot;Измайловская пл.&quot;,&quot;planned&quot;:25560,&quot;corrected&quot;:25399.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:39,&quot;name&quot;:&quot;3-я Парковая улица&quot;,&quot;planned&quot;:25680,&quot;corrected&quot;:25519.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:40,&quot;name&quot;:&quot;5-я Парковая ул.&quot;,&quot;planned&quot;:25740,&quot;corrected&quot;:25579.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:41,&quot;name&quot;:&quot;7-я Парковая ул.&quot;,&quot;planned&quot;:25800,&quot;corrected&quot;:25639.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:42,&quot;name&quot;:&quot;Метро «Первомайская»&quot;,&quot;planned&quot;:25860,&quot;corrected&quot;:25699.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:43,&quot;name&quot;:&quot;Районный центр «Первомайский»&quot;,&quot;planned&quot;:25980,&quot;corrected&quot;:25819.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:44,&quot;name&quot;:&quot;13-я Парковая улица&quot;,&quot;planned&quot;:26040,&quot;corrected&quot;:25879.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:45,&quot;name&quot;:&quot;15-я Парковая ул.&quot;,&quot;planned&quot;:26160,&quot;corrected&quot;:25970.0,&quot;count&quot;:18,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:46,&quot;name&quot;:&quot;Восточное Измайлово&quot;,&quot;planned&quot;:26220,&quot;corrected&quot;:26030.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:47,&quot;name&quot;:&quot;Восточное Измайлово&quot;,&quot;planned&quot;:26280,&quot;corrected&quot;:26090.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;}]},{&quot;date&quot;:&quot;2025-09-09&quot;,&quot;route&quot;:&quot;17&quot;,&quot;trip&quot;:&quot;375_3161086_1_223&quot;,&quot;direction&quot;:&quot;1&quot;,&quot;basis&quot;:&quot;active_calendar&quot;,&quot;donor&quot;:&quot;2025-09-09&quot;,&quot;total&quot;:169,&quot;assigned&quot;:105,&quot;anchors&quot;:[[0,23686.0],[4,23927.0],[10,24564.0],[21,25669.0]],&quot;bins&quot;:[[23670,1,0],[23700,1,0],[23730,0,0],[23760,0,0],[23790,1,0],[23820,0,0],[23850,0,0],[23880,0,0],[23910,6,0],[23940,1,0],[23970,0,0],[24000,0,0],[24030,0,0],[24060,0,0],[24090,0,0],[24120,0,0],[24150,0,0],[24180,0,0],[24210,1,0],[24240,0,0],[24270,0,0],[24300,0,0],[24330,0,0],[24360,0,0],[24390,0,0],[24420,0,0],[24450,2,0],[24480,1,0],[24510,0,0],[24540,3,0],[24570,4,0],[24600,0,0],[24630,1,0],[24660,0,0],[24690,0,0],[24720,2,0],[24750,0,0],[24780,0,0],[24810,0,0],[24840,0,0],[24870,2,0],[24900,0,0],[24930,2,0],[24960,0,0],[24990,2,0],[25020,0,0],[25050,0,0],[25080,0,0],[25110,0,0],[25140,0,0],[25170,0,0],[25200,0,0],[25230,0,0],[25260,0,0],[25290,0,0],[25320,0,0],[25350,0,0],[25380,0,0],[25410,0,0],[25440,0,0],[25470,0,0],[25500,0,0],[25530,0,0],[25560,0,0],[25590,0,0],[25620,0,0],[25650,11,0],[25680,4,0],[25710,2,0],[25740,0,0],[25770,0,0],[25800,6,0],[25830,22,0],[25860,4,0],[25890,7,0],[25920,0,0],[25950,0,0],[25980,0,0],[26010,19,3],[26040,0,5],[26070,0,2],[26100,0,0],[26130,0,0],[26160,0,13],[26190,0,2],[26220,0,4],[26250,0,0],[26280,0,1],[26310,0,0],[26340,0,0],[26370,0,5],[26400,0,8],[26430,0,1],[26460,0,0],[26490,0,0],[26520,0,4],[26550,0,0],[26580,0,8],[26610,0,0],[26640,0,0],[26670,0,4],[26700,0,0],[26730,0,3],[26760,0,0],[26790,0,0],[26820,0,1],[26850,0,0]],&quot;stops&quot;:[{&quot;index&quot;:1,&quot;name&quot;:&quot;Останкино&quot;,&quot;planned&quot;:24420,&quot;corrected&quot;:23686.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;first&quot;},{&quot;index&quot;:2,&quot;name&quot;:&quot;Останкино&quot;,&quot;planned&quot;:24480,&quot;corrected&quot;:23746.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:3,&quot;name&quot;:&quot;Аргуновская улица&quot;,&quot;planned&quot;:24540,&quot;corrected&quot;:23806.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:4,&quot;name&quot;:&quot;Улица Цандера&quot;,&quot;planned&quot;:24600,&quot;corrected&quot;:23866.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:5,&quot;name&quot;:&quot;ВДНХ (южная)&quot;,&quot;planned&quot;:24660,&quot;corrected&quot;:23927.0,&quot;count&quot;:7,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:6,&quot;name&quot;:&quot;Метро «ВДНХ»&quot;,&quot;planned&quot;:24720,&quot;corrected&quot;:23987.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:7,&quot;name&quot;:&quot;ВДНХ (северная)&quot;,&quot;planned&quot;:24840,&quot;corrected&quot;:24107.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:8,&quot;name&quot;:&quot;Улица Сергея Эйзенштейна&quot;,&quot;planned&quot;:24960,&quot;corrected&quot;:24227.0,&quot;count&quot;:1,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:9,&quot;name&quot;:&quot;Сельскохозяйственная улица&quot;,&quot;planned&quot;:25020,&quot;corrected&quot;:24287.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:10,&quot;name&quot;:&quot;Улица Докукина&quot;,&quot;planned&quot;:25140,&quot;corrected&quot;:24407.0,&quot;count&quot;:3,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:11,&quot;name&quot;:&quot;МЦК Ростокино&quot;,&quot;planned&quot;:25260,&quot;corrected&quot;:24564.0,&quot;count&quot;:8,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:12,&quot;name&quot;:&quot;Северянинский путепровод&quot;,&quot;planned&quot;:25380,&quot;corrected&quot;:24684.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:13,&quot;name&quot;:&quot;Социальный фонд России&quot;,&quot;planned&quot;:25500,&quot;corrected&quot;:24804.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:14,&quot;name&quot;:&quot;Берингов проезд&quot;,&quot;planned&quot;:25560,&quot;corrected&quot;:24864.0,&quot;count&quot;:2,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:15,&quot;name&quot;:&quot;Верхоянская улица&quot;,&quot;planned&quot;:25620,&quot;corrected&quot;:24924.0,&quot;count&quot;:4,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:16,&quot;name&quot;:&quot;Радужная улица&quot;,&quot;planned&quot;:25740,&quot;corrected&quot;:25044.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:17,&quot;name&quot;:&quot;Печорская улица&quot;,&quot;planned&quot;:25860,&quot;corrected&quot;:25164.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:18,&quot;name&quot;:&quot;Метро «Бабушкинская»&quot;,&quot;planned&quot;:25980,&quot;corrected&quot;:25284.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:19,&quot;name&quot;:&quot;Улица Менжинского, 38&quot;,&quot;planned&quot;:26040,&quot;corrected&quot;:25344.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:20,&quot;name&quot;:&quot;Сухонская улица&quot;,&quot;planned&quot;:26100,&quot;corrected&quot;:25404.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:21,&quot;name&quot;:&quot;Проезд Шокальского&quot;,&quot;planned&quot;:26220,&quot;corrected&quot;:25524.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:22,&quot;name&quot;:&quot;МФЦ «Южное Медведково»&quot;,&quot;planned&quot;:26340,&quot;corrected&quot;:25669.0,&quot;count&quot;:17,&quot;anchor&quot;:&quot;strong&quot;},{&quot;index&quot;:23,&quot;name&quot;:&quot;Культурно-досуговый центр&quot;,&quot;planned&quot;:26460,&quot;corrected&quot;:25789.0,&quot;count&quot;:24,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:24,&quot;name&quot;:&quot;Улица Молодцова&quot;,&quot;planned&quot;:26520,&quot;corrected&quot;:25849.0,&quot;count&quot;:15,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:25,&quot;name&quot;:&quot;Поликлиника&quot;,&quot;planned&quot;:26580,&quot;corrected&quot;:25909.0,&quot;count&quot;:19,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:26,&quot;name&quot;:&quot;Улица Тихомирова&quot;,&quot;planned&quot;:26700,&quot;corrected&quot;:26029.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;},{&quot;index&quot;:27,&quot;name&quot;:&quot;Медведково&quot;,&quot;planned&quot;:26700,&quot;corrected&quot;:26029.0,&quot;count&quot;:0,&quot;anchor&quot;:&quot;schedule&quot;}]}],&quot;months&quot;:[{&quot;month&quot;:&quot;2025-01&quot;,&quot;new_assigned&quot;:3883164,&quot;new_coverage&quot;:0.6974923845777888,&quot;old_assigned&quot;:53977,&quot;old_coverage&quot;:0.009695327429476404,&quot;total&quot;:5567321},{&quot;month&quot;:&quot;2025-02&quot;,&quot;new_assigned&quot;:4014183,&quot;new_coverage&quot;:0.6763833506746254,&quot;old_assigned&quot;:59227,&quot;old_coverage&quot;:0.009979653820069,&quot;total&quot;:5934775},{&quot;month&quot;:&quot;2025-03&quot;,&quot;new_assigned&quot;:4577879,&quot;new_coverage&quot;:0.6813663408335721,&quot;old_assigned&quot;:81888,&quot;old_coverage&quot;:0.012188117448752917,&quot;total&quot;:6718675},{&quot;month&quot;:&quot;2025-04&quot;,&quot;new_assigned&quot;:5150980,&quot;new_coverage&quot;:0.8025360924520183,&quot;old_assigned&quot;:1803219,&quot;old_coverage&quot;:0.2809462141369673,&quot;total&quot;:6418378},{&quot;month&quot;:&quot;2025-05&quot;,&quot;new_assigned&quot;:5371771,&quot;new_coverage&quot;:0.8951577599505143,&quot;old_assigned&quot;:3360846,&quot;old_coverage&quot;:0.5600550315526567,&quot;total&quot;:6000921},{&quot;month&quot;:&quot;2025-06&quot;,&quot;new_assigned&quot;:5018481,&quot;new_coverage&quot;:0.9034190359041344,&quot;old_assigned&quot;:3175399,&quot;old_coverage&quot;:0.571630320647015,&quot;total&quot;:5554987},{&quot;month&quot;:&quot;2025-07&quot;,&quot;new_assigned&quot;:4739162,&quot;new_coverage&quot;:0.8763768391449488,&quot;old_assigned&quot;:2952844,&quot;old_coverage&quot;:0.5460467675948041,&quot;total&quot;:5407676},{&quot;month&quot;:&quot;2025-08&quot;,&quot;new_assigned&quot;:4516338,&quot;new_coverage&quot;:0.8505381473403746,&quot;old_assigned&quot;:2835635,&quot;old_coverage&quot;:0.5340202038539903,&quot;total&quot;:5309977},{&quot;month&quot;:&quot;2025-09&quot;,&quot;new_assigned&quot;:5160705,&quot;new_coverage&quot;:0.8394537854356446,&quot;old_assigned&quot;:3262698,&quot;old_coverage&quot;:0.5307189980503259,&quot;total&quot;:6147694},{&quot;month&quot;:&quot;2025-10&quot;,&quot;new_assigned&quot;:5467206,&quot;new_coverage&quot;:0.8275135856506347,&quot;old_assigned&quot;:3475249,&quot;old_coverage&quot;:0.526011963152437,&quot;total&quot;:6606787}],&quot;summary&quot;:{&quot;source_success&quot;:59667191,&quot;old_assigned&quot;:21060982,&quot;new_assigned&quot;:47899869,&quot;assigned_schedule_basis&quot;:{&quot;active_calendar&quot;:32682143,&quot;transferred_calendar&quot;:15217726},&quot;status_counts&quot;:{&quot;assigned&quot;:47899869,&quot;first_anchor_outside_bound&quot;:478210,&quot;identity_conflict&quot;:728616,&quot;no_trip&quot;:2160475,&quot;outside_corrected_trip_or_equal_clocks&quot;:4103798,&quot;unknown_duty&quot;:4296223}},&quot;selection&quot;:&quot;First eligible morning trip (06:00–10:00, &gt;=100 events), ordered by first payment, profile, anonymous vehicle group; no selection on residual/coverage.&quot;,&quot;method&quot;:&quot;duty-calendar-clock.first-stop-local-anchors-transfer.v3&quot;}&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(()=&gt;{
+ const root=document.getElementById(&#x27;tram-map-v3&#x27;),$=s=&gt;root.querySelector(s),data=JSON.parse($(&#x27;#tm-data&#x27;).textContent);
+ const date=$(&#x27;#tm-date&#x27;),route=$(&#x27;#tm-route&#x27;),slider=$(&#x27;#tm-stop&#x27;),tip=$(&#x27;#tm-tip&#x27;);
+ const fmt=n=&gt;Number(n).toLocaleString(&#x27;ru-RU&#x27;), pct=n=&gt;(n*100).toFixed(2).replace(&#x27;.&#x27;,&#x27;,&#x27;)+&#x27;%&#x27;;
+ const time=s=&gt;{const v=Math.round(s);return String(Math.floor(v/3600)).padStart(2,&#x27;0&#x27;)+&#x27;:&#x27;+String(Math.floor(v%3600/60)).padStart(2,&#x27;0&#x27;)+&#x27;:&#x27;+String(v%60).padStart(2,&#x27;0&#x27;)};
+ const basisName=s=&gt;s===&#x27;first&#x27;?&#x27;Первая оплата → первая остановка&#x27;:s===&#x27;strong&#x27;?&#x27;Сильное начало волны&#x27;:&#x27;Интервал расписания&#x27;;
+ let example,show={planned:true,corrected:true},selection=1,pinned=false;
+ const color={planned:&#x27;var(--viz-series-2)&#x27;,corrected:&#x27;var(--viz-series-1)&#x27;};
+ function restore(state){const c=state?.modelContent;if(c&amp;&amp;data.examples.some(e=&gt;e.date===c.date&amp;&amp;e.route===c.route)){date.value=c.date;route.value=c.route;selection=Number(c.stop)||1}const v=state?.privateContent;if(v?.show)show={planned:v.show.planned!==false,corrected:v.show.corrected!==false}}
+ restore(window.openai?.widgetState);
+ function save(){window.openai?.setWidgetState({modelContent:{date:date.value,route:route.value,stop:selection,method:data.method},privateContent:{show}}).catch(()=&gt;{})}
+ function current(){example=data.examples.find(e=&gt;e.date===date.value&amp;&amp;e.route===route.value);selection=Math.max(1,Math.min(selection,example.stops.length));slider.max=example.stops.length;slider.value=selection;
+ $(&#x27;#tm-caption&#x27;).textContent=`${example.stops[0].name} → ${example.stops.at(-1).name} · ${fmt(example.assigned)} из ${fmt(example.total)} оплат (${pct(example.assigned/example.total)}) · ${example.basis===&#x27;active_calendar&#x27;?&#x27;действующее расписание&#x27;:&#x27;перенос с &#x27;+example.donor}`;
+ $(&#x27;#tm-rows&#x27;).replaceChildren();for(const s of example.stops){const tr=document.createElement(&#x27;tr&#x27;);tr.dataset.stop=s.index;for(const v of [`${s.index}. ${s.name}`,time(s.planned),time(s.corrected),fmt(s.count),basisName(s.anchor)]){const td=document.createElement(&#x27;td&#x27;);td.textContent=v;tr.append(td)}$(&#x27;#tm-rows&#x27;).append(tr)}updateDetail();draw()}
+ function updateDetail(){const s=example.stops[selection-1],delta=Math.round(s.corrected-s.planned);$(&#x27;#tm-stop-label&#x27;).textContent=`${selection} / ${example.stops.length}`;$(&#x27;#tm-detail&#x27;).textContent=`${s.index}. ${s.name} · ${time(s.planned)} → ${time(s.corrected)} (${delta&gt;=0?&#x27;+&#x27;:&#x27;&#x27;}${delta} с) · ${fmt(s.count)} оплат · ${basisName(s.anchor)}`;root.querySelectorAll(&#x27;#tm-rows tr&#x27;).forEach(tr=&gt;tr.classList.toggle(&#x27;chosen&#x27;,Number(tr.dataset.stop)===selection))}
+ function cleanLabels(svg){let last=-Infinity;svg.selectAll(&#x27;.x-axis .tick text&#x27;).each(function(){const box=this.getBoundingClientRect();if(box.left&lt;last+4){this.style.display=&#x27;none&#x27;}else last=box.right})}
+ function frame(svg,w,h,yTitle,x,y,ticks){svg.append(&#x27;rect&#x27;).attr(&#x27;data-chart-frame&#x27;,&#x27;&#x27;).attr(&#x27;x&#x27;,64).attr(&#x27;y&#x27;,20).attr(&#x27;width&#x27;,w-84).attr(&#x27;height&#x27;,h-70).attr(&#x27;fill&#x27;,&#x27;none&#x27;).attr(&#x27;stroke&#x27;,&#x27;var(--border)&#x27;);svg.append(&#x27;g&#x27;).attr(&#x27;class&#x27;,&#x27;x-axis&#x27;).attr(&#x27;transform&#x27;,`translate(0,${h-50})`).call(d3.axisBottom(x).ticks(w&lt;420?3:6).tickFormat(v=&gt;time(v).slice(0,5)));svg.append(&#x27;g&#x27;).attr(&#x27;transform&#x27;,&#x27;translate(64,0)&#x27;).call(d3.axisLeft(y).ticks(ticks).tickFormat(d3.format(&#x27;d&#x27;)));svg.append(&#x27;text&#x27;).attr(&#x27;class&#x27;,&#x27;axis-title&#x27;).attr(&#x27;data-axis&#x27;,&#x27;x&#x27;).attr(&#x27;x&#x27;,(w+44)/2).attr(&#x27;y&#x27;,h-8).attr(&#x27;text-anchor&#x27;,&#x27;middle&#x27;).text(&#x27;Время, МСК&#x27;);svg.append(&#x27;text&#x27;).attr(&#x27;class&#x27;,&#x27;axis-title&#x27;).attr(&#x27;data-axis&#x27;,&#x27;y&#x27;).attr(&#x27;transform&#x27;,`translate(16,${(h-30)/2}) rotate(-90)`).attr(&#x27;text-anchor&#x27;,&#x27;middle&#x27;).text(yTitle)}
+ function at(key,v){const a=example.stops;let i=d3.bisector(s=&gt;s[key]).right(a,v)-1;return i&lt;0||v&gt;a.at(-1)[key]?null:a[i]}
+ function draw(){if(!example)return;const w=Math.max(280,root.getBoundingClientRect().width),h=330,hh=200;
+ const clocks=example.stops.flatMap(s=&gt;[s.planned,s.corrected]).concat(example.bins.flatMap(b=&gt;[b[0],b[0]+30]));const ex=d3.extent(clocks),padding=(ex[1]-ex[0])*.025;
+ const x=d3.scaleLinear().domain([ex[0]-padding,ex[1]+padding]).range([70,w-26]);
+ const y=d3.scaleLinear().domain([0,example.stops.length+1]).range([26,h-56]);
+ const svg=d3.select($(&#x27;#tm-clock&#x27;));svg.selectAll(&#x27;*&#x27;).remove();svg.attr(&#x27;viewBox&#x27;,`0 0 ${w} ${h}`).attr(&#x27;height&#x27;,h);svg.append(&#x27;title&#x27;).text(`Маршрут ${example.route}, ${example.date}, оценочные остановки`);frame(svg,w,h,&#x27;№ остановки&#x27;,x,y,6);
+ const selected=example.stops[selection-1];svg.append(&#x27;line&#x27;).attr(&#x27;x1&#x27;,70).attr(&#x27;x2&#x27;,w-26).attr(&#x27;y1&#x27;,y(selected.index)).attr(&#x27;y2&#x27;,y(selected.index)).attr(&#x27;stroke&#x27;,&#x27;var(--border)&#x27;);
+ for(const key of [&#x27;planned&#x27;,&#x27;corrected&#x27;])if(show[key]){svg.append(&#x27;path&#x27;).datum(example.stops).attr(&#x27;d&#x27;,d3.line().x(s=&gt;x(s[key])).y(s=&gt;y(s.index)).curve(d3.curveStepAfter)).attr(&#x27;fill&#x27;,&#x27;none&#x27;).attr(&#x27;stroke&#x27;,color[key]).attr(&#x27;stroke-width&#x27;,2).attr(&#x27;stroke-dasharray&#x27;,key===&#x27;planned&#x27;?&#x27;5 4&#x27;:null);if(key===&#x27;corrected&#x27;){for(const s of example.stops.filter(s=&gt;s.anchor!==&#x27;schedule&#x27;)){svg.append(&#x27;path&#x27;).attr(&#x27;d&#x27;,d3.symbol().type(s.anchor===&#x27;first&#x27;?d3.symbolDiamond:d3.symbolCircle).size(s.anchor===&#x27;first&#x27;?70:44)()).attr(&#x27;transform&#x27;,`translate(${x(s.corrected)},${y(s.index)})`).attr(&#x27;fill&#x27;,&#x27;var(--viz-series-3)&#x27;)}}}
+ const counts=d3.select($(&#x27;#tm-count&#x27;));counts.selectAll(&#x27;*&#x27;).remove();counts.attr(&#x27;viewBox&#x27;,`0 0 ${w} ${hh}`).attr(&#x27;height&#x27;,hh);counts.append(&#x27;title&#x27;).text(&#x27;Все оплаты выбранного рейса, интервалы 30 секунд&#x27;);const ym=d3.max(example.bins,b=&gt;b[1]+b[2])||1;const yc=d3.scaleLinear().domain([0,ym*1.15]).range([hh-56,26]);frame(counts,w,hh,&#x27;Оплат / 30 с&#x27;,x,yc,4);
+ const pattern=counts.append(&#x27;defs&#x27;).append(&#x27;pattern&#x27;).attr(&#x27;id&#x27;,&#x27;tm-hatch&#x27;).attr(&#x27;patternUnits&#x27;,&#x27;userSpaceOnUse&#x27;).attr(&#x27;width&#x27;,6).attr(&#x27;height&#x27;,6);pattern.append(&#x27;path&#x27;).attr(&#x27;d&#x27;,&#x27;M0,6L6,0&#x27;).attr(&#x27;stroke&#x27;,&#x27;var(--viz-series-4)&#x27;).attr(&#x27;stroke-width&#x27;,2);
+ for(const b of example.bins){const bw=Math.max(1,x(b[0]+30)-x(b[0])-1);counts.append(&#x27;rect&#x27;).attr(&#x27;x&#x27;,x(b[0])).attr(&#x27;y&#x27;,yc(b[1])).attr(&#x27;width&#x27;,bw).attr(&#x27;height&#x27;,yc(0)-yc(b[1])).attr(&#x27;fill&#x27;,&#x27;var(--viz-series-1)&#x27;);counts.append(&#x27;rect&#x27;).attr(&#x27;x&#x27;,x(b[0])).attr(&#x27;y&#x27;,yc(b[1]+b[2])).attr(&#x27;width&#x27;,bw).attr(&#x27;height&#x27;,yc(b[1])-yc(b[1]+b[2])).attr(&#x27;fill&#x27;,&#x27;url(#tm-hatch)&#x27;)}
+ function overlay(plot,height){const guide=plot.append(&#x27;line&#x27;).attr(&#x27;data-chart-hover-guide&#x27;,&#x27;&#x27;).attr(&#x27;y1&#x27;,20).attr(&#x27;y2&#x27;,height-50).attr(&#x27;stroke&#x27;,&#x27;var(--muted-foreground)&#x27;).attr(&#x27;visibility&#x27;,&#x27;hidden&#x27;);const markers=plot.append(&#x27;g&#x27;);
+ function inspect(event,select){const point=d3.pointer(event,plot.node()),v=x.invert(Math.max(70,Math.min(w-26,point[0])));guide.attr(&#x27;x1&#x27;,x(v)).attr(&#x27;x2&#x27;,x(v)).attr(&#x27;visibility&#x27;,&#x27;visible&#x27;);markers.selectAll(&#x27;*&#x27;).remove();const rows=[time(v)];for(const key of [&#x27;planned&#x27;,&#x27;corrected&#x27;])if(show[key]){const s=at(key,v);rows.push((key===&#x27;planned&#x27;?&#x27;Расписание: &#x27;:&#x27;После коррекции: &#x27;)+(s?`${s.index}. ${s.name}`:&#x27;вне рейса&#x27;));if(height===h&amp;&amp;s)markers.append(&#x27;circle&#x27;).attr(&#x27;data-chart-hover-marker&#x27;,key).attr(&#x27;cx&#x27;,x(v)).attr(&#x27;cy&#x27;,y(s.index)).attr(&#x27;r&#x27;,4).attr(&#x27;fill&#x27;,color[key]);}
+ const b=example.bins[Math.max(0,Math.min(example.bins.length-1,Math.floor((v-example.bins[0][0])/30)))];rows.push(`${time(b[0])}–${time(b[0]+30)}: ${b[1]} привязано, ${b[2]} неизвестно`);tip.replaceChildren();for(const text of rows){const div=document.createElement(&#x27;div&#x27;);div.textContent=text;tip.append(div)}tip.hidden=false;const rb=root.getBoundingClientRect();tip.style.left=Math.max(0,Math.min(w-tip.offsetWidth-4,event.clientX-rb.left+12))+&#x27;px&#x27;;tip.style.top=Math.max(0,event.clientY-rb.top-tip.offsetHeight-12)+&#x27;px&#x27;;if(select){const s=at(&#x27;corrected&#x27;,v);if(s){selection=s.index;slider.value=selection;updateDetail();save()}}}
+ plot.append(&#x27;rect&#x27;).attr(&#x27;data-chart-hit&#x27;,&#x27;&#x27;).attr(&#x27;data-chart-hover-overlay&#x27;,&#x27;cross-series&#x27;).attr(&#x27;x&#x27;,64).attr(&#x27;y&#x27;,20).attr(&#x27;width&#x27;,w-84).attr(&#x27;height&#x27;,height-70).attr(&#x27;fill&#x27;,&#x27;transparent&#x27;).on(&#x27;pointermove&#x27;,event=&gt;{if(!pinned)inspect(event,false)}).on(&#x27;pointerleave&#x27;,()=&gt;{if(!pinned){tip.hidden=true;guide.attr(&#x27;visibility&#x27;,&#x27;hidden&#x27;);markers.selectAll(&#x27;*&#x27;).remove()}}).on(&#x27;click&#x27;,event=&gt;{pinned=!pinned;inspect(event,true)});
+ }
+ overlay(svg,h);overlay(counts,hh);cleanLabels(svg);cleanLabels(counts);for(const k of [&#x27;planned&#x27;,&#x27;corrected&#x27;])$(&#x27;#tm-&#x27;+k).setAttribute(&#x27;aria-pressed&#x27;,String(show[k]));}
+ for(const key of [&#x27;planned&#x27;,&#x27;corrected&#x27;])$(&#x27;#tm-&#x27;+key).addEventListener(&#x27;click&#x27;,()=&gt;{show[key]=!show[key];pinned=false;tip.hidden=true;draw();save()});
+ for(const field of [date,route])field.addEventListener(&#x27;change&#x27;,()=&gt;{selection=1;pinned=false;tip.hidden=true;current();save()});slider.addEventListener(&#x27;input&#x27;,()=&gt;{selection=Number(slider.value);pinned=false;tip.hidden=true;updateDetail();draw();save()});
+ for(const m of data.months){const tr=document.createElement(&#x27;tr&#x27;);const name=document.createElement(&#x27;td&#x27;);name.textContent=m.month;tr.append(name);for(const key of [&#x27;old_coverage&#x27;,&#x27;new_coverage&#x27;]){const td=document.createElement(&#x27;td&#x27;);td.className=&#x27;tabular-nums&#x27;;td.textContent=pct(m[key]);const bar=document.createElement(&#x27;div&#x27;);bar.className=&#x27;bar&#x27;+(key===&#x27;old_coverage&#x27;?&#x27; oldbar&#x27;:&#x27;&#x27;);const fill=document.createElement(&#x27;span&#x27;);fill.style.width=(m[key]*100)+&#x27;%&#x27;;bar.append(fill);td.append(bar);tr.append(td)}$(&#x27;#tm-months&#x27;).append(tr)}
+ function table(id,rows){for(const [name,n] of rows){const tr=document.createElement(&#x27;tr&#x27;),a=document.createElement(&#x27;td&#x27;),b=document.createElement(&#x27;td&#x27;);a.textContent=name;b.className=&#x27;text-end&#x27;;b.textContent=fmt(n);tr.append(a,b);$(id).append(tr)}}
+ table(&#x27;#tm-basis&#x27;,[[&#x27;Действующее расписание&#x27;,data.summary.assigned_schedule_basis.active_calendar],[&#x27;Перенос расписания&#x27;,data.summary.assigned_schedule_basis.transferred_calendar]]);
+ const reasonNames={unknown_duty:&#x27;Неизвестный код выхода&#x27;,outside_corrected_trip_or_equal_clocks:&#x27;За конечной / одинаковые часы остановок&#x27;,no_trip:&#x27;Вне окна рейса&#x27;,identity_conflict:&#x27;Конфликт идентичности&#x27;,first_anchor_outside_bound:&#x27;Первый якорь дальше 15 минут&#x27;};table(&#x27;#tm-reasons&#x27;,Object.entries(data.summary.status_counts).filter(([k])=&gt;k!==&#x27;assigned&#x27;).sort((a,b)=&gt;b[1]-a[1]).map(([k,n])=&gt;[reasonNames[k],n]));
+ window.addEventListener(&#x27;openai:set_globals&#x27;,event=&gt;{if(event.detail?.globals?.widgetState){restore(event.detail.globals.widgetState);current()}});
+ current();new ResizeObserver(()=&gt;{pinned=false;tip.hidden=true;draw()}).observe(root);
+})();
+&lt;/script&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+  let lastPointerWasTouch = false;
+  let pinnedByTouch = false;
+
+  const getTrigger = (event) =&gt; {
+    for (const target of event.composedPath()) {
+      if (target?.nodeType === Node.ELEMENT_NODE) {
+        const trigger = target.closest(&quot;[data-tooltip]&quot;);
+        if (trigger) return trigger;
+      }
+    }
+    return null;
+  };
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    pinnedByTouch = false;
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handlePointer = (event) =&gt; {
+    lastPointerWasTouch =
+      event.type === &quot;pointerdown&quot; &amp;&amp; event.pointerType === &quot;touch&quot;;
+  };
+  const handleTouchClick = (event) =&gt; {
+    const isTouch = event.pointerType === &quot;touch&quot; || lastPointerWasTouch;
+    lastPointerWasTouch = false;
+    if (!isTouch || event.detail === 0) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (
+      trigger == null ||
+      !trigger.isConnected ||
+      getContent(trigger).length === 0 ||
+      (pinnedByTouch &amp;&amp; activeTrigger === trigger)
+    ) {
+      if (pinnedByTouch) {
+        closeTooltip();
+      }
+      return;
+    }
+    openTooltip(trigger);
+    pinnedByTouch = activeTrigger === trigger;
+    window.setTimeout(() =&gt; {
+      if (activeTrigger === trigger &amp;&amp; !trigger.isConnected) {
+        closeTooltip(false);
+      }
+    }, 0);
+  };
+  const handleLeave = (event) =&gt; {
+    if (pinnedByTouch) {
+      return;
+    }
+    const trigger = getTrigger(event);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    lastPointerWasTouch = false;
+    const trigger = getTrigger(event);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handlers = {
+    pointerover: handlePointerOpen,
+    pointerdown: handlePointer,
+    pointercancel: handlePointer,
+    click: handleTouchClick,
+    pointerout: handleLeave,
+    focusin: handleFocusIn,
+    focusout: handleLeave,
+    keydown: handleKeyDown,
+    contextmenu: handleContextMenu,
+  };
+  const roots = new Map();
+  const handledEvents = new WeakSet();
+  const handleEvent = (event) =&gt; {
+    if (handledEvents.has(event)) return;
+    handledEvents.add(event);
+    handlers[event.type](event);
+  };
+  const discoverRoots = (node) =&gt; {
+    if (node.shadowRoot) listen(node.shadowRoot);
+    for (const element of node.querySelectorAll(&quot;*&quot;)) {
+      if (element.shadowRoot) listen(element.shadowRoot);
+    }
+  };
+  const listen = (root) =&gt; {
+    if (roots.has(root)) return;
+    for (const type of Object.keys(handlers)) root.addEventListener(type, handleEvent);
+    const observer = new window.MutationObserver((records) =&gt; {
+      for (const { addedNodes } of records) {
+        for (const node of addedNodes) {
+          if (node.nodeType === Node.ELEMENT_NODE) discoverRoots(node);
+        }
+      }
+      for (const [root, cleanup] of roots) {
+        if (root.host &amp;&amp; !root.host.isConnected) {
+          cleanup();
+          roots.delete(root);
+        }
+      }
+      if (activeTrigger &amp;&amp; !activeTrigger.isConnected) closeTooltip(false);
+    });
+    observer.observe(root, { childList: true, subtree: true });
+    roots.set(root, () =&gt; {
+      observer.disconnect();
+      for (const type of Object.keys(handlers)) root.removeEventListener(type, handleEvent);
+    });
+    discoverRoots(root);
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    lastPointerWasTouch = false;
+    for (const cleanup of roots.values()) cleanup();
+    roots.clear();
+    tooltip = null;
+  };
+
+  // Events between children of one shadow root never reach the document.
+  listen(document);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-tabs&quot;&gt;
+(() =&gt; {
+  const selector = &#x27;.nav[role=&quot;tablist&quot;] [role=&quot;tab&quot;]&#x27;;
+  const disabled = &#x27;:disabled,[aria-disabled=&quot;true&quot;]&#x27;;
+  const selectTab = (selected) =&gt; {
+    const panelId = selected.getAttribute(&quot;aria-controls&quot;);
+    for (const tab of selected.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;)) {
+      const active = tab === selected;
+      tab.classList.toggle(&quot;active&quot;, active);
+      tab.setAttribute(&quot;aria-selected&quot;, String(active));
+      const id = tab.getAttribute(&quot;aria-controls&quot;);
+      const panel = id &amp;&amp; document.getElementById(id);
+      if (panel != null) {
+        panel.hidden = id !== panelId;
+        if (!panel.hidden &amp;&amp; selected.id) {
+          panel.setAttribute(&quot;aria-labelledby&quot;, selected.id);
+        }
+      }
+    }
+  };
+  const interact = (event) =&gt; {
+    const tab = event.target?.closest?.(selector);
+    if (event.defaultPrevented || tab == null || tab.matches(disabled)) {
+      return;
+    }
+    if (event.type === &quot;click&quot;) {
+      selectTab(tab);
+      return;
+    }
+    const tabs = Array.from(
+      tab.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;),
+    ).filter((candidate) =&gt; !candidate.matches(disabled));
+    const current = tabs.indexOf(tab);
+    let next;
+    if (event.key === &quot;ArrowRight&quot; || event.key === &quot;ArrowDown&quot;) {
+      next = (current + 1) % tabs.length;
+    } else if (event.key === &quot;ArrowLeft&quot; || event.key === &quot;ArrowUp&quot;) {
+      next = (current + tabs.length - 1) % tabs.length;
+    } else if (event.key === &quot;Home&quot;) {
+      next = 0;
+    } else if (event.key === &quot;End&quot;) {
+      next = tabs.length - 1;
+    } else {
+      return;
+    }
+    event.preventDefault();
+    tabs[next].focus();
+    selectTab(tabs[next]);
+  };
+
+  for (const list of document.querySelectorAll(&#x27;.nav[role=&quot;tablist&quot;]&#x27;)) {
+    const selected =
+      list.querySelector(&#x27;[role=&quot;tab&quot;][aria-selected=&quot;true&quot;]&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;].active&#x27;) ??
+      list.querySelector(&#x27;[role=&quot;tab&quot;]&#x27;);
+    if (selected != null) {
+      selectTab(selected);
+    }
+  }
+  document.addEventListener(&quot;click&quot;, interact);
+  document.addEventListener(&quot;keydown&quot;, interact);
+  window.addEventListener(&quot;pagehide&quot;, () =&gt; {
+    document.removeEventListener(&quot;click&quot;, interact);
+    document.removeEventListener(&quot;keydown&quot;, interact);
+  }, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+<script>(() => {
+  const frame = document.getElementById("codex-visualization");
+  if (!(frame instanceof HTMLIFrameElement)) {
+    return;
+  }
+  let viewportHeight = globalThis.innerHeight;
+  const storageKey = `codex:visualization-widget-state-v2:${JSON.stringify([
+    globalThis.location.pathname,
+    globalThis.location.search,
+  ])}`;
+  const parseState = (serializedState) => {
+    if (
+      typeof serializedState !== "string" ||
+      new TextEncoder().encode(serializedState).length > 16 * 1024
+    ) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    /** @type {unknown} */
+    const state = JSON.parse(serializedState);
+    if (
+      state == null ||
+      typeof state !== "object" ||
+      Array.isArray(state) ||
+      ("imageIds" in state &&
+        (!Array.isArray(state.imageIds) || state.imageIds.length > 0))
+    ) {
+      throw new TypeError("Widget state must be a JSON object");
+    }
+    const storedState = { modelContent: null, privateContent: null, ...state };
+    const canonicalState = JSON.stringify(
+      storedState,
+      (_key, /** @type {unknown} */ value) => {
+        if (typeof value === "number" && !Number.isFinite(value)) {
+          throw new TypeError("Widget state must contain finite numbers");
+        }
+        return value;
+      },
+    );
+    if (new TextEncoder().encode(canonicalState).length > 16 * 1024) {
+      throw new TypeError(
+        "Widget state must be a JSON object of at most 16 KiB",
+      );
+    }
+    return storedState;
+  };
+  let storage = null;
+  let state = null;
+  try {
+    const localStorage = globalThis.localStorage;
+    const probeKey = `${storageKey}:probe`;
+    localStorage.setItem(probeKey, "1");
+    localStorage.removeItem(probeKey);
+    storage = localStorage;
+    const savedState = storage.getItem(storageKey);
+    if (savedState != null) {
+      try {
+        state = parseState(savedState);
+      } catch {
+        // Invalid saved state does not disable future writes.
+      }
+    }
+  } catch {
+    storage = null;
+  }
+  const initialGlobals = {
+    widgetState: state,
+    statePersistence: storage == null ? "none" : "local",
+  };
+
+  const channel = new MessageChannel();
+  channel.port1.addEventListener("message", (event) => {
+    const data = event.data;
+    if (typeof data !== "object" || data == null) {
+      return;
+    }
+    if (data.type === "widget-state-write") {
+      if (!Number.isSafeInteger(data.id) || data.id <= 0) {
+        return;
+      }
+      let ok = false;
+      try {
+        if (storage != null) {
+          const state = parseState(data.state);
+          storage.setItem(storageKey, JSON.stringify(state));
+          ok = true;
+        }
+      } catch {
+        // Storage denial, quota limits, and invalid state return a failed receipt.
+      }
+      channel.port1.postMessage({
+        type: "widget-state-result",
+        id: data.id,
+        ok,
+      });
+      return;
+    }
+    if (data.type === "height") {
+      const height = data.height;
+      if (
+        typeof height === "number" &&
+        Number.isFinite(height) &&
+        height >= 0 &&
+        height <= 10_000
+      ) {
+        frame.style.height = Math.ceil(height) + "px";
+      }
+      return;
+    }
+    if (data.type === "scroll-to") {
+      const top = data.top;
+      if (
+        typeof top === "number" &&
+        Number.isFinite(top) &&
+        top >= 0 &&
+        globalThis.navigator.userActivation?.isActive === true
+      ) {
+        globalThis.scrollTo({
+          top: Math.ceil(
+            globalThis.scrollY + frame.getBoundingClientRect().top + top,
+          ),
+        });
+      }
+      return;
+    }
+    if (data.type === "open-external") {
+      const rawHref = data.href;
+      if (typeof rawHref !== "string") {
+        return;
+      }
+      let href;
+      try {
+        const url = new URL(rawHref, document.baseURI);
+        if (url.protocol !== "https:") {
+          return;
+        }
+        href = url.href;
+      } catch {
+        return;
+      }
+      if (globalThis.navigator.userActivation?.isActive === true) {
+        const anchor = document.createElement("a");
+        anchor.href = href;
+        anchor.rel = "noopener noreferrer";
+        anchor.target = "_blank";
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+      }
+      return;
+    }
+    if (data.type === "follow-up") {
+      const prompt = data.prompt;
+      if (
+        typeof prompt !== "string" ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
+      }
+      const title = data.title;
+      globalThis.prompt(typeof title === "string" ? title : prompt, prompt);
+    }
+  });
+  channel.port1.start();
+  const srcdoc = frame.dataset.srcdoc;
+  if (srcdoc == null) {
+    return;
+  }
+  globalThis.addEventListener("resize", () => {
+    const height = Number.parseFloat(frame.style.height);
+    if (!Number.isFinite(height) || height <= viewportHeight) {
+      frame.style.removeProperty("height");
+    }
+    viewportHeight = globalThis.innerHeight;
+    channel.port1.postMessage({ type: "measure" });
+  });
+  frame.addEventListener(
+    "load",
+    () => {
+      frame.contentWindow?.postMessage(
+        { type: "codex-visualization-initialize" },
+        "*",
+        [channel.port2],
+      );
+    },
+    { once: true },
+  );
+  // Match the trusted bootstrap element, not the same text in an authored title.
+  frame.srcdoc = srcdoc.replace(
+    '<script type="application/json" id="codex-visualization-widget-state">__CODEX_VISUALIZATION_WIDGET_STATE__<\/script>',
+    () =>
+      '<script type="application/json" id="codex-visualization-widget-state">' +
+      JSON.stringify(initialGlobals).replaceAll("<", "\\u003c") +
+      "<\/script>",
+  );
+  delete frame.dataset.srcdoc;
+})();
+</script>
+</body>
+</html>

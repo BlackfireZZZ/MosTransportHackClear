@@ -1,0 +1,9 @@
+{
+  "source_sha256": "47b481b0357731f6133208897d7d95ff87ee0b371f00e97e8467c5d55268a81e",
+  "script_sha256": "4b698b8e9d56ddd054e59d2cf9f07c159a296428bbd936bdc22dbd212a82267d",
+  "result_sha256": "59f1bd3f69392bb50e6b5c65bb28eb73b7f5407d451cfdb7d553724dc63317ce",
+  "date": "2025-05-15",
+  "timezone": "Europe/Moscow",
+  "contract": "Frozen strong anchors, causal previous-anchor schedule projection; optional weak matches maximize cardinality then minimize total absolute timing error; monotone, one-to-one, nonoverlapping supports, no weak clock updates; terminal payments optional",
+  "checks": "cardinality counterexample; overlapping support veto; no-match boundary; all real pairs unique/ordered/in tolerance; counts monotone across tolerance; time-shift invariance"
+}

@@ -1,0 +1,163 @@
+{
+  "archive_sha256": "7e34e56b93f7379cb5abe9aca8e87967cb986111b9939caead5a3fea6c296e5a",
+  "configs": [
+    {
+      "baseline_weight": 0.0,
+      "calendar_months": 0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "baseline",
+      "seasonal": false,
+      "statistic": "baseline",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "calendar_months": 1,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "previous_month_mean",
+      "seasonal": false,
+      "statistic": "mean",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "calendar_months": 1,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "previous_month_median",
+      "seasonal": false,
+      "statistic": "median",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "calendar_months": 2,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "equal_months_2",
+      "seasonal": false,
+      "statistic": "month_equal",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "calendar_months": 3,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "equal_months_3",
+      "seasonal": false,
+      "statistic": "month_equal",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "calendar_months": 6,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "equal_months_6",
+      "seasonal": false,
+      "statistic": "month_equal",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "calendar_months": 0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 28,
+      "name": "equal_months_0",
+      "seasonal": false,
+      "statistic": "month_equal",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "calendar_months": 0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 1,
+      "name": "month_exp_h1_s0",
+      "seasonal": false,
+      "statistic": "month_exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "calendar_months": 0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 2,
+      "name": "month_exp_h2_s0",
+      "seasonal": false,
+      "statistic": "month_exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "calendar_months": 0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 3,
+      "name": "month_exp_h3_s0",
+      "seasonal": false,
+      "statistic": "month_exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "calendar_months": 0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 1,
+      "name": "month_exp_h1_s1",
+      "seasonal": true,
+      "statistic": "month_exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "calendar_months": 0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 2,
+      "name": "month_exp_h2_s1",
+      "seasonal": true,
+      "statistic": "month_exp",
+      "window": 0
+    },
+    {
+      "baseline_weight": 0.0,
+      "calendar_months": 0,
+      "correction": 0.0,
+      "daytype_weight": 0.0,
+      "half_life": 3,
+      "name": "month_exp_h3_s1",
+      "seasonal": true,
+      "statistic": "month_exp",
+      "window": 0
+    }
+  ],
+  "horizon_days": 61,
+  "missing_policy": "zeros after checksum-bound raw reconciliation; not proof of operation",
+  "origins": [
+    "2025-04-01",
+    "2025-05-01",
+    "2025-06-01",
+    "2025-07-01",
+    "2025-08-01",
+    "2025-09-01"
+  ],
+  "selection": "descending minimum origin score, descending mean score, ascending name",
+  "target": "successful validations per route-date-hour",
+  "test_status": "secondary monthly grid; all six origins reused after v1",
+  "timezone": "Europe/Moscow (repository assumption)",
+  "version": "statistical-sweep.v2"
+}

@@ -1,0 +1,2054 @@
+[
+  {
+    "dates": [
+      "2025-05-15"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Главная аллея",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 2,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3627"
+  },
+  {
+    "dates": [
+      "2025-05-15",
+      "2025-09-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Галерея «Измайлово»",
+    "observations": 2,
+    "other_method_matches": 2,
+    "other_method_same_stop": 2,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "7894"
+  },
+  {
+    "dates": [
+      "2025-05-15"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "3-я Парковая улица",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 2,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3629"
+  },
+  {
+    "dates": [
+      "2025-05-15",
+      "2025-09-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      6.0
+    ],
+    "future_mae": 6.0,
+    "future_observations": 1,
+    "name": "5-я Парковая ул.",
+    "observations": 2,
+    "other_method_matches": 4,
+    "other_method_same_stop": 4,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3630"
+  },
+  {
+    "dates": [
+      "2025-05-15",
+      "2025-09-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      5.0,
+      24.0
+    ],
+    "future_mae": 14.5,
+    "future_observations": 2,
+    "name": "Районный центр «Первомайский»",
+    "observations": 2,
+    "other_method_matches": 4,
+    "other_method_same_stop": 4,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "4072"
+  },
+  {
+    "dates": [
+      "2025-05-15",
+      "2025-09-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      286.0,
+      188.0
+    ],
+    "future_mae": 237.0,
+    "future_observations": 2,
+    "name": "Восточное Измайлово",
+    "observations": 2,
+    "other_method_matches": 1,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3634"
+  },
+  {
+    "dates": [
+      "2025-05-15",
+      "2025-09-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      20.0,
+      421.0
+    ],
+    "future_mae": 220.5,
+    "future_observations": 2,
+    "name": "Восточное Измайлово",
+    "observations": 2,
+    "other_method_matches": 2,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "10463"
+  },
+  {
+    "dates": [
+      "2025-05-15"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Метро «Площадь Ильича»",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "14922"
+  },
+  {
+    "dates": [
+      "2025-05-15",
+      "2025-05-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Абельмановская Застава",
+    "observations": 2,
+    "other_method_matches": 4,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "6013"
+  },
+  {
+    "dates": [
+      "2025-05-15"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "К/т «Победа» - Детский театр",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "6014"
+  },
+  {
+    "dates": [
+      "2025-05-15"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      110.0
+    ],
+    "future_mae": 110.0,
+    "future_observations": 1,
+    "name": "Метро «Пролетарская»",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "6023"
+  },
+  {
+    "dates": [
+      "2025-05-15"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      94.0
+    ],
+    "future_mae": 94.0,
+    "future_observations": 1,
+    "name": "Динамовская улица",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "8610"
+  },
+  {
+    "dates": [
+      "2025-05-15"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      48.0
+    ],
+    "future_mae": 48.0,
+    "future_observations": 1,
+    "name": "Арбатецкая улица",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "8611"
+  },
+  {
+    "dates": [
+      "2025-05-15",
+      "2025-05-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      99.0,
+      248.0
+    ],
+    "future_mae": 173.5,
+    "future_observations": 2,
+    "name": "МЦК Дубровка",
+    "observations": 2,
+    "other_method_matches": 2,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "8439"
+  },
+  {
+    "dates": [
+      "2025-05-15",
+      "2025-07-15",
+      "2025-07-18",
+      "2025-09-15",
+      "2025-09-18"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Аргуновская улица",
+    "observations": 5,
+    "other_method_matches": 9,
+    "other_method_same_stop": 8,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3609"
+  },
+  {
+    "dates": [
+      "2025-05-15",
+      "2025-05-18",
+      "2025-07-15",
+      "2025-09-15",
+      "2025-09-18",
+      "2025-10-15"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Улица Цандера",
+    "observations": 6,
+    "other_method_matches": 9,
+    "other_method_same_stop": 9,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3610"
+  },
+  {
+    "dates": [
+      "2025-05-15",
+      "2025-07-15",
+      "2025-09-15",
+      "2025-09-18",
+      "2025-10-15"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Метро «ВДНХ»",
+    "observations": 5,
+    "other_method_matches": 9,
+    "other_method_same_stop": 9,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "11288"
+  },
+  {
+    "dates": [
+      "2025-05-15",
+      "2025-07-15",
+      "2025-09-15",
+      "2025-09-18",
+      "2025-10-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      15.0,
+      59.0,
+      51.0
+    ],
+    "future_mae": 41.666666666666664,
+    "future_observations": 3,
+    "name": "Улица Сергея Эйзенштейна",
+    "observations": 5,
+    "other_method_matches": 8,
+    "other_method_same_stop": 7,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "1002848"
+  },
+  {
+    "dates": [
+      "2025-05-15",
+      "2025-07-15",
+      "2025-07-18",
+      "2025-09-15",
+      "2025-09-18",
+      "2025-10-15"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      1.0,
+      7.0,
+      58.0,
+      78.0,
+      35.0,
+      68.0
+    ],
+    "future_mae": 41.166666666666664,
+    "future_observations": 6,
+    "name": "МЦК Ростокино",
+    "observations": 6,
+    "other_method_matches": 6,
+    "other_method_same_stop": 5,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3318"
+  },
+  {
+    "dates": [
+      "2025-05-15",
+      "2025-06-15",
+      "2025-07-15",
+      "2025-07-18",
+      "2025-09-15"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      9.0,
+      44.0,
+      7.0,
+      21.0,
+      29.0
+    ],
+    "future_mae": 22.0,
+    "future_observations": 5,
+    "name": "Северянинский путепровод",
+    "observations": 5,
+    "other_method_matches": 6,
+    "other_method_same_stop": 5,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "15726"
+  },
+  {
+    "dates": [
+      "2025-05-15",
+      "2025-06-15",
+      "2025-10-15",
+      "2025-10-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      44.0,
+      63.0,
+      15.0,
+      17.0
+    ],
+    "future_mae": 34.75,
+    "future_observations": 4,
+    "name": "Печорская улица",
+    "observations": 4,
+    "other_method_matches": 6,
+    "other_method_same_stop": 3,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "2927"
+  },
+  {
+    "dates": [
+      "2025-05-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Новорогожская улица",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "6012"
+  },
+  {
+    "dates": [
+      "2025-05-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "ЦНИИТМАШ",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "6016"
+  },
+  {
+    "dates": [
+      "2025-05-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      118.0
+    ],
+    "future_mae": 118.0,
+    "future_observations": 1,
+    "name": "Новоостаповская улица",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "6020"
+  },
+  {
+    "dates": [
+      "2025-05-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      34.0
+    ],
+    "future_mae": 34.0,
+    "future_observations": 1,
+    "name": "Метро «Дубровка»",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "5387"
+  },
+  {
+    "dates": [
+      "2025-05-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      160.0
+    ],
+    "future_mae": 160.0,
+    "future_observations": 1,
+    "name": "МЦК Дубровка",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "10737"
+  },
+  {
+    "dates": [
+      "2025-05-18",
+      "2025-06-15",
+      "2025-07-18",
+      "2025-09-15"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Сельскохозяйственная улица",
+    "observations": 4,
+    "other_method_matches": 4,
+    "other_method_same_stop": 3,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3316"
+  },
+  {
+    "dates": [
+      "2025-05-18",
+      "2025-07-15",
+      "2025-09-15",
+      "2025-10-15",
+      "2025-10-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      24.0,
+      53.0,
+      11.0,
+      1.0
+    ],
+    "future_mae": 22.25,
+    "future_observations": 4,
+    "name": "Улица Докукина",
+    "observations": 6,
+    "other_method_matches": 5,
+    "other_method_same_stop": 4,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3317"
+  },
+  {
+    "dates": [
+      "2025-05-18",
+      "2025-09-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      3.0,
+      4.0
+    ],
+    "future_mae": 3.5,
+    "future_observations": 2,
+    "name": "Социальный фонд России",
+    "observations": 2,
+    "other_method_matches": 4,
+    "other_method_same_stop": 3,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3320"
+  },
+  {
+    "dates": [
+      "2025-05-18",
+      "2025-10-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      26.0
+    ],
+    "future_mae": 26.0,
+    "future_observations": 1,
+    "name": "Берингов проезд",
+    "observations": 2,
+    "other_method_matches": 3,
+    "other_method_same_stop": 2,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3321"
+  },
+  {
+    "dates": [
+      "2025-05-18",
+      "2025-07-18",
+      "2025-09-15",
+      "2025-10-15"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      26.0,
+      5.0,
+      21.0,
+      57.0,
+      3.0
+    ],
+    "future_mae": 22.4,
+    "future_observations": 5,
+    "name": "Метро «Бабушкинская»",
+    "observations": 5,
+    "other_method_matches": 4,
+    "other_method_same_stop": 2,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "13707"
+  },
+  {
+    "dates": [
+      "2025-06-15",
+      "2025-10-15"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "ВДНХ (южная)",
+    "observations": 2,
+    "other_method_matches": 3,
+    "other_method_same_stop": 3,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3611"
+  },
+  {
+    "dates": [
+      "2025-06-15",
+      "2025-07-18"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "ВДНХ (северная)",
+    "observations": 2,
+    "other_method_matches": 2,
+    "other_method_same_stop": 2,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "10148"
+  },
+  {
+    "dates": [
+      "2025-06-15",
+      "2025-10-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      26.0,
+      50.0
+    ],
+    "future_mae": 38.0,
+    "future_observations": 2,
+    "name": "Сухонская улица",
+    "observations": 2,
+    "other_method_matches": 4,
+    "other_method_same_stop": 1,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3324"
+  },
+  {
+    "dates": [
+      "2025-06-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Останкино",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "6153"
+  },
+  {
+    "dates": [
+      "2025-06-18",
+      "2025-10-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Метро «ВДНХ»",
+    "observations": 2,
+    "other_method_matches": 3,
+    "other_method_same_stop": 2,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "11288"
+  },
+  {
+    "dates": [
+      "2025-06-18",
+      "2025-10-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "ВДНХ (северная)",
+    "observations": 2,
+    "other_method_matches": 1,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "10148"
+  },
+  {
+    "dates": [
+      "2025-06-18",
+      "2025-10-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      22.0
+    ],
+    "future_mae": 22.0,
+    "future_observations": 1,
+    "name": "Ярославская улица",
+    "observations": 2,
+    "other_method_matches": 2,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "1212"
+  },
+  {
+    "dates": [
+      "2025-06-18",
+      "2025-09-15"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      53.0
+    ],
+    "future_mae": 53.0,
+    "future_observations": 1,
+    "name": "Площадь Академика Люльки",
+    "observations": 2,
+    "other_method_matches": 4,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "1214"
+  },
+  {
+    "dates": [
+      "2025-06-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      36.0
+    ],
+    "future_mae": 36.0,
+    "future_observations": 1,
+    "name": "Инновационный университет",
+    "observations": 1,
+    "other_method_matches": 1,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3614"
+  },
+  {
+    "dates": [
+      "2025-06-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      21.0
+    ],
+    "future_mae": 21.0,
+    "future_observations": 1,
+    "name": "1-я Прогонная ул.",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3615"
+  },
+  {
+    "dates": [
+      "2025-06-18",
+      "2025-09-15",
+      "2025-10-15"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Восточное Измайлово",
+    "observations": 3,
+    "other_method_matches": 3,
+    "other_method_same_stop": 2,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3707"
+  },
+  {
+    "dates": [
+      "2025-06-18",
+      "2025-09-15"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "15-я Парковая улица",
+    "observations": 2,
+    "other_method_matches": 2,
+    "other_method_same_stop": 2,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3636"
+  },
+  {
+    "dates": [
+      "2025-06-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Метро «Первомайская»",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 2,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "4073"
+  },
+  {
+    "dates": [
+      "2025-06-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      4.0
+    ],
+    "future_mae": 4.0,
+    "future_observations": 1,
+    "name": "3-я Парковая ул.",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 2,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3640"
+  },
+  {
+    "dates": [
+      "2025-06-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      3.0
+    ],
+    "future_mae": 3.0,
+    "future_observations": 1,
+    "name": "Измайловская площадь",
+    "observations": 1,
+    "other_method_matches": 1,
+    "other_method_same_stop": 1,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "6257"
+  },
+  {
+    "dates": [
+      "2025-06-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      54.0
+    ],
+    "future_mae": 54.0,
+    "future_observations": 1,
+    "name": "Галерея «Измайлово»",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "7896"
+  },
+  {
+    "dates": [
+      "2025-06-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      39.0
+    ],
+    "future_mae": 39.0,
+    "future_observations": 1,
+    "name": "Фортунатовская улица",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 2,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3644"
+  },
+  {
+    "dates": [
+      "2025-06-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Улица Молодцова",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 1,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3331"
+  },
+  {
+    "dates": [
+      "2025-06-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Культурно-досуговый центр",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3287"
+  },
+  {
+    "dates": [
+      "2025-06-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Улица Менжинского, 38",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3291"
+  },
+  {
+    "dates": [
+      "2025-06-18",
+      "2025-08-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      70.0,
+      17.0
+    ],
+    "future_mae": 43.5,
+    "future_observations": 2,
+    "name": "Радужная улица",
+    "observations": 2,
+    "other_method_matches": 3,
+    "other_method_same_stop": 2,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3294"
+  },
+  {
+    "dates": [
+      "2025-06-18",
+      "2025-08-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      67.0,
+      37.0
+    ],
+    "future_mae": 52.0,
+    "future_observations": 2,
+    "name": "Улица Докукина",
+    "observations": 2,
+    "other_method_matches": 3,
+    "other_method_same_stop": 2,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3299"
+  },
+  {
+    "dates": [
+      "2025-06-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      6.0
+    ],
+    "future_mae": 6.0,
+    "future_observations": 1,
+    "name": "Сельскохозяйственная улица",
+    "observations": 1,
+    "other_method_matches": 1,
+    "other_method_same_stop": 0,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3300"
+  },
+  {
+    "dates": [
+      "2025-07-15",
+      "2025-09-18"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Арбатецкая улица",
+    "observations": 2,
+    "other_method_matches": 3,
+    "other_method_same_stop": 3,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "8612"
+  },
+  {
+    "dates": [
+      "2025-07-15",
+      "2025-09-15"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Динамовская улица",
+    "observations": 2,
+    "other_method_matches": 2,
+    "other_method_same_stop": 2,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "8613"
+  },
+  {
+    "dates": [
+      "2025-07-15",
+      "2025-09-15",
+      "2025-09-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      27.0
+    ],
+    "future_mae": 27.0,
+    "future_observations": 1,
+    "name": "Метро «Пролетарская»",
+    "observations": 3,
+    "other_method_matches": 1,
+    "other_method_same_stop": 1,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "7193"
+  },
+  {
+    "dates": [
+      "2025-07-15",
+      "2025-09-15",
+      "2025-09-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      34.0,
+      23.0,
+      15.0
+    ],
+    "future_mae": 24.0,
+    "future_observations": 3,
+    "name": "Библиотечная улица",
+    "observations": 3,
+    "other_method_matches": 4,
+    "other_method_same_stop": 3,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "6027"
+  },
+  {
+    "dates": [
+      "2025-07-15"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      16.0
+    ],
+    "future_mae": 16.0,
+    "future_observations": 1,
+    "name": "Горбатый путепровод",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 2,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "22096"
+  },
+  {
+    "dates": [
+      "2025-08-18",
+      "2025-10-18"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Метро «Партизанская»",
+    "observations": 2,
+    "other_method_matches": 2,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "8844"
+  },
+  {
+    "dates": [
+      "2025-08-18",
+      "2025-10-18"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Главная аллея",
+    "observations": 2,
+    "other_method_matches": 2,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3627"
+  },
+  {
+    "dates": [
+      "2025-08-18"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Измайловская пл.",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3628"
+  },
+  {
+    "dates": [
+      "2025-08-18",
+      "2025-10-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      1.0
+    ],
+    "future_mae": 1.0,
+    "future_observations": 1,
+    "name": "7-я Парковая ул.",
+    "observations": 2,
+    "other_method_matches": 3,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3631"
+  },
+  {
+    "dates": [
+      "2025-08-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      54.0
+    ],
+    "future_mae": 54.0,
+    "future_observations": 1,
+    "name": "Восточное Измайлово",
+    "observations": 1,
+    "other_method_matches": 1,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "10463"
+  },
+  {
+    "dates": [
+      "2025-08-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Поликлиника",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 2,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3286"
+  },
+  {
+    "dates": [
+      "2025-08-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Проезд Шокальского",
+    "observations": 1,
+    "other_method_matches": 1,
+    "other_method_same_stop": 1,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3289"
+  },
+  {
+    "dates": [
+      "2025-08-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Метро «Бабушкинская»",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3292"
+  },
+  {
+    "dates": [
+      "2025-08-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      15.0
+    ],
+    "future_mae": 15.0,
+    "future_observations": 1,
+    "name": "Верхоянская улица",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 2,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "10828"
+  },
+  {
+    "dates": [
+      "2025-09-15"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Улица Бориса Галушкина, 17",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 0,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "1213"
+  },
+  {
+    "dates": [
+      "2025-09-15"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Станция Юных натуралистов",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 0,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "1215"
+  },
+  {
+    "dates": [
+      "2025-09-15"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      48.0
+    ],
+    "future_mae": 48.0,
+    "future_observations": 1,
+    "name": "Ростокинский проезд",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 0,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "7163"
+  },
+  {
+    "dates": [
+      "2025-09-15"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      23.0
+    ],
+    "future_mae": 23.0,
+    "future_observations": 1,
+    "name": "Мосгорсуд",
+    "observations": 1,
+    "other_method_matches": 1,
+    "other_method_same_stop": 0,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3617"
+  },
+  {
+    "dates": [
+      "2025-09-15",
+      "2025-10-15"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "5-я Парковая улица",
+    "observations": 2,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3639"
+  },
+  {
+    "dates": [
+      "2025-09-15",
+      "2025-10-15"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      32.0,
+      6.0
+    ],
+    "future_mae": 19.0,
+    "future_observations": 2,
+    "name": "Метро «Партизанская»",
+    "observations": 2,
+    "other_method_matches": 3,
+    "other_method_same_stop": 2,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "8843"
+  },
+  {
+    "dates": [
+      "2025-09-15"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      47.0
+    ],
+    "future_mae": 47.0,
+    "future_observations": 1,
+    "name": "Мост Окружной железной дороги",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 2,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "16917"
+  },
+  {
+    "dates": [
+      "2025-09-15",
+      "2025-10-15"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      2.0,
+      43.0
+    ],
+    "future_mae": 22.5,
+    "future_observations": 2,
+    "name": "Ул. Ибрагимова",
+    "observations": 2,
+    "other_method_matches": 2,
+    "other_method_same_stop": 1,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3645"
+  },
+  {
+    "dates": [
+      "2025-09-15",
+      "2025-10-15"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      45.0,
+      21.0
+    ],
+    "future_mae": 33.0,
+    "future_observations": 2,
+    "name": "Семёновская площадь",
+    "observations": 2,
+    "other_method_matches": 2,
+    "other_method_same_stop": 1,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "21450"
+  },
+  {
+    "dates": [
+      "2025-09-15"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "МЦК Дубровка",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "8098"
+  },
+  {
+    "dates": [
+      "2025-09-15"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Метро «Дубровка»",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "6019"
+  },
+  {
+    "dates": [
+      "2025-09-15"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      10.0
+    ],
+    "future_mae": 10.0,
+    "future_observations": 1,
+    "name": "Метро «Авиамоторная»",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "5342"
+  },
+  {
+    "dates": [
+      "2025-09-15",
+      "2025-09-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      35.0,
+      74.0
+    ],
+    "future_mae": 54.5,
+    "future_observations": 2,
+    "name": "Радужная улица",
+    "observations": 2,
+    "other_method_matches": 4,
+    "other_method_same_stop": 3,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3322"
+  },
+  {
+    "dates": [
+      "2025-09-15"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Останкино",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "6153"
+  },
+  {
+    "dates": [
+      "2025-09-15"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      1.0
+    ],
+    "future_mae": 1.0,
+    "future_observations": 1,
+    "name": "Улица Менжинского, 38",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "18279"
+  },
+  {
+    "dates": [
+      "2025-09-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      24.0
+    ],
+    "future_mae": 24.0,
+    "future_observations": 1,
+    "name": "Измайловская пл.",
+    "observations": 2,
+    "other_method_matches": 1,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3628"
+  },
+  {
+    "dates": [
+      "2025-09-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Метро «Преображенская площадь»",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "8630"
+  },
+  {
+    "dates": [
+      "2025-09-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Преображенский рынок",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3850"
+  },
+  {
+    "dates": [
+      "2025-09-18"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Фортунатовская ул.",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3624"
+  },
+  {
+    "dates": [
+      "2025-09-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      78.0
+    ],
+    "future_mae": 78.0,
+    "future_observations": 1,
+    "name": "Мост Окружной железной дороги",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "16916"
+  },
+  {
+    "dates": [
+      "2025-09-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      62.0
+    ],
+    "future_mae": 62.0,
+    "future_observations": 1,
+    "name": "Метро «Партизанская»",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "8844"
+  },
+  {
+    "dates": [
+      "2025-09-18"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Абельмановская Застава",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 1,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "6025"
+  },
+  {
+    "dates": [
+      "2025-09-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      36.0
+    ],
+    "future_mae": 36.0,
+    "future_observations": 1,
+    "name": "Новорогожская улица",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "6026"
+  },
+  {
+    "dates": [
+      "2025-09-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      3.0
+    ],
+    "future_mae": 3.0,
+    "future_observations": 1,
+    "name": "МЦД Москва-Товарная",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 1,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "7605"
+  },
+  {
+    "dates": [
+      "2025-09-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      51.0
+    ],
+    "future_mae": 51.0,
+    "future_observations": 1,
+    "name": "Метро «Авиамоторная»",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 1,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "1009095"
+  },
+  {
+    "dates": [
+      "2025-10-15"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "Восточное Измайлово",
+    "observations": 1,
+    "other_method_matches": 1,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3707"
+  },
+  {
+    "dates": [
+      "2025-10-15"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "13-я Парковая ул.",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3637"
+  },
+  {
+    "dates": [
+      "2025-10-15"
+    ],
+    "direction": "1",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "5-я Парковая улица",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3639"
+  },
+  {
+    "dates": [
+      "2025-10-15"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      14.0
+    ],
+    "future_mae": 14.0,
+    "future_observations": 1,
+    "name": "3-я Парковая ул.",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3640"
+  },
+  {
+    "dates": [
+      "2025-10-15"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      4.0
+    ],
+    "future_mae": 4.0,
+    "future_observations": 1,
+    "name": "Измайловская площадь",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "6257"
+  },
+  {
+    "dates": [
+      "2025-10-15"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      29.0
+    ],
+    "future_mae": 29.0,
+    "future_observations": 1,
+    "name": "Ул. Ибрагимова",
+    "observations": 1,
+    "other_method_matches": 1,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3645"
+  },
+  {
+    "dates": [
+      "2025-10-15"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      12.0
+    ],
+    "future_mae": 12.0,
+    "future_observations": 1,
+    "name": "Метро «Семёновская»",
+    "observations": 1,
+    "other_method_matches": 1,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3646"
+  },
+  {
+    "dates": [
+      "2025-10-15"
+    ],
+    "direction": "0",
+    "future_local_error": [],
+    "future_mae": null,
+    "future_observations": 0,
+    "name": "7-я Парковая улица",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3638"
+  },
+  {
+    "dates": [
+      "2025-10-15"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      18.0
+    ],
+    "future_mae": 18.0,
+    "future_observations": 1,
+    "name": "Главная аллея",
+    "observations": 1,
+    "other_method_matches": 2,
+    "other_method_same_stop": 1,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "7897"
+  },
+  {
+    "dates": [
+      "2025-10-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      37.0
+    ],
+    "future_mae": 37.0,
+    "future_observations": 1,
+    "name": "Богатырский мост",
+    "observations": 1,
+    "other_method_matches": 1,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "1001713"
+  },
+  {
+    "dates": [
+      "2025-10-18"
+    ],
+    "direction": "0",
+    "future_local_error": [
+      115.0
+    ],
+    "future_mae": 115.0,
+    "future_observations": 1,
+    "name": "Улица Хромова",
+    "observations": 1,
+    "other_method_matches": 1,
+    "other_method_same_stop": 1,
+    "route": "11",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3618"
+  },
+  {
+    "dates": [
+      "2025-10-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      64.0
+    ],
+    "future_mae": 64.0,
+    "future_observations": 1,
+    "name": "13-я Парковая улица",
+    "observations": 1,
+    "other_method_matches": 1,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3691"
+  },
+  {
+    "dates": [
+      "2025-10-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      8.0
+    ],
+    "future_mae": 8.0,
+    "future_observations": 1,
+    "name": "15-я Парковая ул.",
+    "observations": 1,
+    "other_method_matches": 1,
+    "other_method_same_stop": 0,
+    "route": "12",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3633"
+  },
+  {
+    "dates": [
+      "2025-10-18"
+    ],
+    "direction": "1",
+    "future_local_error": [
+      21.0
+    ],
+    "future_mae": 21.0,
+    "future_observations": 1,
+    "name": "Проезд Шокальского",
+    "observations": 1,
+    "other_method_matches": 0,
+    "other_method_same_stop": 0,
+    "route": "17",
+    "stable_configurations": 0,
+    "stable_fraction": 0.0,
+    "stop_id": "3325"
+  }
+]

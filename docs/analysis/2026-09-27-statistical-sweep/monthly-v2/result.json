@@ -1,0 +1,12 @@
+{
+  "selected": "month_exp_h1_s1",
+  "configs": 13,
+  "evaluations": 78,
+  "minimum_score": 0.8102228445770886,
+  "mean_score": 0.8478650947671144,
+  "stable_above_088": false,
+  "stable_above_093": false,
+  "plan_sha256": "f7c32971ec4c484e7e6a8af4ba4bc597f91f9edfd32afc96879614dce587e652",
+  "submission_rows": 14640,
+  "promotion": "experimental; no untouched holdout"
+}

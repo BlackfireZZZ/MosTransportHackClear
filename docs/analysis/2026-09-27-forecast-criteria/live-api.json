@@ -1,0 +1,26 @@
+[
+  {
+    "horizon": "day",
+    "buckets": 24,
+    "stop": "gtfs:2594",
+    "direction": "0",
+    "conservation": true,
+    "manual_factor": 1.2
+  },
+  {
+    "horizon": "month",
+    "buckets": 30,
+    "stop": "gtfs:2594",
+    "direction": "0",
+    "conservation": true,
+    "manual_factor": 1.2
+  },
+  {
+    "horizon": "year",
+    "buckets": 12,
+    "stop": "gtfs:2594",
+    "direction": "0",
+    "conservation": true,
+    "manual_factor": 1.2
+  }
+]

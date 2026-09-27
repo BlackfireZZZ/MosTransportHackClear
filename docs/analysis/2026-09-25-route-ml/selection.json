@@ -1,0 +1,6 @@
+{
+  "selected": "cat_native",
+  "development_sha256": "344c2156929edc92953321907d22d04611066301e8fa276aa70ed154a3ea2570",
+  "rule": "maximum pooled score among candidates improving every development origin by >=0.01 vs week1",
+  "confirmation": "October only, indices30:61 from September1 origin; no reselection"
+}

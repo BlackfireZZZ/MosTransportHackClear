@@ -1,0 +1,18 @@
+{
+  "sha256": "c7ff54b8cc6e13e335e7da94e5273ceb704ca51611f3ffcfdbe3d71fe484184b",
+  "model_version": "catboost50-uniform-recency60-routeshape-v1",
+  "csv_sha256": "edc07cca26ff21dd5228f744dea79940eb81a65c3ce5368aa743e2fc2fd0f11f",
+  "stop_predictions_sha256": "1e79f596a6723de6b80dcdbe3915fa66561e0466d6299da8a179c760e7154bed",
+  "stop_run_sha256": "c81733f6cd1324de25a534deb681ebd85ab4a92c91dd074f807303a903f77119",
+  "stop_dataset_audit_sha256": "3ea36a1be4767f06918490524d2cafdf993889c9c839cdac01c0f3212580df4b",
+  "stop_producer_sha256": "9167d32bc7fc5946934325768c1c3d443aebbeef1e3eef3cbb486c2962fac3c5",
+  "spatial_cutoff": "2025-11-01T00:00:00+03:00",
+  "spatial_time_status": "pre-origin counts; retrospective GTFS and transferred calendars",
+  "catalog_sha256": "34a46e4a3aca9b61e96c59f76fc15bf47d740abeed029f3e8ec865dfbbd377d4",
+  "generator_sha256": "8be64ca52b1e96c84a00ef348a15b75513239d4f1e053134863b0c393166ce23",
+  "data_cutoff": "2025-10-31T23:59:59+03:00",
+  "generated_at": "2026-09-27T09:54:21+03:00",
+  "spatial_status": "estimated_from_inferred_stop_targets; no spatial accuracy measured",
+  "mapping_method": "duty-calendar-clock.first-stop-local-anchors-transfer.v3",
+  "source_manifest_sha256": "d39405084cdbe937a6416500ebac79ba6a7d746b5e352cc30b0738f87a108eb1"
+}

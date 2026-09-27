@@ -1,0 +1,14 @@
+{
+  "schema_version": "tramflow.route-hour-evaluation.v1",
+  "model_version": "catboost50-uniform-recency60-routeshape-v1",
+  "config_sha256": "cf5240b9509a8e510b6b7df58ec53e44d5fa0ea2a220e0b7bca86825bee2093a",
+  "csv_sha256": "edc07cca26ff21dd5228f744dea79940eb81a65c3ce5368aa743e2fc2fd0f11f",
+  "baseline_model_version": "catboost50-daily-bounded05-routeshape-v1",
+  "evidence": "docs/experiments/route-hour-2025.md#recency-ensemble-leaderboard-result",
+  "horizon_days": 61,
+  "origins": [
+    {"origin": "2025-05-01", "baseline_score": 0.858579, "candidate_score": 0.858811},
+    {"origin": "2025-07-01", "baseline_score": 0.839790, "candidate_score": 0.839799},
+    {"origin": "2025-09-01", "baseline_score": 0.891623, "candidate_score": 0.892071}
+  ]
+}

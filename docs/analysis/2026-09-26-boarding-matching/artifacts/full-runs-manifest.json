@@ -1,0 +1,11 @@
+{
+  "date": "2025-05-15",
+  "timezone": "Europe/Moscow",
+  "identity": "inferred_vehicle_pool; not independently confirmed vehicle identity",
+  "method": "existing adaptive detector on whole source session; first 4 onsets and fitted trip/offset frozen from previous experiment; continuation until shifted scheduled terminal; 10 min tail displayed unassigned",
+  "source_manifest_sha256": "9139726fd0f5cfd069da87c32ecb98a7778fbefa9efdec1eb94b66d1010cf269",
+  "feed_sha256": "b5d96ad3c8d92c4b42ca59b8712f6d4881e189cbe1c3b3b5fdd92ce9d3b1921c",
+  "script_sha256": "5fcccf73f89066508b96c399744ac9957a2cdb5f2dc8636943f732694b0c5a0f",
+  "result_sha256": "028eb3f8f14f2c30cbc2e17f13f539b4165fc0d8d33c4f5807402d86b3824638",
+  "terminal_truth": false
+}

@@ -1,0 +1,17 @@
+{
+  "make_check": {
+    "exit_code": 0,
+    "backend_passed": 350,
+    "ml_passed": 576,
+    "frontend_passed": 92,
+    "contract_passed": 119,
+    "sql_skipped": 48
+  },
+  "total_passed": 1137,
+  "focused_new_tests_passed": 15,
+  "static_architecture_build_golden_compose": "passed",
+  "manifest_output_and_code_hashes": "all_match",
+  "independent_gmm_refit": "identical_parameters_and_thresholds",
+  "one_vs_four_workers": "held_out_2025-05-15_route17_rank0_identical",
+  "dependencies_changed": false
+}

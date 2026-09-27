@@ -1,0 +1,22 @@
+{
+  "version": "external-residual.v1",
+  "frozen_before_fit": "2026-09-27",
+  "timezone": "Europe/Moscow",
+  "history": ["2025-01-01", "2025-10-31"],
+  "target": "organizer successful validation count route-date-hour",
+  "origins": ["2025-05-01", "2025-07-01", "2025-09-01"],
+  "horizon_days": 61,
+  "baseline": "calendar_robust_28 route-hour shape",
+  "control": "same residual model with no additional external features",
+  "variants": ["base", "calendar", "weather", "traffic", "news", "all"],
+  "config": {"iterations": 200, "depth": 5, "learning_rate": 0.05, "loss_function": "MAE", "random_seed": 20260927, "thread_count": 4, "verbose": false, "allow_writing_files": false, "l2_leaf_reg": 10},
+  "residual": "unclipped absolute actual minus robust28 anchor, fit MAE",
+  "correction_bound": 0.025,
+  "selection": "mean May/July score descending, then variant name; September diagnostic only",
+  "acceptance": "at least .0001 gain on each May/July and no September regression versus robust28 AND independently recomputed published hybrid; source effect separately compared with residual base",
+  "availability": "training target dates before outer origin; anchors and all dynamic source features strictly before each inner origin; no future actual weather; revised archive vintage remains unverified",
+  "calendar_caveat": "robust28 already uses calendar; this tests incremental calendar features, not removal of all calendar information",
+  "research": "https://catboost.ai/docs/en/concepts/python-reference_catboostregressor_fit",
+  "research_context": "Official fit supports real-valued regression labels; use explicit residual targets around existing strong anchor. Absolute residuals with MAE preserve organizer absolute error units. Fixed small correction guards weak sparse external covariates; no claim that bounds assure improvement.",
+  "invariants": "scored CSV and serving assets unchanged; no new dependencies"
+}

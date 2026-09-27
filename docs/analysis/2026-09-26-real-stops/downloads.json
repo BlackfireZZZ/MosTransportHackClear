@@ -1,0 +1,18 @@
+{
+  "archives": [
+    {
+      "bytes": 71812987,
+      "name": "real-stop-training-2025.zip",
+      "path": "/Users/cute/MosTransport2026Hack-worktrees/boarding-real-alignment/ml/artifacts/real-stop-training-2025.zip",
+      "sha256": "a36e11e1cc917bdc2968e44612d2c4a7a7b8d8f293508ce72ad9dac9dd68db8d"
+    },
+    {
+      "bytes": 3036949,
+      "name": "real-stop-source-snapshots.zip",
+      "path": "/Users/cute/MosTransport2026Hack-worktrees/boarding-real-alignment/ml/artifacts/real-stop-source-snapshots.zip",
+      "sha256": "f92edc6e3ad1f381e85cc733b0ddf963ff90b503c9ad8bcf6d48a0cf1bcbe103"
+    }
+  ],
+  "event_assignments_directory": "/Users/cute/MosTransport2026Hack-worktrees/boarding-real-alignment/ml/artifacts/real-payment-stops-2025-v1",
+  "source_repartition_directory": "/Users/cute/MosTransport2026Hack-worktrees/boarding-real-alignment/ml/artifacts/boarding-date-shards"
+}

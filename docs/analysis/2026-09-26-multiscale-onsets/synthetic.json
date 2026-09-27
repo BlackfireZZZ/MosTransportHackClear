@@ -1,0 +1,5297 @@
+{
+  "note": "assumed exponential delays and1.5sdevicequeue; not real stop accuracy",
+  "rows": [
+    {
+      "delay_mean": 2,
+      "devices": 1,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 17,
+          "matched": 16,
+          "precision": 0.9411764705882353,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 19,
+          "matched": 18,
+          "precision": 0.9473684210526315,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 2,
+          "matched": 2,
+          "precision": 1.0,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 17,
+          "matched": 17,
+          "precision": 1.0,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 17,
+          "matched": 17,
+          "precision": 1.0,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 17,
+          "matched": 17,
+          "precision": 1.0,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 2,
+          "matched": 2,
+          "precision": 1.0,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 49,
+          "matched": 13,
+          "precision": 0.2653061224489796,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 27,
+          "matched": 9,
+          "precision": 0.3333333333333333,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 19,
+          "matched": 3,
+          "precision": 0.15789473684210525,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 20,
+          "matched": 6,
+          "precision": 0.3,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 13,
+          "matched": 5,
+          "precision": 0.38461538461538464,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 37,
+          "matched": 19,
+          "precision": 0.5135135135135135,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 32,
+          "matched": 13,
+          "precision": 0.40625,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        }
+      },
+      "people": 5
+    },
+    {
+      "delay_mean": 2,
+      "devices": 3,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 12,
+          "matched": 12,
+          "precision": 1.0,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 7,
+          "matched": 7,
+          "precision": 1.0,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 21,
+          "matched": 19,
+          "precision": 0.9047619047619048,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 22,
+          "matched": 19,
+          "precision": 0.8636363636363636,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 21,
+          "matched": 19,
+          "precision": 0.9047619047619048,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 16,
+          "matched": 16,
+          "precision": 1.0,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 15,
+          "matched": 15,
+          "precision": 1.0,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 41,
+          "matched": 12,
+          "precision": 0.2926829268292683,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 25,
+          "matched": 11,
+          "precision": 0.44,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 20,
+          "matched": 7,
+          "precision": 0.35,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 20,
+          "matched": 7,
+          "precision": 0.35,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 12,
+          "matched": 3,
+          "precision": 0.25,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 20,
+          "matched": 19,
+          "precision": 0.95,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 32,
+          "matched": 19,
+          "precision": 0.59375,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 26,
+          "matched": 19,
+          "precision": 0.7307692307692307,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 28,
+          "matched": 18,
+          "precision": 0.6428571428571429,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        }
+      },
+      "people": 5
+    },
+    {
+      "delay_mean": 2,
+      "devices": 6,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 18,
+          "matched": 18,
+          "precision": 1.0,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 19,
+          "matched": 18,
+          "precision": 0.9473684210526315,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 11,
+          "matched": 11,
+          "precision": 1.0,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 4,
+          "matched": 4,
+          "precision": 1.0,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 23,
+          "matched": 19,
+          "precision": 0.8260869565217391,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 22,
+          "matched": 19,
+          "precision": 0.8636363636363636,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 22,
+          "matched": 19,
+          "precision": 0.8636363636363636,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 15,
+          "matched": 15,
+          "precision": 1.0,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 21,
+          "matched": 19,
+          "precision": 0.9047619047619048,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 15,
+          "matched": 15,
+          "precision": 1.0,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 43,
+          "matched": 11,
+          "precision": 0.2558139534883721,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 29,
+          "matched": 9,
+          "precision": 0.3103448275862069,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 20,
+          "matched": 5,
+          "precision": 0.25,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 20,
+          "matched": 6,
+          "precision": 0.3,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 14,
+          "matched": 2,
+          "precision": 0.14285714285714285,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 22,
+          "matched": 19,
+          "precision": 0.8636363636363636,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 32,
+          "matched": 19,
+          "precision": 0.59375,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 28,
+          "matched": 17,
+          "precision": 0.6071428571428571,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 21,
+          "matched": 19,
+          "precision": 0.9047619047619048,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 33,
+          "matched": 19,
+          "precision": 0.5757575757575758,
+          "recall": 1.0,
+          "reference": 19
+        }
+      },
+      "people": 5
+    },
+    {
+      "delay_mean": 12,
+      "devices": 1,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 5,
+          "matched": 5,
+          "precision": 1.0,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 10,
+          "matched": 9,
+          "precision": 0.9,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 2,
+          "matched": 2,
+          "precision": 1.0,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 7,
+          "matched": 7,
+          "precision": 1.0,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 6,
+          "matched": 6,
+          "precision": 1.0,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 6,
+          "matched": 6,
+          "precision": 1.0,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 2,
+          "matched": 2,
+          "precision": 1.0,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 17,
+          "matched": 15,
+          "precision": 0.8823529411764706,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 10,
+          "matched": 10,
+          "precision": 1.0,
+          "recall": 0.5263157894736842,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 45,
+          "matched": 16,
+          "precision": 0.35555555555555557,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 28,
+          "matched": 12,
+          "precision": 0.42857142857142855,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 19,
+          "matched": 8,
+          "precision": 0.42105263157894735,
+          "recall": 0.42105263157894735,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 19,
+          "matched": 8,
+          "precision": 0.42105263157894735,
+          "recall": 0.42105263157894735,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 12,
+          "matched": 5,
+          "precision": 0.4166666666666667,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 13,
+          "matched": 11,
+          "precision": 0.8461538461538461,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 21,
+          "matched": 12,
+          "precision": 0.5714285714285714,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 25,
+          "matched": 13,
+          "precision": 0.52,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 16,
+          "matched": 13,
+          "precision": 0.8125,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        }
+      },
+      "people": 5
+    },
+    {
+      "delay_mean": 12,
+      "devices": 3,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 8,
+          "matched": 7,
+          "precision": 0.875,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 12,
+          "matched": 9,
+          "precision": 0.75,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 2,
+          "matched": 2,
+          "precision": 1.0,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 13,
+          "matched": 13,
+          "precision": 1.0,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 13,
+          "matched": 11,
+          "precision": 0.8461538461538461,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 13,
+          "matched": 11,
+          "precision": 0.8461538461538461,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 5,
+          "matched": 4,
+          "precision": 0.8,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 17,
+          "matched": 17,
+          "precision": 1.0,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 11,
+          "matched": 11,
+          "precision": 1.0,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 38,
+          "matched": 14,
+          "precision": 0.3684210526315789,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 32,
+          "matched": 16,
+          "precision": 0.5,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 19,
+          "matched": 8,
+          "precision": 0.42105263157894735,
+          "recall": 0.42105263157894735,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 19,
+          "matched": 9,
+          "precision": 0.47368421052631576,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 11,
+          "matched": 4,
+          "precision": 0.36363636363636365,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 15,
+          "matched": 12,
+          "precision": 0.8,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 18,
+          "matched": 8,
+          "precision": 0.4444444444444444,
+          "recall": 0.42105263157894735,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 20,
+          "matched": 12,
+          "precision": 0.6,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 13,
+          "matched": 10,
+          "precision": 0.7692307692307693,
+          "recall": 0.5263157894736842,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 26,
+          "matched": 11,
+          "precision": 0.4230769230769231,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        }
+      },
+      "people": 5
+    },
+    {
+      "delay_mean": 12,
+      "devices": 6,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 5,
+          "matched": 3,
+          "precision": 0.6,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 11,
+          "matched": 7,
+          "precision": 0.6363636363636364,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 12,
+          "matched": 6,
+          "precision": 0.5,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 13,
+          "matched": 6,
+          "precision": 0.46153846153846156,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 12,
+          "matched": 6,
+          "precision": 0.5,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 3,
+          "matched": 2,
+          "precision": 0.6666666666666666,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 18,
+          "matched": 14,
+          "precision": 0.7777777777777778,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 7,
+          "matched": 4,
+          "precision": 0.5714285714285714,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 40,
+          "matched": 10,
+          "precision": 0.25,
+          "recall": 0.5263157894736842,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 28,
+          "matched": 5,
+          "precision": 0.17857142857142858,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 19,
+          "matched": 3,
+          "precision": 0.15789473684210525,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 19,
+          "matched": 3,
+          "precision": 0.15789473684210525,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 14,
+          "matched": 4,
+          "precision": 0.2857142857142857,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 11,
+          "matched": 6,
+          "precision": 0.5454545454545454,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 22,
+          "matched": 10,
+          "precision": 0.45454545454545453,
+          "recall": 0.5263157894736842,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 28,
+          "matched": 12,
+          "precision": 0.42857142857142855,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 13,
+          "matched": 8,
+          "precision": 0.6153846153846154,
+          "recall": 0.42105263157894735,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 30,
+          "matched": 14,
+          "precision": 0.4666666666666667,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        }
+      },
+      "people": 5
+    },
+    {
+      "delay_mean": 40,
+      "devices": 1,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 2,
+          "matched": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 4,
+          "matched": 2,
+          "precision": 0.5,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 2,
+          "matched": 1,
+          "precision": 0.5,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 1,
+          "matched": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 2,
+          "matched": 1,
+          "precision": 0.5,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 9,
+          "matched": 5,
+          "precision": 0.5555555555555556,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 3,
+          "matched": 1,
+          "precision": 0.3333333333333333,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 41,
+          "matched": 11,
+          "precision": 0.2682926829268293,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 30,
+          "matched": 11,
+          "precision": 0.36666666666666664,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 20,
+          "matched": 6,
+          "precision": 0.3,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 20,
+          "matched": 6,
+          "precision": 0.3,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 12,
+          "matched": 4,
+          "precision": 0.3333333333333333,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 8,
+          "matched": 3,
+          "precision": 0.375,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 15,
+          "matched": 4,
+          "precision": 0.26666666666666666,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 17,
+          "matched": 5,
+          "precision": 0.29411764705882354,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 5,
+          "matched": 3,
+          "precision": 0.6,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        }
+      },
+      "people": 5
+    },
+    {
+      "delay_mean": 40,
+      "devices": 3,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 1,
+          "matched": 1,
+          "precision": 1.0,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 2,
+          "matched": 2,
+          "precision": 1.0,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 5,
+          "matched": 2,
+          "precision": 0.4,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 3,
+          "matched": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 4,
+          "matched": 1,
+          "precision": 0.25,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 12,
+          "matched": 7,
+          "precision": 0.5833333333333334,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 3,
+          "matched": 1,
+          "precision": 0.3333333333333333,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 33,
+          "matched": 9,
+          "precision": 0.2727272727272727,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 33,
+          "matched": 11,
+          "precision": 0.3333333333333333,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 19,
+          "matched": 5,
+          "precision": 0.2631578947368421,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 20,
+          "matched": 6,
+          "precision": 0.3,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 11,
+          "matched": 2,
+          "precision": 0.18181818181818182,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 4,
+          "matched": 3,
+          "precision": 0.75,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 18,
+          "matched": 6,
+          "precision": 0.3333333333333333,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 9,
+          "matched": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 4,
+          "matched": 4,
+          "precision": 1.0,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 16,
+          "matched": 6,
+          "precision": 0.375,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        }
+      },
+      "people": 5
+    },
+    {
+      "delay_mean": 40,
+      "devices": 6,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 2,
+          "matched": 1,
+          "precision": 0.5,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 5,
+          "matched": 1,
+          "precision": 0.2,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 1,
+          "matched": 1,
+          "precision": 1.0,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 4,
+          "matched": 3,
+          "precision": 0.75,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 3,
+          "matched": 2,
+          "precision": 0.6666666666666666,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 3,
+          "matched": 2,
+          "precision": 0.6666666666666666,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 6,
+          "matched": 2,
+          "precision": 0.3333333333333333,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 1,
+          "matched": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 39,
+          "matched": 12,
+          "precision": 0.3076923076923077,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 28,
+          "matched": 13,
+          "precision": 0.4642857142857143,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 20,
+          "matched": 7,
+          "precision": 0.35,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 20,
+          "matched": 9,
+          "precision": 0.45,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 11,
+          "matched": 4,
+          "precision": 0.36363636363636365,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 4,
+          "matched": 1,
+          "precision": 0.25,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 14,
+          "matched": 4,
+          "precision": 0.2857142857142857,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 12,
+          "matched": 3,
+          "precision": 0.25,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 5,
+          "matched": 1,
+          "precision": 0.2,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 14,
+          "matched": 5,
+          "precision": 0.35714285714285715,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        }
+      },
+      "people": 5
+    },
+    {
+      "delay_mean": 2,
+      "devices": 1,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 5,
+          "matched": 5,
+          "precision": 1.0,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 4,
+          "matched": 4,
+          "precision": 1.0,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 16,
+          "matched": 16,
+          "precision": 1.0,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 4,
+          "matched": 4,
+          "precision": 1.0,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 39,
+          "matched": 10,
+          "precision": 0.2564102564102564,
+          "recall": 0.5263157894736842,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 23,
+          "matched": 5,
+          "precision": 0.21739130434782608,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 19,
+          "matched": 4,
+          "precision": 0.21052631578947367,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 19,
+          "matched": 4,
+          "precision": 0.21052631578947367,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 17,
+          "matched": 4,
+          "precision": 0.23529411764705882,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 54,
+          "matched": 19,
+          "precision": 0.35185185185185186,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 35,
+          "matched": 11,
+          "precision": 0.3142857142857143,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 20,
+          "matched": 19,
+          "precision": 0.95,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        }
+      },
+      "people": 6
+    },
+    {
+      "delay_mean": 2,
+      "devices": 3,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 13,
+          "matched": 13,
+          "precision": 1.0,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 5,
+          "matched": 5,
+          "precision": 1.0,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 20,
+          "matched": 19,
+          "precision": 0.95,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 45,
+          "matched": 10,
+          "precision": 0.2222222222222222,
+          "recall": 0.5263157894736842,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 28,
+          "matched": 9,
+          "precision": 0.32142857142857145,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 20,
+          "matched": 5,
+          "precision": 0.25,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 20,
+          "matched": 3,
+          "precision": 0.15,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 13,
+          "matched": 2,
+          "precision": 0.15384615384615385,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 43,
+          "matched": 19,
+          "precision": 0.4418604651162791,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 30,
+          "matched": 19,
+          "precision": 0.6333333333333333,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 20,
+          "matched": 19,
+          "precision": 0.95,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 35,
+          "matched": 19,
+          "precision": 0.5428571428571428,
+          "recall": 1.0,
+          "reference": 19
+        }
+      },
+      "people": 6
+    },
+    {
+      "delay_mean": 2,
+      "devices": 6,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 16,
+          "matched": 16,
+          "precision": 1.0,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 2,
+          "matched": 2,
+          "precision": 1.0,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 20,
+          "matched": 19,
+          "precision": 0.95,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 18,
+          "matched": 18,
+          "precision": 1.0,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 20,
+          "matched": 19,
+          "precision": 0.95,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 18,
+          "matched": 18,
+          "precision": 1.0,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 47,
+          "matched": 12,
+          "precision": 0.2553191489361702,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 30,
+          "matched": 9,
+          "precision": 0.3,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 19,
+          "matched": 2,
+          "precision": 0.10526315789473684,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 19,
+          "matched": 2,
+          "precision": 0.10526315789473684,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 17,
+          "matched": 1,
+          "precision": 0.058823529411764705,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 37,
+          "matched": 19,
+          "precision": 0.5135135135135135,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 34,
+          "matched": 19,
+          "precision": 0.5588235294117647,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 20,
+          "matched": 19,
+          "precision": 0.95,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 31,
+          "matched": 19,
+          "precision": 0.6129032258064516,
+          "recall": 1.0,
+          "reference": 19
+        }
+      },
+      "people": 6
+    },
+    {
+      "delay_mean": 12,
+      "devices": 1,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 10,
+          "matched": 8,
+          "precision": 0.8,
+          "recall": 0.42105263157894735,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 18,
+          "matched": 15,
+          "precision": 0.8333333333333334,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 3,
+          "matched": 3,
+          "precision": 1.0,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 12,
+          "matched": 10,
+          "precision": 0.8333333333333334,
+          "recall": 0.5263157894736842,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 11,
+          "matched": 9,
+          "precision": 0.8181818181818182,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 12,
+          "matched": 10,
+          "precision": 0.8333333333333334,
+          "recall": 0.5263157894736842,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 2,
+          "matched": 2,
+          "precision": 1.0,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 17,
+          "precision": 0.8947368421052632,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 18,
+          "matched": 15,
+          "precision": 0.8333333333333334,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 44,
+          "matched": 13,
+          "precision": 0.29545454545454547,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 27,
+          "matched": 8,
+          "precision": 0.2962962962962963,
+          "recall": 0.42105263157894735,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 19,
+          "matched": 5,
+          "precision": 0.2631578947368421,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 19,
+          "matched": 5,
+          "precision": 0.2631578947368421,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 16,
+          "matched": 1,
+          "precision": 0.0625,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 19,
+          "matched": 17,
+          "precision": 0.8947368421052632,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 28,
+          "matched": 12,
+          "precision": 0.42857142857142855,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 36,
+          "matched": 12,
+          "precision": 0.3333333333333333,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 18,
+          "matched": 14,
+          "precision": 0.7777777777777778,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        }
+      },
+      "people": 6
+    },
+    {
+      "delay_mean": 12,
+      "devices": 3,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 14,
+          "matched": 13,
+          "precision": 0.9285714285714286,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 19,
+          "matched": 18,
+          "precision": 0.9473684210526315,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 4,
+          "matched": 4,
+          "precision": 1.0,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 1,
+          "matched": 1,
+          "precision": 1.0,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 17,
+          "matched": 16,
+          "precision": 0.9411764705882353,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 15,
+          "matched": 14,
+          "precision": 0.9333333333333333,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 17,
+          "matched": 16,
+          "precision": 0.9411764705882353,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 11,
+          "matched": 11,
+          "precision": 1.0,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 20,
+          "matched": 17,
+          "precision": 0.85,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 15,
+          "matched": 13,
+          "precision": 0.8666666666666667,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 45,
+          "matched": 12,
+          "precision": 0.26666666666666666,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 29,
+          "matched": 10,
+          "precision": 0.3448275862068966,
+          "recall": 0.5263157894736842,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 19,
+          "matched": 2,
+          "precision": 0.10526315789473684,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 19,
+          "matched": 4,
+          "precision": 0.21052631578947367,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 16,
+          "matched": 2,
+          "precision": 0.125,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 17,
+          "matched": 17,
+          "precision": 1.0,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 34,
+          "matched": 17,
+          "precision": 0.5,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 28,
+          "matched": 15,
+          "precision": 0.5357142857142857,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 20,
+          "matched": 18,
+          "precision": 0.9,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 31,
+          "matched": 17,
+          "precision": 0.5483870967741935,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        }
+      },
+      "people": 6
+    },
+    {
+      "delay_mean": 12,
+      "devices": 6,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 6,
+          "matched": 6,
+          "precision": 1.0,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 13,
+          "matched": 11,
+          "precision": 0.8461538461538461,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 1,
+          "matched": 1,
+          "precision": 1.0,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 17,
+          "matched": 16,
+          "precision": 0.9411764705882353,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 17,
+          "matched": 16,
+          "precision": 0.9411764705882353,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 17,
+          "matched": 16,
+          "precision": 0.9411764705882353,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 4,
+          "matched": 4,
+          "precision": 1.0,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 18,
+          "matched": 16,
+          "precision": 0.8888888888888888,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 12,
+          "matched": 11,
+          "precision": 0.9166666666666666,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 31,
+          "matched": 9,
+          "precision": 0.2903225806451613,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 34,
+          "matched": 14,
+          "precision": 0.4117647058823529,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 19,
+          "matched": 6,
+          "precision": 0.3157894736842105,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 19,
+          "matched": 6,
+          "precision": 0.3157894736842105,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 16,
+          "matched": 6,
+          "precision": 0.375,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 16,
+          "matched": 14,
+          "precision": 0.875,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 27,
+          "matched": 16,
+          "precision": 0.5925925925925926,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 26,
+          "matched": 13,
+          "precision": 0.5,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 21,
+          "matched": 14,
+          "precision": 0.6666666666666666,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 31,
+          "matched": 17,
+          "precision": 0.5483870967741935,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        }
+      },
+      "people": 6
+    },
+    {
+      "delay_mean": 40,
+      "devices": 1,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 2,
+          "matched": 2,
+          "precision": 1.0,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 12,
+          "matched": 4,
+          "precision": 0.3333333333333333,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 5,
+          "matched": 2,
+          "precision": 0.4,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 36,
+          "matched": 8,
+          "precision": 0.2222222222222222,
+          "recall": 0.42105263157894735,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 40,
+          "matched": 10,
+          "precision": 0.25,
+          "recall": 0.5263157894736842,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 18,
+          "matched": 3,
+          "precision": 0.16666666666666666,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 19,
+          "matched": 5,
+          "precision": 0.2631578947368421,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 13,
+          "matched": 4,
+          "precision": 0.3076923076923077,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 5,
+          "matched": 1,
+          "precision": 0.2,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 15,
+          "matched": 6,
+          "precision": 0.4,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 7,
+          "matched": 1,
+          "precision": 0.14285714285714285,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 8,
+          "matched": 2,
+          "precision": 0.25,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        }
+      },
+      "people": 6
+    },
+    {
+      "delay_mean": 40,
+      "devices": 3,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 3,
+          "matched": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 4,
+          "matched": 1,
+          "precision": 0.25,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 1,
+          "matched": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 6,
+          "matched": 1,
+          "precision": 0.16666666666666666,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 5,
+          "matched": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 5,
+          "matched": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 3,
+          "matched": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 11,
+          "matched": 5,
+          "precision": 0.45454545454545453,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 2,
+          "matched": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 34,
+          "matched": 9,
+          "precision": 0.2647058823529412,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 37,
+          "matched": 15,
+          "precision": 0.40540540540540543,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 18,
+          "matched": 7,
+          "precision": 0.3888888888888889,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 19,
+          "matched": 8,
+          "precision": 0.42105263157894735,
+          "recall": 0.42105263157894735,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 12,
+          "matched": 2,
+          "precision": 0.16666666666666666,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 5,
+          "matched": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 21,
+          "matched": 2,
+          "precision": 0.09523809523809523,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 14,
+          "matched": 4,
+          "precision": 0.2857142857142857,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 7,
+          "matched": 2,
+          "precision": 0.2857142857142857,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 19,
+          "matched": 2,
+          "precision": 0.10526315789473684,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        }
+      },
+      "people": 6
+    },
+    {
+      "delay_mean": 40,
+      "devices": 6,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 2,
+          "matched": 1,
+          "precision": 0.5,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 4,
+          "matched": 1,
+          "precision": 0.25,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 4,
+          "matched": 1,
+          "precision": 0.25,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 3,
+          "matched": 1,
+          "precision": 0.3333333333333333,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 4,
+          "matched": 1,
+          "precision": 0.25,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 2,
+          "matched": 1,
+          "precision": 0.5,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 9,
+          "matched": 5,
+          "precision": 0.5555555555555556,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 4,
+          "matched": 1,
+          "precision": 0.25,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 40,
+          "matched": 9,
+          "precision": 0.225,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 32,
+          "matched": 8,
+          "precision": 0.25,
+          "recall": 0.42105263157894735,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 18,
+          "matched": 4,
+          "precision": 0.2222222222222222,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 19,
+          "matched": 5,
+          "precision": 0.2631578947368421,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 13,
+          "matched": 4,
+          "precision": 0.3076923076923077,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 6,
+          "matched": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 14,
+          "matched": 2,
+          "precision": 0.14285714285714285,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 8,
+          "matched": 2,
+          "precision": 0.25,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 9,
+          "matched": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 16,
+          "matched": 2,
+          "precision": 0.125,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        }
+      },
+      "people": 6
+    },
+    {
+      "delay_mean": 2,
+      "devices": 1,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 5,
+          "matched": 5,
+          "precision": 1.0,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 18,
+          "matched": 17,
+          "precision": 0.9444444444444444,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 7,
+          "matched": 7,
+          "precision": 1.0,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 15,
+          "matched": 15,
+          "precision": 1.0,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 5,
+          "matched": 5,
+          "precision": 1.0,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 26,
+          "matched": 19,
+          "precision": 0.7307692307692307,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 38,
+          "matched": 14,
+          "precision": 0.3684210526315789,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 55,
+          "matched": 17,
+          "precision": 0.3090909090909091,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 26,
+          "matched": 8,
+          "precision": 0.3076923076923077,
+          "recall": 0.42105263157894735,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 35,
+          "matched": 14,
+          "precision": 0.4,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 19,
+          "matched": 5,
+          "precision": 0.2631578947368421,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 52,
+          "matched": 19,
+          "precision": 0.36538461538461536,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 88,
+          "matched": 19,
+          "precision": 0.2159090909090909,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        }
+      },
+      "people": 20
+    },
+    {
+      "delay_mean": 2,
+      "devices": 3,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 20,
+          "matched": 19,
+          "precision": 0.95,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 15,
+          "matched": 15,
+          "precision": 1.0,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 37,
+          "matched": 19,
+          "precision": 0.5135135135135135,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 42,
+          "matched": 19,
+          "precision": 0.4523809523809524,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 37,
+          "matched": 19,
+          "precision": 0.5135135135135135,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 39,
+          "matched": 9,
+          "precision": 0.23076923076923078,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 91,
+          "matched": 19,
+          "precision": 0.2087912087912088,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 37,
+          "matched": 15,
+          "precision": 0.40540540540540543,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 37,
+          "matched": 15,
+          "precision": 0.40540540540540543,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 19,
+          "matched": 4,
+          "precision": 0.21052631578947367,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 22,
+          "matched": 19,
+          "precision": 0.8636363636363636,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 70,
+          "matched": 19,
+          "precision": 0.2714285714285714,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 68,
+          "matched": 19,
+          "precision": 0.27941176470588236,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 38,
+          "matched": 19,
+          "precision": 0.5,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 59,
+          "matched": 19,
+          "precision": 0.3220338983050847,
+          "recall": 1.0,
+          "reference": 19
+        }
+      },
+      "people": 20
+    },
+    {
+      "delay_mean": 2,
+      "devices": 6,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 20,
+          "matched": 19,
+          "precision": 0.95,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 13,
+          "matched": 13,
+          "precision": 1.0,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 30,
+          "matched": 19,
+          "precision": 0.6333333333333333,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 30,
+          "matched": 19,
+          "precision": 0.6333333333333333,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 30,
+          "matched": 19,
+          "precision": 0.6333333333333333,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 20,
+          "matched": 19,
+          "precision": 0.95,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 44,
+          "matched": 13,
+          "precision": 0.29545454545454547,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 85,
+          "matched": 19,
+          "precision": 0.2235294117647059,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 32,
+          "matched": 13,
+          "precision": 0.40625,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 38,
+          "matched": 16,
+          "precision": 0.42105263157894735,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 21,
+          "matched": 5,
+          "precision": 0.23809523809523808,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 57,
+          "matched": 19,
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 52,
+          "matched": 19,
+          "precision": 0.36538461538461536,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 34,
+          "matched": 19,
+          "precision": 0.5588235294117647,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 53,
+          "matched": 19,
+          "precision": 0.3584905660377358,
+          "recall": 1.0,
+          "reference": 19
+        }
+      },
+      "people": 20
+    },
+    {
+      "delay_mean": 12,
+      "devices": 1,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 9,
+          "matched": 9,
+          "precision": 1.0,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 13,
+          "matched": 13,
+          "precision": 1.0,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 7,
+          "matched": 7,
+          "precision": 1.0,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 20,
+          "matched": 19,
+          "precision": 0.95,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 29,
+          "matched": 10,
+          "precision": 0.3448275862068966,
+          "recall": 0.5263157894736842,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 58,
+          "matched": 19,
+          "precision": 0.3275862068965517,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 23,
+          "matched": 9,
+          "precision": 0.391304347826087,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 29,
+          "matched": 12,
+          "precision": 0.41379310344827586,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 19,
+          "matched": 5,
+          "precision": 0.2631578947368421,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 41,
+          "matched": 19,
+          "precision": 0.4634146341463415,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 73,
+          "matched": 19,
+          "precision": 0.2602739726027397,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        }
+      },
+      "people": 20
+    },
+    {
+      "delay_mean": 12,
+      "devices": 3,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 20,
+          "matched": 19,
+          "precision": 0.95,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 11,
+          "matched": 11,
+          "precision": 1.0,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 24,
+          "matched": 19,
+          "precision": 0.7916666666666666,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 27,
+          "matched": 17,
+          "precision": 0.6296296296296297,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 23,
+          "matched": 19,
+          "precision": 0.8260869565217391,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 18,
+          "matched": 17,
+          "precision": 0.9444444444444444,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 34,
+          "matched": 15,
+          "precision": 0.4411764705882353,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 75,
+          "matched": 19,
+          "precision": 0.25333333333333335,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 25,
+          "matched": 11,
+          "precision": 0.44,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 25,
+          "matched": 11,
+          "precision": 0.44,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 20,
+          "matched": 9,
+          "precision": 0.45,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 31,
+          "matched": 19,
+          "precision": 0.6129032258064516,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 59,
+          "matched": 19,
+          "precision": 0.3220338983050847,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 59,
+          "matched": 19,
+          "precision": 0.3220338983050847,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 43,
+          "matched": 19,
+          "precision": 0.4418604651162791,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 37,
+          "matched": 16,
+          "precision": 0.43243243243243246,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        }
+      },
+      "people": 20
+    },
+    {
+      "delay_mean": 12,
+      "devices": 6,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 9,
+          "matched": 9,
+          "precision": 1.0,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 28,
+          "matched": 19,
+          "precision": 0.6785714285714286,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 28,
+          "matched": 19,
+          "precision": 0.6785714285714286,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 25,
+          "matched": 19,
+          "precision": 0.76,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 21,
+          "matched": 19,
+          "precision": 0.9047619047619048,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 31,
+          "matched": 10,
+          "precision": 0.3225806451612903,
+          "recall": 0.5263157894736842,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 71,
+          "matched": 19,
+          "precision": 0.2676056338028169,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 27,
+          "matched": 11,
+          "precision": 0.4074074074074074,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 29,
+          "matched": 12,
+          "precision": 0.41379310344827586,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 20,
+          "matched": 7,
+          "precision": 0.35,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 31,
+          "matched": 19,
+          "precision": 0.6129032258064516,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 51,
+          "matched": 19,
+          "precision": 0.37254901960784315,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 61,
+          "matched": 19,
+          "precision": 0.3114754098360656,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 39,
+          "matched": 19,
+          "precision": 0.48717948717948717,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 50,
+          "matched": 19,
+          "precision": 0.38,
+          "recall": 1.0,
+          "reference": 19
+        }
+      },
+      "people": 20
+    },
+    {
+      "delay_mean": 40,
+      "devices": 1,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 12,
+          "matched": 11,
+          "precision": 0.9166666666666666,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 16,
+          "matched": 14,
+          "precision": 0.875,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 1,
+          "matched": 1,
+          "precision": 1.0,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 3,
+          "matched": 3,
+          "precision": 1.0,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 16,
+          "matched": 12,
+          "precision": 0.75,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 5,
+          "matched": 3,
+          "precision": 0.6,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 13,
+          "matched": 10,
+          "precision": 0.7692307692307693,
+          "recall": 0.5263157894736842,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 1,
+          "matched": 1,
+          "precision": 1.0,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 21,
+          "matched": 14,
+          "precision": 0.6666666666666666,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 18,
+          "matched": 9,
+          "precision": 0.5,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 21,
+          "matched": 6,
+          "precision": 0.2857142857142857,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 76,
+          "matched": 15,
+          "precision": 0.19736842105263158,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 32,
+          "matched": 9,
+          "precision": 0.28125,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 33,
+          "matched": 10,
+          "precision": 0.30303030303030304,
+          "recall": 0.5263157894736842,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 19,
+          "matched": 3,
+          "precision": 0.15789473684210525,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 22,
+          "matched": 12,
+          "precision": 0.5454545454545454,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 22,
+          "matched": 4,
+          "precision": 0.18181818181818182,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        }
+      },
+      "people": 20
+    },
+    {
+      "delay_mean": 40,
+      "devices": 3,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 7,
+          "matched": 6,
+          "precision": 0.8571428571428571,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 14,
+          "matched": 11,
+          "precision": 0.7857142857142857,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 4,
+          "matched": 3,
+          "precision": 0.75,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 4,
+          "matched": 4,
+          "precision": 1.0,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 14,
+          "matched": 7,
+          "precision": 0.5,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 9,
+          "matched": 4,
+          "precision": 0.4444444444444444,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 13,
+          "matched": 7,
+          "precision": 0.5384615384615384,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 5,
+          "matched": 3,
+          "precision": 0.6,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 20,
+          "matched": 15,
+          "precision": 0.75,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 17,
+          "matched": 7,
+          "precision": 0.4117647058823529,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 28,
+          "matched": 10,
+          "precision": 0.35714285714285715,
+          "recall": 0.5263157894736842,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 78,
+          "matched": 19,
+          "precision": 0.24358974358974358,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 35,
+          "matched": 13,
+          "precision": 0.37142857142857144,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 36,
+          "matched": 15,
+          "precision": 0.4166666666666667,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 19,
+          "matched": 2,
+          "precision": 0.10526315789473684,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 19,
+          "matched": 7,
+          "precision": 0.3684210526315789,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 15,
+          "matched": 3,
+          "precision": 0.2,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 29,
+          "matched": 7,
+          "precision": 0.2413793103448276,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 18,
+          "matched": 6,
+          "precision": 0.3333333333333333,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 8,
+          "matched": 2,
+          "precision": 0.25,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        }
+      },
+      "people": 20
+    },
+    {
+      "delay_mean": 40,
+      "devices": 6,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 10,
+          "matched": 9,
+          "precision": 0.9,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 15,
+          "matched": 11,
+          "precision": 0.7333333333333333,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 1,
+          "matched": 1,
+          "precision": 1.0,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 7,
+          "matched": 7,
+          "precision": 1.0,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 18,
+          "matched": 11,
+          "precision": 0.6111111111111112,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 15,
+          "matched": 11,
+          "precision": 0.7333333333333333,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 15,
+          "matched": 11,
+          "precision": 0.7333333333333333,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 7,
+          "matched": 7,
+          "precision": 1.0,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 21,
+          "matched": 16,
+          "precision": 0.7619047619047619,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 20,
+          "matched": 13,
+          "precision": 0.65,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 22,
+          "matched": 8,
+          "precision": 0.36363636363636365,
+          "recall": 0.42105263157894735,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 75,
+          "matched": 17,
+          "precision": 0.22666666666666666,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 33,
+          "matched": 14,
+          "precision": 0.42424242424242425,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 34,
+          "matched": 13,
+          "precision": 0.38235294117647056,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 20,
+          "matched": 7,
+          "precision": 0.35,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 23,
+          "matched": 12,
+          "precision": 0.5217391304347826,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 18,
+          "matched": 8,
+          "precision": 0.4444444444444444,
+          "recall": 0.42105263157894735,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 32,
+          "matched": 13,
+          "precision": 0.40625,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 29,
+          "matched": 13,
+          "precision": 0.4482758620689655,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 17,
+          "matched": 7,
+          "precision": 0.4117647058823529,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        }
+      },
+      "people": 20
+    },
+    {
+      "delay_mean": 2,
+      "devices": 1,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 2,
+          "matched": 2,
+          "precision": 1.0,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 19,
+          "matched": 16,
+          "precision": 0.8421052631578947,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 5,
+          "matched": 3,
+          "precision": 0.6,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 18,
+          "matched": 15,
+          "precision": 0.8333333333333334,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 2,
+          "matched": 2,
+          "precision": 1.0,
+          "recall": 0.10526315789473684,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 20,
+          "matched": 16,
+          "precision": 0.8,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 29,
+          "matched": 11,
+          "precision": 0.3793103448275862,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 78,
+          "matched": 5,
+          "precision": 0.0641025641025641,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 36,
+          "matched": 4,
+          "precision": 0.1111111111111111,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 74,
+          "matched": 19,
+          "precision": 0.25675675675675674,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 22,
+          "matched": 6,
+          "precision": 0.2727272727272727,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 6,
+          "matched": 1,
+          "precision": 0.16666666666666666,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 2,
+          "matched": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        }
+      },
+      "people": 50
+    },
+    {
+      "delay_mean": 2,
+      "devices": 3,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 27,
+          "matched": 19,
+          "precision": 0.7037037037037037,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 32,
+          "matched": 19,
+          "precision": 0.59375,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 26,
+          "matched": 19,
+          "precision": 0.7307692307692307,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 27,
+          "matched": 19,
+          "precision": 0.7037037037037037,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 43,
+          "matched": 19,
+          "precision": 0.4418604651162791,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 42,
+          "matched": 19,
+          "precision": 0.4523809523809524,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 3,
+          "matched": 3,
+          "precision": 1.0,
+          "recall": 0.15789473684210525,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 38,
+          "matched": 14,
+          "precision": 0.3684210526315789,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 287,
+          "matched": 19,
+          "precision": 0.06620209059233449,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 132,
+          "matched": 19,
+          "precision": 0.14393939393939395,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 133,
+          "matched": 19,
+          "precision": 0.14285714285714285,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 28,
+          "matched": 11,
+          "precision": 0.39285714285714285,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 52,
+          "matched": 19,
+          "precision": 0.36538461538461536,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 157,
+          "matched": 19,
+          "precision": 0.12101910828025478,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 154,
+          "matched": 19,
+          "precision": 0.12337662337662338,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 81,
+          "matched": 19,
+          "precision": 0.2345679012345679,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        }
+      },
+      "people": 50
+    },
+    {
+      "delay_mean": 2,
+      "devices": 6,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 24,
+          "matched": 19,
+          "precision": 0.7916666666666666,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 27,
+          "matched": 19,
+          "precision": 0.7037037037037037,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 24,
+          "matched": 19,
+          "precision": 0.7916666666666666,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 91,
+          "matched": 19,
+          "precision": 0.2087912087912088,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 90,
+          "matched": 19,
+          "precision": 0.2111111111111111,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 91,
+          "matched": 19,
+          "precision": 0.2087912087912088,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 32,
+          "matched": 19,
+          "precision": 0.59375,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 21,
+          "matched": 19,
+          "precision": 0.9047619047619048,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 39,
+          "matched": 14,
+          "precision": 0.358974358974359,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 188,
+          "matched": 19,
+          "precision": 0.10106382978723404,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 121,
+          "matched": 19,
+          "precision": 0.15702479338842976,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 122,
+          "matched": 19,
+          "precision": 0.1557377049180328,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 52,
+          "matched": 19,
+          "precision": 0.36538461538461536,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 38,
+          "matched": 19,
+          "precision": 0.5,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 96,
+          "matched": 19,
+          "precision": 0.19791666666666666,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 93,
+          "matched": 19,
+          "precision": 0.20430107526881722,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 55,
+          "matched": 19,
+          "precision": 0.34545454545454546,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 97,
+          "matched": 19,
+          "precision": 0.1958762886597938,
+          "recall": 1.0,
+          "reference": 19
+        }
+      },
+      "people": 50
+    },
+    {
+      "delay_mean": 12,
+      "devices": 1,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 5,
+          "matched": 5,
+          "precision": 1.0,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 19,
+          "matched": 15,
+          "precision": 0.7894736842105263,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 6,
+          "matched": 5,
+          "precision": 0.8333333333333334,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 19,
+          "matched": 15,
+          "precision": 0.7894736842105263,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 5,
+          "matched": 5,
+          "precision": 1.0,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 20,
+          "matched": 15,
+          "precision": 0.75,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 26,
+          "matched": 10,
+          "precision": 0.38461538461538464,
+          "recall": 0.5263157894736842,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 69,
+          "matched": 5,
+          "precision": 0.07246376811594203,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 38,
+          "matched": 5,
+          "precision": 0.13157894736842105,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 76,
+          "matched": 19,
+          "precision": 0.25,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 29,
+          "matched": 5,
+          "precision": 0.1724137931034483,
+          "recall": 0.2631578947368421,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 6,
+          "matched": 1,
+          "precision": 0.16666666666666666,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        }
+      },
+      "people": 50
+    },
+    {
+      "delay_mean": 12,
+      "devices": 3,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 22,
+          "matched": 19,
+          "precision": 0.8636363636363636,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 21,
+          "matched": 19,
+          "precision": 0.9047619047619048,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 30,
+          "matched": 19,
+          "precision": 0.6333333333333333,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 25,
+          "matched": 19,
+          "precision": 0.76,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 12,
+          "matched": 12,
+          "precision": 1.0,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 22,
+          "matched": 19,
+          "precision": 0.8636363636363636,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 42,
+          "matched": 14,
+          "precision": 0.3333333333333333,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 164,
+          "matched": 19,
+          "precision": 0.11585365853658537,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 70,
+          "matched": 19,
+          "precision": 0.2714285714285714,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 70,
+          "matched": 19,
+          "precision": 0.2714285714285714,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 39,
+          "matched": 15,
+          "precision": 0.38461538461538464,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 46,
+          "matched": 19,
+          "precision": 0.41304347826086957,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 134,
+          "matched": 19,
+          "precision": 0.1417910447761194,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 136,
+          "matched": 19,
+          "precision": 0.13970588235294118,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 78,
+          "matched": 19,
+          "precision": 0.24358974358974358,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        }
+      },
+      "people": 50
+    },
+    {
+      "delay_mean": 12,
+      "devices": 6,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 20,
+          "matched": 19,
+          "precision": 0.95,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 22,
+          "matched": 19,
+          "precision": 0.8636363636363636,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 20,
+          "matched": 19,
+          "precision": 0.95,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 67,
+          "matched": 19,
+          "precision": 0.2835820895522388,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 61,
+          "matched": 19,
+          "precision": 0.3114754098360656,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 67,
+          "matched": 19,
+          "precision": 0.2835820895522388,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 27,
+          "matched": 19,
+          "precision": 0.7037037037037037,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 27,
+          "matched": 19,
+          "precision": 0.7037037037037037,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 33,
+          "matched": 12,
+          "precision": 0.36363636363636365,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 198,
+          "matched": 19,
+          "precision": 0.09595959595959595,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 71,
+          "matched": 19,
+          "precision": 0.2676056338028169,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 61,
+          "matched": 19,
+          "precision": 0.3114754098360656,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 32,
+          "matched": 12,
+          "precision": 0.375,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 39,
+          "matched": 19,
+          "precision": 0.48717948717948717,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 110,
+          "matched": 19,
+          "precision": 0.17272727272727273,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 96,
+          "matched": 19,
+          "precision": 0.19791666666666666,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 60,
+          "matched": 19,
+          "precision": 0.31666666666666665,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 87,
+          "matched": 19,
+          "precision": 0.21839080459770116,
+          "recall": 1.0,
+          "reference": 19
+        }
+      },
+      "people": 50
+    },
+    {
+      "delay_mean": 40,
+      "devices": 1,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 19,
+          "matched": 15,
+          "precision": 0.7894736842105263,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 19,
+          "matched": 15,
+          "precision": 0.7894736842105263,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 4,
+          "matched": 4,
+          "precision": 1.0,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 7,
+          "matched": 4,
+          "precision": 0.5714285714285714,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 21,
+          "matched": 14,
+          "precision": 0.6666666666666666,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 12,
+          "matched": 8,
+          "precision": 0.6666666666666666,
+          "recall": 0.42105263157894735,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 18,
+          "matched": 12,
+          "precision": 0.6666666666666666,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 6,
+          "matched": 4,
+          "precision": 0.6666666666666666,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 19,
+          "matched": 17,
+          "precision": 0.8947368421052632,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 26,
+          "matched": 15,
+          "precision": 0.5769230769230769,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 15,
+          "matched": 7,
+          "precision": 0.4666666666666667,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 114,
+          "matched": 14,
+          "precision": 0.12280701754385964,
+          "recall": 0.7368421052631579,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 53,
+          "matched": 8,
+          "precision": 0.1509433962264151,
+          "recall": 0.42105263157894735,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 70,
+          "matched": 19,
+          "precision": 0.2714285714285714,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 30,
+          "matched": 7,
+          "precision": 0.23333333333333334,
+          "recall": 0.3684210526315789,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 4,
+          "matched": 1,
+          "precision": 0.25,
+          "recall": 0.05263157894736842,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        }
+      },
+      "people": 50
+    },
+    {
+      "delay_mean": 40,
+      "devices": 3,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 19,
+          "matched": 19,
+          "precision": 1.0,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 16,
+          "matched": 16,
+          "precision": 1.0,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 18,
+          "matched": 18,
+          "precision": 1.0,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 26,
+          "matched": 18,
+          "precision": 0.6923076923076923,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 23,
+          "matched": 17,
+          "precision": 0.7391304347826086,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 26,
+          "matched": 18,
+          "precision": 0.6923076923076923,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 12,
+          "matched": 12,
+          "precision": 1.0,
+          "recall": 0.631578947368421,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 20,
+          "matched": 18,
+          "precision": 0.9,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 23,
+          "matched": 13,
+          "precision": 0.5652173913043478,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 16,
+          "matched": 6,
+          "precision": 0.375,
+          "recall": 0.3157894736842105,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 178,
+          "matched": 19,
+          "precision": 0.10674157303370786,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 82,
+          "matched": 18,
+          "precision": 0.21951219512195122,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 83,
+          "matched": 17,
+          "precision": 0.20481927710843373,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 39,
+          "matched": 19,
+          "precision": 0.48717948717948717,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 43,
+          "matched": 17,
+          "precision": 0.3953488372093023,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 39,
+          "matched": 11,
+          "precision": 0.28205128205128205,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 52,
+          "matched": 13,
+          "precision": 0.25,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 55,
+          "matched": 17,
+          "precision": 0.3090909090909091,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 0,
+          "matched": 0,
+          "precision": null,
+          "recall": 0.0,
+          "reference": 19
+        }
+      },
+      "people": 50
+    },
+    {
+      "delay_mean": 40,
+      "devices": 6,
+      "methods": {
+        "adaptive_scan": {
+          "detected": 19,
+          "matched": 18,
+          "precision": 0.9473684210526315,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "adaptive_scan_q90": {
+          "detected": 19,
+          "matched": 18,
+          "precision": 0.9473684210526315,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "adaptive_scan_q99": {
+          "detected": 16,
+          "matched": 15,
+          "precision": 0.9375,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "algorithm_ml": {
+          "detected": 15,
+          "matched": 15,
+          "precision": 1.0,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "consensus2_10s": {
+          "detected": 35,
+          "matched": 18,
+          "precision": 0.5142857142857142,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "consensus2_2s": {
+          "detected": 27,
+          "matched": 18,
+          "precision": 0.6666666666666666,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "consensus2_5s": {
+          "detected": 31,
+          "matched": 18,
+          "precision": 0.5806451612903226,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "consensus3_5s": {
+          "detected": 12,
+          "matched": 11,
+          "precision": 0.9166666666666666,
+          "recall": 0.5789473684210527,
+          "reference": 19
+        },
+        "decay_onset": {
+          "detected": 20,
+          "matched": 18,
+          "precision": 0.9,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "feature_gmm": {
+          "detected": 26,
+          "matched": 15,
+          "precision": 0.5769230769230769,
+          "recall": 0.7894736842105263,
+          "reference": 19
+        },
+        "gap30": {
+          "detected": 18,
+          "matched": 4,
+          "precision": 0.2222222222222222,
+          "recall": 0.21052631578947367,
+          "reference": 19
+        },
+        "hdbscan3": {
+          "detected": 185,
+          "matched": 19,
+          "precision": 0.10270270270270271,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan5": {
+          "detected": 75,
+          "matched": 18,
+          "precision": 0.24,
+          "recall": 0.9473684210526315,
+          "reference": 19
+        },
+        "hdbscan5_raw": {
+          "detected": 83,
+          "matched": 19,
+          "precision": 0.2289156626506024,
+          "recall": 1.0,
+          "reference": 19
+        },
+        "hdbscan8": {
+          "detected": 41,
+          "matched": 16,
+          "precision": 0.3902439024390244,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "scan10": {
+          "detected": 49,
+          "matched": 17,
+          "precision": 0.3469387755102041,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "scan2": {
+          "detected": 51,
+          "matched": 13,
+          "precision": 0.2549019607843137,
+          "recall": 0.6842105263157895,
+          "reference": 19
+        },
+        "scan3": {
+          "detected": 71,
+          "matched": 16,
+          "precision": 0.22535211267605634,
+          "recall": 0.8421052631578947,
+          "reference": 19
+        },
+        "scan5": {
+          "detected": 51,
+          "matched": 17,
+          "precision": 0.3333333333333333,
+          "recall": 0.8947368421052632,
+          "reference": 19
+        },
+        "synchrony": {
+          "detected": 23,
+          "matched": 9,
+          "precision": 0.391304347826087,
+          "recall": 0.47368421052631576,
+          "reference": 19
+        }
+      },
+      "people": 50
+    }
+  ]
+}

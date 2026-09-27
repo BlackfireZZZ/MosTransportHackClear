@@ -1,0 +1,20 @@
+{
+  "schema_version": "tramflow.scored-route-hour.v1",
+  "csv": "2026-09-27/submission-catboost50-uniform-recency60-routeshape.csv",
+  "csv_sha256": "edc07cca26ff21dd5228f744dea79940eb81a65c3ce5368aa743e2fc2fd0f11f",
+  "archive_sha256": "7e34e56b93f7379cb5abe9aca8e87967cb986111b9939caead5a3fea6c296e5a",
+  "producer": "2026-09-27/overnight_catboost_recency_ensemble_submit.py",
+  "config_sha256": "cf5240b9509a8e510b6b7df58ec53e44d5fa0ea2a220e0b7bca86825bee2093a",
+  "producer_commit": "a54820492d2ded9d9f0ac05b5160ac0c53c0c2f1",
+  "evaluation": "2026-09-27/evaluation-catboost50-uniform-recency60-routeshape.json",
+  "evaluation_sha256": "ee897716c563f5b5666aa4b0677aafc7c7cc3d2ecf58d710a0b054d8ecf13e12",
+  "model_version": "catboost50-uniform-recency60-routeshape-v1",
+  "feature_version": "route-hour-direct-v5+daily-relative-ensemble-v1",
+  "calendar_version": "government-2024-10-04-2025-v1",
+  "source_version": "organizer-archive-7e34e56b93f7379c",
+  "forecast_origin": "2025-11-01T00:00:00+03:00",
+  "data_cutoff": "2025-10-31T23:59:59+03:00",
+  "generated_at": "2026-09-27T09:54:21+03:00",
+  "target": "validation_count",
+  "unit": "event_count"
+}

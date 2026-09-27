@@ -1,0 +1,14 @@
+{
+  "selected": "monthly_mean_m0_s1_d0.0",
+  "configs": 125,
+  "evaluations": 750,
+  "development_selected": "monthly_mean_m0_s1_d0.0",
+  "monthly_baseline": "monthly_mean_m0_s1_d0.0",
+  "minimum_score": 0.8147347957334818,
+  "mean_score": 0.852895253329434,
+  "stable_above_088": false,
+  "stable_above_093": false,
+  "plan_sha256": "7ec4c7e1ad915947a4a973a025ccd7ab37a0ca6b9f0f4d4f6fb3a7f3204cf6be",
+  "submission_rows": 14640,
+  "promotion": "experimental; no untouched holdout"
+}

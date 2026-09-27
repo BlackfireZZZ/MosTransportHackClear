@@ -1,0 +1,357 @@
+{
+  "additional_assigned": 301766,
+  "assigned_allocation_basis": {
+    "mandatory_first_stop": 7843,
+    "schedule_previous_stop": 539809,
+    "strong_onset_anchor": 28112
+  },
+  "assigned_schedule_basis": {
+    "active_calendar": 425198,
+    "transferred_calendar": 150566
+  },
+  "audit_code_sha256": "87df2feb0c9a62271c398517cb526401d0b2c4bb29f2cab57664a2b8d3b1b401",
+  "baseline_manifest_sha256": "0748c3c1a3f40b3f950c58b8cf33a62710dd0a20b246c5b59aa2c008ddc96e97",
+  "calendar_transfer_explicitly_authorized": true,
+  "comparison": "historical validation allocation; not forecast known-mass percentage",
+  "daily_slices": [
+    {
+      "day": "2025-01-14",
+      "month": "2025-01",
+      "new_assigned": 13590,
+      "old_assigned": 0,
+      "route": "1",
+      "total": 20675
+    },
+    {
+      "day": "2025-01-14",
+      "month": "2025-01",
+      "new_assigned": 20338,
+      "old_assigned": 0,
+      "route": "11",
+      "total": 34620
+    },
+    {
+      "day": "2025-01-14",
+      "month": "2025-01",
+      "new_assigned": 18371,
+      "old_assigned": 0,
+      "route": "12",
+      "total": 40932
+    },
+    {
+      "day": "2025-01-14",
+      "month": "2025-01",
+      "new_assigned": 38008,
+      "old_assigned": 0,
+      "route": "17",
+      "total": 52783
+    },
+    {
+      "day": "2025-01-14",
+      "month": "2025-01",
+      "new_assigned": 4016,
+      "old_assigned": 0,
+      "route": "25",
+      "total": 6431
+    },
+    {
+      "day": "2025-01-14",
+      "month": "2025-01",
+      "new_assigned": 10936,
+      "old_assigned": 0,
+      "route": "26",
+      "total": 18066
+    },
+    {
+      "day": "2025-01-14",
+      "month": "2025-01",
+      "new_assigned": 10103,
+      "old_assigned": 0,
+      "route": "28",
+      "total": 12096
+    },
+    {
+      "day": "2025-01-14",
+      "month": "2025-01",
+      "new_assigned": 14058,
+      "old_assigned": 0,
+      "route": "50",
+      "total": 26657
+    },
+    {
+      "day": "2025-01-14",
+      "month": "2025-01",
+      "new_assigned": 17088,
+      "old_assigned": 0,
+      "route": "7",
+      "total": 26297
+    },
+    {
+      "day": "2025-05-13",
+      "month": "2025-05",
+      "new_assigned": 20511,
+      "old_assigned": 12096,
+      "route": "1",
+      "total": 22090
+    },
+    {
+      "day": "2025-05-13",
+      "month": "2025-05",
+      "new_assigned": 30067,
+      "old_assigned": 19941,
+      "route": "11",
+      "total": 34609
+    },
+    {
+      "day": "2025-05-13",
+      "month": "2025-05",
+      "new_assigned": 35429,
+      "old_assigned": 22340,
+      "route": "12",
+      "total": 39046
+    },
+    {
+      "day": "2025-05-13",
+      "month": "2025-05",
+      "new_assigned": 47841,
+      "old_assigned": 30935,
+      "route": "17",
+      "total": 52353
+    },
+    {
+      "day": "2025-05-13",
+      "month": "2025-05",
+      "new_assigned": 7220,
+      "old_assigned": 3659,
+      "route": "25",
+      "total": 7424
+    },
+    {
+      "day": "2025-05-13",
+      "month": "2025-05",
+      "new_assigned": 16761,
+      "old_assigned": 10699,
+      "route": "26",
+      "total": 18579
+    },
+    {
+      "day": "2025-05-13",
+      "month": "2025-05",
+      "new_assigned": 10563,
+      "old_assigned": 6792,
+      "route": "28",
+      "total": 12384
+    },
+    {
+      "day": "2025-05-13",
+      "month": "2025-05",
+      "new_assigned": 26393,
+      "old_assigned": 18646,
+      "route": "50",
+      "total": 28033
+    },
+    {
+      "day": "2025-05-13",
+      "month": "2025-05",
+      "new_assigned": 26649,
+      "old_assigned": 17874,
+      "route": "7",
+      "total": 29493
+    },
+    {
+      "day": "2025-09-09",
+      "month": "2025-09",
+      "new_assigned": 20489,
+      "old_assigned": 12445,
+      "route": "1",
+      "total": 21874
+    },
+    {
+      "day": "2025-09-09",
+      "month": "2025-09",
+      "new_assigned": 35437,
+      "old_assigned": 22927,
+      "route": "11",
+      "total": 37323
+    },
+    {
+      "day": "2025-09-09",
+      "month": "2025-09",
+      "new_assigned": 33747,
+      "old_assigned": 21330,
+      "route": "12",
+      "total": 36559
+    },
+    {
+      "day": "2025-09-09",
+      "month": "2025-09",
+      "new_assigned": 37567,
+      "old_assigned": 22837,
+      "route": "17",
+      "total": 53976
+    },
+    {
+      "day": "2025-09-09",
+      "month": "2025-09",
+      "new_assigned": 7396,
+      "old_assigned": 3489,
+      "route": "25",
+      "total": 7603
+    },
+    {
+      "day": "2025-09-09",
+      "month": "2025-09",
+      "new_assigned": 13883,
+      "old_assigned": 8155,
+      "route": "26",
+      "total": 19863
+    },
+    {
+      "day": "2025-09-09",
+      "month": "2025-09",
+      "new_assigned": 9843,
+      "old_assigned": 6607,
+      "route": "28",
+      "total": 11614
+    },
+    {
+      "day": "2025-09-09",
+      "month": "2025-09",
+      "new_assigned": 23312,
+      "old_assigned": 16091,
+      "route": "50",
+      "total": 24473
+    },
+    {
+      "day": "2025-09-09",
+      "month": "2025-09",
+      "new_assigned": 26148,
+      "old_assigned": 17135,
+      "route": "7",
+      "total": 28227
+    }
+  ],
+  "first_stop_is_user_assumption": true,
+  "method": "duty-calendar-clock.first-stop-local-anchors-transfer.v3",
+  "new_assigned": 575764,
+  "new_coverage": 0.7951662799690642,
+  "new_manifest_sha256": "0661b8a911429a29a7c2e5534e1b0c089ce85ca0026ee604af272f71cc3760f1",
+  "observed_stop_accuracy": null,
+  "old_assigned": 273998,
+  "old_coverage": 0.3784084631532427,
+  "original_route_hour_keys_checked": 571,
+  "remaining": 148316,
+  "schema": "anchored-stop-mapping-audit.v1",
+  "slices": {
+    "month": [
+      {
+        "month": "2025-01",
+        "new_assigned": 146508,
+        "new_coverage": 0.6141425319734906,
+        "old_assigned": 0,
+        "old_coverage": 0.0,
+        "total": 238557
+      },
+      {
+        "month": "2025-05",
+        "new_assigned": 221434,
+        "new_coverage": 0.9074754826626669,
+        "old_assigned": 142982,
+        "old_coverage": 0.5859653868063325,
+        "total": 244011
+      },
+      {
+        "month": "2025-09",
+        "new_assigned": 207822,
+        "new_coverage": 0.8605038258968498,
+        "old_assigned": 131016,
+        "old_coverage": 0.542482361124913,
+        "total": 241512
+      }
+    ],
+    "route": [
+      {
+        "new_assigned": 54590,
+        "new_coverage": 0.8445365800832315,
+        "old_assigned": 24541,
+        "old_coverage": 0.3796624328965485,
+        "route": "1",
+        "total": 64639
+      },
+      {
+        "new_assigned": 85842,
+        "new_coverage": 0.8056348074179743,
+        "old_assigned": 42868,
+        "old_coverage": 0.40231999399354307,
+        "route": "11",
+        "total": 106552
+      },
+      {
+        "new_assigned": 87547,
+        "new_coverage": 0.7512378043024962,
+        "old_assigned": 43670,
+        "old_coverage": 0.3747307722011035,
+        "route": "12",
+        "total": 116537
+      },
+      {
+        "new_assigned": 123416,
+        "new_coverage": 0.7756548846095832,
+        "old_assigned": 53772,
+        "old_coverage": 0.3379506259741566,
+        "route": "17",
+        "total": 159112
+      },
+      {
+        "new_assigned": 18632,
+        "new_coverage": 0.8683008668095815,
+        "old_assigned": 7148,
+        "old_coverage": 0.3331158542268618,
+        "route": "25",
+        "total": 21458
+      },
+      {
+        "new_assigned": 41580,
+        "new_coverage": 0.7358250159269484,
+        "old_assigned": 18854,
+        "old_coverage": 0.3336518723012671,
+        "route": "26",
+        "total": 56508
+      },
+      {
+        "new_assigned": 30509,
+        "new_coverage": 0.8452651410206683,
+        "old_assigned": 13399,
+        "old_coverage": 0.3712251343713637,
+        "route": "28",
+        "total": 36094
+      },
+      {
+        "new_assigned": 63763,
+        "new_coverage": 0.8054646741533292,
+        "old_assigned": 34737,
+        "old_coverage": 0.43880348142440284,
+        "route": "50",
+        "total": 79163
+      },
+      {
+        "new_assigned": 69885,
+        "new_coverage": 0.8317959460585358,
+        "old_assigned": 35009,
+        "old_coverage": 0.41668947951009916,
+        "route": "7",
+        "total": 84017
+      }
+    ]
+  },
+  "source_ledger_sha256": "2ee56fd5360ce404a712a336beb8a9d7de66a5dc50493e908f0fefacf15ec0a2",
+  "source_success": 724080,
+  "status_counts": {
+    "assigned": 575764,
+    "first_anchor_outside_bound": 4210,
+    "identity_conflict": 8759,
+    "no_trip": 23456,
+    "outside_corrected_trip_or_equal_clocks": 50412,
+    "unknown_duty": 61479
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "routes": {
+    "manifest_sha256": "cd517b447f167024e7dae805867dd82ec7b2c6aab1db43373b7d7ef1babbe51f",
+    "schema": "complete-features.v1",
+    "implementation_sha256": "4bdb3706e4d1aed5ba22fcba0ec2ee914b7b32f4c1b0638694ea87c57e7db634"
+  },
+  "stops-final": {
+    "manifest_sha256": "c993455ff67d3df0ea291aa0af1c737d933bff9a8b4673770209a3278285c632",
+    "schema": "complete-features.v1.stops",
+    "implementation_sha256": "4bdb3706e4d1aed5ba22fcba0ec2ee914b7b32f4c1b0638694ea87c57e7db634"
+  },
+  "stop-matrices": {
+    "manifest_sha256": "2e45407059ad598a2650a30d3e86ed005a390f6445ffa7db7e2e7b1bba5edafe",
+    "schema": "stop-direct-feature-matrix.v1",
+    "implementation_sha256": "4bdb3706e4d1aed5ba22fcba0ec2ee914b7b32f4c1b0638694ea87c57e7db634"
+  },
+  "map": {
+    "name": "demand-map.html",
+    "sha256": "6de99ac9e00707adf880d7dbc5585f938296aa055484f05dad800f3431ab38a5"
+  },
+  "historical_schedule_status": "incomplete: January–March coverage 1.0707%; no historical rerun accepted",
+  "model_promotion": "none; stable 0.88 not achieved"
+}

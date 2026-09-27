@@ -1,0 +1,50 @@
+{
+  "source": "KudaGo public-api/v1.4 events list",
+  "status": "partial_retrospective_experiment",
+  "requested_start": "2025-01-01T00:00:00+03:00",
+  "requested_end_exclusive": "2025-11-01T00:00:00+03:00",
+  "timezone": "Europe/Moscow",
+  "normalizer": "repository kudago-timerules.v1",
+  "counts": {
+    "event_cards": 100,
+    "date_records": 10057,
+    "resolved_start_in_window": 631
+  },
+  "unique_occurrences": 631,
+  "requests": [
+    {
+      "url": "https://kudago.com/public-api/v1.4/events/?lang=ru&location=msk&actual_since=2025-01-01T00%3A00%3A00&actual_until=2025-11-01T00%3A00%3A00&page_size=100&fields=id%2Cdates%2Cplace%2Cpublication_date&expand=dates%2Cplace&order_by=id",
+      "fetched_at": "2026-09-27T13:22:26.223029+00:00",
+      "path": "page-001.json",
+      "sha256": "1a62f0120c17007e385ec7218fdd126be9945100fdb7d0cc91cc16a3ab9b4a7c",
+      "bytes": 2361370
+    }
+  ],
+  "limitations": [
+    "Collected in 2026: unavailable at 2025 forecast origins. Retrospective stop-model experiment only.",
+    "Archive is incomplete: deleted cards and unregistered events absent; no whole-city coverage claim.",
+    "List pagination is single-pass, not a stable catalogue snapshot.",
+    "Counts represent sessions with resolved exact start and venue coordinates; no attendance or duration inference."
+  ],
+  "occurrences_sha256": "1a64356c19374bbbbffe0431fd85ca9830e79ac0eab8b7dbdbe828064e34eea5",
+  "stopped_before_pagination_complete": true,
+  "csv_sha256": "125bdab909db260738c98a865a7f1d1ef36b045f60bc00a64b7b17429d7fef86",
+  "csv_rows": 631,
+  "by_month": {
+    "2025-01": 86,
+    "2025-02": 98,
+    "2025-03": 102,
+    "2025-04": 91,
+    "2025-05": 70,
+    "2025-06": 73,
+    "2025-07": 35,
+    "2025-08": 5,
+    "2025-09": 32,
+    "2025-10": 39
+  },
+  "first_start_at": "2025-01-02T12:00:00+03:00",
+  "last_start_at": "2025-10-31T19:00:00+03:00",
+  "csv_semantics": "One resolved session start per event/place/start_at, no duration inference; zero means no observed listed event, not no actual event.",
+  "failure": "Page 2 failed three times: RemoteDisconnected; no catalogue completion claim.",
+  "normalizer_sha256": "cfa18d4b1c5eff826ba4bfb7bc7c128cd515c3111a38c09a670cff9a066a51b4"
+}

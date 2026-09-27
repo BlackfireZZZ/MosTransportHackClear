@@ -1,0 +1,3002 @@
+{
+  "components": {
+    "schemas": {
+      "Factor": {
+        "additionalProperties": false,
+        "properties": {
+          "enabled": {
+            "default": false,
+            "title": "Enabled",
+            "type": "boolean"
+          },
+          "multiplier": {
+            "default": 1,
+            "maximum": 3.0,
+            "minimum": 0.0,
+            "title": "Multiplier",
+            "type": "number"
+          }
+        },
+        "title": "Factor",
+        "type": "object"
+      },
+      "Factors": {
+        "additionalProperties": false,
+        "properties": {
+          "calendar": {
+            "$ref": "#/components/schemas/Factor"
+          },
+          "events": {
+            "$ref": "#/components/schemas/Factor"
+          },
+          "traffic": {
+            "$ref": "#/components/schemas/Factor"
+          },
+          "weather": {
+            "$ref": "#/components/schemas/Factor"
+          }
+        },
+        "title": "Factors",
+        "type": "object"
+      },
+      "ForecastHorizon": {
+        "enum": [
+          "day",
+          "month",
+          "year"
+        ],
+        "title": "ForecastHorizon",
+        "type": "string"
+      },
+      "ForecastMapPositionResponse": {
+        "properties": {
+          "direction_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Direction Id"
+          },
+          "latitude": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Latitude"
+          },
+          "longitude": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Longitude"
+          },
+          "osm_stop_id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Osm Stop Id"
+          },
+          "position_kind": {
+            "enum": [
+              "osm",
+              "synthetic_demo",
+              "unavailable"
+            ],
+            "title": "Position Kind",
+            "type": "string"
+          },
+          "reason": {
+            "title": "Reason",
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "matched",
+              "unmatched",
+              "ambiguous"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "stop_id": {
+            "title": "Stop Id",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "stop_id",
+          "direction_id",
+          "status",
+          "reason",
+          "position_kind",
+          "osm_stop_id",
+          "longitude",
+          "latitude"
+        ],
+        "title": "ForecastMapPositionResponse",
+        "type": "object"
+      },
+      "ForecastMapResponse": {
+        "properties": {
+          "ambiguous_count": {
+            "title": "Ambiguous Count",
+            "type": "integer"
+          },
+          "entity_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Entity Version"
+          },
+          "graph_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Graph Version"
+          },
+          "mapping_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mapping Version"
+          },
+          "matched_count": {
+            "title": "Matched Count",
+            "type": "integer"
+          },
+          "positions": {
+            "items": {
+              "$ref": "#/components/schemas/ForecastMapPositionResponse"
+            },
+            "title": "Positions",
+            "type": "array"
+          },
+          "reason": {
+            "title": "Reason",
+            "type": "string"
+          },
+          "run_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Run Id"
+          },
+          "status": {
+            "enum": [
+              "ready",
+              "partial",
+              "unavailable"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "synthetic": {
+            "title": "Synthetic",
+            "type": "boolean"
+          },
+          "unmatched_count": {
+            "title": "Unmatched Count",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "run_id",
+          "entity_version",
+          "graph_version",
+          "mapping_version",
+          "synthetic",
+          "status",
+          "reason",
+          "matched_count",
+          "unmatched_count",
+          "ambiguous_count",
+          "positions"
+        ],
+        "title": "ForecastMapResponse",
+        "type": "object"
+      },
+      "ForecastPointResponse": {
+        "properties": {
+          "capacity": {
+            "anyOf": [
+              {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Capacity"
+          },
+          "lower_bound": {
+            "anyOf": [
+              {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lower Bound"
+          },
+          "predicted_passengers": {
+            "minimum": 0.0,
+            "title": "Predicted Passengers",
+            "type": "number"
+          },
+          "timestamp": {
+            "format": "date-time",
+            "title": "Timestamp",
+            "type": "string"
+          },
+          "upper_bound": {
+            "anyOf": [
+              {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Upper Bound"
+          }
+        },
+        "required": [
+          "timestamp",
+          "predicted_passengers",
+          "lower_bound",
+          "upper_bound",
+          "capacity"
+        ],
+        "title": "ForecastPointResponse",
+        "type": "object"
+      },
+      "ForecastResponse": {
+        "properties": {
+          "generated_at": {
+            "format": "date-time",
+            "title": "Generated At",
+            "type": "string"
+          },
+          "horizon": {
+            "$ref": "#/components/schemas/ForecastHorizon"
+          },
+          "map": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ForecastMapResponse"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "model_version": {
+            "title": "Model Version",
+            "type": "string"
+          },
+          "peak_load_percent": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Peak Load Percent"
+          },
+          "peak_passengers": {
+            "title": "Peak Passengers",
+            "type": "number"
+          },
+          "points": {
+            "items": {
+              "$ref": "#/components/schemas/ForecastPointResponse"
+            },
+            "title": "Points",
+            "type": "array"
+          },
+          "route": {
+            "$ref": "#/components/schemas/RouteResponse"
+          },
+          "run": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ForecastRunResponse"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "selection": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ForecastSelectionResponse"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "stop_points": {
+            "anyOf": [
+              {
+                "items": {
+                  "$ref": "#/components/schemas/StopForecastPointResponse"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stop Points"
+          },
+          "stops": {
+            "items": {
+              "$ref": "#/components/schemas/StopLoadResponse"
+            },
+            "title": "Stops",
+            "type": "array"
+          }
+        },
+        "required": [
+          "route",
+          "horizon",
+          "generated_at",
+          "model_version",
+          "peak_passengers",
+          "peak_load_percent",
+          "points",
+          "stops"
+        ],
+        "title": "ForecastResponse",
+        "type": "object"
+      },
+      "ForecastRunResponse": {
+        "properties": {
+          "calendar_version": {
+            "title": "Calendar Version",
+            "type": "string"
+          },
+          "data_cutoff": {
+            "format": "date-time",
+            "title": "Data Cutoff",
+            "type": "string"
+          },
+          "dataset_id": {
+            "title": "Dataset Id",
+            "type": "string"
+          },
+          "entity_version": {
+            "title": "Entity Version",
+            "type": "string"
+          },
+          "feature_version": {
+            "title": "Feature Version",
+            "type": "string"
+          },
+          "forecast_origin": {
+            "format": "date-time",
+            "title": "Forecast Origin",
+            "type": "string"
+          },
+          "graph_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Graph Version"
+          },
+          "identity_namespace": {
+            "title": "Identity Namespace",
+            "type": "string"
+          },
+          "interval_level": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Interval Level"
+          },
+          "interval_method": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Interval Method"
+          },
+          "run_id": {
+            "title": "Run Id",
+            "type": "string"
+          },
+          "source_version": {
+            "title": "Source Version",
+            "type": "string"
+          },
+          "synthetic": {
+            "title": "Synthetic",
+            "type": "boolean"
+          },
+          "target": {
+            "title": "Target",
+            "type": "string"
+          },
+          "unit": {
+            "title": "Unit",
+            "type": "string"
+          }
+        },
+        "required": [
+          "run_id",
+          "dataset_id",
+          "source_version",
+          "feature_version",
+          "entity_version",
+          "calendar_version",
+          "graph_version",
+          "target",
+          "unit",
+          "synthetic",
+          "forecast_origin",
+          "data_cutoff",
+          "interval_level",
+          "interval_method",
+          "identity_namespace"
+        ],
+        "title": "ForecastRunResponse",
+        "type": "object"
+      },
+      "ForecastSelectionResponse": {
+        "properties": {
+          "aggregation_key": {
+            "title": "Aggregation Key",
+            "type": "string"
+          },
+          "direction_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Direction Id"
+          },
+          "end": {
+            "format": "date-time",
+            "title": "End",
+            "type": "string"
+          },
+          "interval_aggregation": {
+            "title": "Interval Aggregation",
+            "type": "string"
+          },
+          "start": {
+            "format": "date-time",
+            "title": "Start",
+            "type": "string"
+          },
+          "stop_id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stop Id"
+          }
+        },
+        "required": [
+          "start",
+          "end",
+          "stop_id",
+          "direction_id",
+          "aggregation_key",
+          "interval_aggregation"
+        ],
+        "title": "ForecastSelectionResponse",
+        "type": "object"
+      },
+      "GeoJsonMetadataResponse": {
+        "properties": {
+          "area": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Area"
+          },
+          "filtered_to_route": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Filtered To Route"
+          },
+          "generated_at": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Generated At"
+          },
+          "license": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "License"
+          },
+          "missing_geometry_edges": {
+            "default": 0,
+            "minimum": 0.0,
+            "title": "Missing Geometry Edges",
+            "type": "integer"
+          },
+          "osm_data_timestamp": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Osm Data Timestamp"
+          },
+          "route_relations": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Route Relations"
+          },
+          "source": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source"
+          },
+          "synthetic": {
+            "default": false,
+            "title": "Synthetic",
+            "type": "boolean"
+          }
+        },
+        "title": "GeoJsonMetadataResponse",
+        "type": "object"
+      },
+      "GeometryQuality": {
+        "enum": [
+          "provided",
+          "inferred",
+          "synthetic"
+        ],
+        "title": "GeometryQuality",
+        "type": "string"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "title": "Detail",
+            "type": "array"
+          }
+        },
+        "title": "HTTPValidationError",
+        "type": "object"
+      },
+      "LineStringGeometry": {
+        "properties": {
+          "coordinates": {
+            "items": {
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            "title": "Coordinates",
+            "type": "array"
+          },
+          "type": {
+            "const": "LineString",
+            "default": "LineString",
+            "title": "Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "coordinates"
+        ],
+        "title": "LineStringGeometry",
+        "type": "object"
+      },
+      "NeighbourDirection": {
+        "enum": [
+          "in",
+          "out"
+        ],
+        "title": "NeighbourDirection",
+        "type": "string"
+      },
+      "NetworkComponentResponse": {
+        "properties": {
+          "routes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Routes",
+            "type": "array"
+          },
+          "size": {
+            "minimum": 0.0,
+            "title": "Size",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "size",
+          "routes"
+        ],
+        "title": "NetworkComponentResponse",
+        "type": "object"
+      },
+      "NetworkStatsResponse": {
+        "properties": {
+          "components": {
+            "description": "Undirected components, largest first; the network really is in two pieces",
+            "items": {
+              "$ref": "#/components/schemas/NetworkComponentResponse"
+            },
+            "title": "Components",
+            "type": "array"
+          },
+          "degree_histogram": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "title": "Degree Histogram",
+            "type": "object"
+          },
+          "edges": {
+            "description": "Directed edges; a pair served both ways counts twice",
+            "title": "Edges",
+            "type": "integer"
+          },
+          "generated_at": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Generated At"
+          },
+          "osm_data_timestamp": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Osm Data Timestamp"
+          },
+          "route_relations": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "PTv2 route relations in the OSM extract, one per direction. A larger number than `routes`, and not interchangeable with it.",
+            "title": "Route Relations"
+          },
+          "routes": {
+            "description": "Distinct route refs",
+            "title": "Routes",
+            "type": "integer"
+          },
+          "segment_length_m": {
+            "$ref": "#/components/schemas/SegmentLengthSummaryResponse"
+          },
+          "stops": {
+            "title": "Stops",
+            "type": "integer"
+          },
+          "total_length_km": {
+            "title": "Total Length Km",
+            "type": "number"
+          }
+        },
+        "required": [
+          "stops",
+          "edges",
+          "routes",
+          "total_length_km",
+          "components",
+          "degree_histogram",
+          "segment_length_m"
+        ],
+        "title": "NetworkStatsResponse",
+        "type": "object"
+      },
+      "OverpassQueryRequest": {
+        "properties": {
+          "query": {
+            "description": "Overpass QL. The length ceiling is a runtime setting, not part of this schema.",
+            "examples": [
+              "[out:json][timeout:60];node(1);out;"
+            ],
+            "minLength": 1,
+            "title": "Query",
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "title": "OverpassQueryRequest",
+        "type": "object"
+      },
+      "OverpassQueryResponse": {
+        "properties": {
+          "remark": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Set when Overpass answered 200 with a PARTIAL result because the query hit its own [timeout:]. Lifted out of `result` so it cannot be missed; treating such a response as complete is the easiest way to publish wrong numbers.",
+            "title": "Remark"
+          },
+          "result": {
+            "additionalProperties": true,
+            "description": "The Overpass JSON document, unmodified",
+            "title": "Result",
+            "type": "object"
+          }
+        },
+        "required": [
+          "result"
+        ],
+        "title": "OverpassQueryResponse",
+        "type": "object"
+      },
+      "OverpassStatusResponse": {
+        "properties": {
+          "detail": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Why the probe failed; null when the instance answered",
+            "title": "Detail"
+          },
+          "reachable": {
+            "title": "Reachable",
+            "type": "boolean"
+          },
+          "url": {
+            "title": "Url",
+            "type": "string"
+          }
+        },
+        "required": [
+          "url",
+          "reachable"
+        ],
+        "title": "OverpassStatusResponse",
+        "type": "object"
+      },
+      "PathAbsence": {
+        "description": "Why no path was returned, in a form a client can branch on.",
+        "enum": [
+          "unknown_stop",
+          "different_components",
+          "wrong_direction"
+        ],
+        "title": "PathAbsence",
+        "type": "string"
+      },
+      "PlanningPoint": {
+        "properties": {
+          "baseline": {
+            "title": "Baseline",
+            "type": "number"
+          },
+          "basis": {
+            "enum": [
+              "competition_period",
+              "scenario_projection"
+            ],
+            "title": "Basis",
+            "type": "string"
+          },
+          "bucket_end": {
+            "format": "date-time",
+            "title": "Bucket End",
+            "type": "string"
+          },
+          "route_baseline": {
+            "title": "Route Baseline",
+            "type": "number"
+          },
+          "route_scenario": {
+            "title": "Route Scenario",
+            "type": "number"
+          },
+          "route_unallocated_baseline": {
+            "title": "Route Unallocated Baseline",
+            "type": "number"
+          },
+          "route_unallocated_scenario": {
+            "title": "Route Unallocated Scenario",
+            "type": "number"
+          },
+          "scenario": {
+            "title": "Scenario",
+            "type": "number"
+          },
+          "spatial": {
+            "items": {
+              "$ref": "#/components/schemas/SpatialPoint"
+            },
+            "title": "Spatial",
+            "type": "array"
+          },
+          "timestamp": {
+            "format": "date-time",
+            "title": "Timestamp",
+            "type": "string"
+          },
+          "unallocated_baseline": {
+            "title": "Unallocated Baseline",
+            "type": "number"
+          },
+          "unallocated_scenario": {
+            "title": "Unallocated Scenario",
+            "type": "number"
+          }
+        },
+        "required": [
+          "timestamp",
+          "bucket_end",
+          "basis",
+          "baseline",
+          "scenario",
+          "route_baseline",
+          "route_scenario",
+          "route_unallocated_baseline",
+          "route_unallocated_scenario",
+          "unallocated_baseline",
+          "unallocated_scenario",
+          "spatial"
+        ],
+        "title": "PlanningPoint",
+        "type": "object"
+      },
+      "PlanningRequest": {
+        "additionalProperties": false,
+        "properties": {
+          "direction": {
+            "anyOf": [
+              {
+                "maxLength": 30,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Direction"
+          },
+          "factors": {
+            "$ref": "#/components/schemas/Factors"
+          },
+          "forecast_mode": {
+            "default": "approved",
+            "enum": [
+              "approved",
+              "external_experiment",
+              "stop_model"
+            ],
+            "title": "Forecast Mode",
+            "type": "string"
+          },
+          "horizon": {
+            "default": "day",
+            "enum": [
+              "day",
+              "month",
+              "year"
+            ],
+            "title": "Horizon",
+            "type": "string"
+          },
+          "route": {
+            "maxLength": 10,
+            "minLength": 1,
+            "title": "Route",
+            "type": "string"
+          },
+          "source_enabled": {
+            "$ref": "#/components/schemas/SourceFlags"
+          },
+          "start_date": {
+            "format": "date",
+            "title": "Start Date",
+            "type": "string"
+          },
+          "stop_id": {
+            "anyOf": [
+              {
+                "maxLength": 80,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stop Id"
+          }
+        },
+        "required": [
+          "route",
+          "start_date"
+        ],
+        "title": "PlanningRequest",
+        "type": "object"
+      },
+      "PlanningResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "direction": {
+            "anyOf": [
+              {
+                "maxLength": 30,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Direction"
+          },
+          "experimental_evaluation": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Experimental Evaluation"
+          },
+          "factors": {
+            "$ref": "#/components/schemas/Factors"
+          },
+          "forecast_mode": {
+            "default": "approved",
+            "enum": [
+              "approved",
+              "external_experiment",
+              "stop_model"
+            ],
+            "title": "Forecast Mode",
+            "type": "string"
+          },
+          "generated_at": {
+            "title": "Generated At",
+            "type": "string"
+          },
+          "horizon": {
+            "default": "day",
+            "enum": [
+              "day",
+              "month",
+              "year"
+            ],
+            "title": "Horizon",
+            "type": "string"
+          },
+          "model_version": {
+            "title": "Model Version",
+            "type": "string"
+          },
+          "points": {
+            "items": {
+              "$ref": "#/components/schemas/PlanningPoint"
+            },
+            "title": "Points",
+            "type": "array"
+          },
+          "provenance": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "title": "Provenance",
+            "type": "object"
+          },
+          "qualitative": {
+            "title": "Qualitative",
+            "type": "boolean"
+          },
+          "route": {
+            "maxLength": 10,
+            "minLength": 1,
+            "title": "Route",
+            "type": "string"
+          },
+          "routes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Routes",
+            "type": "array"
+          },
+          "run_id": {
+            "title": "Run Id",
+            "type": "string"
+          },
+          "source_enabled": {
+            "$ref": "#/components/schemas/SourceFlags"
+          },
+          "sources": {
+            "items": {
+              "$ref": "#/components/schemas/PlanningSource"
+            },
+            "title": "Sources",
+            "type": "array"
+          },
+          "start_date": {
+            "format": "date",
+            "title": "Start Date",
+            "type": "string"
+          },
+          "stop_id": {
+            "anyOf": [
+              {
+                "maxLength": 80,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stop Id"
+          },
+          "stops": {
+            "items": {
+              "$ref": "#/components/schemas/PlanningStop"
+            },
+            "title": "Stops",
+            "type": "array"
+          },
+          "timezone": {
+            "const": "Europe/Moscow",
+            "title": "Timezone",
+            "type": "string"
+          },
+          "unit": {
+            "const": "event_count",
+            "title": "Unit",
+            "type": "string"
+          },
+          "warnings": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Warnings",
+            "type": "array"
+          }
+        },
+        "required": [
+          "route",
+          "start_date",
+          "experimental_evaluation",
+          "run_id",
+          "model_version",
+          "generated_at",
+          "unit",
+          "timezone",
+          "qualitative",
+          "warnings",
+          "sources",
+          "points",
+          "stops",
+          "routes",
+          "provenance"
+        ],
+        "title": "PlanningResponse",
+        "type": "object"
+      },
+      "PlanningSource": {
+        "properties": {
+          "detail": {
+            "title": "Detail",
+            "type": "string"
+          },
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "label": {
+            "title": "Label",
+            "type": "string"
+          },
+          "status": {
+            "title": "Status",
+            "type": "string"
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url"
+          }
+        },
+        "required": [
+          "id",
+          "label",
+          "status",
+          "detail",
+          "url"
+        ],
+        "title": "PlanningSource",
+        "type": "object"
+      },
+      "PlanningStop": {
+        "properties": {
+          "direction": {
+            "title": "Direction",
+            "type": "string"
+          },
+          "latitude": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Latitude"
+          },
+          "longitude": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Longitude"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "stop_id": {
+            "title": "Stop Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "stop_id",
+          "name",
+          "direction",
+          "latitude",
+          "longitude"
+        ],
+        "title": "PlanningStop",
+        "type": "object"
+      },
+      "PointGeometry": {
+        "properties": {
+          "coordinates": {
+            "maxItems": 2,
+            "minItems": 2,
+            "prefixItems": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "title": "Coordinates",
+            "type": "array"
+          },
+          "type": {
+            "const": "Point",
+            "default": "Point",
+            "title": "Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "coordinates"
+        ],
+        "title": "PointGeometry",
+        "type": "object"
+      },
+      "RouteDetailResponse": {
+        "properties": {
+          "component": {
+            "minimum": 0.0,
+            "title": "Component",
+            "type": "integer"
+          },
+          "edges": {
+            "items": {
+              "$ref": "#/components/schemas/TramEdgeResponse"
+            },
+            "title": "Edges",
+            "type": "array"
+          },
+          "length_m": {
+            "minimum": 0.0,
+            "title": "Length M",
+            "type": "number"
+          },
+          "ref": {
+            "title": "Ref",
+            "type": "string"
+          },
+          "stops": {
+            "items": {
+              "$ref": "#/components/schemas/TramStopResponse"
+            },
+            "title": "Stops",
+            "type": "array"
+          }
+        },
+        "required": [
+          "ref",
+          "stops",
+          "edges",
+          "length_m",
+          "component"
+        ],
+        "title": "RouteDetailResponse",
+        "type": "object"
+      },
+      "RouteResponse": {
+        "properties": {
+          "color": {
+            "title": "Color",
+            "type": "string"
+          },
+          "id": {
+            "title": "Id",
+            "type": "integer"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "number": {
+            "title": "Number",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "number",
+          "name",
+          "color"
+        ],
+        "title": "RouteResponse",
+        "type": "object"
+      },
+      "RouteStopResponse": {
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "integer"
+          },
+          "latitude": {
+            "title": "Latitude",
+            "type": "number"
+          },
+          "longitude": {
+            "title": "Longitude",
+            "type": "number"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "sequence": {
+            "title": "Sequence",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "latitude",
+          "longitude",
+          "sequence"
+        ],
+        "title": "RouteStopResponse",
+        "type": "object"
+      },
+      "ScenarioRequest": {
+        "properties": {
+          "additional_vehicles": {
+            "default": 0,
+            "maximum": 20.0,
+            "minimum": -5.0,
+            "title": "Additional Vehicles",
+            "type": "integer"
+          },
+          "demand_change_percent": {
+            "default": 0,
+            "maximum": 300.0,
+            "minimum": -90.0,
+            "title": "Demand Change Percent",
+            "type": "number"
+          },
+          "horizon": {
+            "$ref": "#/components/schemas/ForecastHorizon",
+            "default": "day"
+          },
+          "interval_change_percent": {
+            "default": 0,
+            "maximum": 200.0,
+            "minimum": -75.0,
+            "title": "Interval Change Percent",
+            "type": "number"
+          },
+          "route_id": {
+            "exclusiveMinimum": 0.0,
+            "title": "Route Id",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "route_id"
+        ],
+        "title": "ScenarioRequest",
+        "type": "object"
+      },
+      "ScenarioResponse": {
+        "properties": {
+          "affected_stops": {
+            "items": {
+              "$ref": "#/components/schemas/StopLoadResponse"
+            },
+            "title": "Affected Stops",
+            "type": "array"
+          },
+          "baseline_peak_load_percent": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Baseline Peak Load Percent"
+          },
+          "capacity_delta": {
+            "title": "Capacity Delta",
+            "type": "number"
+          },
+          "passenger_delta": {
+            "title": "Passenger Delta",
+            "type": "number"
+          },
+          "scenario_peak_load_percent": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Scenario Peak Load Percent"
+          },
+          "solver_version": {
+            "title": "Solver Version",
+            "type": "string"
+          }
+        },
+        "required": [
+          "baseline_peak_load_percent",
+          "scenario_peak_load_percent",
+          "passenger_delta",
+          "capacity_delta",
+          "affected_stops",
+          "solver_version"
+        ],
+        "title": "ScenarioResponse",
+        "type": "object"
+      },
+      "SegmentFeature": {
+        "properties": {
+          "geometry": {
+            "$ref": "#/components/schemas/LineStringGeometry"
+          },
+          "properties": {
+            "$ref": "#/components/schemas/SegmentFeatureProperties"
+          },
+          "type": {
+            "const": "Feature",
+            "default": "Feature",
+            "title": "Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "geometry",
+          "properties"
+        ],
+        "title": "SegmentFeature",
+        "type": "object"
+      },
+      "SegmentFeatureProperties": {
+        "properties": {
+          "geometry_quality": {
+            "$ref": "#/components/schemas/GeometryQuality"
+          },
+          "length_m": {
+            "title": "Length M",
+            "type": "number"
+          },
+          "routes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Routes",
+            "type": "array"
+          },
+          "source": {
+            "title": "Source",
+            "type": "integer"
+          },
+          "target": {
+            "title": "Target",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "geometry_quality",
+          "source",
+          "target",
+          "length_m",
+          "routes"
+        ],
+        "title": "SegmentFeatureProperties",
+        "type": "object"
+      },
+      "SegmentLengthSummaryResponse": {
+        "properties": {
+          "max": {
+            "title": "Max",
+            "type": "number"
+          },
+          "mean": {
+            "title": "Mean",
+            "type": "number"
+          },
+          "median": {
+            "title": "Median",
+            "type": "number"
+          },
+          "min": {
+            "title": "Min",
+            "type": "number"
+          }
+        },
+        "required": [
+          "min",
+          "median",
+          "mean",
+          "max"
+        ],
+        "title": "SegmentLengthSummaryResponse",
+        "type": "object"
+      },
+      "SourceFlags": {
+        "additionalProperties": false,
+        "properties": {
+          "calendar": {
+            "default": false,
+            "title": "Calendar",
+            "type": "boolean"
+          },
+          "events": {
+            "default": false,
+            "title": "Events",
+            "type": "boolean"
+          },
+          "traffic": {
+            "default": false,
+            "title": "Traffic",
+            "type": "boolean"
+          },
+          "weather": {
+            "default": false,
+            "title": "Weather",
+            "type": "boolean"
+          }
+        },
+        "title": "SourceFlags",
+        "type": "object"
+      },
+      "SpatialPoint": {
+        "properties": {
+          "baseline": {
+            "title": "Baseline",
+            "type": "number"
+          },
+          "direction": {
+            "title": "Direction",
+            "type": "string"
+          },
+          "latitude": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Latitude"
+          },
+          "longitude": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Longitude"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "scenario": {
+            "title": "Scenario",
+            "type": "number"
+          },
+          "stop_id": {
+            "title": "Stop Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "stop_id",
+          "name",
+          "direction",
+          "latitude",
+          "longitude",
+          "baseline",
+          "scenario"
+        ],
+        "title": "SpatialPoint",
+        "type": "object"
+      },
+      "StopDetailResponse": {
+        "properties": {
+          "id": {
+            "description": "OSM stop_position node id",
+            "title": "Id",
+            "type": "integer"
+          },
+          "latitude": {
+            "title": "Latitude",
+            "type": "number"
+          },
+          "longitude": {
+            "title": "Longitude",
+            "type": "number"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "neighbours": {
+            "items": {
+              "$ref": "#/components/schemas/StopNeighbourResponse"
+            },
+            "title": "Neighbours",
+            "type": "array"
+          },
+          "routes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Routes",
+            "type": "array"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "latitude",
+          "longitude",
+          "routes",
+          "neighbours"
+        ],
+        "title": "StopDetailResponse",
+        "type": "object"
+      },
+      "StopFeature": {
+        "properties": {
+          "geometry": {
+            "$ref": "#/components/schemas/PointGeometry"
+          },
+          "properties": {
+            "$ref": "#/components/schemas/StopFeatureProperties"
+          },
+          "type": {
+            "const": "Feature",
+            "default": "Feature",
+            "title": "Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "geometry",
+          "properties"
+        ],
+        "title": "StopFeature",
+        "type": "object"
+      },
+      "StopFeatureProperties": {
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "integer"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "routes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Routes",
+            "type": "array"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "routes"
+        ],
+        "title": "StopFeatureProperties",
+        "type": "object"
+      },
+      "StopForecastPointResponse": {
+        "properties": {
+          "aggregation_scope": {
+            "title": "Aggregation Scope",
+            "type": "string"
+          },
+          "bucket_end": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Bucket End"
+          },
+          "capacity": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Capacity"
+          },
+          "direction_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Direction Id"
+          },
+          "lower_bound": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lower Bound"
+          },
+          "predicted_passengers": {
+            "title": "Predicted Passengers",
+            "type": "number"
+          },
+          "stop_id": {
+            "title": "Stop Id",
+            "type": "integer"
+          },
+          "timestamp": {
+            "format": "date-time",
+            "title": "Timestamp",
+            "type": "string"
+          },
+          "upper_bound": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Upper Bound"
+          }
+        },
+        "required": [
+          "stop_id",
+          "timestamp",
+          "bucket_end",
+          "direction_id",
+          "predicted_passengers",
+          "lower_bound",
+          "upper_bound",
+          "capacity",
+          "aggregation_scope"
+        ],
+        "title": "StopForecastPointResponse",
+        "type": "object"
+      },
+      "StopLoadResponse": {
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "integer"
+          },
+          "latitude": {
+            "title": "Latitude",
+            "type": "number"
+          },
+          "load_percent": {
+            "anyOf": [
+              {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Load Percent"
+          },
+          "longitude": {
+            "title": "Longitude",
+            "type": "number"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "predicted_passengers": {
+            "minimum": 0.0,
+            "title": "Predicted Passengers",
+            "type": "number"
+          },
+          "sequence": {
+            "minimum": 1.0,
+            "title": "Sequence",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "latitude",
+          "longitude",
+          "predicted_passengers",
+          "load_percent",
+          "sequence"
+        ],
+        "title": "StopLoadResponse",
+        "type": "object"
+      },
+      "StopNeighbourResponse": {
+        "properties": {
+          "direction": {
+            "$ref": "#/components/schemas/NeighbourDirection"
+          },
+          "id": {
+            "title": "Id",
+            "type": "integer"
+          },
+          "length_m": {
+            "minimum": 0.0,
+            "title": "Length M",
+            "type": "number"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "routes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Routes",
+            "type": "array"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "length_m",
+          "routes",
+          "direction"
+        ],
+        "title": "StopNeighbourResponse",
+        "type": "object"
+      },
+      "TramEdgeResponse": {
+        "properties": {
+          "length_m": {
+            "description": "Metres along the track, not as the crow flies",
+            "minimum": 0.0,
+            "title": "Length M",
+            "type": "number"
+          },
+          "routes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Routes",
+            "type": "array"
+          },
+          "source": {
+            "title": "Source",
+            "type": "integer"
+          },
+          "target": {
+            "title": "Target",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "source",
+          "target",
+          "length_m",
+          "routes"
+        ],
+        "title": "TramEdgeResponse",
+        "type": "object"
+      },
+      "TramGraphGeoJson": {
+        "description": "A GeoJSON FeatureCollection: stops as Points, track segments as LineStrings.",
+        "properties": {
+          "features": {
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/StopFeature"
+                },
+                {
+                  "$ref": "#/components/schemas/SegmentFeature"
+                }
+              ]
+            },
+            "title": "Features",
+            "type": "array"
+          },
+          "metadata": {
+            "$ref": "#/components/schemas/GeoJsonMetadataResponse"
+          },
+          "type": {
+            "const": "FeatureCollection",
+            "default": "FeatureCollection",
+            "title": "Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "metadata",
+          "features"
+        ],
+        "title": "TramGraphGeoJson",
+        "type": "object"
+      },
+      "TramPathResponse": {
+        "properties": {
+          "found": {
+            "title": "Found",
+            "type": "boolean"
+          },
+          "geometry": {
+            "description": "[lon, lat] pairs; inferred paths contain straight endpoint connectors",
+            "items": {
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            "title": "Geometry",
+            "type": "array"
+          },
+          "geometry_quality": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/GeometryQuality"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "missing_geometry_edges": {
+            "default": 0,
+            "minimum": 0.0,
+            "title": "Missing Geometry Edges",
+            "type": "integer"
+          },
+          "reason": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "The same cause in English prose, for a human reading the API directly.",
+            "title": "Reason"
+          },
+          "reason_code": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/PathAbsence"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Why there is no such ride, as a value a client can branch on. Present with `found=false`, which is a 200. Prefer this over `reason` for anything the user sees: `reason` is English prose."
+          },
+          "routes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Routes",
+            "type": "array"
+          },
+          "stops": {
+            "items": {
+              "$ref": "#/components/schemas/TramStopResponse"
+            },
+            "title": "Stops",
+            "type": "array"
+          },
+          "total_length_m": {
+            "minimum": 0.0,
+            "title": "Total Length M",
+            "type": "number"
+          }
+        },
+        "required": [
+          "found",
+          "stops",
+          "total_length_m",
+          "geometry",
+          "routes"
+        ],
+        "title": "TramPathResponse",
+        "type": "object"
+      },
+      "TramRouteResponse": {
+        "properties": {
+          "component": {
+            "description": "0 is the main network, 1 the northern one",
+            "minimum": 0.0,
+            "title": "Component",
+            "type": "integer"
+          },
+          "length_m": {
+            "minimum": 0.0,
+            "title": "Length M",
+            "type": "number"
+          },
+          "ref": {
+            "description": "Route ref as OSM carries it; not always numeric (\"А\", \"т1\")",
+            "title": "Ref",
+            "type": "string"
+          },
+          "stop_count": {
+            "minimum": 0.0,
+            "title": "Stop Count",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "ref",
+          "stop_count",
+          "length_m",
+          "component"
+        ],
+        "title": "TramRouteResponse",
+        "type": "object"
+      },
+      "TramStopResponse": {
+        "description": "`latitude`/`longitude`, matching the forecast slice's StopResponse.\n\nThe committed graph files call these `lat`/`lon`; that spelling stops at the\nrepository, so one API does not expose two names for one concept. Original\ndocstring follows.\n\nThese are the field names in\n`docs/tram-graph.md`, the committed GeoJSON and every map library.",
+        "properties": {
+          "id": {
+            "description": "OSM stop_position node id",
+            "title": "Id",
+            "type": "integer"
+          },
+          "latitude": {
+            "title": "Latitude",
+            "type": "number"
+          },
+          "longitude": {
+            "title": "Longitude",
+            "type": "number"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "routes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Routes",
+            "type": "array"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "latitude",
+          "longitude",
+          "routes"
+        ],
+        "title": "TramStopResponse",
+        "type": "object"
+      },
+      "ValidationError": {
+        "properties": {
+          "ctx": {
+            "title": "Context",
+            "type": "object"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "title": "Location",
+            "type": "array"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string"
+          },
+          "type": {
+            "title": "Error Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError",
+        "type": "object"
+      }
+    }
+  },
+  "info": {
+    "description": "Прогноз пассажиропотока московского наземного транспорта",
+    "title": "TramFlow API",
+    "version": "0.1.0"
+  },
+  "openapi": "3.1.0",
+  "paths": {
+    "/api/v1/forecasts": {
+      "get": {
+        "operationId": "get_forecast_api_v1_forecasts_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "route_id",
+            "required": true,
+            "schema": {
+              "exclusiveMinimum": 0,
+              "title": "Route Id",
+              "type": "integer"
+            }
+          },
+          {
+            "in": "query",
+            "name": "horizon",
+            "required": false,
+            "schema": {
+              "$ref": "#/components/schemas/ForecastHorizon",
+              "default": "day"
+            }
+          },
+          {
+            "in": "query",
+            "name": "stop_id",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "exclusiveMinimum": 0,
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Stop Id"
+            }
+          },
+          {
+            "in": "query",
+            "name": "direction_id",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "maxLength": 128,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Direction Id"
+            }
+          },
+          {
+            "in": "query",
+            "name": "start",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "format": "date-time",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Start"
+            }
+          },
+          {
+            "in": "query",
+            "name": "end",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "format": "date-time",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "End"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ForecastResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Get Forecast",
+        "tags": [
+          "forecast"
+        ]
+      }
+    },
+    "/api/v1/health/live": {
+      "get": {
+        "operationId": "liveness_api_v1_health_live_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "title": "Response Liveness Api V1 Health Live Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Liveness",
+        "tags": [
+          "health"
+        ]
+      }
+    },
+    "/api/v1/health/ready": {
+      "get": {
+        "description": "Ready means every dependency needed to answer is in place, not just the database.\n\nThe graph is loaded here rather than on the first request that needs it, so a\ndeployment shipped without it reports unready instead of looking healthy and then\nfailing whichever request happens to arrive first.",
+        "operationId": "readiness_api_v1_health_ready_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "title": "Response Readiness Api V1 Health Ready Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Readiness",
+        "tags": [
+          "health"
+        ]
+      }
+    },
+    "/api/v1/overpass/query": {
+      "post": {
+        "operationId": "run_query_api_v1_overpass_query_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OverpassQueryRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OverpassQueryResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Run Query",
+        "tags": [
+          "overpass"
+        ]
+      }
+    },
+    "/api/v1/overpass/status": {
+      "get": {
+        "description": "Probe the upstream instance.\n\nAlways 200: an unreachable Overpass is a fact for the dispatcher UI to display,\nnot a failure of this API. Readiness of the service itself is `/health/ready`.",
+        "operationId": "get_status_api_v1_overpass_status_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OverpassStatusResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Get Status",
+        "tags": [
+          "overpass"
+        ]
+      }
+    },
+    "/api/v1/planning/forecast": {
+      "post": {
+        "operationId": "planning_forecast_api_v1_planning_forecast_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlanningRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlanningResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Planning Forecast",
+        "tags": [
+          "planning"
+        ]
+      }
+    },
+    "/api/v1/routes": {
+      "get": {
+        "operationId": "list_routes_api_v1_routes_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/RouteResponse"
+                  },
+                  "title": "Response List Routes Api V1 Routes Get",
+                  "type": "array"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "List Routes",
+        "tags": [
+          "forecast"
+        ]
+      }
+    },
+    "/api/v1/routes/{route_id}/stops": {
+      "get": {
+        "operationId": "list_route_stops_api_v1_routes__route_id__stops_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "route_id",
+            "required": true,
+            "schema": {
+              "title": "Route Id",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/RouteStopResponse"
+                  },
+                  "title": "Response List Route Stops Api V1 Routes  Route Id  Stops Get",
+                  "type": "array"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "List Route Stops",
+        "tags": [
+          "forecast"
+        ]
+      }
+    },
+    "/api/v1/scenarios/evaluate": {
+      "post": {
+        "operationId": "evaluate_scenario_api_v1_scenarios_evaluate_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ScenarioRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ScenarioResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Evaluate Scenario",
+        "tags": [
+          "forecast"
+        ]
+      }
+    },
+    "/api/v1/tram-graph/edges": {
+      "get": {
+        "operationId": "list_edges_api_v1_tram_graph_edges_get",
+        "parameters": [
+          {
+            "description": "Restrict to one route ref",
+            "in": "query",
+            "name": "route",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Restrict to one route ref",
+              "title": "Route"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/TramEdgeResponse"
+                  },
+                  "title": "Response List Edges Api V1 Tram Graph Edges Get",
+                  "type": "array"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "List Edges",
+        "tags": [
+          "tram-graph"
+        ]
+      }
+    },
+    "/api/v1/tram-graph/geojson": {
+      "get": {
+        "description": "The network as a GeoJSON FeatureCollection, stops as points and track as lines.",
+        "operationId": "get_geojson_api_v1_tram_graph_geojson_get",
+        "parameters": [
+          {
+            "description": "Restrict to one route ref",
+            "in": "query",
+            "name": "route",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Restrict to one route ref",
+              "title": "Route"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TramGraphGeoJson"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Get Geojson",
+        "tags": [
+          "tram-graph"
+        ]
+      }
+    },
+    "/api/v1/tram-graph/path": {
+      "get": {
+        "description": "Cheapest ride between two stops by track distance.\n\nAn unreachable pair answers 200 with `found=false` and a `reason`. The network is\ngenuinely in two disconnected pieces and its edges are directed, so \"no such ride\"\nis information about the city, not a client error.",
+        "operationId": "find_path_api_v1_tram_graph_path_get",
+        "parameters": [
+          {
+            "description": "Source stop id",
+            "in": "query",
+            "name": "from",
+            "required": true,
+            "schema": {
+              "description": "Source stop id",
+              "title": "From",
+              "type": "integer"
+            }
+          },
+          {
+            "description": "Target stop id",
+            "in": "query",
+            "name": "to",
+            "required": true,
+            "schema": {
+              "description": "Target stop id",
+              "title": "To",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TramPathResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Find Path",
+        "tags": [
+          "tram-graph"
+        ]
+      }
+    },
+    "/api/v1/tram-graph/routes": {
+      "get": {
+        "operationId": "list_routes_api_v1_tram_graph_routes_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/TramRouteResponse"
+                  },
+                  "title": "Response List Routes Api V1 Tram Graph Routes Get",
+                  "type": "array"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "List Routes",
+        "tags": [
+          "tram-graph"
+        ]
+      }
+    },
+    "/api/v1/tram-graph/routes/{ref}": {
+      "get": {
+        "operationId": "get_route_api_v1_tram_graph_routes__ref__get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "ref",
+            "required": true,
+            "schema": {
+              "title": "Ref",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RouteDetailResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Get Route",
+        "tags": [
+          "tram-graph"
+        ]
+      }
+    },
+    "/api/v1/tram-graph/stats": {
+      "get": {
+        "operationId": "get_stats_api_v1_tram_graph_stats_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NetworkStatsResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Get Stats",
+        "tags": [
+          "tram-graph"
+        ]
+      }
+    },
+    "/api/v1/tram-graph/stops": {
+      "get": {
+        "operationId": "search_stops_api_v1_tram_graph_stops_get",
+        "parameters": [
+          {
+            "description": "Case-insensitive substring of the stop name",
+            "in": "query",
+            "name": "q",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Case-insensitive substring of the stop name",
+              "title": "Q"
+            }
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "schema": {
+              "default": 50,
+              "maximum": 1000,
+              "minimum": 1,
+              "title": "Limit",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/TramStopResponse"
+                  },
+                  "title": "Response Search Stops Api V1 Tram Graph Stops Get",
+                  "type": "array"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Search Stops",
+        "tags": [
+          "tram-graph"
+        ]
+      }
+    },
+    "/api/v1/tram-graph/stops/{stop_id}": {
+      "get": {
+        "operationId": "get_stop_api_v1_tram_graph_stops__stop_id__get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "stop_id",
+            "required": true,
+            "schema": {
+              "title": "Stop Id",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StopDetailResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Get Stop",
+        "tags": [
+          "tram-graph"
+        ]
+      }
+    }
+  }
+}

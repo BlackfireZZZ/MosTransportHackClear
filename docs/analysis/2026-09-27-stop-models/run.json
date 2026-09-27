@@ -1,0 +1,22 @@
+{
+  "reused_run": {
+    "run_sha256": "08ddb0eee6f145e7f863e521531c086e581595a75448922e962657f575c2057f",
+    "code_sha256": "ca925e53924836385ad54f7b9ccbcd105e69ba405ad38fb6d6c32b5ae84724f1",
+    "scores_sha256": "25b09d78b4b74847c382b346fa75c2e6edc120085b3938a7771787a1ecdd3f27"
+  },
+  "code_sha256": "70807e18fffb34c3317c083be9c397e5e2cd996a974b6a887d3c183ac2e86fb6",
+  "config_sha256": "b040060e5814d7b0bea27214d02542c1d04fc89dcebd97a84629dd0554c6fb47",
+  "source_manifest_sha256": "0748c3c1a3f40b3f950c58b8cf33a62710dd0a20b246c5b59aa2c008ddc96e97",
+  "submission_sha256": "5f2c4e61d122c81dd6132ad559a1b0aee0807c5de9d969da2f8d3774a2cc23e5",
+  "selected": "calendar_weekday_blend",
+  "selection": "May+July mean actual route score",
+  "diagnostic_blind": false,
+  "timezone": "Europe/Moscow",
+  "seed": 20260927,
+  "feature_version": "direct-stop-calendar-history.v1",
+  "horizon_days": 61,
+  "uncertainty": "unavailable; point forecasts only",
+  "sampling": "up to 60000 examples per monthly origin; no future features",
+  "stop_ground_truth": false,
+  "aggregate_constraint": "none; raw independent stop sums"
+}

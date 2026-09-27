@@ -1,0 +1,18 @@
+{
+  "availability_policy": "use only valid dates at least two days before forecast origin",
+  "csv_gz_sha256": "04f4acd4a74f044d64b80150f5a25eb5de9ed8c6c3bd47c907e061b01f23528e",
+  "date_range": [
+    "2025-01-01",
+    "2025-10-31"
+  ],
+  "latitude": 55.7558,
+  "limitations": "city-centre proxy; archived first-hours forecast, not a full 61-day forecast",
+  "longitude": 37.6173,
+  "raw_response_sha256": "15e2d9325dbe40eb0141cc713c7765a7223aee0c509deaf4bb033577787130ce",
+  "rows": 7296,
+  "schema": "moscow-issued-weather.v1",
+  "source": "https://historical-forecast-api.open-meteo.com/v1/forecast?latitude=55.7558&longitude=37.6173&start_date=2025-01-01&end_date=2025-10-31&hourly=temperature_2m%2Cprecipitation&timezone=Europe%2FMoscow",
+  "source_kind": "stitched archived operational forecast",
+  "source_licence": "CC BY 4.0",
+  "timezone": "Europe/Moscow"
+}

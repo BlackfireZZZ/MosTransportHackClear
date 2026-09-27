@@ -1,0 +1,1954 @@
+{
+  "anchor_policy": {
+    "adaptive95": 3.6527760293461156,
+    "allocation_rule": "previous stop; exact arrival belongs to arriving stop",
+    "calendar_transfer": "nearest same route/duty/2025 day-type; past wins ties",
+    "calibration_period": "2025-01 through 2025-04",
+    "clock_rule": "strong onset shifts matched stop and all later stops",
+    "first_validation_is_first_stop": true,
+    "source_calendar_relaxed": true,
+    "strong_detector": "adaptive_supports+coalesce.adaptive95",
+    "threshold_source": "boarding-multiscale/multiscale-v3/thresholds.json",
+    "threshold_source_sha256": "def1c72288982e829e08e58ca59d2ad37fba7980f3827a238b26d3f6da7b777b",
+    "trip_padding_seconds": 900
+  },
+  "calibrated": false,
+  "catalog_sha256": "34a46e4a3aca9b61e96c59f76fc15bf47d740abeed029f3e8ec865dfbbd377d4",
+  "complete": true,
+  "coverage_sha256": {
+    "coverage-by-day-route.csv": "1e7a05dc503c9ba37a075ea5ee68565f1306598ad3964a22d1b4d844f39f72c1",
+    "coverage-by-route.csv": "e892047ed7e4a65a5b7f81197dda0cfe0313e6d0298058880d36092aae80bfbb"
+  },
+  "daily_receipts": {
+    "2025-01-01": {
+      "ledger.csv.gz": "45d64283594f553ddc3e7b4db32926355aafcec5219701f0b8e4c519682004b8",
+      "soft.csv.gz": "2d7c0548f2f23410552d9db4adcbc8ab16dfd01a9e2a97828624fe1533d12fef",
+      "trips.csv.gz": "f9893aa23a597f6fa9ea19aa80ba530bd1f3c83d75067d308e5728e1368a08c6"
+    },
+    "2025-01-02": {
+      "ledger.csv.gz": "36a7c0823099263e79a46ec95d5f578e55314fd4dc2cf932ca727177f0af3f2a",
+      "soft.csv.gz": "7fa14ba71b04ec759d04a76ff8f2394a0c49b26cd52ade965c68140b67954d3f",
+      "trips.csv.gz": "1a759df788eb7cbd8ce99919f59b2b7fdb307ab30e16c28cbb92b74c84ee64bc"
+    },
+    "2025-01-03": {
+      "ledger.csv.gz": "4284917fc3d0639c025182c98fa96b3dc21e46f0606b5c9310fe1f2ae33a4ef8",
+      "soft.csv.gz": "7880506056bf092dd917fd87ca37af430aba6f9519e938daee3242e1ab2406c6",
+      "trips.csv.gz": "f5033464c52ccb8ae1951e2ebbb59dd701444983ee544cf8a1d0c7e386235be2"
+    },
+    "2025-01-04": {
+      "ledger.csv.gz": "8718ffb4335a61f6de096373594004051b346e21c933ee96f7a8acc2a837d677",
+      "soft.csv.gz": "e0f8d634512496127d9541a3dc7d9b2f2dec72637894b3af8922b1492ca1d159",
+      "trips.csv.gz": "4bc09da94d94a771cffe25ab9a8a35b511010fcec55afe1515142dd73d04b9bd"
+    },
+    "2025-01-05": {
+      "ledger.csv.gz": "8ce9496945f85c7bc5f908d67b13b20211de882000e98a0e753c0153b00b8a76",
+      "soft.csv.gz": "4bdac299322cc62aba101e631a5e9159903ffe621cd0b8a5677bef2d1b129b39",
+      "trips.csv.gz": "24b731b7362746ecc9a25a85ed3209c652a3d2cff90a0f726b0154686be40173"
+    },
+    "2025-01-06": {
+      "ledger.csv.gz": "2cdc745643535fc9bc52a846ca83cdf8183df33152ae2393ca84ac5a6eb4c035",
+      "soft.csv.gz": "f9bf618e5ceb480419b7e207fea68debfe8aec8ad8cde04f88e1a20df9cd347d",
+      "trips.csv.gz": "89a7a1e94d693f1f34025df649e70ec9ba0c3f971ad2b41d4aa76cc7314cbf20"
+    },
+    "2025-01-07": {
+      "ledger.csv.gz": "22c355d88a7b6911ac20d29d15f45a9df210bc5bf89649517790cee06db5150a",
+      "soft.csv.gz": "32d81cc7128177e598ba09d2b4d2536624960c00e47e14b5a0ca4e285d930ffc",
+      "trips.csv.gz": "b17dcb94933967451db763f92eed04bb52ca55ef102e91009df45449acbce212"
+    },
+    "2025-01-08": {
+      "ledger.csv.gz": "e86ae02b777f4f7f759012f387dc3bb196d39d249eb9e9cf07f128b2c0534fda",
+      "soft.csv.gz": "2c8dcd61fecaaa86d9fd779b467a5c93db12b4e762e76447df695a562e67b988",
+      "trips.csv.gz": "9ffacb106051cd9a5d8dc38371773f5d5ca605957f8a8d500825952c6c6c35f3"
+    },
+    "2025-01-09": {
+      "ledger.csv.gz": "169e163554967b2d7fa4b58eb4efade3c005db1cc6979176dacd84e3c44bdd15",
+      "soft.csv.gz": "55e7df459088b9833aff68aef97b364041013301e8093dc577492e9d961e3408",
+      "trips.csv.gz": "742719e98feb141cd9cadf7eadc7c0de566a6d875ba3c6a3fd25cbe86b46e018"
+    },
+    "2025-01-10": {
+      "ledger.csv.gz": "8061031bb2f7a9790d7d1a87104969e003e766d29d8c0b2a6527df03e46d693e",
+      "soft.csv.gz": "2b45abac776e12d327f50aacddb43343f74256601dbbb54e1bcb8059c1720acc",
+      "trips.csv.gz": "df58009a79b56ebc8512d9b2ee53a51f3db7d29fa2cc2e951cd225187fa8a476"
+    },
+    "2025-01-11": {
+      "ledger.csv.gz": "a5a437dab5a8403d5dfaf206b36723df5002a9d82c7e22988df937645841b1c2",
+      "soft.csv.gz": "b7f9be61ba4c90cf38f4482b3f98c80766321c2d49f084cd056c89f9a5901e76",
+      "trips.csv.gz": "6c509b39d4caede1806edad8aeafc880ae2ad195abe4a0ca40b006d45b2554c7"
+    },
+    "2025-01-12": {
+      "ledger.csv.gz": "627557906dd3ccf454e0d9691fff6bfeff4f2fad7660f3b0111d0a9fae217d35",
+      "soft.csv.gz": "064a3f1c2b5065f6c8bd9d324ac9fb028283cb39d0d97bf01d7591a4b4e191cd",
+      "trips.csv.gz": "a73c9935b397c01cee91b0139b5f29c3f05d7ec90d5440f66d237efeb314362d"
+    },
+    "2025-01-13": {
+      "ledger.csv.gz": "3116244604bb9acc7d1cb485fa0a0638f8e11898891fc0cb9a5fe73fc3990e33",
+      "soft.csv.gz": "db199c8c3cea7a840c41cb1d2a9aa6a46173586ceb00218763e4b88459c473b3",
+      "trips.csv.gz": "f08a3c84092bf1a267d212a6df8e2c65f8c378e4f65c06c71df3416585149ed2"
+    },
+    "2025-01-14": {
+      "ledger.csv.gz": "f24d612a29da6dae7df37c09ec0972e79b8770b95154dfb090bc3fb70ef37ce5",
+      "soft.csv.gz": "d4c750bca1b5631e98043e87229dfbe7f86ff3883dc030e53f50778a521110d8",
+      "trips.csv.gz": "368b260f9ee790bae52030ec262fb0d096b28beb1468f209429dad08dc1a9262"
+    },
+    "2025-01-15": {
+      "ledger.csv.gz": "2125c82cce8efc594928272c14d66b181f4501a36e3c8b5348b98ddb96141acd",
+      "soft.csv.gz": "606bf14c705dc6c0208956df32958d1e2712d94d924f6914065780244bbc5999",
+      "trips.csv.gz": "5e1244fb5e6829b454989c33de396a8a2f813556a3a897f9084dc1bfd43ef29f"
+    },
+    "2025-01-16": {
+      "ledger.csv.gz": "2f5692255c08a64b17467bb343a8f054745807458bcc92de90422dce5f0f3457",
+      "soft.csv.gz": "cc5e53cdc4459b9d0125f626874254515bcc352fa29ff3b483d9f9ee3cbfe441",
+      "trips.csv.gz": "550809b7f0e1bf869c9dbb18b9a6a0be1a97c4d8143ed81d87bd5eb6e46b4dc3"
+    },
+    "2025-01-17": {
+      "ledger.csv.gz": "5aa9ad68bf0d193491264ff4f8bf971cd84ce0a5ba7225ada41a3c3f86e79c2a",
+      "soft.csv.gz": "a7a4c50c7e8318de129aaef3b2bbddda621b325a5fa904adccb82f2c54ea75d8",
+      "trips.csv.gz": "be4f9807acc90244f6cc81cbdcda7d626bd964b223a53894449325f6c59c4151"
+    },
+    "2025-01-18": {
+      "ledger.csv.gz": "53de765b30de7625d0ea40d52f6fb65bdd47fa2360d81f4687b07ac5a7a1ce21",
+      "soft.csv.gz": "b5b8acd2a3a5f67b6d88b86bf00753408623e145a83bcd5d57a44638f5174442",
+      "trips.csv.gz": "7ec0ad09e4c35d3fe5143f62290119e861245d9e4eb3715f11bb684d9bdccfbd"
+    },
+    "2025-01-19": {
+      "ledger.csv.gz": "7e37e1aa56ac909ebcfc76898d720516e4367fdc1240056e235f3605e4290b8e",
+      "soft.csv.gz": "bebd1bbc7ac20da4e84eb8d20c56a395e7fc56302cca9c24f3757f7fad9e572f",
+      "trips.csv.gz": "3be14eb4c62956f1756d40c88e356d292df33afaf2b31040333b607aac1136c2"
+    },
+    "2025-01-20": {
+      "ledger.csv.gz": "f9dd33b371e9b15b176760fda6c962ef3a56144a9869cf15f1c12dc0baac95c9",
+      "soft.csv.gz": "d9861f1dda8fd3210efaa7b6296bad4d3611174888cf105b3bd5bf9a8b2bd38a",
+      "trips.csv.gz": "47874974ccbc81720e3abd823c3e33bb6fe65d56aa3ec945a43261b1ec602d7a"
+    },
+    "2025-01-21": {
+      "ledger.csv.gz": "f940ec768367113828b0481b1b452292fb3fe25043283cc97ceee96c39f3b140",
+      "soft.csv.gz": "ea44fe66d25e64c82cfbbbb9ea5ab8141b58f7687879a2baa5f11cee7c6350fd",
+      "trips.csv.gz": "4d7c8b2b79bf6cf425f032d5faa492f37942ee5efe9ed56b3bc1b02558104443"
+    },
+    "2025-01-22": {
+      "ledger.csv.gz": "79bd919b3a20ab78ade1870a1e182368e116cc3b552d173764428e3da4713653",
+      "soft.csv.gz": "e186d49bbcd533a932b7611e7aaf3943aa2bccea3e49c8b7513541b5ac2c3d74",
+      "trips.csv.gz": "0009da52f015622e3271fd0d4884e8ba44c6a0364628f3f1ec46ccdf46caae4e"
+    },
+    "2025-01-23": {
+      "ledger.csv.gz": "6fbf89d1fcf99cec5c450c01718db56bb56b04964a06b1bcb7533c8c143a0083",
+      "soft.csv.gz": "54e1c701a551e66cb00da0a9ac3a940aa3f4fd7cf86774de68f5acb4b19e427b",
+      "trips.csv.gz": "ef8e099a92ec3e2fe3d1ddf10817c1170ca8019416d19c71120ed1289da00946"
+    },
+    "2025-01-24": {
+      "ledger.csv.gz": "a8dafc2a5f324ab2e6328b9d4c24b989a22fc6827882c7e743a966ab9d4e22e7",
+      "soft.csv.gz": "cfda1db3f83f42c9808d34706db39948f366da2345f318f9ca6bb8255a9adfa5",
+      "trips.csv.gz": "1c00cad444ac4e447833f82ec24bc5508cf98e536ddd980b0a2b1e0203d2b440"
+    },
+    "2025-01-25": {
+      "ledger.csv.gz": "72849eac1f3bb9c71097185ae734c4df6b942b14770126c86fa2885eefc7d28a",
+      "soft.csv.gz": "98e9aada63f334e8748891a6007038e869c9df13bc4caced3b2de6b609a72f97",
+      "trips.csv.gz": "d1bc7d1d65676b8e04f5f7c422e3219930964ccefdbe226052454695919c0c3e"
+    },
+    "2025-01-26": {
+      "ledger.csv.gz": "c239774c1d74524138c624dd4c2cf9a277e731ee1eeb1eb56b8b7d021411a051",
+      "soft.csv.gz": "15d25d4f6f1f65e401320a85d8745bf7092fee161a2bbdc6f0b0c480bbdd5c63",
+      "trips.csv.gz": "363383561da9fcbaa4ef66f41c01a915b4013b3bb41317ab012de0822f126add"
+    },
+    "2025-01-27": {
+      "ledger.csv.gz": "20e5d1d3096f60c6a3778b00a268a01fcd303c33a9457d3c9bfef33092d8e674",
+      "soft.csv.gz": "7d9d6754b2ddc31e553aaa759fcdac56cefafb99ec071f2e91bf5e98363ee8f4",
+      "trips.csv.gz": "f44afd1f9728ca4ba282e649a52f7f5d5af94a868acb61a1164ada073c8f162e"
+    },
+    "2025-01-28": {
+      "ledger.csv.gz": "3a84cba6e27c7a01f06caa3a2d2fed20b9631020f28253c58ac1524841690a2a",
+      "soft.csv.gz": "7d36592dea565bb0f117842be98bea52bf89e9f88b8d725867c21c86a6f6117d",
+      "trips.csv.gz": "b13ee0f8c4f49ae8c5a3aa15a0babc370dbbd1d29779e9f696114ed6b9f6744e"
+    },
+    "2025-01-29": {
+      "ledger.csv.gz": "69ac71ac092fcc9c1f966cab68cc8600d406e49c767a35e50acf55a66ae1b9a8",
+      "soft.csv.gz": "70d6d7ad035c44bee1ebd5ac0a13c292411c71287ee6015bf23faba8f4d5f2fa",
+      "trips.csv.gz": "ddfb2e3da8bf0b5073a29d2cf7eab9f3763e174c8e65969df74d6a03e0838766"
+    },
+    "2025-01-30": {
+      "ledger.csv.gz": "13ec8644086bc1d54afe1f00b3e8f60316bfa6c5b0eed2b295ea7c426850d250",
+      "soft.csv.gz": "d1766a7f4e1187a229174643e9f1aba609a0b2eca6fa6297725933acb9e8766e",
+      "trips.csv.gz": "8541872e1ff66548b62a3412a5c7261bf5feff6af07e429d07b25dfe7aacdf26"
+    },
+    "2025-01-31": {
+      "ledger.csv.gz": "2ff61f32f42ca6975ed29006419773590694b22324446bb60f246270cce76c82",
+      "soft.csv.gz": "6b103cbd926831889bd180c943f7e3f3c1eb76251e54b6eb859efba947cff3f9",
+      "trips.csv.gz": "8f0a40d0a79b33b2f2ed9ddfc25de0abb3fb06740297990222ed76c74f25ad01"
+    },
+    "2025-02-01": {
+      "ledger.csv.gz": "50e56c2a368f723f5f604a2d1ae9be141c72965094ea7d37ca79c387c94c474f",
+      "soft.csv.gz": "c7b770a5038ab6b8815eb346db8a06a580f0e1d52437e394b3ec44f7895adf5d",
+      "trips.csv.gz": "c7152c5cd1525aa258f87bcadbefb06f1148d27eeb2c42144957013fa56d578a"
+    },
+    "2025-02-02": {
+      "ledger.csv.gz": "6d902c01a07899a3f1867447b4731264e025cdf4a3e3ee2c363ef6a7fb65875c",
+      "soft.csv.gz": "9f98d4f293b0f4dcdd99677d529d9f35984e773c342f53f06c3cfbf632038ee2",
+      "trips.csv.gz": "737758974921d61594daf861f7869071c23b590848420a6d22d2c9ad8d7490bd"
+    },
+    "2025-02-03": {
+      "ledger.csv.gz": "d17e4cb0a2a0eb744caa1155a871300cf034098a9bdc9f77d0bbeed0555eeef4",
+      "soft.csv.gz": "3f39ff17f7d18165bd68944e27c3e6ee41f0fdf18017dc2a5d93d928037525e9",
+      "trips.csv.gz": "e9e6fabc623a3cc9c1430adc67fcc89d2d738f3af6dfd2802f35b0159c664125"
+    },
+    "2025-02-04": {
+      "ledger.csv.gz": "86c94f932df86d2e535b84377eca5b22efbd7ff82f339219b9dabf767bb35cf2",
+      "soft.csv.gz": "2214a166f7b9d860d1c9670ddca5a773ab6a18854e28c29ac92d7db93e1a27f1",
+      "trips.csv.gz": "dbea501cc68d4384fe642723dab25ac1a57cfd67fab8cbbb95206a3f2da39b1b"
+    },
+    "2025-02-05": {
+      "ledger.csv.gz": "9fe6ed2155fa3c489734b824581878abab40d9739b751530c8c3158251920d0c",
+      "soft.csv.gz": "2715af143950823e744eaba70dd8ca7884a85e7c032108783039c3de46d6edab",
+      "trips.csv.gz": "af055a488351173b35cff56a81b857a602a25cd6844c26d4816026210ad39915"
+    },
+    "2025-02-06": {
+      "ledger.csv.gz": "e66b9597210618d6a858a1145b92e3550e67394b9046b1a6b25774ea0fd292f3",
+      "soft.csv.gz": "7b06f0ef115f40dd43b2f5c28ddc89567b6fcdc7f946baa839413db48e2f8e90",
+      "trips.csv.gz": "a347e96ccdbf6189c4dfec60661ae766953a19b8cfabc68477d01c601641e88c"
+    },
+    "2025-02-07": {
+      "ledger.csv.gz": "6f140b12d10dcbb36f07951d8265cf5707e7394af2c4d2ce98cea2dabe94bdef",
+      "soft.csv.gz": "afa69752a89800d4e20fa444e28400c20850d03ea79a609bc777aa97ef9ca717",
+      "trips.csv.gz": "3b10819abf7c435bb2ae586f0f5ace0c3ee4ff3fa4a78d4e6981ddecb951d1a2"
+    },
+    "2025-02-08": {
+      "ledger.csv.gz": "f0fc6c6949e0fa52637d61ebbd9bd2549b846f7d89cee987870d890491c72c1c",
+      "soft.csv.gz": "590afddf5ab83cc04f463f4aed8b753804247d705b56b74833704430759c693f",
+      "trips.csv.gz": "702f022e523af83b6287a3cf2216babbdeac58c865dbfa178cf48e769e17e750"
+    },
+    "2025-02-09": {
+      "ledger.csv.gz": "ce0678cfad28190d5faad0f5a2df3152e8f5b93c1ca7525f8c38b3141b795b03",
+      "soft.csv.gz": "07296bc289ec7e3a27bdb4ed15395f8d4c5099d6f85166aae57aad9658443db6",
+      "trips.csv.gz": "e4bd370cfd324f443f3e10dc95765cd0a93ee44402c97fd0d38cd36ccfe29fa7"
+    },
+    "2025-02-10": {
+      "ledger.csv.gz": "407b92e60150269b8d740548dc4dc497c7283a434be3184a0ff44fe0146f7142",
+      "soft.csv.gz": "81fed7a34628e4017fe17b4635038bcb33d6f74f0b4a6ab4d410983c6f7127ce",
+      "trips.csv.gz": "eadea9e5f558ae66311ca59b930d8aaa3e8d7faf19e836d71f4e863ccd9e460e"
+    },
+    "2025-02-11": {
+      "ledger.csv.gz": "48ed3715273f1db468f0fa3118b45d899e1ae8295f6fe0047408d0f9cffead6d",
+      "soft.csv.gz": "9524bedd2c867c8a6c019a4a22d11bf37d8302c15eb0746729cd36e02cfbcad8",
+      "trips.csv.gz": "d9da34f3299c4a9e1da9c2f21e48a6495ffc86d3595eb3b4fcbe1df99e5d431a"
+    },
+    "2025-02-12": {
+      "ledger.csv.gz": "3af4f116df59294a2f3f30663eeaa3d176a3f9a508d03dcc0488870934253c0f",
+      "soft.csv.gz": "3a6ccb94a2d22e530185c3371fd1b15c19c0a9ee43c2fe5ed498e76545b9f849",
+      "trips.csv.gz": "648cc59df526569ab0b881eaddd370c97864131aff6a41aa7c918468255d1bf1"
+    },
+    "2025-02-13": {
+      "ledger.csv.gz": "e0c7932fdd36a48aebc41c2d5ec386a0dbb02d40b55e9746d17cb8a6b5a7b08f",
+      "soft.csv.gz": "133db3bc0b7651d20013401624add3aadb191512521a51ceeb25888bb47ca690",
+      "trips.csv.gz": "fc357b302037d17177e7439808412fad3af945e10712e969565a44c8e439d8b7"
+    },
+    "2025-02-14": {
+      "ledger.csv.gz": "e08fa2bb84b89b9de0c73d0dee0b80053b90f9e106a47e5fe6c5b610a9f6cecb",
+      "soft.csv.gz": "9e1bfb30d3701d94e4feed3e491718c2b22abf1f0a9f721c34254f133b34e514",
+      "trips.csv.gz": "3edcb2c591acf4758fc7324092cd50e544f181f0cce8019fea1d2e908ac9a437"
+    },
+    "2025-02-15": {
+      "ledger.csv.gz": "ad38a3827842f68df9c1525dda6e0dd425acbd056a44793a69a3e1632d876115",
+      "soft.csv.gz": "29013760a6f63c4900922b2955340304bafaf10befa02b4cb2aed102713904d4",
+      "trips.csv.gz": "8ee955ae7b9d405f5fa302d946133fa58e196716c787c0c4695cdfe59f9595c3"
+    },
+    "2025-02-16": {
+      "ledger.csv.gz": "abf250a423b4de00326b0331c57ed094d496ed1fcbcf2aa564279ef5a70b2b58",
+      "soft.csv.gz": "f661ddc9b08a1784906c0360577dbfca36eba2ec19f4dd72565b63294234da03",
+      "trips.csv.gz": "29b5a302911babf7b10f1b800b24dde6e15e3b710424ca657f4085e682bdc5dc"
+    },
+    "2025-02-17": {
+      "ledger.csv.gz": "d21309ee83981402bc207c5d02253503bcb08cf32506cdd95cae8ca2b8134fc0",
+      "soft.csv.gz": "a94b17314d07890ebae4a0d4d50af81c0c52c3fee89aa01a405fd054416dda62",
+      "trips.csv.gz": "0e80cfdd48f5721ebf88981f129d42203e74cad557524d3729463b28df35c324"
+    },
+    "2025-02-18": {
+      "ledger.csv.gz": "d2bb3811e9c415fd2104d15120ac1e8000de7644e1bbb0281ce2aaf74e9442d5",
+      "soft.csv.gz": "e3b928531ebc1683938f7c7f7308ea3c04480cd0abf00d330a930f79635933fd",
+      "trips.csv.gz": "f0985c5778285bc75113c1617438c3805ba9d254b7e792fbdda65d438e8cc9e8"
+    },
+    "2025-02-19": {
+      "ledger.csv.gz": "3c42ec4c447c1b26e1fc1b8d1326e827963a5ab48cbbc8eb85a2949a74bc7e4f",
+      "soft.csv.gz": "4e62dfec505c15d3519b2287011005432ac58875949e3eaf61d464ec63aba449",
+      "trips.csv.gz": "79f12fa6dfe138df62298af4148a4c9243949b1a64c6632b90e94c9266a327f3"
+    },
+    "2025-02-20": {
+      "ledger.csv.gz": "643a420c9e9ed38bf09e4c774d2605f4c9630dabd753942b4026e86b9851a8f8",
+      "soft.csv.gz": "737d3d6b0295543019e4affe10232587332cabc590a4bf935657e285da9182df",
+      "trips.csv.gz": "3480ea9f0c61fc5e3e2e3e5a39f3ccec993cda1d3ff5680c71642f1cdf7d4767"
+    },
+    "2025-02-21": {
+      "ledger.csv.gz": "0d051f7aa0cd4abfae82d72459bcc39ca4e994ec728db4ed3fc49cd968eb7e82",
+      "soft.csv.gz": "d79de7e74aae5dfa55cfdfca3b5e111f14fa635331293718682ec1984fdb4e27",
+      "trips.csv.gz": "5814279d7549aafba8aaa920e9d787e44ccc94d046ced3ed2d76d8d00e23553c"
+    },
+    "2025-02-22": {
+      "ledger.csv.gz": "93bf1354e1fb8ccba08d703a12b7c998234160046f6d114750232ea25aff4fb8",
+      "soft.csv.gz": "0c10d416f6d8b383622b9a86acfdc783e842ecf32fc65302c61a3940d1b69261",
+      "trips.csv.gz": "d71fd4ac4da4aeb77d2023f49176cf58edd3a60c448bfbce7deb1adf9f1819d5"
+    },
+    "2025-02-23": {
+      "ledger.csv.gz": "be81a133547d342a61e41bbaa603ee27d58dca35a2ea9f190061ddfb6d40540c",
+      "soft.csv.gz": "ecfc191a81f98e756912ca65f54c443b3dad6c1e7e6728381b1cb0c099a797e3",
+      "trips.csv.gz": "1ca92c2b79c59effd6f9ba20ebc29f0c57a452db5c934754013304dda5c6318d"
+    },
+    "2025-02-24": {
+      "ledger.csv.gz": "11682caabb28f17b1fb14082da8bca7aba988a569e88f663310c93508ed5e49f",
+      "soft.csv.gz": "8a03f7f24574b77d3bc1d16b762b944c0a349594dccddce1bb27a149bdbd97ae",
+      "trips.csv.gz": "9ac3c4bcf95efc17389ff5a1e5989699a40e463dcb6904ffb6e20b74d72e26b7"
+    },
+    "2025-02-25": {
+      "ledger.csv.gz": "91ceb6ebf49c18520823c6b65334dcee3815f5154b9e7a169db6ce56e5ced469",
+      "soft.csv.gz": "b30f8b64f19556227f5a71122eae8d902efeb60e3f15ef28a4bbee4da8ffa2d4",
+      "trips.csv.gz": "86fefeffa81931445fde1a578636b4c00cc1397d371d146da071248b9975016b"
+    },
+    "2025-02-26": {
+      "ledger.csv.gz": "dd7f3906289a8f19b51d059c2ab8c69d722555b9c4689724e454ec222391730a",
+      "soft.csv.gz": "b2ec4f39da7e8e5844ae784504cb6aac5ed291b0f2b01e9f841e3f13e7c0d866",
+      "trips.csv.gz": "723c77dbe85442f5c0f57511fb2f76260b682eaa2b8ad9722bbb5f1ffddbaefb"
+    },
+    "2025-02-27": {
+      "ledger.csv.gz": "9507f98eead849cdade91e4e54db167315b54a534512032cc2e224e048473801",
+      "soft.csv.gz": "b6758eaa560050723b818e0f106d20271ebbc2fb91589af6edaaaff812e439a2",
+      "trips.csv.gz": "04326b3e1114a4cecbc7083b25e9d2d52455798e8c0b5c2ea194c9ddd69da340"
+    },
+    "2025-02-28": {
+      "ledger.csv.gz": "845b0c15af2eaca2ad0598d621f43154d4db56e0ede31c1a2c1b53474491909c",
+      "soft.csv.gz": "0bc73cb6342df7336f6fce37b53fc39cedfa80dd1edee8262383a7682b8b2d42",
+      "trips.csv.gz": "a9edb5c353354a170489d48aee7be4f817efb6d265185c36e32443e15de04621"
+    },
+    "2025-03-01": {
+      "ledger.csv.gz": "66a1a3aa50c1f45b53d62c8e73421a288563d7434c051945140f3b2950bd2fb3",
+      "soft.csv.gz": "39267472a5b66782d95b9bde40a96b84b4fe0c125ca8e82ea4144c817e53d0a1",
+      "trips.csv.gz": "8ef1d073f1210f26cf1fcbf33083823265aa2aca0bd232fac6cd07bd51e78c24"
+    },
+    "2025-03-02": {
+      "ledger.csv.gz": "f3deb1a4c9617deb31889f6176627c3972e4367f0e99a0df0a12e759d9e2b806",
+      "soft.csv.gz": "d18b817d6759ddeafe7b3574e049bd2be7c930472a94e70782030db20b38483b",
+      "trips.csv.gz": "8b4d8c47a33d87f7579c330e078a69fb39673948f916dbe69f99ab1b0cce7422"
+    },
+    "2025-03-03": {
+      "ledger.csv.gz": "6006958cfb7f701ecd61a610b6ec6b6afdf36aa498ae8fba63c3cbdd876e4430",
+      "soft.csv.gz": "9d97c048a9cf8ba3741a19fdfe2e1d7f81f46c842ad78973007a9b1118183a13",
+      "trips.csv.gz": "5d1abeac82414db049f0dfb49a1127454eb4d5343dad26d6bcb01a6bf3d32227"
+    },
+    "2025-03-04": {
+      "ledger.csv.gz": "1ed3854aed7f2a4e98fe9581de1c893026b625e6b20fc3faaacf56a7412581ac",
+      "soft.csv.gz": "9d134dff4ce3fdc0f58d8fc55a6b71d3a486a074e281463163fd1ecff9251cba",
+      "trips.csv.gz": "4d2e13d6cff76ef3c6b6adafe023cf6d0e77e16a02dee95816bb446a5bdd4238"
+    },
+    "2025-03-05": {
+      "ledger.csv.gz": "7eccbbdf312b73ebd7a0c60e595d3d4a78ff0ccb13d396667adb419a80a6d2ba",
+      "soft.csv.gz": "3f1cc322ec06cf8ba5d3a322216efddca761d7133e129c7d837f10c854803753",
+      "trips.csv.gz": "7b9ad491cb9a0559a584dffb6ec043aa2aa468770b38f1c45617cbcb3a90c5b0"
+    },
+    "2025-03-06": {
+      "ledger.csv.gz": "875641dcc1b2254dcb5c113e13d15dd71f55337fe034fe1e9ec1c84cdcf6ca89",
+      "soft.csv.gz": "6d7093a5ac57befd771503a5d4d85d2658fc0ec9e2fade612525cda40997d72d",
+      "trips.csv.gz": "da18f22d5c7da370a91b19d8de75fce2715c0f6eaed11e4ca106fb077ba654ed"
+    },
+    "2025-03-07": {
+      "ledger.csv.gz": "5c798aadbb0e5fa0edb368a37828049e151376c4d914a6d1e188ec84123dd302",
+      "soft.csv.gz": "4014364790ff43f36f5ab4f70e325a65c23f98baec732a9802eaa3009102d9ab",
+      "trips.csv.gz": "3afd6afa54b62ca33aa33cd3745e86ad48bbbe340158fd8ba7dbcdaeb47f72c5"
+    },
+    "2025-03-08": {
+      "ledger.csv.gz": "1b96f55dcc9bfe092f1d4b003cf9cd1b7b25b496269ef101a70ad8c4268e5b52",
+      "soft.csv.gz": "7b35f6423efb04cd3e036d9d69eac0d12b3ce25a0ead3d5b25997f85acd25a72",
+      "trips.csv.gz": "aebe18f2085249a3cd695a337381051c629e83feb1faf571e7111fbb88f33e01"
+    },
+    "2025-03-09": {
+      "ledger.csv.gz": "9beda38f1275660a22ae2059d04936efea2816f5e75a4714df9b3379cd207fbe",
+      "soft.csv.gz": "b9a1ecf5e9fce6add400d5efface867d8aa51806b02f3bd07916fc97342d2d1e",
+      "trips.csv.gz": "9c9f3e7228a36cd9baf9f20b8e96edadaa8e269253fa2bb5241c8732188de7be"
+    },
+    "2025-03-10": {
+      "ledger.csv.gz": "8fa8757ec5271259443b0929a17145e43454070b200586846a8c694ff23e580f",
+      "soft.csv.gz": "d91834f68cdd42e5b1fcd6f48c50b2b705fc55236ccb5fd4697b0976b156b645",
+      "trips.csv.gz": "276e77c8c29046f108457076c2234d0a24a413d1c2d02f7b425c46ae64cdd77a"
+    },
+    "2025-03-11": {
+      "ledger.csv.gz": "18995b8e5d9741298db1ce10d4ca64c5f0750b980becd9e8f5c308a3afe17b73",
+      "soft.csv.gz": "be843130c897ecca31f91a0b3d8bf94495281f9a43b9790df39dba69ac66d9ed",
+      "trips.csv.gz": "db0c930ef204c9a7bf6d64eaee8cf9f803a198a6bd07668d8ce30bd859246aae"
+    },
+    "2025-03-12": {
+      "ledger.csv.gz": "5526b620986023c6f87ed262159b8964dea65009004415bb193ec1e9d3850da0",
+      "soft.csv.gz": "d1e2626d53de4c7620af6e2349288711cea35b6ba22fced7ca5d9b11f835817a",
+      "trips.csv.gz": "b55274b8d58c02288f6d4b6c75e964a419dd60fcc6f3c1cf856f1de6407ea8c0"
+    },
+    "2025-03-13": {
+      "ledger.csv.gz": "9ca58ee4efafd22d1eb7cc80fca7278efd0c127ecaee4e4a76ee256726106c1b",
+      "soft.csv.gz": "4262823b3b18015dfe9bba5ebaf783c913a41908e6e0be0f73f10b0463a56dc7",
+      "trips.csv.gz": "8f36b327d25a5f1d7b82fb416bf809b13af63df58138728aac3a6143bdcce119"
+    },
+    "2025-03-14": {
+      "ledger.csv.gz": "2bee0866072fbad510ee6ecdf15135fc885fae28c09be3afb37a55d3be177ee5",
+      "soft.csv.gz": "a57b1c3ad2f590b05c8bde3bc266e24457d989efa8dc20417eb2b3810430d458",
+      "trips.csv.gz": "2e4bcabfc6c06b253b3b1747a5fef505b4aa1eb887efc6c9d9a3dd105c57e23b"
+    },
+    "2025-03-15": {
+      "ledger.csv.gz": "96272744dc0becb48b0ad33cf3f89d5429fc806d580fd088a13b02653e276002",
+      "soft.csv.gz": "62df8aaa2f0d7345e1109dc9858218d0d7084768394aa6a8fb7e8f48906fd9bf",
+      "trips.csv.gz": "18d4b4e744a9f6217639a1c52c6f4b5b988488970152f605f6787beceb17aed4"
+    },
+    "2025-03-16": {
+      "ledger.csv.gz": "e1481fe789fa80a35b7fd43457b69323cf5656ad4485dabe2ff32e9cad1e81aa",
+      "soft.csv.gz": "735137d1cfb053a62e373d469c61b3db4734229e5627096fb4dfd167fd94d09a",
+      "trips.csv.gz": "a30f981fca7f8221a6fe13e2def8cfdb87c3ac4a95804a6682d616a551087556"
+    },
+    "2025-03-17": {
+      "ledger.csv.gz": "c02a1f261ff9e0ff1d24ac85fca13c0882bded4ca4bcfcedb18024477a60d6b6",
+      "soft.csv.gz": "e8433031af89478debd66fa0f7a217115b58307aa657fd60cc101a5032ceebfc",
+      "trips.csv.gz": "2b61332ebcb2688a0544e313151ae52f35dcb7e9492ff60392aa73f1571697dd"
+    },
+    "2025-03-18": {
+      "ledger.csv.gz": "92f6ce20005ac91b3d8f5b873f6c8097ec38fec65ab8120b748da356eb94c97d",
+      "soft.csv.gz": "c009dad9ede99fbbcb59388674f9a8d5efce160616d2b358682587ac95ac3e2e",
+      "trips.csv.gz": "5cbb622f2de7ba9798e4be8191e04b183c8a7b87a41afafc29f5d1d00b934893"
+    },
+    "2025-03-19": {
+      "ledger.csv.gz": "0d9b9151e23ab5021db5b8dd700d138c15c2cb9b3711823fa66feddb7ba105bf",
+      "soft.csv.gz": "695a1c37249e852f9fd4af3e5920f7fb62c291eb3ce886ce04ea8e83dfb7bbb0",
+      "trips.csv.gz": "c5719cce7c2a6645841d78194e39ee2039d3d23d62631481203db168f6533aa8"
+    },
+    "2025-03-20": {
+      "ledger.csv.gz": "02192398d07fc6afae97c0a4a9d4cb591cab3e0b69562e18ee6d1529b9e0653e",
+      "soft.csv.gz": "79ced4406c3a261c18b37a36ca2dd8ddd49b65ed4a3b55a38f654ce4706f5581",
+      "trips.csv.gz": "6785c7ee10d4f3ac9ff53e4e7aec46e77e79368100c3eea6b6abe24100a3ce50"
+    },
+    "2025-03-21": {
+      "ledger.csv.gz": "da636df90a0591fbab5536e8d4fb6d2c68b26e6eb299a3fa806bb5b4894ca8b6",
+      "soft.csv.gz": "7ded098b00e31a8dfaedff38bfca3997e712b2e34d241af0f57145bd05512c8c",
+      "trips.csv.gz": "d4fa74c09d3747cbbe046586fca543f00d323f9494cabbaa4540f859fd0d215c"
+    },
+    "2025-03-22": {
+      "ledger.csv.gz": "e182dcc1494711102b3855f061d7ac205ee8a1a042cddb4dc161c8e41ac72482",
+      "soft.csv.gz": "6219ce4b071c48d9fe347778f3dd0802ba8d251ed01a78d7dfc5e9fb2c7d0032",
+      "trips.csv.gz": "a219cb50178902d584f24d499f403a164a410f0e387fad1b70cbc221974ccb94"
+    },
+    "2025-03-23": {
+      "ledger.csv.gz": "7ebfb0ecd962c0428a915941fb16c0fa74da6535c661a58a4d8efb5def5f23b3",
+      "soft.csv.gz": "83f0485311b8f4e2453a9c7cfbcc04617c6b1fcb4a987d9b970b58bf9cc3d0c0",
+      "trips.csv.gz": "ac0eba2e31260928b10134927635985a9c20b06e08b263ab295a47ec9e570003"
+    },
+    "2025-03-24": {
+      "ledger.csv.gz": "1aca11ddd6c13976d76612b38f8c02d74cf5f01a7322dc1dbfc4bc9cc67e5a64",
+      "soft.csv.gz": "97bcb5feab92b865481209bdd7ae1903c32f0dc11b280e007097dfc892bf8939",
+      "trips.csv.gz": "e94684fe1f13359c588599c18425135f4a8fea41fc177e164bd985eeb321c0e6"
+    },
+    "2025-03-25": {
+      "ledger.csv.gz": "807a5c160a112671ab7273ca309f9391e1040f6f7824c7e8b8521964197a2460",
+      "soft.csv.gz": "a2a457e7498d5a2cdf94489c99a3ef98517c1ee546370a526d146646af250926",
+      "trips.csv.gz": "0a079d8f90a9ea3dce5a28a8a73554f0970314215f427cf334a1121c37cb3efd"
+    },
+    "2025-03-26": {
+      "ledger.csv.gz": "8a2337edaa89cbe0e4a0629869910a284550c1f33a0e5f72a34066e37e1a91bb",
+      "soft.csv.gz": "4e7a2c726bd281866173dc6467badc15fdbf3637e8fb5ac664a06f5492f5f17d",
+      "trips.csv.gz": "eb28c0fab71096ea53cb184bf276046efd0863d7dcff3003e2b7c4f24ec2fc4d"
+    },
+    "2025-03-27": {
+      "ledger.csv.gz": "c09015db74b8edab1b9d73d762da52716dce7c705141af722713f857daa77474",
+      "soft.csv.gz": "eecff17ba4ae8c45a0312799ed3e9f5cbd8849640867248851846d4f3fa2d401",
+      "trips.csv.gz": "c6f72e6e1fc81cd9e60a72d5bac43da69c835342b9750d4732ce844e5450126e"
+    },
+    "2025-03-28": {
+      "ledger.csv.gz": "8ec82fcb898fbe2ea5fb5805faefca111ce557cf597d2119a9459544cdea281d",
+      "soft.csv.gz": "8b998da07e5935e922a0f6320ae2540a3b67f90decec61728290f469a4c26d37",
+      "trips.csv.gz": "0f47b7f5ab647596fdeee44f492909b45807461efdb37c4b60dced8a24d0e52a"
+    },
+    "2025-03-29": {
+      "ledger.csv.gz": "4221dde6cc8a5efe604ffe85ed245a95e99caf836838b05d25e6808bf36abfdb",
+      "soft.csv.gz": "657bca9bbacb3ae60c6b2425598b4a4bb17b443fb78d860fb70067a5c6500879",
+      "trips.csv.gz": "dc65c2772949e8a7ae8d7f7b80826762d23b44bf7c996a35e277edb1c42746cd"
+    },
+    "2025-03-30": {
+      "ledger.csv.gz": "dab7ca5aa7ca113218d7c1be5860a21fe3326e04eece4131ae5b909a109f3fef",
+      "soft.csv.gz": "507129d76e69ad9340dc84de524d542de58cb1d93d0a8ea686e4f533eda9d799",
+      "trips.csv.gz": "3c37695f389bfddf74f1fd2d78ca094ec3757095e0edb097700effd878c1bd75"
+    },
+    "2025-03-31": {
+      "ledger.csv.gz": "3f7bc9a22fe0d8cedccdce9f144c4d4d1759b87d7c0878ebd4760894d867214c",
+      "soft.csv.gz": "536fffd67c95a687577853f5b2aede95ec4933a0238521ad6fa4793089480b39",
+      "trips.csv.gz": "cae05878b4c0019af42027e1463b37ed852ba6a6d2a715b3d1c71a513985e223"
+    },
+    "2025-04-01": {
+      "ledger.csv.gz": "2de2359e3591d5ad3c6ff81ad6262802a157298cbddcd81d61194af7dc63f047",
+      "soft.csv.gz": "e045f2a849a93a2a74f43608ac0c668d78ac0ab8bbdc5b0fdc20a5a69e008cc1",
+      "trips.csv.gz": "4b87cd456d288af01a6349eef1187ed2700f60f1ffc0720b297129c6c0bdc20c"
+    },
+    "2025-04-02": {
+      "ledger.csv.gz": "e3459f1775389c114d76204f80c8bf67273944636ed624ef263a94a66416f351",
+      "soft.csv.gz": "f05d83704cada2d0416e294c2a29e895ec4921d6323e1338a0e0141374f03634",
+      "trips.csv.gz": "0985c99722092f2ea1cce66f93d07612e817eea304803292fb62c4a5c81a95a2"
+    },
+    "2025-04-03": {
+      "ledger.csv.gz": "6a3b2b7b5cc779ac1952d1a7bd2437cb1a467cb805cad96ec52b39dfa98b933b",
+      "soft.csv.gz": "e21b9cc4e41bac804ae43b0183e4713e7671622139779c576c22f460fefb0cbf",
+      "trips.csv.gz": "e0fa27c258ca1f906d4844e500fa235378f25f88f6d7133eafe4ac96eea16ab1"
+    },
+    "2025-04-04": {
+      "ledger.csv.gz": "fb132c12e8271c9e62b6008dd02365afc086b580cb939342cc394238881db54c",
+      "soft.csv.gz": "328793683ed18e15ae2e02da8c1c1cf74cc2611a9144254cd71fa4b4eb62d837",
+      "trips.csv.gz": "906c0dafdb1b7e77d21de6cbe46e5ed0895bd10ed11294761124b1e068f6220a"
+    },
+    "2025-04-05": {
+      "ledger.csv.gz": "7fc5bea2252d624d1bfaaaffc7c6bdc311b65f50e3ae9a32a20c14267c206c70",
+      "soft.csv.gz": "d68e1962baf68fbae31a05c8e66cd3f418b432fca9583695106408b1162b59ea",
+      "trips.csv.gz": "79a801dd249cff3d4132a7e3e0464ad012f9a1e8c0ec9a387da2ebe3f46caff4"
+    },
+    "2025-04-06": {
+      "ledger.csv.gz": "f62e23ce3facc697ae66de1472d7ea844ba4345dbf9715f248836dc1b41583fe",
+      "soft.csv.gz": "aea4d2c9bf52b665c2e194ddfc18cd1a79af1b1db634024282423760fa0d3dd2",
+      "trips.csv.gz": "375643065e027377bcad90b909ea3a6a167b3cf22570a01e1b064392c9690490"
+    },
+    "2025-04-07": {
+      "ledger.csv.gz": "67f0971a2f1b0348e57092b8a5de5c726cf1c0071030d118148d8875c460dd5c",
+      "soft.csv.gz": "af5310365beb1d94c6875fb991b5fe279a7d07756543479d3854f05a4e8d50fb",
+      "trips.csv.gz": "0e67b53cf738f5fad2fba8876d67bffe57b9fe0fbde1998db5592016d981caaa"
+    },
+    "2025-04-08": {
+      "ledger.csv.gz": "f73d8e46c0830052ba89526c0f089f3bf7566f04367980da1e7536bf742e86fc",
+      "soft.csv.gz": "28b012b3dbc0143e2f165344f9459fecf0667698eb1a0eaf907a2efc45c63f84",
+      "trips.csv.gz": "3291f28093845f8f5891a6b9ac67376ebd9ccfc6128d732d66c06a2ab12f4a06"
+    },
+    "2025-04-09": {
+      "ledger.csv.gz": "4a55d745bfefa587933c31b48ad0e008510ea4959d08d29895c9cb1cb65a68f8",
+      "soft.csv.gz": "d628088f3cc45b0d2349ec42e646d607857683f82b6829a5bb94094cf90171bd",
+      "trips.csv.gz": "aeb619aecc30f7c7120f81df852d8636bba471cb3a38eb7351657a09db51023c"
+    },
+    "2025-04-10": {
+      "ledger.csv.gz": "d089fe03476f27f5e1aca7c0ee5460524c43748a92f8c56ec0b9525b24ebde66",
+      "soft.csv.gz": "4408a0bf3b9b3a6d42af699e2ec5c2df31a583ba27deb3cffee3787b6d31cd28",
+      "trips.csv.gz": "5de46115ec81ee884a6e145976373dc730a34321ca2c523d4c2e1b8a2099b98a"
+    },
+    "2025-04-11": {
+      "ledger.csv.gz": "842fa96e1119b4e191d0b81ef83b3d1e3784b983524cd112fbe4e90d507d9d6d",
+      "soft.csv.gz": "842ad6a63af697c6c47d0e7600ec3735d0583e1c82b4fa7f5fb82c23e2db0e04",
+      "trips.csv.gz": "681ad6b3603fe362b3d0833bbe8e5d3d9da186c6c4066dad3f5e6454098fbfaa"
+    },
+    "2025-04-12": {
+      "ledger.csv.gz": "3565e64c609c66463af8f351e2c9f664bbe45ca5410c39f80ecffd31362bb859",
+      "soft.csv.gz": "0deb955bdff919f5240fab2ebe0850711d9793a06b8ff2ab956dd7d7e73b3c89",
+      "trips.csv.gz": "cddb113c5fd03f093e4e08b3d775169b106367a81df70722d7f9a04af2978c4c"
+    },
+    "2025-04-13": {
+      "ledger.csv.gz": "6de5a3ed3c8b1b9bd76b7d6f08ba46da5905bb1dfa5ccf88528bd508dde1607c",
+      "soft.csv.gz": "bc7287325f442d518c7b6c994d36b895fa418a5071c94e8e90528d4a8b55ea9b",
+      "trips.csv.gz": "7fce1c7441310d7d4f512b880ec516185ab30085c920f2eea9019da0ab6a496b"
+    },
+    "2025-04-14": {
+      "ledger.csv.gz": "caf78e27bce3757ca4d47eab0c53cbb7704ea8e9de6d317772f808c4dd379bc9",
+      "soft.csv.gz": "6371ac4fd4544cea805ddfb065ab2087cd8e81baa45664bc487e99c0325abe7a",
+      "trips.csv.gz": "5397531da3b1edfeeb4600ffef38d490df001ee974f0b15d3e8087d97151b92f"
+    },
+    "2025-04-15": {
+      "ledger.csv.gz": "96bf6ddb4ba2b73b09c33577172339308aaf44ffca712f218b58511378d295cc",
+      "soft.csv.gz": "abc37ef7c4368d2efa784b55e0101f01b0b7cb0c29aa9e90988234cbb4afbc64",
+      "trips.csv.gz": "c6cb2f675f25d774e0de68dd345b78aa2ca64132203cad58551dd215a9538595"
+    },
+    "2025-04-16": {
+      "ledger.csv.gz": "e725da602ba76e0dc4f96dbf74f128fb179260bb2d7276587a8ee45f09ddc0fc",
+      "soft.csv.gz": "0120e8783008407294109922928701e510bfefe2c0409a6df8945321ddffc255",
+      "trips.csv.gz": "ea3934301365049cc467defe3cd0388cf7b30db8149408eb3acdc53b3205e046"
+    },
+    "2025-04-17": {
+      "ledger.csv.gz": "5316302b7114434e240c5f6dd0e50e8db13f6cae105ee5e330498a08284b14c1",
+      "soft.csv.gz": "7c4e617e3ca4587eba10e261da9fa55db504fe72c428bf1541fb2e3f1a87fdd6",
+      "trips.csv.gz": "16b633d57f7a06c7cd2a9aa992f0562bc30ba8a86ddbe674074be10d5ee92bde"
+    },
+    "2025-04-18": {
+      "ledger.csv.gz": "4f7d4bc99fbcb2834fa02618ec91dd098463919982bfbbf575772c9f6d6ef8e3",
+      "soft.csv.gz": "e236df6890da2d3b2bf79b9e31d3753adbf72a06a20e2230a85a1bd75dcfd9a4",
+      "trips.csv.gz": "00eaeb9a721302ccad5d7ea16a1000838bae9f5f42e417e105077c9004ea31ca"
+    },
+    "2025-04-19": {
+      "ledger.csv.gz": "90e420a342186bce1ba3d66c617643ee833a5cdcd2887f3eee5b96e10a68bb7a",
+      "soft.csv.gz": "b772114391a2e917bf1e10c94035f7ee70f7d89136aab41b5fbf7c931a35dcdb",
+      "trips.csv.gz": "4ac4aa6b2f41449c938058adb87075c5d311fd45ff35152779f7d580b17d91ab"
+    },
+    "2025-04-20": {
+      "ledger.csv.gz": "320ddc3deb27bce9635529110e533ce1ae3994dfc38268b9a2d30e1633fccd1a",
+      "soft.csv.gz": "2377aa90b0eb89da272e456c0658bdf646728992637f6feba35d503b408ba0e0",
+      "trips.csv.gz": "d7a85483e11e51d37b7a040501ff3e813f38635ffa72c1bf5ff8de01ac094c4e"
+    },
+    "2025-04-21": {
+      "ledger.csv.gz": "82d4c2b7dd09ab295713ed9983666dc2ea8cb91a18c8a984d126fb9816a6c162",
+      "soft.csv.gz": "5f17051f6c0dc9f435ed738754e4c9deff0d75815ab52d15e4617f2642281311",
+      "trips.csv.gz": "572dec97feb38f773eda203026bccc17b448a041a90e7e6863278639864e9b0e"
+    },
+    "2025-04-22": {
+      "ledger.csv.gz": "9daaac5d04c8d2a6cae8c8cf430075037b970f6e9dfb307c8c31e14e47a18dc5",
+      "soft.csv.gz": "d2646abc0c295ef7c318816b2530fe18e0dbdc57032785411e1ec9102ac8eee8",
+      "trips.csv.gz": "b07711902fde04ae26a00fab4cc76adf9ac7b7c8a2df37269f7dc0551d7b8f0b"
+    },
+    "2025-04-23": {
+      "ledger.csv.gz": "9acfe1c38c309607c1401c53bc4fec8f926d6b50970f4cba6cdff9dfdbad867e",
+      "soft.csv.gz": "2c18b95c04eb6c86bcf03ee4b8f1bb737d36ba09638d7ee5aa531556994594ef",
+      "trips.csv.gz": "e9621096581068b36cf0fb37c6027760fce75f0ff05b1fbc1369b997ec7d3e5b"
+    },
+    "2025-04-24": {
+      "ledger.csv.gz": "b3b727053df93a4bb32938c7bf8e98ab28507c83676d0ff553171748774160bb",
+      "soft.csv.gz": "65550f0efae7cc93ca22726ee0c470759506ceef7b67187ad1bf2942c7b891a3",
+      "trips.csv.gz": "077832b8a0c0d4d37983377794764151d40ac30ad439159de229129a143daf70"
+    },
+    "2025-04-25": {
+      "ledger.csv.gz": "e49d8980d9a4b0ecf0b32281b361863ec5e9a31f87b3801565ec69c1a4b821ed",
+      "soft.csv.gz": "1788ee9dbe690e112b9abf16b15644091c171f514b2498f07abfa1a6bba22956",
+      "trips.csv.gz": "ed383197c9603e4e54d10ab14afea5f0cecb524717baf5034b31140cc125a544"
+    },
+    "2025-04-26": {
+      "ledger.csv.gz": "ee081a6d9d4393f2653ef4faa480b08eb93cd0f9249e62d42133c70c2192cb3d",
+      "soft.csv.gz": "9916da33882dd167101b60957eef8edbadfe74e6dcac85ed14e96132c80383c8",
+      "trips.csv.gz": "31cf1dcdfe1f42441c59e46d54d1aafd90bd6e363855782325697f427d889d26"
+    },
+    "2025-04-27": {
+      "ledger.csv.gz": "2999ee856a50e62731b678532fd32e0751186e7335058f257dce38a9af158096",
+      "soft.csv.gz": "95c34ee770e0305dace95e094fcde2851b9f26bcbbb56fab411185be3433b187",
+      "trips.csv.gz": "d9666b779c5e469bac585c3ea2c34a5b9c3c82d1bbca63e7f4821b42749abd6b"
+    },
+    "2025-04-28": {
+      "ledger.csv.gz": "f10ac19b16bbaf03761032ffb98b324f9eccba41b23e111ec73bc2ed7e362a43",
+      "soft.csv.gz": "db4c446dd4018e414dea25674cc2c82b62a93c92d7135e6dcd18c34eeb0c9699",
+      "trips.csv.gz": "d8a5af2aad3a19795500111424071489402370f61b04fcd08c2a054c2176adb8"
+    },
+    "2025-04-29": {
+      "ledger.csv.gz": "1cd75cad088daffecdebf1dac4d003cc0aa7aa809e444f78894f1a8181fa1ab4",
+      "soft.csv.gz": "98d57f1f3493417e5fddd19ebffb9f1ba60ccfb349cd9d689b70fd04adc81e92",
+      "trips.csv.gz": "1518a5ee17495c409afb42a361b975de7d4a244aab5b4bc66997b8c2d67aecad"
+    },
+    "2025-04-30": {
+      "ledger.csv.gz": "6a76355b9d78804d8291658fdc0d599da93642373a561040a4397c4d5ffb2b3d",
+      "soft.csv.gz": "3cb6bbdc0d873f23798d58259683898bca5b50d1a50ac1c160ba154b02876544",
+      "trips.csv.gz": "630902e175f74c9f9c056a99bfeb4f3bdffd5bd2c2c4352e2aef8c1128670346"
+    },
+    "2025-05-01": {
+      "ledger.csv.gz": "2d27b11b1e9f3e380531d8350a1a7b6a76302411eae009907f2500ddb9aac645",
+      "soft.csv.gz": "d5b6410e756355062342d72ec943f7f50a88bf8fb03c1df13e2ecc934cee73b9",
+      "trips.csv.gz": "5684845dee1f24d6421f47fcf525f5fce8ee2c31c7a9819c5182a0f90b574c6f"
+    },
+    "2025-05-02": {
+      "ledger.csv.gz": "1ecb715e0ef27b5ff4088951fbc029e0c29b7f4697f6fd3430c73e3534fa327a",
+      "soft.csv.gz": "f45cf2493377e7db750dd20e885d5e32b0e7b15bbea385ca49ed9df24bd090fb",
+      "trips.csv.gz": "b7ad421aa517be3c646913c8aec6548d73d90e537685a1bee5716abe30832969"
+    },
+    "2025-05-03": {
+      "ledger.csv.gz": "51fc1b5de1bfbb87bef439849f7797739ed961af894a3e60af050d705679e2ad",
+      "soft.csv.gz": "40fa3470cc1233927a5a835f88bcd71fd9d43b111b40ad904a807e84de47adff",
+      "trips.csv.gz": "3246a7faf9ad0b5e651915ba43ea4e975f25a2e480ba2c6a9ea949bde96c2b13"
+    },
+    "2025-05-04": {
+      "ledger.csv.gz": "253e8304ca3a5c43ae1c2b4a186f2b80b150a1e3a885b086345aaeb687bb5039",
+      "soft.csv.gz": "b9fddc1e31c8eebcaad37701ec653809e472f2d105fffd25cd7ca3561ee0e110",
+      "trips.csv.gz": "abd508245658af0e37d32a04ecce53ce35938e355baad881b7cd787c4ac9519b"
+    },
+    "2025-05-05": {
+      "ledger.csv.gz": "17a288bd7370a8cdec6e004ae16e5023869e3c30a519c866dccb6cfc626358dd",
+      "soft.csv.gz": "eb73cfcc8345b41a9c238089ecf70cf927ae687125f1698c43bde84838332dce",
+      "trips.csv.gz": "30c5a1a543892ca8182a05470ef7919ccef9f524ed4994653ec5a890c281a2d4"
+    },
+    "2025-05-06": {
+      "ledger.csv.gz": "492894857ee5fd97801187d112f681446586170e66337fa96b13275ab0e17f0c",
+      "soft.csv.gz": "ef9abd3f318e22c6d15ade9b654c860551b2531c21cb12f0dacf357ba6110f26",
+      "trips.csv.gz": "70a3fa71b222243ca8dcdf5e295bc83d61a7490c473dbfc51719dd82d8d7aaf9"
+    },
+    "2025-05-07": {
+      "ledger.csv.gz": "385cd15f5e9cf273c43d3f36be9c448cea7600dc9a3038a148e3b448b5eb7558",
+      "soft.csv.gz": "0905dffe21d0efe4451df4c43e11e6150cad9e70e93f2343ff3745460d8f497c",
+      "trips.csv.gz": "32d86e5d89b09ad3095e751e6b636fa7b475aa38ab8304a53aca700c5819dd4b"
+    },
+    "2025-05-08": {
+      "ledger.csv.gz": "959789775a4f04446fa9da080fdddcf973075f853ecce1dfbc26e84ab5b5462a",
+      "soft.csv.gz": "505acb4f58ce97eb5ed27c470a16d266ed217749b4c90c36cc66e6cb8dee8b17",
+      "trips.csv.gz": "2d36a01a929f53c674008f4e256fdeb7205af4cf1056d72c652cfe7bea8ebd73"
+    },
+    "2025-05-09": {
+      "ledger.csv.gz": "45b25329f5bca185b737def8e163a41dc5da7892887c2ab7047da32c0e2c9e8b",
+      "soft.csv.gz": "af819e8f4fe7c5f415603450b720f8fb6e4b8d5824b7de593f6cf5c9c5804dcd",
+      "trips.csv.gz": "d70309e5a945f5932e2df121745f02c4a2470c5584543ab789e245a28dc5b06c"
+    },
+    "2025-05-10": {
+      "ledger.csv.gz": "115a7561e92c2b73eebe3c5cab14b27718eee2066f8cea50fc23016465d40f35",
+      "soft.csv.gz": "044412bc0edc6f3e5f688a301acb0921e1bf876c59e3dc9b22cb82ef0fee66f5",
+      "trips.csv.gz": "43694490ce6fad90156c869b107f3ea3a88a6659b24ceb0d02d8783918adcdd2"
+    },
+    "2025-05-11": {
+      "ledger.csv.gz": "d62dbb4a9547547350952c0c745ca163e965f1d8aea7537ca4ab5b378c614c59",
+      "soft.csv.gz": "be5777ce73976d0618307a5502644d2b871d8f1905d308d68ba31f1e30411e31",
+      "trips.csv.gz": "f69dc3467d0220c2f972465536f160ac43c91cba15e0187f4d032bb11a831a9b"
+    },
+    "2025-05-12": {
+      "ledger.csv.gz": "027b066b57b2671903873bccb4631aea6853b0eb3b9d659d4120f730143bf65a",
+      "soft.csv.gz": "194be2a3c0e880dfe7cf6c29e9aa875bdd9b58203009e6b7ba07e5439c21cb57",
+      "trips.csv.gz": "2acc73f5d5ccb1fd1fd737f2b20a87590db59daf11d07e00d3029c54e7e61c68"
+    },
+    "2025-05-13": {
+      "ledger.csv.gz": "f79cc763dbc0439bdcdd676d07bc64d50668a07c74bc1c919d45e58f8197137c",
+      "soft.csv.gz": "09b9583684604f9d8e113107c9c58b1008f3e349737460d5ab76a63c1404c037",
+      "trips.csv.gz": "69d7d4dbf31b271eca0cd987c078ff7106eecb197aeb15684bfb7f46c926e9cb"
+    },
+    "2025-05-14": {
+      "ledger.csv.gz": "ef10f84fd0e43318bdc8788b4bbd6a1b6838ce594543aefae1dd2ae30fce4f63",
+      "soft.csv.gz": "b5f5456751e3a1f8389af34446f6b57103c9a7e013dce70b533dda1685fb39e6",
+      "trips.csv.gz": "b7f9f73d6303c8ba1e43ddaff8d0e94b4a8883c8df8fe0bb418e04ac53a824d6"
+    },
+    "2025-05-15": {
+      "ledger.csv.gz": "5c087d8774f0c2273b43cae7acdc567dd1eb25794b4958c959e19a37ddebb216",
+      "soft.csv.gz": "db61ccc00bfe5c60f6950af6668deb087cfd3d6d74a0bf26457411011890d843",
+      "trips.csv.gz": "2d1e1a967c43e68c8f4d7dd1171ec403e0de4f4806ea2a857f07ce57d19cddbf"
+    },
+    "2025-05-16": {
+      "ledger.csv.gz": "de3da5426a98e11e3811447aedce1a6d4d601eba73ff9a8851aa3f8fba43335e",
+      "soft.csv.gz": "d814362de4f7e8459c7cdf5023fc182d8f2068282a4bdeef7068b242672b0349",
+      "trips.csv.gz": "81080494bdf7f057a93e67216b771dfa765b044194ca739bd801e574f8452d0f"
+    },
+    "2025-05-17": {
+      "ledger.csv.gz": "88c0ca02320d9cbe55750e6f7e2694a19aac62e5e2597ca42a50ab7d1da2a3af",
+      "soft.csv.gz": "9bb9dfd51e281c00169e19e9851dac3181cc7b30a792fa2368b8609f421b3c9b",
+      "trips.csv.gz": "ec4426438a587a4d12c240e950b9ad92b086bb1b8228105904dc0f33c9b5230c"
+    },
+    "2025-05-18": {
+      "ledger.csv.gz": "7fdf296a635756f605e97887f7652a1c86da3d0b46a9fdaff473f346fc052201",
+      "soft.csv.gz": "11fdbf4c5b31df25dc212a6e04ad0ad104af2fa88b8bde1f216a928bc9590792",
+      "trips.csv.gz": "2df1f1aaf56e615894674e9a726c970ec48bfc8c73399113180b2129b998204b"
+    },
+    "2025-05-19": {
+      "ledger.csv.gz": "6a7a355d173cc5ff918c34352c691f4760ab2ea1b3905d7a131b3a05e396d532",
+      "soft.csv.gz": "25d6f01e086f99a9251e28cf9e63e7d4b195afe2199131eaa67e47c2ce928731",
+      "trips.csv.gz": "0cc1362f48c602012b77fdc91b30300286cb0cb663ac643e7d1a1f5b81091ce4"
+    },
+    "2025-05-20": {
+      "ledger.csv.gz": "110f2c400ad9c05d54b953d7615674027f5d74e25377e8471550c74754269c8c",
+      "soft.csv.gz": "cf5451c01aad8cd3a6d5a1961ca4bf6552c1f2fff92efb178c8e12e9230d2c81",
+      "trips.csv.gz": "f695f8fce3b203baecd96ba17e5e01ee72668b8d71be55c106665f8b5dc00d6c"
+    },
+    "2025-05-21": {
+      "ledger.csv.gz": "6d57b25d320376fd2fec0bb137fecc9ee477a0de54ed736f3356500a64711398",
+      "soft.csv.gz": "5dd682e3cd4e6b4820a205093d75118e291e49fe806c3a95f1dd42a31f062038",
+      "trips.csv.gz": "f75af033c12831623c62441160224e7dfaab17813ab124d4ebf0110212b8b275"
+    },
+    "2025-05-22": {
+      "ledger.csv.gz": "01559db192fa9ff7416585ac7430aac223d37552ad228f58de6d53efa5758011",
+      "soft.csv.gz": "2a973dd7f7bcdbb833a910fb39003239995b17fd9da4fcbc35b8409440445817",
+      "trips.csv.gz": "b4d86ef4b7d3b69dfad60ee11d9307fa6d01dcb743391b2eb4ce621e60939aa8"
+    },
+    "2025-05-23": {
+      "ledger.csv.gz": "30f8622bf9f58fd42944270a6743503a29f0e88f89851c5b3964a11a0fcc636e",
+      "soft.csv.gz": "417ed0ed6f14e08c444623163850bc340d09f73645074aa03933829b789dab71",
+      "trips.csv.gz": "74ec19c021a519c114de15f2cb49561e1a0b34a5758041216ce1a8cdd93e0961"
+    },
+    "2025-05-24": {
+      "ledger.csv.gz": "43a80347dba16519e359795b371d0580dfeeffc75fe18479e16af14a26a7c8df",
+      "soft.csv.gz": "8ac136b0928ebb20620ceee9a9707f4e3b8c051d217a4af8da0b8afce8b915ab",
+      "trips.csv.gz": "d4c92d665789298fc177cfb71e609eff9580ceda3a02014a1f2bbc13b44fb95a"
+    },
+    "2025-05-25": {
+      "ledger.csv.gz": "71f39d5f2b0941028d7cf2e592dd8fb3cb11a2e423420c839b481a8c1442d888",
+      "soft.csv.gz": "8cf768670ac6df5e0b8a4216693dda54bb4eb0073ea73e8a10707dc235f0337d",
+      "trips.csv.gz": "a98035bac2f506ae5fd431d6ac274d1a307532529a4481993da00a54799d713e"
+    },
+    "2025-05-26": {
+      "ledger.csv.gz": "e7634f49062d9eb07b76192de40dc568cc15b227dd172c325dcb0d19a86415c5",
+      "soft.csv.gz": "5636312a9dd50067fd2f20b3eddf808f4881f115139e05808cfbd1d0a608d453",
+      "trips.csv.gz": "a5bcf95143ddb0508fae7ed78561d2ae494b44dd5e01620fbd19908a1540d78b"
+    },
+    "2025-05-27": {
+      "ledger.csv.gz": "b83ddb0e436f72d11650c5f9804b3e401ac362a1484755aaaa3d8497e2208fe8",
+      "soft.csv.gz": "abc431e5a85d1b9fdc336076c3e839608157afffb13261db93309ce7549de9d2",
+      "trips.csv.gz": "24cbe075390ce6dc30230e75f36877f10a71070129cd41b4a4165420f9e11d03"
+    },
+    "2025-05-28": {
+      "ledger.csv.gz": "2b71f9bba0f94c39c4a99a98e25b7193cb9d181b8c8193c842fda242fe0cf950",
+      "soft.csv.gz": "304f7747b57956283aa31cf52669620a72151ddb4efd82a02973cf165432fcdd",
+      "trips.csv.gz": "8c92ac1e13a771e07103652fe30a62d2ea602d863da7130f139f917c3fce6164"
+    },
+    "2025-05-29": {
+      "ledger.csv.gz": "6b9b68aff74df3cb0793d79a13e3f8eabe0a38f1bed580eed4bf36e6647adb6c",
+      "soft.csv.gz": "c6c5a7909b7e00ddca3e107495ecc65325ec16e96e4b651704dcff8646c44888",
+      "trips.csv.gz": "b8d35e80e2c98c5c8203d1bc17c900a27ef27569c6002b1c2ea3abe7cf3cf45a"
+    },
+    "2025-05-30": {
+      "ledger.csv.gz": "a9e4e2d84593cbe22b3753938660b455590a43c2dfff741820837ae9a17ffdc2",
+      "soft.csv.gz": "0f105690773ff1697ff3249c607970e9b0996eec7430b55cb4834f96763f7cda",
+      "trips.csv.gz": "ed8fa12b6208cfae822766a5a473d76096c8d1b2f1cdccbe4c6fc57771d1ef35"
+    },
+    "2025-05-31": {
+      "ledger.csv.gz": "546374c7bd9f3ceaa9cd896ae53774b456983c596c038a92a1a88e31f1874665",
+      "soft.csv.gz": "1f9b8305f83cee3f8504d8da4c11ba2b17af67e04bcbe9684fe3a94482255fb2",
+      "trips.csv.gz": "098a8b8d5fe540d57a7e3d4261fd344751c10659b0fff832d7d3e96660521e92"
+    },
+    "2025-06-01": {
+      "ledger.csv.gz": "36d4820c28ae25e2cc5e37dcfe6268922f00b317df9e64e41505b663aa9106c6",
+      "soft.csv.gz": "81697dcafae7d2ba2de3ecd3ff1d2d24f98162110060addfd0547aec38255e6e",
+      "trips.csv.gz": "f9b538b8f2392cbd50e1d1ed757b7cb33db09a94434f8e01060076afa9ee757f"
+    },
+    "2025-06-02": {
+      "ledger.csv.gz": "2133533fb5eb61b81678c43c565d2ca109edc2d7d28b0a5e3715a8c0893d121e",
+      "soft.csv.gz": "4ad5dac8d26a99c7b321014a6874d671399b262ea0ca720c7de84bf5f94de265",
+      "trips.csv.gz": "2d65601991254951535eaa6f682d37483d0f946c10b9b261e0d83dd04fb7e7d0"
+    },
+    "2025-06-03": {
+      "ledger.csv.gz": "3b6d4e821e5d41829df3c67546fe7b9f32787254caa10ad31e92b8080b757bd4",
+      "soft.csv.gz": "e162f02e0d934c9f56fffc5ac159a190527e7707b438c8fb6aa65f02a94f04b7",
+      "trips.csv.gz": "9c4e9201b0dea7e217f2af440a36f22350398695ed17f4c3b4b994180e78d637"
+    },
+    "2025-06-04": {
+      "ledger.csv.gz": "59760434c48072b7d20b66b8d02dbb01578882a76a45f9016e3da260b5c1bcfa",
+      "soft.csv.gz": "71ba2cd0225f3360d32a1a482c0e6b0c7da876a0bb956be3f850ac4a0f416be9",
+      "trips.csv.gz": "804d9a4cbe9ff2b71a28ffb4d07a4735e1232fbdc7fc78c63606f6a040f79cb1"
+    },
+    "2025-06-05": {
+      "ledger.csv.gz": "badeb87d5806d05fe2695de71c8838f492cc1d2365e510d51fa6470f99f8776f",
+      "soft.csv.gz": "84bf49fdc4c55e15436477e433948c4520835d7170a1c240fb286b4a61ebd3ee",
+      "trips.csv.gz": "4687c6948362010414aaedf84095555187cd311bbc8dbfca6b1ef367912d033e"
+    },
+    "2025-06-06": {
+      "ledger.csv.gz": "56fa14a6ff614ca4c0b5fda0b8c764b85b5aa43fe274ea416475c25fbcda8a66",
+      "soft.csv.gz": "0a4b137219096a97810d6d6b5d7c9c570cf19bcba085d3aed99db17164e7944a",
+      "trips.csv.gz": "3bbf9c8f6607fc19a761a06b06d1c7107683fea84fba7fb0c91c1d2b196b84f9"
+    },
+    "2025-06-07": {
+      "ledger.csv.gz": "cb51aa453d2b116ea7beb70ca49202b37d624fbbc2419dd8dc6aa138aecde52b",
+      "soft.csv.gz": "3a3f3d89d42bcaf6f9ec43891e4a4d00efcfd83e8d3ea4ce53da2d33707c4398",
+      "trips.csv.gz": "58f11c06ec5334cbf270ce79c58d5dbc579216ee57b1415b6f5cc2f151424eb7"
+    },
+    "2025-06-08": {
+      "ledger.csv.gz": "0481984b1c83121f7504fbb3433615a2d07909573fd23781136cc921db559775",
+      "soft.csv.gz": "00f6fa8f182fa3845cad0deb3d8ba08f0e0e4700de2a1d87315ddd10ef970cb1",
+      "trips.csv.gz": "1eab74851779ce1e7e27aacf664c5a8a3491e70365470453a9e16b6c71836eb0"
+    },
+    "2025-06-09": {
+      "ledger.csv.gz": "bf5ff2cc1c1074d580edb7da351b35c2b1b6b09edbeec6486f50e45229885fd1",
+      "soft.csv.gz": "e4e59926bb98e50c370aafc73bc57d70c9c1cce94eed3bfec310a4638b57c208",
+      "trips.csv.gz": "4d54559e8a760ec1dcee5de21c008a1494e604134e45bd4c17b6c88309550264"
+    },
+    "2025-06-10": {
+      "ledger.csv.gz": "d7e8ad1d1f0d85ad0c0977d02321e2591017b5759bb395ba353823d5e67d3c37",
+      "soft.csv.gz": "e2985cd555b6a4889bf4f4a3c013af67e1e135068757bf23547f017cb0ec6d5c",
+      "trips.csv.gz": "86aef16f0b420aec6fbb1300d642e292b08078012123da4bc0240fc168c2c34f"
+    },
+    "2025-06-11": {
+      "ledger.csv.gz": "e59e178eedc65bf8edb9a8b296eed6907894f88e5c877b147574a8a78f83aa31",
+      "soft.csv.gz": "4c8c062481bf23bcc395812d4baa49576c76eb94e9cabf063a5bea37ccb051cb",
+      "trips.csv.gz": "44898d2a4eccb267ca4c48072c15aefb84f3630e6ee0373d234c2ddbf2b5752a"
+    },
+    "2025-06-12": {
+      "ledger.csv.gz": "51ef18a2b062b760bdfe22165192860f78aa069c306bb8ad7b40432f9fd2a620",
+      "soft.csv.gz": "b87a632d8455935565c904739d6d7a37b9dbb8f4cdf9daeb0ebdee07f0505e06",
+      "trips.csv.gz": "a2aab113bc6e63add3f042a6ed517d392424d0832b1571941ad4e672f7080bc6"
+    },
+    "2025-06-13": {
+      "ledger.csv.gz": "76e8433b8d5f240d26e02d90dbe2d47ed302d1ab0c211c6876f75137b71a64dc",
+      "soft.csv.gz": "401091a2c03a8f2472a43fa1f4dc18d4a525ed2a46a456c97c2df27dcfe9a5b7",
+      "trips.csv.gz": "65a0a33a8c3d333e942194e9b8c8efb5cc4e1dcee2e73ecb9ff1526374fd2622"
+    },
+    "2025-06-14": {
+      "ledger.csv.gz": "466cced74236edfbee0f9ae704f78fe0fb34a2c2e14bbd1c6abf01aefbe81682",
+      "soft.csv.gz": "57ab11bb8da75b3b6419fbc93b9e8f1646b76912cbbe8d4d186772cbc54d6440",
+      "trips.csv.gz": "4a6ac756885313f9141a3e35efb643db937ad21a6ecdf1ecd1bcc644be9f0aba"
+    },
+    "2025-06-15": {
+      "ledger.csv.gz": "a0011d233c6a3ebed268bb2d89138e1dd4fd9d86856c94ef9ca6e2331bcd2f23",
+      "soft.csv.gz": "8357d2f59dd7ecd311a0fc1f2ab8ff29efa5d7a797e8c35c0ae90c58451929cd",
+      "trips.csv.gz": "b0bc163c805fae16596e2386b09885b8df42619d69c7c289f73f603df23ccb5f"
+    },
+    "2025-06-16": {
+      "ledger.csv.gz": "6f089fa72419d96136a4a5779cf4db16b53f3e1106bfc7bd71d37339d7390f7e",
+      "soft.csv.gz": "dbdc57c0b8f7a47793a6cae047af5b117e41ca433bab5d439f6450d49bf04a4d",
+      "trips.csv.gz": "97c4635ea98c0f865209edf6941b6ec5b4b5d8420b367e6e7982d8d5352451bd"
+    },
+    "2025-06-17": {
+      "ledger.csv.gz": "66b048a97d1c5ce2d0e44522e00528ab5d05728c1e7cecdbf228b9a7b00596b2",
+      "soft.csv.gz": "d927cf7bb8f40e41b3716f9aaff9d56b5a8e772eabd67375c1e387478aa12c20",
+      "trips.csv.gz": "23d80ac8be950d11475e686538bec4803380a9d539fbce8268c1c95c831627ed"
+    },
+    "2025-06-18": {
+      "ledger.csv.gz": "a5482376f2a5c0ce891d5531bbf7e080d5c5baa409ddc69d0cc0873ce591beb5",
+      "soft.csv.gz": "18284f7b774d1b0d20141bb02809c995e2cfdbbe0e4009aa9d8e0b61a3604f96",
+      "trips.csv.gz": "a8adbea90ff3131d64a0ce6114764ff68f6d1d01d07ac6b71837bf11dffe80e2"
+    },
+    "2025-06-19": {
+      "ledger.csv.gz": "f46b91275201bfadc713b8282579341ba7828c49f4744e2c29dd3126e6c0a5ae",
+      "soft.csv.gz": "e6c0a363132dc0e6f4226b88293e397706db2038f2d83243c7e2248650bd642f",
+      "trips.csv.gz": "d29fad93c257d2324d7cf427c2d2d0f135da8c9816d4951d7bd45caeddec75e0"
+    },
+    "2025-06-20": {
+      "ledger.csv.gz": "9426e5482d7989faecb6750534885d8907e14bba17668da1e7028d22a646694f",
+      "soft.csv.gz": "619de654b190f05e00306da172c431fcc708113b07efd1ca31b457f9b7689770",
+      "trips.csv.gz": "e2220a5fc6db43c41a98afa7594a918593658d1d6e9f8ff6eb0b082185d11732"
+    },
+    "2025-06-21": {
+      "ledger.csv.gz": "b1fb371a3781fb4960c927406818e751b959d37d18a234a8493b2d4f1bf986df",
+      "soft.csv.gz": "ba027d7b33824aeedbb4035f5e5d52359d0f239180d333e60b121d9583214994",
+      "trips.csv.gz": "478addbbf26ae91f02ad843251abf0486616252fb3f1f1d22be0f1976fd8433e"
+    },
+    "2025-06-22": {
+      "ledger.csv.gz": "c9e8f6318a35f7472b3298c5021259525cdb50e50eeb161853df309532924169",
+      "soft.csv.gz": "6add6895d5c42da4900794c7e45adb191ea95c9a440e68e3664413697b659c2e",
+      "trips.csv.gz": "70662930655fbf65da209b0fe730e8f9581e99182b34e12ff03a5037ac6c9015"
+    },
+    "2025-06-23": {
+      "ledger.csv.gz": "28e8724c2b6855f0e581bcf404d67d0a7719f11b3baf3038d8a2b7679cbe06d7",
+      "soft.csv.gz": "2d88e43a86cbcba6c52ef8ff3fe933e6b6c7e138cf1b25d827268fcd52e6f353",
+      "trips.csv.gz": "c59db78e2f05bff0424d46b28d6325242873a98a77d2b4e947d9686878824c11"
+    },
+    "2025-06-24": {
+      "ledger.csv.gz": "2aeaa915e5d528c24208124dd42851b6687c8915d30c9dc8850cbc2dbc4aaea2",
+      "soft.csv.gz": "926418405ff2705083a74d82b818e8c64d7cf3435e0f77e3e844d57355f04722",
+      "trips.csv.gz": "8591b0ac0be58083d5a4d692a8e6c79d188676eb9ec64a6f8e83612f56f3d502"
+    },
+    "2025-06-25": {
+      "ledger.csv.gz": "b23338fa8e3249d0ceb2283f61c274d400903cf364497f85b9941fd8b0de979b",
+      "soft.csv.gz": "ad2a53d408e7dab692f9f511df4da67e24670d7e631d6a2969e1358dc22cf99a",
+      "trips.csv.gz": "672b861b19701f8ed0fad87363b776bc57d2575e451dada2cb670dd6d90848fc"
+    },
+    "2025-06-26": {
+      "ledger.csv.gz": "8cd1b2fa36db2124f32ddc72b2ce49f70b9a7c2adb42e451adef76777ab0925e",
+      "soft.csv.gz": "b43693d174ee9f9238799848d3f7082e5d37556030327af6a2052d330cdfc99f",
+      "trips.csv.gz": "aafd31d8afb5213f0b777fa7653fcd6cf6d6bb90d9af690570aed0310398b8d3"
+    },
+    "2025-06-27": {
+      "ledger.csv.gz": "6d8e91dc1bbeddf3d60c8a4abe8fea4a7acf70c131d854ca8e0cf0aae24ef675",
+      "soft.csv.gz": "5e2c89e0ce33a578dec70467f0ac14daacb0c967939e7e070ee8e934a145dbac",
+      "trips.csv.gz": "8bd4f4ff8c4b43fbf02cd67bbd4ff05e8fa2c7e63d255a390b51eea1b3c9c142"
+    },
+    "2025-06-28": {
+      "ledger.csv.gz": "7caf164a666ac5e794cd4f38ed4626bc3d869b4b4490337f55b667f4b804951c",
+      "soft.csv.gz": "43fd1b45045d101e18e406700d2a9c82475d8eaf1322b5590fef69c074d9f7b9",
+      "trips.csv.gz": "4d71bf3c768363ed5e1fa231969111913c7eef04d78dcd84608904a8e7931ee3"
+    },
+    "2025-06-29": {
+      "ledger.csv.gz": "2cb9f305682a5f2de4ea64b29433a35df8a47bd97d8e55634cb4ad280d8c8ebc",
+      "soft.csv.gz": "a15c7879f88bada738d134b7fa81822f0f7ccd2c448508af1f3c6e239a045a2b",
+      "trips.csv.gz": "45fb7a88236624a3ab9431e01b2fdf8c38fd06eddfd7daa426d8ce501cf3a0b0"
+    },
+    "2025-06-30": {
+      "ledger.csv.gz": "48a0fe99e80f5976d3ba408bc40610eff55a4688903e57ae21585eadc6c82972",
+      "soft.csv.gz": "821bc445c8cf537b4b625d59565cfb0d8febe99f7ce65a5113ca6a880f9177aa",
+      "trips.csv.gz": "1bfaa8d452b7444daff83bdf60903247ed464392b7e76613855457adc3345c26"
+    },
+    "2025-07-01": {
+      "ledger.csv.gz": "eda6df7c26c2545eebe58aaa8b520bafca3e2dc24be097afa9766ac2eeb95710",
+      "soft.csv.gz": "b91a34f442c8d3c1d38367ff46f4c246bd2bd30c368cb6023e1d163e7b557694",
+      "trips.csv.gz": "cc91aeac2c8badc5955fd95f779521aed415a07d01abfb3ff3871db3eda44886"
+    },
+    "2025-07-02": {
+      "ledger.csv.gz": "08e22a40d008513195d7bfbc835b7f799dac5fb5fef43831ff4acf985bc7303e",
+      "soft.csv.gz": "d197d5ba96681ccf235d4d41aaba6547e02ab97bdd9ae2c559b575f6a7828923",
+      "trips.csv.gz": "d621fe292546b3622fe572710f676a88103ebc62eb30ecd7c345a1e3e175f53f"
+    },
+    "2025-07-03": {
+      "ledger.csv.gz": "5f6987fc7a83b1eabf88c8f5e6d286bc5a6e56b677a1a42bf3243f4c9d303c23",
+      "soft.csv.gz": "bf24ab6da2f70dab92a1d6945365cedba580f50c0c52996521bb5f3c7f6bdfae",
+      "trips.csv.gz": "bb409c1f104131f6ad762759634c9ba51c99f51a859b5e186020458cbe9cbc0e"
+    },
+    "2025-07-04": {
+      "ledger.csv.gz": "375efff9c05d09b87668ce19f46bd5b440be8185ea26a808cc5c3e1dba7a90bb",
+      "soft.csv.gz": "98bb8ae5707430054ba8f87c4ffef5258d70d6f71c59e87ffbaede76890c3d2d",
+      "trips.csv.gz": "68776a19972d119ae7a853c2d68d2ac4ef5331833e7079263290c1008a2b2631"
+    },
+    "2025-07-05": {
+      "ledger.csv.gz": "b852ff6edb101a7d3629e498e14c8cd912c334275577a7cb2380211286edfd95",
+      "soft.csv.gz": "3d59d8e211d1e2c42c33a90124e5cc7671e58ccc4eb0df526f3de61fcd6e05ff",
+      "trips.csv.gz": "ca7f16505d9c397dfefbdfdbd377beaaf6a774e8f26c8d5c95bc1c337ffe0412"
+    },
+    "2025-07-06": {
+      "ledger.csv.gz": "6d517ae4d9baa85425d00e552ef526e624e4265bf45f8762d5b8fde3181a8dab",
+      "soft.csv.gz": "62ab50222c84cd3c306d34e401b34dba15779c1dc2dc9b97f34030567c87a033",
+      "trips.csv.gz": "0e741025946704d05d0f2d71bd3e6ef2ab447e771fe58b4941ddc7cb14cd7c78"
+    },
+    "2025-07-07": {
+      "ledger.csv.gz": "de38a872256108fe6eb25a9de2f9392641962c039cfb18a369d1ff3433c2dfd7",
+      "soft.csv.gz": "a7654bdbb08f3495afd5040521f18761500c81149bf85e1172fcf69f0a82df82",
+      "trips.csv.gz": "dff77f97d2a890a4d5e09d095d2ad4760aa43e6675cb66f9f63d3630a2f4400f"
+    },
+    "2025-07-08": {
+      "ledger.csv.gz": "7a4dd9d291e86a627378d1c20df6fdfb08a97f656c2eb9516ede6ab8fafcbc57",
+      "soft.csv.gz": "bd102830a132d544481728c9b023cf3897ceb17001160b7d9fd5fdf56c25a29d",
+      "trips.csv.gz": "8da53d4a0dc055a71eddac7a014bd0c69e633bc347be803ffd3593876587f0ef"
+    },
+    "2025-07-09": {
+      "ledger.csv.gz": "98bb32fddc19d33c7881a3c73e5e05a82a8ab2bcda5f0afa24d9d5b9cf2c5b56",
+      "soft.csv.gz": "3e15e23af045c416d0cf38bbe30273ee51f641b1a15442a4ff1e5a00fe3f2759",
+      "trips.csv.gz": "a05fdfbffab5591c61204f088e6db1f14a7075637fdd81fa0fcf919bb9d81293"
+    },
+    "2025-07-10": {
+      "ledger.csv.gz": "46f0c46e163ba4d12b12d341a4bfaf9c9f8684da8e7066265d7fb35110bdd85a",
+      "soft.csv.gz": "c960a963d8fc77d8b63e3a3b1a4d2c619ea08f939ddc2ef7f13922f2f8d6f513",
+      "trips.csv.gz": "63cffe7e6b7d17196838da6c5d9d5b4e1738a73d743c561ae682e4ab1072e13e"
+    },
+    "2025-07-11": {
+      "ledger.csv.gz": "a649d2a32d40992e82165b0a47e0398d35c69b8ef8dfaa00392fb8a3531bded7",
+      "soft.csv.gz": "08addf1d386e0f4a641530f1ea2a649864165ce51cc508fff7b31645640d50cb",
+      "trips.csv.gz": "9510cbefbadf1144a668f0c1422b0d419cf440657f165cdf2594d36666f48695"
+    },
+    "2025-07-12": {
+      "ledger.csv.gz": "5803a788173dc91d8ec5f6b37ef073e07d01d66f008c8f76b5bf4e0d9c850ac4",
+      "soft.csv.gz": "52d73bcb36be4d06393d8c21256c9ae3eb1f3bfbe0a5be39e944e30a963dad26",
+      "trips.csv.gz": "305afa65ea041873c7d57ca3b87611aaeb7470ec028634d1a6cbe6ffd964f246"
+    },
+    "2025-07-13": {
+      "ledger.csv.gz": "fe8bb705fc40aa2579c99ca851dafc67758d3c95e3ae503b85d13e03fa72bf74",
+      "soft.csv.gz": "465c981eea16185aadc78f0f692f97b715d50966bf99fc7820c6a5eccd9e8f87",
+      "trips.csv.gz": "2a55b2bbed726bd762e79ffe08ef8f137e1f6f089d7fe18f557e69b315a06fe5"
+    },
+    "2025-07-14": {
+      "ledger.csv.gz": "0388cb99a749b856b0590dc1c444b5c73d636211f6594647a2ed408bab5c25be",
+      "soft.csv.gz": "5255f10d329aca67595d6b0b3d93514b1b1be2a1771d74e703ccd6818eaee567",
+      "trips.csv.gz": "6a7611b37d8b3697913fd01c3132cc7a12311092e65df0bfccaef5521459d5f8"
+    },
+    "2025-07-15": {
+      "ledger.csv.gz": "795f98c16e09addeec6e2b660d01034091b31281fc7cf41b6ecf92b546d0f8cd",
+      "soft.csv.gz": "faf9978d8bf28c9a03c2a401517ca5ae140a86f86d897cf587e858b60893c6f3",
+      "trips.csv.gz": "3d5dca33a0c1e39c0f959e307ea5a195f55ced24a35ad11ed7a5bceb14262e6f"
+    },
+    "2025-07-16": {
+      "ledger.csv.gz": "5e134ff65565b3ca7039d2379c0ad6ec8af1b83d2373ded3d76cac4ee130b71f",
+      "soft.csv.gz": "9a106d08feb0fb5e5b4b3ed6609dc9de50f390edc0eeb529a16fb7724eea013e",
+      "trips.csv.gz": "b8a47e0d8a7ce4d24fab7380f1103f03b4b020dad256eabdb6959702ccb65167"
+    },
+    "2025-07-17": {
+      "ledger.csv.gz": "e9d90558518da71c5718e05c0f51a11da986fd9a56914ab777b73cad0975eae6",
+      "soft.csv.gz": "e681d801a69e437b8ff7698be45469b886b64a48d9c881055aeced845bc53aa9",
+      "trips.csv.gz": "f1f3acdbd9151244bc2da039e9fe793b4b87b031eec18719df92932acdb9d3d4"
+    },
+    "2025-07-18": {
+      "ledger.csv.gz": "8f37a9f4267aa1e236357b0fc9e714bfc487e5441a203d2aba4dea15c49ccec4",
+      "soft.csv.gz": "557732b3c389ea67d23e036c2fdf0771e0dbbf90ffea653e953481f9e81e9ec9",
+      "trips.csv.gz": "cda041d32149f1d5eda32772a38b173282453fcb15b04826190d726ffe986aca"
+    },
+    "2025-07-19": {
+      "ledger.csv.gz": "c1e8406e09290677d9f80f873f1c528b01171e501636459e599b2fd112693d3e",
+      "soft.csv.gz": "d7a6085d0a9df3206c05742986b1bd93a6dcfe023be54d1b1d89a288939b4d0d",
+      "trips.csv.gz": "98cab50161314ef079c7cb83cbf5bd5a8816cff1d1625eddee75ddea7f20c4a7"
+    },
+    "2025-07-20": {
+      "ledger.csv.gz": "361f86e0d5fac6514bcc148cb9d87ef6019bbffc026f201dcb6f77edf1b6a709",
+      "soft.csv.gz": "b15c67bfefc118954e8193977cebab4b8cd02e7a9d7f339a2d9886ea473e2dbc",
+      "trips.csv.gz": "0954fba5b2e730ec40c76c7e69647bcafa988c7b95cc1203b7d8af9dfa8111f1"
+    },
+    "2025-07-21": {
+      "ledger.csv.gz": "43e92d733610581ab3d7a36adf9025a5fa5f509892e85639be4fadee8c0159e4",
+      "soft.csv.gz": "09700775810276c269d00e7f15a65dff722186d61956910e029b6f43c2af5955",
+      "trips.csv.gz": "d4cfc0ce1ce37c6699f74a0157da5747c47332b104a43e45cc8a74eef36a13bf"
+    },
+    "2025-07-22": {
+      "ledger.csv.gz": "cf1a98148ad0b193bc681b5ae8aae999c98a6cb423d0b7c4b6686e4a50a9bfce",
+      "soft.csv.gz": "5a9796a84cadb180e9df6a0627bcea124ba5d1b7482d89d00793d683b6db26fa",
+      "trips.csv.gz": "51952c9c8540ee06af5e51209b739c3c3de25518bc6b19fd21e43311f02b8ff4"
+    },
+    "2025-07-23": {
+      "ledger.csv.gz": "5700bae23ee73dc6597ec3402abb0460e884065232fca820f1d03466045d9fbc",
+      "soft.csv.gz": "ec9edf7a05ede501464027fe575b6fd04fe91051d278779eadc24bfe9c6a24a4",
+      "trips.csv.gz": "f7998e10054605b7d7e507effa19820bb917b11c72833a6a31836c485d07d61d"
+    },
+    "2025-07-24": {
+      "ledger.csv.gz": "5e5930d4622ae6eaaf2a7bd56ca7a7ea0c53c264283b849a4cf83a0620e70972",
+      "soft.csv.gz": "2368cb27c4c49a46e3188a53a71c03b935ace5fd0acc28fb53a696582886abf7",
+      "trips.csv.gz": "e7d3b8eeddd2810967e6088c9f078f729e5ddbc961769ff9b76028e1e020d918"
+    },
+    "2025-07-25": {
+      "ledger.csv.gz": "a80aa5f9a05f6987ad1ba45b78190aa2f11e1fce05e68b5b5ddc34da1b5516cc",
+      "soft.csv.gz": "48960036da3bce92a41f1864bb4f8a96d0201bf6547a9aca633ba6ef7f90a0af",
+      "trips.csv.gz": "359b6c2a45878e4bbb71ca1b089b896c3a58977d7158d97ac9580347481d1d0a"
+    },
+    "2025-07-26": {
+      "ledger.csv.gz": "34da3c02134d96d3e4e528484377f7657f051de92d3b4372ad03bbe30cc1d6a1",
+      "soft.csv.gz": "ba9254adc008265776ea7f13ad4ea52cdb49418a0b4a72e5d0201bc666bd0c7b",
+      "trips.csv.gz": "3672c2252dd939fe05d2f8ec11c2ebf78d116dc40e71256967c7ddc9b5cd7595"
+    },
+    "2025-07-27": {
+      "ledger.csv.gz": "e1b3967aebba0fd4272ace88a4112a5a3a7eb513b6da2f31c4685e280432e080",
+      "soft.csv.gz": "f8b611c28d344ddb8bc2d108ad1369ec270dc0af1268abfc235ab61d122e9d62",
+      "trips.csv.gz": "3a8ffb2493558062a81428c7d4fcc5358bb8bd75a801797ac5a52ef4aaf5ec96"
+    },
+    "2025-07-28": {
+      "ledger.csv.gz": "726e6389463ac0907a6433b567192d2a46c60f36be33bbc8c166507025ba0d4a",
+      "soft.csv.gz": "62d66700eb8d7d0e8fd61b3d43b3f5f5c215085ffa85eb254ae415ce9dddeaf9",
+      "trips.csv.gz": "a9921bbb50860112db55b559cc807510ded75ce7b05a4d160e22d535906a642d"
+    },
+    "2025-07-29": {
+      "ledger.csv.gz": "7f4d857d6bb41103ad68b47395338d43dd145d85f55ad7d1e6922b9bf2329534",
+      "soft.csv.gz": "a091c16156e0ae1fb64b5d88df2bd92e937bda340c760fdf4988676837b15356",
+      "trips.csv.gz": "d65b750a5974dbe3c8ca9f24e313473e86a0b10cb132380475c8c30b874f6e9e"
+    },
+    "2025-07-30": {
+      "ledger.csv.gz": "a01dfff24e81fb58ca2f54721eccdc7cd823e0393ac43b30d8a1f139d3d69e49",
+      "soft.csv.gz": "b722747cb8d34e0edbfe2fd5c806463563c7e77316907ab1b2d8e0edff8a55d5",
+      "trips.csv.gz": "6cc7629eafde48802c943a5d3a81b2ad6ac1f2b8bbae636e99c9ad13ee06d330"
+    },
+    "2025-07-31": {
+      "ledger.csv.gz": "7b9de508fca4110c688ba612b7204fb8f418c8abb3d957870f5b917078100a13",
+      "soft.csv.gz": "2ebe6aa2731600f868607655d2eb2fc855f696892b149cf625174f4ab0d54bb8",
+      "trips.csv.gz": "c82478a4d775e74fa595308a5b1afb4c306ef62e41f418f42343a80bc2e2037a"
+    },
+    "2025-08-01": {
+      "ledger.csv.gz": "773c82c89e6ff526d07e050d0881b88d6fd612ccb3d87123b456433f9004d6a0",
+      "soft.csv.gz": "9451da9106863a8f4eaedffd26e2fccca38382218d6c93a85c0af4bdc0f0614f",
+      "trips.csv.gz": "e4b5db4640b896e7cf5cdc78210c5f0f74a8d08b8847fe88d1a23e8bbd7475e1"
+    },
+    "2025-08-02": {
+      "ledger.csv.gz": "5c83acaffd6032ae2ed0312afb6480ac22f4e78fc346c13e0fd57fff8eacb72c",
+      "soft.csv.gz": "424ac73e6200cb84b75f9c36f9a1c9e84166c0bb206a4434170cf4e06cdb3561",
+      "trips.csv.gz": "e08652dcc60cd6a0a508885209d966aa86fd94f8e918793c84eb7dbb4d2bd6ea"
+    },
+    "2025-08-03": {
+      "ledger.csv.gz": "41af22c0aeb0c925ae8b50914c36694ce91f23d657782347f496de28e4e59535",
+      "soft.csv.gz": "0342867636337d2f0b9eee1cbcfcb72b7ed00fbb6ec44bfeaca5e437c02f2de1",
+      "trips.csv.gz": "b146836e9962faa6514b16ee8f3d94f983dada008455319bd566628f33390190"
+    },
+    "2025-08-04": {
+      "ledger.csv.gz": "7bb7ef13ff4ad50c12a7609833d32788cc42baf58b8f0057ef2edc6c28776569",
+      "soft.csv.gz": "8a03afddc41fd4a36171ab3a9362c57c22ff2eb47e97c709f395bf429fd4fbfa",
+      "trips.csv.gz": "bcceac7a0243a98da372853f06b4b0274431fb3ab853cb7baa0981ffc21982cf"
+    },
+    "2025-08-05": {
+      "ledger.csv.gz": "0064e4fa1b9b0ee6be7b1ec4357f77e8ee4c3cefa0b2ee35ecab7fa75d8c8bc2",
+      "soft.csv.gz": "fcacb0fd82261004ad807ffb463449ffbd4afbcc76918ef7f5e916bc1fd04219",
+      "trips.csv.gz": "ea033a7ffdd1adeeea9260129bf327399152ea6b71ebec7cbbabac36221b8176"
+    },
+    "2025-08-06": {
+      "ledger.csv.gz": "d26cc2b91553a7f4f4e5c2885d498ea3aec9d20754969581bfe14e85bb9b5af2",
+      "soft.csv.gz": "80bb072ec727118ccce214ae8d322dfc2edb5cae82371faad3dfcf57c2b929a2",
+      "trips.csv.gz": "bed970e85a4975d54a2e8885380f8570819dc530b528884758ea8eaf4ff8e7ac"
+    },
+    "2025-08-07": {
+      "ledger.csv.gz": "e8fe7fb60749175611ff1dfababf06caf8b658ccfa66ecbf3770367a65cc43b9",
+      "soft.csv.gz": "f61909714ebf5392d1f3910aa6cf1160ae1ccd12579ec8a1cc488022f1a16dcd",
+      "trips.csv.gz": "8c60dd248dc007329ab36c54f21d30f6934a24b446865a5efcef20f9f433d08b"
+    },
+    "2025-08-08": {
+      "ledger.csv.gz": "b6712defc0a72409bcf663c501f5cc01db07c893eddecb6251ae14ae406b8dd7",
+      "soft.csv.gz": "9dbb7a5c593fb474ed6d934c1ba38533af5349d386ab393e4f2621eb341c1abe",
+      "trips.csv.gz": "76507720012678fd8a5491c4a394f63e5064d584ab2f479cbcc78140a5e26807"
+    },
+    "2025-08-09": {
+      "ledger.csv.gz": "04632df1419b9e01c87ad310c4b3c803a4f15471250ae46ce4c9ed1d0eec505e",
+      "soft.csv.gz": "259c2719ca38d7d27c3a10392aac8fe58bf19213863d9594453795ad2e8a13af",
+      "trips.csv.gz": "a600ba92e2767e9e04d45ee4982664f113be0ddc85d181672a45fb95e5f60aab"
+    },
+    "2025-08-10": {
+      "ledger.csv.gz": "075f73fea697b098a73f7c5085d948ee909fe9c73872a528db655049c3456cdc",
+      "soft.csv.gz": "4be42aa7832673f32a8e306a5f10af34a15e20324bca62f947e70f18367221c8",
+      "trips.csv.gz": "50fd4182bc6ae62ed5dfd3e58c3d8257dc6ae70000e470611899697202f7cf72"
+    },
+    "2025-08-11": {
+      "ledger.csv.gz": "128eca60c620a1ad7a861f27b74f57b5622a016d6776289cbc79a239221c30bb",
+      "soft.csv.gz": "e8e4b4afa0134fd29dff3f23425f1fc1b7d53ff23205f08cc5f596bc59393f10",
+      "trips.csv.gz": "89e192edacfae53532c8216fe47031bf890bc1e1bfadf3ce984c8ef0926913ed"
+    },
+    "2025-08-12": {
+      "ledger.csv.gz": "eca4e9caaad21b35b30f5cf5fff72460bee6760572a02685878c029ad8d8aec2",
+      "soft.csv.gz": "be9e7f3e560bcc70e1c685eb39f2c37852dfe18462045048cad80b3509884d7b",
+      "trips.csv.gz": "653f5e36532f6b4d371662a214ef0828971c28e8d29b13a13e4145ef8a593b1b"
+    },
+    "2025-08-13": {
+      "ledger.csv.gz": "cfe8efafd8a511e1f6fdefc6798a774e0d38892099495af2406af526b3750619",
+      "soft.csv.gz": "aa244711ae763eb5b1f29c465774c6d49bb571c7a423d0caa0dc2ceb9ea9d207",
+      "trips.csv.gz": "333008b4190161b4a8fad99cb323bc201c74df8d26b5b0c9433f409df4556110"
+    },
+    "2025-08-14": {
+      "ledger.csv.gz": "3528b9c0f2633651d125e27d5cd4a5041aceb2240010e4b9dd50c1f0858d3a4f",
+      "soft.csv.gz": "66cf3849002f0d8a9234525a45e77fd0e6f1aade6e65db860e5e94bdc0b960d9",
+      "trips.csv.gz": "c546d293ad2453434d2c1636d46582a54a04675531570f384244babe4ed80b91"
+    },
+    "2025-08-15": {
+      "ledger.csv.gz": "02b32ed50ce634a7bedf9b4955917a4a271cc775db8c5825b450c4e5f63cfbec",
+      "soft.csv.gz": "8a8a22b61fd5d1a6082fca53ec46283ea7acba3056d916467274e61854699d03",
+      "trips.csv.gz": "cc4ae926da0b974d5dfa5a0e946b04b6149d8c87a10da8309c49d3573b65d0dd"
+    },
+    "2025-08-16": {
+      "ledger.csv.gz": "927a39b6d3123aeaa664da27a0228fd885961a643003b8c72142b3fa4c9662c7",
+      "soft.csv.gz": "b72f44f2d8a01a5678fae652c288fc53dd3fa7dc593e70a4fc08141f2b188dc8",
+      "trips.csv.gz": "767fae907796996c030b1b67e31a7b4a7ddca8881cd896f21006eb75e1925a3a"
+    },
+    "2025-08-17": {
+      "ledger.csv.gz": "e25097bc018f70189a39b3b87b78d1b0a875dedf1891bbff425b5b681e1f54ab",
+      "soft.csv.gz": "9a562ae5f41998408f78440edeba8c0fcf6c4e8167072c00d17ef807dc559160",
+      "trips.csv.gz": "b94fd3a1088dfc500ac9b3c0347fe3504f3c3a46a531a9caebd8670ff3e9f32f"
+    },
+    "2025-08-18": {
+      "ledger.csv.gz": "d924487f76c5ec8176c5e833bdf64295f9dafebab73c8b704ab7fb565b68cbb6",
+      "soft.csv.gz": "c76aee2c92d8799e222785e57e948641800139dd482741b926511bbfae6355a2",
+      "trips.csv.gz": "84e5a532fbda57986e6633e856032e21d4b6eb7f4a94cc3ccbdb9e844f9b4ef6"
+    },
+    "2025-08-19": {
+      "ledger.csv.gz": "804d172a22e923e98a8ffd949878821784890a3cb068f066a8cf41abed2e5e9c",
+      "soft.csv.gz": "79299e4d4b8531aee66f7330828d4c740ce86a753177915991b8cfdbd2cb15ea",
+      "trips.csv.gz": "9e214345956335220c0b7cd21fe86cbc72290875c9d43856dad575c0acdf7f10"
+    },
+    "2025-08-20": {
+      "ledger.csv.gz": "f220d690cad8edc5a5b28fd0b8674535bc5cce6c603ac1f3a377b9dc2cb5f3fd",
+      "soft.csv.gz": "0c216387144f374fae4c5e06aacb9380f0bd763120636efc528de41a66146a52",
+      "trips.csv.gz": "6cabde3bc7fd9a87349261a5588495d3b4c9a84cc5a8d61954f2202b4169c652"
+    },
+    "2025-08-21": {
+      "ledger.csv.gz": "15bdf7723119e2e95450f435ff15cee88bd3f192c33a8e29e128be007c5ee136",
+      "soft.csv.gz": "49788b1092f28d94a2376e2e44e919d2f1d101b2b39600549abb271e0e6a3ff4",
+      "trips.csv.gz": "d69d9e228fe1963d99bcb9f1321feba995fb1387e2f0269173a8cef0c9c4b589"
+    },
+    "2025-08-22": {
+      "ledger.csv.gz": "611628c9595594a7885ea88d8f788c5756fa29b159f19234186c1687eb861ae5",
+      "soft.csv.gz": "cf907a8b2b9cd32496252bee4d43d9938a976515836b544ebd0af5ca8570adb1",
+      "trips.csv.gz": "2f1da01d4931492fb1199fb8e2ed5930f1fc3be9618574f50c4660118cb59191"
+    },
+    "2025-08-23": {
+      "ledger.csv.gz": "2fa7c18ab27984f961ffeeda6fb67a2e0dbba00b7fbc595af2a6c397bc5783c8",
+      "soft.csv.gz": "ddf3f4721b540e7cc059f11347cd39a369259fc4b88bdd1e2a9c16bd156e3df4",
+      "trips.csv.gz": "90edca5f021418c380236ece7caf23c04c4f0f7d1bebca7ae5ba0653227074e7"
+    },
+    "2025-08-24": {
+      "ledger.csv.gz": "5b68e0015b0a8c0b48ce052bb48112c471e9d490a8a8f0cc2539ef995f64f284",
+      "soft.csv.gz": "257a3017cd2d32b64a84a08fe9c3fd46c6f4bc706e1df9a16d28fc4e8dcbdcfd",
+      "trips.csv.gz": "7619aab76285bf7028e0630ab59438e5e249ff9e708f5e3c6a3482fe35501e4b"
+    },
+    "2025-08-25": {
+      "ledger.csv.gz": "7955baaffa43591a52813c812b6c25068652dce620b054356aedd358bedde906",
+      "soft.csv.gz": "55bd1bf9e9378bacfeab3dff653aec6798d2f792bf093a97fa6618583a97313f",
+      "trips.csv.gz": "3de285bfabbb27bb1ccf76adee41fd9503ae575360080a5162c9fc3b6c201d56"
+    },
+    "2025-08-26": {
+      "ledger.csv.gz": "f9daa7e571baeca6e6d962d1590549af7fd4ab15e2033df26583ad6919fa231a",
+      "soft.csv.gz": "3b94a4a290db2075ee1a1ac47199b0e89ee354868bf12d8625116665756d1e2b",
+      "trips.csv.gz": "e2174f0ae74f52b4b907ab13e235702fb6c1b257dff111ded9fe67af9d44743d"
+    },
+    "2025-08-27": {
+      "ledger.csv.gz": "efed96fefc4bf841e6ed9ac882fbac79aa44888037132abefcb601056000cf9b",
+      "soft.csv.gz": "66941abb5dad235fe9aa7637e7dd23d00ff7045c0b0ff32b6dbd4f79b36018bf",
+      "trips.csv.gz": "14c0d84f8107b3dbcbc6d60b5f67b4be476aa5c6425af2a26ce374edeff3dc41"
+    },
+    "2025-08-28": {
+      "ledger.csv.gz": "ce6c34b0ac2b112820b4e1621d0da4ea184c202d8a201cebc1fdf893a77d0171",
+      "soft.csv.gz": "7567e6ff89ccfb2ca736c8de76f1ef2dcf2dd04ced87e149430cb292430f8a73",
+      "trips.csv.gz": "4f72a628829fb69dd2bd559a0ced8b48996c97d8786bc836de3a2919b2e89854"
+    },
+    "2025-08-29": {
+      "ledger.csv.gz": "01ca122a2e6336793709b2dfa0188e9e4a50191c7093bda3aaef0c266bf0036e",
+      "soft.csv.gz": "3fecefee7f7fc2b549efa11a6795b95079ef09724081b800825ea07948ed3a8b",
+      "trips.csv.gz": "9a9a4c9a5e0b811ea1356c6f5159908801049adbff2027a2b422ce534f382c89"
+    },
+    "2025-08-30": {
+      "ledger.csv.gz": "b99496878f29166685d619cf1d7cecb295d066b2eafa8f9a54accbc4f2a76e0f",
+      "soft.csv.gz": "a00ee77f0c55e8df4786898a71398a44fa75f15d477a776d27784cd7538e5472",
+      "trips.csv.gz": "d8ae2b2324469efa21acfbd539d17451bf8bcb8ac8137168651a149c95cad317"
+    },
+    "2025-08-31": {
+      "ledger.csv.gz": "a740887580be189c3d015252e3433f748fa534499262796eca3490cbaee9153b",
+      "soft.csv.gz": "9591efcfd8820590a9a8e73faffb5fe99fbdb1dcefeb782389a2c5b44a379155",
+      "trips.csv.gz": "6c1ed7189c038b23eafb0e3f1c5f37dbdc33854902a3166c51d3c84e273cfe72"
+    },
+    "2025-09-01": {
+      "ledger.csv.gz": "4660c7163751d5dcc3714880f15090101ed298ced569a04bba30ca519ad4ce4d",
+      "soft.csv.gz": "be3626833214953e94f9d983b70cd07d96866a2198028e0f296fb6c343d29ee4",
+      "trips.csv.gz": "37dae4b8122c2c812e356e5d18ec3d4a9c41d2a3f7f3327a59190dfd452ed958"
+    },
+    "2025-09-02": {
+      "ledger.csv.gz": "5b23deed484e3fa413f56c6f5d69b071e25451a531b540c81e64d9f0ce6b6b8d",
+      "soft.csv.gz": "f587cfcded3a37b9b80e58884da097520259426b989147aee475bb29158a763c",
+      "trips.csv.gz": "3d810c943b434786cfb7db4ca91a7620e4e6d70ef75739330a2842195e513609"
+    },
+    "2025-09-03": {
+      "ledger.csv.gz": "7c5a31258d4cab6ed738de791a461619e3182042cec03cb275c677074a5108ab",
+      "soft.csv.gz": "57edd4b034a41bceb9644871371afb61b75a7c6f75ea11fed15ffc8f8bdb7020",
+      "trips.csv.gz": "8c5e86bd3cd28011b371e4102d90510b121cdb455578003561f3f884bb61b7ac"
+    },
+    "2025-09-04": {
+      "ledger.csv.gz": "851febe518768447b65f12ab82df8bbc3ab25eb2ad151d325fd1815cd835785d",
+      "soft.csv.gz": "254433210c69bee27ba1f5019fe2e7963ac68b3c0aebe3fe4fd605d7db84de58",
+      "trips.csv.gz": "1878f7a5af3c9740a2046052af64c3ca921a645a8676d2a29d26dbc617444dae"
+    },
+    "2025-09-05": {
+      "ledger.csv.gz": "a14845063c3f4a9c7dd9dede7c19f9e6ac89412c71585addd4eaf7c1186bb9b7",
+      "soft.csv.gz": "af586e456c60364f2a3d4d4fc89b53a07bb4993fa846ad46266c4f49c872b296",
+      "trips.csv.gz": "a74b09cf8ef7d91f7967b5b0a24eb4d9b72b6309c2c94a5a0b4ce0c70c360c80"
+    },
+    "2025-09-06": {
+      "ledger.csv.gz": "5acaed06617a4fce2eae43b017e7ad147c6a18c3aba5514a387c76158458dc85",
+      "soft.csv.gz": "72e845c607cade240dde0a3f86250d1b9a9f49a8433569f68d314f1113d8964f",
+      "trips.csv.gz": "29efcdb5fe59f1496779f585c6d400a5c676cad1cff30dac2b24f8dfb01be019"
+    },
+    "2025-09-07": {
+      "ledger.csv.gz": "ec72483fe7faf1e7e2a3a9cc94d1e12e85fbcc6813b29ea3d18ee2f53a2b7d2c",
+      "soft.csv.gz": "369d9140bf1a201abfd5cdd115c7ecf5ed496d658d574aecd1db15f11f412170",
+      "trips.csv.gz": "c05cb02c132a27bddfdcf8d78f89369983cbe10b904cd46b3ee0b50efac4fc13"
+    },
+    "2025-09-08": {
+      "ledger.csv.gz": "aa6d560daf13f2ba2cbade090e14ccdbe977cdc7970ee09870e2376e72cb2197",
+      "soft.csv.gz": "66ffaeddf4d96410bb9d81e99927a527dca19a5f7d33808eae40d7968d7fcdca",
+      "trips.csv.gz": "461edd04fd0883574d3ec3298d91560dabe2edccf595ebea2337d2a06fb5c986"
+    },
+    "2025-09-09": {
+      "ledger.csv.gz": "ae1c83cf83a4c9c02a702f4859c90d3559062056e7e10ed738da6b577100377a",
+      "soft.csv.gz": "55f49159019e5a6ae801abca1f4715a215540c1aa533b0d1b455c8f5e4783969",
+      "trips.csv.gz": "b70a406b6e3b8aaaeb0afa6729db6e1dc9d502cb357815a3ca0e86679db1cf8c"
+    },
+    "2025-09-10": {
+      "ledger.csv.gz": "e2acad36ffdb115af5092ceb52b9dd8b6ddbeade3a8aaa7ea3b21f78e51a4154",
+      "soft.csv.gz": "8a4e37322bb5149bec46e373ad1b64ef7a61924522b772568a09ba89ab0543aa",
+      "trips.csv.gz": "055e9b1df60a77bc7e7ba9239ee7a237ca87c3de0990e0fd151df55963f48de8"
+    },
+    "2025-09-11": {
+      "ledger.csv.gz": "dcda73644915767b14dbe8376ccaa362f4932d46b9092c32bd027f030689982a",
+      "soft.csv.gz": "f3aba80585307ca0bede2dbedb945108e80854b983654d9e0c7c4986e9035752",
+      "trips.csv.gz": "e28f5fa9e75e5f3b25aa1811edc02ba9ba12e241d1d75fb8242b58954f58942e"
+    },
+    "2025-09-12": {
+      "ledger.csv.gz": "b517d8143f5f349afae82a7779761835b87365ba45919f9504689e98ed0501b6",
+      "soft.csv.gz": "6c0cc839de7148d68db0af1ded2441689c87967c9cf5e5c765dfab916e0024c1",
+      "trips.csv.gz": "5e173d312ec59a94212701f490dfb52b33282cbe8b9cf9a304ac155085439278"
+    },
+    "2025-09-13": {
+      "ledger.csv.gz": "19bcf395ae89ae9f75683815615df86e9bd0df3fe0340df5aff611da809ba46c",
+      "soft.csv.gz": "56317e07acb03f7838adbf0617be12d3446e0fb29bc049a8370525565390f99f",
+      "trips.csv.gz": "940004fef372897ce6d8ce7ce9198287b27e9343b6fc8ce4d8395fcb495b18e7"
+    },
+    "2025-09-14": {
+      "ledger.csv.gz": "9020ce48224f55fab890bf3e03f0c2d5c1df5cfbce8435e5e487744ef25e518f",
+      "soft.csv.gz": "23e958b283b38d0bb9c8e8c2ca90c2f90614d87d8b1e5bd22e77ec410b60a5db",
+      "trips.csv.gz": "e9334dec9f649a7fa28110c96e36dd4ff8c904f117e05c4684bd55b770ee0c87"
+    },
+    "2025-09-15": {
+      "ledger.csv.gz": "e1997685d8120532cce907498b62dcbce3be98ba314e4ccd21eb0f854153cac9",
+      "soft.csv.gz": "4ac3bfd96259afe5a7015fe4f6c7af834fe5291563fb0e235ab960360076156d",
+      "trips.csv.gz": "7d9ac536d3b7431b2f9b7e108114f6a0f7fa518c5508c094ec310bd3efbc6b85"
+    },
+    "2025-09-16": {
+      "ledger.csv.gz": "8ea4cdfd0c809013c3cdd23136c005d602c613db1e9f95f14653b01c2a199960",
+      "soft.csv.gz": "d5415e6f75b4682f646fb9327e36f2f7bc3d64cc2e4677f7899e1b3dd06c844a",
+      "trips.csv.gz": "a6d00f5c14ae0dafc117c45931b680037a252017bbc10dd1081a161363e27d58"
+    },
+    "2025-09-17": {
+      "ledger.csv.gz": "2c65ccb992965cf846f5bb76c8914f6d956ec7453dae4833b35008a1ba507dfc",
+      "soft.csv.gz": "b10a7a8ff6181bbcd64c73d831242eccf7dd20e3e77c9fca0757684c6a2af01b",
+      "trips.csv.gz": "3f964741783b45223eec3a1279ae22e2bd83125efdcce127b288f230a4e9a1f3"
+    },
+    "2025-09-18": {
+      "ledger.csv.gz": "935a26779b393a278ac1387a5edf890f8e80c6a6c2c54dbb11fb87a47fd61bd1",
+      "soft.csv.gz": "c2509cf3435bbaf4833e6c7f4cd7ec2d039aa03adb06a4b4c86e574446d4ef15",
+      "trips.csv.gz": "17e1c0f1a3ecb623c5ff38a3b174724b3accf11764035dbfe5a1a7d6716847dd"
+    },
+    "2025-09-19": {
+      "ledger.csv.gz": "44619f6f0f5bf02ddd1aef414c1c70077dbeab3f234b66a788ded13c6b6ff1d9",
+      "soft.csv.gz": "93e2dcd6ffd190eba774c08f7dd80f1fe13e96db97b98f72a26b637400b54dcf",
+      "trips.csv.gz": "555db1a390d3e88c3b257caedf397c036aa4cb1ca387da3bfab31c11c6582708"
+    },
+    "2025-09-20": {
+      "ledger.csv.gz": "8b5f106a1ed35d0aa985402cc665a3286b978847f720e3b889a4d7a3dd1207a5",
+      "soft.csv.gz": "e482d123d368061fc2caf693b26e6681328a971e48e1cf1dccec5e920ff6d2d9",
+      "trips.csv.gz": "9bb3b5fae699c2fb336713d7e82ca2867ebe67f8f1773be93e7ba32ca72d44d7"
+    },
+    "2025-09-21": {
+      "ledger.csv.gz": "1b42dc0f757ccc6b3c86b9036c01b43b3d5b82eb9fa346b4b924d46318bef835",
+      "soft.csv.gz": "fb273201f19345f285a99bd74ff7909b89c6099b4f84e5c9c7bee981cc968f30",
+      "trips.csv.gz": "250a6050854eb251e17639938975e5f040ebf2a4baa0fb12152ab2a21b3bf1e9"
+    },
+    "2025-09-22": {
+      "ledger.csv.gz": "3cd5cc3de91db73cbbace9530245f7c97a66faa5370613e40cb7e06d133afb74",
+      "soft.csv.gz": "91368bfec8a299eaabcbf8b77ce258612dc48720a607edf08d1644e5ae355c82",
+      "trips.csv.gz": "18d95fbae02de8acfa812dd805e13c7221dc30ac03b653938e2adc6c50dd3eeb"
+    },
+    "2025-09-23": {
+      "ledger.csv.gz": "3f94978ee3247dcac314b1460ce4cc836344c3d8ee8078799e1ea884779a9e89",
+      "soft.csv.gz": "2295284d049255ea0a141ad14da5e5377e159d18c137f217d02dbebe67f81602",
+      "trips.csv.gz": "aee0611e86fbf373c205acedfd1fd9b7b98f360a8085e9b406341e6aae75f5a3"
+    },
+    "2025-09-24": {
+      "ledger.csv.gz": "5340b1842ebe1dc5d4a8641f1b4578e9bd383c084f0f896bce2830f034a970f5",
+      "soft.csv.gz": "75fb9c07efe5a68b8a4e34f6d5ea34b81cb24d36b8cb7c14fdd749a09a0b9b7d",
+      "trips.csv.gz": "e275ac7a08024048a9a7512eae914809c5c259e9d445e664c1844f2ceea73c02"
+    },
+    "2025-09-25": {
+      "ledger.csv.gz": "27885dbb33237e7592fcec715cb822a9ba3b4d1ba71eaef455c122af3eac9848",
+      "soft.csv.gz": "4147952542df5548f5693660ff359eba87202014b6003a6cb7fb39767040c761",
+      "trips.csv.gz": "0f70902e01dfd3ad983cb48f310b23e90b61c45cedf469e0d651be2fbaaa9c5f"
+    },
+    "2025-09-26": {
+      "ledger.csv.gz": "16d7d6acd939535ccd972c2e313fde4425d7fa2d19d89618ed21cf676c559c16",
+      "soft.csv.gz": "4682cacc609e2a86edc6bd807a5a7ad1af8b94e07306ad4b52425cabf8d27d8b",
+      "trips.csv.gz": "c24be78f8ee101904d61547f26457386f6ac59c91d9ad3d950e993414f5a858d"
+    },
+    "2025-09-27": {
+      "ledger.csv.gz": "8c746021e880fbc9af5f0682f2f2f2f2589c663b2085e18b41e14b598838050a",
+      "soft.csv.gz": "2f784455e68c64ba5ff96cf10dd139d6bafe1510d3fb23c3b15306a390fa2cb2",
+      "trips.csv.gz": "7eb98b2ad8fa213b143c0078afcaf50fb19653e3bf6a38ed8e8472149a8f4379"
+    },
+    "2025-09-28": {
+      "ledger.csv.gz": "ab1dac4e0318bf988e70427d2d8c07e64db8846d603638f3da47e3795594d254",
+      "soft.csv.gz": "9fcfdf3685ceafc6e40895417f47a7ecf92483cf2291216e7b642658bd9640f1",
+      "trips.csv.gz": "3b31021f6f87a07fdd6a6d65753090771dc56ca1b8ef041b1fbb415dce2d9d05"
+    },
+    "2025-09-29": {
+      "ledger.csv.gz": "0e5295b2925d2e343dcca650b25f5a8a76fdc41f70e6afb4d1af3b745e724500",
+      "soft.csv.gz": "68047f95fa8421356edee9ef039ebbec1556f0aef54e8466a888b7a1827410f8",
+      "trips.csv.gz": "b48ea378b99ca7866a2d3fa9c59c7939e60dbee21c6ca2b407dcccd7b284c69d"
+    },
+    "2025-09-30": {
+      "ledger.csv.gz": "2ae3f0c8fe526ac0824be2c81870c41cfca80b115d3a508de1983eb8f1ca71d5",
+      "soft.csv.gz": "7a7123b7f1f37ad72c37fe618f5e0c8f40d0e55fdfdee8c2f1009bf74d8630e3",
+      "trips.csv.gz": "76d1083a1f81a6a8b8d45d12e82e004423d4fe76f5b68d0f3387a5912c5af481"
+    },
+    "2025-10-01": {
+      "ledger.csv.gz": "684e696568e8fb104d62e7f4a703b06c924f288d469b0e3258f2a1a990775878",
+      "soft.csv.gz": "704e31956d6efb4d020a5ed4370b6cc61a182cfe63c718eb0be34a24aed99750",
+      "trips.csv.gz": "fb743c6368bdefb6f80ec63c602ce49085eabc10037f4d40ff1e03eec5ddf48f"
+    },
+    "2025-10-02": {
+      "ledger.csv.gz": "68a54045630e5f47710ab23928498e590702e216c59b340062101572bd2d494f",
+      "soft.csv.gz": "3f4e76b5aa127b739e4031ca4971794a902918f61bb92256702407efcb946215",
+      "trips.csv.gz": "7d652b128f32d2d52290db15245290d4461dd6d8b07ebdc8ae1869f8df84c749"
+    },
+    "2025-10-03": {
+      "ledger.csv.gz": "9a1093d5fd1d1e4701fa7226409e37ac95f9f3e9fff9dacc613cbd09f826dbfb",
+      "soft.csv.gz": "702a62bd2bc5a37d4de72980d4271cabd9732fb1cdf2c8a69007f113dda4c873",
+      "trips.csv.gz": "5ae58a2161716a93b13082e764d747ee5e890f0bc9b49f9dac3682ff73b2dbd7"
+    },
+    "2025-10-04": {
+      "ledger.csv.gz": "15ced24ea4c49695a34f94cd3cd686f9fb00ab46edff858c28612055fa6a806f",
+      "soft.csv.gz": "bfe13efbdc19ef1773bc864231d49904a9f7bca36d4d9af49a1b35ca37487418",
+      "trips.csv.gz": "db8080cea83a4c05891231c308fe07d773927a2b7b81f00e941cb8dfe6586f5f"
+    },
+    "2025-10-05": {
+      "ledger.csv.gz": "e0a822a166c387b00dc1dffac9dd92948edd588a1f62cfc4333d757b45686e20",
+      "soft.csv.gz": "bbe54dc29e233701fc919c1d8fcb9eeae22b7a895c6415b6cbcc42e761a4aa03",
+      "trips.csv.gz": "88fcd432c4f054e1a2b036d63a29b272d4ccd0232ba9f51113b7eadb9c60302c"
+    },
+    "2025-10-06": {
+      "ledger.csv.gz": "1e191180b5a76ba6fc30866c587e84baed5d9573ad9f2d788f708105003812ac",
+      "soft.csv.gz": "79cb5398358051d9ff3bbb6a19011261da03bb50e2b51b29e48cc8ce6259eca2",
+      "trips.csv.gz": "15658095ff5e4c1f7fcb20977b7ec8a48aa1efddc13c8b0475c36fdd0cfd4eca"
+    },
+    "2025-10-07": {
+      "ledger.csv.gz": "7e06bf2652551e82817bf4693ca482b7e09904e8d2403bdccdd87aa45203458f",
+      "soft.csv.gz": "be01065748ee85a26712ba1530ab2915ef52b25d10cb7793c6f86bec25c990df",
+      "trips.csv.gz": "6feaffa80e6575701289211da811da041801edf1eb1c9dc7cc74c9c8244aa332"
+    },
+    "2025-10-08": {
+      "ledger.csv.gz": "bf0d8e88b20509b5b71173c8818339e95a591ac682723666e5cdacb494924610",
+      "soft.csv.gz": "76943f0e60d48d77db95f782916e222b9a431c903de90852b98817d20eaae8dc",
+      "trips.csv.gz": "34e381f66eba0e79b54935e93e089d4ea6c1412cfe890097f0bb9f7cc1a2e042"
+    },
+    "2025-10-09": {
+      "ledger.csv.gz": "861546e7e9a6d1bc38ec0bd27b94cbc5a2e247531e88dad52fc46797161d637e",
+      "soft.csv.gz": "b45224f2bbadb96b8fe737c614cdd5638f74b3e7fe44d2d1925513a7f0aebf1e",
+      "trips.csv.gz": "08a34230e773a8146fe0365c18d5e3ca0b9d3831bee55ac0fbbd435bfb879d53"
+    },
+    "2025-10-10": {
+      "ledger.csv.gz": "b687f4f094845f750856508cdbc4e389c439acf49cb2a879a8ab7b96ee0386fc",
+      "soft.csv.gz": "d17327a5797c3dcbb3de881ffd854e677ca916ae93272b0d9b9d6a97e195f790",
+      "trips.csv.gz": "a91c8d01a7215f4bd6c551cc32debf96e6abd010c9aa87871b7c854985371caf"
+    },
+    "2025-10-11": {
+      "ledger.csv.gz": "86c67ebe4a0e8b566a4757ff85c9a1b7df134457f6ade098a5e384376bfee91e",
+      "soft.csv.gz": "85d9967f7b27b00aa1e3ba72bcce1df39767299c5ceb0b3fc5dfe5a0a94eee17",
+      "trips.csv.gz": "3719bc6a39b3c68f57d1dd74e425b4e943cdadc78b36faf8863afb0d3fcb79b9"
+    },
+    "2025-10-12": {
+      "ledger.csv.gz": "66870fe51d91414996b62f36766b7171b570f6e5a2b0c228d487309b4eed58ef",
+      "soft.csv.gz": "a421d5823783463e73614e76e1e3f2d57cf62c414f7b7f213b2324a65c7ac0b0",
+      "trips.csv.gz": "2124663bc93db6b93329baacb2220f2ce7efd24559b2a08252544bd56c0556e3"
+    },
+    "2025-10-13": {
+      "ledger.csv.gz": "f9ca617dbcd8466618a42861bba8b6273a10a5caa92a6494a823f72c773bfeac",
+      "soft.csv.gz": "4dca77e84bd66e16ff2d91f67c9b98f176e5edb92495333a5072e75cef2f0ee8",
+      "trips.csv.gz": "82be7c756e9a480a7696220d83043ca5095ac384973433bcc39a84ca0b82aad5"
+    },
+    "2025-10-14": {
+      "ledger.csv.gz": "c696b5e6e859db69fd8b9c26850a64cfa4cdaf6ce0a14f158c3f9c49ba7d689c",
+      "soft.csv.gz": "ebb2c18afbdcb7f14cf89061063ade3b449c9b7f4777c63c8cb0d9555fedd451",
+      "trips.csv.gz": "a98ac55cdf7c71bcc3362c40e580f164ad84725c1e7e3dabf3a61554f72e0ffc"
+    },
+    "2025-10-15": {
+      "ledger.csv.gz": "cbde14cf5dd8251c2149e52f5c323e16e5921fc0047f3724825c59b0ab41d0f0",
+      "soft.csv.gz": "06d39bb69246151d799564526503080087a34dd3b4373d373bf31b144a0d5bc7",
+      "trips.csv.gz": "fe13e78f2c210a0a91e7a94acc6a1bc2445dfb1d8c3d305f5d05ca89a0ea8ca6"
+    },
+    "2025-10-16": {
+      "ledger.csv.gz": "900bff79f05177cf6bb8a13010661344030e2deb093262064ef085e5e488fee3",
+      "soft.csv.gz": "355f2f2066f9e0bc5b5f43c16cf4d2fc6e24baad4534b75b5f47ba0c75713624",
+      "trips.csv.gz": "cc101e8bbd50d7b724cf50381e4b474a28d023a9dc490f6e8b2d0b05ba548c17"
+    },
+    "2025-10-17": {
+      "ledger.csv.gz": "ab9694fcbc78be285fd35d5d38faca053bae312af6553259b4fda26fe8d19f6e",
+      "soft.csv.gz": "28bb8ea1a0f6cc409598a5b30a2c3d3d87404cb8f9ab52d94cddd4da3e083900",
+      "trips.csv.gz": "6dd797574e9c39fe3eb0b792bed94cba3e141da14c7ec222f327e12c36159f3e"
+    },
+    "2025-10-18": {
+      "ledger.csv.gz": "259d0a2c331ab3cd7f1d766c02908276631a1dde44e3d3ef002865d3cc783031",
+      "soft.csv.gz": "f2c18190eb5c79bd3e8013a325fb52b07e9c5e7184bddea830300c8811a2cc10",
+      "trips.csv.gz": "5b9369c1aa4a022b198ef6de1c7e41d3adc41dfa254707298d043ee1c6bc9ef6"
+    },
+    "2025-10-19": {
+      "ledger.csv.gz": "9bb75c9ac3929c5f27d7e3cfe9683b9b42fcc6e0867906b55569e86332ec1af2",
+      "soft.csv.gz": "5e51a8dd04f7b0bb2601f97a137f750cbc47b37137fd52ab29ddde0e28c8ee3c",
+      "trips.csv.gz": "5fc59a2d9d53affac943798538530b1bd90810149b3b9dd46c352dbba2a5115a"
+    },
+    "2025-10-20": {
+      "ledger.csv.gz": "43f757d71c125c92ea6b1729435afb0d9554542b9290ba6a4b8a2c5c2ed2e97c",
+      "soft.csv.gz": "da372ee8c51bc86c4dedfc993c8e82cc903f55c3ba99bff181fdd9f3466ca529",
+      "trips.csv.gz": "de854f4ea85b0d2b7e9d2c6142a856112a2ce2f763e4afbce57a5238d453009a"
+    },
+    "2025-10-21": {
+      "ledger.csv.gz": "5f045b3e032f600fd032d2e2aef746e5468300b41f1ad3e92ad594c9573a3c02",
+      "soft.csv.gz": "5234367021f7001912ee11e12fc4e72e554442c126ecda4e65574741c7f52c98",
+      "trips.csv.gz": "d7b78262bc9942e2be5fdc6499a884a4d030122809f6e4d4d9d441c8fb33a07b"
+    },
+    "2025-10-22": {
+      "ledger.csv.gz": "f88eb25a11bcc431d791ce2b29a661ca7dfc7d26c7f25716827669186d657918",
+      "soft.csv.gz": "810928a3b3e1e469391c3c2e9c5ae904aa675f48c339ec87cc13e1cd19993dc9",
+      "trips.csv.gz": "11cb8da67d1713ce7df1efe0bc2a1ff6ba4ab5842fe12122ed1b3daa1ce9daec"
+    },
+    "2025-10-23": {
+      "ledger.csv.gz": "d5b408ddcfe3163fad9cca2aad934274b7c06d0d072bc715e7f8505cd51c28e2",
+      "soft.csv.gz": "692fbc5ec6228e3e98a54596b1d224e7e6c003cd478822831e6af78d96eb44b1",
+      "trips.csv.gz": "a0af21a6c452312fd57f05f9f2a0a6c3a59bee5233ecfdb65d75377f40bdfd86"
+    },
+    "2025-10-24": {
+      "ledger.csv.gz": "f24e97751e63aaf42231907fbda5e56a33cfe27fcda1d6e2d54028f088987a98",
+      "soft.csv.gz": "1c2db836d80aa8dc5a7e54f14ed9e5dc1fb9328cb121fe9927c998fdcea5f001",
+      "trips.csv.gz": "96d5e67c74c3855676031ef7237d18cc87bc19e6fc9371fa6ba986838ab8d678"
+    },
+    "2025-10-25": {
+      "ledger.csv.gz": "1ec8d4c04f49132fe0a33c060f40008b23ea6707c83b9e2ff881e5c7bb42eada",
+      "soft.csv.gz": "ab66671a27c420c29f999e4b653540543fa1b0d9c718879e71d01cf03823462a",
+      "trips.csv.gz": "1623296507278ac160a280db32e17a6d61666f0cafe9475ae1e54b6c575235d0"
+    },
+    "2025-10-26": {
+      "ledger.csv.gz": "199521dfd16580b4017182216f2195d7fe7896ff92bced9d4da60f776af2088d",
+      "soft.csv.gz": "9cc0837ccc74cf234ee0ab8c975b06ec8c72f0e4dd940d670cf204cdcbaaf825",
+      "trips.csv.gz": "3f0352676ba4d544740f742fcd3398e0ac7a223038ed571df504799f7baae23e"
+    },
+    "2025-10-27": {
+      "ledger.csv.gz": "7f0bded19e3ba19a1360b634a83478d96e2cc6869269a81716ff15f714b37775",
+      "soft.csv.gz": "060b4669991e15f65b563c525af0c8a742652cf62d9bdaa8a265ff91d34bf521",
+      "trips.csv.gz": "efcb265b6f1b9ff507193c5508fbe9ccf78ba4a311b3cd37a294845f81587fac"
+    },
+    "2025-10-28": {
+      "ledger.csv.gz": "a75d4f0f96563ba36c39afb755b395769506d45d33d3db0d1b823f8c6943eff2",
+      "soft.csv.gz": "464093b6f2cfadf9dad45296dd4690ed5b5967dd6ee757bef1c44825532393eb",
+      "trips.csv.gz": "633ae5cd66bbbd870df7477308122a607253b7c397b0bcf6a289bf149b3d3c07"
+    },
+    "2025-10-29": {
+      "ledger.csv.gz": "e5c9e19bd0136b0d841a84aa5ae87eacc357fb20fbdc668b937adaca6afbae07",
+      "soft.csv.gz": "229ff5e1ea528b06d6f19ad7546c3142bff4a8b4ce38953a2be4a6375eb331f2",
+      "trips.csv.gz": "dff6c0ff78ee788b2ad88b8604fe49b6a3983b1212f97c56cc1766e7da75a4d1"
+    },
+    "2025-10-30": {
+      "ledger.csv.gz": "f3e3bf45b63abfbfaee4e2e783882f1c6d6d93e7cb08c44dfdc460211ec8967e",
+      "soft.csv.gz": "065f69c5143e8beebd867b922edd35d3da8f89cdacc319c8e8906d8fb8107e0a",
+      "trips.csv.gz": "6d27d7d9403c25076eb0aef899735973552055b129f50ad08807999c46ba44ac"
+    },
+    "2025-10-31": {
+      "ledger.csv.gz": "0d7bffa217fce81caecb5f833f72cb1fd9fdce7901b46abe49f9699b94fd4d4b",
+      "soft.csv.gz": "2e2b6e8d0ab47ad9334a2f19e8309d7d3bb5b30deacdcb5467d0975f01472886",
+      "trips.csv.gz": "5765370d979159d2a4cfd57da0dd6ca7dc46f14de0a593a1e17020942f85b61d"
+    }
+  },
+  "date_count": 304,
+  "dates": [
+    "2025-01-01",
+    "2025-01-02",
+    "2025-01-03",
+    "2025-01-04",
+    "2025-01-05",
+    "2025-01-06",
+    "2025-01-07",
+    "2025-01-08",
+    "2025-01-09",
+    "2025-01-10",
+    "2025-01-11",
+    "2025-01-12",
+    "2025-01-13",
+    "2025-01-14",
+    "2025-01-15",
+    "2025-01-16",
+    "2025-01-17",
+    "2025-01-18",
+    "2025-01-19",
+    "2025-01-20",
+    "2025-01-21",
+    "2025-01-22",
+    "2025-01-23",
+    "2025-01-24",
+    "2025-01-25",
+    "2025-01-26",
+    "2025-01-27",
+    "2025-01-28",
+    "2025-01-29",
+    "2025-01-30",
+    "2025-01-31",
+    "2025-02-01",
+    "2025-02-02",
+    "2025-02-03",
+    "2025-02-04",
+    "2025-02-05",
+    "2025-02-06",
+    "2025-02-07",
+    "2025-02-08",
+    "2025-02-09",
+    "2025-02-10",
+    "2025-02-11",
+    "2025-02-12",
+    "2025-02-13",
+    "2025-02-14",
+    "2025-02-15",
+    "2025-02-16",
+    "2025-02-17",
+    "2025-02-18",
+    "2025-02-19",
+    "2025-02-20",
+    "2025-02-21",
+    "2025-02-22",
+    "2025-02-23",
+    "2025-02-24",
+    "2025-02-25",
+    "2025-02-26",
+    "2025-02-27",
+    "2025-02-28",
+    "2025-03-01",
+    "2025-03-02",
+    "2025-03-03",
+    "2025-03-04",
+    "2025-03-05",
+    "2025-03-06",
+    "2025-03-07",
+    "2025-03-08",
+    "2025-03-09",
+    "2025-03-10",
+    "2025-03-11",
+    "2025-03-12",
+    "2025-03-13",
+    "2025-03-14",
+    "2025-03-15",
+    "2025-03-16",
+    "2025-03-17",
+    "2025-03-18",
+    "2025-03-19",
+    "2025-03-20",
+    "2025-03-21",
+    "2025-03-22",
+    "2025-03-23",
+    "2025-03-24",
+    "2025-03-25",
+    "2025-03-26",
+    "2025-03-27",
+    "2025-03-28",
+    "2025-03-29",
+    "2025-03-30",
+    "2025-03-31",
+    "2025-04-01",
+    "2025-04-02",
+    "2025-04-03",
+    "2025-04-04",
+    "2025-04-05",
+    "2025-04-06",
+    "2025-04-07",
+    "2025-04-08",
+    "2025-04-09",
+    "2025-04-10",
+    "2025-04-11",
+    "2025-04-12",
+    "2025-04-13",
+    "2025-04-14",
+    "2025-04-15",
+    "2025-04-16",
+    "2025-04-17",
+    "2025-04-18",
+    "2025-04-19",
+    "2025-04-20",
+    "2025-04-21",
+    "2025-04-22",
+    "2025-04-23",
+    "2025-04-24",
+    "2025-04-25",
+    "2025-04-26",
+    "2025-04-27",
+    "2025-04-28",
+    "2025-04-29",
+    "2025-04-30",
+    "2025-05-01",
+    "2025-05-02",
+    "2025-05-03",
+    "2025-05-04",
+    "2025-05-05",
+    "2025-05-06",
+    "2025-05-07",
+    "2025-05-08",
+    "2025-05-09",
+    "2025-05-10",
+    "2025-05-11",
+    "2025-05-12",
+    "2025-05-13",
+    "2025-05-14",
+    "2025-05-15",
+    "2025-05-16",
+    "2025-05-17",
+    "2025-05-18",
+    "2025-05-19",
+    "2025-05-20",
+    "2025-05-21",
+    "2025-05-22",
+    "2025-05-23",
+    "2025-05-24",
+    "2025-05-25",
+    "2025-05-26",
+    "2025-05-27",
+    "2025-05-28",
+    "2025-05-29",
+    "2025-05-30",
+    "2025-05-31",
+    "2025-06-01",
+    "2025-06-02",
+    "2025-06-03",
+    "2025-06-04",
+    "2025-06-05",
+    "2025-06-06",
+    "2025-06-07",
+    "2025-06-08",
+    "2025-06-09",
+    "2025-06-10",
+    "2025-06-11",
+    "2025-06-12",
+    "2025-06-13",
+    "2025-06-14",
+    "2025-06-15",
+    "2025-06-16",
+    "2025-06-17",
+    "2025-06-18",
+    "2025-06-19",
+    "2025-06-20",
+    "2025-06-21",
+    "2025-06-22",
+    "2025-06-23",
+    "2025-06-24",
+    "2025-06-25",
+    "2025-06-26",
+    "2025-06-27",
+    "2025-06-28",
+    "2025-06-29",
+    "2025-06-30",
+    "2025-07-01",
+    "2025-07-02",
+    "2025-07-03",
+    "2025-07-04",
+    "2025-07-05",
+    "2025-07-06",
+    "2025-07-07",
+    "2025-07-08",
+    "2025-07-09",
+    "2025-07-10",
+    "2025-07-11",
+    "2025-07-12",
+    "2025-07-13",
+    "2025-07-14",
+    "2025-07-15",
+    "2025-07-16",
+    "2025-07-17",
+    "2025-07-18",
+    "2025-07-19",
+    "2025-07-20",
+    "2025-07-21",
+    "2025-07-22",
+    "2025-07-23",
+    "2025-07-24",
+    "2025-07-25",
+    "2025-07-26",
+    "2025-07-27",
+    "2025-07-28",
+    "2025-07-29",
+    "2025-07-30",
+    "2025-07-31",
+    "2025-08-01",
+    "2025-08-02",
+    "2025-08-03",
+    "2025-08-04",
+    "2025-08-05",
+    "2025-08-06",
+    "2025-08-07",
+    "2025-08-08",
+    "2025-08-09",
+    "2025-08-10",
+    "2025-08-11",
+    "2025-08-12",
+    "2025-08-13",
+    "2025-08-14",
+    "2025-08-15",
+    "2025-08-16",
+    "2025-08-17",
+    "2025-08-18",
+    "2025-08-19",
+    "2025-08-20",
+    "2025-08-21",
+    "2025-08-22",
+    "2025-08-23",
+    "2025-08-24",
+    "2025-08-25",
+    "2025-08-26",
+    "2025-08-27",
+    "2025-08-28",
+    "2025-08-29",
+    "2025-08-30",
+    "2025-08-31",
+    "2025-09-01",
+    "2025-09-02",
+    "2025-09-03",
+    "2025-09-04",
+    "2025-09-05",
+    "2025-09-06",
+    "2025-09-07",
+    "2025-09-08",
+    "2025-09-09",
+    "2025-09-10",
+    "2025-09-11",
+    "2025-09-12",
+    "2025-09-13",
+    "2025-09-14",
+    "2025-09-15",
+    "2025-09-16",
+    "2025-09-17",
+    "2025-09-18",
+    "2025-09-19",
+    "2025-09-20",
+    "2025-09-21",
+    "2025-09-22",
+    "2025-09-23",
+    "2025-09-24",
+    "2025-09-25",
+    "2025-09-26",
+    "2025-09-27",
+    "2025-09-28",
+    "2025-09-29",
+    "2025-09-30",
+    "2025-10-01",
+    "2025-10-02",
+    "2025-10-03",
+    "2025-10-04",
+    "2025-10-05",
+    "2025-10-06",
+    "2025-10-07",
+    "2025-10-08",
+    "2025-10-09",
+    "2025-10-10",
+    "2025-10-11",
+    "2025-10-12",
+    "2025-10-13",
+    "2025-10-14",
+    "2025-10-15",
+    "2025-10-16",
+    "2025-10-17",
+    "2025-10-18",
+    "2025-10-19",
+    "2025-10-20",
+    "2025-10-21",
+    "2025-10-22",
+    "2025-10-23",
+    "2025-10-24",
+    "2025-10-25",
+    "2025-10-26",
+    "2025-10-27",
+    "2025-10-28",
+    "2025-10-29",
+    "2025-10-30",
+    "2025-10-31"
+  ],
+  "diagnostic_is_blind": false,
+  "feature_version": "calendar.v1",
+  "feed_sha256": "dec3ec0ccc2efb7f1327ee6f26a0636a4a271494490e6debedcb2c1ccc579e76",
+  "files": {
+    "soft_development": {
+      "count": 10717653.0,
+      "name": "soft_development.csv.gz",
+      "rows": 572747,
+      "sha256": "37628dc3eee10cc068110e9160b526aefac61a679491429720c4e62a0a63399c"
+    },
+    "soft_diagnostic": {
+      "count": 12754481.0,
+      "name": "soft_diagnostic.csv.gz",
+      "rows": 560124,
+      "sha256": "17757f96e552fc79bf6d747597e7c346b97734f966e79472eb92a4ec4330a8a3"
+    },
+    "soft_train": {
+      "count": 36195057.0,
+      "name": "soft_train.csv.gz",
+      "rows": 1683313,
+      "sha256": "17b7576c25ec6903cc9d60cf6fe76437dda12ee7f7d9908f9b3e33c693845210"
+    }
+  },
+  "finalizer_sha256": "cdc4a4d04f06fbd3e5e97f5902e0389943c294a3c1378b867aa940fc885deac7",
+  "historical_operation_confirmed": false,
+  "implementation_sha256": "42b385ccc7f87c08276dd3e67269b3361c89d614a6e5e2bfe3bbc858348a9931",
+  "implementation_sources": {
+    "git_revision": "987a0000141918e1295b8ffafcf650aff2b054f6",
+    "source_sha256": {
+      "ml/src/tramflow_ml/boarding/__init__.py": "3a93f7cff409d5d3d9ce6f61232494ad9ffae21315f2661a597c780fda50dd44",
+      "ml/src/tramflow_ml/boarding/__main__.py": "093cb3c4664e1871baf54291862c6013bb456100ae847e1fcd70114d86b55d63",
+      "ml/src/tramflow_ml/boarding/absolute_clock.py": "b90675c0786e793aefaf628e28d1a0547c163b89c946b7345ae1bd9e9db31212",
+      "ml/src/tramflow_ml/boarding/alignment.py": "07d4f4240154c8ed38b4e2b4b2cee2cf0e691ecc5352d07857fc57f3f978bb2c",
+      "ml/src/tramflow_ml/boarding/audit.py": "b8295d04983fbf755658e1892fa2e4be14b7df334f7ffcbaea15dc4a72d3d76e",
+      "ml/src/tramflow_ml/boarding/burst_detection.py": "ebb1cea0ad558f5bb38e628f0dd4ed8336dcb9a80ecb55ab3c759c546cba99e6",
+      "ml/src/tramflow_ml/boarding/bursts.py": "7fe6b3f3925e097377d65526c9ce6511c7397aa9d522a7f57598439b29df8a00",
+      "ml/src/tramflow_ml/boarding/catalog.py": "4984f77866e28af0c7d50a85be1d11bbb6359b194f80b4f09e2ddc79e1bf034a",
+      "ml/src/tramflow_ml/boarding/clock_gtfs.py": "972837131106fa31b4f98dd90a06fd7cc6c2094655c01a71cbbc38f4cba9c5ac",
+      "ml/src/tramflow_ml/boarding/composition.py": "ca79088fec4316197de2d8f6083e61299616023c7e4a14553ab02f7fb7665f19",
+      "ml/src/tramflow_ml/boarding/dataset.py": "03e9f22bf164d7463643bcd8be8c686c2264be7e07f84c969fd024aeb54a0ce9",
+      "ml/src/tramflow_ml/boarding/dense_audit.py": "273e01091dfc17960dadc5492fdcb35b4438257391cc264250c8301108b5a1b4",
+      "ml/src/tramflow_ml/boarding/dense_experiment.py": "e6455b2d9ee1a2bef217f1d984b926182c35f95f9432c22ca00a7b1e19dc3b74",
+      "ml/src/tramflow_ml/boarding/dense_profiles.py": "315b702e5c73c9c3ae64c41662b904abc3d1cc388d2af8a31c9065e1e3cb65d1",
+      "ml/src/tramflow_ml/boarding/direction_ambiguity.py": "7f97d5d2e33bdcdb1ad2a6a119ca9c6b28642cb4e4f9f1f6ad9b4c3a12259b5b",
+      "ml/src/tramflow_ml/boarding/direction_comparison.py": "5ebe658b15d57a88a7ddc5d00f68fc2bfe612d28c491b7e767b02140b42b7049",
+      "ml/src/tramflow_ml/boarding/direction_probe.py": "4304c2ce2670b69733dcdc826fbded67f0b99046733cb324d9188f0cb1adf0c1",
+      "ml/src/tramflow_ml/boarding/direction_selective.py": "96d397f3269640e11f8b40f56914bfd8c3fdd9bcf1fc94727c8a0092dd2488c6",
+      "ml/src/tramflow_ml/boarding/duty_clock.py": "90d01d7cc7fbbc988a052a16f931a61bef2733b8d9146843bdb3bb9685f3e6e7",
+      "ml/src/tramflow_ml/boarding/duty_mapping.py": "42b385ccc7f87c08276dd3e67269b3361c89d614a6e5e2bfe3bbc858348a9931",
+      "ml/src/tramflow_ml/boarding/historical.py": "af8d4585d2a8081d707f6137293fbdd2778a05de446f2f895a6127728a7ce1b3",
+      "ml/src/tramflow_ml/boarding/multiscale.py": "3213767583a978332092b1bfa5dec4e9912a254f291b0be6872e68f36bc1021e",
+      "ml/src/tramflow_ml/boarding/multiscale_experiment.py": "b27e9fa5494fde8a1a6dc10f243939e17a999816480c84dde26c32dbc87b40a7",
+      "ml/src/tramflow_ml/boarding/partitions.py": "e79cf09591cc379f9518e08106bb6c0fa0645ad1fb68c286a1c5e8b4a5106b0c",
+      "ml/src/tramflow_ml/boarding/pilot.py": "f35612226fa71d7fb05a6822a389089c3ad61febcb57d07b1d34bfe7ef376dff",
+      "ml/src/tramflow_ml/boarding/real.py": "c738245c88dbcc398e59fb8e3213e9dd5e118be923fc34a4bb021c22bf2c0ebc",
+      "ml/src/tramflow_ml/boarding/real_export.py": "fa0ef73105c01bced27874b9538b49c8a9fcd20f0d01da6812ef000113252a0b",
+      "ml/src/tramflow_ml/boarding/real_stability.py": "ae490c9a1597805c0d1a7743085658e9ba73213c2beb7a637f458aadaeed802b",
+      "ml/src/tramflow_ml/boarding/records.py": "b395913f225a66bead2d9bacc13526dfb24bd2f04dab75149f201de6f55c2858",
+      "ml/src/tramflow_ml/boarding/schedule_intervals.py": "168f2f8fffafd7bc1ff50a7397de3c3290d8ccbea866ec8bc2d11faf6f3e8a83",
+      "ml/src/tramflow_ml/boarding/schedule_preflight.py": "c34345d33fde3e034315a51c79070c02bb1eeed46988c83b1bcacad78817f9f5",
+      "ml/src/tramflow_ml/boarding/schedule_transfer.py": "2cbdae8824912a60dbe4588b4c74c08feff07509e476c296701cee1160a2758a",
+      "ml/src/tramflow_ml/boarding/schedule_warp.py": "b526eb1e25161a2842dba0de0cfa2b2df48ec19f49df2ad36bbb0af9d36ab564",
+      "ml/src/tramflow_ml/boarding/sequence.py": "18197bc08e70f5c260789960a5ccf301db6117c263e775134b923132b206feff",
+      "ml/src/tramflow_ml/boarding/service_policy.py": "57e12beeac1fcee5370e8e7f8681db0b797396fc51d10aa44d4f3d2054414891",
+      "ml/src/tramflow_ml/boarding/simulation.py": "312b7217c9852f6c287197ad47fa384ae855eb6a02ac1681530727278135a22e",
+      "ml/src/tramflow_ml/boarding/stability.py": "7572693b19301d78dcb02201738a60cd5df5cd36359aa32c1842f84d45562d34",
+      "ml/src/tramflow_ml/boarding/timetables.py": "0787bc8a103a113e58ad5511a2878e049231279ea06d00ad975563b13fe4b664",
+      "ml/src/tramflow_ml/boarding/timing_experiment.py": "f5222e1ce1561d8cbd9591a8ffa8ec6fe7ff43fc1fb8e8d5e2534bf5f9830cef",
+      "ml/src/tramflow_ml/boarding/timing_sensitivity.py": "a65153eb0bd12af6457a814ac798ee2fe443e48823b8ce6aee55f369c7ff2e3f",
+      "ml/src/tramflow_ml/boarding/timing_v2.py": "c5aaace6468ae03cc6336f9b0bc8b60b282ebc84cf0861d34618375b6c6bf424",
+      "ml/src/tramflow_ml/boarding/wave_merge.py": "1d22860a6e46cc13083d34a49114f584aeeec6771f4160936187b4b07ca29bc8",
+      "ml/src/tramflow_ml/route_models/data.py": "6eff1747be0a38cc6318930be0280d3db6f6298be13f6872485603a3b4281a7a",
+      "ml/src/tramflow_ml/route_models/features.py": "98af86f6203e295753b58ee32f7437a87818ffe991cafd5e67ada76c019c7eac",
+      "uv.lock": "1c003cd3db25c1cface4eebfcb4c837b790cf554b8d01701a91d08a529fff38c"
+    }
+  },
+  "label_origin": "inferred_active_or_transferred_first_stop",
+  "mass_contract": "soft files include explicitly unallocated route mass; no renormalization",
+  "method": "duty-calendar-clock.first-stop-local-anchors-transfer.v3",
+  "observed_stop_labels": false,
+  "point_in_time_sources_verified": false,
+  "real_stop_accuracy": "unverified",
+  "reference": "https://gtfs.org/documentation/schedule/reference/",
+  "schema_version": "boarding-real-training.v1",
+  "service_notice_policy_applied": false,
+  "source_coverage": "all successful source events on every listed date",
+  "source_decoded": 47899869,
+  "source_manifest_sha256": "9139726fd0f5cfd069da87c32ecb98a7778fbefa9efdec1eb94b66d1010cf269",
+  "source_success": 59667191,
+  "source_unassigned": 11767322,
+  "status_counts": {
+    "assigned": 47899869,
+    "first_anchor_outside_bound": 478210,
+    "identity_conflict": 728616,
+    "no_trip": 2160475,
+    "outside_corrected_trip_or_equal_clocks": 4103798,
+    "unknown_duty": 4296223
+  },
+  "stop_namespace": "gtfs",
+  "stop_rule": "mandatory first-stop anchor; stable adaptive onsets correct subsequent schedule; previous-stop half-open allocation within bounded trip windows",
+  "stop_rule_calibrated": false,
+  "target": "validation_count",
+  "timezone": "Europe/Moscow"
+}

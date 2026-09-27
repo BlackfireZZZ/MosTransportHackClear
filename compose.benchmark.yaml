@@ -1,0 +1,15 @@
+name: ${COMPOSE_PROJECT_NAME:-tramflow-benchmark}
+
+services:
+  db:
+    ports:
+      - "${POSTGRES_PORT:-15432}:5432"
+  backend:
+    cpus: ${BENCH_BACKEND_CPUS:-2.0}
+    mem_limit: ${BENCH_BACKEND_MEMORY:-4g}
+    memswap_limit: ${BENCH_BACKEND_MEMORY:-4g}
+    ports:
+      - "${BACKEND_PORT:-18000}:8000"
+  frontend:
+    ports:
+      - "${FRONTEND_PORT:-18080}:80"

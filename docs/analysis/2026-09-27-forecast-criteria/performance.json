@@ -1,0 +1,129 @@
+{
+  "results": [
+    {
+      "url": "http://127.0.0.1:57285/api/v1/forecasts?route_id=1001&horizon=day",
+      "payload": null,
+      "requests": 200,
+      "concurrency": 4,
+      "warmup": 5,
+      "elapsed_seconds": 0.3700480410002456,
+      "completed_rps": 540.4703655757693,
+      "success_rps": 540.4703655757693,
+      "latency_ms": {
+        "p50": 6.622229000186053,
+        "p95": 8.831167000153073,
+        "max": 40.884416999688256
+      },
+      "http_status_counts": {
+        "200": 200
+      },
+      "failures": [],
+      "client_platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+      "latency_scope": "HTTP request and JSON validation; semaphore queue excluded",
+      "scenario": "published_day"
+    },
+    {
+      "url": "http://127.0.0.1:57285/api/v1/planning/forecast",
+      "payload": {
+        "route": "1",
+        "start_date": "2025-11-01",
+        "horizon": "day"
+      },
+      "requests": 200,
+      "concurrency": 4,
+      "warmup": 5,
+      "elapsed_seconds": 0.6286770829997295,
+      "completed_rps": 318.12834507296026,
+      "success_rps": 318.12834507296026,
+      "latency_ms": {
+        "p50": 11.736124499975631,
+        "p95": 18.99829200010572,
+        "max": 43.630750000374974
+      },
+      "http_status_counts": {
+        "200": 200
+      },
+      "failures": [],
+      "client_platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+      "latency_scope": "HTTP request and JSON validation; semaphore queue excluded",
+      "scenario": "planning_day"
+    },
+    {
+      "url": "http://127.0.0.1:57285/api/v1/planning/forecast",
+      "payload": {
+        "route": "1",
+        "start_date": "2025-11-01",
+        "horizon": "year"
+      },
+      "requests": 200,
+      "concurrency": 4,
+      "warmup": 5,
+      "elapsed_seconds": 7.549020792000192,
+      "completed_rps": 26.49350233767311,
+      "success_rps": 26.49350233767311,
+      "latency_ms": {
+        "p50": 150.65629199989417,
+        "p95": 210.2877500001341,
+        "max": 293.67437500013693
+      },
+      "http_status_counts": {
+        "200": 200
+      },
+      "failures": [],
+      "client_platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+      "latency_scope": "HTTP request and JSON validation; semaphore queue excluded",
+      "scenario": "planning_year"
+    }
+  ],
+  "samples": [
+    {
+      "BlockIO": "7.94MB / 0B",
+      "CPUPerc": "96.14%",
+      "Container": "tramflow-criteria-proof-20260927-backend-1",
+      "ID": "f3ced00f6568",
+      "MemPerc": "2.76%",
+      "MemUsage": "113.2MiB / 4GiB",
+      "Name": "tramflow-criteria-proof-20260927-backend-1",
+      "NetIO": "1.11MB / 37MB",
+      "PIDs": "10"
+    },
+    {
+      "BlockIO": "7.94MB / 0B",
+      "CPUPerc": "99.75%",
+      "Container": "tramflow-criteria-proof-20260927-backend-1",
+      "ID": "f3ced00f6568",
+      "MemPerc": "2.77%",
+      "MemUsage": "113.6MiB / 4GiB",
+      "Name": "tramflow-criteria-proof-20260927-backend-1",
+      "NetIO": "1.16MB / 47.6MB",
+      "PIDs": "11"
+    },
+    {
+      "BlockIO": "7.94MB / 0B",
+      "CPUPerc": "99.95%",
+      "Container": "tramflow-criteria-proof-20260927-backend-1",
+      "ID": "f3ced00f6568",
+      "MemPerc": "2.77%",
+      "MemUsage": "113.4MiB / 4GiB",
+      "Name": "tramflow-criteria-proof-20260927-backend-1",
+      "NetIO": "1.18MB / 53.7MB",
+      "PIDs": "11"
+    },
+    {
+      "BlockIO": "7.94MB / 0B",
+      "CPUPerc": "109.33%",
+      "Container": "tramflow-criteria-proof-20260927-backend-1",
+      "ID": "f3ced00f6568",
+      "MemPerc": "3.06%",
+      "MemUsage": "125.4MiB / 4GiB",
+      "Name": "tramflow-criteria-proof-20260927-backend-1",
+      "NetIO": "1.21MB / 59.9MB",
+      "PIDs": "12"
+    }
+  ],
+  "backend_limits": {
+    "cpus": 2,
+    "memory_gib": 4,
+    "swap_gib": 0
+  }
+}

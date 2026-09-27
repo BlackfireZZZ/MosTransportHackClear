@@ -1,0 +1,12 @@
+{
+  "schema_version": "tramflow.scored-route-hour-approvals.v1",
+  "approved": [
+    {
+      "manifest_sha256": "38b53cd9e872117b49d4b2e9a3b95286eeacedae2aebb20d0b5c0e2a8ae7ff30",
+      "csv_sha256": "edc07cca26ff21dd5228f744dea79940eb81a65c3ce5368aa743e2fc2fd0f11f",
+      "evaluation_sha256": "ee897716c563f5b5666aa4b0677aafc7c7cc3d2ecf58d710a0b054d8ecf13e12",
+      "producer_commit": "a54820492d2ded9d9f0ac05b5160ac0c53c0c2f1",
+      "model_version": "catboost50-uniform-recency60-routeshape-v1"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "shape": [
+    304,
+    584,
+    24
+  ],
+  "identities": 584,
+  "audit": {
+    "source_version": "boarding-real-training.v1",
+    "source_rows": 2816184,
+    "mass": 59667191.0,
+    "row_eligible_mass": 59667191.0,
+    "block_eligible_mass": 59667191.0,
+    "blocked_route_hours": 0,
+    "zero_policy": "inferred zeros only after complete route-hour mass reconciliation",
+    "target_kind": "uncalibrated inferred pseudo-count; never observed stop labels",
+    "geometry": "retrospective declared catalog; ambiguous sequence omitted",
+    "identity_universe": "declared catalog plus ten unknown buckets; not target-row support",
+    "source_manifest_sha256": "d39405084cdbe937a6416500ebac79ba6a7d746b5e352cc30b0738f87a108eb1",
+    "source_file_hashes": {
+      "soft_train.csv.gz": "17b7576c25ec6903cc9d60cf6fe76437dda12ee7f7d9908f9b3e33c693845210",
+      "soft_development.csv.gz": "37628dc3eee10cc068110e9160b526aefac61a679491429720c4e62a0a63399c",
+      "soft_diagnostic.csv.gz": "17757f96e552fc79bf6d747597e7c346b97734f966e79472eb92a4ec4330a8a3"
+    },
+    "catalog_sha256": "34a46e4a3aca9b61e96c59f76fc15bf47d740abeed029f3e8ec865dfbbd377d4",
+    "archive_sha256": "7e34e56b93f7379cb5abe9aca8e87967cb986111b9939caead5a3fea6c296e5a"
+  },
+  "source_method": "duty-calendar-clock.first-stop-local-anchors-transfer.v3"
+}

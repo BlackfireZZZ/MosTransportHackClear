@@ -1,0 +1,144 @@
+<style>
+#tram-peaks { position:relative; color:var(--foreground); }
+#tram-peaks .chartbox { width:100%; }
+#tram-peaks .chart { display:block; overflow:visible; }
+#tram-peaks .chart text { fill:var(--foreground); font-size:12px; }
+#tram-peaks .legend { display:flex; flex-wrap:wrap; gap:8px 16px; margin:12px 0; }
+#tram-peaks .legend button { display:inline-flex; align-items:center; gap:6px; background:transparent; border:0; padding:4px 0; color:var(--foreground); font:inherit; }
+#tram-peaks .legend button[aria-pressed="false"] { opacity:.48; }
+#tram-peaks .swatch { width:24px; height:0; border-top:2px solid var(--foreground); display:inline-block; }
+#tram-peaks .tooltip { position:absolute; pointer-events:none; background:var(--popover); color:var(--popover-foreground); padding:10px; border:1px solid var(--border); z-index:3; max-width:270px; }
+#tram-peaks .meta { margin:8px 0; }
+#tram-peaks .selected-row { background:var(--accent); color:var(--accent-foreground); }
+#tram-peaks .method-cell { min-width:170px; }
+#tram-peaks .method-label { white-space:nowrap; display:inline-block; margin-right:8px; }
+#tram-peaks .table-footer { display:flex; align-items:center; flex-wrap:wrap; gap:12px; margin-top:10px; }
+#tram-peaks .summary-line { min-height:24px; margin:8px 0; }
+</style>
+<div id="tram-peaks">
+  <h2>Оплаты и предполагаемые начала посадки</h2>
+  <div class="viz-controls">
+    <label class="form-label">Записи 15 мая 2025 · Москва
+      <select class="form-select" id="tram-example" aria-label="Выбрать вагонную сессию"></select>
+    </label>
+  </div>
+  <div class="meta text-small" id="tram-meta"></div>
+  <div class="legend" id="tram-legend" aria-label="Показать метки методов"></div>
+  <div class="chartbox"><svg class="chart" role="img" aria-label="Количество оплат за 30 секунд и вертикальные линии кандидатов начала посадки"></svg></div>
+  <div class="summary-line tabular-nums" id="tram-detail" aria-live="polite"></div>
+  <h3>Оплаты за каждые 30 секунд</h3>
+  <div class="table-responsive">
+    <table class="table table-sm tabular-nums" aria-label="Оплаты по валидаторам за 30 секунд">
+      <thead id="tram-head"></thead><tbody id="tram-rows"></tbody><tfoot id="tram-foot"></tfoot>
+    </table>
+  </div>
+  <div class="table-footer">
+    <button type="button" class="btn" id="tram-prev">← Предыдущие 5 минут</button>
+    <span class="text-small tabular-nums" id="tram-page"></span>
+    <button type="button" class="btn" id="tram-next">Следующие 5 минут →</button>
+  </div>
+  <div class="tooltip text-small" role="tooltip" hidden></div>
+</div>
+<script type="application/json" id="tram-inline-data">[{"route":"17","date":"15.05.2025","start":"07:50:00","end":"08:20:00","clock":["07:50:00","07:50:30","07:51:00","07:51:30","07:52:00","07:52:30","07:53:00","07:53:30","07:54:00","07:54:30","07:55:00","07:55:30","07:56:00","07:56:30","07:57:00","07:57:30","07:58:00","07:58:30","07:59:00","07:59:30","08:00:00","08:00:30","08:01:00","08:01:30","08:02:00","08:02:30","08:03:00","08:03:30","08:04:00","08:04:30","08:05:00","08:05:30","08:06:00","08:06:30","08:07:00","08:07:30","08:08:00","08:08:30","08:09:00","08:09:30","08:10:00","08:10:30","08:11:00","08:11:30","08:12:00","08:12:30","08:13:00","08:13:30","08:14:00","08:14:30","08:15:00","08:15:30","08:16:00","08:16:30","08:17:00","08:17:30","08:18:00","08:18:30","08:19:00","08:19:30","08:20:00"],"total":287,"devices":["В1","В2","В3","В4","В5","В6"],"counts":[[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[3,2,2,3,2,3],[0,0,0,0,0,0],[1,0,0,0,0,1],[0,0,0,0,2,0],[6,5,5,8,9,10],[1,6,0,1,2,4],[1,3,1,3,3,3],[2,3,4,2,2,4],[0,0,1,0,0,0],[0,0,0,0,0,0],[6,2,5,4,5,3],[0,0,0,0,1,0],[1,1,6,3,1,2],[0,0,0,0,0,3],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[1,2,0,3,1,2],[0,1,0,0,0,0],[1,0,0,1,0,0],[0,0,0,0,0,0],[1,0,2,0,0,0],[0,0,0,0,0,1],[0,0,0,0,0,0],[0,1,1,0,0,0],[0,0,0,0,0,1],[0,0,0,0,0,0],[0,4,1,3,0,0],[6,4,2,5,5,2],[1,0,0,1,0,0],[0,0,0,0,0,0],[3,5,2,1,3,2],[0,2,0,0,0,2],[1,1,0,0,1,1],[0,0,0,0,0,0],[0,0,0,0,0,0],[2,1,1,0,2,0],[0,0,0,0,1,0],[2,2,0,0,3,2],[0,0,0,2,0,0],[0,0,0,0,0,0],[0,0,0,1,0,0],[0,0,0,0,0,0],[0,0,0,0,0,1],[0,0,0,0,1,0],[0,1,0,1,0,0],[0,1,2,0,3,1],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[2,2,2,4,3,3],[2,0,0,0,1,0],[0,0,0,0,0,0],[1,0,0,2,3,1],[0,0,0,1,0,0],[0,0,0,0,0,0],[0,0,0,2,0,0]],"methods":{"consensus3_5s":[222.0,227.0,291.5,395.0,620.0,925.0,930.0,1032.0,1469.0,1606.0,1690.0],"adaptive_scan":[222.0,291.0,395.0,620.0,921.0,1032.0,1468.0,1604.0,1690.0],"feature_gmm":[227.0,294.0,395.0,461.0,620.0,935.0,1037.0,1237.0,1470.0,1608.0,1692.0],"algorithm_ml":[221.5,291.0,393.5,923.0,1604.0,1690.0],"hdbscan5":[103.0,107.0,221.0,231.0,233.0,238.0,291.0,306.0,311.0,392.0,443.0,613.0,925.0,930.0,952.0,1020.0,1175.0,1218.0,1406.0,1604.0,1690.0],"synchrony":[103.0,222.0,224.0,226.0,231.0,235.0,241.0,292.0,295.0,306.0,395.0,398.0,620.0,925.0,930.0,935.0,940.0,942.0,959.0,1032.0,1037.0,1040.0,1104.0,1235.0,1469.0,1608.0,1612.0,1617.0,1690.0]}},{"route":"12","date":"15.05.2025","start":"08:10:00","end":"08:40:00","clock":["08:10:00","08:10:30","08:11:00","08:11:30","08:12:00","08:12:30","08:13:00","08:13:30","08:14:00","08:14:30","08:15:00","08:15:30","08:16:00","08:16:30","08:17:00","08:17:30","08:18:00","08:18:30","08:19:00","08:19:30","08:20:00","08:20:30","08:21:00","08:21:30","08:22:00","08:22:30","08:23:00","08:23:30","08:24:00","08:24:30","08:25:00","08:25:30","08:26:00","08:26:30","08:27:00","08:27:30","08:28:00","08:28:30","08:29:00","08:29:30","08:30:00","08:30:30","08:31:00","08:31:30","08:32:00","08:32:30","08:33:00","08:33:30","08:34:00","08:34:30","08:35:00","08:35:30","08:36:00","08:36:30","08:37:00","08:37:30","08:38:00","08:38:30","08:39:00","08:39:30","08:40:00"],"total":234,"devices":["В1","В2","В3","В4","В5","В6"],"counts":[[5,3,3,6,3,2],[5,2,7,3,3,5],[0,0,2,1,2,2],[0,0,0,0,0,0],[4,4,6,3,5,2],[0,0,0,2,1,2],[0,0,0,1,0,0],[1,1,0,1,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[1,3,0,0,1,2],[2,1,4,5,3,1],[0,0,0,0,0,0],[1,0,0,1,0,1],[0,0,0,2,3,1],[0,0,0,1,1,0],[0,1,0,0,0,1],[1,2,2,1,2,3],[0,0,0,0,0,0],[2,1,3,1,2,3],[0,0,1,0,1,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,2,3,2,2,1],[1,0,0,1,2,0],[0,0,0,0,0,0],[0,2,4,3,4,3],[0,0,0,0,0,2],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,1,1,1],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,1,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[1,3,3,2,6,6],[1,0,1,2,1,2],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,1,6,1,4,3],[0,0,0,1,0,1],[0,0,0,0,0,0],[0,0,1,0,0,0],[0,1,0,0,1,1],[0,0,0,0,0,1],[0,0,0,0,0,0],[0,0,0,0,0,0]],"methods":{"consensus3_5s":[0.0,48.0,125.5,356.5,612.5,768.0,842.5,1420.0,1444.0,1568.0],"adaptive_scan":[0.0,126.0,356.0,544.0,614.0,768.0,840.0,1419.0,1444.0,1568.0],"feature_gmm":[48.0,127.0,357.0,538.0,614.0,770.0,845.0,1423.0,1444.0,1569.0],"algorithm_ml":[0.0,125.5,355.0,612.5,768.0,842.5,1419.0,1568.0],"hdbscan5":[0.0,39.0,46.0,54.0,125.0,142.0,354.0,368.0,445.0,536.0,611.0,768.0,845.0,850.0,1419.0,1431.0,1568.0,1679.0],"synchrony":[0.0,4.0,9.0,41.0,48.0,50.0,55.0,58.0,125.0,130.0,357.0,361.0,368.0,463.0,550.0,611.0,768.0,774.0,840.0,845.0,850.0,856.0,1114.0,1421.0,1423.0,1426.0,1432.0,1436.0,1444.0,1465.0,1568.0,1571.0,1582.0]}},{"route":"11","date":"15.05.2025","start":"13:10:00","end":"13:40:00","clock":["13:10:00","13:10:30","13:11:00","13:11:30","13:12:00","13:12:30","13:13:00","13:13:30","13:14:00","13:14:30","13:15:00","13:15:30","13:16:00","13:16:30","13:17:00","13:17:30","13:18:00","13:18:30","13:19:00","13:19:30","13:20:00","13:20:30","13:21:00","13:21:30","13:22:00","13:22:30","13:23:00","13:23:30","13:24:00","13:24:30","13:25:00","13:25:30","13:26:00","13:26:30","13:27:00","13:27:30","13:28:00","13:28:30","13:29:00","13:29:30","13:30:00","13:30:30","13:31:00","13:31:30","13:32:00","13:32:30","13:33:00","13:33:30","13:34:00","13:34:30","13:35:00","13:35:30","13:36:00","13:36:30","13:37:00","13:37:30","13:38:00","13:38:30","13:39:00","13:39:30","13:40:00"],"total":239,"devices":["В1","В2","В3","В4","В5","В6"],"counts":[[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,1,0,4,0],[3,1,1,2,3,5],[1,3,1,4,5,4],[0,3,5,1,0,0],[1,0,1,0,1,1],[2,4,5,3,5,1],[0,0,0,1,0,0],[0,0,0,0,0,0],[1,1,5,1,1,4],[0,1,0,0,0,0],[0,0,0,0,0,1],[4,4,3,2,4,0],[0,0,0,0,0,0],[0,2,0,2,0,1],[0,0,0,1,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,1,2,2,5,4],[0,0,0,0,0,0],[1,2,3,1,3,1],[1,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,1,1,0,1,1],[0,0,1,0,1,0],[0,0,0,0,1,0],[2,0,0,1,1,3],[1,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,1,2],[0,0,0,0,0,0],[1,1,0,1,0,0],[1,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[1,0,3,0,2,2],[0,1,2,0,0,1],[0,1,0,0,0,0],[0,2,0,1,0,2],[0,6,7,4,3,5],[0,1,4,1,1,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,1,4,0,0,0],[0,0,2,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[2,4,2,0,2,2],[2,3,3,0,0,4]],"methods":{"consensus3_5s":[237.0,602.0,666.0,901.0,1478.0,1507.0,1760.0],"adaptive_scan":[107.0,237.0,421.0,600.0,666.0,901.0,1427.0,1507.0,1760.0],"feature_gmm":[127.0,240.0,426.0,604.0,667.0,901.0,1370.0,1482.0,1760.0],"algorithm_ml":[107.0,237.0,420.0,600.0,666.0,899.5,1507.0,1759.0],"hdbscan5":[107.0,158.0,164.0,193.0,237.0,334.0,419.0,494.0,600.0,666.0,830.0,898.0,1031.0,1361.0,1464.0,1478.0,1482.0,1507.0,1591.0,1758.0,1770.0],"synchrony":[127.0,159.0,167.0,237.0,240.0,438.0,604.0,666.0,672.0,679.0,830.0,901.0,1036.0,1108.0,1464.0,1467.0,1478.0,1482.0,1485.0,1488.0,1493.0,1507.0,1760.0,1770.0]}}]</script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+(() => {
+ const root=document.getElementById('tram-peaks');
+ const data=JSON.parse(document.getElementById('tram-inline-data').textContent);
+ const defs=[
+  {id:'consensus3_5s',name:'≥3 семейства',short:'3С',color:'var(--red)',dash:'',width:2.2},
+  {id:'adaptive_scan',name:'Адаптивный',short:'А',color:'var(--viz-series-2)',dash:'7 4',width:1.6},
+  {id:'feature_gmm',name:'GMM',short:'G',color:'var(--viz-series-5)',dash:'2 3',width:1.6},
+  {id:'algorithm_ml',name:'Адаптивный + HDBSCAN',short:'А+H',color:'var(--viz-series-3)',dash:'9 3 2 3',width:1.5},
+  {id:'hdbscan5',name:'HDBSCAN',short:'H',color:'var(--viz-series-1)',dash:'4 4',width:1.3},
+  {id:'synchrony',name:'Синхронность',short:'С',color:'var(--viz-series-6)',dash:'1 4',width:1.3}
+ ];
+ const select=root.querySelector('#tram-example'),svg=d3.select(root.querySelector('svg'));
+ let example=0,page=0,chosen=Math.floor(data[0].methods.consensus3_5s[0]/30),enabled=new Set(['consensus3_5s','adaptive_scan','feature_gmm']);
+ let x,y,frame,width;
+ const tip=root.querySelector('.tooltip');
+ function restore(s) {
+  const p=s?.privateContent;
+  if(!p)return;
+  if(Number.isInteger(p.example)&&p.example>=0&&p.example<data.length)example=p.example;
+  if(Number.isInteger(p.chosen)&&p.chosen>=0&&p.chosen<60)chosen=p.chosen;
+  if(Number.isInteger(p.page)&&p.page>=0&&p.page<6)page=p.page;
+  if(Array.isArray(p.enabled))enabled=new Set(p.enabled.filter(id=>defs.some(d=>d.id===id)));
+ }
+ restore(window.openai?.widgetState);
+ function save() {
+  const w=data[example];
+  if(window.openai?.setWidgetState)window.openai.setWidgetState({modelContent:{route:w.route,date:w.date,window:w.start+'–'+w.end,selectedInterval:w.clock[chosen]+'–'+w.clock[chosen+1],methods:[...enabled]},privateContent:{example,page,chosen,enabled:[...enabled]}}).catch(()=>{});
+ }
+ data.forEach((w,i)=>{const option=document.createElement('option');option.value=i;option.textContent='Маршрут '+w.route+' · '+w.start.slice(0,5)+'–'+w.end.slice(0,5);select.append(option);});
+ function clock(second) {
+  const w=data[example];const p=w.start.split(':').map(Number);const all=p[0]*3600+p[1]*60+p[2]+Math.floor(second);
+  const base=[Math.floor(all/3600)%24,Math.floor(all/60)%60,all%60].map(v=>String(v).padStart(2,'0')).join(':');
+  return base+(second%1?',5':'');
+ }
+ function inBin(w,id,b){return w.methods[id].filter(t=>t>=b*30&&t<(b+1)*30);}
+ function legend() {
+  const box=root.querySelector('#tram-legend');box.replaceChildren();
+  defs.forEach(d=>{const b=document.createElement('button');b.type='button';b.className='cursor-interaction';b.setAttribute('aria-pressed',String(enabled.has(d.id)));b.setAttribute('aria-label',d.name+': '+data[example].methods[d.id].length+' кандидатов за окно');
+   const sw=document.createElement('span');sw.className='swatch';sw.style.borderColor=d.color;sw.style.borderTopStyle=d.dash?'dashed':'solid';sw.setAttribute('aria-hidden','true');
+   const txt=document.createElement('span');txt.textContent=d.short+' — '+d.name+' · '+data[example].methods[d.id].length;b.append(sw,txt);
+   b.addEventListener('click',()=>{enabled.has(d.id)?enabled.delete(d.id):enabled.add(d.id);render();save();});box.append(b);
+  });
+ }
+ function table() {
+  const w=data[example];root.querySelector('#tram-head').innerHTML='<tr><th scope="col">Интервал</th>'+w.devices.map(d=>'<th class="text-end" scope="col">'+d+'</th>').join('')+'<th scope="col" class="text-end">Всего</th><th scope="col">Начала · видимые методы</th></tr>';
+  const body=root.querySelector('#tram-rows');body.replaceChildren();
+  for(let b=page*10;b<page*10+10;b++){
+   const tr=document.createElement('tr');if(b===chosen)tr.className='selected-row';
+   let cells='<th class="text-nowrap" scope="row">'+w.clock[b]+'–'+w.clock[b+1]+'</th>'+w.counts[b].map(n=>'<td class="text-end">'+n+'</td>').join('');
+   cells+='<td class="text-end"><strong>'+d3.sum(w.counts[b])+'</strong></td>';
+   const matches=defs.filter(d=>enabled.has(d.id)).flatMap(d=>inBin(w,d.id,b).map(t=>'<span class="method-label">'+d.short+' '+clock(t)+'</span>'));
+   cells+='<td class="method-cell">'+(matches.join('')||'—')+'</td>';tr.innerHTML=cells;body.append(tr);
+  }
+  const totals=w.devices.map((_,j)=>d3.sum(w.counts,row=>row[j]));
+  root.querySelector('#tram-foot').innerHTML='<tr><th scope="row">Все 30 минут</th>'+totals.map(v=>'<td class="text-end">'+v+'</td>').join('')+'<td class="text-end"><strong>'+w.total+'</strong></td><td>3С · А · G · А+H · H · С</td></tr>';
+  root.querySelector('#tram-page').textContent=w.clock[page*10]+'–'+w.clock[(page+1)*10]+' · '+(page+1)+'/6';
+  root.querySelector('#tram-prev').disabled=page===0;root.querySelector('#tram-next').disabled=page===5;
+  const found=defs.filter(d=>enabled.has(d.id)&&inBin(w,d.id,chosen).length).map(d=>d.name).join(', ');
+  root.querySelector('#tram-detail').textContent=w.clock[chosen]+'–'+w.clock[chosen+1]+': '+d3.sum(w.counts[chosen])+' оплат'+(found?' · '+found:' · без меток видимых методов');
+ }
+ function draw() {
+  const w=data[example];width=root.querySelector('.chartbox').getBoundingClientRect().width;
+  if(width<1)return;const height=350;frame={left:64,right:width-18,top:35,bottom:height-62};
+  svg.attr('width',width).attr('height',height).attr('viewBox','0 0 '+width+' '+height);svg.selectAll('*').remove();
+  svg.append('title').text('Маршрут '+w.route+': оплаты за 30 секунд, вертикальные метки предполагаемых начал');
+  const totals=w.counts.map(row=>d3.sum(row));const extent=d3.extent([0,...totals]);
+  x=d3.scaleLinear().domain([-15,1815]).range([frame.left+4,frame.right-4]);
+  y=d3.scaleLinear().domain([0,Math.max(1,extent[1])*1.12]).nice().range([frame.bottom-1,frame.top+6]);
+  svg.append('rect').attr('data-chart-frame','').attr('x',frame.left).attr('y',frame.top).attr('width',frame.right-frame.left).attr('height',frame.bottom-frame.top).attr('fill','none').attr('stroke','var(--border)');
+  y.ticks(5).filter(n=>Number.isInteger(n)&&n>0).forEach(n=>svg.append('line').attr('x1',frame.left).attr('x2',frame.right).attr('y1',y(n)).attr('y2',y(n)).attr('stroke','var(--border)').attr('stroke-opacity',.55));
+  svg.selectAll('.bar').data(totals).join('rect').attr('class','bar').attr('x',(_,i)=>x(i*30)+1).attr('y',d=>y(d)).attr('width',Math.max(1,x(30)-x(0)-2)).attr('height',d=>y(0)-y(d)).attr('fill','var(--foreground)').attr('opacity',(_,i)=>i===chosen?.48:.2);
+  defs.filter(d=>enabled.has(d.id)).reverse().forEach(d=>{
+   const g=svg.append('g').attr('data-method',d.id);
+   g.selectAll('line').data(w.methods[d.id]).join('line').attr('x1',t=>x(t)).attr('x2',t=>x(t)).attr('y1',frame.top+3).attr('y2',frame.bottom-1).attr('stroke',d.color).attr('stroke-width',d.width).attr('stroke-dasharray',d.dash).attr('stroke-opacity',d.id==='consensus3_5s'?.9:.65);
+  });
+  const xt=width<440?[0,900,1800]:[0,300,600,900,1200,1500,1800];
+  const axis=svg.append('g').attr('transform','translate(0,'+frame.bottom+')').call(d3.axisBottom(x).tickValues(xt).tickFormat(t=>clock(t).slice(0,5)).tickSize(4));axis.select('.domain').remove();
+  axis.selectAll('.tick').each(function(v){d3.select(this).select('text').attr('text-anchor',v===0?'start':v===1800?'end':'middle');});
+  const ya=svg.append('g').attr('transform','translate('+frame.left+',0)').call(d3.axisLeft(y).tickValues(y.ticks(5).filter(Number.isInteger)).tickSize(4));ya.select('.domain').remove();
+  svg.selectAll('.tick line').attr('stroke','var(--border)');
+  svg.append('text').attr('class','axis-title').attr('data-axis','y').attr('x',frame.left).attr('y',18).text('Оплаты / 30 с');
+  svg.append('text').attr('class','axis-title').attr('data-axis','x').attr('x',(frame.left+frame.right)/2).attr('y',height-13).attr('text-anchor','middle').text('Время · Москва');
+  const guide=svg.append('line').attr('data-chart-hover-guide','').attr('y1',frame.top).attr('y2',frame.bottom).attr('stroke','var(--foreground)').attr('stroke-width',1).attr('visibility','hidden');
+  svg.append('rect').attr('data-chart-hit','').attr('data-chart-hover-overlay','cross-series').attr('x',frame.left).attr('y',frame.top).attr('width',frame.right-frame.left).attr('height',frame.bottom-frame.top).attr('fill','transparent')
+   .on('pointermove',function(event){const [px]=d3.pointer(event,this);const second=Math.max(0,Math.min(1799.999,x.invert(px)));const b=Math.floor(second/30);guide.attr('x1',px).attr('x2',px).attr('visibility','visible');
+    tip.innerHTML='<strong>'+w.clock[b]+'–'+w.clock[b+1]+'</strong><div>Всего: '+totals[b]+'</div>'+defs.filter(d=>enabled.has(d.id)).map(d=>'<div>'+d.short+': '+(inBin(w,d.id,b).map(clock).join(', ')||'—')+'</div>').join('');tip.hidden=false;
+    const rr=root.getBoundingClientRect();tip.style.left=Math.max(0,Math.min(width-tip.offsetWidth,event.clientX-rr.left+12))+'px';tip.style.top=Math.max(0,event.clientY-rr.top-tip.offsetHeight-10)+'px';
+   }).on('pointerleave',()=>{tip.hidden=true;guide.attr('visibility','hidden');})
+   .on('click',function(event){const [px]=d3.pointer(event,this);chosen=Math.max(0,Math.min(59,Math.floor(x.invert(px)/30)));page=Math.floor(chosen/10);tip.hidden=true;table();draw();save();});
+  const bounds=axis.selectAll('.tick text').nodes().map(el=>({el,box:el.getBoundingClientRect()}));
+  for(let i=1;i<bounds.length;i++){if(bounds[i].box.left-bounds[i-1].box.right<4&&i<bounds.length-1)d3.select(bounds[i].el.parentNode).remove();}
+ }
+ function render(){select.value=example;const w=data[example];root.querySelector('#tram-meta').textContent=w.total+' оплат · '+w.devices.length+' валидаторов · реальные записи · кандидаты начала, не подтверждённые остановки';legend();table();draw();}
+ select.addEventListener('change',()=>{example=Number(select.value);chosen=Math.floor((data[example].methods.consensus3_5s[0]||0)/30);page=Math.floor(chosen/10);tip.hidden=true;render();save();});
+ root.querySelector('#tram-prev').addEventListener('click',()=>{page=Math.max(0,page-1);chosen=page*10;table();draw();save();});
+ root.querySelector('#tram-next').addEventListener('click',()=>{page=Math.min(5,page+1);chosen=page*10;table();draw();save();});
+ window.addEventListener('openai:set_globals',event=>{if(event.detail?.globals?.widgetState){restore(event.detail.globals.widgetState);render();}});
+ new ResizeObserver(draw).observe(root.querySelector('.chartbox'));render();
+})();
+</script>

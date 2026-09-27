@@ -1,0 +1,26 @@
+{
+  "schema_version": "boarding-model-quality.v1",
+  "finding": "state-specific unnormalized timetable precision creates source-dependent phase prior",
+  "affected": {
+    "route": "7",
+    "date": "2025-07-29",
+    "successful_events": 10382,
+    "raw_strict_candidate_events": 17,
+    "boardable_exact_states": 18,
+    "boardable_proxy_states": 18
+  },
+  "controlled_fixture": {
+    "equal_geometry_and_departures": true,
+    "residual_seconds": 180,
+    "posterior_exact": 0.299832,
+    "posterior_proxy": 0.700168
+  },
+  "real_uniform_clock_potential_mean": {
+    "exact": 0.494425,
+    "proxy": 0.866838
+  },
+  "decision": "exclude affected route/day from both soft and strict training; retain immutable candidates and full mass",
+  "reason": "mixed_schedule_precision_uncalibrated",
+  "composition_sha256": "ca79088fec4316197de2d8f6083e61299616023c7e4a14553ab02f7fb7665f19",
+  "real_accuracy_measured": false
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "date": "2025-11-01",
+    "exact_value": 125.58041958041959,
+    "factor_1_2_exact": true
+  },
+  {
+    "date": "2025-11-08",
+    "exact_value": 33.246428571428574,
+    "factor_1_2_exact": true
+  },
+  {
+    "date": "2025-12-31",
+    "exact_value": 31.390243902439025,
+    "factor_1_2_exact": true
+  },
+  {
+    "horizon": "day",
+    "buckets": 24,
+    "mass_conserved": true
+  },
+  {
+    "horizon": "month",
+    "buckets": 30,
+    "mass_conserved": true
+  },
+  {
+    "horizon": "year",
+    "buckets": 12,
+    "mass_conserved": true
+  }
+]

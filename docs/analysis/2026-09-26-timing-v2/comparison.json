@@ -1,0 +1,266 @@
+{
+  "dates": [
+    "2025-01-15",
+    "2025-01-18",
+    "2025-02-15",
+    "2025-02-18",
+    "2025-03-15",
+    "2025-03-18",
+    "2025-04-15",
+    "2025-04-18",
+    "2025-05-15",
+    "2025-05-18",
+    "2025-06-15",
+    "2025-06-18",
+    "2025-07-15",
+    "2025-07-18",
+    "2025-08-15",
+    "2025-08-18",
+    "2025-09-15",
+    "2025-09-18",
+    "2025-10-15",
+    "2025-10-18"
+  ],
+  "days": 20,
+  "events": 4017177,
+  "scope": "20 fixed dates, not a complete 304-day replacement",
+  "routes": [
+    {
+      "route": "1",
+      "events": 348042,
+      "assignment_agreement": 0.14055015502383544,
+      "v2_distance_from_uniform_fraction": 0.07343288915934476,
+      "clock_disabled_days": 0,
+      "hourly_mass_moved_fraction": 0.05305699954795134,
+      "period_spatial_mass_moved_fraction": 0.0487046351093061,
+      "stop_totals_pearson": 0.7339386391863334,
+      "v2_raw_stable": 0
+    },
+    {
+      "route": "11",
+      "events": 601666,
+      "assignment_agreement": 0.04567511092123221,
+      "v2_distance_from_uniform_fraction": 0.07361292973794768,
+      "clock_disabled_days": 20,
+      "hourly_mass_moved_fraction": 0.06986883001485743,
+      "period_spatial_mass_moved_fraction": 0.06576355722850566,
+      "stop_totals_pearson": 0.42412504253919914,
+      "v2_raw_stable": 0
+    },
+    {
+      "route": "12",
+      "events": 627506,
+      "assignment_agreement": 0.05516494971890725,
+      "v2_distance_from_uniform_fraction": 0.07149635095271117,
+      "clock_disabled_days": 20,
+      "hourly_mass_moved_fraction": 0.06911422363841563,
+      "period_spatial_mass_moved_fraction": 0.06134137128997196,
+      "stop_totals_pearson": 0.6034498673982231,
+      "v2_raw_stable": 0
+    },
+    {
+      "route": "17",
+      "events": 965263,
+      "assignment_agreement": 0.08016391489273521,
+      "v2_distance_from_uniform_fraction": 0.05167715811207484,
+      "clock_disabled_days": 0,
+      "hourly_mass_moved_fraction": 0.05736740601294789,
+      "period_spatial_mass_moved_fraction": 0.05473593805125701,
+      "stop_totals_pearson": 0.5714631022525021,
+      "v2_raw_stable": 0
+    },
+    {
+      "route": "25",
+      "events": 129956,
+      "assignment_agreement": 0.08206336011822296,
+      "v2_distance_from_uniform_fraction": 0.08185670434406905,
+      "clock_disabled_days": 0,
+      "hourly_mass_moved_fraction": 0.07297123456336425,
+      "period_spatial_mass_moved_fraction": 0.0633274928438002,
+      "stop_totals_pearson": 0.44054510615340536,
+      "v2_raw_stable": 0
+    },
+    {
+      "route": "26",
+      "events": 325121,
+      "assignment_agreement": 0.10923581088357924,
+      "v2_distance_from_uniform_fraction": 0.0821942148729248,
+      "clock_disabled_days": 0,
+      "hourly_mass_moved_fraction": 0.07641292550015466,
+      "period_spatial_mass_moved_fraction": 0.07000685527582387,
+      "stop_totals_pearson": 0.29693091034980895,
+      "v2_raw_stable": 0
+    },
+    {
+      "route": "28",
+      "events": 191106,
+      "assignment_agreement": 0.183676780788577,
+      "v2_distance_from_uniform_fraction": 0.06830113978280121,
+      "clock_disabled_days": 0,
+      "hourly_mass_moved_fraction": 0.07750001889382292,
+      "period_spatial_mass_moved_fraction": 0.07253999867387523,
+      "stop_totals_pearson": 0.5328257548644043,
+      "v2_raw_stable": 0
+    },
+    {
+      "route": "50",
+      "events": 401793,
+      "assignment_agreement": 0.08809526181061188,
+      "v2_distance_from_uniform_fraction": 0.0869994988016367,
+      "clock_disabled_days": 20,
+      "hourly_mass_moved_fraction": 0.06943882737392243,
+      "period_spatial_mass_moved_fraction": 0.06748145563789941,
+      "stop_totals_pearson": 0.9081181874763146,
+      "v2_raw_stable": 0
+    },
+    {
+      "route": "7",
+      "events": 426723,
+      "assignment_agreement": 0.0786858031190135,
+      "v2_distance_from_uniform_fraction": 0.05571741194462453,
+      "clock_disabled_days": 18,
+      "hourly_mass_moved_fraction": 0.14439558902905045,
+      "period_spatial_mass_moved_fraction": 0.13979863446014548,
+      "stop_totals_pearson": 0.210083974899169,
+      "v2_raw_stable": 0
+    }
+  ],
+  "daily": [
+    {
+      "date": "2025-01-15",
+      "events": 238424.0,
+      "daily_spatial_mass_moved_fraction": 0.07175791801417472
+    },
+    {
+      "date": "2025-01-18",
+      "events": 146227.0,
+      "daily_spatial_mass_moved_fraction": 0.06193086201245233
+    },
+    {
+      "date": "2025-02-15",
+      "events": 147606.0,
+      "daily_spatial_mass_moved_fraction": 0.06161412902465185
+    },
+    {
+      "date": "2025-02-18",
+      "events": 238976.0,
+      "daily_spatial_mass_moved_fraction": 0.07173014216514174
+    },
+    {
+      "date": "2025-03-15",
+      "events": 158553.0,
+      "daily_spatial_mass_moved_fraction": 0.0657273126021172
+    },
+    {
+      "date": "2025-03-18",
+      "events": 251506.0,
+      "daily_spatial_mass_moved_fraction": 0.0785844918659288
+    },
+    {
+      "date": "2025-04-15",
+      "events": 257676.0,
+      "daily_spatial_mass_moved_fraction": 0.06892788164640547
+    },
+    {
+      "date": "2025-04-18",
+      "events": 255202.0,
+      "daily_spatial_mass_moved_fraction": 0.07594809719201795
+    },
+    {
+      "date": "2025-05-15",
+      "events": 253615.00000000003,
+      "daily_spatial_mass_moved_fraction": 0.07552291021257272
+    },
+    {
+      "date": "2025-05-18",
+      "events": 123072.99999999999,
+      "daily_spatial_mass_moved_fraction": 0.058452686376057064
+    },
+    {
+      "date": "2025-06-15",
+      "events": 108374.0,
+      "daily_spatial_mass_moved_fraction": 0.057113434730818445
+    },
+    {
+      "date": "2025-06-18",
+      "events": 214836.0,
+      "daily_spatial_mass_moved_fraction": 0.07340935651680781
+    },
+    {
+      "date": "2025-07-15",
+      "events": 180343.0,
+      "daily_spatial_mass_moved_fraction": 0.06474488713665918
+    },
+    {
+      "date": "2025-07-18",
+      "events": 196434.0,
+      "daily_spatial_mass_moved_fraction": 0.06522684026791202
+    },
+    {
+      "date": "2025-08-15",
+      "events": 188747.0,
+      "daily_spatial_mass_moved_fraction": 0.07284619880439354
+    },
+    {
+      "date": "2025-08-18",
+      "events": 190004.0,
+      "daily_spatial_mass_moved_fraction": 0.07433795398117114
+    },
+    {
+      "date": "2025-09-15",
+      "events": 234902.0,
+      "daily_spatial_mass_moved_fraction": 0.07783065336314852
+    },
+    {
+      "date": "2025-09-18",
+      "events": 238150.0,
+      "daily_spatial_mass_moved_fraction": 0.08111690138950209
+    },
+    {
+      "date": "2025-10-15",
+      "events": 250625.99999999997,
+      "daily_spatial_mass_moved_fraction": 0.08010705499857447
+    },
+    {
+      "date": "2025-10-18",
+      "events": 143903.0,
+      "daily_spatial_mass_moved_fraction": 0.0648169454239043
+    }
+  ],
+  "schedule_edge_reasons": {
+    "accepted_unpaired_clock_shift": 9718,
+    "nonboardable_boundary": 360,
+    "terminal_connector": 360,
+    "inconsistent_temporal_half_duration": 214,
+    "absent_schedule": 232,
+    "no_physically_feasible_lag": 38,
+    "inconsistent_temporal_half_coverage": 14,
+    "insufficient_matching_coverage": 6,
+    "invalid_departure_clocks": 34
+  },
+  "schedule_durations_seconds": {
+    "120.0": 4052,
+    "60.0": 5006,
+    "180.0": 526,
+    "300.0": 80,
+    "240.0": 54
+  },
+  "v1_moving_transitions": 907489,
+  "v1_unobserved_visit_fraction": 0.46218985905944016,
+  "v1_absolute_residual_seconds": {
+    "p10": 4.27000000000001,
+    "p50": 22.762857074737553,
+    "p90": 63.80780948246934,
+    "p95": 92.31999995231628
+  },
+  "stop_direction_features": 541,
+  "selected_state_posterior_quantiles": {
+    "p10": 0.0114178073460501,
+    "p50": 0.0258022965235357,
+    "p90": 0.0583395362913873,
+    "p95": 0.0767189728777289,
+    "p99": 0.1336482911939503
+  },
+  "v2_distance_from_uniform_fraction": 0.06814235564019469,
+  "note": "Candidate agreement and model residuals do not measure real stop accuracy."
+}

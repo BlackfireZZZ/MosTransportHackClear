@@ -1,0 +1,12 @@
+{
+  "selected": "mean_s1_d0.0",
+  "configs": 114,
+  "evaluations": 684,
+  "minimum_score": 0.8147347957334818,
+  "mean_score": 0.852895253329434,
+  "stable_above_088": false,
+  "stable_above_093": false,
+  "plan_sha256": "3261d9646d319de6689781f581dc4e467ec7f3779c75d08e5b369e67f8de7290",
+  "submission_rows": 14640,
+  "promotion": "experimental; no untouched holdout"
+}

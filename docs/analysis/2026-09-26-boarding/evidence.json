@@ -1,0 +1,330 @@
+{
+  "G0": "passed",
+  "G1": "device_only",
+  "G2": "synthetic_invariants_passed",
+  "G3": "unverified_no_independent_gold",
+  "G4": "no_complex_method_adoption",
+  "G5": "not_in_scope",
+  "archive_sha256": "7e34e56b93f7379cb5abe9aca8e87967cb986111b9939caead5a3fea6c296e5a",
+  "base_sha": "181a73bfd6a3b4e361229e148cd2decc2b9e922f",
+  "branch": "agent/boarding-dataset",
+  "cleanup": "retained: local data artifacts and unpushed branch",
+  "cohort": {
+    "complete_service_days_verified": false,
+    "dates": {
+      "development": [
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07"
+      ],
+      "diagnostic": [
+        "2025-09-05",
+        "2025-09-06",
+        "2025-09-07",
+        "2025-09-08"
+      ],
+      "train": [
+        "2025-01-03",
+        "2025-01-04",
+        "2025-01-05",
+        "2025-01-06"
+      ]
+    },
+    "diagnostic_is_blind": false,
+    "exclude_bad_vehicle_days": false,
+    "frozen_before_detection": true,
+    "negative_control": "route5: audit all successful rows, no manufactured journeys",
+    "route_density": {
+      "1": 16848.815789473683,
+      "11": 29415.99342105263,
+      "12": 30721.154605263157,
+      "7": 21360.802631578947
+    },
+    "routes": [
+      "1",
+      "12"
+    ],
+    "schema_version": "boarding-cohort.v1",
+    "selection": "lowest/highest successful rows per observed day among 1/7/11/12; first covered Friday-Monday per chronological split"
+  },
+  "existing_model_artifacts_unchanged": {
+    "cat_native/history.npz": "3b1a007e26aede5a15c3401e5123ad8f6730bcff132d5b1fad064df8f51dcb02",
+    "cat_native/model.cbm": "cd3a793af8ddc3cd201709f2c0d6e41047fb6808d385532ad609b6ce79977ba1",
+    "cat_native/model.json": "5b0ca3e9a4195bb302ae6057afb5897de46c952a5e67fac5d068c82184a12a08",
+    "cat_native_rmse/history.npz": "3b1a007e26aede5a15c3401e5123ad8f6730bcff132d5b1fad064df8f51dcb02",
+    "cat_native_rmse/model.cbm": "604bb012e377d2a1c37c7728bc428cb3d1f9d9d58cda97eeb176cf5ff368fb2f",
+    "cat_native_rmse/model.json": "b5b1d291edfedb1c058dcc09a64d5cd0e79b209bdd7452bef0b2950ef1fb016a",
+    "forecast.json": "f7ae69678873d31779d6ba238d4ab04c271c84916c01b719af242239e626edd2",
+    "manifest.json": "10b125075c52c1581cfd5c159fe9cdb40e617763f2c4480b346677e2454e3391",
+    "selection.json": "6d31308e184358973aa309d04c08959a17f1f3177e6822893f6987b56b53f518",
+    "submission.csv": "111ee8cc26e99b281ead3b68d6a9df5f84df25fc9499a53839b5508c7a2a75f1"
+  },
+  "full_repeat_shards_identical": true,
+  "identity_quality": {
+    "conflict_resolution": "potential hour overlap; never majority assignment",
+    "conflicting_device_hours": 34,
+    "conflicting_vehicle_hours": 9884,
+    "denominator": 59667191,
+    "devices_with_multiple_vehicles": 1912,
+    "full_key_success": 59253306,
+    "identity_certified": false,
+    "intervals": "audit.sqlite relations: first/last per hour/device/vehicle/route/exit",
+    "missing_ids": {
+      "bus_exit_no": {
+        "rejected": 0,
+        "success": 58
+      },
+      "device_no": {
+        "rejected": 0,
+        "success": 0
+      },
+      "garage_number": {
+        "rejected": 17623,
+        "success": 413827
+      }
+    },
+    "pooling": "device_only",
+    "schema_version": "boarding-identity.v1"
+  },
+  "implementation": {
+    "audit.py": "b8295d04983fbf755658e1892fa2e4be14b7df334f7ffcbaea15dc4a72d3d76e",
+    "records.py": "b395913f225a66bead2d9bacc13526dfb24bd2f04dab75149f201de6f55c2858"
+  },
+  "integration": "reviewed local commit fast-forward to main",
+  "label_mismatches": 0,
+  "labels_reconciled": 57551,
+  "mass_categories": {
+    "ambiguous": 0,
+    "assigned": 0,
+    "out_of_scope": 29769774,
+    "unassigned": 29897417
+  },
+  "members": [
+    {
+      "bytes": 8160068959,
+      "name": "train.csv",
+      "rows": 49051926,
+      "sha256": "e4157ed76a617c8a0ab5674eb7de3b3503489f21307ba68893dd0de04317360f"
+    },
+    {
+      "bytes": 2231502820,
+      "name": "test.csv",
+      "rows": 13391571,
+      "sha256": "d58523f79b0d47d72eafe0da9a0c72fb8b472bf4b74e68a4e9f789bd6656557a"
+    }
+  ],
+  "outside_range_rows": 615,
+  "pilot": {
+    "B0": {
+      "assignment_coverage": 0,
+      "unresolved_mass": 427494
+    },
+    "B1": {
+      "reason": "no validated historical trip binding",
+      "status": "not_applicable"
+    },
+    "B2_DP_real": {
+      "reason": "unverified historical patterns",
+      "status": "not_applicable"
+    },
+    "G0": "passed",
+    "G1": "device_only",
+    "G3": "unverified",
+    "certified_stop_labels": 0,
+    "comparisons": [
+      {
+        "bursts": 312420,
+        "detector": "D0",
+        "gap": 10,
+        "geographic_accuracy": "unverified",
+        "max_span": 30,
+        "singleton_fraction": 0.7333845464438896,
+        "size_p50": 1.0,
+        "size_p90": 2.0,
+        "successful_mass": 427494,
+        "wall_seconds": 0.9516658329957863
+      },
+      {
+        "bursts": 311550,
+        "detector": "D0",
+        "gap": 10,
+        "geographic_accuracy": "unverified",
+        "max_span": 90,
+        "singleton_fraction": 0.7337345530412454,
+        "size_p50": 1.0,
+        "size_p90": 2.0,
+        "successful_mass": 427494,
+        "wall_seconds": 1.3092133330064826
+      },
+      {
+        "bursts": 265804,
+        "detector": "D0",
+        "gap": 30,
+        "geographic_accuracy": "unverified",
+        "max_span": 90,
+        "singleton_fraction": 0.6234857263246603,
+        "size_p50": 1.0,
+        "size_p90": 3.0,
+        "successful_mass": 427494,
+        "wall_seconds": 1.0246488339907955
+      },
+      {
+        "bursts": 237388,
+        "detector": "D0",
+        "gap": 60,
+        "geographic_accuracy": "unverified",
+        "max_span": 180,
+        "singleton_fraction": 0.5702183766660488,
+        "size_p50": 1.0,
+        "size_p90": 3.0,
+        "successful_mass": 427494,
+        "wall_seconds": 0.9292033329984406
+      }
+    ],
+    "coverage_ledger": [],
+    "events": 449635,
+    "expected_visit_count": null,
+    "feature_use": "retrospective descriptive only; use cutoff detector for forecasting",
+    "journey_boundaries": "unresolved; long gaps and midnight are not inferred turnarounds",
+    "real_stop_accuracy": "unverified",
+    "rejected": 22141,
+    "schema_version": "boarding-pilot.v1",
+    "selected_default": {
+      "gap": 30,
+      "max_span": 90
+    },
+    "selection_reason": "predeclared scenario; no quality-based winner without gold",
+    "successful": 427494,
+    "time_quality": {
+      "batching_proven": false,
+      "clock_correction": false,
+      "missing_device_success_excluded": 0,
+      "negative_gaps_in_source_order": 22093,
+      "seconds_multiple_vehicles": 74782,
+      "vehicle_seconds_multiple_devices": 35880,
+      "within_device_same_second_excess": 59
+    },
+    "wall_seconds": 82.06569274999492
+  },
+  "pilot_export_event_keys_unique": true,
+  "pilot_unresolved_mass_checked": true,
+  "raw_rows": 62443497,
+  "rejected_in_range": 2775691,
+  "remaining": [
+    "independently verified historical patterns",
+    "dated vehicle/validator bindings",
+    "independent visit/event/count gold",
+    "source availability metadata"
+  ],
+  "runtime": {
+    "pandas": "3.0.6",
+    "peak_rss_bytes": 576454656,
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "wall_seconds": 489.5360345829977
+  },
+  "schema_version": "boarding-evidence.v1",
+  "source_run_manifest_sha256": "8d9e6eaf582be4e3a1f823a0893636468b1ca76ff619402ec93dd7be3fa13a84",
+  "stability_cases": 9,
+  "successful_rows": 59667191,
+  "synthetic_cases": 24,
+  "synthetic_summary": {
+    "B0": {
+      "assigned_events": 0,
+      "budget_exhausted_cases": 0,
+      "coverage": 0.0,
+      "synthetic_stop_accuracy_assigned": null,
+      "synthetic_stop_correct_fraction_all_events": 0.0,
+      "synthetic_visit_accuracy_assigned": null,
+      "synthetic_visit_correct_fraction_all_events": 0.0,
+      "total_events": 156,
+      "unknown_events": 156
+    },
+    "B2": {
+      "assigned_events": 117,
+      "budget_exhausted_cases": 0,
+      "coverage": 0.75,
+      "synthetic_stop_accuracy_assigned": 0.7435897435897436,
+      "synthetic_stop_correct_fraction_all_events": 0.5576923076923077,
+      "synthetic_visit_accuracy_assigned": 0.7435897435897436,
+      "synthetic_visit_correct_fraction_all_events": 0.5576923076923077,
+      "total_events": 156,
+      "unknown_events": 39
+    },
+    "exact_monotone": {
+      "assigned_events": 87,
+      "budget_exhausted_cases": 0,
+      "coverage": 0.5576923076923077,
+      "synthetic_stop_accuracy_assigned": 0.8620689655172413,
+      "synthetic_stop_correct_fraction_all_events": 0.4807692307692308,
+      "synthetic_visit_accuracy_assigned": 0.8620689655172413,
+      "synthetic_visit_correct_fraction_all_events": 0.4807692307692308,
+      "total_events": 156,
+      "unknown_events": 69
+    }
+  },
+  "task_status": "blocked only for historical/gold-dependent stop labels; available pipeline delivered",
+  "training": {
+    "availability_verified": false,
+    "coverage": "only source-observed route/hour cells; missing cells are not zero-filled",
+    "date_range": {
+      "chunk_rows": 250000,
+      "end": "2025-11-01",
+      "pattern_routes": [
+        "1",
+        "5",
+        "7",
+        "11",
+        "12"
+      ],
+      "schema_version": "boarding-audit.v1",
+      "start": "2025-01-01",
+      "timezone": "Europe/Moscow"
+    },
+    "diagnostic_is_blind": false,
+    "feature_version": "route-history.v1",
+    "files": {
+      "development": {
+        "name": "development.csv",
+        "sha256": "3abce9682d72b318c5db4faa576f0b94817f9c6f4ff5c8022b6dbada886fd8c8"
+      },
+      "diagnostic": {
+        "name": "diagnostic.csv",
+        "sha256": "0397a5ae52ea5392c5b3faacbfcc9dfbe55e134f7adccc0149e815a099414102"
+      },
+      "train": {
+        "name": "train.csv",
+        "sha256": "9e0d2a2473e4413ce9fc5bdaff1233b067ac6e43055e0d430c2824c82de13fd2"
+      }
+    },
+    "forecast_origin": "civil midnight before the target day",
+    "leakage_policy": "every historical input event_hour < forecast_origin; fixed lags >=24h",
+    "mode": "retrospective_event_time_only",
+    "rows": {
+      "development": 11742,
+      "diagnostic": 11331,
+      "train": 34521
+    },
+    "schema_version": "boarding-training.v1",
+    "source_manifest_sha256": "8d9e6eaf582be4e3a1f823a0893636468b1ca76ff619402ec93dd7be3fa13a84",
+    "split_unit": "whole civil day; not random events",
+    "stop_labels_eligible": false,
+    "target": "validation_count",
+    "timezone": "Europe/Moscow",
+    "unit": "event_count"
+  },
+  "training_target_total_checked": 59667191,
+  "verification": {
+    "backend_passed": 350,
+    "backend_sql_skipped": 48,
+    "focused_boarding_tests": 54,
+    "frontend_passed": 92,
+    "make_check": "passed",
+    "ml_golden_eval": "passed",
+    "ml_passed": 353,
+    "reference_contracts_passed": 119,
+    "static_build_contract_compose": "passed"
+  },
+  "worktree": "/Users/cute/MosTransport2026Hack-worktrees/boarding-dataset"
+}

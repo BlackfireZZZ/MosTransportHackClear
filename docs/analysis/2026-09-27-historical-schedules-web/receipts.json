@@ -1,0 +1,369 @@
+{
+  "probe-results.json": [
+    {
+      "name": "cdx_transport_q1",
+      "url": "https://web.archive.org/cdx/search/cdx?url=transport.mos.ru%2Ftransport%2Fschedule%2F%2A&output=json&filter=statuscode%3A200&from=20250101&to=20250331&collapse=urlkey",
+      "error": "curl: (28) Operation timed out after 25004 milliseconds with 0 bytes received\n",
+      "seconds": 25.0
+    },
+    {
+      "name": "cdx_mosgortrans_q1",
+      "url": "https://web.archive.org/cdx/search/cdx?url=rasp.mosgortrans.ru%2F%2A&output=json&filter=statuscode%3A200&from=20250101&to=20250331&collapse=urlkey&limit=1000",
+      "error": "curl: (28) Operation timed out after 25001 milliseconds with 0 bytes received\n",
+      "seconds": 25.0
+    },
+    {
+      "name": "cdx_gtfs_moscow",
+      "url": "https://web.archive.org/cdx/search/cdx?url=greens3.transitpdf.com%2Ffiles%2Fsourcedata%2Fmoscow-official.zip&output=json&filter=statuscode%3A200&to=20251231",
+      "error": "curl: (28) Operation timed out after 25000 milliseconds with 0 bytes received\n",
+      "seconds": 25.0
+    },
+    {
+      "name": "wayback_route1",
+      "url": "https://archive.org/wayback/available?url=transport.mos.ru/transport/schedule/route/1&timestamp=20250201",
+      "status": "200",
+      "final_url": "https://archive.org/wayback/available?url=transport.mos.ru/transport/schedule/route/1&timestamp=20250201",
+      "bytes": 105,
+      "sha256": "4d6014f8e88c8e4b1b9a77e9597c6120718efc96ed8f092e6071eb49056f1b47",
+      "seconds": 0.7,
+      "preview": "{\"url\": \"transport.mos.ru/transport/schedule/route/1\", \"archived_snapshots\": {}, \"timestamp\": \"20250"
+    },
+    {
+      "name": "wayback_oldhost",
+      "url": "https://archive.org/wayback/available?url=rasp.mosgortrans.ru/&timestamp=20250201",
+      "status": "200",
+      "final_url": "https://archive.org/wayback/available?url=rasp.mosgortrans.ru/&timestamp=20250201",
+      "bytes": 82,
+      "sha256": "980edfc656d4be200c974be635682fef285bd8f3d5052a3ec16a169e8d679b5a",
+      "seconds": 1.0,
+      "preview": "{\"url\": \"rasp.mosgortrans.ru/\", \"archived_snapshots\": {}, \"timestamp\": \"20250201\"}"
+    },
+    {
+      "name": "mobility_feed",
+      "url": "https://mobilitydatabase.org/feeds/gtfs/mdb-3226",
+      "status": "200",
+      "final_url": "https://mobilitydatabase.org/feeds/gtfs/mdb-3226",
+      "bytes": 351839,
+      "sha256": "430ac0a63d45259a112415962bb96999f7bbfc9c85c6d9da661f488fafa9b0df",
+      "seconds": 1.1,
+      "preview": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=dev"
+    }
+  ],
+  "probe-more-results.json": [
+    {
+      "name": "github_mosgortrans",
+      "url": "https://api.github.com/search/repositories?q=mosgortrans&per_page=50",
+      "status": "200",
+      "final_url": "https://api.github.com/search/repositories?q=mosgortrans&per_page=50",
+      "bytes": 140199,
+      "sha256": "6edd81e19fc18f4a016bb8cbbcd451659aceb73e9a9ca84d34267c0f2db66061",
+      "seconds": 1.1,
+      "preview": "{\n  \"total_count\": 22,\n  \"incomplete_results\": false,\n  \"items\": [\n    {\n      \"id\": 15964362,\n     "
+    },
+    {
+      "name": "github_bot_tree",
+      "url": "https://api.github.com/repos/Rowlyge/moscow-transit-bot/git/trees/main?recursive=1",
+      "status": "200",
+      "final_url": "https://api.github.com/repos/Rowlyge/moscow-transit-bot/git/trees/main?recursive=1",
+      "bytes": 20663,
+      "sha256": "6170a24e864262f2dd3e419de0f108bdd36bea554575f1862d443cc3892d72b8",
+      "seconds": 0.5,
+      "preview": "{\n  \"sha\": \"cb29f9d9f2e1450864882f3eaccc42df5f63b136\",\n  \"url\": \"https://api.github.com/repos/Rowlyg"
+    },
+    {
+      "name": "github_atlas_ru",
+      "url": "https://api.github.com/repos/transitland/transitland-atlas/contents/feeds/ru",
+      "status": "404",
+      "final_url": "https://api.github.com/repos/transitland/transitland-atlas/contents/feeds/ru",
+      "bytes": 141,
+      "sha256": "0f74c8b9c1f03a2b9d2da1ebe4f7c027ecb616202d539401c259562157c5a216",
+      "seconds": 0.4,
+      "preview": "{\n  \"message\": \"Not Found\",\n  \"documentation_url\": \"https://docs.github.com/rest/repos/contents#get-"
+    },
+    {
+      "name": "github_moscow_schedules",
+      "url": "https://api.github.com/search/repositories?q=moscow+schedule+transport&per_page=30",
+      "status": "200",
+      "final_url": "https://api.github.com/search/repositories?q=moscow+schedule+transport&per_page=30",
+      "bytes": 6968,
+      "sha256": "719bc1874677bb67a670ad16fef6d5916a5b806bed83c2c7798461c73e95ee68",
+      "seconds": 0.5,
+      "preview": "{\n  \"total_count\": 1,\n  \"incomplete_results\": false,\n  \"items\": [\n    {\n      \"id\": 134612421,\n     "
+    },
+    {
+      "name": "commoncrawl_q1",
+      "url": "https://index.commoncrawl.org/CC-MAIN-2025-13-index?url=transport.mos.ru%2Ftransport%2Fschedule%2F%2A&output=json&filter=status%3A200",
+      "status": "504",
+      "final_url": "https://index.commoncrawl.org/CC-MAIN-2025-13-index?url=transport.mos.ru%2Ftransport%2Fschedule%2F%2A&output=json&filter=status%3A200",
+      "bytes": 167,
+      "sha256": "2095037b3cdd7f505a1f0da264feb1d93b129a31ff607ac61cbd72404866df35",
+      "seconds": 10.6,
+      "preview": "<html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</"
+    },
+    {
+      "name": "commoncrawl_jan",
+      "url": "https://index.commoncrawl.org/CC-MAIN-2025-05-index?url=rasp.mosgortrans.ru%2F%2A&output=json&filter=status%3A200",
+      "status": "404",
+      "final_url": "https://index.commoncrawl.org/CC-MAIN-2025-05-index?url=rasp.mosgortrans.ru%2F%2A&output=json&filter=status%3A200",
+      "bytes": 58,
+      "sha256": "6ffde26e272dc362f100b84fd3eb9046558b74ef3b5919ea378939067366889b",
+      "seconds": 10.2,
+      "preview": "{\"message\": \"No Captures found for: rasp.mosgortrans.ru/\"}"
+    },
+    {
+      "name": "wayback_known_route7",
+      "url": "https://archive.org/wayback/available?url=https://transport.mos.ru/transport/schedule/route/141501932&timestamp=20250201",
+      "status": "200",
+      "final_url": "https://archive.org/wayback/available?url=https://transport.mos.ru/transport/schedule/route/141501932&timestamp=20250201",
+      "bytes": 121,
+      "sha256": "e67b22741ff725fdd489f3ff80df147268390e62668f25b32ebea35ea5ff470a",
+      "seconds": 5.7,
+      "preview": "{\"url\": \"https://transport.mos.ru/transport/schedule/route/141501932\", \"archived_snapshots\": {}, \"ti"
+    },
+    {
+      "name": "wayback_gtfs",
+      "url": "https://archive.org/wayback/available?url=https://greens3.transitpdf.com/files/sourcedata/moscow-official.zip&timestamp=20250201",
+      "status": "200",
+      "final_url": "https://archive.org/wayback/available?url=https://greens3.transitpdf.com/files/sourcedata/moscow-official.zip&timestamp=20250201",
+      "bytes": 129,
+      "sha256": "fd51984d39d1cb5892b006533cbdff621c0cfa312d25e9388edf377d125bb61f",
+      "seconds": 3.3,
+      "preview": "{\"url\": \"https://greens3.transitpdf.com/files/sourcedata/moscow-official.zip\", \"archived_snapshots\":"
+    }
+  ],
+  "final-probe-results.json": [
+    {
+      "name": "cc_transport_jan",
+      "url": "https://index.commoncrawl.org/CC-MAIN-2025-05-index?url=transport.mos.ru%2Ftransport%2Fschedule%2F&matchType=prefix&output=json&filter=status%3A200",
+      "status": "503",
+      "error": "",
+      "bytes": 197,
+      "sha256": "af0f30709d64371a0f03e408742cf5642172781ce9b5492d34e8db2673adac2f",
+      "preview": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Tempo"
+    },
+    {
+      "name": "cc_transport_feb",
+      "url": "https://index.commoncrawl.org/CC-MAIN-2025-08-index?url=transport.mos.ru%2Ftransport%2Fschedule%2F&matchType=prefix&output=json&filter=status%3A200",
+      "status": "200",
+      "error": "",
+      "bytes": 490,
+      "sha256": "444a8230559363e57ba015147740521635f7353447e7385609d8490aa25708b5",
+      "preview": "{\"urlkey\": \"ru,mos,transport)/transport/schedule/route/141503930\", \"timestamp\": \"20250211125848\", \"url\": \"http"
+    },
+    {
+      "name": "cc_transport_mar",
+      "url": "https://index.commoncrawl.org/CC-MAIN-2025-13-index?url=transport.mos.ru%2Ftransport%2Fschedule%2F&matchType=prefix&output=json&filter=status%3A200",
+      "status": "502",
+      "error": "",
+      "bytes": 157,
+      "sha256": "0aba75d84471181acb8babe5b2cfdd48f3c9242430c310d3187ecff166093e36",
+      "preview": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><c"
+    },
+    {
+      "name": "wayback_calendar",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=transport.mos.ru%2Ftransport%2Fschedule%2Froute%2F141501932",
+      "status": "200",
+      "error": "",
+      "bytes": 23,
+      "sha256": "3946da0ce28400d6505dcbac4420f6f436d9f9b87a3371b75c432562604b6590",
+      "preview": "{\"items\":[[729,200,1]]}"
+    },
+    {
+      "name": "forum250",
+      "url": "https://forumot.ru/topic/30179-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC%D0%B0%D1%85-%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%BE%D0%B2-%D0%B8-%D0%B8%D1%85-%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%D1%85/page/250/",
+      "status": "200",
+      "error": "",
+      "bytes": 402689,
+      "sha256": "f9880db59e56e3d8118a0a4fa7cf5a424ff0dfacc3eb994d26ffb0ee344ba090",
+      "preview": "<!DOCTYPE html>\n<html lang=\"ru-RU\" dir=\"ltr\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n        \n\t\t<title>Измене�"
+    },
+    {
+      "name": "wayback_official_dataset",
+      "url": "https://archive.org/wayback/available?url=https%3A%2F%2Fdata.mos.ru%2Fopendata%2F60661&timestamp=20250201",
+      "status": "200",
+      "error": "",
+      "bytes": 96,
+      "sha256": "0dd9922d5a8a75b3ecd2061df8e5c241307a7d0678950a160c52846ba88e3c70",
+      "preview": "{\"url\": \"https://data.mos.ru/opendata/60661\", \"archived_snapshots\": {}, \"timestamp\": \"20250201\"}"
+    }
+  ],
+  "wayback-calendar-receipts.json": [
+    {
+      "route_path_id": "1",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F1",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    },
+    {
+      "route_path_id": "11",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F11",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    },
+    {
+      "route_path_id": "15",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F15",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    },
+    {
+      "route_path_id": "17",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F17",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    },
+    {
+      "route_path_id": "25",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F25",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    },
+    {
+      "route_path_id": "36",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F36",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    },
+    {
+      "route_path_id": "37",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F37",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    },
+    {
+      "route_path_id": "44",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F44",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    },
+    {
+      "route_path_id": "73",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F73",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    },
+    {
+      "route_path_id": "254",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F254",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    },
+    {
+      "route_path_id": "867",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F867",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    },
+    {
+      "route_path_id": "210",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F210",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    },
+    {
+      "route_path_id": "291",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F291",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    },
+    {
+      "route_path_id": "375",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F375",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    },
+    {
+      "route_path_id": "420",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F420",
+      "status": "200",
+      "error": "",
+      "sha256": "b3479214c273407e3e141dfd09aef2888fe125a91308e7441d2676107ec92ac8",
+      "result": {
+        "items": [
+          [
+            730,
+            404,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "route_path_id": "283",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F283",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    },
+    {
+      "route_path_id": "264",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F264",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    },
+    {
+      "route_path_id": "443",
+      "url": "https://web.archive.org/__wb/calendarcaptures/2?date=2025&groupby=day&url=https%3A%2F%2Ftransport.mos.ru%2Ftransport%2Fschedule%2Froute%2F443",
+      "status": "200",
+      "error": "",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "result": {}
+    }
+  ],
+  "commoncrawl_download": {
+    "index": {
+      "urlkey": "ru,mos,transport)/transport/schedule/route/141503930",
+      "timestamp": "20250211125848",
+      "url": "https://transport.mos.ru/transport/schedule/route/141503930",
+      "mime": "text/html",
+      "mime-detected": "text/html",
+      "status": "200",
+      "digest": "WTENFJH6GHPMNJQ4GVYSIU3OAGHOLOUL",
+      "length": "19554",
+      "offset": "535644659",
+      "filename": "crawl-data/CC-MAIN-2025-08/segments/1738831951706.87/warc/CC-MAIN-20250211103744-20250211133744-00826.warc.gz",
+      "languages": "rus",
+      "encoding": "UTF-8"
+    },
+    "http_status": 206,
+    "decompressed_bytes": 151069,
+    "decompressed_sha256": "044740d02b814e5dbca62dbfb9299a359f13adc32736602077ca17397a0ce7a3",
+    "gzip_sha256": "6c01b32135f6ea47f40078e04d8ee7f806e4b3c51c1a99630d872b8ed37199bb",
+    "h1_elements": 0,
+    "mgt_schedule_occurrences": 0,
+    "data_date_occurrences": 0,
+    "usable": false
+  },
+  "github_history_latest": "2020-06-14T23:25:52Z"
+}

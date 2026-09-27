@@ -1,0 +1,199 @@
+{
+  "schema": "moscow-agency-traffic.v1",
+  "feature_version": null,
+  "model_status": "raw_external_data_not_integrated",
+  "source": "https://www.mskagency.ru",
+  "publisher": "Moscow City News Agency",
+  "retrieved_at": "2026-09-27T12:38:47.291022+00:00",
+  "requested_period": [
+    "2025-01-01",
+    "2025-10-31"
+  ],
+  "actual_period": [
+    "2025-03-06",
+    "2025-10-30"
+  ],
+  "timezone": "Europe/Moscow",
+  "observations": 14,
+  "days": 12,
+  "publication_hour_buckets": 13,
+  "requested_hour_buckets": 7296,
+  "by_month": {
+    "2025-03": 1,
+    "2025-04": 6,
+    "2025-09": 3,
+    "2025-10": 4
+  },
+  "by_score_provider": {
+    "yandex": 14
+  },
+  "speed_observations": 1,
+  "files": {
+    "observations.jsonl": {
+      "sha256": "1c9736cdfeafe6c72524d439e815973946190b26125ac3db0ae4e0fab09498b8"
+    },
+    "observations.csv": {
+      "sha256": "ace85fdc648878aabfee306470de0fa3b4006cded463a0f608eb2370ad72f4d1"
+    }
+  },
+  "pages": [
+    {
+      "url": "https://www.mskagency.ru/search/?criteria=%D0%BF%D1%80%D0%BE%D0%B1%D0%BA%D0%B8&from=01.01.2025&to=31.10.2025&type=text",
+      "sha256": "5ccfbf2b0174e76b4a3de740cee34454530963ddb231fa1810f1ee272d355b29",
+      "bytes": 67700
+    },
+    {
+      "url": "https://www.mskagency.ru/search/?criteria=%D0%BF%D1%80%D0%BE%D0%B1%D0%BA%D0%B8&from=01.01.2025&to=31.10.2025&type=text&page=2",
+      "sha256": "0fdd44dc339d5e1bb989e34193e72f0a87bc954c50a836d2fa32c9ad5029ad00",
+      "bytes": 67731
+    },
+    {
+      "url": "https://www.mskagency.ru/search/?criteria=%D0%BF%D1%80%D0%BE%D0%B1%D0%BA%D0%B8&from=01.01.2025&to=31.10.2025&type=text&page=3",
+      "sha256": "228fc0e2eeca88986af3c5537fc27c8d7d228c593e0b8aa1fc3b1222cca733f6",
+      "bytes": 53843
+    },
+    {
+      "url": "https://www.mskagency.ru/search/?criteria=%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C&from=01.01.2025&to=31.10.2025&type=text",
+      "sha256": "d98c09f14f0212d697dea844ce64f3ae3f2feb1102307814b658fe5973c1e47f",
+      "bytes": 69801
+    },
+    {
+      "url": "https://www.mskagency.ru/search/?criteria=%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C&from=01.01.2025&to=31.10.2025&type=text&page=2",
+      "sha256": "ba65d980603f3d5b02d6b0e79f172759ddc0a1437e8c526d9fe260ed919bf2cc",
+      "bytes": 70522
+    },
+    {
+      "url": "https://www.mskagency.ru/search/?criteria=%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C&from=01.01.2025&to=31.10.2025&type=text&page=3",
+      "sha256": "e3f89b2cdf19194e9285a0f4ab75112431d0387f56580d0d8be33d80a0f7b9ee",
+      "bytes": 71170
+    },
+    {
+      "url": "https://www.mskagency.ru/search/?criteria=%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C&from=01.01.2025&to=31.10.2025&type=text&page=4",
+      "sha256": "aff2b4992af77dac089832358af0bca1c8660a9a47d41b3b1ae09e88ebeea8d3",
+      "bytes": 69454
+    },
+    {
+      "url": "https://www.mskagency.ru/search/?criteria=%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C&from=01.01.2025&to=31.10.2025&type=text&page=5",
+      "sha256": "92a32fab70ac5dc6fde3691547a103da3c667d3902e0c91b446f7824cd83c5d0",
+      "bytes": 70190
+    },
+    {
+      "url": "https://www.mskagency.ru/search/?criteria=%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C&from=01.01.2025&to=31.10.2025&type=text&page=6",
+      "sha256": "6cc08093e25ecee80e12177722a5ed6ae7233c3a63d412a09d0b34d89aeb650e",
+      "bytes": 51715
+    },
+    {
+      "url": "https://www.mskagency.ru/search/?criteria=%D1%81%D1%80%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F+%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D1%8C&from=01.01.2025&to=31.10.2025&type=text",
+      "sha256": "7c622f8f72bd15af782e08775721d438557beb25bd875194d679e38bc3436770",
+      "bytes": 69372
+    },
+    {
+      "url": "https://www.mskagency.ru/search/?criteria=%D1%81%D1%80%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F+%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D1%8C&from=01.01.2025&to=31.10.2025&type=text&page=2",
+      "sha256": "68d010dde790c5af645c5c34224fadf54a9b5e5db3ff7d3405250e7039474f4a",
+      "bytes": 69680
+    },
+    {
+      "url": "https://www.mskagency.ru/search/?criteria=%D1%81%D1%80%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F+%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D1%8C&from=01.01.2025&to=31.10.2025&type=text&page=3",
+      "sha256": "ca48eb13903b50f5aa0daf1f15e27be7e234d3310c4983838db5152f90517244",
+      "bytes": 71257
+    },
+    {
+      "url": "https://www.mskagency.ru/search/?criteria=%D1%81%D1%80%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F+%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D1%8C&from=01.01.2025&to=31.10.2025&type=text&page=4",
+      "sha256": "e21f1f5872f56944283b8618e8e2542342bc607fdcf7bcbdfc4c962089d75b08",
+      "bytes": 64179
+    },
+    {
+      "url": "https://www.mskagency.ru/materials/3458753",
+      "sha256": "da82089285e66ff8b5e357778134f79a16f70df990dba6801c1e90e82fc3d644",
+      "bytes": 49641
+    },
+    {
+      "url": "https://www.mskagency.ru/materials/3464949",
+      "sha256": "94852833d8f36078b582d0009cca8e7bb2df3a68cbc9534673ab4af09f9e1798",
+      "bytes": 48814
+    },
+    {
+      "url": "https://www.mskagency.ru/materials/3468701",
+      "sha256": "d7915dc7f8b6091c0ebecda50df00b7fe3de72b187cb637ac0367e3cd8bf9528",
+      "bytes": 48757
+    },
+    {
+      "url": "https://www.mskagency.ru/materials/3468721",
+      "sha256": "5a201505697e304f3819fac7d7238bf9f4c1329f3c084cf882aceee6c9b3f5f4",
+      "bytes": 48703
+    },
+    {
+      "url": "https://www.mskagency.ru/materials/3470007",
+      "sha256": "2165489d964e3867858c6acea56cbdd08156f988422a3a0ec17ed8166639e8b3",
+      "bytes": 52702
+    },
+    {
+      "url": "https://www.mskagency.ru/materials/3472273",
+      "sha256": "1741d050c9f41054ec71da666d5143e4059941fd76120208496f961873f6bbf2",
+      "bytes": 50368
+    },
+    {
+      "url": "https://www.mskagency.ru/materials/3472279",
+      "sha256": "f53929320b3ed8f29c0bf0bcb05b0c032963d7224b93f55a589102aaab79fd44",
+      "bytes": 48858
+    },
+    {
+      "url": "https://www.mskagency.ru/materials/3472583",
+      "sha256": "877a6907e3a508ed1312fd5a03f04666571f673e350cb9adf1bfaf1c78f7a15d",
+      "bytes": 48759
+    },
+    {
+      "url": "https://www.mskagency.ru/materials/3475641",
+      "sha256": "bcac1a2e57384e565ad52efdf99488e5050812e02c5e94eb5797501cad3537a1",
+      "bytes": 54219
+    },
+    {
+      "url": "https://www.mskagency.ru/materials/3510907",
+      "sha256": "cdd4ad0bf573cdbb303145dc0137d925e4409c0d158dbfc7195a38eb90518fb7",
+      "bytes": 49745
+    },
+    {
+      "url": "https://www.mskagency.ru/materials/3511495",
+      "sha256": "87c067915572dd3336e40a5b16675662a314681a95d0f9bec321b9054376c0f5",
+      "bytes": 50384
+    },
+    {
+      "url": "https://www.mskagency.ru/materials/3511503",
+      "sha256": "6235202be8e7174702ce2128cf1ef87e2532988a3708d470caf0fab66acec889",
+      "bytes": 49376
+    },
+    {
+      "url": "https://www.mskagency.ru/materials/3516147",
+      "sha256": "8bdf12571ddeecbc75424b7cdf8ae35841cef37ebfc49d5f45386f4f86ab4b45",
+      "bytes": 49751
+    },
+    {
+      "url": "https://www.mskagency.ru/materials/3516453",
+      "sha256": "9e3e503402c087cb61c0901d8f736d72de89e20d9615e6cf78e6a3cdcb9ec020",
+      "bytes": 49745
+    },
+    {
+      "url": "https://www.mskagency.ru/materials/3519789",
+      "sha256": "1a200c780ba7fb1e68db7cede05fc0702f9d9fbc740289db4c82f557d4860a9d",
+      "bytes": 48431
+    },
+    {
+      "url": "https://www.mskagency.ru/materials/3520219",
+      "sha256": "f29778869fe2a6d0770cc9d5248e7ca228acd28acb1ded95e920d21e67f92d9a",
+      "bytes": 49430
+    }
+  ],
+  "rejected_candidate_urls": [
+    "https://www.mskagency.ru/materials/3468701",
+    "https://www.mskagency.ru/materials/3475641"
+  ],
+  "leakage_rule": "Only facts published before forecast origin may be used; November/December actuals excluded. Original historical vintage not proven.",
+  "rights": "Numerical facts and source links only; no article text redistributed. No open-data licence established.",
+  "limitations": [
+    "Selective news reports, biased toward congestion peaks; not a continuous traffic archive.",
+    "Citywide road congestion, not tram speeds or route-specific measurements.",
+    "Publication time approximates measurement time; never fill absent hours with zero.",
+    "Yandex and CODD scales are separate providers; do not pool as the same measurement.",
+    "Different publishers may repeat one underlying observation; source URL uniqueness is not sensor independence."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "builder_sha256": "f0a79021737c2f93fcce7e422cbca32fbf7cbf69e1e4d6346b124dad8fe03786",
+  "files": {
+    "direction-periods.png": "a31d1eec38cab44417f765bb20852f68fee5d33472e29971943e87cd26032792",
+    "examples.json": "a77406cbe8ee22f3888d46c108f40e7e7cb7f069931933f84f8d6d779395d6cb",
+    "manifest.json": "5b78503876e7a259b44f2353948f6a8f2bffa84b431b81bd4c87db5de0e8b31a",
+    "summary.json": "16f687c177ce7dc24f1d9c3bff7cddfff199fe52b80d473a3c26ff84c53bc003"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "schema": "parking-history.v1",
+  "feature_version": null,
+  "status": "historical_parking_proxy_not_integrated_into_model",
+  "source": "https://huggingface.co/datasets/matrosovdani/moscow-parking-occupancy",
+  "source_revision": "283c1a33466424b48aef042923c1f8e6bdff3d98",
+  "license": "CC-BY-4.0",
+  "attribution": "Danil Matrosov / ParkOut; upstream Moscow Department of Transport public parking data",
+  "timezone": "Europe/Moscow",
+  "requested_period": [
+    "2025-01-01",
+    "2025-10-31"
+  ],
+  "actual_period": [
+    "2025-04-01T02:22:02.756767+03:00",
+    "2025-10-31T23:42:16.566996+03:00"
+  ],
+  "rows": 1642514,
+  "source_rows": 1643570,
+  "cutoff_excluded_rows": 1056,
+  "parking_lots": 178,
+  "snapshot_instants": 9691,
+  "days": 208,
+  "hour_buckets": 4927,
+  "invalid_occupancy_rates": 14444,
+  "invalid_counts": 0,
+  "always_zero_free_lots_in_retained_history": 6,
+  "rows_by_month": {
+    "2025-04": 239400,
+    "2025-05": 250526,
+    "2025-06": 221000,
+    "2025-07": 244349,
+    "2025-08": 245446,
+    "2025-09": 212520,
+    "2025-10": 229273
+  },
+  "runtime": {
+    "pandas": "2.3.2",
+    "pyarrow": "19.0.1"
+  },
+  "source_files": {
+    "occupancy_2025-03.parquet": {
+      "sha256": "38dbd9e55b154d0418b3941b93246a5eb156cd5d7cbdd5f04d61ae3eaef3ec14",
+      "bytes": 5974
+    },
+    "occupancy_2025-04.parquet": {
+      "sha256": "a121af3b0e607ee045d998033d4e901ea925d6c57bcd230a1f79190e7e0386b8",
+      "bytes": 635950
+    },
+    "occupancy_2025-05.parquet": {
+      "sha256": "b93a4b52f14bf66e2deb263aca2f21e1c49479fbd3f6e811bc8b9d507ec820f2",
+      "bytes": 760952
+    },
+    "occupancy_2025-06.parquet": {
+      "sha256": "9a11a4890626708b1cf8be4a911ea920d417a45857d720819b9b2a3cfca97dfb",
+      "bytes": 546973
+    },
+    "occupancy_2025-07.parquet": {
+      "sha256": "ccda065e994789f223cfe12c97c500bb4e29ec7049df7f1a9160c1c61374e763",
+      "bytes": 696435
+    },
+    "occupancy_2025-08.parquet": {
+      "sha256": "673c82436c42c2333f10c2c3ed7143a4582e5ea3368e7cef3f84863bf1ac9943",
+      "bytes": 407165
+    },
+    "occupancy_2025-09.parquet": {
+      "sha256": "a62d2665f01dcf928789cf387e44dd454bde6be3210b5fb92b2e5d9ed0b74cc7",
+      "bytes": 510719
+    },
+    "occupancy_2025-10.parquet": {
+      "sha256": "4c385b731ce00fdc055fd2e2d66b5ce014b8aacf4c660563693e1ca791cd49b8",
+      "bytes": 637599
+    },
+    "parking_spots.parquet": {
+      "sha256": "95e6b891fd84706cdccfc7c5026686e5cfd3a277f42e545884208232788cb3b8",
+      "bytes": 26883
+    },
+    "README.md": {
+      "sha256": "a0b68bbc9d9067248000948e6f70f3c1643a204c4a104a7663edfde6d84c5a44",
+      "bytes": 4183
+    }
+  },
+  "files": {
+    "observations.parquet": {
+      "sha256": "62ab707a815c80d9f05adf58aef958957cafee490f90ee927a270773f836ac11",
+      "bytes": 4883763
+    },
+    "locations-retrospective.parquet": {
+      "sha256": "75b74e799aa897298c090f0284f25a5a6761eaedac60e8d1a070ae69a39c5e2b",
+      "bytes": 10654
+    },
+    "SOURCE_README.md": {
+      "sha256": "a0b68bbc9d9067248000948e6f70f3c1643a204c4a104a7663edfde6d84c5a44",
+      "bytes": 4183
+    }
+  },
+  "leakage_rule": "Every feature must use observations before its forecast origin. Later metadata flags/capacities excluded. Location metadata is retrospective, not a proven 2025 vintage.",
+  "limitations": [
+    "Parking occupancy is a mobility proxy, not road congestion or speed.",
+    "No January–March Moscow-time coverage. Gaps are not zero occupancy.",
+    "Reported API snapshots include stale sensors; zero free spaces is not reliable evidence of full occupancy.",
+    "Invalid rates retained with quality flags; do not silently clip or use them.",
+    "Historical capacity used by upstream occupancy_rate is not independently verified; latest capacity is not used here.",
+    "No measured improvement to tram-flow forecasts established."
+  ]
+}

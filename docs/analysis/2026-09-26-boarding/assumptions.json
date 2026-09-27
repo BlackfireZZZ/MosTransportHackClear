@@ -1,0 +1,11 @@
+{
+  "schema_version": "boarding-assumptions.v1",
+  "assumptions": [
+    {"id":"A1","claim":"Device identifier denotes a usable local observation stream, not a certified vehicle","basis":"raw identity audit","impact":"device-only pooling; conflicting/missing vehicle identities retained","sensitivity":"separate device/vehicle/route/exit tuples; device dropout","validation":"dated device-to-vehicle assignments","status":"unverified"},
+    {"id":"A2","claim":"Gap 30 seconds and maximum span 90 seconds are a descriptive detector scenario","basis":"predeclared plan grid, not measured travel time","impact":"burst granularity","sensitivity":"10/30,10/90,30/90,60/180 seconds","validation":"independently observed visits and event bindings","status":"scenario"},
+    {"id":"A3","claim":"Organizer patterns describe historical 2025 service","basis":"workbook start/actual dates conflict with source period","impact":"all absolute stop-label promotion blocked","sensitivity":"all candidate patterns unverified","validation":"versioned historical patterns with effective dates and provenance","status":"not_established"},
+    {"id":"A4","claim":"Source events were available before a forecast origin","basis":"input_date_time unreliable, no publication log","impact":"export is retrospective event-time data, not certified online features","sensitivity":"future-event mutation tests; no guessed availability time","validation":"publication/availability ledger","status":"unknown"},
+    {"id":"A5","claim":"Validation row counts equal observed onboard occupancy","basis":"only payment events observed","impact":"target remains validation_count/event_count","sensitivity":"no dedup and no inferred alighting","validation":"independent boarding/alighting/occupancy measurements","status":"rejected"},
+    {"id":"A6","claim":"Pooled same-second timestamps prove passenger boarding bursts","basis":"possible device batching and clock effects","impact":"diagnostic synchrony only, no clock correction","sensitivity":"jitter, thinning, device dropout","validation":"independent clock/AVL observations","status":"unverified"}
+  ]
+}

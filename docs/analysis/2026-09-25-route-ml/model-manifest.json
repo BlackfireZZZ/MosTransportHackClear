@@ -1,0 +1,45 @@
+{
+  "candidate": {
+    "name": "cat_native",
+    "engine": "cat",
+    "features": "calendar",
+    "iterations": 800,
+    "depth": 8,
+    "loss": "MAE",
+    "decay_days": null,
+    "native_categories": true,
+    "one_hot_max_size": 24,
+    "calibrated": false,
+    "normalized": false,
+    "blend_type4": 0.0
+  },
+  "source_hash": "6981c9a17b365015af544f36ea053bfdcba8bf54cd1f36c2c193cb6d33933baf",
+  "feature_version": "route-calendar-profiles.v1",
+  "environment": {
+    "python": "3.13.11",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10"
+  },
+  "origin": "2025-11-01T00:00:00+03:00",
+  "generated_at": "2026-09-25T16:24:08.087027+03:00",
+  "rows": 14640,
+  "reload_predictions_equal": true,
+  "feature_importance": {
+    "route": 41.387676870435655,
+    "hour": 47.48776366366026,
+    "weekday": 0.24158718420297867,
+    "day_type": 10.125769829863538,
+    "july_august": 0.7067594973525295,
+    "holiday": 0.05044295448503828
+  },
+  "seconds": 3.266,
+  "status": "experimental-not-published",
+  "hashes": {
+    "forecast.json": "9b27f4d565cab0213111aba845c379348e293dca0edddb193bc21a06da96eef2",
+    "history.npz": "3b1a007e26aede5a15c3401e5123ad8f6730bcff132d5b1fad064df8f51dcb02",
+    "model.cbm": "faa4238256afb739eb545347b57783ddb60e2f93a0ce85a9306f9e49033296f1",
+    "model.json": "5b0ca3e9a4195bb302ae6057afb5897de46c952a5e67fac5d068c82184a12a08",
+    "submission.csv": "de957a6309258f788ecf5d6b476329ce7f01688e690ffd696d5b3985f3337326"
+  }
+}

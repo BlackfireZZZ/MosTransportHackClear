@@ -1,0 +1,106 @@
+{
+  "accumulation_alignment": "precipitation/rain/snowfall for [H,H+1) use API H+1",
+  "actual_grid_coordinates": {
+    "G001": [
+      55.641476,
+      37.60649
+    ],
+    "G002": [
+      55.711773,
+      37.5
+    ],
+    "G003": [
+      55.711773,
+      37.682926
+    ],
+    "G004": [
+      55.782074,
+      37.393078
+    ],
+    "G005": [
+      55.782074,
+      37.576374
+    ],
+    "G006": [
+      55.782074,
+      37.759674
+    ],
+    "G007": [
+      55.85237,
+      37.469387
+    ],
+    "G008": [
+      55.85237,
+      37.65306
+    ],
+    "G009": [
+      55.85237,
+      37.836735
+    ]
+  },
+  "cached_chunks": 45,
+  "date_range": [
+    "2025-01-01",
+    "2025-12-31"
+  ],
+  "estimated_weighted_calls": 688,
+  "feature_version": "moscow-route-zone-weather.v2",
+  "http_requests_this_run": 0,
+  "inventory_locations": 445,
+  "inventory_requests": 18,
+  "leakage": "retrospective actual weather, including dates after 2025-10-31",
+  "raw_csv_sha256": {
+    "route-weather.csv": "b0db98fc03a06222e50b5c09c7c9cd71105225017731e5f78d5b579a245d74a5",
+    "route-zones.csv": "c85ce0af53466a352952c3cf30b2c17c7019ff360414912272b64f409d2db281",
+    "stops.csv": "dc7a868133c40ed7d1190f283149e4a7ad14be6114a7beb36fe2edd3c26ea946",
+    "zone-weather.csv": "9cc742e3a3c89248a1fa422067e739a288642f518608ce4fbda3dc2b65d26f41",
+    "zones.csv": "ada1ef77ee3235c0f33d3ec7fc8f37f130211ce565b834b356d1bc664b4c1b6f"
+  },
+  "requested_zone_count": 9,
+  "route_rows": 87600,
+  "schema": "moscow-route-zone-weather.v2",
+  "sha256": {
+    "route-weather.csv.gz": "4798ebc674918768a5ed823032d8e9683134e11973153c0fe4c7acc19ff94b83",
+    "route-zones.csv": "c85ce0af53466a352952c3cf30b2c17c7019ff360414912272b64f409d2db281",
+    "stops.csv": "dc7a868133c40ed7d1190f283149e4a7ad14be6114a7beb36fe2edd3c26ea946",
+    "zone-weather.csv.gz": "9103ab484ae4df31e7c792d893a190c11ae96d4079df64e34e3abc89eaeb3b27",
+    "zones.csv": "ada1ef77ee3235c0f33d3ec7fc8f37f130211ce565b834b356d1bc664b4c1b6f"
+  },
+  "source": "https://archive-api.open-meteo.com/v1/archive",
+  "source_licence": "CC BY 4.0",
+  "source_model": "best_match",
+  "stop_count": 445,
+  "stop_source": "data/tram_stops.csv",
+  "stop_source_date": "2026-09-18",
+  "stop_source_sha256": "fa15f893a02e70e3993f7457d3b016d82135b0ac6a0aecdf22e06ae96e190dbe",
+  "storage": "gzip hourly CSV; deterministic mtime=0",
+  "timezone": "Europe/Moscow",
+  "total_chunks": 27,
+  "units": {
+    "cloud_cover": "%",
+    "precipitation": "mm",
+    "rain": "mm",
+    "relative_humidity_2m": "%",
+    "snow_depth": "m",
+    "snowfall": "cm",
+    "temperature_2m": "\u00b0C",
+    "weather_code": "WMO code",
+    "wind_gusts_10m": "km/h",
+    "wind_speed_10m": "km/h"
+  },
+  "variables": [
+    "temperature_2m",
+    "relative_humidity_2m",
+    "precipitation",
+    "rain",
+    "snowfall",
+    "snow_depth",
+    "weather_code",
+    "cloud_cover",
+    "wind_speed_10m",
+    "wind_gusts_10m"
+  ],
+  "year": 2025,
+  "zone_count": 9,
+  "zone_rows": 78840
+}

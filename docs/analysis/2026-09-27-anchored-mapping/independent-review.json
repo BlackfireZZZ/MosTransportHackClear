@@ -1,0 +1,20 @@
+{
+  "soft": {
+    "rows": 9172,
+    "bytes_equal": true,
+    "sha256": "d4c750bca1b5631e98043e87229dfbe7f86ff3883dc030e53f50778a521110d8"
+  },
+  "ledger": {
+    "rows": 1056,
+    "bytes_equal": true,
+    "sha256": "f24d612a29da6dae7df37c09ec0972e79b8770b95154dfb090bc3fb70ef37ce5"
+  },
+  "trips": {
+    "rows": 2112,
+    "bytes_equal": true,
+    "sha256": "368b260f9ee790bae52030ec262fb0d096b28beb1468f209429dad08dc1a9262"
+  },
+  "source_total": 238557,
+  "assigned": 146508,
+  "route_hour_keys": 192
+}

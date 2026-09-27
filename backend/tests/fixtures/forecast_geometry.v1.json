@@ -1,0 +1,15 @@
+{
+  "synthetic": true,
+  "schema_version": "forecast-geometry.v1",
+  "mapping_version": "synthetic-map.v1",
+  "entity_version": "synthetic-entities.v1",
+  "graph_version": "fixture-graph.v1",
+  "routes": [{"route_id": "canonical-route", "osm_route_refs": ["А"]}],
+  "stops": [
+    {"route_id": "canonical-route", "direction_id": "out", "stop_id": "same-name", "osm_stop_ids": [101]},
+    {"route_id": "canonical-route", "direction_id": "in", "stop_id": "same-name", "osm_stop_ids": [202]},
+    {"route_id": "canonical-route", "direction_id": "out", "stop_id": "ambiguous", "osm_stop_ids": [101, 202]},
+    {"route_id": "canonical-route", "direction_id": "out", "stop_id": "missing-node", "osm_stop_ids": [999]},
+    {"route_id": "canonical-route", "direction_id": "out", "stop_id": "wrong-route", "osm_stop_ids": [303]}
+  ]
+}

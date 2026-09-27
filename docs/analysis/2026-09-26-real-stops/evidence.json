@@ -1,0 +1,139 @@
+{
+  "schema_version": "boarding-real-evidence.v1",
+  "complete": true,
+  "dates": 304,
+  "source_success": 59667191,
+  "source_rejected": 2775690,
+  "candidate_stop_rows": 59650617,
+  "raw_strict_candidates": 17,
+  "ambiguous": 59667174,
+  "unassigned": 0,
+  "scope_success_difference": 0,
+  "original_hour_mass_conserved": true,
+  "soft_hour_mass_conserved": true,
+  "splits": {
+    "train": {
+      "days": 181,
+      "successful": 36195057,
+      "raw_weak": 0,
+      "unassigned": 0,
+      "soft_rows": 2072286,
+      "eligible_soft_count": 35648665.0,
+      "weak_rows": 0,
+      "eligible_weak_count": 0.0
+    },
+    "development": {
+      "days": 62,
+      "successful": 10717653,
+      "raw_weak": 17,
+      "unassigned": 0,
+      "soft_rows": 669926,
+      "eligible_soft_count": 9834842.0,
+      "weak_rows": 3,
+      "eligible_weak_count": 0.0
+    },
+    "diagnostic": {
+      "days": 61,
+      "successful": 12754481,
+      "raw_weak": 0,
+      "unassigned": 0,
+      "soft_rows": 679486,
+      "eligible_soft_count": 12196492.0,
+      "weak_rows": 0,
+      "eligible_weak_count": 0.0
+    }
+  },
+  "geo_features": 541,
+  "stop_catalog_rows": 2876,
+  "real_stop_accuracy": "unverified",
+  "observed_stop_labels": false,
+  "implementation": {
+    "composition.py": "ca79088fec4316197de2d8f6083e61299616023c7e4a14553ab02f7fb7665f19",
+    "historical.py": "af8d4585d2a8081d707f6137293fbdd2778a05de446f2f895a6127728a7ce1b3",
+    "partitions.py": "e79cf09591cc379f9518e08106bb6c0fa0645ad1fb68c286a1c5e8b4a5106b0c",
+    "real.py": "c738245c88dbcc398e59fb8e3213e9dd5e118be923fc34a4bb021c22bf2c0ebc",
+    "sequence.py": "8fd268df5c9158481a195da2fd6dad5b1b58d83aa76e785f05d27e6ccee22316"
+  },
+  "source_manifest_sha256": "2f20bdd03da072abf4e47d77520ff570138b1203b31f70c750f52159c7f17696",
+  "training_manifest_sha256": "089949a4d45cb51278e18bfa957c2da51d9ecc67da51c0695afa8301a0446d8e",
+  "service_policy": {
+    "complete_historical_calendar": false,
+    "mass_policy": "retain every row and count; do not renormalize or create strict labels",
+    "policy_blocked_soft_mass": 1976810.000000008,
+    "policy_blocked_strict_mass": 0.0,
+    "policy_version": "whole-hour-notice-exclusions.v1",
+    "raw_engine_blocked_soft_mass": 3676024.0,
+    "registry_sha256": "ff7abccac4d621c3d0d396d5db43d6dfa157af14f35678ce16bf1d90653ee202",
+    "restored_soft_mass": 2614602.999999999,
+    "source_urls": [
+      "https://t.me/DtOperativno/20824",
+      "https://t.me/DtOperativno/22029",
+      "https://t.me/DtOperativno/22966",
+      "https://transport.mos.ru/mostrans/all_news/123622",
+      "https://transport.mos.ru/mostrans/all_news/123857",
+      "https://transport.mos.ru/mostrans/all_news/124110",
+      "https://transport.mos.ru/mostrans/all_news/124737",
+      "https://transport.mos.ru/mostrans/all_news/125125",
+      "https://transport.mos.ru/mostrans/all_news/125448",
+      "https://transport.mos.ru/mostrans/all_news/125846",
+      "https://transport.mos.ru/mostrans/all_news/126306",
+      "https://transport.mos.ru/mostrans/all_news/126404",
+      "https://transport.mos.ru/mostrans/all_news/126461",
+      "https://transport.mos.ru/mostrans/all_news/126476",
+      "https://transport.mos.ru/mostrans/all_news/126575",
+      "https://www.mosmetro.ru/news/details/6793",
+      "https://www.mosmetro.ru/news/details/7177",
+      "https://www.mosmetro.ru/news/details/7223",
+      "https://www.mosmetro.ru/news/details/7319",
+      "https://www.mosmetro.ru/news/details/7570"
+    ],
+    "unknown_start_precautions": "not evidence of actual historical closures"
+  },
+  "algorithmic_exclusions": [
+    {
+      "action": "training eligibility false; counts retained without renormalization",
+      "affected_soft_mass": 10382.000000000004,
+      "affected_strict_mass": 17.0,
+      "basis": "unequal exact/proxy clock precision changes state support for equal clocks",
+      "day": "2025-07-29",
+      "official_service_notice": false,
+      "reason": "mixed_schedule_precision_uncalibrated",
+      "route": "7",
+      "source_composition_sha256": "ca79088fec4316197de2d8f6083e61299616023c7e4a14553ab02f7fb7665f19",
+      "source_schema_version": "boarding-real-run.v1"
+    }
+  ],
+  "export_implementation": {
+    "real_export.py": "fa0ef73105c01bced27874b9538b49c8a9fcd20f0d01da6812ef000113252a0b",
+    "service_policy.py": "57e12beeac1fcee5370e8e7f8681db0b797396fc51d10aa44d4f3d2054414891"
+  },
+  "verification": {
+    "make_check": "passed",
+    "backend_passed": 350,
+    "sql_skipped": 48,
+    "ml_passed": 497,
+    "frontend_passed": 92,
+    "contracts_passed": 119,
+    "compose_config": "passed",
+    "same_jan15_jul29_data_hashes_two_vs_six_workers": 14,
+    "sensitivity_report_repeated_identically": true
+  },
+  "workspace": {
+    "base_sha": "06e9884ea4abd86ce2a1d6c92f8fc8a6549ea582",
+    "branch": "agent/boarding-real-alignment",
+    "path": "/Users/cute/MosTransport2026Hack-worktrees/boarding-real-alignment",
+    "integration_method": "local fast-forward after verified completion",
+    "cleanup": "retained for ignored data artifacts and unpushed branch"
+  },
+  "source_in_range_events": 62442882,
+  "source_rejected_all_routes": 2775691,
+  "source_rejected_outside_selected_routes": 1,
+  "outside_route_rejected_evidence": {
+    "route": "5",
+    "event_hour": "2025-10-29 05",
+    "events": 1,
+    "successful": 0,
+    "retained_in": "hash-verified source date shards"
+  },
+  "real_accuracy_gate": "not passed: independent stop truth unavailable; no inferred counts certified as observed"
+}

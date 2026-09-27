@@ -1,0 +1,38 @@
+{
+  "coverage_definition": "positive scheduled arrival interval intersects civil day",
+  "date_range": [
+    "2025-01-01",
+    "2025-10-31"
+  ],
+  "global_orphan_stop_times": 177845,
+  "global_stop_times_integrity": false,
+  "historical_operation_confirmed": false,
+  "implementation_sha256": {
+    "audit.py": "b8295d04983fbf755658e1892fa2e4be14b7df334f7ffcbaea15dc4a72d3d76e",
+    "clock_gtfs.py": "972837131106fa31b4f98dd90a06fd7cc6c2094655c01a71cbbc38f4cba9c5ac",
+    "schedule_preflight.py": "c34345d33fde3e034315a51c79070c02bb1eeed46988c83b1bcacad78817f9f5"
+  },
+  "integrity_scope": "selected tram trips; orphan stop times quarantined",
+  "missing_route_days": 850,
+  "outputs_sha256": {
+    "calendar-ranges.json": "772ef942a427a5035c307c045484f77d4c9eb7a844415ea379abc64dc0c1a8f3",
+    "route-day-coverage.csv": "93bbe8c44dc102c7e9c6ac79955d0c3f72ceeea63c5ce3f03ae9cf66b9d97a9e"
+  },
+  "route_days": 2736,
+  "routes": [
+    "1",
+    "7",
+    "11",
+    "12",
+    "17",
+    "25",
+    "26",
+    "28",
+    "50"
+  ],
+  "schema": "gtfs-schedule-preflight.v1",
+  "selected_trips": 4272,
+  "source_sha256": "dec3ec0ccc2efb7f1327ee6f26a0636a4a271494490e6debedcb2c1ccc579e76",
+  "timezone": "Europe/Moscow",
+  "validity_extended": false
+}

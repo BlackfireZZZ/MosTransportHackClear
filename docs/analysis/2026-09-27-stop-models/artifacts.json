@@ -1,0 +1,25 @@
+{
+  "directory": "/Users/cute/MosTransport2026Hack-worktrees/stop-models-20260927/ml/artifacts/new-duty-stop-models-v3",
+  "files": {
+    "scores.json": {
+      "sha256": "2320c241ed01865dc55896a8ba367b75dda8a10e148635c763cd02baffe50f69",
+      "bytes": 65898
+    },
+    "run.json": {
+      "sha256": "1b39d91a8b10b906bb4b2450890cea5ac6a96f7a3faf749668ef4f269acaf2ea",
+      "bytes": 1116
+    },
+    "dataset_audit.json": {
+      "sha256": "a5cc3544c573901ec07d1273ed9b1aa51fb542001df26466fe695ff785a33188",
+      "bytes": 1128
+    },
+    "submission.csv": {
+      "sha256": "5f2c4e61d122c81dd6132ad559a1b0aee0807c5de9d969da2f8d3774a2cc23e5",
+      "bytes": 293552
+    },
+    "stop_predictions.csv.gz": {
+      "sha256": "5955868aee38626c723e390644462da757bb1fdf3cf50354f21215b0551ef4cb",
+      "bytes": 7547548
+    }
+  }
+}

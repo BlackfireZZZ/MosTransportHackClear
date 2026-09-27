@@ -1,0 +1,894 @@
+{
+  "schema_version": 1,
+  "status": "measured",
+  "updated_at": "2026-09-27T19:32:18.683909+00:00",
+  "source_sha256": "9cf3ff520172599e2d53d7841ef138e983a4377399a3854eccf1df18c7de500b",
+  "required_cases": [
+    {
+      "id": "get_day",
+      "label": "Опубликованный GET · день"
+    },
+    {
+      "id": "get_month",
+      "label": "Опубликованный GET · месяц"
+    },
+    {
+      "id": "get_day_interval",
+      "label": "Опубликованный GET · интервал дня"
+    },
+    {
+      "id": "post_approved_day",
+      "label": "POST approved · день"
+    },
+    {
+      "id": "post_approved_month",
+      "label": "POST approved · месяц"
+    },
+    {
+      "id": "post_approved_year",
+      "label": "POST approved · год, качественный сценарий"
+    },
+    {
+      "id": "post_stop_day",
+      "label": "POST stop_model · день"
+    },
+    {
+      "id": "post_stop_month",
+      "label": "POST stop_model · месяц"
+    },
+    {
+      "id": "post_stop_year",
+      "label": "POST stop_model · год, качественный сценарий"
+    },
+    {
+      "id": "post_stop_filter",
+      "label": "POST stop_model · оценочная остановка/направление"
+    },
+    {
+      "id": "post_invalid_date",
+      "label": "POST · ошибка даты вне периода"
+    }
+  ],
+  "runs": [
+    {
+      "case_id": "get_day",
+      "requests": 200,
+      "warmup": 5,
+      "concurrency": 4,
+      "elapsed_seconds": 0.7939932090012007,
+      "rps": 251.89132316583522,
+      "errors": 0,
+      "failure_types": {},
+      "http_status_counts": {
+        "200": 200
+      },
+      "backend_resource_samples": [
+        {
+          "cpu_percent": 78.51,
+          "memory_bytes": 151414374
+        }
+      ],
+      "backend_cpu_percent_sample_max": 78.51,
+      "backend_memory_bytes_sample_max": 151414374,
+      "latency_ms": {
+        "p50": 14.66969099965354,
+        "p95": 17.730465000568074,
+        "p99": 75.05306100028974
+      },
+      "latency_scope": "HTTP and JSON validation; client semaphore wait excluded",
+      "conditions": {
+        "backend_cpus": 2.0,
+        "backend_memory_bytes": 4294967296,
+        "backend_swap_bytes": 0,
+        "cgroup_cpu_max": "200000 100000",
+        "cgroup_memory_max": "4294967296",
+        "cgroup_memory_swap_max": "0",
+        "workers": 1,
+        "backend_image": "sha256:52a477bec546a7b74533d196c68c60c4f7bbfdba0c55ee29e2782ff3da01426b",
+        "postgres_image": "sha256:b0f9560a2de083e2cc7382e75f808c7381a32852a7ec49117deedb300e552b24",
+        "postgres_version": "postgres (PostgreSQL) 17.11",
+        "postgres_scope": "separate container; not included in backend CPU/memory limits",
+        "postgres_runtime_limits": {
+          "nano_cpus": 0,
+          "memory_bytes": 0
+        },
+        "host_cpu": "AMD Ryzen 7 5800X 8-Core Processor",
+        "host_arch": "x86_64",
+        "host_platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+        "git_sha": "937cca5b6d0fd2564f047cae5bce7e0c27e903d9",
+        "compose_sha256": "7e81d33fa8d8649f1140a61f15187aa369ada0edfc1bfa46e62ce16d9d65d63f",
+        "artifact_sha256": "b44a90ef386c8b3a13ac2c6bd3ea82db774318b0bff9d109e1a40f7d868a8c66",
+        "forecast_manifest_sha256": "a0a7144aba27918d5d413e5d4eb0c81410b565508a5401af06e1e68d9640d430",
+        "approved_config_sha256": "fdc248598b715860663e2ec708ad9224c2c8a91f4d9e013bafc02cbc9771bba8"
+      }
+    },
+    {
+      "case_id": "get_month",
+      "requests": 200,
+      "warmup": 5,
+      "concurrency": 4,
+      "elapsed_seconds": 0.7379715799997939,
+      "rps": 271.0131466039056,
+      "errors": 0,
+      "failure_types": {},
+      "http_status_counts": {
+        "200": 200
+      },
+      "backend_resource_samples": [
+        {
+          "cpu_percent": 0.06,
+          "memory_bytes": 150575513
+        }
+      ],
+      "backend_cpu_percent_sample_max": 0.06,
+      "backend_memory_bytes_sample_max": 150575513,
+      "latency_ms": {
+        "p50": 14.446266000049945,
+        "p95": 17.55934500033618,
+        "p99": 19.38255799905164
+      },
+      "latency_scope": "HTTP and JSON validation; client semaphore wait excluded",
+      "conditions": {
+        "backend_cpus": 2.0,
+        "backend_memory_bytes": 4294967296,
+        "backend_swap_bytes": 0,
+        "cgroup_cpu_max": "200000 100000",
+        "cgroup_memory_max": "4294967296",
+        "cgroup_memory_swap_max": "0",
+        "workers": 1,
+        "backend_image": "sha256:52a477bec546a7b74533d196c68c60c4f7bbfdba0c55ee29e2782ff3da01426b",
+        "postgres_image": "sha256:b0f9560a2de083e2cc7382e75f808c7381a32852a7ec49117deedb300e552b24",
+        "postgres_version": "postgres (PostgreSQL) 17.11",
+        "postgres_scope": "separate container; not included in backend CPU/memory limits",
+        "postgres_runtime_limits": {
+          "nano_cpus": 0,
+          "memory_bytes": 0
+        },
+        "host_cpu": "AMD Ryzen 7 5800X 8-Core Processor",
+        "host_arch": "x86_64",
+        "host_platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+        "git_sha": "937cca5b6d0fd2564f047cae5bce7e0c27e903d9",
+        "compose_sha256": "7e81d33fa8d8649f1140a61f15187aa369ada0edfc1bfa46e62ce16d9d65d63f",
+        "artifact_sha256": "b44a90ef386c8b3a13ac2c6bd3ea82db774318b0bff9d109e1a40f7d868a8c66",
+        "forecast_manifest_sha256": "a0a7144aba27918d5d413e5d4eb0c81410b565508a5401af06e1e68d9640d430",
+        "approved_config_sha256": "fdc248598b715860663e2ec708ad9224c2c8a91f4d9e013bafc02cbc9771bba8"
+      }
+    },
+    {
+      "case_id": "get_day_interval",
+      "requests": 200,
+      "warmup": 5,
+      "concurrency": 4,
+      "elapsed_seconds": 0.6488896650007518,
+      "rps": 308.2188094331388,
+      "errors": 0,
+      "failure_types": {},
+      "http_status_counts": {
+        "200": 200
+      },
+      "backend_resource_samples": [
+        {
+          "cpu_percent": 0.07,
+          "memory_bytes": 150051225
+        }
+      ],
+      "backend_cpu_percent_sample_max": 0.07,
+      "backend_memory_bytes_sample_max": 150051225,
+      "latency_ms": {
+        "p50": 12.246904499988887,
+        "p95": 15.158813999732956,
+        "p99": 30.683406999742147
+      },
+      "latency_scope": "HTTP and JSON validation; client semaphore wait excluded",
+      "conditions": {
+        "backend_cpus": 2.0,
+        "backend_memory_bytes": 4294967296,
+        "backend_swap_bytes": 0,
+        "cgroup_cpu_max": "200000 100000",
+        "cgroup_memory_max": "4294967296",
+        "cgroup_memory_swap_max": "0",
+        "workers": 1,
+        "backend_image": "sha256:52a477bec546a7b74533d196c68c60c4f7bbfdba0c55ee29e2782ff3da01426b",
+        "postgres_image": "sha256:b0f9560a2de083e2cc7382e75f808c7381a32852a7ec49117deedb300e552b24",
+        "postgres_version": "postgres (PostgreSQL) 17.11",
+        "postgres_scope": "separate container; not included in backend CPU/memory limits",
+        "postgres_runtime_limits": {
+          "nano_cpus": 0,
+          "memory_bytes": 0
+        },
+        "host_cpu": "AMD Ryzen 7 5800X 8-Core Processor",
+        "host_arch": "x86_64",
+        "host_platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+        "git_sha": "937cca5b6d0fd2564f047cae5bce7e0c27e903d9",
+        "compose_sha256": "7e81d33fa8d8649f1140a61f15187aa369ada0edfc1bfa46e62ce16d9d65d63f",
+        "artifact_sha256": "b44a90ef386c8b3a13ac2c6bd3ea82db774318b0bff9d109e1a40f7d868a8c66",
+        "forecast_manifest_sha256": "a0a7144aba27918d5d413e5d4eb0c81410b565508a5401af06e1e68d9640d430",
+        "approved_config_sha256": "fdc248598b715860663e2ec708ad9224c2c8a91f4d9e013bafc02cbc9771bba8"
+      }
+    },
+    {
+      "case_id": "post_approved_day",
+      "requests": 200,
+      "warmup": 5,
+      "concurrency": 4,
+      "elapsed_seconds": 1.32928915499906,
+      "rps": 150.45635424607178,
+      "errors": 0,
+      "failure_types": {},
+      "http_status_counts": {
+        "200": 200
+      },
+      "backend_resource_samples": [
+        {
+          "cpu_percent": 43.83,
+          "memory_bytes": 154769817
+        }
+      ],
+      "backend_cpu_percent_sample_max": 43.83,
+      "backend_memory_bytes_sample_max": 154769817,
+      "latency_ms": {
+        "p50": 24.45642000020598,
+        "p95": 39.44292400046834,
+        "p99": 67.19361200157437
+      },
+      "latency_scope": "HTTP and JSON validation; client semaphore wait excluded",
+      "conditions": {
+        "backend_cpus": 2.0,
+        "backend_memory_bytes": 4294967296,
+        "backend_swap_bytes": 0,
+        "cgroup_cpu_max": "200000 100000",
+        "cgroup_memory_max": "4294967296",
+        "cgroup_memory_swap_max": "0",
+        "workers": 1,
+        "backend_image": "sha256:52a477bec546a7b74533d196c68c60c4f7bbfdba0c55ee29e2782ff3da01426b",
+        "postgres_image": "sha256:b0f9560a2de083e2cc7382e75f808c7381a32852a7ec49117deedb300e552b24",
+        "postgres_version": "postgres (PostgreSQL) 17.11",
+        "postgres_scope": "separate container; not included in backend CPU/memory limits",
+        "postgres_runtime_limits": {
+          "nano_cpus": 0,
+          "memory_bytes": 0
+        },
+        "host_cpu": "AMD Ryzen 7 5800X 8-Core Processor",
+        "host_arch": "x86_64",
+        "host_platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+        "git_sha": "937cca5b6d0fd2564f047cae5bce7e0c27e903d9",
+        "compose_sha256": "7e81d33fa8d8649f1140a61f15187aa369ada0edfc1bfa46e62ce16d9d65d63f",
+        "artifact_sha256": "b44a90ef386c8b3a13ac2c6bd3ea82db774318b0bff9d109e1a40f7d868a8c66",
+        "forecast_manifest_sha256": "a0a7144aba27918d5d413e5d4eb0c81410b565508a5401af06e1e68d9640d430",
+        "approved_config_sha256": "fdc248598b715860663e2ec708ad9224c2c8a91f4d9e013bafc02cbc9771bba8"
+      }
+    },
+    {
+      "case_id": "post_approved_month",
+      "requests": 200,
+      "warmup": 5,
+      "concurrency": 4,
+      "elapsed_seconds": 4.480652287000339,
+      "rps": 44.63635809907801,
+      "errors": 0,
+      "failure_types": {},
+      "http_status_counts": {
+        "200": 200
+      },
+      "backend_resource_samples": [
+        {
+          "cpu_percent": 119.62,
+          "memory_bytes": 157181542
+        },
+        {
+          "cpu_percent": 101.47,
+          "memory_bytes": 156028108
+        }
+      ],
+      "backend_cpu_percent_sample_max": 119.62,
+      "backend_memory_bytes_sample_max": 157181542,
+      "latency_ms": {
+        "p50": 87.42448500015598,
+        "p95": 128.71713900131,
+        "p99": 155.01196100012749
+      },
+      "latency_scope": "HTTP and JSON validation; client semaphore wait excluded",
+      "conditions": {
+        "backend_cpus": 2.0,
+        "backend_memory_bytes": 4294967296,
+        "backend_swap_bytes": 0,
+        "cgroup_cpu_max": "200000 100000",
+        "cgroup_memory_max": "4294967296",
+        "cgroup_memory_swap_max": "0",
+        "workers": 1,
+        "backend_image": "sha256:52a477bec546a7b74533d196c68c60c4f7bbfdba0c55ee29e2782ff3da01426b",
+        "postgres_image": "sha256:b0f9560a2de083e2cc7382e75f808c7381a32852a7ec49117deedb300e552b24",
+        "postgres_version": "postgres (PostgreSQL) 17.11",
+        "postgres_scope": "separate container; not included in backend CPU/memory limits",
+        "postgres_runtime_limits": {
+          "nano_cpus": 0,
+          "memory_bytes": 0
+        },
+        "host_cpu": "AMD Ryzen 7 5800X 8-Core Processor",
+        "host_arch": "x86_64",
+        "host_platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+        "git_sha": "937cca5b6d0fd2564f047cae5bce7e0c27e903d9",
+        "compose_sha256": "7e81d33fa8d8649f1140a61f15187aa369ada0edfc1bfa46e62ce16d9d65d63f",
+        "artifact_sha256": "b44a90ef386c8b3a13ac2c6bd3ea82db774318b0bff9d109e1a40f7d868a8c66",
+        "forecast_manifest_sha256": "a0a7144aba27918d5d413e5d4eb0c81410b565508a5401af06e1e68d9640d430",
+        "approved_config_sha256": "fdc248598b715860663e2ec708ad9224c2c8a91f4d9e013bafc02cbc9771bba8"
+      }
+    },
+    {
+      "case_id": "post_approved_year",
+      "requests": 200,
+      "warmup": 5,
+      "concurrency": 4,
+      "elapsed_seconds": 36.53857662399969,
+      "rps": 5.4736669700656515,
+      "errors": 0,
+      "failure_types": {},
+      "http_status_counts": {
+        "200": 200
+      },
+      "backend_resource_samples": [
+        {
+          "cpu_percent": 101.17,
+          "memory_bytes": 155818393
+        },
+        {
+          "cpu_percent": 101.71,
+          "memory_bytes": 155923251
+        },
+        {
+          "cpu_percent": 101.48,
+          "memory_bytes": 155818393
+        },
+        {
+          "cpu_percent": 118.84,
+          "memory_bytes": 170079027
+        },
+        {
+          "cpu_percent": 101.62,
+          "memory_bytes": 155713536
+        },
+        {
+          "cpu_percent": 100.96,
+          "memory_bytes": 156132966
+        },
+        {
+          "cpu_percent": 118.98,
+          "memory_bytes": 169135308
+        },
+        {
+          "cpu_percent": 101.1,
+          "memory_bytes": 156342681
+        },
+        {
+          "cpu_percent": 101.15,
+          "memory_bytes": 156028108
+        },
+        {
+          "cpu_percent": 121.14,
+          "memory_bytes": 169345024
+        },
+        {
+          "cpu_percent": 101.31,
+          "memory_bytes": 156028108
+        },
+        {
+          "cpu_percent": 101.51,
+          "memory_bytes": 155923251
+        },
+        {
+          "cpu_percent": 120.32,
+          "memory_bytes": 155503820
+        },
+        {
+          "cpu_percent": 102.06,
+          "memory_bytes": 156028108
+        },
+        {
+          "cpu_percent": 101.51,
+          "memory_bytes": 155398963
+        },
+        {
+          "cpu_percent": 101.53,
+          "memory_bytes": 155713536
+        },
+        {
+          "cpu_percent": 101.89,
+          "memory_bytes": 155713536
+        },
+        {
+          "cpu_percent": 105.47,
+          "memory_bytes": 166723584
+        },
+        {
+          "cpu_percent": 14.24,
+          "memory_bytes": 155398963
+        }
+      ],
+      "backend_cpu_percent_sample_max": 121.14,
+      "backend_memory_bytes_sample_max": 170079027,
+      "latency_ms": {
+        "p50": 713.4191420000207,
+        "p95": 1167.852208000113,
+        "p99": 1414.500044000306
+      },
+      "latency_scope": "HTTP and JSON validation; client semaphore wait excluded",
+      "conditions": {
+        "backend_cpus": 2.0,
+        "backend_memory_bytes": 4294967296,
+        "backend_swap_bytes": 0,
+        "cgroup_cpu_max": "200000 100000",
+        "cgroup_memory_max": "4294967296",
+        "cgroup_memory_swap_max": "0",
+        "workers": 1,
+        "backend_image": "sha256:52a477bec546a7b74533d196c68c60c4f7bbfdba0c55ee29e2782ff3da01426b",
+        "postgres_image": "sha256:b0f9560a2de083e2cc7382e75f808c7381a32852a7ec49117deedb300e552b24",
+        "postgres_version": "postgres (PostgreSQL) 17.11",
+        "postgres_scope": "separate container; not included in backend CPU/memory limits",
+        "postgres_runtime_limits": {
+          "nano_cpus": 0,
+          "memory_bytes": 0
+        },
+        "host_cpu": "AMD Ryzen 7 5800X 8-Core Processor",
+        "host_arch": "x86_64",
+        "host_platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+        "git_sha": "937cca5b6d0fd2564f047cae5bce7e0c27e903d9",
+        "compose_sha256": "7e81d33fa8d8649f1140a61f15187aa369ada0edfc1bfa46e62ce16d9d65d63f",
+        "artifact_sha256": "b44a90ef386c8b3a13ac2c6bd3ea82db774318b0bff9d109e1a40f7d868a8c66",
+        "forecast_manifest_sha256": "a0a7144aba27918d5d413e5d4eb0c81410b565508a5401af06e1e68d9640d430",
+        "approved_config_sha256": "fdc248598b715860663e2ec708ad9224c2c8a91f4d9e013bafc02cbc9771bba8"
+      }
+    },
+    {
+      "case_id": "post_stop_day",
+      "requests": 200,
+      "warmup": 5,
+      "concurrency": 4,
+      "elapsed_seconds": 10.700342915000874,
+      "rps": 18.690989773759384,
+      "errors": 0,
+      "failure_types": {},
+      "http_status_counts": {
+        "200": 200
+      },
+      "backend_resource_samples": [
+        {
+          "cpu_percent": 100.37,
+          "memory_bytes": 157076684
+        },
+        {
+          "cpu_percent": 120.25,
+          "memory_bytes": 157496115
+        },
+        {
+          "cpu_percent": 101.15,
+          "memory_bytes": 156552396
+        },
+        {
+          "cpu_percent": 100.73,
+          "memory_bytes": 156866969
+        },
+        {
+          "cpu_percent": 106.42,
+          "memory_bytes": 157076684
+        }
+      ],
+      "backend_cpu_percent_sample_max": 120.25,
+      "backend_memory_bytes_sample_max": 157496115,
+      "latency_ms": {
+        "p50": 211.4170564991582,
+        "p95": 304.2550909995043,
+        "p99": 364.5095929987292
+      },
+      "latency_scope": "HTTP and JSON validation; client semaphore wait excluded",
+      "conditions": {
+        "backend_cpus": 2.0,
+        "backend_memory_bytes": 4294967296,
+        "backend_swap_bytes": 0,
+        "cgroup_cpu_max": "200000 100000",
+        "cgroup_memory_max": "4294967296",
+        "cgroup_memory_swap_max": "0",
+        "workers": 1,
+        "backend_image": "sha256:52a477bec546a7b74533d196c68c60c4f7bbfdba0c55ee29e2782ff3da01426b",
+        "postgres_image": "sha256:b0f9560a2de083e2cc7382e75f808c7381a32852a7ec49117deedb300e552b24",
+        "postgres_version": "postgres (PostgreSQL) 17.11",
+        "postgres_scope": "separate container; not included in backend CPU/memory limits",
+        "postgres_runtime_limits": {
+          "nano_cpus": 0,
+          "memory_bytes": 0
+        },
+        "host_cpu": "AMD Ryzen 7 5800X 8-Core Processor",
+        "host_arch": "x86_64",
+        "host_platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+        "git_sha": "937cca5b6d0fd2564f047cae5bce7e0c27e903d9",
+        "compose_sha256": "7e81d33fa8d8649f1140a61f15187aa369ada0edfc1bfa46e62ce16d9d65d63f",
+        "artifact_sha256": "b44a90ef386c8b3a13ac2c6bd3ea82db774318b0bff9d109e1a40f7d868a8c66",
+        "forecast_manifest_sha256": "a0a7144aba27918d5d413e5d4eb0c81410b565508a5401af06e1e68d9640d430",
+        "approved_config_sha256": "fdc248598b715860663e2ec708ad9224c2c8a91f4d9e013bafc02cbc9771bba8"
+      }
+    },
+    {
+      "case_id": "post_stop_month",
+      "requests": 200,
+      "warmup": 5,
+      "concurrency": 4,
+      "elapsed_seconds": 15.29307537800014,
+      "rps": 13.077814308540589,
+      "errors": 0,
+      "failure_types": {},
+      "http_status_counts": {
+        "200": 200
+      },
+      "backend_resource_samples": [
+        {
+          "cpu_percent": 101.44,
+          "memory_bytes": 157915545
+        },
+        {
+          "cpu_percent": 119.17,
+          "memory_bytes": 172385894
+        },
+        {
+          "cpu_percent": 101.81,
+          "memory_bytes": 158125260
+        },
+        {
+          "cpu_percent": 101.68,
+          "memory_bytes": 158754406
+        },
+        {
+          "cpu_percent": 119.74,
+          "memory_bytes": 158859264
+        },
+        {
+          "cpu_percent": 102.01,
+          "memory_bytes": 158649548
+        },
+        {
+          "cpu_percent": 101.83,
+          "memory_bytes": 159698124
+        },
+        {
+          "cpu_percent": 101.3,
+          "memory_bytes": 158439833
+        }
+      ],
+      "backend_cpu_percent_sample_max": 119.74,
+      "backend_memory_bytes_sample_max": 172385894,
+      "latency_ms": {
+        "p50": 299.61706700032664,
+        "p95": 440.57233100102167,
+        "p99": 509.96094799847924
+      },
+      "latency_scope": "HTTP and JSON validation; client semaphore wait excluded",
+      "conditions": {
+        "backend_cpus": 2.0,
+        "backend_memory_bytes": 4294967296,
+        "backend_swap_bytes": 0,
+        "cgroup_cpu_max": "200000 100000",
+        "cgroup_memory_max": "4294967296",
+        "cgroup_memory_swap_max": "0",
+        "workers": 1,
+        "backend_image": "sha256:52a477bec546a7b74533d196c68c60c4f7bbfdba0c55ee29e2782ff3da01426b",
+        "postgres_image": "sha256:b0f9560a2de083e2cc7382e75f808c7381a32852a7ec49117deedb300e552b24",
+        "postgres_version": "postgres (PostgreSQL) 17.11",
+        "postgres_scope": "separate container; not included in backend CPU/memory limits",
+        "postgres_runtime_limits": {
+          "nano_cpus": 0,
+          "memory_bytes": 0
+        },
+        "host_cpu": "AMD Ryzen 7 5800X 8-Core Processor",
+        "host_arch": "x86_64",
+        "host_platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+        "git_sha": "937cca5b6d0fd2564f047cae5bce7e0c27e903d9",
+        "compose_sha256": "7e81d33fa8d8649f1140a61f15187aa369ada0edfc1bfa46e62ce16d9d65d63f",
+        "artifact_sha256": "b44a90ef386c8b3a13ac2c6bd3ea82db774318b0bff9d109e1a40f7d868a8c66",
+        "forecast_manifest_sha256": "a0a7144aba27918d5d413e5d4eb0c81410b565508a5401af06e1e68d9640d430",
+        "approved_config_sha256": "fdc248598b715860663e2ec708ad9224c2c8a91f4d9e013bafc02cbc9771bba8"
+      }
+    },
+    {
+      "case_id": "post_stop_year",
+      "requests": 200,
+      "warmup": 5,
+      "concurrency": 4,
+      "elapsed_seconds": 66.90190682199864,
+      "rps": 2.989451414772473,
+      "errors": 0,
+      "failure_types": {},
+      "http_status_counts": {
+        "200": 200
+      },
+      "backend_resource_samples": [
+        {
+          "cpu_percent": 101.91,
+          "memory_bytes": 157810688
+        },
+        {
+          "cpu_percent": 118.36,
+          "memory_bytes": 171547033
+        },
+        {
+          "cpu_percent": 101.76,
+          "memory_bytes": 158125260
+        },
+        {
+          "cpu_percent": 101.25,
+          "memory_bytes": 158230118
+        },
+        {
+          "cpu_percent": 120.64,
+          "memory_bytes": 158125260
+        },
+        {
+          "cpu_percent": 101.47,
+          "memory_bytes": 157810688
+        },
+        {
+          "cpu_percent": 102.01,
+          "memory_bytes": 157810688
+        },
+        {
+          "cpu_percent": 108.01,
+          "memory_bytes": 158439833
+        },
+        {
+          "cpu_percent": 101.15,
+          "memory_bytes": 158125260
+        },
+        {
+          "cpu_percent": 101.82,
+          "memory_bytes": 158125260
+        },
+        {
+          "cpu_percent": 105.26,
+          "memory_bytes": 157810688
+        },
+        {
+          "cpu_percent": 103.11,
+          "memory_bytes": 158125260
+        },
+        {
+          "cpu_percent": 101.79,
+          "memory_bytes": 158020403
+        },
+        {
+          "cpu_percent": 102.41,
+          "memory_bytes": 157810688
+        },
+        {
+          "cpu_percent": 101.18,
+          "memory_bytes": 157810688
+        },
+        {
+          "cpu_percent": 101.75,
+          "memory_bytes": 158334976
+        },
+        {
+          "cpu_percent": 102.15,
+          "memory_bytes": 158125260
+        },
+        {
+          "cpu_percent": 102.06,
+          "memory_bytes": 157810688
+        },
+        {
+          "cpu_percent": 101.98,
+          "memory_bytes": 158020403
+        },
+        {
+          "cpu_percent": 101.65,
+          "memory_bytes": 158125260
+        },
+        {
+          "cpu_percent": 102.53,
+          "memory_bytes": 157810688
+        },
+        {
+          "cpu_percent": 101.58,
+          "memory_bytes": 158020403
+        },
+        {
+          "cpu_percent": 101.5,
+          "memory_bytes": 158020403
+        },
+        {
+          "cpu_percent": 100.38,
+          "memory_bytes": 158125260
+        },
+        {
+          "cpu_percent": 99.18,
+          "memory_bytes": 158125260
+        },
+        {
+          "cpu_percent": 101.19,
+          "memory_bytes": 158125260
+        },
+        {
+          "cpu_percent": 101.14,
+          "memory_bytes": 158125260
+        },
+        {
+          "cpu_percent": 103.16,
+          "memory_bytes": 162738995
+        },
+        {
+          "cpu_percent": 101.68,
+          "memory_bytes": 157915545
+        },
+        {
+          "cpu_percent": 101.48,
+          "memory_bytes": 158020403
+        },
+        {
+          "cpu_percent": 119.64,
+          "memory_bytes": 171337318
+        },
+        {
+          "cpu_percent": 101.8,
+          "memory_bytes": 158230118
+        },
+        {
+          "cpu_percent": 101.27,
+          "memory_bytes": 158020403
+        },
+        {
+          "cpu_percent": 36.71,
+          "memory_bytes": 158125260
+        }
+      ],
+      "backend_cpu_percent_sample_max": 120.64,
+      "backend_memory_bytes_sample_max": 171547033,
+      "latency_ms": {
+        "p50": 1295.7387330006895,
+        "p95": 2195.3945719997137,
+        "p99": 2465.86777399898
+      },
+      "latency_scope": "HTTP and JSON validation; client semaphore wait excluded",
+      "conditions": {
+        "backend_cpus": 2.0,
+        "backend_memory_bytes": 4294967296,
+        "backend_swap_bytes": 0,
+        "cgroup_cpu_max": "200000 100000",
+        "cgroup_memory_max": "4294967296",
+        "cgroup_memory_swap_max": "0",
+        "workers": 1,
+        "backend_image": "sha256:52a477bec546a7b74533d196c68c60c4f7bbfdba0c55ee29e2782ff3da01426b",
+        "postgres_image": "sha256:b0f9560a2de083e2cc7382e75f808c7381a32852a7ec49117deedb300e552b24",
+        "postgres_version": "postgres (PostgreSQL) 17.11",
+        "postgres_scope": "separate container; not included in backend CPU/memory limits",
+        "postgres_runtime_limits": {
+          "nano_cpus": 0,
+          "memory_bytes": 0
+        },
+        "host_cpu": "AMD Ryzen 7 5800X 8-Core Processor",
+        "host_arch": "x86_64",
+        "host_platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+        "git_sha": "937cca5b6d0fd2564f047cae5bce7e0c27e903d9",
+        "compose_sha256": "7e81d33fa8d8649f1140a61f15187aa369ada0edfc1bfa46e62ce16d9d65d63f",
+        "artifact_sha256": "b44a90ef386c8b3a13ac2c6bd3ea82db774318b0bff9d109e1a40f7d868a8c66",
+        "forecast_manifest_sha256": "a0a7144aba27918d5d413e5d4eb0c81410b565508a5401af06e1e68d9640d430",
+        "approved_config_sha256": "fdc248598b715860663e2ec708ad9224c2c8a91f4d9e013bafc02cbc9771bba8"
+      }
+    },
+    {
+      "case_id": "post_stop_filter",
+      "requests": 200,
+      "warmup": 5,
+      "concurrency": 4,
+      "elapsed_seconds": 9.891148382999745,
+      "rps": 20.220099047725018,
+      "errors": 0,
+      "failure_types": {},
+      "http_status_counts": {
+        "200": 200
+      },
+      "backend_resource_samples": [
+        {
+          "cpu_percent": 100.73,
+          "memory_bytes": 158334976
+        },
+        {
+          "cpu_percent": 101.52,
+          "memory_bytes": 158649548
+        },
+        {
+          "cpu_percent": 101.19,
+          "memory_bytes": 159068979
+        },
+        {
+          "cpu_percent": 101.28,
+          "memory_bytes": 158544691
+        },
+        {
+          "cpu_percent": 119.55,
+          "memory_bytes": 159383552
+        }
+      ],
+      "backend_cpu_percent_sample_max": 119.55,
+      "backend_memory_bytes_sample_max": 159383552,
+      "latency_ms": {
+        "p50": 194.25081499957741,
+        "p95": 293.720278001274,
+        "p99": 315.4146139986551
+      },
+      "latency_scope": "HTTP and JSON validation; client semaphore wait excluded",
+      "conditions": {
+        "backend_cpus": 2.0,
+        "backend_memory_bytes": 4294967296,
+        "backend_swap_bytes": 0,
+        "cgroup_cpu_max": "200000 100000",
+        "cgroup_memory_max": "4294967296",
+        "cgroup_memory_swap_max": "0",
+        "workers": 1,
+        "backend_image": "sha256:52a477bec546a7b74533d196c68c60c4f7bbfdba0c55ee29e2782ff3da01426b",
+        "postgres_image": "sha256:b0f9560a2de083e2cc7382e75f808c7381a32852a7ec49117deedb300e552b24",
+        "postgres_version": "postgres (PostgreSQL) 17.11",
+        "postgres_scope": "separate container; not included in backend CPU/memory limits",
+        "postgres_runtime_limits": {
+          "nano_cpus": 0,
+          "memory_bytes": 0
+        },
+        "host_cpu": "AMD Ryzen 7 5800X 8-Core Processor",
+        "host_arch": "x86_64",
+        "host_platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+        "git_sha": "937cca5b6d0fd2564f047cae5bce7e0c27e903d9",
+        "compose_sha256": "7e81d33fa8d8649f1140a61f15187aa369ada0edfc1bfa46e62ce16d9d65d63f",
+        "artifact_sha256": "b44a90ef386c8b3a13ac2c6bd3ea82db774318b0bff9d109e1a40f7d868a8c66",
+        "forecast_manifest_sha256": "a0a7144aba27918d5d413e5d4eb0c81410b565508a5401af06e1e68d9640d430",
+        "approved_config_sha256": "fdc248598b715860663e2ec708ad9224c2c8a91f4d9e013bafc02cbc9771bba8"
+      }
+    },
+    {
+      "case_id": "post_invalid_date",
+      "requests": 200,
+      "warmup": 5,
+      "concurrency": 4,
+      "elapsed_seconds": 0.3497188590008591,
+      "rps": 571.8879461387831,
+      "errors": 0,
+      "failure_types": {},
+      "http_status_counts": {
+        "422": 200
+      },
+      "backend_resource_samples": [
+        {
+          "cpu_percent": 0.06,
+          "memory_bytes": 157810688
+        }
+      ],
+      "backend_cpu_percent_sample_max": 0.06,
+      "backend_memory_bytes_sample_max": 157810688,
+      "latency_ms": {
+        "p50": 5.652697500408976,
+        "p95": 8.740842000406701,
+        "p99": 47.42815999998129
+      },
+      "latency_scope": "HTTP and JSON validation; client semaphore wait excluded",
+      "conditions": {
+        "backend_cpus": 2.0,
+        "backend_memory_bytes": 4294967296,
+        "backend_swap_bytes": 0,
+        "cgroup_cpu_max": "200000 100000",
+        "cgroup_memory_max": "4294967296",
+        "cgroup_memory_swap_max": "0",
+        "workers": 1,
+        "backend_image": "sha256:52a477bec546a7b74533d196c68c60c4f7bbfdba0c55ee29e2782ff3da01426b",
+        "postgres_image": "sha256:b0f9560a2de083e2cc7382e75f808c7381a32852a7ec49117deedb300e552b24",
+        "postgres_version": "postgres (PostgreSQL) 17.11",
+        "postgres_scope": "separate container; not included in backend CPU/memory limits",
+        "postgres_runtime_limits": {
+          "nano_cpus": 0,
+          "memory_bytes": 0
+        },
+        "host_cpu": "AMD Ryzen 7 5800X 8-Core Processor",
+        "host_arch": "x86_64",
+        "host_platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+        "git_sha": "937cca5b6d0fd2564f047cae5bce7e0c27e903d9",
+        "compose_sha256": "7e81d33fa8d8649f1140a61f15187aa369ada0edfc1bfa46e62ce16d9d65d63f",
+        "artifact_sha256": "b44a90ef386c8b3a13ac2c6bd3ea82db774318b0bff9d109e1a40f7d868a8c66",
+        "forecast_manifest_sha256": "a0a7144aba27918d5d413e5d4eb0c81410b565508a5401af06e1e68d9640d430",
+        "approved_config_sha256": "fdc248598b715860663e2ec708ad9224c2c8a91f4d9e013bafc02cbc9771bba8"
+      }
+    }
+  ]
+}

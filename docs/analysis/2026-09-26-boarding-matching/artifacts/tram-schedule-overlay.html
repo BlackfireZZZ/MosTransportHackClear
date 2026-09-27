@@ -1,0 +1,3902 @@
+<style>
+#tram-schedule {position:relative;color:var(--foreground)}
+#tram-schedule .plotbox {width:100%}
+#tram-schedule .schedule-chart {display:block;overflow:visible}
+#tram-schedule .schedule-chart text {fill:var(--foreground);font-size:12px}
+#tram-schedule .legend {display:flex;flex-wrap:wrap;gap:8px 18px;margin:12px 0}
+#tram-schedule .legend button {display:inline-flex;align-items:center;gap:6px;background:transparent;border:0;padding:4px 0;color:var(--foreground);font:inherit}
+#tram-schedule .legend button[aria-pressed="false"] {opacity:.45}
+#tram-schedule .swatch {display:inline-block;width:24px;border-top:2px solid var(--red)}
+#tram-schedule .selected-row {background:var(--accent);color:var(--accent-foreground)}
+#tram-schedule .tooltip {position:absolute;pointer-events:none;background:var(--popover);color:var(--popover-foreground);border:1px solid var(--border);padding:10px;max-width:270px;z-index:3}
+#tram-schedule .meta,#tram-schedule .detail {margin:10px 0}
+#tram-schedule .footer {display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:10px 0}
+#tram-schedule details {margin-top:16px}
+</style>
+<div id="tram-schedule">
+ <h2>Всплески оплат и интервалы расписания</h2>
+ <div class="viz-controls">
+  <label class="form-label">Реальные записи · 15.05.2025<select class="form-select" id="schedule-route"></select></label>
+  <label class="form-label">Метод обнаружения<select class="form-select" id="schedule-method"><option value="consensus3_5s">Согласие ≥3 семейств</option><option value="adaptive_scan">Адаптивный поиск</option><option value="feature_gmm">GMM признаков</option></select></label>
+  <label class="form-label">Вариант разметки<select class="form-select" id="schedule-variant"><option value="merged">Первая оплата + объединение волн</option><option value="raw">Исходные, без первой опорной метки</option></select></label>
+  <label class="form-label">Отсчёт ожидаемого времени<select class="form-select" id="schedule-mode"><option value="local">От предыдущего фактического всплеска</option><option value="chain">Вся цепочка от первого всплеска</option></select></label>
+ </div>
+ <div class="meta text-small" id="schedule-meta"></div>
+ <div class="legend" aria-label="Метки на графике" id="schedule-legend"></div>
+ <div class="plotbox"><svg class="schedule-chart" role="img" aria-label="Оплаты каждые 30 секунд, найденные начала и ожидаемые времена по интервалам расписания"></svg></div>
+ <div class="detail tabular-nums" id="schedule-detail" aria-live="polite"></div>
+ <div class="text-small tabular-nums" id="schedule-metrics"></div>
+ <h3>Промежутки между соседними всплесками</h3>
+ <div class="table-responsive"><table class="table table-sm tabular-nums" aria-label="Сравнение интервалов"><thead><tr><th scope="col">Пара</th><th scope="col">Начала по оплатам</th><th scope="col" class="text-end">Факт, с</th><th scope="col" class="text-end">Ожид., с</th><th scope="col" class="text-end">Δ, с</th><th scope="col" class="text-end">Перегонов</th><th scope="col">Основа</th></tr></thead><tbody id="schedule-intervals"></tbody></table></div>
+ <details><summary>Оплаты по всем валидаторам · шаг 30 секунд</summary>
+  <div class="table-responsive"><table class="table table-sm tabular-nums" aria-label="Оплаты по валидаторам"><thead id="schedule-count-head"></thead><tbody id="schedule-count-body"></tbody><tfoot id="schedule-count-foot"></tfoot></table></div>
+  <div class="footer"><button type="button" class="btn" id="schedule-prev">← 5 минут</button><span class="text-small" id="schedule-page"></span><button type="button" class="btn" id="schedule-next">5 минут →</button></div>
+ </details>
+ <div class="tooltip text-small" role="tooltip" hidden></div>
+</div>
+<script type="application/json" id="schedule-data">[
+  {
+    "clock": [
+      "07:50:00",
+      "07:50:30",
+      "07:51:00",
+      "07:51:30",
+      "07:52:00",
+      "07:52:30",
+      "07:53:00",
+      "07:53:30",
+      "07:54:00",
+      "07:54:30",
+      "07:55:00",
+      "07:55:30",
+      "07:56:00",
+      "07:56:30",
+      "07:57:00",
+      "07:57:30",
+      "07:58:00",
+      "07:58:30",
+      "07:59:00",
+      "07:59:30",
+      "08:00:00",
+      "08:00:30",
+      "08:01:00",
+      "08:01:30",
+      "08:02:00",
+      "08:02:30",
+      "08:03:00",
+      "08:03:30",
+      "08:04:00",
+      "08:04:30",
+      "08:05:00",
+      "08:05:30",
+      "08:06:00",
+      "08:06:30",
+      "08:07:00",
+      "08:07:30",
+      "08:08:00",
+      "08:08:30",
+      "08:09:00",
+      "08:09:30",
+      "08:10:00",
+      "08:10:30",
+      "08:11:00",
+      "08:11:30",
+      "08:12:00",
+      "08:12:30",
+      "08:13:00",
+      "08:13:30",
+      "08:14:00",
+      "08:14:30",
+      "08:15:00",
+      "08:15:30",
+      "08:16:00",
+      "08:16:30",
+      "08:17:00",
+      "08:17:30",
+      "08:18:00",
+      "08:18:30",
+      "08:19:00",
+      "08:19:30",
+      "08:20:00"
+    ],
+    "counts": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        2,
+        2,
+        3,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        6,
+        5,
+        5,
+        8,
+        9,
+        10
+      ],
+      [
+        1,
+        6,
+        0,
+        1,
+        2,
+        4
+      ],
+      [
+        1,
+        3,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        3,
+        4,
+        2,
+        2,
+        4
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        2,
+        5,
+        4,
+        5,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        6,
+        3,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        0,
+        3,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        1,
+        3,
+        0,
+        0
+      ],
+      [
+        6,
+        4,
+        2,
+        5,
+        5,
+        2
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        5,
+        2,
+        1,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        2,
+        2,
+        0,
+        0,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        2,
+        2,
+        4,
+        3,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        2,
+        3,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ]
+    ],
+    "date": "15.05.2025",
+    "devices": [
+      "В1",
+      "В2",
+      "В3",
+      "В4",
+      "В5",
+      "В6"
+    ],
+    "end": "08:20:00",
+    "merge": {
+      "adaptive_scan": {
+        "anchor": {
+          "added": true,
+          "basis": "first_observed_payment",
+          "enabled": true,
+          "route_stop_index": null,
+          "time": 103.0,
+          "trip_start_confirmed": false
+        },
+        "decisions": [],
+        "groups": [
+          {
+            "members": [
+              103.0
+            ],
+            "support": null,
+            "time": 103.0
+          },
+          {
+            "members": [
+              222.0
+            ],
+            "support": 0,
+            "time": 222.0
+          },
+          {
+            "members": [
+              291.0
+            ],
+            "support": 1,
+            "time": 291.0
+          },
+          {
+            "members": [
+              395.0
+            ],
+            "support": 2,
+            "time": 395.0
+          },
+          {
+            "members": [
+              620.0
+            ],
+            "support": 3,
+            "time": 620.0
+          },
+          {
+            "members": [
+              921.0
+            ],
+            "support": 4,
+            "time": 921.0
+          },
+          {
+            "members": [
+              1032.0
+            ],
+            "support": 5,
+            "time": 1032.0
+          },
+          {
+            "members": [
+              1468.0
+            ],
+            "support": 6,
+            "time": 1468.0
+          },
+          {
+            "members": [
+              1604.0
+            ],
+            "support": 7,
+            "time": 1604.0
+          },
+          {
+            "members": [
+              1690.0
+            ],
+            "support": 8,
+            "time": 1690.0
+          }
+        ],
+        "input_candidates": 9,
+        "merged_candidates": 0,
+        "quiet_threshold": 0.01,
+        "times": [
+          103.0,
+          222.0,
+          291.0,
+          395.0,
+          620.0,
+          921.0,
+          1032.0,
+          1468.0,
+          1604.0,
+          1690.0
+        ]
+      },
+      "consensus3_5s": {
+        "anchor": {
+          "added": true,
+          "basis": "first_observed_payment",
+          "enabled": true,
+          "route_stop_index": null,
+          "time": 103.0,
+          "trip_start_confirmed": false
+        },
+        "decisions": [
+          {
+            "decision": "merge_same_support",
+            "left": 222.0,
+            "quiet_score": 1.0,
+            "right": 227.0,
+            "support": 0
+          },
+          {
+            "decision": "merge_same_support",
+            "left": 925.0,
+            "quiet_score": 0.774481875588958,
+            "right": 930.0,
+            "support": 4
+          }
+        ],
+        "groups": [
+          {
+            "members": [
+              103.0
+            ],
+            "support": null,
+            "time": 103.0
+          },
+          {
+            "members": [
+              222.0,
+              227.0
+            ],
+            "support": 0,
+            "time": 222.0
+          },
+          {
+            "members": [
+              291.5
+            ],
+            "support": 1,
+            "time": 291.5
+          },
+          {
+            "members": [
+              395.0
+            ],
+            "support": 2,
+            "time": 395.0
+          },
+          {
+            "members": [
+              620.0
+            ],
+            "support": 3,
+            "time": 620.0
+          },
+          {
+            "members": [
+              925.0,
+              930.0
+            ],
+            "support": 4,
+            "time": 925.0
+          },
+          {
+            "members": [
+              1032.0
+            ],
+            "support": 5,
+            "time": 1032.0
+          },
+          {
+            "members": [
+              1469.0
+            ],
+            "support": 6,
+            "time": 1469.0
+          },
+          {
+            "members": [
+              1606.0
+            ],
+            "support": 7,
+            "time": 1606.0
+          },
+          {
+            "members": [
+              1690.0
+            ],
+            "support": 8,
+            "time": 1690.0
+          }
+        ],
+        "input_candidates": 11,
+        "merged_candidates": 2,
+        "quiet_threshold": 0.01,
+        "times": [
+          103.0,
+          222.0,
+          291.5,
+          395.0,
+          620.0,
+          925.0,
+          1032.0,
+          1469.0,
+          1606.0,
+          1690.0
+        ]
+      },
+      "feature_gmm": {
+        "anchor": {
+          "added": true,
+          "basis": "first_observed_payment",
+          "enabled": true,
+          "route_stop_index": null,
+          "time": 103.0,
+          "trip_start_confirmed": false
+        },
+        "decisions": [],
+        "groups": [
+          {
+            "members": [
+              103.0
+            ],
+            "support": null,
+            "time": 103.0
+          },
+          {
+            "members": [
+              227.0
+            ],
+            "support": 0,
+            "time": 227.0
+          },
+          {
+            "members": [
+              294.0
+            ],
+            "support": 1,
+            "time": 294.0
+          },
+          {
+            "members": [
+              395.0
+            ],
+            "support": 2,
+            "time": 395.0
+          },
+          {
+            "members": [
+              461.0
+            ],
+            "support": null,
+            "time": 461.0
+          },
+          {
+            "members": [
+              620.0
+            ],
+            "support": 3,
+            "time": 620.0
+          },
+          {
+            "members": [
+              935.0
+            ],
+            "support": 4,
+            "time": 935.0
+          },
+          {
+            "members": [
+              1037.0
+            ],
+            "support": 5,
+            "time": 1037.0
+          },
+          {
+            "members": [
+              1237.0
+            ],
+            "support": null,
+            "time": 1237.0
+          },
+          {
+            "members": [
+              1470.0
+            ],
+            "support": 6,
+            "time": 1470.0
+          },
+          {
+            "members": [
+              1608.0
+            ],
+            "support": 7,
+            "time": 1608.0
+          },
+          {
+            "members": [
+              1692.0
+            ],
+            "support": 8,
+            "time": 1692.0
+          }
+        ],
+        "input_candidates": 11,
+        "merged_candidates": 0,
+        "quiet_threshold": 0.01,
+        "times": [
+          103.0,
+          227.0,
+          294.0,
+          395.0,
+          461.0,
+          620.0,
+          935.0,
+          1037.0,
+          1237.0,
+          1470.0,
+          1608.0,
+          1692.0
+        ]
+      }
+    },
+    "methods": {
+      "adaptive_scan": [
+        222.0,
+        291.0,
+        395.0,
+        620.0,
+        921.0,
+        1032.0,
+        1468.0,
+        1604.0,
+        1690.0
+      ],
+      "algorithm_ml": [
+        221.5,
+        291.0,
+        393.5,
+        923.0,
+        1604.0,
+        1690.0
+      ],
+      "consensus3_5s": [
+        222.0,
+        227.0,
+        291.5,
+        395.0,
+        620.0,
+        925.0,
+        930.0,
+        1032.0,
+        1469.0,
+        1606.0,
+        1690.0
+      ],
+      "feature_gmm": [
+        227.0,
+        294.0,
+        395.0,
+        461.0,
+        620.0,
+        935.0,
+        1037.0,
+        1237.0,
+        1470.0,
+        1608.0,
+        1692.0
+      ],
+      "hdbscan5": [
+        103.0,
+        107.0,
+        221.0,
+        231.0,
+        233.0,
+        238.0,
+        291.0,
+        306.0,
+        311.0,
+        392.0,
+        443.0,
+        613.0,
+        925.0,
+        930.0,
+        952.0,
+        1020.0,
+        1175.0,
+        1218.0,
+        1406.0,
+        1604.0,
+        1690.0
+      ],
+      "synchrony": [
+        103.0,
+        222.0,
+        224.0,
+        226.0,
+        231.0,
+        235.0,
+        241.0,
+        292.0,
+        295.0,
+        306.0,
+        395.0,
+        398.0,
+        620.0,
+        925.0,
+        930.0,
+        935.0,
+        940.0,
+        942.0,
+        959.0,
+        1032.0,
+        1037.0,
+        1040.0,
+        1104.0,
+        1235.0,
+        1469.0,
+        1608.0,
+        1612.0,
+        1617.0,
+        1690.0
+      ]
+    },
+    "route": "17",
+    "start": "07:50:00",
+    "total": 287,
+    "variants": {
+      "merged": {
+        "fits": {
+          "adaptive_scan": {
+            "expected": [
+              120.0,
+              60.0,
+              120.0,
+              240.0,
+              300.0,
+              120.0,
+              450.3,
+              120.0,
+              120.0
+            ],
+            "geometry": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            "mae": 12.811111111111112,
+            "null_mae": 14.11111111111111,
+            "phases": 33,
+            "steps": [
+              2,
+              1,
+              1,
+              3,
+              3,
+              2,
+              5,
+              2,
+              1
+            ]
+          },
+          "consensus3_5s": {
+            "expected": [
+              120.0,
+              60.0,
+              60.0,
+              240.0,
+              300.0,
+              120.0,
+              480.0,
+              120.0,
+              60.0
+            ],
+            "geometry": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "mae": 19.0,
+            "null_mae": 14.868888888888888,
+            "phases": 33,
+            "steps": [
+              1,
+              1,
+              1,
+              2,
+              3,
+              2,
+              5,
+              1,
+              1
+            ]
+          },
+          "feature_gmm": {
+            "expected": [
+              120.0,
+              60.0,
+              120.0,
+              60.0,
+              120.0,
+              294.18,
+              120.0,
+              180.0,
+              240.0,
+              120.0,
+              120.0
+            ],
+            "geometry": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "mae": 17.71090909090909,
+            "null_mae": 16.972727272727273,
+            "phases": 28,
+            "steps": [
+              1,
+              1,
+              1,
+              1,
+              2,
+              3,
+              2,
+              2,
+              3,
+              1,
+              1
+            ]
+          }
+        },
+        "methods": {
+          "adaptive_scan": [
+            103.0,
+            222.0,
+            291.0,
+            395.0,
+            620.0,
+            921.0,
+            1032.0,
+            1468.0,
+            1604.0,
+            1690.0
+          ],
+          "consensus3_5s": [
+            103.0,
+            222.0,
+            291.5,
+            395.0,
+            620.0,
+            925.0,
+            1032.0,
+            1469.0,
+            1606.0,
+            1690.0
+          ],
+          "feature_gmm": [
+            103.0,
+            227.0,
+            294.0,
+            395.0,
+            461.0,
+            620.0,
+            935.0,
+            1037.0,
+            1237.0,
+            1470.0,
+            1608.0,
+            1692.0
+          ]
+        }
+      },
+      "raw": {
+        "fits": {
+          "adaptive_scan": {
+            "expected": [
+              60.0,
+              120.0,
+              240.0,
+              300.0,
+              120.0,
+              420.0,
+              120.0,
+              60.0
+            ],
+            "geometry": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "mae": 13.5,
+            "null_mae": 15.75,
+            "phases": 22,
+            "steps": [
+              1,
+              2,
+              3,
+              3,
+              1,
+              5,
+              1,
+              1
+            ]
+          },
+          "consensus3_5s": {
+            "expected": [
+              60.0,
+              60.0,
+              120.0,
+              240.0,
+              300.0,
+              60.0,
+              120.0,
+              420.0,
+              120.0,
+              60.0
+            ],
+            "geometry": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "mae": 22.7,
+            "null_mae": 26.2,
+            "phases": 8,
+            "steps": [
+              1,
+              1,
+              1,
+              3,
+              4,
+              1,
+              1,
+              4,
+              1,
+              1
+            ]
+          },
+          "feature_gmm": {
+            "expected": [
+              60.0,
+              120.0,
+              60.0,
+              180.0,
+              300.0,
+              120.0,
+              180.0,
+              240.0,
+              120.0,
+              60.0
+            ],
+            "geometry": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "mae": 15.5,
+            "null_mae": 16.9,
+            "phases": 22,
+            "steps": [
+              1,
+              2,
+              1,
+              2,
+              3,
+              1,
+              2,
+              3,
+              1,
+              1
+            ]
+          }
+        },
+        "methods": {
+          "adaptive_scan": [
+            222.0,
+            291.0,
+            395.0,
+            620.0,
+            921.0,
+            1032.0,
+            1468.0,
+            1604.0,
+            1690.0
+          ],
+          "consensus3_5s": [
+            222.0,
+            227.0,
+            291.5,
+            395.0,
+            620.0,
+            925.0,
+            930.0,
+            1032.0,
+            1469.0,
+            1606.0,
+            1690.0
+          ],
+          "feature_gmm": [
+            227.0,
+            294.0,
+            395.0,
+            461.0,
+            620.0,
+            935.0,
+            1037.0,
+            1237.0,
+            1470.0,
+            1608.0,
+            1692.0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "clock": [
+      "08:10:00",
+      "08:10:30",
+      "08:11:00",
+      "08:11:30",
+      "08:12:00",
+      "08:12:30",
+      "08:13:00",
+      "08:13:30",
+      "08:14:00",
+      "08:14:30",
+      "08:15:00",
+      "08:15:30",
+      "08:16:00",
+      "08:16:30",
+      "08:17:00",
+      "08:17:30",
+      "08:18:00",
+      "08:18:30",
+      "08:19:00",
+      "08:19:30",
+      "08:20:00",
+      "08:20:30",
+      "08:21:00",
+      "08:21:30",
+      "08:22:00",
+      "08:22:30",
+      "08:23:00",
+      "08:23:30",
+      "08:24:00",
+      "08:24:30",
+      "08:25:00",
+      "08:25:30",
+      "08:26:00",
+      "08:26:30",
+      "08:27:00",
+      "08:27:30",
+      "08:28:00",
+      "08:28:30",
+      "08:29:00",
+      "08:29:30",
+      "08:30:00",
+      "08:30:30",
+      "08:31:00",
+      "08:31:30",
+      "08:32:00",
+      "08:32:30",
+      "08:33:00",
+      "08:33:30",
+      "08:34:00",
+      "08:34:30",
+      "08:35:00",
+      "08:35:30",
+      "08:36:00",
+      "08:36:30",
+      "08:37:00",
+      "08:37:30",
+      "08:38:00",
+      "08:38:30",
+      "08:39:00",
+      "08:39:30",
+      "08:40:00"
+    ],
+    "counts": [
+      [
+        5,
+        3,
+        3,
+        6,
+        3,
+        2
+      ],
+      [
+        5,
+        2,
+        7,
+        3,
+        3,
+        5
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        4,
+        6,
+        3,
+        5,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        3,
+        0,
+        0,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        4,
+        5,
+        3,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        3,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        2,
+        2,
+        1,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        3,
+        1,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        3,
+        2,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        4,
+        3,
+        4,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        3,
+        3,
+        2,
+        6,
+        6
+      ],
+      [
+        1,
+        0,
+        1,
+        2,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        6,
+        1,
+        4,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "date": "15.05.2025",
+    "devices": [
+      "В1",
+      "В2",
+      "В3",
+      "В4",
+      "В5",
+      "В6"
+    ],
+    "end": "08:40:00",
+    "merge": {
+      "adaptive_scan": {
+        "anchor": {
+          "added": false,
+          "basis": "first_observed_payment",
+          "enabled": true,
+          "route_stop_index": null,
+          "time": 0.0,
+          "trip_start_confirmed": false
+        },
+        "decisions": [],
+        "groups": [
+          {
+            "members": [
+              0.0
+            ],
+            "support": 0,
+            "time": 0.0
+          },
+          {
+            "members": [
+              126.0
+            ],
+            "support": 1,
+            "time": 126.0
+          },
+          {
+            "members": [
+              356.0
+            ],
+            "support": 2,
+            "time": 356.0
+          },
+          {
+            "members": [
+              544.0
+            ],
+            "support": 3,
+            "time": 544.0
+          },
+          {
+            "members": [
+              614.0
+            ],
+            "support": 4,
+            "time": 614.0
+          },
+          {
+            "members": [
+              768.0
+            ],
+            "support": 5,
+            "time": 768.0
+          },
+          {
+            "members": [
+              840.0
+            ],
+            "support": 6,
+            "time": 840.0
+          },
+          {
+            "members": [
+              1419.0
+            ],
+            "support": 7,
+            "time": 1419.0
+          },
+          {
+            "members": [
+              1444.0
+            ],
+            "support": 8,
+            "time": 1444.0
+          },
+          {
+            "members": [
+              1568.0
+            ],
+            "support": 9,
+            "time": 1568.0
+          }
+        ],
+        "input_candidates": 10,
+        "merged_candidates": 0,
+        "quiet_threshold": 0.01,
+        "times": [
+          0.0,
+          126.0,
+          356.0,
+          544.0,
+          614.0,
+          768.0,
+          840.0,
+          1419.0,
+          1444.0,
+          1568.0
+        ]
+      },
+      "consensus3_5s": {
+        "anchor": {
+          "added": false,
+          "basis": "first_observed_payment",
+          "enabled": true,
+          "route_stop_index": null,
+          "time": 0.0,
+          "trip_start_confirmed": false
+        },
+        "decisions": [
+          {
+            "decision": "keep_quiet_gap",
+            "left": 0.0,
+            "quiet_score": 2.6538961497691673e-08,
+            "right": 48.0,
+            "support": 0
+          }
+        ],
+        "groups": [
+          {
+            "members": [
+              0.0
+            ],
+            "support": 0,
+            "time": 0.0
+          },
+          {
+            "members": [
+              48.0
+            ],
+            "support": 0,
+            "time": 48.0
+          },
+          {
+            "members": [
+              125.5
+            ],
+            "support": null,
+            "time": 125.5
+          },
+          {
+            "members": [
+              356.5
+            ],
+            "support": 2,
+            "time": 356.5
+          },
+          {
+            "members": [
+              612.5
+            ],
+            "support": null,
+            "time": 612.5
+          },
+          {
+            "members": [
+              768.0
+            ],
+            "support": 5,
+            "time": 768.0
+          },
+          {
+            "members": [
+              842.5
+            ],
+            "support": 6,
+            "time": 842.5
+          },
+          {
+            "members": [
+              1420.0
+            ],
+            "support": 7,
+            "time": 1420.0
+          },
+          {
+            "members": [
+              1444.0
+            ],
+            "support": 8,
+            "time": 1444.0
+          },
+          {
+            "members": [
+              1568.0
+            ],
+            "support": 9,
+            "time": 1568.0
+          }
+        ],
+        "input_candidates": 10,
+        "merged_candidates": 0,
+        "quiet_threshold": 0.01,
+        "times": [
+          0.0,
+          48.0,
+          125.5,
+          356.5,
+          612.5,
+          768.0,
+          842.5,
+          1420.0,
+          1444.0,
+          1568.0
+        ]
+      },
+      "feature_gmm": {
+        "anchor": {
+          "added": true,
+          "basis": "first_observed_payment",
+          "enabled": true,
+          "route_stop_index": null,
+          "time": 0.0,
+          "trip_start_confirmed": false
+        },
+        "decisions": [
+          {
+            "decision": "keep_quiet_gap",
+            "left": 0.0,
+            "quiet_score": 2.6538961497691673e-08,
+            "right": 48.0,
+            "support": 0
+          }
+        ],
+        "groups": [
+          {
+            "members": [
+              0.0
+            ],
+            "support": 0,
+            "time": 0.0
+          },
+          {
+            "members": [
+              48.0
+            ],
+            "support": 0,
+            "time": 48.0
+          },
+          {
+            "members": [
+              127.0
+            ],
+            "support": 1,
+            "time": 127.0
+          },
+          {
+            "members": [
+              357.0
+            ],
+            "support": 2,
+            "time": 357.0
+          },
+          {
+            "members": [
+              538.0
+            ],
+            "support": null,
+            "time": 538.0
+          },
+          {
+            "members": [
+              614.0
+            ],
+            "support": 4,
+            "time": 614.0
+          },
+          {
+            "members": [
+              770.0
+            ],
+            "support": 5,
+            "time": 770.0
+          },
+          {
+            "members": [
+              845.0
+            ],
+            "support": 6,
+            "time": 845.0
+          },
+          {
+            "members": [
+              1423.0
+            ],
+            "support": 7,
+            "time": 1423.0
+          },
+          {
+            "members": [
+              1444.0
+            ],
+            "support": 8,
+            "time": 1444.0
+          },
+          {
+            "members": [
+              1569.0
+            ],
+            "support": 9,
+            "time": 1569.0
+          }
+        ],
+        "input_candidates": 10,
+        "merged_candidates": 0,
+        "quiet_threshold": 0.01,
+        "times": [
+          0.0,
+          48.0,
+          127.0,
+          357.0,
+          538.0,
+          614.0,
+          770.0,
+          845.0,
+          1423.0,
+          1444.0,
+          1569.0
+        ]
+      }
+    },
+    "methods": {
+      "adaptive_scan": [
+        0.0,
+        126.0,
+        356.0,
+        544.0,
+        614.0,
+        768.0,
+        840.0,
+        1419.0,
+        1444.0,
+        1568.0
+      ],
+      "algorithm_ml": [
+        0.0,
+        125.5,
+        355.0,
+        612.5,
+        768.0,
+        842.5,
+        1419.0,
+        1568.0
+      ],
+      "consensus3_5s": [
+        0.0,
+        48.0,
+        125.5,
+        356.5,
+        612.5,
+        768.0,
+        842.5,
+        1420.0,
+        1444.0,
+        1568.0
+      ],
+      "feature_gmm": [
+        48.0,
+        127.0,
+        357.0,
+        538.0,
+        614.0,
+        770.0,
+        845.0,
+        1423.0,
+        1444.0,
+        1569.0
+      ],
+      "hdbscan5": [
+        0.0,
+        39.0,
+        46.0,
+        54.0,
+        125.0,
+        142.0,
+        354.0,
+        368.0,
+        445.0,
+        536.0,
+        611.0,
+        768.0,
+        845.0,
+        850.0,
+        1419.0,
+        1431.0,
+        1568.0,
+        1679.0
+      ],
+      "synchrony": [
+        0.0,
+        4.0,
+        9.0,
+        41.0,
+        48.0,
+        50.0,
+        55.0,
+        58.0,
+        125.0,
+        130.0,
+        357.0,
+        361.0,
+        368.0,
+        463.0,
+        550.0,
+        611.0,
+        768.0,
+        774.0,
+        840.0,
+        845.0,
+        850.0,
+        856.0,
+        1114.0,
+        1421.0,
+        1423.0,
+        1426.0,
+        1432.0,
+        1436.0,
+        1444.0,
+        1465.0,
+        1568.0,
+        1571.0,
+        1582.0
+      ]
+    },
+    "route": "12",
+    "start": "08:10:00",
+    "total": 234,
+    "variants": {
+      "merged": {
+        "fits": {
+          "adaptive_scan": {
+            "expected": [
+              120.0,
+              180.0,
+              180.0,
+              60.0,
+              120.0,
+              60.0,
+              585.96,
+              60.0,
+              120.0
+            ],
+            "geometry": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            "mae": 18.440000000000005,
+            "null_mae": 18.163104080565624,
+            "phases": 18,
+            "steps": [
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              6,
+              1,
+              1
+            ]
+          },
+          "consensus3_5s": {
+            "expected": [
+              60.0,
+              60.0,
+              180.0,
+              240.0,
+              120.0,
+              60.0,
+              585.96,
+              60.0,
+              120.0
+            ],
+            "geometry": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            "mae": 21.662222222222226,
+            "null_mae": 19.76,
+            "phases": 10,
+            "steps": [
+              1,
+              1,
+              1,
+              2,
+              1,
+              1,
+              6,
+              1,
+              1
+            ]
+          },
+          "feature_gmm": {
+            "expected": [
+              60.0,
+              60.0,
+              180.0,
+              180.0,
+              60.0,
+              120.0,
+              60.0,
+              585.96,
+              60.0,
+              120.0
+            ],
+            "geometry": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            "mae": 20.096000000000004,
+            "null_mae": 20.130793672509064,
+            "phases": 6,
+            "steps": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              6,
+              1,
+              1
+            ]
+          }
+        },
+        "methods": {
+          "adaptive_scan": [
+            0.0,
+            126.0,
+            356.0,
+            544.0,
+            614.0,
+            768.0,
+            840.0,
+            1419.0,
+            1444.0,
+            1568.0
+          ],
+          "consensus3_5s": [
+            0.0,
+            48.0,
+            125.5,
+            356.5,
+            612.5,
+            768.0,
+            842.5,
+            1420.0,
+            1444.0,
+            1568.0
+          ],
+          "feature_gmm": [
+            0.0,
+            48.0,
+            127.0,
+            357.0,
+            538.0,
+            614.0,
+            770.0,
+            845.0,
+            1423.0,
+            1444.0,
+            1569.0
+          ]
+        }
+      },
+      "raw": {
+        "fits": {
+          "adaptive_scan": {
+            "expected": [
+              120.0,
+              180.0,
+              180.0,
+              60.0,
+              120.0,
+              60.0,
+              585.96,
+              60.0,
+              120.0
+            ],
+            "geometry": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            "mae": 18.440000000000005,
+            "null_mae": 18.163104080565624,
+            "phases": 18,
+            "steps": [
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              6,
+              1,
+              1
+            ]
+          },
+          "consensus3_5s": {
+            "expected": [
+              60.0,
+              60.0,
+              180.0,
+              240.0,
+              120.0,
+              60.0,
+              585.96,
+              60.0,
+              120.0
+            ],
+            "geometry": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            "mae": 21.662222222222226,
+            "null_mae": 19.76,
+            "phases": 10,
+            "steps": [
+              1,
+              1,
+              1,
+              2,
+              1,
+              1,
+              6,
+              1,
+              1
+            ]
+          },
+          "feature_gmm": {
+            "expected": [
+              60.0,
+              240.0,
+              180.0,
+              60.0,
+              120.0,
+              60.0,
+              585.96,
+              60.0,
+              120.0
+            ],
+            "geometry": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            "mae": 16.551111111111116,
+            "null_mae": 20.77777777777778,
+            "phases": 6,
+            "steps": [
+              1,
+              2,
+              1,
+              1,
+              1,
+              1,
+              6,
+              1,
+              1
+            ]
+          }
+        },
+        "methods": {
+          "adaptive_scan": [
+            0.0,
+            126.0,
+            356.0,
+            544.0,
+            614.0,
+            768.0,
+            840.0,
+            1419.0,
+            1444.0,
+            1568.0
+          ],
+          "consensus3_5s": [
+            0.0,
+            48.0,
+            125.5,
+            356.5,
+            612.5,
+            768.0,
+            842.5,
+            1420.0,
+            1444.0,
+            1568.0
+          ],
+          "feature_gmm": [
+            48.0,
+            127.0,
+            357.0,
+            538.0,
+            614.0,
+            770.0,
+            845.0,
+            1423.0,
+            1444.0,
+            1569.0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "clock": [
+      "13:10:00",
+      "13:10:30",
+      "13:11:00",
+      "13:11:30",
+      "13:12:00",
+      "13:12:30",
+      "13:13:00",
+      "13:13:30",
+      "13:14:00",
+      "13:14:30",
+      "13:15:00",
+      "13:15:30",
+      "13:16:00",
+      "13:16:30",
+      "13:17:00",
+      "13:17:30",
+      "13:18:00",
+      "13:18:30",
+      "13:19:00",
+      "13:19:30",
+      "13:20:00",
+      "13:20:30",
+      "13:21:00",
+      "13:21:30",
+      "13:22:00",
+      "13:22:30",
+      "13:23:00",
+      "13:23:30",
+      "13:24:00",
+      "13:24:30",
+      "13:25:00",
+      "13:25:30",
+      "13:26:00",
+      "13:26:30",
+      "13:27:00",
+      "13:27:30",
+      "13:28:00",
+      "13:28:30",
+      "13:29:00",
+      "13:29:30",
+      "13:30:00",
+      "13:30:30",
+      "13:31:00",
+      "13:31:30",
+      "13:32:00",
+      "13:32:30",
+      "13:33:00",
+      "13:33:30",
+      "13:34:00",
+      "13:34:30",
+      "13:35:00",
+      "13:35:30",
+      "13:36:00",
+      "13:36:30",
+      "13:37:00",
+      "13:37:30",
+      "13:38:00",
+      "13:38:30",
+      "13:39:00",
+      "13:39:30",
+      "13:40:00"
+    ],
+    "counts": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        4,
+        0
+      ],
+      [
+        3,
+        1,
+        1,
+        2,
+        3,
+        5
+      ],
+      [
+        1,
+        3,
+        1,
+        4,
+        5,
+        4
+      ],
+      [
+        0,
+        3,
+        5,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        2,
+        4,
+        5,
+        3,
+        5,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        5,
+        1,
+        1,
+        4
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        4,
+        4,
+        3,
+        2,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        2,
+        5,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        3,
+        1,
+        3,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        3,
+        0,
+        2,
+        2
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        2
+      ],
+      [
+        0,
+        6,
+        7,
+        4,
+        3,
+        5
+      ],
+      [
+        0,
+        1,
+        4,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        4,
+        2,
+        0,
+        2,
+        2
+      ],
+      [
+        2,
+        3,
+        3,
+        0,
+        0,
+        4
+      ]
+    ],
+    "date": "15.05.2025",
+    "devices": [
+      "В1",
+      "В2",
+      "В3",
+      "В4",
+      "В5",
+      "В6"
+    ],
+    "end": "13:40:00",
+    "merge": {
+      "adaptive_scan": {
+        "anchor": {
+          "added": false,
+          "basis": "first_observed_payment",
+          "enabled": true,
+          "route_stop_index": null,
+          "time": 107.0,
+          "trip_start_confirmed": false
+        },
+        "decisions": [],
+        "groups": [
+          {
+            "members": [
+              107.0
+            ],
+            "support": 0,
+            "time": 107.0
+          },
+          {
+            "members": [
+              237.0
+            ],
+            "support": 1,
+            "time": 237.0
+          },
+          {
+            "members": [
+              421.0
+            ],
+            "support": 2,
+            "time": 421.0
+          },
+          {
+            "members": [
+              600.0
+            ],
+            "support": 3,
+            "time": 600.0
+          },
+          {
+            "members": [
+              666.0
+            ],
+            "support": 4,
+            "time": 666.0
+          },
+          {
+            "members": [
+              901.0
+            ],
+            "support": 5,
+            "time": 901.0
+          },
+          {
+            "members": [
+              1427.0
+            ],
+            "support": 6,
+            "time": 1427.0
+          },
+          {
+            "members": [
+              1507.0
+            ],
+            "support": 7,
+            "time": 1507.0
+          },
+          {
+            "members": [
+              1760.0
+            ],
+            "support": 8,
+            "time": 1760.0
+          }
+        ],
+        "input_candidates": 9,
+        "merged_candidates": 0,
+        "quiet_threshold": 0.01,
+        "times": [
+          107.0,
+          237.0,
+          421.0,
+          600.0,
+          666.0,
+          901.0,
+          1427.0,
+          1507.0,
+          1760.0
+        ]
+      },
+      "consensus3_5s": {
+        "anchor": {
+          "added": true,
+          "basis": "first_observed_payment",
+          "enabled": true,
+          "route_stop_index": null,
+          "time": 107.0,
+          "trip_start_confirmed": false
+        },
+        "decisions": [],
+        "groups": [
+          {
+            "members": [
+              107.0
+            ],
+            "support": 0,
+            "time": 107.0
+          },
+          {
+            "members": [
+              237.0
+            ],
+            "support": 1,
+            "time": 237.0
+          },
+          {
+            "members": [
+              602.0
+            ],
+            "support": 3,
+            "time": 602.0
+          },
+          {
+            "members": [
+              666.0
+            ],
+            "support": 4,
+            "time": 666.0
+          },
+          {
+            "members": [
+              901.0
+            ],
+            "support": 5,
+            "time": 901.0
+          },
+          {
+            "members": [
+              1478.0
+            ],
+            "support": 6,
+            "time": 1478.0
+          },
+          {
+            "members": [
+              1507.0
+            ],
+            "support": 7,
+            "time": 1507.0
+          },
+          {
+            "members": [
+              1760.0
+            ],
+            "support": 8,
+            "time": 1760.0
+          }
+        ],
+        "input_candidates": 7,
+        "merged_candidates": 0,
+        "quiet_threshold": 0.01,
+        "times": [
+          107.0,
+          237.0,
+          602.0,
+          666.0,
+          901.0,
+          1478.0,
+          1507.0,
+          1760.0
+        ]
+      },
+      "feature_gmm": {
+        "anchor": {
+          "added": true,
+          "basis": "first_observed_payment",
+          "enabled": true,
+          "route_stop_index": null,
+          "time": 107.0,
+          "trip_start_confirmed": false
+        },
+        "decisions": [
+          {
+            "decision": "merge_same_support",
+            "left": 107.0,
+            "quiet_score": 0.09798235146530668,
+            "right": 127.0,
+            "support": 0
+          }
+        ],
+        "groups": [
+          {
+            "members": [
+              107.0,
+              127.0
+            ],
+            "support": 0,
+            "time": 107.0
+          },
+          {
+            "members": [
+              240.0
+            ],
+            "support": 1,
+            "time": 240.0
+          },
+          {
+            "members": [
+              426.0
+            ],
+            "support": 2,
+            "time": 426.0
+          },
+          {
+            "members": [
+              604.0
+            ],
+            "support": 3,
+            "time": 604.0
+          },
+          {
+            "members": [
+              667.0
+            ],
+            "support": 4,
+            "time": 667.0
+          },
+          {
+            "members": [
+              901.0
+            ],
+            "support": 5,
+            "time": 901.0
+          },
+          {
+            "members": [
+              1370.0
+            ],
+            "support": null,
+            "time": 1370.0
+          },
+          {
+            "members": [
+              1482.0
+            ],
+            "support": 6,
+            "time": 1482.0
+          },
+          {
+            "members": [
+              1760.0
+            ],
+            "support": 8,
+            "time": 1760.0
+          }
+        ],
+        "input_candidates": 9,
+        "merged_candidates": 1,
+        "quiet_threshold": 0.01,
+        "times": [
+          107.0,
+          240.0,
+          426.0,
+          604.0,
+          667.0,
+          901.0,
+          1370.0,
+          1482.0,
+          1760.0
+        ]
+      }
+    },
+    "methods": {
+      "adaptive_scan": [
+        107.0,
+        237.0,
+        421.0,
+        600.0,
+        666.0,
+        901.0,
+        1427.0,
+        1507.0,
+        1760.0
+      ],
+      "algorithm_ml": [
+        107.0,
+        237.0,
+        420.0,
+        600.0,
+        666.0,
+        899.5,
+        1507.0,
+        1759.0
+      ],
+      "consensus3_5s": [
+        237.0,
+        602.0,
+        666.0,
+        901.0,
+        1478.0,
+        1507.0,
+        1760.0
+      ],
+      "feature_gmm": [
+        127.0,
+        240.0,
+        426.0,
+        604.0,
+        667.0,
+        901.0,
+        1370.0,
+        1482.0,
+        1760.0
+      ],
+      "hdbscan5": [
+        107.0,
+        158.0,
+        164.0,
+        193.0,
+        237.0,
+        334.0,
+        419.0,
+        494.0,
+        600.0,
+        666.0,
+        830.0,
+        898.0,
+        1031.0,
+        1361.0,
+        1464.0,
+        1478.0,
+        1482.0,
+        1507.0,
+        1591.0,
+        1758.0,
+        1770.0
+      ],
+      "synchrony": [
+        127.0,
+        159.0,
+        167.0,
+        237.0,
+        240.0,
+        438.0,
+        604.0,
+        666.0,
+        672.0,
+        679.0,
+        830.0,
+        901.0,
+        1036.0,
+        1108.0,
+        1464.0,
+        1467.0,
+        1478.0,
+        1482.0,
+        1485.0,
+        1488.0,
+        1493.0,
+        1507.0,
+        1760.0,
+        1770.0
+      ]
+    },
+    "route": "11",
+    "start": "13:10:00",
+    "total": 239,
+    "variants": {
+      "merged": {
+        "fits": {
+          "adaptive_scan": {
+            "expected": [
+              120.0,
+              180.0,
+              180.0,
+              60.0,
+              240.0,
+              489.69206327490934,
+              60.0,
+              240.0
+            ],
+            "geometry": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            "mae": 11.913492090636332,
+            "null_mae": 13.269007909363665,
+            "phases": 13,
+            "steps": [
+              1,
+              1,
+              2,
+              1,
+              3,
+              6,
+              1,
+              3
+            ]
+          },
+          "consensus3_5s": {
+            "expected": [
+              120.0,
+              354.18,
+              60.0,
+              240.0,
+              600.0,
+              60.0,
+              240.0
+            ],
+            "geometry": [
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "mae": 13.831428571428571,
+            "null_mae": 18.72,
+            "phases": 16,
+            "steps": [
+              2,
+              4,
+              1,
+              3,
+              4,
+              1,
+              3
+            ]
+          },
+          "feature_gmm": {
+            "expected": [
+              120.0,
+              189.69206327490934,
+              180.0,
+              60.0,
+              240.0,
+              480.0,
+              120.0,
+              240.0
+            ],
+            "geometry": [
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "mae": 10.586507909363668,
+            "null_mae": 9.857499999999998,
+            "phases": 10,
+            "steps": [
+              1,
+              2,
+              3,
+              1,
+              3,
+              4,
+              1,
+              2
+            ]
+          }
+        },
+        "methods": {
+          "adaptive_scan": [
+            107.0,
+            237.0,
+            421.0,
+            600.0,
+            666.0,
+            901.0,
+            1427.0,
+            1507.0,
+            1760.0
+          ],
+          "consensus3_5s": [
+            107.0,
+            237.0,
+            602.0,
+            666.0,
+            901.0,
+            1478.0,
+            1507.0,
+            1760.0
+          ],
+          "feature_gmm": [
+            107.0,
+            240.0,
+            426.0,
+            604.0,
+            667.0,
+            901.0,
+            1370.0,
+            1482.0,
+            1760.0
+          ]
+        }
+      },
+      "raw": {
+        "fits": {
+          "adaptive_scan": {
+            "expected": [
+              120.0,
+              180.0,
+              180.0,
+              60.0,
+              240.0,
+              489.69206327490934,
+              60.0,
+              240.0
+            ],
+            "geometry": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            "mae": 11.913492090636332,
+            "null_mae": 13.269007909363665,
+            "phases": 13,
+            "steps": [
+              1,
+              1,
+              2,
+              1,
+              3,
+              6,
+              1,
+              3
+            ]
+          },
+          "consensus3_5s": {
+            "expected": [
+              360.0,
+              60.0,
+              240.0,
+              569.28,
+              66.03999999999999,
+              240.0
+            ],
+            "geometry": [
+              false,
+              false,
+              false,
+              true,
+              true,
+              false
+            ],
+            "mae": 11.960000000000003,
+            "null_mae": 15.833333333333334,
+            "phases": 8,
+            "steps": [
+              4,
+              1,
+              3,
+              5,
+              1,
+              2
+            ]
+          },
+          "feature_gmm": {
+            "expected": [
+              120.0,
+              189.69206327490934,
+              180.0,
+              60.0,
+              240.0,
+              480.0,
+              120.0,
+              240.0
+            ],
+            "geometry": [
+              false,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "mae": 9.836507909363668,
+            "null_mae": 9.969999999999999,
+            "phases": 12,
+            "steps": [
+              1,
+              2,
+              3,
+              1,
+              3,
+              4,
+              1,
+              2
+            ]
+          }
+        },
+        "methods": {
+          "adaptive_scan": [
+            107.0,
+            237.0,
+            421.0,
+            600.0,
+            666.0,
+            901.0,
+            1427.0,
+            1507.0,
+            1760.0
+          ],
+          "consensus3_5s": [
+            237.0,
+            602.0,
+            666.0,
+            901.0,
+            1478.0,
+            1507.0,
+            1760.0
+          ],
+          "feature_gmm": [
+            127.0,
+            240.0,
+            426.0,
+            604.0,
+            667.0,
+            901.0,
+            1370.0,
+            1482.0,
+            1760.0
+          ]
+        }
+      }
+    }
+  }
+]
+</script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script>
+(()=>{
+ const root=document.getElementById('tram-schedule'),data=JSON.parse(document.getElementById('schedule-data').textContent);
+ const route=root.querySelector('#schedule-route'),method=root.querySelector('#schedule-method'),mode=root.querySelector('#schedule-mode');
+ const svg=d3.select(root.querySelector('svg')),tip=root.querySelector('.tooltip');
+ let selected=0,methodId='consensus3_5s',modeId='local',variant='merged',pair=0,page=0;
+ let visible=new Set(['actual','expected','geometry']);let x,y,frame,width;
+ const labels={consensus3_5s:'≥3 семейства',adaptive_scan:'Адаптивный',feature_gmm:'GMM'};
+ const series=[{id:'actual',label:'Начала по оплатам',color:'var(--red)',dash:''},{id:'expected',label:'По интервалам расписания',color:'var(--viz-series-1)',dash:'7 4'},{id:'geometry',label:'Есть оценка по геометрии',color:'var(--viz-series-2)',dash:'2 4'}];
+ data.forEach((w,i)=>{const o=document.createElement('option');o.value=i;o.textContent='Маршрут '+w.route+' · '+w.start.slice(0,5)+'–'+w.end.slice(0,5);route.append(o);});
+ function restore(s){const p=s?.privateContent;if(p?.version!==3)return;if(['raw','merged'].includes(p.variant))variant=p.variant;if(Number.isInteger(p.selected)&&p.selected>=0&&p.selected<3)selected=p.selected;if(labels[p.methodId])methodId=p.methodId;if(['local','chain'].includes(p.modeId))modeId=p.modeId;if(Number.isInteger(p.pair))pair=p.pair;if(Number.isInteger(p.page)&&p.page>=0&&p.page<6)page=p.page;if(Array.isArray(p.visible))visible=new Set(p.visible.filter(k=>series.some(s=>s.id===k)));}
+ restore(window.openai?.widgetState);
+ function save(){if(window.openai?.setWidgetState)window.openai.setWidgetState({modelContent:{route:data[selected].route,date:'15.05.2025',method:methodId,comparison:modeId,coalescing:variant,intervalPair:pair+1},privateContent:{version:3,selected,methodId,modeId,variant,pair,page,visible:[...visible]}}).catch(()=>{});}
+ function values(){const base=data[selected],w={...base,...base.variants[variant]},f=w.fits[methodId],t=w.methods[methodId];let running=t[0];const expected=f.expected.map((gap,i)=>{running+=gap;return modeId==='local'?t[i]+gap:running;});pair=Math.max(0,Math.min(pair,f.expected.length-1));return {w,f,t,expected};}
+ function clock(sec){const w=data[selected],a=w.start.split(':').map(Number);let all=a[0]*3600+a[1]*60+a[2]+sec;all=Math.round(all*10)/10;const base=[Math.floor(all/3600)%24,Math.floor(all/60)%60,Math.floor(all)%60].map(v=>String(v).padStart(2,'0')).join(':');const frac=Math.round((all-Math.floor(all))*10);return base+(frac?','+frac:'');}
+ function num(n){return Number(n.toFixed(1)).toLocaleString('ru-RU');}
+ function signed(n){return (n>0?'+':'')+num(n);}
+ function legend(){const box=root.querySelector('#schedule-legend');box.replaceChildren();series.forEach(s=>{const b=document.createElement('button');b.type='button';b.className='cursor-interaction';b.setAttribute('aria-pressed',String(visible.has(s.id)));const sw=document.createElement('span');sw.className='swatch';sw.style.borderColor=s.color;sw.style.borderTopStyle=s.dash?'dashed':'solid';sw.setAttribute('aria-hidden','true');b.append(sw,document.createTextNode(s.label));b.addEventListener('click',()=>{visible.has(s.id)?visible.delete(s.id):visible.add(s.id);render();save();});box.append(b);});}
+ function countTable(){const {w,t,expected}=values();root.querySelector('#schedule-count-head').innerHTML='<tr><th scope="col">Интервал</th>'+w.devices.map(d=>'<th scope="col" class="text-end">'+d+'</th>').join('')+'<th scope="col" class="text-end">Всего</th><th scope="col">По оплатам / ожидание</th></tr>';const body=root.querySelector('#schedule-count-body');body.replaceChildren();for(let b=page*10;b<(page+1)*10;b++){const a=t.filter(v=>v>=b*30&&v<(b+1)*30),e=expected.filter(v=>v>=b*30&&v<(b+1)*30);const tr=document.createElement('tr');if(Math.floor(t[pair+1]/30)===b)tr.className='selected-row';tr.innerHTML='<th class="text-nowrap" scope="row">'+w.clock[b]+'–'+w.clock[b+1]+'</th>'+w.counts[b].map(n=>'<td class="text-end">'+n+'</td>').join('')+'<td class="text-end">'+d3.sum(w.counts[b])+'</td><td>'+(a.map(clock).join(', ')||'—')+' / '+(e.map(clock).join(', ')||'—')+'</td>';body.append(tr);}
+ root.querySelector('#schedule-count-foot').innerHTML='<tr><th scope="row">Все 30 минут</th>'+w.devices.map((_,j)=>'<td class="text-end">'+d3.sum(w.counts,r=>r[j])+'</td>').join('')+'<td class="text-end">'+w.total+'</td><td></td></tr>';root.querySelector('#schedule-page').textContent=w.clock[page*10]+'–'+w.clock[(page+1)*10]+' · '+(page+1)+'/6';root.querySelector('#schedule-prev').disabled=page===0;root.querySelector('#schedule-next').disabled=page===5;}
+ function intervals(){const {w,f,t,expected}=values();const body=root.querySelector('#schedule-intervals');body.replaceChildren();f.expected.forEach((gap,i)=>{const tr=document.createElement('tr');if(i===pair)tr.className='selected-row';const th=document.createElement('th');th.scope='row';const b=document.createElement('button');b.type='button';b.className='btn btn-ghost';b.textContent=(i+1)+'→'+(i+2);b.setAttribute('aria-label','Выделить промежуток '+(i+1)+' на графике');b.addEventListener('click',()=>{pair=i;page=Math.min(5,Math.floor(t[i+1]/300));render();save();});th.append(b);tr.append(th);const obs=t[i+1]-t[i];[clock(t[i])+'–'+clock(t[i+1]),num(obs),num(gap),signed(obs-gap),f.steps[i],f.geometry[i]?'Смешанная':'Расписание'].forEach((value,j)=>{const td=document.createElement('td');td.textContent=value;if(j>0&&j<5)td.className='text-end';if(j===0)td.classList.add('text-nowrap');tr.append(td);});body.append(tr);});
+ root.querySelector('#schedule-detail').textContent='Пара '+(pair+1)+'→'+(pair+2)+': начало '+clock(t[pair+1])+' · ожидание '+clock(expected[pair])+' · разница '+signed(t[pair+1]-expected[pair])+' с';
+ root.querySelector('#schedule-metrics').textContent='Средняя ошибка интервалов: '+num(f.mae)+' с · контроль: '+num(f.null_mae)+' с · почти равных начальных позиций: '+f.phases;
+ root.querySelector('#schedule-meta').textContent=w.total+' оплат · '+t.length+' начал'+(variant==='merged'?' · объединено '+w.merge[methodId].merged_candidates+' меток':' · без объединения')+(variant==='merged'?' · первая оплата '+clock(t[0])+' — граничная гипотеза':'')+' · прокси-расписание, не подтверждённый рейс';countTable();}
+ function draw(){const {w,f,t,expected}=values();width=root.querySelector('.plotbox').getBoundingClientRect().width;if(width<1)return;const height=365;frame={left:64,right:width-18,top:44,bottom:height-62};svg.attr('width',width).attr('height',height).attr('viewBox','0 0 '+width+' '+height);svg.selectAll('*').remove();svg.append('title').text('Маршрут '+w.route+'. Серые столбики: оплаты за30секунд. Красные линии: '+labels[methodId]+'. Пунктир: ожидаемые начала.');
+ const totals=w.counts.map(r=>d3.sum(r));const extent=d3.extent([0,1800,...t,...expected]);const padding=Math.max(10,(extent[1]-extent[0])*.01);x=d3.scaleLinear().domain([extent[0]-padding,extent[1]+padding]).range([frame.left+4,frame.right-4]);y=d3.scaleLinear().domain([0,Math.max(1,d3.max(totals))*1.2]).nice().range([frame.bottom-1,frame.top+6]);
+ svg.append('rect').attr('data-chart-frame','').attr('x',frame.left).attr('y',frame.top).attr('width',frame.right-frame.left).attr('height',frame.bottom-frame.top).attr('fill','none').attr('stroke','var(--border)');
+ y.ticks(5).filter(n=>Number.isInteger(n)&&n>0).forEach(n=>svg.append('line').attr('x1',frame.left).attr('x2',frame.right).attr('y1',y(n)).attr('y2',y(n)).attr('stroke','var(--border)').attr('stroke-opacity',.55));
+ svg.selectAll('.bar').data(totals).join('rect').attr('class','bar').attr('x',(_,i)=>x(i*30)+.5).attr('y',d=>y(d)).attr('width',Math.max(.5,x(30)-x(0)-1)).attr('height',d=>y(0)-y(d)).attr('fill','var(--foreground)').attr('opacity',(_,i)=>i===Math.floor(t[pair+1]/30)?.38:.17);
+ expected.forEach((time,i)=>{const kind=f.geometry[i]?'geometry':'expected';if(!visible.has(kind))return;const s=series.find(v=>v.id===kind);svg.append('line').attr('data-expected',i).attr('x1',x(time)).attr('x2',x(time)).attr('y1',frame.top+4).attr('y2',frame.bottom-1).attr('stroke',s.color).attr('stroke-width',i===pair?2.6:1.7).attr('stroke-dasharray',s.dash).attr('opacity',i===pair?1:.75);});
+ if(visible.has('actual'))t.forEach((time,i)=>svg.append('line').attr('data-actual',i).attr('x1',x(time)).attr('x2',x(time)).attr('y1',frame.top+4).attr('y2',frame.bottom-1).attr('stroke','var(--red)').attr('stroke-width',i===pair+1?2.6:1.6).attr('opacity',i===pair+1?1:.68));
+ if(variant==='merged'&&visible.has('actual'))svg.append('path').attr('data-first-anchor','').attr('d',d3.symbol().type(d3.symbolDiamond).size(65)()).attr('transform','translate('+x(t[0])+','+(frame.top+8)+')').attr('fill','var(--red)').attr('data-tooltip','Первая оплата '+clock(t[0])+': обязательная граничная гипотеза');
+ const expectedKind=f.geometry[pair]?'geometry':'expected';if(visible.has('actual')&&visible.has(expectedKind)){svg.append('line').attr('x1',x(expected[pair])).attr('x2',x(t[pair+1])).attr('y1',frame.top+17).attr('y2',frame.top+17).attr('stroke','var(--foreground)').attr('stroke-width',1);svg.append('circle').attr('cx',x(t[pair+1])).attr('cy',frame.top+17).attr('r',3).attr('fill','var(--red)');svg.append('rect').attr('x',x(expected[pair])-3).attr('y',frame.top+14).attr('width',6).attr('height',6).attr('fill',series.find(s=>s.id===expectedKind).color);}
+ const ticks=width<440?[0,900,1800]:[0,300,600,900,1200,1500,1800];const xa=svg.append('g').attr('transform','translate(0,'+frame.bottom+')').call(d3.axisBottom(x).tickValues(ticks).tickFormat(v=>clock(v).slice(0,5)).tickSize(4));xa.select('.domain').remove();xa.selectAll('.tick').each(function(v){d3.select(this).select('text').attr('text-anchor',v===0?'start':v===1800?'end':'middle');});const ya=svg.append('g').attr('transform','translate('+frame.left+',0)').call(d3.axisLeft(y).tickValues(y.ticks(5).filter(Number.isInteger)).tickSize(4));ya.select('.domain').remove();svg.selectAll('.tick line').attr('stroke','var(--border)');svg.append('text').attr('class','axis-title').attr('data-axis','y').attr('x',frame.left).attr('y',20).text('Оплаты / 30 с');svg.append('text').attr('class','axis-title').attr('data-axis','x').attr('x',(frame.left+frame.right)/2).attr('y',height-14).attr('text-anchor','middle').text('Время · Москва');
+ const guide=svg.append('line').attr('data-chart-hover-guide','').attr('y1',frame.top).attr('y2',frame.bottom).attr('stroke','var(--foreground)').attr('visibility','hidden');
+ svg.append('rect').attr('data-chart-hit','').attr('data-chart-hover-overlay','cross-series').attr('x',frame.left).attr('y',frame.top).attr('width',frame.right-frame.left).attr('height',frame.bottom-frame.top).attr('fill','transparent').on('pointermove',function(event){const [px]=d3.pointer(event,this),second=x.invert(px),b=Math.max(0,Math.min(59,Math.floor(second/30)));const i=d3.bisector(v=>v).center(t.slice(1),second);guide.attr('x1',px).attr('x2',px).attr('visibility','visible');tip.innerHTML='<strong>'+w.clock[b]+'–'+w.clock[b+1]+'</strong><div>Оплат: '+totals[b]+'</div><div>Ближайшая пара '+(i+1)+'→'+(i+2)+'</div>'+(visible.has('actual')?'<div>По оплатам: '+clock(t[i+1])+'</div>':'')+(visible.has(f.geometry[i]?'geometry':'expected')?'<div>Ожидание: '+clock(expected[i])+'</div>':'');tip.hidden=false;const r=root.getBoundingClientRect();tip.style.left=Math.max(0,Math.min(width-tip.offsetWidth,event.clientX-r.left+10))+'px';tip.style.top=Math.max(0,event.clientY-r.top-tip.offsetHeight-10)+'px';}).on('pointerleave',()=>{guide.attr('visibility','hidden');tip.hidden=true;}).on('click',function(event){const [px]=d3.pointer(event,this);pair=d3.bisector(v=>v).center(t.slice(1),x.invert(px));page=Math.min(5,Math.floor(t[pair+1]/300));tip.hidden=true;render();save();});
+ const boxes=xa.selectAll('.tick text').nodes().map(el=>({el,box:el.getBoundingClientRect()}));for(let i=1;i<boxes.length-1;i++)if(boxes[i].box.left-boxes[i-1].box.right<4)d3.select(boxes[i].el.parentNode).remove();}
+ function render(){route.value=selected;method.value=methodId;mode.value=modeId;root.querySelector('#schedule-variant').value=variant;legend();intervals();draw();}
+ root.querySelector('#schedule-variant').addEventListener('change',e=>{variant=e.target.value;pair=0;render();save();});
+ route.addEventListener('change',()=>{selected=Number(route.value);pair=0;page=0;render();save();});method.addEventListener('change',()=>{methodId=method.value;pair=0;render();save();});mode.addEventListener('change',()=>{modeId=mode.value;render();save();});root.querySelector('#schedule-prev').addEventListener('click',()=>{page=Math.max(0,page-1);countTable();save();});root.querySelector('#schedule-next').addEventListener('click',()=>{page=Math.min(5,page+1);countTable();save();});window.addEventListener('openai:set_globals',e=>{if(e.detail?.globals?.widgetState){restore(e.detail.globals.widgetState);render();}});new ResizeObserver(draw).observe(root.querySelector('.plotbox'));render();
+})();
+</script>

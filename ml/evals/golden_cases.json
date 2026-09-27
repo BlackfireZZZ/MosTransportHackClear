@@ -1,0 +1,52 @@
+[
+  {
+    "id": "day-normal-peak",
+    "horizon": "day",
+    "scenario": "normal_weekday",
+    "actual": [90, 140, 210, 170],
+    "prediction": [94, 145, 202, 176],
+    "baseline_prediction": [80, 118, 180, 190],
+    "lower_bound": [82, 128, 185, 158],
+    "upper_bound": [108, 164, 224, 194]
+  },
+  {
+    "id": "day-city-event",
+    "horizon": "day",
+    "scenario": "major_concert",
+    "actual": [120, 190, 310, 260],
+    "prediction": [126, 198, 296, 270],
+    "baseline_prediction": [95, 145, 205, 190],
+    "lower_bound": [108, 172, 270, 240],
+    "upper_bound": [145, 224, 330, 300]
+  },
+  {
+    "id": "month-service-change",
+    "horizon": "month",
+    "scenario": "route_interval_change",
+    "actual": [1200, 1350, 1290, 1410],
+    "prediction": [1220, 1320, 1310, 1390],
+    "baseline_prediction": [1100, 1190, 1160, 1250],
+    "lower_bound": [1120, 1210, 1200, 1270],
+    "upper_bound": [1320, 1430, 1420, 1510]
+  },
+  {
+    "id": "month-network-disruption",
+    "horizon": "month",
+    "scenario": "edge_closure",
+    "actual": [980, 870, 1050, 1140],
+    "prediction": [995, 890, 1025, 1120],
+    "baseline_prediction": [1190, 1140, 1210, 1200],
+    "lower_bound": [900, 790, 920, 1010],
+    "upper_bound": [1090, 990, 1130, 1240]
+  },
+  {
+    "id": "year-seasonality",
+    "horizon": "year",
+    "scenario": "annual_seasonality",
+    "actual": [9200, 10400, 9800, 11200],
+    "prediction": [9400, 10150, 10000, 10950],
+    "baseline_prediction": [8500, 9000, 9000, 9400],
+    "lower_bound": [8500, 9200, 9000, 9900],
+    "upper_bound": [10300, 11100, 11000, 12000]
+  }
+]

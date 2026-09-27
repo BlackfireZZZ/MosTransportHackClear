@@ -1,0 +1,388 @@
+[
+  {
+    "direction": "0",
+    "osm_relation": 540139,
+    "osm_version": 94,
+    "osm_stops": 26,
+    "gtfs_stops": 27,
+    "matched": 26,
+    "max_distance_m": 41.112802012705345,
+    "mapping": [
+      {
+        "osm_index": 25,
+        "gtfs_index": 26,
+        "osm_name": "Усадьба Останкино",
+        "gtfs_name": "Останкино",
+        "distance_m": 11.747819739245433
+      },
+      {
+        "osm_index": 24,
+        "gtfs_index": 25,
+        "osm_name": "Аргуновская улица",
+        "gtfs_name": "Аргуновская улица",
+        "distance_m": 16.449164986822225
+      },
+      {
+        "osm_index": 23,
+        "gtfs_index": 24,
+        "osm_name": "Улица Цандера",
+        "gtfs_name": "Улица Цандера",
+        "distance_m": 18.957369409598723
+      },
+      {
+        "osm_index": 22,
+        "gtfs_index": 23,
+        "osm_name": "ВДНХ (южный вход)",
+        "gtfs_name": "ВДНХ (южная)",
+        "distance_m": 6.2956849657707865
+      },
+      {
+        "osm_index": 21,
+        "gtfs_index": 22,
+        "osm_name": "Метро «ВДНХ»",
+        "gtfs_name": "Метро «ВДНХ»",
+        "distance_m": 24.25699500954312
+      },
+      {
+        "osm_index": 20,
+        "gtfs_index": 21,
+        "osm_name": "ВДНХ (северный вход)",
+        "gtfs_name": "ВДНХ (северная)",
+        "distance_m": 9.7133629201389
+      },
+      {
+        "osm_index": 19,
+        "gtfs_index": 20,
+        "osm_name": "улица Сергея Эйзенштейна",
+        "gtfs_name": "Улица Сергея Эйзенштейна",
+        "distance_m": 6.129853129416448
+      },
+      {
+        "osm_index": 18,
+        "gtfs_index": 19,
+        "osm_name": "Сельскохозяйственная улица",
+        "gtfs_name": "Сельскохозяйственная улица",
+        "distance_m": 13.028481336824063
+      },
+      {
+        "osm_index": 17,
+        "gtfs_index": 18,
+        "osm_name": "улица Докукина",
+        "gtfs_name": "Улица Докукина",
+        "distance_m": 7.041087694614697
+      },
+      {
+        "osm_index": 16,
+        "gtfs_index": 17,
+        "osm_name": "МЦК Ростокино",
+        "gtfs_name": "МЦК Ростокино",
+        "distance_m": 20.1033367483416
+      },
+      {
+        "osm_index": 15,
+        "gtfs_index": 16,
+        "osm_name": "node/535516937",
+        "gtfs_name": "Северянинский путепровод",
+        "distance_m": 7.00792663022663
+      },
+      {
+        "osm_index": 14,
+        "gtfs_index": 15,
+        "osm_name": "Социальный фонд России",
+        "gtfs_name": "Социальный фонд России",
+        "distance_m": 6.102151365911
+      },
+      {
+        "osm_index": 13,
+        "gtfs_index": 14,
+        "osm_name": "Берингов проезд",
+        "gtfs_name": "Берингов проезд",
+        "distance_m": 10.518376181155073
+      },
+      {
+        "osm_index": 12,
+        "gtfs_index": 13,
+        "osm_name": "Верхоянская улица",
+        "gtfs_name": "Верхоянская улица",
+        "distance_m": 10.245042531725803
+      },
+      {
+        "osm_index": 11,
+        "gtfs_index": 12,
+        "osm_name": "Радужная улица",
+        "gtfs_name": "Радужная улица",
+        "distance_m": 7.427327772870613
+      },
+      {
+        "osm_index": 10,
+        "gtfs_index": 11,
+        "osm_name": "Печорская улица",
+        "gtfs_name": "Печорская улица",
+        "distance_m": 7.2042780333627805
+      },
+      {
+        "osm_index": 9,
+        "gtfs_index": 10,
+        "osm_name": "Метро «Бабушкинская»",
+        "gtfs_name": "Метро «Бабушкинская»",
+        "distance_m": 17.012840740411267
+      },
+      {
+        "osm_index": 8,
+        "gtfs_index": 9,
+        "osm_name": "Олонецкий проезд",
+        "gtfs_name": "Улица Менжинского, 38",
+        "distance_m": 20.03365822587285
+      },
+      {
+        "osm_index": 7,
+        "gtfs_index": 8,
+        "osm_name": "Сухонская улица",
+        "gtfs_name": "Сухонская улица",
+        "distance_m": 7.934672536805099
+      },
+      {
+        "osm_index": 6,
+        "gtfs_index": 7,
+        "osm_name": "Проезд Шокальского",
+        "gtfs_name": "Проезд Шокальского",
+        "distance_m": 10.338008993325063
+      },
+      {
+        "osm_index": 5,
+        "gtfs_index": 6,
+        "osm_name": "МФЦ «Южное Медведково»",
+        "gtfs_name": "МФЦ Южное Медведково",
+        "distance_m": 12.090309616215007
+      },
+      {
+        "osm_index": 4,
+        "gtfs_index": 5,
+        "osm_name": "Культурно-досуговый центр",
+        "gtfs_name": "Культурно-досуговый центр",
+        "distance_m": 5.343725979399585
+      },
+      {
+        "osm_index": 3,
+        "gtfs_index": 4,
+        "osm_name": "Улица Молодцова",
+        "gtfs_name": "Улица Молодцова",
+        "distance_m": 7.940502197463573
+      },
+      {
+        "osm_index": 2,
+        "gtfs_index": 3,
+        "osm_name": "Поликлиника",
+        "gtfs_name": "Поликлиника",
+        "distance_m": 22.538119298943034
+      },
+      {
+        "osm_index": 1,
+        "gtfs_index": 2,
+        "osm_name": "Улица Тихомирова",
+        "gtfs_name": "Улица Тихомирова",
+        "distance_m": 9.901928207842662
+      },
+      {
+        "osm_index": 0,
+        "gtfs_index": 1,
+        "osm_name": "Медведково",
+        "gtfs_name": "Медведково",
+        "distance_m": 41.112802012705345
+      }
+    ]
+  },
+  {
+    "direction": "1",
+    "osm_relation": 540033,
+    "osm_version": 85,
+    "osm_stops": 26,
+    "gtfs_stops": 27,
+    "matched": 26,
+    "max_distance_m": 48.70913930289486,
+    "mapping": [
+      {
+        "osm_index": 25,
+        "gtfs_index": 26,
+        "osm_name": "Медведково",
+        "gtfs_name": "Медведково",
+        "distance_m": 48.70913930289486
+      },
+      {
+        "osm_index": 24,
+        "gtfs_index": 25,
+        "osm_name": "Улица Тихомирова",
+        "gtfs_name": "Улица Тихомирова",
+        "distance_m": 8.033214644011716
+      },
+      {
+        "osm_index": 23,
+        "gtfs_index": 24,
+        "osm_name": "Поликлиника",
+        "gtfs_name": "Поликлиника",
+        "distance_m": 12.82300652253713
+      },
+      {
+        "osm_index": 22,
+        "gtfs_index": 23,
+        "osm_name": "Улица Молодцова",
+        "gtfs_name": "Улица Молодцова",
+        "distance_m": 5.464236967314939
+      },
+      {
+        "osm_index": 21,
+        "gtfs_index": 22,
+        "osm_name": "Культурно-досуговый центр",
+        "gtfs_name": "Культурно-досуговый центр",
+        "distance_m": 25.82736603344302
+      },
+      {
+        "osm_index": 20,
+        "gtfs_index": 21,
+        "osm_name": "МФЦ «Южное Медведково»",
+        "gtfs_name": "МФЦ «Южное Медведково»",
+        "distance_m": 5.995589052354231
+      },
+      {
+        "osm_index": 19,
+        "gtfs_index": 20,
+        "osm_name": "Проезд Шокальского",
+        "gtfs_name": "Проезд Шокальского",
+        "distance_m": 20.755191916923522
+      },
+      {
+        "osm_index": 18,
+        "gtfs_index": 19,
+        "osm_name": "Сухонская улица",
+        "gtfs_name": "Сухонская улица",
+        "distance_m": 5.401545723208536
+      },
+      {
+        "osm_index": 17,
+        "gtfs_index": 18,
+        "osm_name": "Олонецкий проезд",
+        "gtfs_name": "Улица Менжинского, 38",
+        "distance_m": 9.195347579218806
+      },
+      {
+        "osm_index": 16,
+        "gtfs_index": 17,
+        "osm_name": "Метро «Бабушкинская»",
+        "gtfs_name": "Метро «Бабушкинская»",
+        "distance_m": 9.336550058957561
+      },
+      {
+        "osm_index": 15,
+        "gtfs_index": 16,
+        "osm_name": "Печорская улица",
+        "gtfs_name": "Печорская улица",
+        "distance_m": 6.791709933097072
+      },
+      {
+        "osm_index": 14,
+        "gtfs_index": 15,
+        "osm_name": "Радужная улица",
+        "gtfs_name": "Радужная улица",
+        "distance_m": 5.194499159782232
+      },
+      {
+        "osm_index": 13,
+        "gtfs_index": 14,
+        "osm_name": "Верхоянская улица",
+        "gtfs_name": "Верхоянская улица",
+        "distance_m": 6.008670053110258
+      },
+      {
+        "osm_index": 12,
+        "gtfs_index": 13,
+        "osm_name": "Берингов проезд",
+        "gtfs_name": "Берингов проезд",
+        "distance_m": 11.493358220246108
+      },
+      {
+        "osm_index": 11,
+        "gtfs_index": 12,
+        "osm_name": "Социальный фонд России",
+        "gtfs_name": "Социальный фонд России",
+        "distance_m": 7.084926286343444
+      },
+      {
+        "osm_index": 10,
+        "gtfs_index": 11,
+        "osm_name": "node/535844771",
+        "gtfs_name": "Северянинский путепровод",
+        "distance_m": 8.414051985945237
+      },
+      {
+        "osm_index": 9,
+        "gtfs_index": 10,
+        "osm_name": "МЦК Ростокино",
+        "gtfs_name": "МЦК Ростокино",
+        "distance_m": 9.86149256383224
+      },
+      {
+        "osm_index": 8,
+        "gtfs_index": 9,
+        "osm_name": "Улица Докукина",
+        "gtfs_name": "Улица Докукина",
+        "distance_m": 12.643947900514892
+      },
+      {
+        "osm_index": 7,
+        "gtfs_index": 8,
+        "osm_name": "Сельскохозяйственная улица",
+        "gtfs_name": "Сельскохозяйственная улица",
+        "distance_m": 11.360596035831414
+      },
+      {
+        "osm_index": 6,
+        "gtfs_index": 7,
+        "osm_name": "улица Сергея Эйзенштейна",
+        "gtfs_name": "Улица Сергея Эйзенштейна",
+        "distance_m": 10.308126846097839
+      },
+      {
+        "osm_index": 5,
+        "gtfs_index": 6,
+        "osm_name": "ВДНХ (северный вход)",
+        "gtfs_name": "ВДНХ (северная)",
+        "distance_m": 31.82866267868572
+      },
+      {
+        "osm_index": 4,
+        "gtfs_index": 5,
+        "osm_name": "Метро «ВДНХ»",
+        "gtfs_name": "Метро «ВДНХ»",
+        "distance_m": 6.405296389458229
+      },
+      {
+        "osm_index": 3,
+        "gtfs_index": 4,
+        "osm_name": "ВДНХ (южный вход)",
+        "gtfs_name": "ВДНХ (южная)",
+        "distance_m": 8.503263815143043
+      },
+      {
+        "osm_index": 2,
+        "gtfs_index": 3,
+        "osm_name": "Улица Цандера",
+        "gtfs_name": "Улица Цандера",
+        "distance_m": 9.147048108754852
+      },
+      {
+        "osm_index": 1,
+        "gtfs_index": 2,
+        "osm_name": "Аргуновская улица",
+        "gtfs_name": "Аргуновская улица",
+        "distance_m": 10.680075527058237
+      },
+      {
+        "osm_index": 0,
+        "gtfs_index": 1,
+        "osm_name": "Усадьба Останкино",
+        "gtfs_name": "Останкино",
+        "distance_m": 14.007321224863114
+      }
+    ]
+  }
+]

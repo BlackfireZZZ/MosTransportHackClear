@@ -1,0 +1,379 @@
+{
+  "schema_version": "boarding-service-notices-v1",
+  "timezone": "Europe/Moscow",
+  "retrieved_date": "2026-09-26",
+  "complete_historical_calendar": false,
+  "notices": [
+    {
+      "id": "123622",
+      "url": "https://transport.mos.ru/mostrans/all_news/123622",
+      "published_date": "2025-03-14",
+      "routes": [
+        "50"
+      ],
+      "effective_start": "2025-03-15",
+      "effective_end_exclusive": "2025-08-11",
+      "end_unknown": false,
+      "recurrence": "weekends",
+      "change": "Via Perunovsky lane without MIIT.",
+      "evidence_limitation": "Aug11 restoration gives an outer bound; July10 superseded by13+50 variant. Earlier restoration not established.",
+      "restoration_source": "https://www.mosmetro.ru/news/details/7570",
+      "source_path": "ml/artifacts/real-sources/service-notices/123622.html",
+      "source_sha256": "4a67d1e987fe900d2aacfd1d7fc52c50c0645991894c60505023f3aaa0f025a7"
+    },
+    {
+      "id": "123857",
+      "url": "https://transport.mos.ru/mostrans/all_news/123857",
+      "published_date": "2025-04-04",
+      "routes": [
+        "17"
+      ],
+      "effective_start": "2025-04-05",
+      "effective_end_exclusive": "2025-04-19",
+      "end_unknown": false,
+      "recurrence": "weekends",
+      "change": "Ostankino–Selskokhozyaystvennaya shortened.",
+      "evidence_limitation": "Published planned service; not proof of individual operated trips.",
+      "restoration_source": "https://t.me/DtOperativno/20824",
+      "source_path": "ml/artifacts/real-sources/service-notices/123857.html",
+      "source_sha256": "3dc0f2ec38f6ec9faa26dcd5125d71f2fc77353f05c9e696271af171a0495eab"
+    },
+    {
+      "id": "telegram20825",
+      "url": "https://t.me/DtOperativno/20824",
+      "published_date": "2025-04-17",
+      "routes": [
+        "17"
+      ],
+      "effective_start": "2025-04-19",
+      "effective_end_exclusive": null,
+      "end_unknown": false,
+      "recurrence": "restoration",
+      "change": "Normal weekend route restored.",
+      "evidence_limitation": "Official channel HTML data-post20824 datetime2025-04-17T11:38:25Z; this restoration does not negate laterApr26closure.",
+      "restoration_source": null,
+      "source_path": "ml/artifacts/real-sources/service-notices/telegram20825.html",
+      "source_sha256": "97480329460db9e12a562fd806e6d613b5bdb22552ae5ef3eee818f6c6a08249"
+    },
+    {
+      "id": "124110",
+      "url": "https://transport.mos.ru/mostrans/all_news/124110",
+      "published_date": "2025-04-22",
+      "routes": [
+        "17"
+      ],
+      "effective_start": "2025-04-26",
+      "effective_end_exclusive": "2025-05-01",
+      "end_unknown": false,
+      "recurrence": "weekends",
+      "change": "Route17 suspended.",
+      "evidence_limitation": "Published planned service; not proof of individual operated trips.",
+      "restoration_source": "https://www.mosmetro.ru/news/details/6793",
+      "source_path": "ml/artifacts/real-sources/service-notices/124110.html",
+      "source_sha256": "cce4512a215ef13b802cd0f8f80847e4ba5da5fbb12c1798a79e21803b530be2"
+    },
+    {
+      "id": "6793",
+      "url": "https://www.mosmetro.ru/news/details/6793",
+      "published_date": "2025-04-30",
+      "routes": [
+        "17"
+      ],
+      "effective_start": "2025-05-01",
+      "effective_end_exclusive": null,
+      "end_unknown": false,
+      "recurrence": "restoration",
+      "change": "Normal weekend route restored.",
+      "evidence_limitation": "Published planned service; not proof of individual operated trips.",
+      "restoration_source": null,
+      "source_path": "ml/artifacts/real-sources/service-notices/6793.html",
+      "source_sha256": "9356e2549f47fe187697a0df8f6a9a6b33879f80b657d591867fe2c98aa9dbfd"
+    },
+    {
+      "id": "124737",
+      "url": "https://transport.mos.ru/mostrans/all_news/124737",
+      "published_date": "2025-06-02",
+      "routes": [
+        "12"
+      ],
+      "effective_start": "2025-06-07",
+      "effective_end_exclusive": "2025-06-21",
+      "end_unknown": false,
+      "recurrence": "weekends",
+      "change": "Eastern Izmaylovo via Budyonny to MCD Novogireyevo.",
+      "evidence_limitation": "Published planned service; not proof of individual operated trips.",
+      "restoration_source": "https://www.mosmetro.ru/news/details/7177",
+      "source_path": "ml/artifacts/real-sources/service-notices/124737.html",
+      "source_sha256": "548e2242f828b73c94cc46ce1e15d04438471e8f4509a87205c70d04a852aefd"
+    },
+    {
+      "id": "7177",
+      "url": "https://www.mosmetro.ru/news/details/7177",
+      "published_date": "2025-06-20",
+      "routes": [
+        "12"
+      ],
+      "effective_start": "2025-06-21",
+      "effective_end_exclusive": null,
+      "end_unknown": false,
+      "recurrence": "restoration",
+      "change": "Normal weekend route restored between Aviamotornaya and Shosse Entuziastov.",
+      "evidence_limitation": "Published planned service; not proof of individual operated trips.",
+      "restoration_source": null,
+      "source_path": "ml/artifacts/real-sources/service-notices/7177.html",
+      "source_sha256": "f5c2b2c7614cf10a1e470b009f0bc6585340a94aae6ed95d93f63ad0e01706e0"
+    },
+    {
+      "id": "7223",
+      "url": "https://www.mosmetro.ru/news/details/7223",
+      "published_date": "2025-06-26",
+      "routes": [
+        "11",
+        "17",
+        "25"
+      ],
+      "effective_start": "2025-06-27T11:30:00+03:00",
+      "effective_end_exclusive": "2025-06-28T07:00:00+03:00",
+      "end_unknown": false,
+      "recurrence": "continuous",
+      "change": "No Ostankino service.11 via VDNKh-north/Rostokino to Social Fund;17 Medvedkovo–Selskokhozyaystvennaya;25 Sokolniki–Selskokhozyaystvennaya return fromVDNKh-north.",
+      "evidence_limitation": "End07:00 is explicitly approximate; exclude whole overlapping hours and retain end uncertainty.",
+      "restoration_source": null,
+      "source_path": "ml/artifacts/real-sources/service-notices/7223.html",
+      "source_sha256": "f0308f41ceb08098f6a870983de96fde19eefbe19892fba582c8a9acaab29144"
+    },
+    {
+      "id": "125125",
+      "url": "https://transport.mos.ru/mostrans/all_news/125125",
+      "published_date": "2025-06-28",
+      "routes": [
+        "7"
+      ],
+      "effective_start": "2025-06-28",
+      "effective_end_exclusive": "2025-07-10",
+      "end_unknown": false,
+      "recurrence": "weekends",
+      "change": "Novoslobodskaya instead Belorussky terminal.",
+      "evidence_limitation": "End is supersession byJuly10notice, not normal-route restoration.",
+      "restoration_source": "https://www.mosmetro.ru/news/details/7319",
+      "source_path": "ml/artifacts/real-sources/service-notices/125125.html",
+      "source_sha256": "beb4a643ac1ba6265bf8a160e533f20abbec393f7ea20e62f331a06021025922"
+    },
+    {
+      "id": "7319",
+      "url": "https://www.mosmetro.ru/news/details/7319",
+      "published_date": "2025-07-09",
+      "routes": [
+        "7",
+        "50"
+      ],
+      "effective_start": "2025-07-10",
+      "effective_end_exclusive": "2025-08-11",
+      "end_unknown": false,
+      "recurrence": "daily",
+      "change": "7 Rokossovskogo–Sokolniki;50 merged13+50 Metrorodok viaKrasnoselskaya/Aviamotornaya toDKKompressor.",
+      "evidence_limitation": "Announced up-to28days was estimate; actual restoration notice Aug11 governs end.",
+      "restoration_source": "https://www.mosmetro.ru/news/details/7570",
+      "source_path": "ml/artifacts/real-sources/service-notices/7319.html",
+      "source_sha256": "d1e5618a906e7069b2588f4ac62f4cf23eab52b382c5216d1e0b9e7637cbc8e1"
+    },
+    {
+      "id": "7570",
+      "url": "https://www.mosmetro.ru/news/details/7570",
+      "published_date": "2025-08-11",
+      "routes": [
+        "7",
+        "50"
+      ],
+      "effective_start": "2025-08-11",
+      "effective_end_exclusive": null,
+      "end_unknown": false,
+      "recurrence": "restoration",
+      "change": "Normal routes restored including MIIT and Novoslobodskaya.",
+      "evidence_limitation": "Published planned service; not proof of individual operated trips.",
+      "restoration_source": null,
+      "source_path": "ml/artifacts/real-sources/service-notices/7570.html",
+      "source_sha256": "df72b54aa60d891fe5cc6e7c83bf8d6e0d3a2a61163910a408283083fa2f31e1"
+    },
+    {
+      "id": "125448",
+      "url": "https://transport.mos.ru/mostrans/all_news/125448",
+      "published_date": "2025-07-18",
+      "routes": [
+        "11",
+        "17",
+        "25"
+      ],
+      "effective_start": "2025-07-18T23:30:00+03:00",
+      "effective_end_exclusive": "2025-07-23T23:30:00+03:00",
+      "end_unknown": false,
+      "recurrence": "night_after_23_30",
+      "change": "No Ostankino service; shortened toSelskokhozyaystvennaya.",
+      "evidence_limitation": "End denotes first restored evening; daily morning restoration hour not stated. Conservative training exclusion23:00–05:00 is policy, not source timetable.",
+      "restoration_source": "https://t.me/DtOperativno/22029",
+      "source_path": "ml/artifacts/real-sources/service-notices/125448.html",
+      "source_sha256": "b67386407c5a7955796dc56ce7acda7410bfd5eed2dbf6a3cb368fd7b3272f32"
+    },
+    {
+      "id": "telegram22025",
+      "url": "https://t.me/DtOperativno/22029",
+      "published_date": "2025-07-23",
+      "routes": [
+        "11",
+        "17",
+        "25"
+      ],
+      "effective_start": "2025-07-23T23:30:00+03:00",
+      "effective_end_exclusive": null,
+      "end_unknown": false,
+      "recurrence": "restoration",
+      "change": "Normal routes after23:30 restored.",
+      "evidence_limitation": "Official channel data-post22029 datetime2025-07-23T08:40:37Z.",
+      "restoration_source": null,
+      "source_path": "ml/artifacts/real-sources/service-notices/telegram22025.html",
+      "source_sha256": "35211c620b51eb4dad29b27b4893f4226da791a2d027304267f16819f8e059be"
+    },
+    {
+      "id": "125846",
+      "url": "https://transport.mos.ru/mostrans/all_news/125846",
+      "published_date": "2025-08-15",
+      "routes": [
+        "7"
+      ],
+      "effective_start": "2025-08-16",
+      "effective_end_exclusive": null,
+      "end_unknown": true,
+      "recurrence": "weekends",
+      "change": "Novoslobodskaya instead Belorussky terminal.",
+      "evidence_limitation": "No verified end for this weekend restriction in bounded research; October1night restoration cannot close a different weekend restriction.",
+      "restoration_source": null,
+      "source_path": "ml/artifacts/real-sources/service-notices/125846.html",
+      "source_sha256": "7ab5dc9e64d2d590cc64b3f38932cd06823f268b9c2c05f5e1aa91b4a7093a20"
+    },
+    {
+      "id": "126306",
+      "url": "https://transport.mos.ru/mostrans/all_news/126306",
+      "published_date": "2025-09-12",
+      "routes": [
+        "7",
+        "50"
+      ],
+      "effective_start": "2025-09-12T23:00:00+03:00",
+      "effective_end_exclusive": "2025-10-01T23:00:00+03:00",
+      "end_unknown": false,
+      "recurrence": "night_after_23_00",
+      "change": "Both routes terminate Kalanchyovskaya.",
+      "evidence_limitation": "Morning resumption hour unspecified; conservatively exclude23:00–05:00.",
+      "restoration_source": "https://t.me/DtOperativno/22966",
+      "source_path": "ml/artifacts/real-sources/service-notices/126306.html",
+      "source_sha256": "efd93273347991f318e3141af2e4782c0e266769a7727fc47240e5fbe6aa2174"
+    },
+    {
+      "id": "126404",
+      "url": "https://transport.mos.ru/mostrans/all_news/126404",
+      "published_date": "2025-09-19",
+      "routes": [
+        "11",
+        "17",
+        "25"
+      ],
+      "effective_start": "2025-09-19",
+      "effective_end_exclusive": null,
+      "end_unknown": false,
+      "recurrence": "restoration",
+      "change": "Normal Ostankino service after00:20 restored.",
+      "evidence_limitation": "Start of preceding00:20closure not identified; do not conflate withJuly18closure alreadyrestoredJuly23.",
+      "restoration_source": null,
+      "source_path": "ml/artifacts/real-sources/service-notices/126404.html",
+      "source_sha256": "bb868eeba4ae4d7b490275893296473d27388d85d86830f571cb807cb1ebdf65"
+    },
+    {
+      "id": "126461",
+      "url": "https://transport.mos.ru/mostrans/all_news/126461",
+      "published_date": "2025-09-23",
+      "routes": [
+        "11",
+        "17",
+        "25"
+      ],
+      "effective_start": "2025-09-24T00:20:00+03:00",
+      "effective_end_exclusive": null,
+      "end_unknown": true,
+      "recurrence": "night_after_00_20",
+      "change": "No VDNKh/Ostankino service; routes terminateSelskokhozyaystvennaya.",
+      "evidence_limitation": "No verified end; morning resumption unspecified. Conservative exclusion00:00–05:00 is policy.",
+      "restoration_source": null,
+      "source_path": "ml/artifacts/real-sources/service-notices/126461.html",
+      "source_sha256": "c993d9c7f25baac4c7c1206f056e4028e778a6a9cf3a485b60cd906091fef3fc"
+    },
+    {
+      "id": "126476",
+      "url": "https://transport.mos.ru/mostrans/all_news/126476",
+      "published_date": "2025-09-24",
+      "routes": [
+        "28"
+      ],
+      "effective_start": "2025-09-24",
+      "effective_end_exclusive": null,
+      "end_unknown": true,
+      "recurrence": "daily",
+      "change": "Wider headways onZhivopisnaya duringurgenttrackrepairs.",
+      "evidence_limitation": "Notice describes headway degradation rather than proven stop-sequence change; schedule likelihood unsafe; do not claim route cancelled.",
+      "restoration_source": null,
+      "source_path": "ml/artifacts/real-sources/service-notices/126476.html",
+      "source_sha256": "4a59a4219689895ca7b981b8f07fc178df423b5e99d571f4f9cd382995411672"
+    },
+    {
+      "id": "126575",
+      "url": "https://transport.mos.ru/mostrans/all_news/126575",
+      "published_date": "2025-10-01",
+      "routes": [
+        "26"
+      ],
+      "effective_start": "2025-10-01",
+      "effective_end_exclusive": null,
+      "end_unknown": false,
+      "recurrence": "restoration",
+      "change": "Normal weekday schedule aftermidnight restored.",
+      "evidence_limitation": "Start of prior restriction not found: prior affected dates unknown; conservatively withhold preOct1 weekday00:00–05:00 fromstricttraining ifunresolved.",
+      "restoration_source": null,
+      "source_path": "ml/artifacts/real-sources/service-notices/126575.html",
+      "source_sha256": "b7eb3a9fc5f571a528e2ad63fe2c7baff4a386384bd5d73f89c155a654ede44a"
+    },
+    {
+      "id": "telegram22947",
+      "url": "https://t.me/DtOperativno/22966",
+      "published_date": "2025-10-01",
+      "routes": [
+        "7",
+        "50"
+      ],
+      "effective_start": "2025-10-01T23:00:00+03:00",
+      "effective_end_exclusive": null,
+      "end_unknown": false,
+      "recurrence": "restoration",
+      "change": "Normal routes after 23:00 restored.",
+      "evidence_limitation": "Official channel HTML data-post 22966, datetime 2025-10-01T15:29:04Z. Does not resolve the distinct weekend restriction for route 7.",
+      "source_path": "ml/artifacts/real-sources/service-notices/telegram22947.html",
+      "source_sha256": "757aef6c71e8f0e2bfa7cbf6d9c91d0bf09d3000d32c091871f2a411f2da2891"
+    }
+  ],
+  "export_recommendation": {
+    "rule": "Intersect events with route,calendar recurrence,timewindow; exclude wholehour if any overlap; unknown end staysblocked throughdatasetend until primaryrestorationmatched.",
+    "warnings": "Do not release every row solely because oldconservative flagremoved: apply newlyfoundnight/dayexceptions. Missingnotice isnot proof ofnormalservice. Service-day midnight/holidays requireconservativehandling.",
+    "known_false_positive_flags": [
+      "17allweekends>=Apr5: restoreApr19,recloseApr26,restoreMay1",
+      "12allweekends>=Jun7: restoreJun21"
+    ],
+    "known_unmodeled_variants": [
+      "50weekendsMar15–Jul9 (possiblyearlierrestoreunknown)",
+      "7weekendsJun28–Jul9",
+      "11/17/25Jun27 11:30–Jun28~07:00",
+      "11/17/25nightsJul18–Jul22",
+      "7/50nightsSep12–Sep30",
+      "11/17/25nightsfromSep24",
+      "28headwaydegradationfromSep24",
+      "26weekdaypostmidnightpriorOct1 unknownstart"
+    ]
+  }
+}

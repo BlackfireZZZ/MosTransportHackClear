@@ -1,0 +1,1706 @@
+[
+  {
+    "origin": "2025-05-01",
+    "variant": "robust28",
+    "actual": 11555908.0,
+    "absolute_error": 1555755.0,
+    "score": 0.8653714619396417,
+    "route_slices": {
+      "1.0": {
+        "actual": 973184.0,
+        "absolute_error": 129629.0,
+        "score": 0.866799084243062
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 1354327.0,
+        "absolute_error": 214711.0,
+        "score": 0.8414629554014651
+      },
+      "11.0": {
+        "actual": 1728497.0,
+        "absolute_error": 207373.0,
+        "score": 0.8800269829800109
+      },
+      "12.0": {
+        "actual": 1802631.0,
+        "absolute_error": 233198.0,
+        "score": 0.8706346445833895
+      },
+      "17.0": {
+        "actual": 2755004.0,
+        "absolute_error": 261136.0,
+        "score": 0.9052139307238756
+      },
+      "25.0": {
+        "actual": 389497.0,
+        "absolute_error": 70251.0,
+        "score": 0.819636608240885
+      },
+      "26.0": {
+        "actual": 901318.0,
+        "absolute_error": 167655.0,
+        "score": 0.8139890693406766
+      },
+      "28.0": {
+        "actual": 535227.0,
+        "absolute_error": 100451.0,
+        "score": 0.8123207536241632
+      },
+      "50.0": {
+        "actual": 1116223.0,
+        "absolute_error": 171351.0,
+        "score": 0.8464903518382976
+      }
+    },
+    "month_slices": {
+      "5": {
+        "actual": 6000921.0,
+        "absolute_error": 625805.0,
+        "score": 0.8957151743873982
+      },
+      "6": {
+        "actual": 5554987.0,
+        "absolute_error": 929950.0,
+        "score": 0.832591867451715
+      }
+    }
+  },
+  {
+    "origin": "2025-05-01",
+    "variant": "published_hybrid",
+    "actual": 11555908.0,
+    "absolute_error": 1631563.0,
+    "score": 0.858811354330616,
+    "route_slices": {
+      "1.0": {
+        "actual": 973184.0,
+        "absolute_error": 138064.0,
+        "score": 0.8581316585558332
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 1354327.0,
+        "absolute_error": 225670.0,
+        "score": 0.833371113475549
+      },
+      "11.0": {
+        "actual": 1728497.0,
+        "absolute_error": 209955.0,
+        "score": 0.8785331996526462
+      },
+      "12.0": {
+        "actual": 1802631.0,
+        "absolute_error": 240122.0,
+        "score": 0.8667935922548764
+      },
+      "17.0": {
+        "actual": 2755004.0,
+        "absolute_error": 268635.0,
+        "score": 0.9024919746033037
+      },
+      "25.0": {
+        "actual": 389497.0,
+        "absolute_error": 71732.0,
+        "score": 0.8158342682998843
+      },
+      "26.0": {
+        "actual": 901318.0,
+        "absolute_error": 186154.0,
+        "score": 0.7934646817216565
+      },
+      "28.0": {
+        "actual": 535227.0,
+        "absolute_error": 106163.0,
+        "score": 0.8016486462753187
+      },
+      "50.0": {
+        "actual": 1116223.0,
+        "absolute_error": 185068.0,
+        "score": 0.834201588750635
+      }
+    },
+    "month_slices": {
+      "5": {
+        "actual": 6000921.0,
+        "absolute_error": 650071.0,
+        "score": 0.8916714617639525
+      },
+      "6": {
+        "actual": 5554987.0,
+        "absolute_error": 981492.0,
+        "score": 0.8233133578890464
+      }
+    }
+  },
+  {
+    "origin": "2025-05-01",
+    "variant": "base",
+    "actual": 11555908.0,
+    "absolute_error": 1639690.0,
+    "score": 0.8581080777036301,
+    "route_slices": {
+      "1.0": {
+        "actual": 973184.0,
+        "absolute_error": 138071.0,
+        "score": 0.8581244656714455
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 1354327.0,
+        "absolute_error": 226959.0,
+        "score": 0.8324193492413575
+      },
+      "11.0": {
+        "actual": 1728497.0,
+        "absolute_error": 219257.0,
+        "score": 0.8731516456204437
+      },
+      "12.0": {
+        "actual": 1802631.0,
+        "absolute_error": 241192.0,
+        "score": 0.8662000154219027
+      },
+      "17.0": {
+        "actual": 2755004.0,
+        "absolute_error": 263205.0,
+        "score": 0.9044629336291344
+      },
+      "25.0": {
+        "actual": 389497.0,
+        "absolute_error": 71729.0,
+        "score": 0.8158419705414932
+      },
+      "26.0": {
+        "actual": 901318.0,
+        "absolute_error": 186190.0,
+        "score": 0.7934247402137758
+      },
+      "28.0": {
+        "actual": 535227.0,
+        "absolute_error": 106655.0,
+        "score": 0.8007294101381284
+      },
+      "50.0": {
+        "actual": 1116223.0,
+        "absolute_error": 186432.0,
+        "score": 0.8329796107050293
+      }
+    },
+    "month_slices": {
+      "5": {
+        "actual": 6000921.0,
+        "absolute_error": 650078.0,
+        "score": 0.8916702952763418
+      },
+      "6": {
+        "actual": 5554987.0,
+        "absolute_error": 989612.0,
+        "score": 0.8218516082935927
+      }
+    }
+  },
+  {
+    "origin": "2025-05-01",
+    "variant": "calendar",
+    "actual": 11555908.0,
+    "absolute_error": 1636698.0,
+    "score": 0.8583669928836402,
+    "route_slices": {
+      "1.0": {
+        "actual": 973184.0,
+        "absolute_error": 138083.0,
+        "score": 0.8581121350124951
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 1354327.0,
+        "absolute_error": 227148.0,
+        "score": 0.8322797965336288
+      },
+      "11.0": {
+        "actual": 1728497.0,
+        "absolute_error": 218716.0,
+        "score": 0.8734646343036754
+      },
+      "12.0": {
+        "actual": 1802631.0,
+        "absolute_error": 241038.0,
+        "score": 0.8662854461062747
+      },
+      "17.0": {
+        "actual": 2755004.0,
+        "absolute_error": 260851.0,
+        "score": 0.9053173788495407
+      },
+      "25.0": {
+        "actual": 389497.0,
+        "absolute_error": 71732.0,
+        "score": 0.8158342682998843
+      },
+      "26.0": {
+        "actual": 901318.0,
+        "absolute_error": 186150.0,
+        "score": 0.7934691196669765
+      },
+      "28.0": {
+        "actual": 535227.0,
+        "absolute_error": 106659.0,
+        "score": 0.8007219366735983
+      },
+      "50.0": {
+        "actual": 1116223.0,
+        "absolute_error": 186321.0,
+        "score": 0.833079053199943
+      }
+    },
+    "month_slices": {
+      "5": {
+        "actual": 6000921.0,
+        "absolute_error": 648039.0,
+        "score": 0.8920100764532645
+      },
+      "6": {
+        "actual": 5554987.0,
+        "absolute_error": 988659.0,
+        "score": 0.8220231658507932
+      }
+    }
+  },
+  {
+    "origin": "2025-05-01",
+    "variant": "weather",
+    "actual": 11555908.0,
+    "absolute_error": 1640452.0,
+    "score": 0.8580421374071168,
+    "route_slices": {
+      "1.0": {
+        "actual": 973184.0,
+        "absolute_error": 138053.0,
+        "score": 0.8581429616598711
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 1354327.0,
+        "absolute_error": 227220.0,
+        "score": 0.8322266335973513
+      },
+      "11.0": {
+        "actual": 1728497.0,
+        "absolute_error": 219219.0,
+        "score": 0.8731736300381199
+      },
+      "12.0": {
+        "actual": 1802631.0,
+        "absolute_error": 241742.0,
+        "score": 0.8658949058348603
+      },
+      "17.0": {
+        "actual": 2755004.0,
+        "absolute_error": 263179.0,
+        "score": 0.9044723710020022
+      },
+      "25.0": {
+        "actual": 389497.0,
+        "absolute_error": 71732.0,
+        "score": 0.8158342682998843
+      },
+      "26.0": {
+        "actual": 901318.0,
+        "absolute_error": 186196.0,
+        "score": 0.7934180832957958
+      },
+      "28.0": {
+        "actual": 535227.0,
+        "absolute_error": 106672.0,
+        "score": 0.8006976479138758
+      },
+      "50.0": {
+        "actual": 1116223.0,
+        "absolute_error": 186439.0,
+        "score": 0.8329733395567015
+      }
+    },
+    "month_slices": {
+      "5": {
+        "actual": 6000921.0,
+        "absolute_error": 650387.0,
+        "score": 0.8916188031803784
+      },
+      "6": {
+        "actual": 5554987.0,
+        "absolute_error": 990065.0,
+        "score": 0.8217700599479351
+      }
+    }
+  },
+  {
+    "origin": "2025-05-01",
+    "variant": "traffic",
+    "actual": 11555908.0,
+    "absolute_error": 1634632.0,
+    "score": 0.8585457758922969,
+    "route_slices": {
+      "1.0": {
+        "actual": 973184.0,
+        "absolute_error": 138131.0,
+        "score": 0.8580628123766934
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 1354327.0,
+        "absolute_error": 226078.0,
+        "score": 0.8330698568366428
+      },
+      "11.0": {
+        "actual": 1728497.0,
+        "absolute_error": 217562.0,
+        "score": 0.8741322663562621
+      },
+      "12.0": {
+        "actual": 1802631.0,
+        "absolute_error": 239737.0,
+        "score": 0.8670071689658061
+      },
+      "17.0": {
+        "actual": 2755004.0,
+        "absolute_error": 264948.0,
+        "score": 0.9038302666711192
+      },
+      "25.0": {
+        "actual": 389497.0,
+        "absolute_error": 71849.0,
+        "score": 0.8155338808771313
+      },
+      "26.0": {
+        "actual": 901318.0,
+        "absolute_error": 185232.0,
+        "score": 0.7944876281179339
+      },
+      "28.0": {
+        "actual": 535227.0,
+        "absolute_error": 106273.0,
+        "score": 0.8014431260007436
+      },
+      "50.0": {
+        "actual": 1116223.0,
+        "absolute_error": 184822.0,
+        "score": 0.8344219748204436
+      }
+    },
+    "month_slices": {
+      "5": {
+        "actual": 6000921.0,
+        "absolute_error": 650970.0,
+        "score": 0.8915216514265061
+      },
+      "6": {
+        "actual": 5554987.0,
+        "absolute_error": 983662.0,
+        "score": 0.8229227179109511
+      }
+    }
+  },
+  {
+    "origin": "2025-05-01",
+    "variant": "news",
+    "actual": 11555908.0,
+    "absolute_error": 1639690.0,
+    "score": 0.8581080777036301,
+    "route_slices": {
+      "1.0": {
+        "actual": 973184.0,
+        "absolute_error": 138071.0,
+        "score": 0.8581244656714455
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 1354327.0,
+        "absolute_error": 226959.0,
+        "score": 0.8324193492413575
+      },
+      "11.0": {
+        "actual": 1728497.0,
+        "absolute_error": 219257.0,
+        "score": 0.8731516456204437
+      },
+      "12.0": {
+        "actual": 1802631.0,
+        "absolute_error": 241192.0,
+        "score": 0.8662000154219027
+      },
+      "17.0": {
+        "actual": 2755004.0,
+        "absolute_error": 263205.0,
+        "score": 0.9044629336291344
+      },
+      "25.0": {
+        "actual": 389497.0,
+        "absolute_error": 71729.0,
+        "score": 0.8158419705414932
+      },
+      "26.0": {
+        "actual": 901318.0,
+        "absolute_error": 186190.0,
+        "score": 0.7934247402137758
+      },
+      "28.0": {
+        "actual": 535227.0,
+        "absolute_error": 106655.0,
+        "score": 0.8007294101381284
+      },
+      "50.0": {
+        "actual": 1116223.0,
+        "absolute_error": 186432.0,
+        "score": 0.8329796107050293
+      }
+    },
+    "month_slices": {
+      "5": {
+        "actual": 6000921.0,
+        "absolute_error": 650078.0,
+        "score": 0.8916702952763418
+      },
+      "6": {
+        "actual": 5554987.0,
+        "absolute_error": 989612.0,
+        "score": 0.8218516082935927
+      }
+    }
+  },
+  {
+    "origin": "2025-05-01",
+    "variant": "all",
+    "actual": 11555908.0,
+    "absolute_error": 1633317.0,
+    "score": 0.8586595704984844,
+    "route_slices": {
+      "1.0": {
+        "actual": 973184.0,
+        "absolute_error": 138098.0,
+        "score": 0.858096721688807
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 1354327.0,
+        "absolute_error": 225633.0,
+        "score": 0.8333984333178028
+      },
+      "11.0": {
+        "actual": 1728497.0,
+        "absolute_error": 213728.0,
+        "score": 0.8763503783923259
+      },
+      "12.0": {
+        "actual": 1802631.0,
+        "absolute_error": 238927.0,
+        "score": 0.8674565121758141
+      },
+      "17.0": {
+        "actual": 2755004.0,
+        "absolute_error": 267339.0,
+        "score": 0.9029623913431705
+      },
+      "25.0": {
+        "actual": 389497.0,
+        "absolute_error": 71732.0,
+        "score": 0.8158342682998843
+      },
+      "26.0": {
+        "actual": 901318.0,
+        "absolute_error": 185506.0,
+        "score": 0.7941836288635088
+      },
+      "28.0": {
+        "actual": 535227.0,
+        "absolute_error": 106673.0,
+        "score": 0.8006957795477433
+      },
+      "50.0": {
+        "actual": 1116223.0,
+        "absolute_error": 185681.0,
+        "score": 0.8336524153327785
+      }
+    },
+    "month_slices": {
+      "5": {
+        "actual": 6000921.0,
+        "absolute_error": 644132.0,
+        "score": 0.8926611431811884
+      },
+      "6": {
+        "actual": 5554987.0,
+        "absolute_error": 989185.0,
+        "score": 0.8219284761602502
+      }
+    }
+  },
+  {
+    "origin": "2025-07-01",
+    "variant": "robust28",
+    "actual": 10584257.0,
+    "absolute_error": 1796045.0,
+    "score": 0.8303097704449165,
+    "route_slices": {
+      "1.0": {
+        "actual": 902220.0,
+        "absolute_error": 105902.0,
+        "score": 0.8826206468488839
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 863372.0,
+        "absolute_error": 464510.0,
+        "score": 0.46198162553337374
+      },
+      "11.0": {
+        "actual": 1644695.0,
+        "absolute_error": 204270.0,
+        "score": 0.8758006803693086
+      },
+      "12.0": {
+        "actual": 1720730.0,
+        "absolute_error": 212777.0,
+        "score": 0.876344923375544
+      },
+      "17.0": {
+        "actual": 2656635.0,
+        "absolute_error": 261536.0,
+        "score": 0.901553657164044
+      },
+      "25.0": {
+        "actual": 332828.0,
+        "absolute_error": 73911.0,
+        "score": 0.777930342399077
+      },
+      "26.0": {
+        "actual": 792035.0,
+        "absolute_error": 107629.0,
+        "score": 0.8641108031842027
+      },
+      "28.0": {
+        "actual": 457429.0,
+        "absolute_error": 83572.0,
+        "score": 0.8173006084004294
+      },
+      "50.0": {
+        "actual": 1214313.0,
+        "absolute_error": 281938.0,
+        "score": 0.7678209819049948
+      }
+    },
+    "month_slices": {
+      "7": {
+        "actual": 5407676.0,
+        "absolute_error": 994164.0,
+        "score": 0.8161568851388286
+      },
+      "8": {
+        "actual": 5176581.0,
+        "absolute_error": 801881.0,
+        "score": 0.8450944745189923
+      }
+    }
+  },
+  {
+    "origin": "2025-07-01",
+    "variant": "published_hybrid",
+    "actual": 10584257.0,
+    "absolute_error": 1695607.0,
+    "score": 0.839799146978385,
+    "route_slices": {
+      "1.0": {
+        "actual": 902220.0,
+        "absolute_error": 96221.0,
+        "score": 0.8933508456917382
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 863372.0,
+        "absolute_error": 436689.0,
+        "score": 0.49420527883693244
+      },
+      "11.0": {
+        "actual": 1644695.0,
+        "absolute_error": 190372.0,
+        "score": 0.8842508793423705
+      },
+      "12.0": {
+        "actual": 1720730.0,
+        "absolute_error": 197943.0,
+        "score": 0.8849656831693525
+      },
+      "17.0": {
+        "actual": 2656635.0,
+        "absolute_error": 244663.0,
+        "score": 0.9079049248391292
+      },
+      "25.0": {
+        "actual": 332828.0,
+        "absolute_error": 69436.0,
+        "score": 0.7913757256000096
+      },
+      "26.0": {
+        "actual": 792035.0,
+        "absolute_error": 95872.0,
+        "score": 0.8789548441672401
+      },
+      "28.0": {
+        "actual": 457429.0,
+        "absolute_error": 78082.0,
+        "score": 0.8293024709845681
+      },
+      "50.0": {
+        "actual": 1214313.0,
+        "absolute_error": 286329.0,
+        "score": 0.7642049455124008
+      }
+    },
+    "month_slices": {
+      "7": {
+        "actual": 5407676.0,
+        "absolute_error": 944714.0,
+        "score": 0.8253012939384682
+      },
+      "8": {
+        "actual": 5176581.0,
+        "absolute_error": 750893.0,
+        "score": 0.8549442189738748
+      }
+    }
+  },
+  {
+    "origin": "2025-07-01",
+    "variant": "base",
+    "actual": 10584257.0,
+    "absolute_error": 1876787.0,
+    "score": 0.822681270872391,
+    "route_slices": {
+      "1.0": {
+        "actual": 902220.0,
+        "absolute_error": 119488.0,
+        "score": 0.867562235374964
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 863372.0,
+        "absolute_error": 472875.0,
+        "score": 0.4522928702807133
+      },
+      "11.0": {
+        "actual": 1644695.0,
+        "absolute_error": 214687.0,
+        "score": 0.8694669832400537
+      },
+      "12.0": {
+        "actual": 1720730.0,
+        "absolute_error": 225370.0,
+        "score": 0.8690265178151133
+      },
+      "17.0": {
+        "actual": 2656635.0,
+        "absolute_error": 276263.0,
+        "score": 0.8960101782894526
+      },
+      "25.0": {
+        "actual": 332828.0,
+        "absolute_error": 79100.0,
+        "score": 0.7623397069958057
+      },
+      "26.0": {
+        "actual": 792035.0,
+        "absolute_error": 122105.0,
+        "score": 0.84583383310081
+      },
+      "28.0": {
+        "actual": 457429.0,
+        "absolute_error": 88531.0,
+        "score": 0.8064595817055762
+      },
+      "50.0": {
+        "actual": 1214313.0,
+        "absolute_error": 278368.0,
+        "score": 0.7707609158429499
+      }
+    },
+    "month_slices": {
+      "7": {
+        "actual": 5407676.0,
+        "absolute_error": 1044123.0,
+        "score": 0.8069183508775304
+      },
+      "8": {
+        "actual": 5176581.0,
+        "absolute_error": 832664.0,
+        "score": 0.8391478854479433
+      }
+    }
+  },
+  {
+    "origin": "2025-07-01",
+    "variant": "calendar",
+    "actual": 10584257.0,
+    "absolute_error": 1700509.0,
+    "score": 0.8393360062968993,
+    "route_slices": {
+      "1.0": {
+        "actual": 902220.0,
+        "absolute_error": 96840.0,
+        "score": 0.8926647602580302
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 863372.0,
+        "absolute_error": 438791.0,
+        "score": 0.49177063884397454
+      },
+      "11.0": {
+        "actual": 1644695.0,
+        "absolute_error": 190487.0,
+        "score": 0.8841809575635604
+      },
+      "12.0": {
+        "actual": 1720730.0,
+        "absolute_error": 198135.0,
+        "score": 0.8848541026192371
+      },
+      "17.0": {
+        "actual": 2656635.0,
+        "absolute_error": 245058.0,
+        "score": 0.9077562405072582
+      },
+      "25.0": {
+        "actual": 332828.0,
+        "absolute_error": 69998.0,
+        "score": 0.7896871657432668
+      },
+      "26.0": {
+        "actual": 792035.0,
+        "absolute_error": 97105.0,
+        "score": 0.8773980947811649
+      },
+      "28.0": {
+        "actual": 457429.0,
+        "absolute_error": 79057.0,
+        "score": 0.8271709926567838
+      },
+      "50.0": {
+        "actual": 1214313.0,
+        "absolute_error": 285038.0,
+        "score": 0.7652680980933252
+      }
+    },
+    "month_slices": {
+      "7": {
+        "actual": 5407676.0,
+        "absolute_error": 941578.0,
+        "score": 0.8258812103387851
+      },
+      "8": {
+        "actual": 5176581.0,
+        "absolute_error": 758931.0,
+        "score": 0.8533914566390441
+      }
+    }
+  },
+  {
+    "origin": "2025-07-01",
+    "variant": "weather",
+    "actual": 10584257.0,
+    "absolute_error": 1697552.0,
+    "score": 0.839615383488893,
+    "route_slices": {
+      "1.0": {
+        "actual": 902220.0,
+        "absolute_error": 96482.0,
+        "score": 0.8930615592649243
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 863372.0,
+        "absolute_error": 437587.0,
+        "score": 0.4931651709807592
+      },
+      "11.0": {
+        "actual": 1644695.0,
+        "absolute_error": 189646.0,
+        "score": 0.8846922985720757
+      },
+      "12.0": {
+        "actual": 1720730.0,
+        "absolute_error": 197850.0,
+        "score": 0.8850197299983147
+      },
+      "17.0": {
+        "actual": 2656635.0,
+        "absolute_error": 242309.0,
+        "score": 0.9087910081738741
+      },
+      "25.0": {
+        "actual": 332828.0,
+        "absolute_error": 73531.0,
+        "score": 0.7790720732630668
+      },
+      "26.0": {
+        "actual": 792035.0,
+        "absolute_error": 96149.0,
+        "score": 0.8786051121478218
+      },
+      "28.0": {
+        "actual": 457429.0,
+        "absolute_error": 78079.0,
+        "score": 0.8293090293794229
+      },
+      "50.0": {
+        "actual": 1214313.0,
+        "absolute_error": 285919.0,
+        "score": 0.7645425849842669
+      }
+    },
+    "month_slices": {
+      "7": {
+        "actual": 5407676.0,
+        "absolute_error": 945665.0,
+        "score": 0.8251254328106935
+      },
+      "8": {
+        "actual": 5176581.0,
+        "absolute_error": 751887.0,
+        "score": 0.8547522003422723
+      }
+    }
+  },
+  {
+    "origin": "2025-07-01",
+    "variant": "traffic",
+    "actual": 10584257.0,
+    "absolute_error": 1870531.0,
+    "score": 0.8232723373969472,
+    "route_slices": {
+      "1.0": {
+        "actual": 902220.0,
+        "absolute_error": 119529.0,
+        "score": 0.8675167919132806
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 863372.0,
+        "absolute_error": 463710.0,
+        "score": 0.46290822495980877
+      },
+      "11.0": {
+        "actual": 1644695.0,
+        "absolute_error": 216369.0,
+        "score": 0.8684443012230231
+      },
+      "12.0": {
+        "actual": 1720730.0,
+        "absolute_error": 226342.0,
+        "score": 0.8684616412801544
+      },
+      "17.0": {
+        "actual": 2656635.0,
+        "absolute_error": 278042.0,
+        "score": 0.8953405341719882
+      },
+      "25.0": {
+        "actual": 332828.0,
+        "absolute_error": 79091.0,
+        "score": 0.7623667479899527
+      },
+      "26.0": {
+        "actual": 792035.0,
+        "absolute_error": 122113.0,
+        "score": 0.8458237325370722
+      },
+      "28.0": {
+        "actual": 457429.0,
+        "absolute_error": 87867.0,
+        "score": 0.8079111731000876
+      },
+      "50.0": {
+        "actual": 1214313.0,
+        "absolute_error": 277468.0,
+        "score": 0.771502075659241
+      }
+    },
+    "month_slices": {
+      "7": {
+        "actual": 5407676.0,
+        "absolute_error": 1043323.0,
+        "score": 0.8070662887347541
+      },
+      "8": {
+        "actual": 5176581.0,
+        "absolute_error": 827208.0,
+        "score": 0.840201862967082
+      }
+    }
+  },
+  {
+    "origin": "2025-07-01",
+    "variant": "news",
+    "actual": 10584257.0,
+    "absolute_error": 1762906.0,
+    "score": 0.8334407412820758,
+    "route_slices": {
+      "1.0": {
+        "actual": 902220.0,
+        "absolute_error": 102249.0,
+        "score": 0.8866695484471636
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 863372.0,
+        "absolute_error": 445635.0,
+        "score": 0.48384358075082357
+      },
+      "11.0": {
+        "actual": 1644695.0,
+        "absolute_error": 198315.0,
+        "score": 0.8794214124807335
+      },
+      "12.0": {
+        "actual": 1720730.0,
+        "absolute_error": 208675.0,
+        "score": 0.8787287953368629
+      },
+      "17.0": {
+        "actual": 2656635.0,
+        "absolute_error": 271275.0,
+        "score": 0.8978877414473573
+      },
+      "25.0": {
+        "actual": 332828.0,
+        "absolute_error": 73509.0,
+        "score": 0.779138173470982
+      },
+      "26.0": {
+        "actual": 792035.0,
+        "absolute_error": 104198.0,
+        "score": 0.8684426824572147
+      },
+      "28.0": {
+        "actual": 457429.0,
+        "absolute_error": 80421.0,
+        "score": 0.8241891091295043
+      },
+      "50.0": {
+        "actual": 1214313.0,
+        "absolute_error": 278629.0,
+        "score": 0.7705459794962255
+      }
+    },
+    "month_slices": {
+      "7": {
+        "actual": 5407676.0,
+        "absolute_error": 985456.0,
+        "score": 0.8177671887147084
+      },
+      "8": {
+        "actual": 5176581.0,
+        "absolute_error": 777450.0,
+        "score": 0.8498139988536835
+      }
+    }
+  },
+  {
+    "origin": "2025-07-01",
+    "variant": "all",
+    "actual": 10584257.0,
+    "absolute_error": 1690732.0,
+    "score": 0.8402597367014047,
+    "route_slices": {
+      "1.0": {
+        "actual": 902220.0,
+        "absolute_error": 96221.0,
+        "score": 0.8933508456917382
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 863372.0,
+        "absolute_error": 436689.0,
+        "score": 0.49420527883693244
+      },
+      "11.0": {
+        "actual": 1644695.0,
+        "absolute_error": 190024.0,
+        "score": 0.8844624687252044
+      },
+      "12.0": {
+        "actual": 1720730.0,
+        "absolute_error": 197764.0,
+        "score": 0.8850697087863871
+      },
+      "17.0": {
+        "actual": 2656635.0,
+        "absolute_error": 240317.0,
+        "score": 0.9095408289057398
+      },
+      "25.0": {
+        "actual": 332828.0,
+        "absolute_error": 69439.0,
+        "score": 0.7913667119352938
+      },
+      "26.0": {
+        "actual": 792035.0,
+        "absolute_error": 95876.0,
+        "score": 0.8789497938853712
+      },
+      "28.0": {
+        "actual": 457429.0,
+        "absolute_error": 78073.0,
+        "score": 0.8293221461691322
+      },
+      "50.0": {
+        "actual": 1214313.0,
+        "absolute_error": 286329.0,
+        "score": 0.7642049455124008
+      }
+    },
+    "month_slices": {
+      "7": {
+        "actual": 5407676.0,
+        "absolute_error": 939614.0,
+        "score": 0.8262443977782693
+      },
+      "8": {
+        "actual": 5176581.0,
+        "absolute_error": 751118.0,
+        "score": 0.8549007539918723
+      }
+    }
+  },
+  {
+    "origin": "2025-09-01",
+    "variant": "robust28",
+    "actual": 12754481.0,
+    "absolute_error": 1378985.0,
+    "score": 0.8918823117930083,
+    "route_slices": {
+      "1.0": {
+        "actual": 1136093.0,
+        "absolute_error": 93954.0,
+        "score": 0.917300784354802
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 1350573.0,
+        "absolute_error": 222944.0,
+        "score": 0.8349263608853428
+      },
+      "11.0": {
+        "actual": 1907061.0,
+        "absolute_error": 179854.0,
+        "score": 0.905690483943618
+      },
+      "12.0": {
+        "actual": 1983604.0,
+        "absolute_error": 169014.0,
+        "score": 0.9147944851895842
+      },
+      "17.0": {
+        "actual": 3063025.0,
+        "absolute_error": 208030.0,
+        "score": 0.9320834795667682
+      },
+      "25.0": {
+        "actual": 464537.0,
+        "absolute_error": 74692.0,
+        "score": 0.8392119465187918
+      },
+      "26.0": {
+        "actual": 1089964.0,
+        "absolute_error": 85992.0,
+        "score": 0.9211056511958193
+      },
+      "28.0": {
+        "actual": 602164.0,
+        "absolute_error": 81553.0,
+        "score": 0.8645667957566378
+      },
+      "50.0": {
+        "actual": 1157460.0,
+        "absolute_error": 262952.0,
+        "score": 0.7728197950685121
+      }
+    },
+    "month_slices": {
+      "9": {
+        "actual": 6147694.0,
+        "absolute_error": 660950.0,
+        "score": 0.8924881427084692
+      },
+      "10": {
+        "actual": 6606787.0,
+        "absolute_error": 718035.0,
+        "score": 0.8913185789098392
+      }
+    }
+  },
+  {
+    "origin": "2025-09-01",
+    "variant": "published_hybrid",
+    "actual": 12754481.0,
+    "absolute_error": 1376576.0,
+    "score": 0.8920711865892466,
+    "route_slices": {
+      "1.0": {
+        "actual": 1136093.0,
+        "absolute_error": 96143.0,
+        "score": 0.9153740054731435
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 1350573.0,
+        "absolute_error": 226691.0,
+        "score": 0.8321519828991102
+      },
+      "11.0": {
+        "actual": 1907061.0,
+        "absolute_error": 177011.0,
+        "score": 0.9071812595402035
+      },
+      "12.0": {
+        "actual": 1983604.0,
+        "absolute_error": 169049.0,
+        "score": 0.9147768405387365
+      },
+      "17.0": {
+        "actual": 3063025.0,
+        "absolute_error": 194423.0,
+        "score": 0.9365258200634993
+      },
+      "25.0": {
+        "actual": 464537.0,
+        "absolute_error": 75858.0,
+        "score": 0.8367019204067706
+      },
+      "26.0": {
+        "actual": 1089964.0,
+        "absolute_error": 87178.0,
+        "score": 0.9200175418637679
+      },
+      "28.0": {
+        "actual": 602164.0,
+        "absolute_error": 81805.0,
+        "score": 0.8641483051128929
+      },
+      "50.0": {
+        "actual": 1157460.0,
+        "absolute_error": 268418.0,
+        "score": 0.7680973856547959
+      }
+    },
+    "month_slices": {
+      "9": {
+        "actual": 6147694.0,
+        "absolute_error": 662219.0,
+        "score": 0.8922817238463723
+      },
+      "10": {
+        "actual": 6606787.0,
+        "absolute_error": 714357.0,
+        "score": 0.8918752791636843
+      }
+    }
+  },
+  {
+    "origin": "2025-09-01",
+    "variant": "base",
+    "actual": 12754481.0,
+    "absolute_error": 1418880.0,
+    "score": 0.8887543914958201,
+    "route_slices": {
+      "1.0": {
+        "actual": 1136093.0,
+        "absolute_error": 101968.0,
+        "score": 0.9102467843741665
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 1350573.0,
+        "absolute_error": 219928.0,
+        "score": 0.8371594871213922
+      },
+      "11.0": {
+        "actual": 1907061.0,
+        "absolute_error": 186066.0,
+        "score": 0.9024331156685601
+      },
+      "12.0": {
+        "actual": 1983604.0,
+        "absolute_error": 164445.0,
+        "score": 0.9170978683245244
+      },
+      "17.0": {
+        "actual": 3063025.0,
+        "absolute_error": 231019.0,
+        "score": 0.9245781539491189
+      },
+      "25.0": {
+        "actual": 464537.0,
+        "absolute_error": 73855.0,
+        "score": 0.8410137405631845
+      },
+      "26.0": {
+        "actual": 1089964.0,
+        "absolute_error": 91182.0,
+        "score": 0.916344026041227
+      },
+      "28.0": {
+        "actual": 602164.0,
+        "absolute_error": 83919.0,
+        "score": 0.8606376336014774
+      },
+      "50.0": {
+        "actual": 1157460.0,
+        "absolute_error": 266498.0,
+        "score": 0.7697561902787138
+      }
+    },
+    "month_slices": {
+      "9": {
+        "actual": 6147694.0,
+        "absolute_error": 657723.0,
+        "score": 0.8930130549763863
+      },
+      "10": {
+        "actual": 6606787.0,
+        "absolute_error": 761157.0,
+        "score": 0.8847916544002402
+      }
+    }
+  },
+  {
+    "origin": "2025-09-01",
+    "variant": "calendar",
+    "actual": 12754481.0,
+    "absolute_error": 1429112.0,
+    "score": 0.8879521636356665,
+    "route_slices": {
+      "1.0": {
+        "actual": 1136093.0,
+        "absolute_error": 104019.0,
+        "score": 0.9084414744215482
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 1350573.0,
+        "absolute_error": 212964.0,
+        "score": 0.8423158170643127
+      },
+      "11.0": {
+        "actual": 1907061.0,
+        "absolute_error": 188703.0,
+        "score": 0.9010503596895957
+      },
+      "12.0": {
+        "actual": 1983604.0,
+        "absolute_error": 165444.0,
+        "score": 0.9165942395760445
+      },
+      "17.0": {
+        "actual": 3063025.0,
+        "absolute_error": 235079.0,
+        "score": 0.9232526668897577
+      },
+      "25.0": {
+        "actual": 464537.0,
+        "absolute_error": 78901.0,
+        "score": 0.83015131195147
+      },
+      "26.0": {
+        "actual": 1089964.0,
+        "absolute_error": 92945.0,
+        "score": 0.9147265414270563
+      },
+      "28.0": {
+        "actual": 602164.0,
+        "absolute_error": 83551.0,
+        "score": 0.8612487627955175
+      },
+      "50.0": {
+        "actual": 1157460.0,
+        "absolute_error": 267506.0,
+        "score": 0.7688853178511569
+      }
+    },
+    "month_slices": {
+      "9": {
+        "actual": 6147694.0,
+        "absolute_error": 665278.0,
+        "score": 0.89178413889826
+      },
+      "10": {
+        "actual": 6606787.0,
+        "absolute_error": 763834.0,
+        "score": 0.8843864650093911
+      }
+    }
+  },
+  {
+    "origin": "2025-09-01",
+    "variant": "weather",
+    "actual": 12754481.0,
+    "absolute_error": 1421202.0,
+    "score": 0.8885723378317001,
+    "route_slices": {
+      "1.0": {
+        "actual": 1136093.0,
+        "absolute_error": 103470.0,
+        "score": 0.9089247095088167
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 1350573.0,
+        "absolute_error": 212327.0,
+        "score": 0.8427874687262369
+      },
+      "11.0": {
+        "actual": 1907061.0,
+        "absolute_error": 186402.0,
+        "score": 0.9022569283310812
+      },
+      "12.0": {
+        "actual": 1983604.0,
+        "absolute_error": 164664.0,
+        "score": 0.9169874632235063
+      },
+      "17.0": {
+        "actual": 3063025.0,
+        "absolute_error": 233441.0,
+        "score": 0.9237874323585344
+      },
+      "25.0": {
+        "actual": 464537.0,
+        "absolute_error": 78770.0,
+        "score": 0.8304333131698874
+      },
+      "26.0": {
+        "actual": 1089964.0,
+        "absolute_error": 92508.0,
+        "score": 0.915127472099996
+      },
+      "28.0": {
+        "actual": 602164.0,
+        "absolute_error": 83303.0,
+        "score": 0.8616606107306315
+      },
+      "50.0": {
+        "actual": 1157460.0,
+        "absolute_error": 266317.0,
+        "score": 0.7699125671729476
+      }
+    },
+    "month_slices": {
+      "9": {
+        "actual": 6147694.0,
+        "absolute_error": 661273.0,
+        "score": 0.8924356026828921
+      },
+      "10": {
+        "actual": 6606787.0,
+        "absolute_error": 759929.0,
+        "score": 0.8849775238705289
+      }
+    }
+  },
+  {
+    "origin": "2025-09-01",
+    "variant": "traffic",
+    "actual": 12754481.0,
+    "absolute_error": 1412270.0,
+    "score": 0.889272640729168,
+    "route_slices": {
+      "1.0": {
+        "actual": 1136093.0,
+        "absolute_error": 102294.0,
+        "score": 0.90995983603455
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 1350573.0,
+        "absolute_error": 217333.0,
+        "score": 0.8390808938132186
+      },
+      "11.0": {
+        "actual": 1907061.0,
+        "absolute_error": 185624.0,
+        "score": 0.9026648859160772
+      },
+      "12.0": {
+        "actual": 1983604.0,
+        "absolute_error": 164248.0,
+        "score": 0.9171971825021527
+      },
+      "17.0": {
+        "actual": 3063025.0,
+        "absolute_error": 228889.0,
+        "score": 0.9252735449433158
+      },
+      "25.0": {
+        "actual": 464537.0,
+        "absolute_error": 73146.0,
+        "score": 0.8425399914323294
+      },
+      "26.0": {
+        "actual": 1089964.0,
+        "absolute_error": 91071.0,
+        "score": 0.9164458642670767
+      },
+      "28.0": {
+        "actual": 602164.0,
+        "absolute_error": 83871.0,
+        "score": 0.8607173461050478
+      },
+      "50.0": {
+        "actual": 1157460.0,
+        "absolute_error": 265794.0,
+        "score": 0.770364418640817
+      }
+    },
+    "month_slices": {
+      "9": {
+        "actual": 6147694.0,
+        "absolute_error": 655239.0,
+        "score": 0.8934171089192142
+      },
+      "10": {
+        "actual": 6606787.0,
+        "absolute_error": 757031.0,
+        "score": 0.8854161637116499
+      }
+    }
+  },
+  {
+    "origin": "2025-09-01",
+    "variant": "news",
+    "actual": 12754481.0,
+    "absolute_error": 1422279.0,
+    "score": 0.8884878969203058,
+    "route_slices": {
+      "1.0": {
+        "actual": 1136093.0,
+        "absolute_error": 104056.0,
+        "score": 0.9084089066652113
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 1350573.0,
+        "absolute_error": 211271.0,
+        "score": 0.8435693590794426
+      },
+      "11.0": {
+        "actual": 1907061.0,
+        "absolute_error": 186575.0,
+        "score": 0.9021662128269625
+      },
+      "12.0": {
+        "actual": 1983604.0,
+        "absolute_error": 164411.0,
+        "score": 0.9171150088424908
+      },
+      "17.0": {
+        "actual": 3063025.0,
+        "absolute_error": 234165.0,
+        "score": 0.9235510647154366
+      },
+      "25.0": {
+        "actual": 464537.0,
+        "absolute_error": 79407.0,
+        "score": 0.8290620553368192
+      },
+      "26.0": {
+        "actual": 1089964.0,
+        "absolute_error": 92456.0,
+        "score": 0.9151751800976913
+      },
+      "28.0": {
+        "actual": 602164.0,
+        "absolute_error": 83591.0,
+        "score": 0.8611823357092088
+      },
+      "50.0": {
+        "actual": 1157460.0,
+        "absolute_error": 266347.0,
+        "score": 0.769886648350699
+      }
+    },
+    "month_slices": {
+      "9": {
+        "actual": 6147694.0,
+        "absolute_error": 661953.0,
+        "score": 0.8923249921027299
+      },
+      "10": {
+        "actual": 6606787.0,
+        "absolute_error": 760326.0,
+        "score": 0.8849174341476425
+      }
+    }
+  },
+  {
+    "origin": "2025-09-01",
+    "variant": "all",
+    "actual": 12754481.0,
+    "absolute_error": 1426277.0,
+    "score": 0.8881744384581387,
+    "route_slices": {
+      "1.0": {
+        "actual": 1136093.0,
+        "absolute_error": 103835.0,
+        "score": 0.9086034329936018
+      },
+      "5.0": {
+        "actual": 0.0,
+        "absolute_error": 0.0,
+        "score": null
+      },
+      "7.0": {
+        "actual": 1350573.0,
+        "absolute_error": 211142.0,
+        "score": 0.8436648740941808
+      },
+      "11.0": {
+        "actual": 1907061.0,
+        "absolute_error": 188052.0,
+        "score": 0.9013917226559612
+      },
+      "12.0": {
+        "actual": 1983604.0,
+        "absolute_error": 163855.0,
+        "score": 0.9173953067245277
+      },
+      "17.0": {
+        "actual": 3063025.0,
+        "absolute_error": 235126.0,
+        "score": 0.923237322581435
+      },
+      "25.0": {
+        "actual": 464537.0,
+        "absolute_error": 78245.0,
+        "score": 0.831563470724614
+      },
+      "26.0": {
+        "actual": 1089964.0,
+        "absolute_error": 93006.0,
+        "score": 0.9146705762759137
+      },
+      "28.0": {
+        "actual": 602164.0,
+        "absolute_error": 83527.0,
+        "score": 0.8612886190473027
+      },
+      "50.0": {
+        "actual": 1157460.0,
+        "absolute_error": 269489.0,
+        "score": 0.7671720837005167
+      }
+    },
+    "month_slices": {
+      "9": {
+        "actual": 6147694.0,
+        "absolute_error": 664544.0,
+        "score": 0.8919035332597881
+      },
+      "10": {
+        "actual": 6606787.0,
+        "absolute_error": 761733.0,
+        "score": 0.8847044713262286
+      }
+    }
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "methods": {
+    "adaptive_scan": {
+      "after": 1894,
+      "before": 1894,
+      "quiet_gap_vetoes": 0,
+      "removed": 0
+    },
+    "consensus3_5s": {
+      "after": 1792,
+      "before": 1952,
+      "quiet_gap_vetoes": 17,
+      "removed": 160
+    },
+    "feature_gmm": {
+      "after": 2140,
+      "before": 2203,
+      "quiet_gap_vetoes": 14,
+      "removed": 63
+    }
+  },
+  "test_windows": 320
+}
