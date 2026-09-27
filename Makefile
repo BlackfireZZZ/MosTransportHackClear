@@ -58,7 +58,7 @@ sync-backend:
 	uv sync --package tramflow-backend --extra dev --locked
 
 sync-ml:
-	uv sync --package tramflow-ml --extra dev --locked
+	uv sync --package tramflow-ml --extra dev --extra boosting --locked
 
 frontend-install:
 	cd frontend && npm ci
