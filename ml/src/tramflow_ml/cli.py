@@ -186,7 +186,7 @@ def main() -> None:
         return
 
     if args.command != "evaluate":
-        print(f"TramFlow ML {__version__}: workspace is ready")
+        print(f"Тормоза ML {__version__}: workspace is ready")
         return
 
     summary = evaluate(load_cases(args.dataset))

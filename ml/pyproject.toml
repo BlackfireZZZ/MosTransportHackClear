@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "tramflow-ml"
 version = "0.1.0"
-description = "Offline training and evaluation workspace for TramFlow"
+description = "Offline training and evaluation workspace for Тормоза"
 requires-python = ">=3.13"
 dependencies = [
   "numpy>=2.3,<3",

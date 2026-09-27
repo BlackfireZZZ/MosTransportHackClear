@@ -13,7 +13,7 @@ DATA_DIR = REPOSITORY_ROOT / "data"
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
-    app_name: str = "TramFlow API"
+    app_name: str = "Тормоза API"
     app_env: str = "development"
     log_level: str = "INFO"
     api_v1_prefix: str = "/api/v1"

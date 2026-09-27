@@ -11,7 +11,7 @@ from tramflow_ml.complete_features import STOP_KEYS, catalog_features, digest
 
 TEMPLATE = r'''<!doctype html>
 <html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TramFlow · прогноз посадок</title><style>
+<title>Тормоза · прогноз посадок</title><style>
 :root{font-family:Inter,Arial,sans-serif;color:#1f2529;background:#f5f4ef;font-size:16px}
 body{max-width:1450px;margin:0 auto;padding:24px}h1{font-size:26px;margin:0 0 12px;font-weight:600}
 p{line-height:1.5;max-width:1100px}label{display:inline-flex;flex-direction:column;gap:6px;margin:8px 16px 12px 0}
@@ -26,7 +26,7 @@ th{position:sticky;top:0;background:#fbfaf6}td:last-child{text-align:right;font-
 .scroll{max-height:620px;overflow:auto}.tag{color:#b86e13}.note{font-size:13px;color:#59636a}
 @media(max-width:850px){.layout{grid-template-columns:1fr}body{padding:12px}svg{height:440px}}
 </style>
-<h1>TramFlow · прогноз посадок по остановкам</h1>
+<h1>Тормоза · прогноз посадок по остановкам</h1>
 <p>Оценка количества посадок за час. Направление берётся из рейса расписания;
 остановка — гипотеза привязки оплаты. Это <strong>не заполненность салона</strong> и не подтверждённые GPS-координаты посадки.
 Неопределённые остановки включены в общий поток и показаны отдельно.</p>

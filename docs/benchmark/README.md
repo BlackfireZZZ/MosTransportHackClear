@@ -25,7 +25,7 @@ make benchmark-down
 
 Метрики: успешные RPS, p50/p95/p99 полного HTTP и JSON-проверки (очередь клиентского semaphore не входит), 5 прогревочных и 200 измеряемых запросов на сценарий при concurrency 4. CPU/RAM — максимум дискретных выборок `docker stats`, не непрерывный пик; для коротких GET-сценариев получена всего одна выборка, так что она не характеризует фактический пик. Не сравнивать RPS между стендами с разными CPU-лимитами или PostgreSQL-условиями. Узкое место считать установленным только после отдельного измерения по этапам.
 
-Страница «Как работает TramFlow» читает версионированный `frontend/public/benchmark-results.json` со статусом `measured`. `benchmark-publish` принимает только успешный сырой результат всех 11 фиксированных случаев, проверяет SHA fixture и переносит `runs[]`, условия и SHA сырого файла в публичный JSON. `runs[]` содержит `case_id`, `requests`, `warmup`, `concurrency`, `rps`, `errors`, `latency_ms.p50/p95/p99`, `backend_cpu_percent_sample_max`, `backend_memory_bytes_sample_max`, `conditions`.
+Страница «Как работает Тормоза» читает версионированный `frontend/public/benchmark-results.json` со статусом `measured`. `benchmark-publish` принимает только успешный сырой результат всех 11 фиксированных случаев, проверяет SHA fixture и переносит `runs[]`, условия и SHA сырого файла в публичный JSON. `runs[]` содержит `case_id`, `requests`, `warmup`, `concurrency`, `rps`, `errors`, `latency_ms.p50/p95/p99`, `backend_cpu_percent_sample_max`, `backend_memory_bytes_sample_max`, `conditions`.
 
 ## Результат 27.09.2026
 

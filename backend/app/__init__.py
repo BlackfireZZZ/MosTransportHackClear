@@ -1,1 +1,1 @@
-"""TramFlow backend package."""
+"""Тормоза backend package."""

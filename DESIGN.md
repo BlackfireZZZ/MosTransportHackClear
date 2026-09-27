@@ -1,4 +1,4 @@
-# TramFlow — Design System
+# Тормоза — Design System
 
 Authoritative product requirements: [docs/product/TASK.md](docs/product/TASK.md). Prioritize tram passenger-flow forecasts for day/month/year, route/stop/time aggregation, and an updating Moscow map. OD, multimodal modeling, and what-if are optional team extensions.
 

@@ -48,7 +48,7 @@ const sections: ReadonlyArray<{
   { id: "forecast", label: "Прогноз", icon: Activity },
   { id: "lab", label: "Планирование сети", icon: Waypoints },
   { id: "network", label: "Граф сети", icon: GitBranch },
-  { id: "architecture", label: "Как работает TramFlow", icon: Network },
+  { id: "architecture", label: "Как работает Тормоза", icon: Network },
 ]
 
 function DashboardSkeleton() {
@@ -103,7 +103,7 @@ function App() {
   return (
     <div className="app-shell">
       <aside className="sidebar">
-        <div className="brand"><span className="brand-mark"><TramFront /></span><span><b>TramFlow</b><small>ЕДЦ · Москва</small></span></div>
+        <div className="brand"><span className="brand-mark"><TramFront /></span><span><b>Тормоза</b><small>ЕДЦ · Москва</small></span></div>
         <nav aria-label="Основная навигация" style={{ minWidth: 0, flexWrap: "wrap", flex: "1 1 auto" }}>
           {sections.map((item) => (
             <button
@@ -133,7 +133,7 @@ function App() {
 
       <main>
         {!mapView && <header className="topbar">
-          <div><p className="eyebrow">ДИСПЕТЧЕРСКИЙ ЦЕНТР</p><h1>{section === "architecture" ? "Как работает TramFlow" : section === "network" ? "Граф трамвайной сети Москвы" : section === "lab" ? "Планирование сети" : "Пассажиропоток трамвайной сети"}</h1></div>
+          <div><p className="eyebrow">ДИСПЕТЧЕРСКИЙ ЦЕНТР</p><h1>{section === "architecture" ? "Как работает Тормоза" : section === "network" ? "Граф трамвайной сети Москвы" : section === "lab" ? "Планирование сети" : "Пассажиропоток трамвайной сети"}</h1></div>
           <div className="topbar-actions"><Badge>{section === "architecture" ? "Фактическая архитектура" : section === "network" ? "Данные OpenStreetMap" : section === "lab" ? "Решение на основе прогноза" : mapView ? "Оценка и сценарий" : data ? dataKind(data) : "Нет данных"}</Badge></div>
         </header>}
 

@@ -1,8 +1,8 @@
-# Фактическая архитектура TramFlow
+# Фактическая архитектура Тормоза
 
 [Требования организатора](../product/TASK.md) · [контракт датасета](../product/DATASET.md) · [воспроизведение конкурсного CSV](../../ml/competition_submissions/2026-09-27/README.md)
 
-Интерактивная схема для жюри: [«Как работает TramFlow»](http://localhost:8080/?view=architecture); её фактические узлы описаны в [`architecture-data.ts`](../../frontend/src/features/architecture/architecture-data.ts). Шесть связанных узлов показывают основной путь; оценочные и экспериментальные сценарии раскрываются отдельно. Оба представления обновляются вместе при изменении потоков.
+Интерактивная схема для жюри: [«Как работает Тормоза»](http://localhost:8080/?view=architecture); её фактические узлы описаны в [`architecture-data.ts`](../../frontend/src/features/architecture/architecture-data.ts). Шесть связанных узлов показывают основной путь; оценочные и экспериментальные сценарии раскрываются отдельно. Оба представления обновляются вместе при изменении потоков.
 
 ## Схемы в полном разрешении
 
@@ -10,17 +10,17 @@
 изображение или ссылку «Открыть PNG», затем увеличьте его в браузере.
 
 **Обзорная схема** — источники, конкурсный ML-контур, публикация и сервис.
-[Открыть PNG 5866 × 1108](assets/tramflow-overview.png?raw=1).
+[Открыть PNG 5866 × 1108](assets/tormoza-overview.png?raw=1).
 
-[![Обзорная схема архитектуры TramFlow](assets/tramflow-overview.png)](assets/tramflow-overview.png?raw=1)
+[![Обзорная схема архитектуры Тормоза](assets/tormoza-overview.png)](assets/tormoza-overview.png?raw=1)
 
 **Подробная схема** — компоненты обучения, артефакты, API и интерфейс.
-[Открыть PNG 12419 × 1596](assets/tramflow-detailed.png?raw=1).
+[Открыть PNG 12419 × 1596](assets/tormoza-detailed.png?raw=1).
 
 <details>
 <summary>Показать предпросмотр подробной схемы</summary>
 
-[![Подробная схема архитектуры TramFlow](assets/tramflow-detailed.png)](assets/tramflow-detailed.png?raw=1)
+[![Подробная схема архитектуры Тормоза](assets/tormoza-detailed.png)](assets/tormoza-detailed.png?raw=1)
 
 </details>
 

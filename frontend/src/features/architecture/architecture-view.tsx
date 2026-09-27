@@ -104,7 +104,7 @@ export function ArchitectureView() {
 
   return <div className="architecture-page">
     <header className="architecture-intro"><div><p className="architecture-kicker">СИСТЕМА ПРИНЯТИЯ РЕШЕНИЙ · МОСКВА</p><h2>От валидации до решения диспетчера</h2><p>Три вида одной реализованной системы: происхождение прогноза, путь HTTP-запроса и контейнерное развёртывание.</p></div><div className="architecture-intro-mark" aria-hidden="true">TF<span>01—03</span></div></header>
-    <section className="architecture-stage" aria-label="Интерактивная схема TramFlow">
+    <section className="architecture-stage" aria-label="Интерактивная схема Тормоза">
       <div className="architecture-levels" role="group" aria-label="Уровень схемы">{levelOrder.map((item, index) => <button key={item} type="button" className={item === level ? "is-active" : ""} aria-pressed={item === level} onClick={() => chooseLevel(item)}><span>0{index + 1}</span>{levels[item].label}</button>)}</div>
       <div className="architecture-stage-heading"><div><p className="architecture-kicker">{current.eyebrow}</p><h3>{current.label}</h3><p>{current.description}</p></div><span className="architecture-stage-count">НАЖМИТЕ НА УЗЕЛ → ДЕТАЛИ</span></div>
       <div className="architecture-legend" aria-label="Происхождение данных">{(["observed", "inferred", "experimental", "qualitative"] as const).map((kind) => <span className={`architecture-kind kind-${kind}`} key={kind}>{kindLabels[kind]}</span>)}</div>

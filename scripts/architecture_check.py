@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail when source imports cross TramFlow's documented architecture boundaries."""
+"""Fail when source imports cross the project's documented architecture boundaries."""
 
 from __future__ import annotations
 

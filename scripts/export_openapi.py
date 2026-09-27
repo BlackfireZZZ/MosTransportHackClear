@@ -17,7 +17,7 @@ DEFAULT_OUTPUT = REPOSITORY_ROOT / "contracts" / "openapi.json"
 
 def render_openapi() -> str:
     """Load the application without starting a server and render a stable snapshot."""
-    os.environ["APP_NAME"] = "TramFlow API"
+    os.environ["APP_NAME"] = "Тормоза API"
     os.environ["API_V1_PREFIX"] = "/api/v1"
     sys.path.insert(0, str(BACKEND_ROOT))
     from app.main import app  # noqa: PLC0415
